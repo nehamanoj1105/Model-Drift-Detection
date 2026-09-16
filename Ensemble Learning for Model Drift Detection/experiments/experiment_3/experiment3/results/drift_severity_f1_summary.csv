@@ -1,0 +1,14 @@
+drift_type,severity,frozen_rf_f1,retrained_rf_f1,adaptive_ensemble_f1,best_strategy
+concept,mild,0.8416,0.8593,0.8539,Retrained RF
+concept,moderate,0.791,0.8446,0.8274,Retrained RF
+concept,severe,0.7244,0.7415,0.7533,Adaptive Ensemble
+covariate,mild,0.7449,0.7605,0.762,Adaptive Ensemble
+covariate,moderate,0.7784,0.7903,0.7935,Adaptive Ensemble
+covariate,severe,0.9149,0.9241,0.922,Retrained RF
+mixed,mild,0.8525,0.8581,0.8571,Retrained RF
+mixed,moderate,0.9037,0.9056,0.8946,Retrained RF
+mixed,severe,0.9447,0.9531,0.9555,Adaptive Ensemble
+none,none,0.8048,0.8109,0.8053,Retrained RF
+prior,mild,0.6557,0.6741,0.6866,Adaptive Ensemble
+prior,moderate,0.8463,0.8582,0.8716,Adaptive Ensemble
+prior,severe,0.7666,0.7951,0.8013,Adaptive Ensemble

@@ -1,0 +1,241 @@
+seed,window_id,approach,retrained,retraining_cpu_time,retraining_wall_time
+42,0,Frozen RF,False,0.0,0.0
+42,0,Retrained RF,True,0.546875,0.30495329992845654
+42,0,UCB1 Adaptive Ensemble,False,0.0,0.0
+42,1,Frozen RF,False,0.0,0.0
+42,1,Retrained RF,True,0.40625,0.23415969987399876
+42,1,UCB1 Adaptive Ensemble,False,0.0,0.0
+42,2,Frozen RF,False,0.0,0.0
+42,2,Retrained RF,True,0.59375,0.30193400010466576
+42,2,UCB1 Adaptive Ensemble,False,0.0,0.0
+42,3,Frozen RF,False,0.0,0.0
+42,3,Retrained RF,True,0.671875,0.29356050002388656
+42,3,UCB1 Adaptive Ensemble,True,1.421875,0.9069772998336703
+42,4,Frozen RF,False,0.0,0.0
+42,4,Retrained RF,True,0.734375,0.34077519993297756
+42,4,UCB1 Adaptive Ensemble,False,0.0,0.0
+42,5,Frozen RF,False,0.0,0.0
+42,5,Retrained RF,True,0.921875,0.3403599001467228
+42,5,UCB1 Adaptive Ensemble,True,1.265625,0.9284739003051072
+42,6,Frozen RF,False,0.0,0.0
+42,6,Retrained RF,True,0.734375,0.2845757999457419
+42,6,UCB1 Adaptive Ensemble,False,0.0,0.0
+42,7,Frozen RF,False,0.0,0.0
+42,7,Retrained RF,True,0.859375,0.29930790001526475
+42,7,UCB1 Adaptive Ensemble,False,0.0,0.0
+42,8,Frozen RF,False,0.0,0.0
+42,8,Retrained RF,True,0.9375,0.31677719997242093
+42,8,UCB1 Adaptive Ensemble,False,0.0,0.0
+42,9,Frozen RF,False,0.0,0.0
+42,9,Retrained RF,True,0.96875,0.3210650999099016
+42,9,UCB1 Adaptive Ensemble,True,1.03125,0.7356221999507397
+42,10,Frozen RF,False,0.0,0.0
+42,10,Retrained RF,True,1.0,0.33962899981997907
+42,10,UCB1 Adaptive Ensemble,False,0.0,0.0
+42,11,Frozen RF,False,0.0,0.0
+42,11,Retrained RF,True,0.9375,0.3709690999239683
+42,11,UCB1 Adaptive Ensemble,True,1.125,0.7045287999790162
+42,12,Frozen RF,False,0.0,0.0
+42,12,Retrained RF,True,1.15625,0.35658170003443956
+42,12,UCB1 Adaptive Ensemble,True,1.125,0.7243170998990536
+42,13,Frozen RF,False,0.0,0.0
+42,13,Retrained RF,True,1.25,0.39673899998888373
+42,13,UCB1 Adaptive Ensemble,True,1.296875,0.9345459002070129
+42,14,Frozen RF,False,0.0,0.0
+42,14,Retrained RF,True,1.21875,0.4003610999789089
+42,14,UCB1 Adaptive Ensemble,False,0.0,0.0
+42,15,Frozen RF,False,0.0,0.0
+42,15,Retrained RF,True,1.40625,0.3790980000048876
+42,15,UCB1 Adaptive Ensemble,False,0.0,0.0
+43,0,Frozen RF,False,0.0,0.0
+43,0,Retrained RF,True,0.4375,0.23797799996100366
+43,0,UCB1 Adaptive Ensemble,False,0.0,0.0
+43,1,Frozen RF,False,0.0,0.0
+43,1,Retrained RF,True,0.515625,0.2445060999598354
+43,1,UCB1 Adaptive Ensemble,False,0.0,0.0
+43,2,Frozen RF,False,0.0,0.0
+43,2,Retrained RF,True,0.40625,0.23937579989433289
+43,2,UCB1 Adaptive Ensemble,True,1.359375,1.029389499919489
+43,3,Frozen RF,False,0.0,0.0
+43,3,Retrained RF,True,0.84375,0.4740947999525815
+43,3,UCB1 Adaptive Ensemble,False,0.0,0.0
+43,4,Frozen RF,False,0.0,0.0
+43,4,Retrained RF,True,0.765625,0.3217255000490695
+43,4,UCB1 Adaptive Ensemble,False,0.0,0.0
+43,5,Frozen RF,False,0.0,0.0
+43,5,Retrained RF,True,0.703125,0.27127430005930364
+43,5,UCB1 Adaptive Ensemble,True,1.234375,0.8434584997594357
+43,6,Frozen RF,False,0.0,0.0
+43,6,Retrained RF,True,0.859375,0.3972491000313312
+43,6,UCB1 Adaptive Ensemble,True,1.46875,1.1086815004236996
+43,7,Frozen RF,False,0.0,0.0
+43,7,Retrained RF,True,0.96875,0.3391100999433547
+43,7,UCB1 Adaptive Ensemble,False,0.0,0.0
+43,8,Frozen RF,False,0.0,0.0
+43,8,Retrained RF,True,0.9375,0.40223989984951913
+43,8,UCB1 Adaptive Ensemble,False,0.0,0.0
+43,9,Frozen RF,False,0.0,0.0
+43,9,Retrained RF,True,1.03125,0.5466094999574125
+43,9,UCB1 Adaptive Ensemble,False,0.0,0.0
+43,10,Frozen RF,False,0.0,0.0
+43,10,Retrained RF,True,1.125,0.5376567000057548
+43,10,UCB1 Adaptive Ensemble,False,0.0,0.0
+43,11,Frozen RF,False,0.0,0.0
+43,11,Retrained RF,True,1.25,0.5003825000021607
+43,11,UCB1 Adaptive Ensemble,False,0.0,0.0
+43,12,Frozen RF,False,0.0,0.0
+43,12,Retrained RF,True,1.234375,0.44325300003401935
+43,12,UCB1 Adaptive Ensemble,False,0.0,0.0
+43,13,Frozen RF,False,0.0,0.0
+43,13,Retrained RF,True,1.125,0.4663820997811854
+43,13,UCB1 Adaptive Ensemble,False,0.0,0.0
+43,14,Frozen RF,False,0.0,0.0
+43,14,Retrained RF,True,1.359375,0.4876111999619752
+43,14,UCB1 Adaptive Ensemble,False,0.0,0.0
+43,15,Frozen RF,False,0.0,0.0
+43,15,Retrained RF,True,1.40625,0.5885304000694305
+43,15,UCB1 Adaptive Ensemble,True,1.515625,1.2315521999262273
+44,0,Frozen RF,False,0.0,0.0
+44,0,Retrained RF,True,0.546875,0.3241706001572311
+44,0,UCB1 Adaptive Ensemble,False,0.0,0.0
+44,1,Frozen RF,False,0.0,0.0
+44,1,Retrained RF,True,0.640625,0.33139319997280836
+44,1,UCB1 Adaptive Ensemble,False,0.0,0.0
+44,2,Frozen RF,False,0.0,0.0
+44,2,Retrained RF,True,0.53125,0.3331420999020338
+44,2,UCB1 Adaptive Ensemble,False,0.0,0.0
+44,3,Frozen RF,False,0.0,0.0
+44,3,Retrained RF,True,0.6875,0.3397671999409795
+44,3,UCB1 Adaptive Ensemble,False,0.0,0.0
+44,4,Frozen RF,False,0.0,0.0
+44,4,Retrained RF,True,0.84375,0.3884440001565963
+44,4,UCB1 Adaptive Ensemble,False,0.0,0.0
+44,5,Frozen RF,False,0.0,0.0
+44,5,Retrained RF,True,0.875,0.39988550008274615
+44,5,UCB1 Adaptive Ensemble,False,0.0,0.0
+44,6,Frozen RF,False,0.0,0.0
+44,6,Retrained RF,True,0.796875,0.3730148000176996
+44,6,UCB1 Adaptive Ensemble,True,1.34375,0.9561821999959648
+44,7,Frozen RF,False,0.0,0.0
+44,7,Retrained RF,True,0.75,0.3259540998842567
+44,7,UCB1 Adaptive Ensemble,True,1.359375,1.366274599917233
+44,8,Frozen RF,False,0.0,0.0
+44,8,Retrained RF,True,1.09375,0.49387499992735684
+44,8,UCB1 Adaptive Ensemble,True,1.546875,1.4480328001081944
+44,9,Frozen RF,False,0.0,0.0
+44,9,Retrained RF,True,0.921875,0.42905010003596544
+44,9,UCB1 Adaptive Ensemble,True,1.4375,1.029651700053364
+44,10,Frozen RF,False,0.0,0.0
+44,10,Retrained RF,True,1.140625,0.3975573000498116
+44,10,UCB1 Adaptive Ensemble,False,0.0,0.0
+44,11,Frozen RF,False,0.0,0.0
+44,11,Retrained RF,True,1.296875,0.41691130003891885
+44,11,UCB1 Adaptive Ensemble,False,0.0,0.0
+44,12,Frozen RF,False,0.0,0.0
+44,12,Retrained RF,True,1.328125,0.4513103000354022
+44,12,UCB1 Adaptive Ensemble,False,0.0,0.0
+44,13,Frozen RF,False,0.0,0.0
+44,13,Retrained RF,True,1.34375,0.4216838001739234
+44,13,UCB1 Adaptive Ensemble,False,0.0,0.0
+44,14,Frozen RF,False,0.0,0.0
+44,14,Retrained RF,True,1.3125,0.38601400004699826
+44,14,UCB1 Adaptive Ensemble,False,0.0,0.0
+44,15,Frozen RF,False,0.0,0.0
+44,15,Retrained RF,True,1.421875,0.42860230011865497
+44,15,UCB1 Adaptive Ensemble,False,0.0,0.0
+45,0,Frozen RF,False,0.0,0.0
+45,0,Retrained RF,True,0.515625,0.29045609990134835
+45,0,UCB1 Adaptive Ensemble,False,0.0,0.0
+45,1,Frozen RF,False,0.0,0.0
+45,1,Retrained RF,True,0.65625,0.2912419999483973
+45,1,UCB1 Adaptive Ensemble,False,0.0,0.0
+45,2,Frozen RF,False,0.0,0.0
+45,2,Retrained RF,True,0.625,0.29822389991022646
+45,2,UCB1 Adaptive Ensemble,False,0.0,0.0
+45,3,Frozen RF,False,0.0,0.0
+45,3,Retrained RF,True,0.546875,0.25181009992957115
+45,3,UCB1 Adaptive Ensemble,False,0.0,0.0
+45,4,Frozen RF,False,0.0,0.0
+45,4,Retrained RF,True,0.703125,0.29263479984365404
+45,4,UCB1 Adaptive Ensemble,True,1.234375,0.7444851002655923
+45,5,Frozen RF,False,0.0,0.0
+45,5,Retrained RF,True,0.84375,0.326573200058192
+45,5,UCB1 Adaptive Ensemble,False,0.0,0.0
+45,6,Frozen RF,False,0.0,0.0
+45,6,Retrained RF,True,0.78125,0.35637969989329576
+45,6,UCB1 Adaptive Ensemble,False,0.0,0.0
+45,7,Frozen RF,False,0.0,0.0
+45,7,Retrained RF,True,0.96875,0.35766710015013814
+45,7,UCB1 Adaptive Ensemble,False,0.0,0.0
+45,8,Frozen RF,False,0.0,0.0
+45,8,Retrained RF,True,0.78125,0.34161509992554784
+45,8,UCB1 Adaptive Ensemble,True,1.34375,0.819467999972403
+45,9,Frozen RF,False,0.0,0.0
+45,9,Retrained RF,True,1.046875,0.35767629998736084
+45,9,UCB1 Adaptive Ensemble,False,0.0,0.0
+45,10,Frozen RF,False,0.0,0.0
+45,10,Retrained RF,True,1.125,0.41331170010380447
+45,10,UCB1 Adaptive Ensemble,True,1.140625,0.9820883001666516
+45,11,Frozen RF,False,0.0,0.0
+45,11,Retrained RF,True,1.109375,0.37850649980828166
+45,11,UCB1 Adaptive Ensemble,False,0.0,0.0
+45,12,Frozen RF,False,0.0,0.0
+45,12,Retrained RF,True,1.265625,0.42520940001122653
+45,12,UCB1 Adaptive Ensemble,False,0.0,0.0
+45,13,Frozen RF,False,0.0,0.0
+45,13,Retrained RF,True,1.234375,0.4610123001039028
+45,13,UCB1 Adaptive Ensemble,True,1.328125,1.0082788998261094
+45,14,Frozen RF,False,0.0,0.0
+45,14,Retrained RF,True,1.203125,0.41941790003329515
+45,14,UCB1 Adaptive Ensemble,False,0.0,0.0
+45,15,Frozen RF,False,0.0,0.0
+45,15,Retrained RF,True,1.40625,0.6450488001573831
+45,15,UCB1 Adaptive Ensemble,True,1.40625,1.2394973000045866
+46,0,Frozen RF,False,0.0,0.0
+46,0,Retrained RF,True,0.671875,0.3983475000131875
+46,0,UCB1 Adaptive Ensemble,False,0.0,0.0
+46,1,Frozen RF,False,0.0,0.0
+46,1,Retrained RF,True,0.546875,0.28763529984280467
+46,1,UCB1 Adaptive Ensemble,False,0.0,0.0
+46,2,Frozen RF,False,0.0,0.0
+46,2,Retrained RF,True,0.71875,0.3284110000822693
+46,2,UCB1 Adaptive Ensemble,True,1.421875,0.9700110997073352
+46,3,Frozen RF,False,0.0,0.0
+46,3,Retrained RF,True,0.625,0.3397796000353992
+46,3,UCB1 Adaptive Ensemble,False,0.0,0.0
+46,4,Frozen RF,False,0.0,0.0
+46,4,Retrained RF,True,0.65625,0.28349380008876324
+46,4,UCB1 Adaptive Ensemble,False,0.0,0.0
+46,5,Frozen RF,False,0.0,0.0
+46,5,Retrained RF,True,0.8125,0.2891706000082195
+46,5,UCB1 Adaptive Ensemble,True,1.0,0.7223528001923114
+46,6,Frozen RF,False,0.0,0.0
+46,6,Retrained RF,True,0.796875,0.3104079000186175
+46,6,UCB1 Adaptive Ensemble,False,0.0,0.0
+46,7,Frozen RF,False,0.0,0.0
+46,7,Retrained RF,True,0.84375,0.3059126001317054
+46,7,UCB1 Adaptive Ensemble,False,0.0,0.0
+46,8,Frozen RF,False,0.0,0.0
+46,8,Retrained RF,True,0.890625,0.32929490017704666
+46,8,UCB1 Adaptive Ensemble,True,1.109375,0.7620488000102341
+46,9,Frozen RF,False,0.0,0.0
+46,9,Retrained RF,True,0.875,0.2997783999890089
+46,9,UCB1 Adaptive Ensemble,True,1.09375,0.7546014999970794
+46,10,Frozen RF,False,0.0,0.0
+46,10,Retrained RF,True,1.03125,0.4100524999666959
+46,10,UCB1 Adaptive Ensemble,False,0.0,0.0
+46,11,Frozen RF,False,0.0,0.0
+46,11,Retrained RF,True,1.203125,0.4320979001931846
+46,11,UCB1 Adaptive Ensemble,True,1.359375,0.9579650000669062
+46,12,Frozen RF,False,0.0,0.0
+46,12,Retrained RF,True,1.203125,0.43719729990698397
+46,12,UCB1 Adaptive Ensemble,False,0.0,0.0
+46,13,Frozen RF,False,0.0,0.0
+46,13,Retrained RF,True,1.265625,0.3711664001457393
+46,13,UCB1 Adaptive Ensemble,False,0.0,0.0
+46,14,Frozen RF,False,0.0,0.0
+46,14,Retrained RF,True,1.25,0.3606916000135243
+46,14,UCB1 Adaptive Ensemble,False,0.0,0.0
+46,15,Frozen RF,False,0.0,0.0
+46,15,Retrained RF,True,1.21875,0.3710328999441117
+46,15,UCB1 Adaptive Ensemble,False,0.0,0.0

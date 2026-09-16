@@ -1,0 +1,110 @@
+{
+    "experiment": "Experiment 2 -- Drift-Aware Bandit Model Selection",
+    "dataset_size": 6000,
+    "dataset_file": "experiment2_stationary_dataset.csv",
+    "dataset_type": "STATIONARY baseline (no built-in drift)",
+    "chronological_split": {
+        "train": 0.5,
+        "adapt": 0.15,
+        "val": 0.1,
+        "test": 0.25
+    },
+    "actual_split_sizes": {
+        "train": 598,
+        "adapt": 179,
+        "val": 119,
+        "test": 301
+    },
+    "selected_kpis": [
+        "speed",
+        "distance",
+        "delay",
+        "throughput"
+    ],
+    "rolling_window_size": 20,
+    "rolling_window_step": 5,
+    "n_features": 24,
+    "feature_names": [
+        "speed_mean",
+        "speed_std",
+        "speed_min",
+        "speed_max",
+        "speed_q25",
+        "speed_q75",
+        "distance_mean",
+        "distance_std",
+        "distance_min",
+        "distance_max",
+        "distance_q25",
+        "distance_q75",
+        "delay_mean",
+        "delay_std",
+        "delay_min",
+        "delay_max",
+        "delay_q25",
+        "delay_q75",
+        "throughput_mean",
+        "throughput_std",
+        "throughput_min",
+        "throughput_max",
+        "throughput_q25",
+        "throughput_q75"
+    ],
+    "drift_levels": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5
+    ],
+    "drift_method": "covariate_shift_fixed_magnitude",
+    "drift_full_shifts": {
+        "speed": 1.0,
+        "distance": 30.0,
+        "delay": 8.0,
+        "throughput": -20.0
+    },
+    "drift_definition": "drift_level p shifts each KPI mean by p * FULL_DRIFT[kpi]. At 50% drift: speed +0.5m/s, distance +15m, delay +4ms, throughput -10Mbps. Only location features (mean,min,max,q25,q75) shift; std features unchanged. Target labels NOT modified (pure covariate drift P(X)).",
+    "drift_scoring": "combined_mean_KS_normalized_PSI",
+    "bandit_algorithm": "UCB1_sliding_window",
+    "bandit_window": 50,
+    "bandit_exploration_constant": 2.0,
+    "model1": {
+        "type": "RandomForestClassifier",
+        "n_estimators": 50,
+        "max_depth": 7,
+        "frozen": true,
+        "description": "Historical model. Never updated after initial training."
+    },
+    "model2": {
+        "type": "ExtraTreesClassifier",
+        "n_estimators": 50,
+        "max_depth": 7,
+        "adaptation_window": 200,
+        "adaptation_interval": 20,
+        "description": "Adaptive model. Retrained on sliding window of 200 recent samples."
+    },
+    "model3": {
+        "type": "AdaptiveEnsembleModel3",
+        "components": ["RandomForestClassifier", "ExtraTreesClassifier", "GradientBoostingClassifier"],
+        "combination_strategy": "soft_voting_probability_averaging",
+        "adaptation_window": 50,
+        "adaptation_interval": 20,
+        "description": "Adaptive Heterogeneous Ensemble. Fast adaptation (W=50) with model diversity."
+    },
+    "seed": 42,
+    "environment": {
+        "python_version": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "processor": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+        "machine": "AMD64",
+        "cpu_count_logical": 8,
+        "cpu_count_physical": 4,
+        "total_ram_gb": 15.69,
+        "sklearn_version": "1.9.0",
+        "numpy_version": "2.5.0",
+        "pandas_version": "2.3.3",
+        "gpu_info": "N/A -- No GPU detected or no GPU library installed"
+    }
+}

@@ -1,0 +1,12 @@
+comparison,metric,mean_strategy_a,mean_strategy_b,mean_diff,test_type,test_stat,p_value,effect_size,effect_type,p_value_adjusted,is_significant
+Adaptive Ensemble vs Frozen RF,f1,0.8268893364092872,0.8157431869694595,0.011146149439827524,Wilcoxon signed-rank,766.0,0.0008134793882142054,0.4479279279279279,Rank-biserial r,0.007321314493927849,True
+Adaptive Ensemble vs Frozen RF,accuracy,0.817475,0.814125,0.0033499999999999953,Wilcoxon signed-rank,1205.5,0.542382490576394,0.08257229832572299,Rank-biserial r,1.0,False
+Adaptive Ensemble vs Retrained RF,f1,0.8268893364092872,0.8308071350779898,-0.003917798668702734,Wilcoxon signed-rank,1142.0,0.251695683353089,0.1543872639763051,Rank-biserial r,1.0,False
+Adaptive Ensemble vs Retrained RF,accuracy,0.817475,0.820725,-0.0032500000000000016,Wilcoxon signed-rank,1043.0,0.1777616789700286,0.1838810641627543,Rank-biserial r,1.0,False
+Adaptive Ensemble vs Retrained RF,cpu_time,0.316796875,1.477734375,-1.1609375,Wilcoxon signed-rank,0.0,7.821190365509668e-15,1.0,Rank-biserial r,8.603309402060636e-14,True
+UCB1 vs Frozen RF,f1,0.8268893364092872,0.8157431869694595,0.011146149439827524,Wilcoxon signed-rank,766.0,0.0008134793882142054,0.4479279279279279,Rank-biserial r,0.007321314493927849,True
+UCB1 vs Frozen RF,accuracy,0.817475,0.814125,0.0033499999999999953,Wilcoxon signed-rank,1205.5,0.542382490576394,0.08257229832572299,Rank-biserial r,1.0,False
+UCB1 vs Retrained RF,f1,0.8268893364092872,0.8308071350779898,-0.003917798668702734,Wilcoxon signed-rank,1142.0,0.251695683353089,0.1543872639763051,Rank-biserial r,1.0,False
+UCB1 vs Retrained RF,accuracy,0.817475,0.820725,-0.0032500000000000016,Wilcoxon signed-rank,1043.0,0.1777616789700286,0.1838810641627543,Rank-biserial r,1.0,False
+UCB1 vs Retrained RF,cpu_time,0.316796875,1.477734375,-1.1609375,Wilcoxon signed-rank,0.0,7.821190365509668e-15,1.0,Rank-biserial r,8.603309402060636e-14,True
+UCB1 vs Adaptive Ensemble,f1,0.8268893364092872,0.8268893364092872,0.0,Paired t-test,0.0,1.0,0.0,Cohen's d,1.0,False

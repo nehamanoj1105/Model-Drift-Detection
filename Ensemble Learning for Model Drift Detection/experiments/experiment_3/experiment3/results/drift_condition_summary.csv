@@ -1,0 +1,6 @@
+drift_type,best_strategy,mean_f1,cpu_cost,retraining_cost
+none,Retrained RF,0.8109,1.3062,1.2219
+covariate,Adaptive Ensemble,0.8237,1.5438,1.3823
+concept,Retrained RF,0.8377,1.4073,1.3198
+prior,Adaptive Ensemble,0.7925,0.7125,0.525
+mixed,Retrained RF,0.9056,1.6562,1.5625

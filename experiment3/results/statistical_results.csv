@@ -1,0 +1,9 @@
+comparison,metric,mean_a,mean_b,mean_diff,test_type,test_stat,p_value,effect_size,effect_type,p_value_adjusted,is_significant
+UCB1 Adaptive Ensemble vs Frozen RF,f1,0.7432825,0.6951,0.048182499999999996,Wilcoxon signed-rank,138.5,1.1969694703035298e-12,0.9145061728395062,Rank-biserial r,8.378786292124709e-12,True
+UCB1 Adaptive Ensemble vs Frozen RF,accuracy,0.8294499999999999,0.8048750000000002,0.024575000000000003,Wilcoxon signed-rank,529.0,1.3195805652810806e-06,0.6384142173615858,Rank-biserial r,3.958741695843242e-06,True
+UCB1 Adaptive Ensemble vs Retrained RF,f1,0.7432825,0.72463,0.018652499999999995,Wilcoxon signed-rank,740.0,4.040728533794365e-05,0.5316455696202531,Rank-biserial r,8.08145706758873e-05,True
+UCB1 Adaptive Ensemble vs Retrained RF,accuracy,0.8294499999999999,0.8277999999999999,0.00165,Wilcoxon signed-rank,1363.5,0.745151755843815,0.04315789473684206,Rank-biserial r,0.745151755843815,False
+UCB1 Adaptive Ensemble vs Retrained RF,cpu_time,0.5039075000000001,1.04746375,-0.54355625,Wilcoxon signed-rank,425.5,1.0081840294187423e-08,0.7373456790123456,Rank-biserial r,5.040920147093711e-08,True
+Retrained RF vs Frozen RF,f1,0.72463,0.6951,0.02953,Wilcoxon signed-rank,223.0,2.1922727586444901e-10,0.8435087719298245,Rank-biserial r,1.315363655186694e-09,True
+Retrained RF vs Frozen RF,accuracy,0.8277999999999999,0.8048750000000002,0.022925000000000004,Wilcoxon signed-rank,303.5,3.839922890143785e-08,0.7557344064386318,Rank-biserial r,1.535969156057514e-07,True
+Retrained RF vs Frozen RF,cpu_time,1.04746375,0.12559,0.9218737499999999,Wilcoxon signed-rank,0.0,7.837074469478476e-15,1.0,Rank-biserial r,6.26965957558278e-14,True

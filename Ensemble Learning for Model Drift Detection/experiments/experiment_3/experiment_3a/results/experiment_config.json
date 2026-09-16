@@ -1,0 +1,179 @@
+{
+    "experiment_id": "3A",
+    "experiment_name": "Frozen Model Degradation & Retraining Cost Under Drift",
+    "dataset": {
+        "n_raw_samples": 10000,
+        "n_initial_training": 2000,
+        "n_post_deployment": 8000,
+        "kpi_columns": [
+            "speed",
+            "distance",
+            "delay",
+            "throughput"
+        ],
+        "target_column": "qos_violation",
+        "target_rule": "logistic combination of z-scored KPIs: 0.8*dist_z + 1.2*delay_z - 1.0*tp_z + 0.3*speed_z"
+    },
+    "feature_extraction": {
+        "window_size": 20,
+        "step_size": 5,
+        "n_features": 24,
+        "feature_statistics": [
+            "mean",
+            "std",
+            "min",
+            "max",
+            "q25",
+            "q75"
+        ]
+    },
+    "evaluation": {
+        "eval_window_size": 100,
+        "seeds": [
+            42,
+            43,
+            44,
+            45,
+            46
+        ],
+        "n_seeds": 5
+    },
+    "model": {
+        "type": "RandomForestClassifier",
+        "n_estimators": 50,
+        "max_depth": 7,
+        "frozen_after_initial_training": true
+    },
+    "drift": {
+        "covariate_drift_full_magnitudes": {
+            "speed": 1.0,
+            "distance": 30.0,
+            "delay": 8.0,
+            "throughput": -20.0
+        },
+        "covariate_drift_levels": {
+            "mild": 0.15,
+            "moderate": 0.35,
+            "severe": 0.6
+        },
+        "concept_drift_coefficient_shifts": {
+            "mild": {
+                "dist_w": 0.3,
+                "delay_w": 0.3,
+                "tp_w": -0.2,
+                "speed_w": 0.1,
+                "intercept": 0.5
+            },
+            "moderate": {
+                "dist_w": 0.6,
+                "delay_w": 0.8,
+                "tp_w": -0.5,
+                "speed_w": 0.2,
+                "intercept": 1.2
+            },
+            "severe": {
+                "dist_w": 1.2,
+                "delay_w": 1.5,
+                "tp_w": -1.0,
+                "speed_w": 0.5,
+                "intercept": 2.5
+            }
+        },
+        "primary_drift_metric": "wasserstein_distance (normalized to [0,1] per feature)",
+        "secondary_drift_metrics": [
+            "ks_statistic",
+            "psi"
+        ],
+        "severity_thresholds": {
+            "none": [
+                0.0,
+                0.05
+            ],
+            "mild": [
+                0.05,
+                0.2
+            ],
+            "moderate": [
+                0.2,
+                0.5
+            ],
+            "severe": [
+                0.5,
+                Infinity
+            ]
+        }
+    },
+    "resource_monitoring": {
+        "method": "psutil.Process()",
+        "measurement_type": "process_level",
+        "sampling_interval_seconds": 0.05,
+        "metrics_collected": [
+            "wall_clock_time",
+            "cpu_time_user",
+            "cpu_time_system",
+            "avg_cpu_percent",
+            "peak_cpu_percent",
+            "avg_memory_mb",
+            "peak_memory_mb"
+        ]
+    },
+    "conditions": [
+        {
+            "id": "3A-0",
+            "drift_type": "none",
+            "severity": "none",
+            "description": "No drift (stationary baseline)"
+        },
+        {
+            "id": "3A-1",
+            "drift_type": "covariate",
+            "severity": "mild",
+            "description": "Mild covariate drift"
+        },
+        {
+            "id": "3A-2",
+            "drift_type": "covariate",
+            "severity": "moderate",
+            "description": "Moderate covariate drift"
+        },
+        {
+            "id": "3A-3",
+            "drift_type": "covariate",
+            "severity": "severe",
+            "description": "Severe covariate drift"
+        },
+        {
+            "id": "3A-4",
+            "drift_type": "concept",
+            "severity": "mild",
+            "description": "Mild concept drift"
+        },
+        {
+            "id": "3A-5",
+            "drift_type": "concept",
+            "severity": "moderate",
+            "description": "Moderate concept drift"
+        },
+        {
+            "id": "3A-6",
+            "drift_type": "concept",
+            "severity": "severe",
+            "description": "Severe concept drift"
+        }
+    ],
+    "runtime_seconds": 323.9292039871216,
+    "environment": {
+        "python_version": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "processor": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+        "machine": "AMD64",
+        "cpu_count_logical": 8,
+        "cpu_count_physical": 4,
+        "total_ram_gb": 15.69,
+        "timestamp": "2026-09-10T14:47:54.834012",
+        "sklearn_version": "1.9.0",
+        "numpy_version": "2.5.0",
+        "pandas_version": "2.3.3",
+        "psutil_version": "7.2.2"
+    }
+}

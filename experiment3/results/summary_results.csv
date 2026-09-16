@@ -1,0 +1,4 @@
+Approach,F1,Accuracy,CPU Time (s),Peak RAM (MB),Adapt/Retrain Events
+Frozen RF,0.6951 ± 0.0248,0.8049 ± 0.0114,2.01 ± 0.06,207.4 ± 0.8,0.0 ± 0.0
+Retrained RF,0.7246 ± 0.0263,0.8278 ± 0.0095,16.76 ± 0.56,208.7 ± 0.7,16.0 ± 0.0
+UCB1 Adaptive Ensemble,0.7433 ± 0.0208,0.8294 ± 0.0119,8.06 ± 0.61,207.4 ± 0.8,4.8 ± 0.8
