@@ -1,0 +1,47 @@
+{
+    "Fixed_vs_GlobalAdaptive": {
+        "mean_diff": 0.0,
+        "std_diff": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "p_value": 1.0,
+        "effect_size": 0.0,
+        "n_obs": 300
+    },
+    "Fixed_vs_RegimeAware": {
+        "mean_diff": 8.380644664658229e-05,
+        "std_diff": 0.0007023742274073354,
+        "ci_lower": 4.003759862695479e-06,
+        "ci_upper": 0.0001636091334304691,
+        "p_value": 0.011616044899262472,
+        "effect_size": 0.11931879527518528,
+        "n_obs": 300
+    },
+    "Current_vs_OracleWeighting": {
+        "mean_diff": 0.010696183340055586,
+        "std_diff": 0.03944641993967703,
+        "ci_lower": 0.006214341364145357,
+        "ci_upper": 0.015178025315965814,
+        "p_value": 2.3668710295752265e-10,
+        "effect_size": 0.27115726487758834,
+        "n_obs": 300
+    },
+    "Current_vs_RetrievalInSample": {
+        "mean_diff": 0.010707750840139009,
+        "std_diff": 0.039544864331650775,
+        "ci_lower": 0.0062147237627945915,
+        "ci_upper": 0.015200777917483426,
+        "p_value": 2.3668710295752265e-10,
+        "effect_size": 0.27077475219882796,
+        "n_obs": 300
+    },
+    "Current_vs_RetrievalHeldOut": {
+        "mean_diff": 0.001074037094041775,
+        "std_diff": 0.0870257833254152,
+        "ci_lower": -0.008813699468383205,
+        "ci_upper": 0.010961773656466754,
+        "p_value": 0.0744582705544078,
+        "effect_size": 0.012341596398226394,
+        "n_obs": 300
+    }
+}

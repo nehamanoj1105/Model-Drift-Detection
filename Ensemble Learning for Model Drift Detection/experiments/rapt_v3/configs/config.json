@@ -1,0 +1,9 @@
+{
+  "seeds": [42, 43, 44, 45, 46],
+  "default_beta": 0.90,
+  "default_alpha": 0.10,
+  "confidence_threshold": 0.99,
+  "buffer_sizes": [50, 100, 250],
+  "datasets": ["9A", "9B"],
+  "non_inferiority_delta": 0.005
+}

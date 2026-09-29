@@ -1,0 +1,83 @@
+# Experiment 8 Configuration File
+experiment_name: "experiment_8_value_based_selective_adaptation"
+
+seeds: [42, 43, 44, 45, 46]
+
+models:
+  RandomForest:
+    n_estimators: 50
+    max_depth: 7
+    min_samples_split: 4
+    n_jobs: -1
+    horizon: 3500
+  ExtraTrees:
+    n_estimators: 50
+    max_depth: 7
+    min_samples_split: 6
+    n_jobs: -1
+    horizon: 2500
+  GradientBoosting:
+    n_estimators: 50
+    max_depth: 4
+    learning_rate: 0.08
+    subsample: 0.85
+    horizon: 1800
+
+ensemble:
+  component_names: ["RF", "ET", "GB"]
+  decision_threshold: 0.46
+  weight_alpha: 0.7     # EMA smoothing for F1
+  weight_beta: 8.0      # Softmax inverse temperature
+  weight_gamma: 0.15    # Diversity bonus weight
+
+drift_detection:
+  metric: "wasserstein"
+  threshold: 0.12
+  degradation_threshold: 0.05
+  window_history_size: 3
+
+adaptation_actions:
+  KEEP:
+    cost_relative: 0.0
+    sample_ratio: 0.0
+    estimator_ratio: 0.0
+  PARTIAL:
+    cost_relative: 0.35
+    sample_ratio: 0.35
+    estimator_ratio: 0.35
+  FULL:
+    cost_relative: 1.0
+    sample_ratio: 1.0
+    estimator_ratio: 1.0
+
+probe:
+  sample_size: 50
+  estimator_count: 5
+  epsilon: 1e-5
+
+allocation:
+  budgets: [0.35, 1.0, 1.35, 2.0, 3.0]
+  default_budget: 1.35
+  lagrangian_lambda: 0.05
+
+adaptation_difficulty:
+  EASY:
+    noise_level: 0.02
+    drift_scale: 0.5
+  MEDIUM:
+    noise_level: 0.10
+    drift_scale: 1.0
+  HARD:
+    noise_level: 0.20
+    drift_scale: 1.8
+
+paths:
+  root: "experiment8"
+  results_raw: "experiment8/results/raw"
+  results_aggregated: "experiment8/results/aggregated"
+  results_statistics: "experiment8/results/statistics"
+  results_validation: "experiment8/results/validation"
+  figures: "experiment8/figures"
+  tables: "experiment8/tables"
+  reports: "experiment8/reports"
+  logs: "experiment8/logs"

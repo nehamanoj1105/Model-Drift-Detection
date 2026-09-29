@@ -1,0 +1,1513 @@
+seed,window_id,approach,retrain_event_idx,model_component,fit_wall_time_s,fit_cpu_time_s,n_samples
+42,0,Continuous Retraining,1,RandomForest,0.3462236000050325,0.328125,1500
+42,0,Continuous Retraining,1,ExtraTrees,0.20436119999794755,0.203125,1500
+42,0,Continuous Retraining,1,GradientBoosting,0.39700350000930484,0.359375,1500
+42,0,Continuous Retraining,1,All_Base_Models,0.9475883000122849,0.890625,1500
+42,0,RAPT (K=8),1,RandomForest,0.24546249999548309,0.25,500
+42,0,RAPT (K=8),1,ExtraTrees,0.19401330000255257,0.1875,500
+42,0,RAPT (K=8),1,GradientBoosting,0.25671149999834597,0.25,500
+42,0,RAPT (K=8),1,All_Base_Models,0.6961872999963816,0.6875,500
+42,0,Two-Tier Hybrid RAPT,1,RandomForest,0.3727221000008285,0.3125,500
+42,0,Two-Tier Hybrid RAPT,1,ExtraTrees,0.19059630000265315,0.1875,500
+42,0,Two-Tier Hybrid RAPT,1,GradientBoosting,0.26108579999709036,0.265625,500
+42,0,Two-Tier Hybrid RAPT,1,All_Base_Models,0.824404200000572,0.765625,500
+42,1,Continuous Retraining,2,RandomForest,0.346446499999729,0.3125,1500
+42,1,Continuous Retraining,2,ExtraTrees,0.19643100000394043,0.171875,1500
+42,1,Continuous Retraining,2,GradientBoosting,0.353368899988709,0.34375,1500
+42,1,Continuous Retraining,2,All_Base_Models,0.8962463999923784,0.828125,1500
+42,2,Continuous Retraining,3,RandomForest,0.3453738000098383,0.328125,1500
+42,2,Continuous Retraining,3,ExtraTrees,0.6468255999934627,0.234375,1500
+42,2,Continuous Retraining,3,GradientBoosting,0.2492807999951765,0.234375,1500
+42,2,Continuous Retraining,3,All_Base_Models,1.2414801999984775,0.796875,1500
+42,3,Continuous Retraining,4,RandomForest,0.16046440000354778,0.125,1500
+42,3,Continuous Retraining,4,ExtraTrees,0.10992720001377165,0.109375,1500
+42,3,Continuous Retraining,4,GradientBoosting,0.21881820000999141,0.21875,1500
+42,3,Continuous Retraining,4,All_Base_Models,0.48920980002731085,0.453125,1500
+42,4,Continuous Retraining,5,RandomForest,0.20055799999681767,0.1875,1500
+42,4,Continuous Retraining,5,ExtraTrees,0.08987460000207648,0.09375,1500
+42,4,Continuous Retraining,5,GradientBoosting,0.3115130000078352,0.203125,1500
+42,4,Continuous Retraining,5,All_Base_Models,0.6019456000067294,0.484375,1500
+42,5,Continuous Retraining,6,RandomForest,1.1994438999972772,0.21875,1500
+42,5,Continuous Retraining,6,ExtraTrees,1.7360485000099288,0.15625,1500
+42,5,Continuous Retraining,6,GradientBoosting,1.7365049999934854,0.265625,1500
+42,5,Continuous Retraining,6,All_Base_Models,4.671997400000691,0.640625,1500
+42,6,Continuous Retraining,7,RandomForest,0.3145739000028698,0.234375,1500
+42,6,Continuous Retraining,7,ExtraTrees,0.27359989999968093,0.171875,1500
+42,6,Continuous Retraining,7,GradientBoosting,0.5196809000044595,0.296875,1500
+42,6,Continuous Retraining,7,All_Base_Models,1.1078547000070103,0.703125,1500
+42,7,Continuous Retraining,8,RandomForest,0.3174375999951735,0.28125,1500
+42,7,Continuous Retraining,8,ExtraTrees,0.23724610000499524,0.234375,1500
+42,7,Continuous Retraining,8,GradientBoosting,0.29541570000583306,0.21875,1500
+42,7,Continuous Retraining,8,All_Base_Models,0.8500994000060018,0.734375,1500
+42,8,Continuous Retraining,9,RandomForest,0.237906499998644,0.21875,1500
+42,8,Continuous Retraining,9,ExtraTrees,0.17324099999677856,0.140625,1500
+42,8,Continuous Retraining,9,GradientBoosting,0.2653991999977734,0.234375,1500
+42,8,Continuous Retraining,9,All_Base_Models,0.6765466999931959,0.59375,1500
+42,9,Continuous Retraining,10,RandomForest,0.33490380000148434,0.3125,1500
+42,9,Continuous Retraining,10,ExtraTrees,0.17065359999833163,0.171875,1500
+42,9,Continuous Retraining,10,GradientBoosting,0.3351053999940632,0.3125,1500
+42,9,Continuous Retraining,10,All_Base_Models,0.8406627999938792,0.796875,1500
+42,10,Continuous Retraining,11,RandomForest,0.24829670001054183,0.25,1500
+42,10,Continuous Retraining,11,ExtraTrees,0.1762214999907883,0.125,1500
+42,10,Continuous Retraining,11,GradientBoosting,0.2715327000041725,0.265625,1500
+42,10,Continuous Retraining,11,All_Base_Models,0.6960509000055026,0.640625,1500
+42,11,Continuous Retraining,12,RandomForest,0.3333079000003636,0.3125,1500
+42,11,Continuous Retraining,12,ExtraTrees,0.21294190001208335,0.203125,1500
+42,11,Continuous Retraining,12,GradientBoosting,0.3667150999972364,0.34375,1500
+42,11,Continuous Retraining,12,All_Base_Models,0.9129649000096833,0.859375,1500
+42,11,RAPT (K=8),2,RandomForest,0.3060068000049796,0.296875,500
+42,11,RAPT (K=8),2,ExtraTrees,0.1973020000004908,0.203125,500
+42,11,RAPT (K=8),2,GradientBoosting,0.24017710000043735,0.234375,500
+42,11,RAPT (K=8),2,All_Base_Models,0.7434859000059078,0.734375,500
+42,11,Two-Tier Hybrid RAPT,2,RandomForest,0.21722169998975005,0.21875,500
+42,11,Two-Tier Hybrid RAPT,2,ExtraTrees,0.1858691999950679,0.171875,500
+42,11,Two-Tier Hybrid RAPT,2,GradientBoosting,0.28316360000462737,0.203125,500
+42,11,Two-Tier Hybrid RAPT,2,All_Base_Models,0.6862544999894453,0.59375,500
+42,12,Continuous Retraining,13,RandomForest,0.349564799995278,0.34375,1500
+42,12,Continuous Retraining,13,ExtraTrees,0.1964421000011498,0.171875,1500
+42,12,Continuous Retraining,13,GradientBoosting,0.39006410000729375,0.375,1500
+42,12,Continuous Retraining,13,All_Base_Models,0.9360710000037216,0.890625,1500
+42,12,RAPT (K=8),3,RandomForest,0.27322560000175145,0.28125,500
+42,12,RAPT (K=8),3,ExtraTrees,0.15780570000060834,0.15625,500
+42,12,RAPT (K=8),3,GradientBoosting,0.2129770999890752,0.1875,500
+42,12,RAPT (K=8),3,All_Base_Models,0.644008399991435,0.625,500
+42,12,Two-Tier Hybrid RAPT,3,RandomForest,0.3002651999995578,0.296875,500
+42,12,Two-Tier Hybrid RAPT,3,ExtraTrees,0.1936297999927774,0.21875,500
+42,12,Two-Tier Hybrid RAPT,3,GradientBoosting,0.29005460000189487,0.25,500
+42,12,Two-Tier Hybrid RAPT,3,All_Base_Models,0.7839495999942301,0.765625,500
+42,13,Continuous Retraining,14,RandomForest,0.3588495000003604,0.34375,1500
+42,13,Continuous Retraining,14,ExtraTrees,0.22799129999475554,0.234375,1500
+42,13,Continuous Retraining,14,GradientBoosting,0.3620495000068331,0.34375,1500
+42,13,Continuous Retraining,14,All_Base_Models,0.9488903000019491,0.921875,1500
+42,13,Event-Driven Baseline,1,RandomForest,0.27247840000200085,0.28125,1500
+42,13,Event-Driven Baseline,1,ExtraTrees,0.1623970999935409,0.15625,1500
+42,13,Event-Driven Baseline,1,GradientBoosting,0.37962369999149814,0.375,1500
+42,13,Event-Driven Baseline,1,All_Base_Models,0.8144991999870399,0.8125,1500
+42,14,Continuous Retraining,15,RandomForest,0.316799499996705,0.3125,1500
+42,14,Continuous Retraining,15,ExtraTrees,0.21587739999813493,0.21875,1500
+42,14,Continuous Retraining,15,GradientBoosting,0.37855919999128673,0.40625,1500
+42,14,Continuous Retraining,15,All_Base_Models,0.9112360999861266,0.9375,1500
+42,15,Continuous Retraining,16,RandomForest,0.3238693000021158,0.3125,1500
+42,15,Continuous Retraining,16,ExtraTrees,0.2085571999923559,0.21875,1500
+42,15,Continuous Retraining,16,GradientBoosting,0.3669542999996338,0.359375,1500
+42,15,Continuous Retraining,16,All_Base_Models,0.8993807999941055,0.890625,1500
+42,15,Event-Driven Baseline,2,RandomForest,0.4243663999950513,0.296875,1500
+42,15,Event-Driven Baseline,2,ExtraTrees,0.23681570000189822,0.203125,1500
+42,15,Event-Driven Baseline,2,GradientBoosting,0.39012610001373105,0.375,1500
+42,15,Event-Driven Baseline,2,All_Base_Models,1.0513082000106806,0.875,1500
+42,16,Continuous Retraining,17,RandomForest,0.26405110000632703,0.265625,1500
+42,16,Continuous Retraining,17,ExtraTrees,0.18358750001061708,0.1875,1500
+42,16,Continuous Retraining,17,GradientBoosting,0.33242979999340605,0.328125,1500
+42,16,Continuous Retraining,17,All_Base_Models,0.7800684000103502,0.78125,1500
+42,17,Continuous Retraining,18,RandomForest,0.2598418999987189,0.25,1500
+42,17,Continuous Retraining,18,ExtraTrees,0.1838353999919491,0.203125,1500
+42,17,Continuous Retraining,18,GradientBoosting,0.3562058999959845,0.34375,1500
+42,17,Continuous Retraining,18,All_Base_Models,0.7998831999866525,0.796875,1500
+42,17,Event-Driven Baseline,3,RandomForest,0.3061989999987418,0.3125,1500
+42,17,Event-Driven Baseline,3,ExtraTrees,0.1803864999965299,0.171875,1500
+42,17,Event-Driven Baseline,3,GradientBoosting,0.4016204999934416,0.40625,1500
+42,17,Event-Driven Baseline,3,All_Base_Models,0.8882059999887133,0.890625,1500
+42,17,RAPT (K=8),4,RandomForest,0.2644523000053596,0.25,500
+42,17,RAPT (K=8),4,ExtraTrees,0.19864430000598077,0.171875,500
+42,17,RAPT (K=8),4,GradientBoosting,0.19469829999434296,0.1875,500
+42,17,RAPT (K=8),4,All_Base_Models,0.6577949000056833,0.609375,500
+42,17,Two-Tier Hybrid RAPT,4,RandomForest,0.19384880000143312,0.203125,500
+42,17,Two-Tier Hybrid RAPT,4,ExtraTrees,0.17656579999311361,0.140625,500
+42,17,Two-Tier Hybrid RAPT,4,GradientBoosting,0.24895040001138113,0.25,500
+42,17,Two-Tier Hybrid RAPT,4,All_Base_Models,0.6193650000059279,0.59375,500
+42,18,Continuous Retraining,19,RandomForest,0.25357689999509603,0.234375,1500
+42,18,Continuous Retraining,19,ExtraTrees,0.16580360000079963,0.171875,1500
+42,18,Continuous Retraining,19,GradientBoosting,0.3563087000075029,0.359375,1500
+42,18,Continuous Retraining,19,All_Base_Models,0.7756892000033986,0.765625,1500
+42,18,Event-Driven Baseline,4,RandomForest,0.29297569999471307,0.265625,1500
+42,18,Event-Driven Baseline,4,ExtraTrees,0.169121200000518,0.171875,1500
+42,18,Event-Driven Baseline,4,GradientBoosting,0.3399416000029305,0.328125,1500
+42,18,Event-Driven Baseline,4,All_Base_Models,0.8020384999981616,0.765625,1500
+42,19,Continuous Retraining,20,RandomForest,0.24455980000493582,0.234375,1500
+42,19,Continuous Retraining,20,ExtraTrees,0.15634460000728723,0.15625,1500
+42,19,Continuous Retraining,20,GradientBoosting,0.31362249999074265,0.28125,1500
+42,19,Continuous Retraining,20,All_Base_Models,0.7145269000029657,0.671875,1500
+42,19,Event-Driven Baseline,5,RandomForest,0.31807219999609515,0.3125,1500
+42,19,Event-Driven Baseline,5,ExtraTrees,0.20092129999829922,0.203125,1500
+42,19,Event-Driven Baseline,5,GradientBoosting,0.33815820000017993,0.34375,1500
+42,19,Event-Driven Baseline,5,All_Base_Models,0.8571516999945743,0.859375,1500
+42,20,Continuous Retraining,21,RandomForest,0.3289801999926567,0.328125,1500
+42,20,Continuous Retraining,21,ExtraTrees,0.15915839999797754,0.15625,1500
+42,20,Continuous Retraining,21,GradientBoosting,0.33682989999942947,0.34375,1500
+42,20,Continuous Retraining,21,All_Base_Models,0.8249684999900637,0.828125,1500
+42,20,Event-Driven Baseline,6,RandomForest,0.2956544000044232,0.296875,1500
+42,20,Event-Driven Baseline,6,ExtraTrees,0.1866199000069173,0.1875,1500
+42,20,Event-Driven Baseline,6,GradientBoosting,0.39254369999980554,0.390625,1500
+42,20,Event-Driven Baseline,6,All_Base_Models,0.8748180000111461,0.875,1500
+42,21,Continuous Retraining,22,RandomForest,0.3102919999946607,0.3125,1500
+42,21,Continuous Retraining,22,ExtraTrees,0.18395579999196343,0.1875,1500
+42,21,Continuous Retraining,22,GradientBoosting,0.36348710001038853,0.359375,1500
+42,21,Continuous Retraining,22,All_Base_Models,0.8577348999970127,0.859375,1500
+42,21,Event-Driven Baseline,7,RandomForest,0.2717916999972658,0.28125,1500
+42,21,Event-Driven Baseline,7,ExtraTrees,0.21108900000399444,0.21875,1500
+42,21,Event-Driven Baseline,7,GradientBoosting,0.35186959999555256,0.34375,1500
+42,21,Event-Driven Baseline,7,All_Base_Models,0.8347502999968128,0.84375,1500
+42,22,Continuous Retraining,23,RandomForest,0.22871319999103434,0.234375,1500
+42,22,Continuous Retraining,23,ExtraTrees,0.15710159999434836,0.15625,1500
+42,22,Continuous Retraining,23,GradientBoosting,0.2899206000001868,0.296875,1500
+42,22,Continuous Retraining,23,All_Base_Models,0.6757353999855695,0.6875,1500
+42,22,Event-Driven Baseline,8,RandomForest,0.2967072999890661,0.3125,1500
+42,22,Event-Driven Baseline,8,ExtraTrees,0.14381179999327287,0.15625,1500
+42,22,Event-Driven Baseline,8,GradientBoosting,0.2802075000072364,0.28125,1500
+42,22,Event-Driven Baseline,8,All_Base_Models,0.7207265999895753,0.75,1500
+42,23,Continuous Retraining,24,RandomForest,0.279320400004508,0.265625,1500
+42,23,Continuous Retraining,24,ExtraTrees,0.1996006999979727,0.1875,1500
+42,23,Continuous Retraining,24,GradientBoosting,0.27117510000243783,0.25,1500
+42,23,Continuous Retraining,24,All_Base_Models,0.7500962000049185,0.703125,1500
+42,23,Event-Driven Baseline,9,RandomForest,0.3377498000045307,0.34375,1500
+42,23,Event-Driven Baseline,9,ExtraTrees,0.17894979999982752,0.171875,1500
+42,23,Event-Driven Baseline,9,GradientBoosting,0.38674569998693187,0.34375,1500
+42,23,Event-Driven Baseline,9,All_Base_Models,0.9034452999912901,0.859375,1500
+42,24,Continuous Retraining,25,RandomForest,0.3297310999914771,0.296875,1500
+42,24,Continuous Retraining,25,ExtraTrees,0.20250869999290444,0.203125,1500
+42,24,Continuous Retraining,25,GradientBoosting,0.44727180000336375,0.390625,1500
+42,24,Continuous Retraining,25,All_Base_Models,0.9795115999877453,0.890625,1500
+42,24,Event-Driven Baseline,10,RandomForest,0.270883799996227,0.265625,1500
+42,24,Event-Driven Baseline,10,ExtraTrees,0.1538150999986101,0.15625,1500
+42,24,Event-Driven Baseline,10,GradientBoosting,0.31223949999548495,0.3125,1500
+42,24,Event-Driven Baseline,10,All_Base_Models,0.7369383999903221,0.734375,1500
+42,24,RAPT (K=8),5,RandomForest,0.1980762000021059,0.203125,500
+42,24,RAPT (K=8),5,ExtraTrees,0.11398489998828154,0.109375,500
+42,24,RAPT (K=8),5,GradientBoosting,0.1761951000080444,0.171875,500
+42,24,RAPT (K=8),5,All_Base_Models,0.48825619999843184,0.484375,500
+42,24,Two-Tier Hybrid RAPT,5,RandomForest,0.2015525000024354,0.203125,500
+42,24,Two-Tier Hybrid RAPT,5,ExtraTrees,0.12660009998944588,0.125,500
+42,24,Two-Tier Hybrid RAPT,5,GradientBoosting,0.16300190000038128,0.171875,500
+42,24,Two-Tier Hybrid RAPT,5,All_Base_Models,0.49115449999226257,0.5,500
+42,25,Continuous Retraining,26,RandomForest,0.28231929999310523,0.28125,1500
+42,25,Continuous Retraining,26,ExtraTrees,0.15167910000309348,0.15625,1500
+42,25,Continuous Retraining,26,GradientBoosting,0.36505330000363756,0.375,1500
+42,25,Continuous Retraining,26,All_Base_Models,0.7990516999998363,0.8125,1500
+42,25,Event-Driven Baseline,11,RandomForest,0.20904180000070482,0.21875,1500
+42,25,Event-Driven Baseline,11,ExtraTrees,0.10641089999990072,0.109375,1500
+42,25,Event-Driven Baseline,11,GradientBoosting,0.2934338999912143,0.28125,1500
+42,25,Event-Driven Baseline,11,All_Base_Models,0.6088865999918198,0.609375,1500
+42,26,Continuous Retraining,27,RandomForest,0.2803243999951519,0.265625,1500
+42,26,Continuous Retraining,27,ExtraTrees,0.1907226999901468,0.1875,1500
+42,26,Continuous Retraining,27,GradientBoosting,0.4151313000038499,0.421875,1500
+42,26,Continuous Retraining,27,All_Base_Models,0.8861783999891486,0.875,1500
+42,26,Event-Driven Baseline,12,RandomForest,0.2942567000136478,0.296875,1500
+42,26,Event-Driven Baseline,12,ExtraTrees,0.16070370000670664,0.15625,1500
+42,26,Event-Driven Baseline,12,GradientBoosting,0.36401250000926666,0.34375,1500
+42,26,Event-Driven Baseline,12,All_Base_Models,0.8189729000296211,0.796875,1500
+42,27,Continuous Retraining,28,RandomForest,0.31699969999317545,0.28125,1500
+42,27,Continuous Retraining,28,ExtraTrees,0.3252005999966059,0.25,1500
+42,27,Continuous Retraining,28,GradientBoosting,0.4698173999931896,0.359375,1500
+42,27,Continuous Retraining,28,All_Base_Models,1.112017699982971,0.890625,1500
+42,27,Event-Driven Baseline,13,RandomForest,0.3310219999984838,0.34375,1500
+42,27,Event-Driven Baseline,13,ExtraTrees,0.2072479999915231,0.1875,1500
+42,27,Event-Driven Baseline,13,GradientBoosting,0.3880060999945272,0.390625,1500
+42,27,Event-Driven Baseline,13,All_Base_Models,0.9262760999845341,0.921875,1500
+42,28,Continuous Retraining,29,RandomForest,0.3040661999984877,0.21875,1500
+42,28,Continuous Retraining,29,ExtraTrees,0.20851979999861214,0.21875,1500
+42,28,Continuous Retraining,29,GradientBoosting,0.41604219999862835,0.40625,1500
+42,28,Continuous Retraining,29,All_Base_Models,0.9286281999957282,0.84375,1500
+42,28,Event-Driven Baseline,14,RandomForest,0.2933346000063466,0.28125,1500
+42,28,Event-Driven Baseline,14,ExtraTrees,0.1964492999977665,0.1875,1500
+42,28,Event-Driven Baseline,14,GradientBoosting,0.42335880000609905,0.40625,1500
+42,28,Event-Driven Baseline,14,All_Base_Models,0.9131427000102121,0.875,1500
+42,29,Continuous Retraining,30,RandomForest,0.37135899999702815,0.359375,1500
+42,29,Continuous Retraining,30,ExtraTrees,0.18829330000153277,0.171875,1500
+42,29,Continuous Retraining,30,GradientBoosting,0.43776749999960884,0.375,1500
+42,29,Continuous Retraining,30,All_Base_Models,0.9974197999981698,0.90625,1500
+42,29,Event-Driven Baseline,15,RandomForest,0.3768530999950599,0.34375,1500
+42,29,Event-Driven Baseline,15,ExtraTrees,0.2070302000065567,0.203125,1500
+42,29,Event-Driven Baseline,15,GradientBoosting,0.5077058000024408,0.375,1500
+42,29,Event-Driven Baseline,15,All_Base_Models,1.0915891000040574,0.921875,1500
+42,30,Continuous Retraining,31,RandomForest,0.34668399998918176,0.296875,1500
+42,30,Continuous Retraining,31,ExtraTrees,0.19312640000134706,0.1875,1500
+42,30,Continuous Retraining,31,GradientBoosting,0.4383603000023868,0.40625,1500
+42,30,Continuous Retraining,31,All_Base_Models,0.9781706999929156,0.890625,1500
+42,30,Event-Driven Baseline,16,RandomForest,0.4164784000022337,0.3125,1500
+42,30,Event-Driven Baseline,16,ExtraTrees,0.1605617000022903,0.171875,1500
+42,30,Event-Driven Baseline,16,GradientBoosting,0.3346602000092389,0.328125,1500
+42,30,Event-Driven Baseline,16,All_Base_Models,0.9117003000137629,0.8125,1500
+42,31,Continuous Retraining,32,RandomForest,0.32290179999836255,0.3125,1500
+42,31,Continuous Retraining,32,ExtraTrees,0.16888959999778308,0.171875,1500
+42,31,Continuous Retraining,32,GradientBoosting,0.37709490000270307,0.375,1500
+42,31,Continuous Retraining,32,All_Base_Models,0.8688862999988487,0.859375,1500
+42,31,Event-Driven Baseline,17,RandomForest,0.29816060001030564,0.3125,1500
+42,31,Event-Driven Baseline,17,ExtraTrees,0.19801079999888316,0.1875,1500
+42,31,Event-Driven Baseline,17,GradientBoosting,0.432031399992411,0.40625,1500
+42,31,Event-Driven Baseline,17,All_Base_Models,0.9282028000015998,0.90625,1500
+42,31,RAPT (K=8),6,RandomForest,0.2753716000006534,0.28125,500
+42,31,RAPT (K=8),6,ExtraTrees,0.1960560000006808,0.171875,500
+42,31,RAPT (K=8),6,GradientBoosting,0.22293489999719895,0.203125,500
+42,31,RAPT (K=8),6,All_Base_Models,0.6943624999985332,0.65625,500
+42,31,Two-Tier Hybrid RAPT,6,RandomForest,0.3035349999991013,0.234375,500
+42,31,Two-Tier Hybrid RAPT,6,ExtraTrees,0.17915149999316782,0.171875,500
+42,31,Two-Tier Hybrid RAPT,6,GradientBoosting,0.26131420000456274,0.265625,500
+42,31,Two-Tier Hybrid RAPT,6,All_Base_Models,0.7440006999968318,0.671875,500
+42,32,Continuous Retraining,33,RandomForest,0.2498623999999836,0.234375,1500
+42,32,Continuous Retraining,33,ExtraTrees,0.1510050999931991,0.140625,1500
+42,32,Continuous Retraining,33,GradientBoosting,0.3411971000023186,0.328125,1500
+42,32,Continuous Retraining,33,All_Base_Models,0.7420645999955013,0.703125,1500
+42,32,Event-Driven Baseline,18,RandomForest,0.2977258000028087,0.296875,1500
+42,32,Event-Driven Baseline,18,ExtraTrees,0.1621247000002768,0.171875,1500
+42,32,Event-Driven Baseline,18,GradientBoosting,0.34441350000270177,0.34375,1500
+42,32,Event-Driven Baseline,18,All_Base_Models,0.8042640000057872,0.8125,1500
+42,33,Continuous Retraining,34,RandomForest,0.2551818999927491,0.265625,1500
+42,33,Continuous Retraining,34,ExtraTrees,0.11922979999508243,0.109375,1500
+42,33,Continuous Retraining,34,GradientBoosting,0.32525569999415893,0.3125,1500
+42,33,Continuous Retraining,34,All_Base_Models,0.6996673999819905,0.6875,1500
+42,33,Event-Driven Baseline,19,RandomForest,0.24140470000565983,0.234375,1500
+42,33,Event-Driven Baseline,19,ExtraTrees,0.14274309999018442,0.140625,1500
+42,33,Event-Driven Baseline,19,GradientBoosting,0.3496097000024747,0.359375,1500
+42,33,Event-Driven Baseline,19,All_Base_Models,0.733757499998319,0.734375,1500
+42,33,RAPT (K=8),7,RandomForest,0.24651049998647068,0.25,500
+42,33,RAPT (K=8),7,ExtraTrees,0.15274180000415072,0.15625,500
+42,33,RAPT (K=8),7,GradientBoosting,0.22681140000349842,0.21875,500
+42,33,RAPT (K=8),7,All_Base_Models,0.6260636999941198,0.625,500
+42,33,Two-Tier Hybrid RAPT,7,RandomForest,0.25269410001055803,0.25,500
+42,33,Two-Tier Hybrid RAPT,7,ExtraTrees,0.14975150000827853,0.140625,500
+42,33,Two-Tier Hybrid RAPT,7,GradientBoosting,0.20890260000305716,0.21875,500
+42,33,Two-Tier Hybrid RAPT,7,All_Base_Models,0.6113482000218937,0.609375,500
+42,34,Continuous Retraining,35,RandomForest,0.30680210000718944,0.3125,1500
+42,34,Continuous Retraining,35,ExtraTrees,0.1941757000022335,0.1875,1500
+42,34,Continuous Retraining,35,GradientBoosting,0.3958341000106884,0.390625,1500
+42,34,Continuous Retraining,35,All_Base_Models,0.8968119000201114,0.890625,1500
+42,34,RAPT (K=8),8,RandomForest,0.23086670000338927,0.234375,500
+42,34,RAPT (K=8),8,ExtraTrees,0.14908180000202265,0.140625,500
+42,34,RAPT (K=8),8,GradientBoosting,0.17375970000284724,0.171875,500
+42,34,RAPT (K=8),8,All_Base_Models,0.5537082000082592,0.546875,500
+42,34,Two-Tier Hybrid RAPT,8,RandomForest,0.2206807999900775,0.21875,500
+42,34,Two-Tier Hybrid RAPT,8,ExtraTrees,0.168611700006295,0.15625,500
+42,34,Two-Tier Hybrid RAPT,8,GradientBoosting,0.14287310000509024,0.140625,500
+42,34,Two-Tier Hybrid RAPT,8,All_Base_Models,0.5321656000014627,0.515625,500
+42,35,Continuous Retraining,36,RandomForest,0.28569669999706093,0.265625,1500
+42,35,Continuous Retraining,36,ExtraTrees,0.16347690000839066,0.171875,1500
+42,35,Continuous Retraining,36,GradientBoosting,0.3282756000116933,0.296875,1500
+42,35,Continuous Retraining,36,All_Base_Models,0.7774492000171449,0.734375,1500
+42,36,Continuous Retraining,37,RandomForest,0.2974291999998968,0.28125,1500
+42,36,Continuous Retraining,37,ExtraTrees,0.22845500000403263,0.234375,1500
+42,36,Continuous Retraining,37,GradientBoosting,0.29397790000075474,0.25,1500
+42,36,Continuous Retraining,37,All_Base_Models,0.8198621000046842,0.765625,1500
+42,37,Continuous Retraining,38,RandomForest,0.2920853999967221,0.296875,1500
+42,37,Continuous Retraining,38,ExtraTrees,0.19418839999707416,0.1875,1500
+42,37,Continuous Retraining,38,GradientBoosting,0.2948335999972187,0.296875,1500
+42,37,Continuous Retraining,38,All_Base_Models,0.781107399991015,0.78125,1500
+42,37,RAPT (K=8),9,RandomForest,0.2308263999875635,0.21875,500
+42,37,RAPT (K=8),9,ExtraTrees,0.16331659999559633,0.171875,500
+42,37,RAPT (K=8),9,GradientBoosting,0.15733410000393633,0.15625,500
+42,37,RAPT (K=8),9,All_Base_Models,0.5514770999870962,0.546875,500
+42,37,Two-Tier Hybrid RAPT,9,RandomForest,0.23325680001289584,0.234375,500
+42,37,Two-Tier Hybrid RAPT,9,ExtraTrees,0.15529559999413323,0.140625,500
+42,37,Two-Tier Hybrid RAPT,9,GradientBoosting,0.16567029998986982,0.15625,500
+42,37,Two-Tier Hybrid RAPT,9,All_Base_Models,0.5542226999968989,0.53125,500
+43,0,Continuous Retraining,1,RandomForest,0.46625340000900906,0.359375,1500
+43,0,Continuous Retraining,1,ExtraTrees,0.2678480999893509,0.171875,1500
+43,0,Continuous Retraining,1,GradientBoosting,0.3992127999954391,0.328125,1500
+43,0,Continuous Retraining,1,All_Base_Models,1.133314299993799,0.859375,1500
+43,0,RAPT (K=8),1,RandomForest,0.34677930000179913,0.28125,500
+43,0,RAPT (K=8),1,ExtraTrees,0.21882470000127796,0.203125,500
+43,0,RAPT (K=8),1,GradientBoosting,0.25971249998838175,0.234375,500
+43,0,RAPT (K=8),1,All_Base_Models,0.8253164999914588,0.71875,500
+43,0,Two-Tier Hybrid RAPT,1,RandomForest,0.2732181000028504,0.265625,500
+43,0,Two-Tier Hybrid RAPT,1,ExtraTrees,0.20192940000561066,0.15625,500
+43,0,Two-Tier Hybrid RAPT,1,GradientBoosting,0.3386517000035383,0.265625,500
+43,0,Two-Tier Hybrid RAPT,1,All_Base_Models,0.8137992000119993,0.6875,500
+43,1,Continuous Retraining,2,RandomForest,0.36670800000138115,0.28125,1500
+43,1,Continuous Retraining,2,ExtraTrees,0.3011374999914551,0.265625,1500
+43,1,Continuous Retraining,2,GradientBoosting,0.5107628999976441,0.421875,1500
+43,1,Continuous Retraining,2,All_Base_Models,1.1786083999904804,0.96875,1500
+43,1,Event-Driven Baseline,1,RandomForest,0.3506861000059871,0.328125,1500
+43,1,Event-Driven Baseline,1,ExtraTrees,0.21109129999240395,0.21875,1500
+43,1,Event-Driven Baseline,1,GradientBoosting,0.4284946999978274,0.421875,1500
+43,1,Event-Driven Baseline,1,All_Base_Models,0.9902720999962185,0.96875,1500
+43,2,Continuous Retraining,3,RandomForest,0.3142245000053663,0.3125,1500
+43,2,Continuous Retraining,3,ExtraTrees,0.20101740000245627,0.203125,1500
+43,2,Continuous Retraining,3,GradientBoosting,0.3973157000000356,0.390625,1500
+43,2,Continuous Retraining,3,All_Base_Models,0.9125576000078581,0.90625,1500
+43,3,Continuous Retraining,4,RandomForest,0.3463097000058042,0.34375,1500
+43,3,Continuous Retraining,4,ExtraTrees,0.20756570000958163,0.1875,1500
+43,3,Continuous Retraining,4,GradientBoosting,0.3805718999938108,0.375,1500
+43,3,Continuous Retraining,4,All_Base_Models,0.9344473000091966,0.90625,1500
+43,4,Continuous Retraining,5,RandomForest,0.32491949999530334,0.265625,1500
+43,4,Continuous Retraining,5,ExtraTrees,0.15689139999449253,0.15625,1500
+43,4,Continuous Retraining,5,GradientBoosting,0.4171258999995189,0.3125,1500
+43,4,Continuous Retraining,5,All_Base_Models,0.8989367999893147,0.734375,1500
+43,5,Continuous Retraining,6,RandomForest,0.3787302999990061,0.359375,1500
+43,5,Continuous Retraining,6,ExtraTrees,0.1868557999987388,0.1875,1500
+43,5,Continuous Retraining,6,GradientBoosting,0.40518030000384897,0.390625,1500
+43,5,Continuous Retraining,6,All_Base_Models,0.9707664000015939,0.9375,1500
+43,6,Continuous Retraining,7,RandomForest,0.4172478999971645,0.375,1500
+43,6,Continuous Retraining,7,ExtraTrees,0.24568219999491703,0.21875,1500
+43,6,Continuous Retraining,7,GradientBoosting,0.40783540000848006,0.328125,1500
+43,6,Continuous Retraining,7,All_Base_Models,1.0707655000005616,0.921875,1500
+43,7,Continuous Retraining,8,RandomForest,0.3051765999989584,0.328125,1500
+43,7,Continuous Retraining,8,ExtraTrees,0.22607440000865608,0.203125,1500
+43,7,Continuous Retraining,8,GradientBoosting,0.40381050000723917,0.390625,1500
+43,7,Continuous Retraining,8,All_Base_Models,0.9350615000148537,0.921875,1500
+43,8,Continuous Retraining,9,RandomForest,0.36181760000181384,0.328125,1500
+43,8,Continuous Retraining,9,ExtraTrees,0.23183459999563638,0.21875,1500
+43,8,Continuous Retraining,9,GradientBoosting,0.6143763000000035,0.375,1500
+43,8,Continuous Retraining,9,All_Base_Models,1.2080284999974538,0.921875,1500
+43,9,Continuous Retraining,10,RandomForest,0.3063934999954654,0.296875,1500
+43,9,Continuous Retraining,10,ExtraTrees,0.20818609998968896,0.1875,1500
+43,9,Continuous Retraining,10,GradientBoosting,0.34382880000339355,0.328125,1500
+43,9,Continuous Retraining,10,All_Base_Models,0.8584083999885479,0.8125,1500
+43,10,Continuous Retraining,11,RandomForest,0.34049709999817424,0.28125,1500
+43,10,Continuous Retraining,11,ExtraTrees,0.1999155000085011,0.1875,1500
+43,10,Continuous Retraining,11,GradientBoosting,0.371863399996073,0.359375,1500
+43,10,Continuous Retraining,11,All_Base_Models,0.9122760000027483,0.828125,1500
+43,11,Continuous Retraining,12,RandomForest,0.2787315000023227,0.25,1500
+43,11,Continuous Retraining,12,ExtraTrees,0.2073571999935666,0.203125,1500
+43,11,Continuous Retraining,12,GradientBoosting,0.31555040000239387,0.3125,1500
+43,11,Continuous Retraining,12,All_Base_Models,0.8016390999982832,0.765625,1500
+43,11,RAPT (K=8),2,RandomForest,0.2523875000042608,0.25,500
+43,11,RAPT (K=8),2,ExtraTrees,0.18556949999765493,0.171875,500
+43,11,RAPT (K=8),2,GradientBoosting,0.25286429999687243,0.234375,500
+43,11,RAPT (K=8),2,All_Base_Models,0.6908212999987882,0.65625,500
+43,11,Two-Tier Hybrid RAPT,2,RandomForest,0.23760989999573212,0.203125,500
+43,11,Two-Tier Hybrid RAPT,2,ExtraTrees,0.1648476000118535,0.140625,500
+43,11,Two-Tier Hybrid RAPT,2,GradientBoosting,0.33377240000118036,0.21875,500
+43,11,Two-Tier Hybrid RAPT,2,All_Base_Models,0.736229900008766,0.5625,500
+43,12,Continuous Retraining,13,RandomForest,0.31106910000380594,0.3125,1500
+43,12,Continuous Retraining,13,ExtraTrees,0.1569186999986414,0.15625,1500
+43,12,Continuous Retraining,13,GradientBoosting,0.36170680000213906,0.34375,1500
+43,12,Continuous Retraining,13,All_Base_Models,0.8296946000045864,0.8125,1500
+43,12,RAPT (K=8),3,RandomForest,0.2690689000010025,0.25,500
+43,12,RAPT (K=8),3,ExtraTrees,0.18133999999554362,0.171875,500
+43,12,RAPT (K=8),3,GradientBoosting,0.23262049999902956,0.1875,500
+43,12,RAPT (K=8),3,All_Base_Models,0.6830293999955757,0.609375,500
+43,12,Two-Tier Hybrid RAPT,3,RandomForest,0.2711756999924546,0.234375,500
+43,12,Two-Tier Hybrid RAPT,3,ExtraTrees,0.19181989999196958,0.171875,500
+43,12,Two-Tier Hybrid RAPT,3,GradientBoosting,0.25029799999902025,0.203125,500
+43,12,Two-Tier Hybrid RAPT,3,All_Base_Models,0.7132935999834444,0.609375,500
+43,13,Continuous Retraining,14,RandomForest,0.31049580000399146,0.296875,1500
+43,13,Continuous Retraining,14,ExtraTrees,0.2323510999995051,0.1875,1500
+43,13,Continuous Retraining,14,GradientBoosting,0.3997693999990588,0.3125,1500
+43,13,Continuous Retraining,14,All_Base_Models,0.9426163000025554,0.796875,1500
+43,13,Event-Driven Baseline,2,RandomForest,0.29002309999486897,0.28125,1500
+43,13,Event-Driven Baseline,2,ExtraTrees,0.23081009999441449,0.15625,1500
+43,13,Event-Driven Baseline,2,GradientBoosting,0.3439171000063652,0.3125,1500
+43,13,Event-Driven Baseline,2,All_Base_Models,0.8647502999956487,0.75,1500
+43,14,Continuous Retraining,15,RandomForest,0.39952679999987595,0.359375,1500
+43,14,Continuous Retraining,15,ExtraTrees,0.21806010000000242,0.21875,1500
+43,14,Continuous Retraining,15,GradientBoosting,0.37258440000005066,0.359375,1500
+43,14,Continuous Retraining,15,All_Base_Models,0.990171299999929,0.9375,1500
+43,15,Continuous Retraining,16,RandomForest,0.31921639999200124,0.34375,1500
+43,15,Continuous Retraining,16,ExtraTrees,0.18682659999467432,0.1875,1500
+43,15,Continuous Retraining,16,GradientBoosting,0.3727392000000691,0.3125,1500
+43,15,Continuous Retraining,16,All_Base_Models,0.8787821999867447,0.84375,1500
+43,15,Event-Driven Baseline,3,RandomForest,0.43756850001227576,0.328125,1500
+43,15,Event-Driven Baseline,3,ExtraTrees,0.21548830000392627,0.171875,1500
+43,15,Event-Driven Baseline,3,GradientBoosting,0.7668229999981122,0.296875,1500
+43,15,Event-Driven Baseline,3,All_Base_Models,1.4198798000143142,0.796875,1500
+43,16,Continuous Retraining,17,RandomForest,0.4244842000043718,0.296875,1500
+43,16,Continuous Retraining,17,ExtraTrees,0.19640699999581557,0.171875,1500
+43,16,Continuous Retraining,17,GradientBoosting,0.4010983999905875,0.390625,1500
+43,16,Continuous Retraining,17,All_Base_Models,1.0219895999907749,0.859375,1500
+43,17,Continuous Retraining,18,RandomForest,0.5333157999994,0.328125,1500
+43,17,Continuous Retraining,18,ExtraTrees,0.30816020000202116,0.21875,1500
+43,17,Continuous Retraining,18,GradientBoosting,0.4648367000045255,0.390625,1500
+43,17,Continuous Retraining,18,All_Base_Models,1.3063127000059467,0.9375,1500
+43,17,Event-Driven Baseline,4,RandomForest,0.4411097999982303,0.40625,1500
+43,17,Event-Driven Baseline,4,ExtraTrees,0.2047896000003675,0.1875,1500
+43,17,Event-Driven Baseline,4,GradientBoosting,0.31589319999329746,0.3125,1500
+43,17,Event-Driven Baseline,4,All_Base_Models,0.9617925999918953,0.90625,1500
+43,17,RAPT (K=8),4,RandomForest,0.2937619000003906,0.234375,500
+43,17,RAPT (K=8),4,ExtraTrees,0.1882608000014443,0.15625,500
+43,17,RAPT (K=8),4,GradientBoosting,0.27488650000304915,0.203125,500
+43,17,RAPT (K=8),4,All_Base_Models,0.756909200004884,0.59375,500
+43,17,Two-Tier Hybrid RAPT,4,RandomForest,0.2938328000018373,0.234375,500
+43,17,Two-Tier Hybrid RAPT,4,ExtraTrees,0.22044580000510905,0.15625,500
+43,17,Two-Tier Hybrid RAPT,4,GradientBoosting,0.27131690000533126,0.265625,500
+43,17,Two-Tier Hybrid RAPT,4,All_Base_Models,0.7855955000122776,0.65625,500
+43,18,Continuous Retraining,19,RandomForest,0.3380005999933928,0.3125,1500
+43,18,Continuous Retraining,19,ExtraTrees,0.2575643000018317,0.21875,1500
+43,18,Continuous Retraining,19,GradientBoosting,0.4352863000094658,0.359375,1500
+43,18,Continuous Retraining,19,All_Base_Models,1.0308512000046903,0.890625,1500
+43,18,Event-Driven Baseline,5,RandomForest,0.3743886000011116,0.34375,1500
+43,18,Event-Driven Baseline,5,ExtraTrees,0.2184800999966683,0.1875,1500
+43,18,Event-Driven Baseline,5,GradientBoosting,0.42241670000657905,0.40625,1500
+43,18,Event-Driven Baseline,5,All_Base_Models,1.015285400004359,0.9375,1500
+43,19,Continuous Retraining,20,RandomForest,0.41030180000234395,0.328125,1500
+43,19,Continuous Retraining,20,ExtraTrees,0.2874694000056479,0.1875,1500
+43,19,Continuous Retraining,20,GradientBoosting,0.5499656000029063,0.25,1500
+43,19,Continuous Retraining,20,All_Base_Models,1.2477368000108982,0.765625,1500
+43,19,Event-Driven Baseline,6,RandomForest,0.6092191999923671,0.328125,1500
+43,19,Event-Driven Baseline,6,ExtraTrees,0.34342560000368394,0.265625,1500
+43,19,Event-Driven Baseline,6,GradientBoosting,0.5430793000123231,0.390625,1500
+43,19,Event-Driven Baseline,6,All_Base_Models,1.495724100008374,0.984375,1500
+43,20,Continuous Retraining,21,RandomForest,0.5300051999947755,0.328125,1500
+43,20,Continuous Retraining,21,ExtraTrees,0.2520814000017708,0.21875,1500
+43,20,Continuous Retraining,21,GradientBoosting,0.4799691999942297,0.484375,1500
+43,20,Continuous Retraining,21,All_Base_Models,1.262055799990776,1.03125,1500
+43,20,Event-Driven Baseline,7,RandomForest,0.39481690000684466,0.375,1500
+43,20,Event-Driven Baseline,7,ExtraTrees,0.21933930000523105,0.203125,1500
+43,20,Event-Driven Baseline,7,GradientBoosting,0.41588359999877866,0.375,1500
+43,20,Event-Driven Baseline,7,All_Base_Models,1.0300398000108544,0.953125,1500
+43,21,Continuous Retraining,22,RandomForest,0.3714493000006769,0.328125,1500
+43,21,Continuous Retraining,22,ExtraTrees,0.226884899995639,0.203125,1500
+43,21,Continuous Retraining,22,GradientBoosting,0.4040109999914421,0.390625,1500
+43,21,Continuous Retraining,22,All_Base_Models,1.002345199987758,0.921875,1500
+43,21,Event-Driven Baseline,8,RandomForest,0.3380819000012707,0.328125,1500
+43,21,Event-Driven Baseline,8,ExtraTrees,0.22923939999600407,0.1875,1500
+43,21,Event-Driven Baseline,8,GradientBoosting,0.4230448000016622,0.40625,1500
+43,21,Event-Driven Baseline,8,All_Base_Models,0.990366099998937,0.921875,1500
+43,22,Continuous Retraining,23,RandomForest,0.35409740000613965,0.359375,1500
+43,22,Continuous Retraining,23,ExtraTrees,0.19633799999428447,0.171875,1500
+43,22,Continuous Retraining,23,GradientBoosting,0.4129895999940345,0.421875,1500
+43,22,Continuous Retraining,23,All_Base_Models,0.9634249999944586,0.953125,1500
+43,22,Event-Driven Baseline,9,RandomForest,0.3901982999959728,0.375,1500
+43,22,Event-Driven Baseline,9,ExtraTrees,0.22388910000154283,0.21875,1500
+43,22,Event-Driven Baseline,9,GradientBoosting,0.3989658999926178,0.40625,1500
+43,22,Event-Driven Baseline,9,All_Base_Models,1.0130532999901334,1.0,1500
+43,23,Continuous Retraining,24,RandomForest,0.3606049000081839,0.3125,1500
+43,23,Continuous Retraining,24,ExtraTrees,0.2286084000079427,0.21875,1500
+43,23,Continuous Retraining,24,GradientBoosting,0.40012900000147056,0.40625,1500
+43,23,Continuous Retraining,24,All_Base_Models,0.9893423000175972,0.9375,1500
+43,23,Event-Driven Baseline,10,RandomForest,0.33939189999364316,0.296875,1500
+43,23,Event-Driven Baseline,10,ExtraTrees,0.1484275999973761,0.140625,1500
+43,23,Event-Driven Baseline,10,GradientBoosting,0.425773199996911,0.3125,1500
+43,23,Event-Driven Baseline,10,All_Base_Models,0.9135926999879302,0.75,1500
+43,24,Continuous Retraining,25,RandomForest,0.19863909999548923,0.1875,1500
+43,24,Continuous Retraining,25,ExtraTrees,0.12607769999885932,0.125,1500
+43,24,Continuous Retraining,25,GradientBoosting,0.4225513999990653,0.328125,1500
+43,24,Continuous Retraining,25,All_Base_Models,0.7472681999934139,0.640625,1500
+43,24,Event-Driven Baseline,11,RandomForest,0.3502605000103358,0.375,1500
+43,24,Event-Driven Baseline,11,ExtraTrees,0.20534670000779442,0.203125,1500
+43,24,Event-Driven Baseline,11,GradientBoosting,0.4418361999996705,0.421875,1500
+43,24,Event-Driven Baseline,11,All_Base_Models,0.9974434000178007,1.0,1500
+43,24,RAPT (K=8),5,RandomForest,0.2895043999888003,0.296875,500
+43,24,RAPT (K=8),5,ExtraTrees,0.21025200000440236,0.203125,500
+43,24,RAPT (K=8),5,GradientBoosting,0.2766624000068987,0.25,500
+43,24,RAPT (K=8),5,All_Base_Models,0.7764188000001013,0.75,500
+43,24,Two-Tier Hybrid RAPT,5,RandomForest,0.32809730000735726,0.265625,500
+43,24,Two-Tier Hybrid RAPT,5,ExtraTrees,0.20387949999712873,0.171875,500
+43,24,Two-Tier Hybrid RAPT,5,GradientBoosting,0.27065520000178367,0.265625,500
+43,24,Two-Tier Hybrid RAPT,5,All_Base_Models,0.8026320000062697,0.703125,500
+43,25,Continuous Retraining,26,RandomForest,0.6184540999965975,0.328125,1500
+43,25,Continuous Retraining,26,ExtraTrees,0.2297258999897167,0.234375,1500
+43,25,Continuous Retraining,26,GradientBoosting,0.5384182999987388,0.375,1500
+43,25,Continuous Retraining,26,All_Base_Models,1.386598299985053,0.9375,1500
+43,25,Event-Driven Baseline,12,RandomForest,0.32502770000428427,0.3125,1500
+43,25,Event-Driven Baseline,12,ExtraTrees,0.21018130000447854,0.203125,1500
+43,25,Event-Driven Baseline,12,GradientBoosting,0.3647179999970831,0.359375,1500
+43,25,Event-Driven Baseline,12,All_Base_Models,0.8999270000058459,0.875,1500
+43,26,Continuous Retraining,27,RandomForest,0.3426365000050282,0.3125,1500
+43,26,Continuous Retraining,27,ExtraTrees,0.20982430000731256,0.21875,1500
+43,26,Continuous Retraining,27,GradientBoosting,0.4205382000072859,0.40625,1500
+43,26,Continuous Retraining,27,All_Base_Models,0.9729990000196267,0.9375,1500
+43,26,Event-Driven Baseline,13,RandomForest,0.7802714999997988,0.390625,1500
+43,26,Event-Driven Baseline,13,ExtraTrees,0.2865708000026643,0.1875,1500
+43,26,Event-Driven Baseline,13,GradientBoosting,0.2952032000030158,0.21875,1500
+43,26,Event-Driven Baseline,13,All_Base_Models,1.362045500005479,0.796875,1500
+43,27,Continuous Retraining,28,RandomForest,0.14331860000675078,0.140625,1500
+43,27,Continuous Retraining,28,ExtraTrees,0.10094889999891166,0.109375,1500
+43,27,Continuous Retraining,28,GradientBoosting,0.21584430000802968,0.15625,1500
+43,27,Continuous Retraining,28,All_Base_Models,0.4601118000136921,0.40625,1500
+43,27,Event-Driven Baseline,14,RandomForest,0.14411760000803042,0.125,1500
+43,27,Event-Driven Baseline,14,ExtraTrees,0.4012051000026986,0.1875,1500
+43,27,Event-Driven Baseline,14,GradientBoosting,0.4861883999983547,0.34375,1500
+43,27,Event-Driven Baseline,14,All_Base_Models,1.0315111000090837,0.65625,1500
+43,28,Continuous Retraining,29,RandomForest,0.17137619999994058,0.15625,1500
+43,28,Continuous Retraining,29,ExtraTrees,0.11249820000375621,0.0625,1500
+43,28,Continuous Retraining,29,GradientBoosting,0.3581382999982452,0.171875,1500
+43,28,Continuous Retraining,29,All_Base_Models,0.642012700001942,0.390625,1500
+43,28,Event-Driven Baseline,15,RandomForest,0.32350769999902695,0.125,1500
+43,28,Event-Driven Baseline,15,ExtraTrees,0.09707890001300257,0.078125,1500
+43,28,Event-Driven Baseline,15,GradientBoosting,0.14282809999713209,0.140625,1500
+43,28,Event-Driven Baseline,15,All_Base_Models,0.5634147000091616,0.34375,1500
+43,29,Continuous Retraining,30,RandomForest,0.13009829999646172,0.125,1500
+43,29,Continuous Retraining,30,ExtraTrees,0.0776622999983374,0.078125,1500
+43,29,Continuous Retraining,30,GradientBoosting,0.13982499999110587,0.125,1500
+43,29,Continuous Retraining,30,All_Base_Models,0.347585599985905,0.328125,1500
+43,29,Event-Driven Baseline,16,RandomForest,0.10175029998936225,0.09375,1500
+43,29,Event-Driven Baseline,16,ExtraTrees,0.06581690000894014,0.0625,1500
+43,29,Event-Driven Baseline,16,GradientBoosting,0.13480270000582095,0.140625,1500
+43,29,Event-Driven Baseline,16,All_Base_Models,0.30236990000412334,0.296875,1500
+43,30,Continuous Retraining,31,RandomForest,0.707037100000889,0.125,1500
+43,30,Continuous Retraining,31,ExtraTrees,0.15600109999650158,0.125,1500
+43,30,Continuous Retraining,31,GradientBoosting,0.20184880000306293,0.140625,1500
+43,30,Continuous Retraining,31,All_Base_Models,1.0648870000004536,0.390625,1500
+43,30,Event-Driven Baseline,17,RandomForest,0.3197336000012001,0.046875,1500
+43,30,Event-Driven Baseline,17,ExtraTrees,0.1154750999994576,0.09375,1500
+43,30,Event-Driven Baseline,17,GradientBoosting,0.26461399999971036,0.15625,1500
+43,30,Event-Driven Baseline,17,All_Base_Models,0.6998227000003681,0.296875,1500
+43,31,Continuous Retraining,32,RandomForest,0.11217600000964012,0.125,1500
+43,31,Continuous Retraining,32,ExtraTrees,0.07284120000258554,0.0625,1500
+43,31,Continuous Retraining,32,GradientBoosting,0.1502669000037713,0.140625,1500
+43,31,Continuous Retraining,32,All_Base_Models,0.33528410001599696,0.328125,1500
+43,31,Event-Driven Baseline,18,RandomForest,0.10857729999406729,0.09375,1500
+43,31,Event-Driven Baseline,18,ExtraTrees,0.07942460000049323,0.0625,1500
+43,31,Event-Driven Baseline,18,GradientBoosting,0.3718704000057187,0.171875,1500
+43,31,Event-Driven Baseline,18,All_Base_Models,0.5598723000002792,0.328125,1500
+43,31,RAPT (K=8),6,RandomForest,0.08734610000101384,0.078125,500
+43,31,RAPT (K=8),6,ExtraTrees,0.059762699995189905,0.046875,500
+43,31,RAPT (K=8),6,GradientBoosting,0.07933290000073612,0.078125,500
+43,31,RAPT (K=8),6,All_Base_Models,0.22644169999693986,0.203125,500
+43,31,Two-Tier Hybrid RAPT,6,RandomForest,0.0806280999968294,0.078125,500
+43,31,Two-Tier Hybrid RAPT,6,ExtraTrees,0.05909530000644736,0.0625,500
+43,31,Two-Tier Hybrid RAPT,6,GradientBoosting,0.079386000012164,0.078125,500
+43,31,Two-Tier Hybrid RAPT,6,All_Base_Models,0.21910940001544077,0.21875,500
+43,32,Continuous Retraining,33,RandomForest,0.10946269999840297,0.109375,1500
+43,32,Continuous Retraining,33,ExtraTrees,0.07208229998650495,0.078125,1500
+43,32,Continuous Retraining,33,GradientBoosting,0.155099199997494,0.15625,1500
+43,32,Continuous Retraining,33,All_Base_Models,0.3366441999824019,0.34375,1500
+43,32,Event-Driven Baseline,19,RandomForest,0.08688099999562837,0.09375,1500
+43,32,Event-Driven Baseline,19,ExtraTrees,0.06450050001149066,0.0625,1500
+43,32,Event-Driven Baseline,19,GradientBoosting,0.20894539999426343,0.140625,1500
+43,32,Event-Driven Baseline,19,All_Base_Models,0.36032690000138246,0.296875,1500
+43,33,Continuous Retraining,34,RandomForest,0.10005750000709668,0.109375,1500
+43,33,Continuous Retraining,34,ExtraTrees,0.05828830000245944,0.046875,1500
+43,33,Continuous Retraining,34,GradientBoosting,0.16577580000739545,0.171875,1500
+43,33,Continuous Retraining,34,All_Base_Models,0.32412160001695156,0.328125,1500
+43,33,Event-Driven Baseline,20,RandomForest,0.11727529999916442,0.109375,1500
+43,33,Event-Driven Baseline,20,ExtraTrees,0.08705249999184161,0.078125,1500
+43,33,Event-Driven Baseline,20,GradientBoosting,0.1889424999972107,0.1875,1500
+43,33,Event-Driven Baseline,20,All_Base_Models,0.3932702999882167,0.375,1500
+43,33,RAPT (K=8),7,RandomForest,0.09082080000371207,0.09375,500
+43,33,RAPT (K=8),7,ExtraTrees,0.05517599999438971,0.046875,500
+43,33,RAPT (K=8),7,GradientBoosting,0.059842200003913604,0.0625,500
+43,33,RAPT (K=8),7,All_Base_Models,0.20583900000201538,0.203125,500
+43,33,Two-Tier Hybrid RAPT,7,RandomForest,0.12767330001224764,0.09375,500
+43,33,Two-Tier Hybrid RAPT,7,ExtraTrees,0.06842319999122992,0.0625,500
+43,33,Two-Tier Hybrid RAPT,7,GradientBoosting,0.05292500001087319,0.0625,500
+43,33,Two-Tier Hybrid RAPT,7,All_Base_Models,0.24902150001435075,0.21875,500
+43,34,Continuous Retraining,35,RandomForest,0.10308169999916572,0.109375,1500
+43,34,Continuous Retraining,35,ExtraTrees,0.056283900004928,0.03125,1500
+43,34,Continuous Retraining,35,GradientBoosting,0.11365120000846218,0.125,1500
+43,34,Continuous Retraining,35,All_Base_Models,0.2730168000125559,0.265625,1500
+43,34,RAPT (K=8),8,RandomForest,0.11751149999327026,0.09375,500
+43,34,RAPT (K=8),8,ExtraTrees,0.047880300000542775,0.046875,500
+43,34,RAPT (K=8),8,GradientBoosting,0.04741159999684896,0.046875,500
+43,34,RAPT (K=8),8,All_Base_Models,0.212803399990662,0.1875,500
+43,34,Two-Tier Hybrid RAPT,8,RandomForest,0.06140449999656994,0.0625,500
+43,34,Two-Tier Hybrid RAPT,8,ExtraTrees,0.033834500005468726,0.03125,500
+43,34,Two-Tier Hybrid RAPT,8,GradientBoosting,0.04537180000625085,0.046875,500
+43,34,Two-Tier Hybrid RAPT,8,All_Base_Models,0.14061080000828952,0.140625,500
+43,35,Continuous Retraining,36,RandomForest,0.12507690000347793,0.109375,1500
+43,35,Continuous Retraining,36,ExtraTrees,0.17139790000510402,0.125,1500
+43,35,Continuous Retraining,36,GradientBoosting,0.08887269999831915,0.09375,1500
+43,35,Continuous Retraining,36,All_Base_Models,0.3853475000069011,0.328125,1500
+43,36,Continuous Retraining,37,RandomForest,0.09221129999787081,0.078125,1500
+43,36,Continuous Retraining,37,ExtraTrees,0.06307460000971332,0.0625,1500
+43,36,Continuous Retraining,37,GradientBoosting,0.08162139999330975,0.078125,1500
+43,36,Continuous Retraining,37,All_Base_Models,0.23690730000089388,0.21875,1500
+43,37,Continuous Retraining,38,RandomForest,0.12262180000834633,0.125,1500
+43,37,Continuous Retraining,38,ExtraTrees,0.07748330000322312,0.0625,1500
+43,37,Continuous Retraining,38,GradientBoosting,0.09479380000266246,0.109375,1500
+43,37,Continuous Retraining,38,All_Base_Models,0.2948989000142319,0.296875,1500
+43,37,RAPT (K=8),9,RandomForest,0.09126419998938218,0.078125,500
+43,37,RAPT (K=8),9,ExtraTrees,0.03604220000852365,0.046875,500
+43,37,RAPT (K=8),9,GradientBoosting,0.06277180000324734,0.0625,500
+43,37,RAPT (K=8),9,All_Base_Models,0.19007820000115316,0.1875,500
+43,37,Two-Tier Hybrid RAPT,9,RandomForest,0.08750599999621045,0.078125,500
+43,37,Two-Tier Hybrid RAPT,9,ExtraTrees,0.06320509999932256,0.046875,500
+43,37,Two-Tier Hybrid RAPT,9,GradientBoosting,0.05340770000475459,0.046875,500
+43,37,Two-Tier Hybrid RAPT,9,All_Base_Models,0.2041188000002876,0.171875,500
+44,0,Continuous Retraining,1,RandomForest,0.08394240000052378,0.078125,1500
+44,0,Continuous Retraining,1,ExtraTrees,0.04330459999619052,0.046875,1500
+44,0,Continuous Retraining,1,GradientBoosting,0.15524510000250302,0.171875,1500
+44,0,Continuous Retraining,1,All_Base_Models,0.2824920999992173,0.296875,1500
+44,0,RAPT (K=8),1,RandomForest,0.11412030000064988,0.125,500
+44,0,RAPT (K=8),1,ExtraTrees,0.047074300004169345,0.046875,500
+44,0,RAPT (K=8),1,GradientBoosting,0.08785539999371395,0.078125,500
+44,0,RAPT (K=8),1,All_Base_Models,0.24904999999853317,0.25,500
+44,0,Two-Tier Hybrid RAPT,1,RandomForest,0.09282289999828208,0.0625,500
+44,0,Two-Tier Hybrid RAPT,1,ExtraTrees,0.05194449999544304,0.03125,500
+44,0,Two-Tier Hybrid RAPT,1,GradientBoosting,0.06793319999997038,0.078125,500
+44,0,Two-Tier Hybrid RAPT,1,All_Base_Models,0.2127005999936955,0.171875,500
+44,1,Continuous Retraining,2,RandomForest,0.12921689999348018,0.125,1500
+44,1,Continuous Retraining,2,ExtraTrees,0.08471169999393169,0.078125,1500
+44,1,Continuous Retraining,2,GradientBoosting,0.17854860000079498,0.15625,1500
+44,1,Continuous Retraining,2,All_Base_Models,0.39247719998820685,0.359375,1500
+44,1,Event-Driven Baseline,1,RandomForest,0.11348489999363665,0.109375,1500
+44,1,Event-Driven Baseline,1,ExtraTrees,0.05095430000801571,0.046875,1500
+44,1,Event-Driven Baseline,1,GradientBoosting,0.12478110000665765,0.125,1500
+44,1,Event-Driven Baseline,1,All_Base_Models,0.28922030000831,0.28125,1500
+44,2,Continuous Retraining,3,RandomForest,0.14158599999791477,0.140625,1500
+44,2,Continuous Retraining,3,ExtraTrees,0.07523459999356419,0.078125,1500
+44,2,Continuous Retraining,3,GradientBoosting,0.13497660000575706,0.15625,1500
+44,2,Continuous Retraining,3,All_Base_Models,0.351797199997236,0.375,1500
+44,3,Continuous Retraining,4,RandomForest,0.1072993999987375,0.109375,1500
+44,3,Continuous Retraining,4,ExtraTrees,0.0647296999959508,0.046875,1500
+44,3,Continuous Retraining,4,GradientBoosting,0.12411319999955595,0.125,1500
+44,3,Continuous Retraining,4,All_Base_Models,0.29614229999424424,0.28125,1500
+44,4,Continuous Retraining,5,RandomForest,0.10242080000170972,0.109375,1500
+44,4,Continuous Retraining,5,ExtraTrees,0.09544789999199566,0.078125,1500
+44,4,Continuous Retraining,5,GradientBoosting,0.13661620000493713,0.140625,1500
+44,4,Continuous Retraining,5,All_Base_Models,0.3344848999986425,0.328125,1500
+44,5,Continuous Retraining,6,RandomForest,0.1452527000074042,0.140625,1500
+44,5,Continuous Retraining,6,ExtraTrees,0.061915400001453236,0.046875,1500
+44,5,Continuous Retraining,6,GradientBoosting,0.15787249999993946,0.15625,1500
+44,5,Continuous Retraining,6,All_Base_Models,0.3650406000087969,0.34375,1500
+44,6,Continuous Retraining,7,RandomForest,0.1302438999991864,0.140625,1500
+44,6,Continuous Retraining,7,ExtraTrees,0.036441000003833324,0.046875,1500
+44,6,Continuous Retraining,7,GradientBoosting,0.09940310000092722,0.09375,1500
+44,6,Continuous Retraining,7,All_Base_Models,0.26608800000394695,0.28125,1500
+44,7,Continuous Retraining,8,RandomForest,0.09307279999484308,0.09375,1500
+44,7,Continuous Retraining,8,ExtraTrees,0.05189129999780562,0.0625,1500
+44,7,Continuous Retraining,8,GradientBoosting,0.12982059999194462,0.125,1500
+44,7,Continuous Retraining,8,All_Base_Models,0.2747846999845933,0.28125,1500
+44,8,Continuous Retraining,9,RandomForest,0.1293790999916382,0.125,1500
+44,8,Continuous Retraining,9,ExtraTrees,0.057355799988727085,0.046875,1500
+44,8,Continuous Retraining,9,GradientBoosting,0.13972350000403821,0.140625,1500
+44,8,Continuous Retraining,9,All_Base_Models,0.3264583999844035,0.3125,1500
+44,9,Continuous Retraining,10,RandomForest,0.09379830000398215,0.09375,1500
+44,9,Continuous Retraining,10,ExtraTrees,0.060359200011589564,0.0625,1500
+44,9,Continuous Retraining,10,GradientBoosting,0.10862500000803266,0.109375,1500
+44,9,Continuous Retraining,10,All_Base_Models,0.26278250002360437,0.265625,1500
+44,10,Continuous Retraining,11,RandomForest,0.1396231000107946,0.140625,1500
+44,10,Continuous Retraining,11,ExtraTrees,0.06082439998863265,0.0625,1500
+44,10,Continuous Retraining,11,GradientBoosting,0.11292249998950865,0.109375,1500
+44,10,Continuous Retraining,11,All_Base_Models,0.3133699999889359,0.3125,1500
+44,11,Continuous Retraining,12,RandomForest,0.07445869999355637,0.0625,1500
+44,11,Continuous Retraining,12,ExtraTrees,0.05533659999491647,0.0625,1500
+44,11,Continuous Retraining,12,GradientBoosting,0.1227019000070868,0.125,1500
+44,11,Continuous Retraining,12,All_Base_Models,0.25249719999555964,0.25,1500
+44,11,RAPT (K=8),2,RandomForest,0.073644999996759,0.078125,500
+44,11,RAPT (K=8),2,ExtraTrees,0.03978770000685472,0.03125,500
+44,11,RAPT (K=8),2,GradientBoosting,0.05943860000115819,0.0625,500
+44,11,RAPT (K=8),2,All_Base_Models,0.1728713000047719,0.171875,500
+44,11,Two-Tier Hybrid RAPT,2,RandomForest,0.07165580001310445,0.078125,500
+44,11,Two-Tier Hybrid RAPT,2,ExtraTrees,0.03976800000236835,0.03125,500
+44,11,Two-Tier Hybrid RAPT,2,GradientBoosting,0.04277869999350514,0.046875,500
+44,11,Two-Tier Hybrid RAPT,2,All_Base_Models,0.15420250000897795,0.15625,500
+44,12,Continuous Retraining,13,RandomForest,0.10659880000457633,0.109375,1500
+44,12,Continuous Retraining,13,ExtraTrees,0.05469029999221675,0.0625,1500
+44,12,Continuous Retraining,13,GradientBoosting,0.10141920000023674,0.09375,1500
+44,12,Continuous Retraining,13,All_Base_Models,0.2627082999970298,0.265625,1500
+44,12,RAPT (K=8),3,RandomForest,0.07573039999988396,0.078125,500
+44,12,RAPT (K=8),3,ExtraTrees,0.04189000000769738,0.046875,500
+44,12,RAPT (K=8),3,GradientBoosting,0.055291899989242665,0.046875,500
+44,12,RAPT (K=8),3,All_Base_Models,0.172912299996824,0.171875,500
+44,12,Two-Tier Hybrid RAPT,3,RandomForest,0.11068500000692438,0.109375,500
+44,12,Two-Tier Hybrid RAPT,3,ExtraTrees,0.04094600000826176,0.03125,500
+44,12,Two-Tier Hybrid RAPT,3,GradientBoosting,0.06467579999298323,0.0625,500
+44,12,Two-Tier Hybrid RAPT,3,All_Base_Models,0.21630680000816938,0.203125,500
+44,13,Continuous Retraining,14,RandomForest,0.08854119999159593,0.09375,1500
+44,13,Continuous Retraining,14,ExtraTrees,0.03363240000908263,0.03125,1500
+44,13,Continuous Retraining,14,GradientBoosting,0.07282359999953769,0.078125,1500
+44,13,Continuous Retraining,14,All_Base_Models,0.19499720000021625,0.203125,1500
+44,13,Event-Driven Baseline,2,RandomForest,0.09265019999293145,0.09375,1500
+44,13,Event-Driven Baseline,2,ExtraTrees,0.07669119999627583,0.078125,1500
+44,13,Event-Driven Baseline,2,GradientBoosting,0.1284159000060754,0.125,1500
+44,13,Event-Driven Baseline,2,All_Base_Models,0.29775729999528266,0.296875,1500
+44,14,Continuous Retraining,15,RandomForest,0.09628070000326261,0.109375,1500
+44,14,Continuous Retraining,15,ExtraTrees,0.053145999991102144,0.03125,1500
+44,14,Continuous Retraining,15,GradientBoosting,0.07386180000321474,0.078125,1500
+44,14,Continuous Retraining,15,All_Base_Models,0.2232884999975795,0.21875,1500
+44,15,Continuous Retraining,16,RandomForest,0.1199134999915259,0.109375,1500
+44,15,Continuous Retraining,16,ExtraTrees,0.06330999999772757,0.046875,1500
+44,15,Continuous Retraining,16,GradientBoosting,0.0956888000073377,0.09375,1500
+44,15,Continuous Retraining,16,All_Base_Models,0.2789122999965912,0.25,1500
+44,15,Event-Driven Baseline,3,RandomForest,0.09349539999675471,0.09375,1500
+44,15,Event-Driven Baseline,3,ExtraTrees,0.05398300000524614,0.0625,1500
+44,15,Event-Driven Baseline,3,GradientBoosting,0.12672939999902155,0.125,1500
+44,15,Event-Driven Baseline,3,All_Base_Models,0.2742078000010224,0.28125,1500
+44,16,Continuous Retraining,17,RandomForest,0.10693689998879563,0.109375,1500
+44,16,Continuous Retraining,17,ExtraTrees,0.04416730000230018,0.046875,1500
+44,16,Continuous Retraining,17,GradientBoosting,0.1099650000105612,0.109375,1500
+44,16,Continuous Retraining,17,All_Base_Models,0.261069200001657,0.265625,1500
+44,17,Continuous Retraining,18,RandomForest,0.1000346999935573,0.09375,1500
+44,17,Continuous Retraining,18,ExtraTrees,0.0499402999994345,0.0625,1500
+44,17,Continuous Retraining,18,GradientBoosting,0.12256370000250172,0.125,1500
+44,17,Continuous Retraining,18,All_Base_Models,0.2725386999954935,0.28125,1500
+44,17,Event-Driven Baseline,4,RandomForest,0.08770040000672452,0.078125,1500
+44,17,Event-Driven Baseline,4,ExtraTrees,0.0626275000104215,0.0625,1500
+44,17,Event-Driven Baseline,4,GradientBoosting,0.07594399999652524,0.078125,1500
+44,17,Event-Driven Baseline,4,All_Base_Models,0.22627190001367126,0.21875,1500
+44,17,RAPT (K=8),4,RandomForest,0.04430049999791663,0.03125,500
+44,17,RAPT (K=8),4,ExtraTrees,0.06122040000627749,0.0625,500
+44,17,RAPT (K=8),4,GradientBoosting,0.057575200000428595,0.0625,500
+44,17,RAPT (K=8),4,All_Base_Models,0.1630961000046227,0.15625,500
+44,17,Two-Tier Hybrid RAPT,4,RandomForest,0.04388320000725798,0.046875,500
+44,17,Two-Tier Hybrid RAPT,4,ExtraTrees,0.029872600003727712,0.015625,500
+44,17,Two-Tier Hybrid RAPT,4,GradientBoosting,0.044774199996027164,0.046875,500
+44,17,Two-Tier Hybrid RAPT,4,All_Base_Models,0.11853000000701286,0.109375,500
+44,18,Continuous Retraining,19,RandomForest,0.08089559999643825,0.078125,1500
+44,18,Continuous Retraining,19,ExtraTrees,0.036536900006467476,0.046875,1500
+44,18,Continuous Retraining,19,GradientBoosting,0.11269189999438822,0.109375,1500
+44,18,Continuous Retraining,19,All_Base_Models,0.23012439999729395,0.234375,1500
+44,18,Event-Driven Baseline,5,RandomForest,0.10016699999687262,0.09375,1500
+44,18,Event-Driven Baseline,5,ExtraTrees,0.03841169999213889,0.046875,1500
+44,18,Event-Driven Baseline,5,GradientBoosting,0.1441260000137845,0.125,1500
+44,18,Event-Driven Baseline,5,All_Base_Models,0.282704700002796,0.265625,1500
+44,19,Continuous Retraining,20,RandomForest,0.12212419998832047,0.125,1500
+44,19,Continuous Retraining,20,ExtraTrees,0.06541380000999197,0.0625,1500
+44,19,Continuous Retraining,20,GradientBoosting,0.10576310000033118,0.109375,1500
+44,19,Continuous Retraining,20,All_Base_Models,0.2933010999986436,0.296875,1500
+44,19,Event-Driven Baseline,6,RandomForest,0.08833510000840761,0.09375,1500
+44,19,Event-Driven Baseline,6,ExtraTrees,0.06026669999118894,0.0625,1500
+44,19,Event-Driven Baseline,6,GradientBoosting,0.13162220000231173,0.125,1500
+44,19,Event-Driven Baseline,6,All_Base_Models,0.2802240000019083,0.28125,1500
+44,20,Continuous Retraining,21,RandomForest,0.08705139999801759,0.078125,1500
+44,20,Continuous Retraining,21,ExtraTrees,0.06420490000164136,0.0625,1500
+44,20,Continuous Retraining,21,GradientBoosting,0.11708209999778774,0.125,1500
+44,20,Continuous Retraining,21,All_Base_Models,0.2683383999974467,0.265625,1500
+44,20,Event-Driven Baseline,7,RandomForest,0.15860400001110975,0.15625,1500
+44,20,Event-Driven Baseline,7,ExtraTrees,0.09856070000387263,0.09375,1500
+44,20,Event-Driven Baseline,7,GradientBoosting,0.14750040000944864,0.15625,1500
+44,20,Event-Driven Baseline,7,All_Base_Models,0.404665100024431,0.40625,1500
+44,21,Continuous Retraining,22,RandomForest,0.11705010000150651,0.109375,1500
+44,21,Continuous Retraining,22,ExtraTrees,0.05946409999160096,0.0625,1500
+44,21,Continuous Retraining,22,GradientBoosting,0.15098059999581892,0.140625,1500
+44,21,Continuous Retraining,22,All_Base_Models,0.3274947999889264,0.3125,1500
+44,21,Event-Driven Baseline,8,RandomForest,0.09676389998639934,0.09375,1500
+44,21,Event-Driven Baseline,8,ExtraTrees,0.05794410000089556,0.0625,1500
+44,21,Event-Driven Baseline,8,GradientBoosting,0.11765119999472518,0.109375,1500
+44,21,Event-Driven Baseline,8,All_Base_Models,0.2723591999820201,0.265625,1500
+44,22,Continuous Retraining,23,RandomForest,0.05863679999310989,0.0625,1500
+44,22,Continuous Retraining,23,ExtraTrees,0.03395769999769982,0.03125,1500
+44,22,Continuous Retraining,23,GradientBoosting,0.11062909998872783,0.109375,1500
+44,22,Continuous Retraining,23,All_Base_Models,0.20322359997953754,0.203125,1500
+44,22,Event-Driven Baseline,9,RandomForest,0.10491389999515377,0.109375,1500
+44,22,Event-Driven Baseline,9,ExtraTrees,0.062036999996053055,0.0625,1500
+44,22,Event-Driven Baseline,9,GradientBoosting,0.15112840000074357,0.15625,1500
+44,22,Event-Driven Baseline,9,All_Base_Models,0.3180792999919504,0.328125,1500
+44,23,Continuous Retraining,24,RandomForest,0.14852069999324158,0.140625,1500
+44,23,Continuous Retraining,24,ExtraTrees,0.057323200002429076,0.0625,1500
+44,23,Continuous Retraining,24,GradientBoosting,0.12845290001132526,0.125,1500
+44,23,Continuous Retraining,24,All_Base_Models,0.3342968000069959,0.328125,1500
+44,23,Event-Driven Baseline,10,RandomForest,0.09135939998668619,0.09375,1500
+44,23,Event-Driven Baseline,10,ExtraTrees,0.03450619999784976,0.03125,1500
+44,23,Event-Driven Baseline,10,GradientBoosting,0.08337129998835735,0.09375,1500
+44,23,Event-Driven Baseline,10,All_Base_Models,0.2092368999728933,0.21875,1500
+44,24,Continuous Retraining,25,RandomForest,0.06642899999860674,0.0625,1500
+44,24,Continuous Retraining,25,ExtraTrees,0.07467000000178814,0.078125,1500
+44,24,Continuous Retraining,25,GradientBoosting,0.12228490000416059,0.125,1500
+44,24,Continuous Retraining,25,All_Base_Models,0.26338390000455547,0.265625,1500
+44,24,Event-Driven Baseline,11,RandomForest,0.05723530000250321,0.0625,1500
+44,24,Event-Driven Baseline,11,ExtraTrees,0.04306440000073053,0.03125,1500
+44,24,Event-Driven Baseline,11,GradientBoosting,0.10156490000372287,0.109375,1500
+44,24,Event-Driven Baseline,11,All_Base_Models,0.2018646000069566,0.203125,1500
+44,24,RAPT (K=8),5,RandomForest,0.042641500011086464,0.03125,500
+44,24,RAPT (K=8),5,ExtraTrees,0.041830199988908134,0.046875,500
+44,24,RAPT (K=8),5,GradientBoosting,0.10852439999871422,0.109375,500
+44,24,RAPT (K=8),5,All_Base_Models,0.19299609999870881,0.1875,500
+44,24,Two-Tier Hybrid RAPT,5,RandomForest,0.08646519998728763,0.09375,500
+44,24,Two-Tier Hybrid RAPT,5,ExtraTrees,0.030180600006133318,0.03125,500
+44,24,Two-Tier Hybrid RAPT,5,GradientBoosting,0.05505239999911282,0.046875,500
+44,24,Two-Tier Hybrid RAPT,5,All_Base_Models,0.17169819999253377,0.171875,500
+44,25,Continuous Retraining,26,RandomForest,0.1068920999969123,0.125,1500
+44,25,Continuous Retraining,26,ExtraTrees,0.05545459999120794,0.0625,1500
+44,25,Continuous Retraining,26,GradientBoosting,0.10319529999105725,0.09375,1500
+44,25,Continuous Retraining,26,All_Base_Models,0.2655419999791775,0.28125,1500
+44,25,Event-Driven Baseline,12,RandomForest,0.10376719999476336,0.109375,1500
+44,25,Event-Driven Baseline,12,ExtraTrees,0.05835630001092795,0.0625,1500
+44,25,Event-Driven Baseline,12,GradientBoosting,0.07646860000386368,0.078125,1500
+44,25,Event-Driven Baseline,12,All_Base_Models,0.238592100009555,0.25,1500
+44,26,Continuous Retraining,27,RandomForest,0.1075635000015609,0.109375,1500
+44,26,Continuous Retraining,27,ExtraTrees,0.086614699990605,0.078125,1500
+44,26,Continuous Retraining,27,GradientBoosting,0.12602959999640007,0.140625,1500
+44,26,Continuous Retraining,27,All_Base_Models,0.32020779998856597,0.328125,1500
+44,26,Event-Driven Baseline,13,RandomForest,0.06973620000644587,0.0625,1500
+44,26,Event-Driven Baseline,13,ExtraTrees,0.06840119999833405,0.078125,1500
+44,26,Event-Driven Baseline,13,GradientBoosting,0.10895249999884982,0.109375,1500
+44,26,Event-Driven Baseline,13,All_Base_Models,0.24708990000362974,0.25,1500
+44,27,Continuous Retraining,28,RandomForest,0.0862358000013046,0.078125,1500
+44,27,Continuous Retraining,28,ExtraTrees,0.03467709998949431,0.03125,1500
+44,27,Continuous Retraining,28,GradientBoosting,0.14155460000620224,0.140625,1500
+44,27,Continuous Retraining,28,All_Base_Models,0.26246749999700114,0.25,1500
+44,27,Event-Driven Baseline,14,RandomForest,0.08368640000117011,0.09375,1500
+44,27,Event-Driven Baseline,14,ExtraTrees,0.04601939998974558,0.046875,1500
+44,27,Event-Driven Baseline,14,GradientBoosting,0.1425984000088647,0.140625,1500
+44,27,Event-Driven Baseline,14,All_Base_Models,0.2723041999997804,0.28125,1500
+44,28,Continuous Retraining,29,RandomForest,0.11825379999936558,0.125,1500
+44,28,Continuous Retraining,29,ExtraTrees,0.0386966000078246,0.03125,1500
+44,28,Continuous Retraining,29,GradientBoosting,0.1006409999972675,0.109375,1500
+44,28,Continuous Retraining,29,All_Base_Models,0.2575914000044577,0.265625,1500
+44,28,Event-Driven Baseline,15,RandomForest,0.08594600000651553,0.078125,1500
+44,28,Event-Driven Baseline,15,ExtraTrees,0.06990600000426639,0.078125,1500
+44,28,Event-Driven Baseline,15,GradientBoosting,0.12500260000524577,0.125,1500
+44,28,Event-Driven Baseline,15,All_Base_Models,0.2808546000160277,0.28125,1500
+44,29,Continuous Retraining,30,RandomForest,0.11069519999728072,0.109375,1500
+44,29,Continuous Retraining,30,ExtraTrees,0.06451889999152627,0.0625,1500
+44,29,Continuous Retraining,30,GradientBoosting,0.17990829999325797,0.171875,1500
+44,29,Continuous Retraining,30,All_Base_Models,0.35512239998206496,0.34375,1500
+44,29,Event-Driven Baseline,16,RandomForest,0.09609690000070259,0.09375,1500
+44,29,Event-Driven Baseline,16,ExtraTrees,0.03547719999914989,0.03125,1500
+44,29,Event-Driven Baseline,16,GradientBoosting,0.07565060000342783,0.078125,1500
+44,29,Event-Driven Baseline,16,All_Base_Models,0.2072247000032803,0.203125,1500
+44,30,Continuous Retraining,31,RandomForest,0.09822780000104103,0.09375,1500
+44,30,Continuous Retraining,31,ExtraTrees,0.058189100003801286,0.0625,1500
+44,30,Continuous Retraining,31,GradientBoosting,0.13367129999096505,0.125,1500
+44,30,Continuous Retraining,31,All_Base_Models,0.29008819999580737,0.28125,1500
+44,30,Event-Driven Baseline,17,RandomForest,0.06000250000215601,0.0625,1500
+44,30,Event-Driven Baseline,17,ExtraTrees,0.03501479999977164,0.03125,1500
+44,30,Event-Driven Baseline,17,GradientBoosting,0.09916140000859741,0.09375,1500
+44,30,Event-Driven Baseline,17,All_Base_Models,0.19417870001052506,0.1875,1500
+44,31,Continuous Retraining,32,RandomForest,0.08874419999483507,0.09375,1500
+44,31,Continuous Retraining,32,ExtraTrees,0.03715019999071956,0.03125,1500
+44,31,Continuous Retraining,32,GradientBoosting,0.09952899999916553,0.109375,1500
+44,31,Continuous Retraining,32,All_Base_Models,0.22542339998472016,0.234375,1500
+44,31,Event-Driven Baseline,18,RandomForest,0.13654949999181554,0.125,1500
+44,31,Event-Driven Baseline,18,ExtraTrees,0.0491378999868175,0.046875,1500
+44,31,Event-Driven Baseline,18,GradientBoosting,0.10125570000673179,0.09375,1500
+44,31,Event-Driven Baseline,18,All_Base_Models,0.2869430999853648,0.265625,1500
+44,31,RAPT (K=8),6,RandomForest,0.09442340000532568,0.09375,500
+44,31,RAPT (K=8),6,ExtraTrees,0.05497230000037234,0.046875,500
+44,31,RAPT (K=8),6,GradientBoosting,0.07648129999870434,0.078125,500
+44,31,RAPT (K=8),6,All_Base_Models,0.22587700000440236,0.21875,500
+44,31,Two-Tier Hybrid RAPT,6,RandomForest,0.07356359998811968,0.09375,500
+44,31,Two-Tier Hybrid RAPT,6,ExtraTrees,0.058013400004711,0.0625,500
+44,31,Two-Tier Hybrid RAPT,6,GradientBoosting,0.053239400003803894,0.046875,500
+44,31,Two-Tier Hybrid RAPT,6,All_Base_Models,0.18481639999663457,0.203125,500
+44,32,Continuous Retraining,33,RandomForest,0.05317680000734981,0.046875,1500
+44,32,Continuous Retraining,33,ExtraTrees,0.03313700000580866,0.046875,1500
+44,32,Continuous Retraining,33,GradientBoosting,0.07286179999937303,0.0625,1500
+44,32,Continuous Retraining,33,All_Base_Models,0.1591756000125315,0.15625,1500
+44,32,Event-Driven Baseline,19,RandomForest,0.11862750000727829,0.125,1500
+44,32,Event-Driven Baseline,19,ExtraTrees,0.046586799988290295,0.046875,1500
+44,32,Event-Driven Baseline,19,GradientBoosting,0.10115780000342056,0.09375,1500
+44,32,Event-Driven Baseline,19,All_Base_Models,0.26637209999898914,0.265625,1500
+44,33,Continuous Retraining,34,RandomForest,0.0809908999945037,0.078125,1500
+44,33,Continuous Retraining,34,ExtraTrees,0.035471999988658354,0.046875,1500
+44,33,Continuous Retraining,34,GradientBoosting,0.11849759999313392,0.109375,1500
+44,33,Continuous Retraining,34,All_Base_Models,0.23496049997629598,0.234375,1500
+44,33,Event-Driven Baseline,20,RandomForest,0.08170950000931043,0.078125,1500
+44,33,Event-Driven Baseline,20,ExtraTrees,0.03501809999579564,0.03125,1500
+44,33,Event-Driven Baseline,20,GradientBoosting,0.07467059999180492,0.078125,1500
+44,33,Event-Driven Baseline,20,All_Base_Models,0.191398199996911,0.1875,1500
+44,33,RAPT (K=8),7,RandomForest,0.08021900001040194,0.078125,500
+44,33,RAPT (K=8),7,ExtraTrees,0.043451900011859834,0.046875,500
+44,33,RAPT (K=8),7,GradientBoosting,0.11317769999732263,0.109375,500
+44,33,RAPT (K=8),7,All_Base_Models,0.2368486000195844,0.234375,500
+44,33,Two-Tier Hybrid RAPT,7,RandomForest,0.07643989998905454,0.078125,500
+44,33,Two-Tier Hybrid RAPT,7,ExtraTrees,0.04138159999274649,0.03125,500
+44,33,Two-Tier Hybrid RAPT,7,GradientBoosting,0.039243900013389066,0.046875,500
+44,33,Two-Tier Hybrid RAPT,7,All_Base_Models,0.1570653999951901,0.15625,500
+44,34,Continuous Retraining,35,RandomForest,0.13678369999979623,0.140625,1500
+44,34,Continuous Retraining,35,ExtraTrees,0.058321299991803244,0.046875,1500
+44,34,Continuous Retraining,35,GradientBoosting,0.07759499999519903,0.078125,1500
+44,34,Continuous Retraining,35,All_Base_Models,0.2726999999867985,0.265625,1500
+44,34,RAPT (K=8),8,RandomForest,0.05502899999555666,0.0625,500
+44,34,RAPT (K=8),8,ExtraTrees,0.0591337000078056,0.046875,500
+44,34,RAPT (K=8),8,GradientBoosting,0.05042460000549909,0.0625,500
+44,34,RAPT (K=8),8,All_Base_Models,0.16458730000886135,0.171875,500
+44,34,Two-Tier Hybrid RAPT,8,RandomForest,0.043653400003677234,0.046875,500
+44,34,Two-Tier Hybrid RAPT,8,ExtraTrees,0.05958979998831637,0.0625,500
+44,34,Two-Tier Hybrid RAPT,8,GradientBoosting,0.06596459999855142,0.0625,500
+44,34,Two-Tier Hybrid RAPT,8,All_Base_Models,0.16920779999054503,0.171875,500
+44,35,Continuous Retraining,36,RandomForest,0.08440059999702498,0.09375,1500
+44,35,Continuous Retraining,36,ExtraTrees,0.03368390000832733,0.03125,1500
+44,35,Continuous Retraining,36,GradientBoosting,0.09121850000519771,0.09375,1500
+44,35,Continuous Retraining,36,All_Base_Models,0.20930300001055002,0.21875,1500
+44,36,Continuous Retraining,37,RandomForest,0.06529959999897983,0.046875,1500
+44,36,Continuous Retraining,37,ExtraTrees,0.03249300000607036,0.03125,1500
+44,36,Continuous Retraining,37,GradientBoosting,0.04836650000652298,0.046875,1500
+44,36,Continuous Retraining,37,All_Base_Models,0.14615910001157317,0.125,1500
+44,37,Continuous Retraining,38,RandomForest,0.08348879999539349,0.078125,1500
+44,37,Continuous Retraining,38,ExtraTrees,0.07256869999400806,0.078125,1500
+44,37,Continuous Retraining,38,GradientBoosting,0.07495920000656042,0.0625,1500
+44,37,Continuous Retraining,38,All_Base_Models,0.23101669999596197,0.21875,1500
+44,37,RAPT (K=8),9,RandomForest,0.07238829998823348,0.0625,500
+44,37,RAPT (K=8),9,ExtraTrees,0.040081900006043725,0.046875,500
+44,37,RAPT (K=8),9,GradientBoosting,0.046783900004811585,0.046875,500
+44,37,RAPT (K=8),9,All_Base_Models,0.1592540999990888,0.15625,500
+44,37,Two-Tier Hybrid RAPT,9,RandomForest,0.06856030000199098,0.046875,500
+44,37,Two-Tier Hybrid RAPT,9,ExtraTrees,0.046703700005309656,0.046875,500
+44,37,Two-Tier Hybrid RAPT,9,GradientBoosting,0.05692299999645911,0.0625,500
+44,37,Two-Tier Hybrid RAPT,9,All_Base_Models,0.17218700000375975,0.15625,500
+45,0,Continuous Retraining,1,RandomForest,0.09951200000068638,0.09375,1500
+45,0,Continuous Retraining,1,ExtraTrees,0.07952450000448152,0.078125,1500
+45,0,Continuous Retraining,1,GradientBoosting,0.07801430000108667,0.078125,1500
+45,0,Continuous Retraining,1,All_Base_Models,0.2570508000062546,0.25,1500
+45,0,RAPT (K=8),1,RandomForest,0.09054230000765529,0.078125,500
+45,0,RAPT (K=8),1,ExtraTrees,0.045288400011486374,0.03125,500
+45,0,RAPT (K=8),1,GradientBoosting,0.08466870000120252,0.09375,500
+45,0,RAPT (K=8),1,All_Base_Models,0.22049940002034418,0.203125,500
+45,0,Two-Tier Hybrid RAPT,1,RandomForest,0.07750379999924917,0.078125,500
+45,0,Two-Tier Hybrid RAPT,1,ExtraTrees,0.04400119998899754,0.046875,500
+45,0,Two-Tier Hybrid RAPT,1,GradientBoosting,0.051781399990431964,0.046875,500
+45,0,Two-Tier Hybrid RAPT,1,All_Base_Models,0.17328639997867867,0.171875,500
+45,1,Continuous Retraining,2,RandomForest,0.07477369999105576,0.078125,1500
+45,1,Continuous Retraining,2,ExtraTrees,0.05346669998834841,0.046875,1500
+45,1,Continuous Retraining,2,GradientBoosting,0.14784000000508968,0.15625,1500
+45,1,Continuous Retraining,2,All_Base_Models,0.27608039998449385,0.28125,1500
+45,1,Event-Driven Baseline,1,RandomForest,0.0823244000057457,0.078125,1500
+45,1,Event-Driven Baseline,1,ExtraTrees,0.065671399992425,0.0625,1500
+45,1,Event-Driven Baseline,1,GradientBoosting,0.1390570000075968,0.140625,1500
+45,1,Event-Driven Baseline,1,All_Base_Models,0.2870528000057675,0.28125,1500
+45,2,Continuous Retraining,3,RandomForest,0.09024779999163002,0.09375,1500
+45,2,Continuous Retraining,3,ExtraTrees,0.05467230000067502,0.0625,1500
+45,2,Continuous Retraining,3,GradientBoosting,0.13057530000514816,0.125,1500
+45,2,Continuous Retraining,3,All_Base_Models,0.2754953999974532,0.28125,1500
+45,3,Continuous Retraining,4,RandomForest,0.1224752999987686,0.125,1500
+45,3,Continuous Retraining,4,ExtraTrees,0.06625530000019353,0.0625,1500
+45,3,Continuous Retraining,4,GradientBoosting,0.1270552000059979,0.125,1500
+45,3,Continuous Retraining,4,All_Base_Models,0.31578580000496004,0.3125,1500
+45,4,Continuous Retraining,5,RandomForest,0.0816534000041429,0.078125,1500
+45,4,Continuous Retraining,5,ExtraTrees,0.07712389998778235,0.078125,1500
+45,4,Continuous Retraining,5,GradientBoosting,0.14994770000339486,0.140625,1500
+45,4,Continuous Retraining,5,All_Base_Models,0.3087249999953201,0.296875,1500
+45,5,Continuous Retraining,6,RandomForest,0.09789470001123846,0.09375,1500
+45,5,Continuous Retraining,6,ExtraTrees,0.04747970000607893,0.046875,1500
+45,5,Continuous Retraining,6,GradientBoosting,0.1086042999959318,0.09375,1500
+45,5,Continuous Retraining,6,All_Base_Models,0.2539787000132492,0.234375,1500
+45,6,Continuous Retraining,7,RandomForest,0.10326709999935701,0.09375,1500
+45,6,Continuous Retraining,7,ExtraTrees,0.05910739999671932,0.0625,1500
+45,6,Continuous Retraining,7,GradientBoosting,0.13019490000442602,0.109375,1500
+45,6,Continuous Retraining,7,All_Base_Models,0.29256940000050236,0.265625,1500
+45,7,Continuous Retraining,8,RandomForest,0.08042919999570586,0.078125,1500
+45,7,Continuous Retraining,8,ExtraTrees,0.07780510000884533,0.078125,1500
+45,7,Continuous Retraining,8,GradientBoosting,0.11002350000489969,0.109375,1500
+45,7,Continuous Retraining,8,All_Base_Models,0.2682578000094509,0.265625,1500
+45,8,Continuous Retraining,9,RandomForest,0.11487399999168701,0.109375,1500
+45,8,Continuous Retraining,9,ExtraTrees,0.06701590000011493,0.078125,1500
+45,8,Continuous Retraining,9,GradientBoosting,0.14628640000591986,0.140625,1500
+45,8,Continuous Retraining,9,All_Base_Models,0.3281762999977218,0.328125,1500
+45,9,Continuous Retraining,10,RandomForest,0.0987466999940807,0.109375,1500
+45,9,Continuous Retraining,10,ExtraTrees,0.05474510000203736,0.046875,1500
+45,9,Continuous Retraining,10,GradientBoosting,0.1159540999942692,0.125,1500
+45,9,Continuous Retraining,10,All_Base_Models,0.26944589999038726,0.28125,1500
+45,10,Continuous Retraining,11,RandomForest,0.09159180001006462,0.09375,1500
+45,10,Continuous Retraining,11,ExtraTrees,0.03430690000823233,0.03125,1500
+45,10,Continuous Retraining,11,GradientBoosting,0.1277632999990601,0.125,1500
+45,10,Continuous Retraining,11,All_Base_Models,0.25366200001735706,0.25,1500
+45,11,Continuous Retraining,12,RandomForest,0.11181560000113677,0.125,1500
+45,11,Continuous Retraining,12,ExtraTrees,0.08376270000007935,0.078125,1500
+45,11,Continuous Retraining,12,GradientBoosting,0.0664831000030972,0.0625,1500
+45,11,Continuous Retraining,12,All_Base_Models,0.2620614000043133,0.265625,1500
+45,11,RAPT (K=8),2,RandomForest,0.06057870000950061,0.046875,500
+45,11,RAPT (K=8),2,ExtraTrees,0.048656700004357845,0.046875,500
+45,11,RAPT (K=8),2,GradientBoosting,0.058755799997015856,0.0625,500
+45,11,RAPT (K=8),2,All_Base_Models,0.1679912000108743,0.15625,500
+45,11,Two-Tier Hybrid RAPT,2,RandomForest,0.062235499994130805,0.046875,500
+45,11,Two-Tier Hybrid RAPT,2,ExtraTrees,0.031241599994245917,0.03125,500
+45,11,Two-Tier Hybrid RAPT,2,GradientBoosting,0.058289199994760565,0.0625,500
+45,11,Two-Tier Hybrid RAPT,2,All_Base_Models,0.1517662999831373,0.140625,500
+45,12,Continuous Retraining,13,RandomForest,0.10166909999679774,0.109375,1500
+45,12,Continuous Retraining,13,ExtraTrees,0.059115800002473406,0.0625,1500
+45,12,Continuous Retraining,13,GradientBoosting,0.12773910000396427,0.125,1500
+45,12,Continuous Retraining,13,All_Base_Models,0.2885240000032354,0.296875,1500
+45,12,RAPT (K=8),3,RandomForest,0.08042080000450369,0.078125,500
+45,12,RAPT (K=8),3,ExtraTrees,0.053132400003960356,0.046875,500
+45,12,RAPT (K=8),3,GradientBoosting,0.06603549999999814,0.0625,500
+45,12,RAPT (K=8),3,All_Base_Models,0.19958870000846218,0.1875,500
+45,12,Two-Tier Hybrid RAPT,3,RandomForest,0.04932890000054613,0.0625,500
+45,12,Two-Tier Hybrid RAPT,3,ExtraTrees,0.030049899985897355,0.015625,500
+45,12,Two-Tier Hybrid RAPT,3,GradientBoosting,0.07815480000863317,0.078125,500
+45,12,Two-Tier Hybrid RAPT,3,All_Base_Models,0.15753359999507666,0.15625,500
+45,13,Continuous Retraining,14,RandomForest,0.11797410000872333,0.125,1500
+45,13,Continuous Retraining,14,ExtraTrees,0.03501880000112578,0.03125,1500
+45,13,Continuous Retraining,14,GradientBoosting,0.07568759999412578,0.078125,1500
+45,13,Continuous Retraining,14,All_Base_Models,0.22868050000397488,0.234375,1500
+45,13,Event-Driven Baseline,2,RandomForest,0.09149099999922328,0.078125,1500
+45,13,Event-Driven Baseline,2,ExtraTrees,0.04264250000414904,0.046875,1500
+45,13,Event-Driven Baseline,2,GradientBoosting,0.07073069999751169,0.0625,1500
+45,13,Event-Driven Baseline,2,All_Base_Models,0.204864200000884,0.1875,1500
+45,14,Continuous Retraining,15,RandomForest,0.1083989000035217,0.109375,1500
+45,14,Continuous Retraining,15,ExtraTrees,0.05714449999504723,0.046875,1500
+45,14,Continuous Retraining,15,GradientBoosting,0.10293860000092536,0.109375,1500
+45,14,Continuous Retraining,15,All_Base_Models,0.2684819999994943,0.265625,1500
+45,15,Continuous Retraining,16,RandomForest,0.06214900000486523,0.0625,1500
+45,15,Continuous Retraining,16,ExtraTrees,0.0375336999859428,0.046875,1500
+45,15,Continuous Retraining,16,GradientBoosting,0.15403049999440555,0.15625,1500
+45,15,Continuous Retraining,16,All_Base_Models,0.2537131999852136,0.265625,1500
+45,15,Event-Driven Baseline,3,RandomForest,0.09075239999219775,0.09375,1500
+45,15,Event-Driven Baseline,3,ExtraTrees,0.05442260000563692,0.0625,1500
+45,15,Event-Driven Baseline,3,GradientBoosting,0.14593949999834877,0.140625,1500
+45,15,Event-Driven Baseline,3,All_Base_Models,0.29111449999618344,0.296875,1500
+45,16,Continuous Retraining,17,RandomForest,0.16255770000861958,0.140625,1500
+45,16,Continuous Retraining,17,ExtraTrees,0.043397499990533106,0.03125,1500
+45,16,Continuous Retraining,17,GradientBoosting,0.12850030000845436,0.125,1500
+45,16,Continuous Retraining,17,All_Base_Models,0.33445550000760704,0.296875,1500
+45,17,Continuous Retraining,18,RandomForest,0.10906689999683294,0.09375,1500
+45,17,Continuous Retraining,18,ExtraTrees,0.06651570000394713,0.078125,1500
+45,17,Continuous Retraining,18,GradientBoosting,0.1336653999896953,0.125,1500
+45,17,Continuous Retraining,18,All_Base_Models,0.30924799999047536,0.296875,1500
+45,17,Event-Driven Baseline,4,RandomForest,0.08176860000821762,0.09375,1500
+45,17,Event-Driven Baseline,4,ExtraTrees,0.06130989998928271,0.046875,1500
+45,17,Event-Driven Baseline,4,GradientBoosting,0.1705418999918038,0.15625,1500
+45,17,Event-Driven Baseline,4,All_Base_Models,0.31362039998930413,0.296875,1500
+45,17,RAPT (K=8),4,RandomForest,0.08365920001233462,0.078125,500
+45,17,RAPT (K=8),4,ExtraTrees,0.030544299996108748,0.03125,500
+45,17,RAPT (K=8),4,GradientBoosting,0.09855189999507274,0.078125,500
+45,17,RAPT (K=8),4,All_Base_Models,0.21275540000351612,0.1875,500
+45,17,Two-Tier Hybrid RAPT,4,RandomForest,0.04648299999826122,0.046875,500
+45,17,Two-Tier Hybrid RAPT,4,ExtraTrees,0.030518500003381632,0.03125,500
+45,17,Two-Tier Hybrid RAPT,4,GradientBoosting,0.04580130000249483,0.046875,500
+45,17,Two-Tier Hybrid RAPT,4,All_Base_Models,0.12280280000413768,0.125,500
+45,18,Continuous Retraining,19,RandomForest,0.12085759999172296,0.125,1500
+45,18,Continuous Retraining,19,ExtraTrees,0.03515690000494942,0.03125,1500
+45,18,Continuous Retraining,19,GradientBoosting,0.10570230000303127,0.109375,1500
+45,18,Continuous Retraining,19,All_Base_Models,0.26171679999970365,0.265625,1500
+45,18,Event-Driven Baseline,5,RandomForest,0.09929750001174398,0.109375,1500
+45,18,Event-Driven Baseline,5,ExtraTrees,0.06299520000175107,0.0625,1500
+45,18,Event-Driven Baseline,5,GradientBoosting,0.11241290000907611,0.109375,1500
+45,18,Event-Driven Baseline,5,All_Base_Models,0.27470560002257116,0.28125,1500
+45,19,Continuous Retraining,20,RandomForest,0.09038510000391398,0.09375,1500
+45,19,Continuous Retraining,20,ExtraTrees,0.06346259999554604,0.0625,1500
+45,19,Continuous Retraining,20,GradientBoosting,0.10336229999666102,0.109375,1500
+45,19,Continuous Retraining,20,All_Base_Models,0.25720999999612104,0.265625,1500
+45,19,Event-Driven Baseline,6,RandomForest,0.08236060000490397,0.078125,1500
+45,19,Event-Driven Baseline,6,ExtraTrees,0.059943300002487376,0.0625,1500
+45,19,Event-Driven Baseline,6,GradientBoosting,0.1360605000081705,0.140625,1500
+45,19,Event-Driven Baseline,6,All_Base_Models,0.27836440001556184,0.28125,1500
+45,20,Continuous Retraining,21,RandomForest,0.12169749999884516,0.078125,1500
+45,20,Continuous Retraining,21,ExtraTrees,0.05882930000370834,0.046875,1500
+45,20,Continuous Retraining,21,GradientBoosting,0.11788760000490583,0.125,1500
+45,20,Continuous Retraining,21,All_Base_Models,0.29841440000745934,0.25,1500
+45,20,Event-Driven Baseline,7,RandomForest,0.11066859999846201,0.109375,1500
+45,20,Event-Driven Baseline,7,ExtraTrees,0.054616199995507486,0.0625,1500
+45,20,Event-Driven Baseline,7,GradientBoosting,0.13348459999542683,0.125,1500
+45,20,Event-Driven Baseline,7,All_Base_Models,0.29876939998939633,0.296875,1500
+45,21,Continuous Retraining,22,RandomForest,0.09409830000367947,0.09375,1500
+45,21,Continuous Retraining,22,ExtraTrees,0.08622619998641312,0.078125,1500
+45,21,Continuous Retraining,22,GradientBoosting,0.10456700000213459,0.09375,1500
+45,21,Continuous Retraining,22,All_Base_Models,0.2848914999922272,0.265625,1500
+45,21,Event-Driven Baseline,8,RandomForest,0.09762970000156201,0.09375,1500
+45,21,Event-Driven Baseline,8,ExtraTrees,0.06427930000063498,0.0625,1500
+45,21,Event-Driven Baseline,8,GradientBoosting,0.09815710000111721,0.109375,1500
+45,21,Event-Driven Baseline,8,All_Base_Models,0.2600661000033142,0.265625,1500
+45,22,Continuous Retraining,23,RandomForest,0.17012870000326075,0.09375,1500
+45,22,Continuous Retraining,23,ExtraTrees,0.0948387999960687,0.078125,1500
+45,22,Continuous Retraining,23,GradientBoosting,0.12312309999833815,0.125,1500
+45,22,Continuous Retraining,23,All_Base_Models,0.3880905999976676,0.296875,1500
+45,22,Event-Driven Baseline,9,RandomForest,0.11035170000104699,0.078125,1500
+45,22,Event-Driven Baseline,9,ExtraTrees,0.05936089999158867,0.0625,1500
+45,22,Event-Driven Baseline,9,GradientBoosting,0.10194800001045223,0.09375,1500
+45,22,Event-Driven Baseline,9,All_Base_Models,0.2716606000030879,0.234375,1500
+45,23,Continuous Retraining,24,RandomForest,0.09942420000152197,0.09375,1500
+45,23,Continuous Retraining,24,ExtraTrees,0.04807530000107363,0.046875,1500
+45,23,Continuous Retraining,24,GradientBoosting,0.18565529999614228,0.1875,1500
+45,23,Continuous Retraining,24,All_Base_Models,0.33315479999873787,0.328125,1500
+45,23,Event-Driven Baseline,10,RandomForest,0.1354772999911802,0.140625,1500
+45,23,Event-Driven Baseline,10,ExtraTrees,0.060277299999143,0.0625,1500
+45,23,Event-Driven Baseline,10,GradientBoosting,0.10138350000488572,0.09375,1500
+45,23,Event-Driven Baseline,10,All_Base_Models,0.2971380999952089,0.296875,1500
+45,24,Continuous Retraining,25,RandomForest,0.12533260000054725,0.125,1500
+45,24,Continuous Retraining,25,ExtraTrees,0.06506709998939186,0.046875,1500
+45,24,Continuous Retraining,25,GradientBoosting,0.1644696000003023,0.171875,1500
+45,24,Continuous Retraining,25,All_Base_Models,0.3548692999902414,0.34375,1500
+45,24,Event-Driven Baseline,11,RandomForest,0.09327099999063648,0.09375,1500
+45,24,Event-Driven Baseline,11,ExtraTrees,0.058419100008904934,0.0625,1500
+45,24,Event-Driven Baseline,11,GradientBoosting,0.12945120000222232,0.125,1500
+45,24,Event-Driven Baseline,11,All_Base_Models,0.28114130000176374,0.28125,1500
+45,24,RAPT (K=8),5,RandomForest,0.06226049999531824,0.0625,500
+45,24,RAPT (K=8),5,ExtraTrees,0.05487370000628289,0.046875,500
+45,24,RAPT (K=8),5,GradientBoosting,0.046921099987230264,0.046875,500
+45,24,RAPT (K=8),5,All_Base_Models,0.1640552999888314,0.15625,500
+45,24,Two-Tier Hybrid RAPT,5,RandomForest,0.10497280000708997,0.109375,500
+45,24,Two-Tier Hybrid RAPT,5,ExtraTrees,0.04073249999783002,0.046875,500
+45,24,Two-Tier Hybrid RAPT,5,GradientBoosting,0.04906069999560714,0.046875,500
+45,24,Two-Tier Hybrid RAPT,5,All_Base_Models,0.19476600000052713,0.203125,500
+45,25,Continuous Retraining,26,RandomForest,0.05846450000535697,0.0625,1500
+45,25,Continuous Retraining,26,ExtraTrees,0.03412260000186507,0.03125,1500
+45,25,Continuous Retraining,26,GradientBoosting,0.11251260001154151,0.09375,1500
+45,25,Continuous Retraining,26,All_Base_Models,0.20509970001876354,0.1875,1500
+45,25,Event-Driven Baseline,12,RandomForest,0.11703290000150446,0.125,1500
+45,25,Event-Driven Baseline,12,ExtraTrees,0.06525780000083614,0.0625,1500
+45,25,Event-Driven Baseline,12,GradientBoosting,0.11630500000319444,0.109375,1500
+45,25,Event-Driven Baseline,12,All_Base_Models,0.29859570000553504,0.296875,1500
+45,26,Continuous Retraining,27,RandomForest,0.05653080000774935,0.0625,1500
+45,26,Continuous Retraining,27,ExtraTrees,0.06044380000093952,0.0625,1500
+45,26,Continuous Retraining,27,GradientBoosting,0.12800070000230335,0.125,1500
+45,26,Continuous Retraining,27,All_Base_Models,0.24497530001099221,0.25,1500
+45,26,Event-Driven Baseline,13,RandomForest,0.09927130000141915,0.09375,1500
+45,26,Event-Driven Baseline,13,ExtraTrees,0.0390940000070259,0.046875,1500
+45,26,Event-Driven Baseline,13,GradientBoosting,0.11656860000221059,0.109375,1500
+45,26,Event-Driven Baseline,13,All_Base_Models,0.25493390001065563,0.25,1500
+45,27,Continuous Retraining,28,RandomForest,0.1114609000069322,0.109375,1500
+45,27,Continuous Retraining,28,ExtraTrees,0.07683510000060778,0.078125,1500
+45,27,Continuous Retraining,28,GradientBoosting,0.13026689999969676,0.125,1500
+45,27,Continuous Retraining,28,All_Base_Models,0.31856290000723675,0.3125,1500
+45,27,Event-Driven Baseline,14,RandomForest,0.06898430000001099,0.078125,1500
+45,27,Event-Driven Baseline,14,ExtraTrees,0.03444099999614991,0.03125,1500
+45,27,Event-Driven Baseline,14,GradientBoosting,0.08698419999564067,0.078125,1500
+45,27,Event-Driven Baseline,14,All_Base_Models,0.19040949999180157,0.1875,1500
+45,28,Continuous Retraining,29,RandomForest,0.08306350000202656,0.078125,1500
+45,28,Continuous Retraining,29,ExtraTrees,0.07722270001249854,0.046875,1500
+45,28,Continuous Retraining,29,GradientBoosting,0.17480849999992643,0.171875,1500
+45,28,Continuous Retraining,29,All_Base_Models,0.3350947000144515,0.296875,1500
+45,28,Event-Driven Baseline,15,RandomForest,0.1201254999905359,0.109375,1500
+45,28,Event-Driven Baseline,15,ExtraTrees,0.058644899996579625,0.0625,1500
+45,28,Event-Driven Baseline,15,GradientBoosting,0.12004650000017136,0.109375,1500
+45,28,Event-Driven Baseline,15,All_Base_Models,0.2988168999872869,0.28125,1500
+45,29,Continuous Retraining,30,RandomForest,0.08675520001270343,0.09375,1500
+45,29,Continuous Retraining,30,ExtraTrees,0.08501689998956863,0.078125,1500
+45,29,Continuous Retraining,30,GradientBoosting,0.11280230000556912,0.109375,1500
+45,29,Continuous Retraining,30,All_Base_Models,0.2845744000078412,0.28125,1500
+45,29,Event-Driven Baseline,16,RandomForest,0.056353699997998774,0.046875,1500
+45,29,Event-Driven Baseline,16,ExtraTrees,0.05166500000632368,0.046875,1500
+45,29,Event-Driven Baseline,16,GradientBoosting,0.16637180000543594,0.15625,1500
+45,29,Event-Driven Baseline,16,All_Base_Models,0.2743905000097584,0.25,1500
+45,30,Continuous Retraining,31,RandomForest,0.1039357999979984,0.109375,1500
+45,30,Continuous Retraining,31,ExtraTrees,0.05022219999227673,0.046875,1500
+45,30,Continuous Retraining,31,GradientBoosting,0.11081980000017211,0.109375,1500
+45,30,Continuous Retraining,31,All_Base_Models,0.26497779999044724,0.265625,1500
+45,30,Event-Driven Baseline,17,RandomForest,0.07233109998924192,0.078125,1500
+45,30,Event-Driven Baseline,17,ExtraTrees,0.0475295000069309,0.046875,1500
+45,30,Event-Driven Baseline,17,GradientBoosting,0.11063419999845792,0.109375,1500
+45,30,Event-Driven Baseline,17,All_Base_Models,0.23049479999463074,0.234375,1500
+45,31,Continuous Retraining,32,RandomForest,0.11572859999432694,0.09375,1500
+45,31,Continuous Retraining,32,ExtraTrees,0.07284500000241678,0.078125,1500
+45,31,Continuous Retraining,32,GradientBoosting,0.13882179999200162,0.140625,1500
+45,31,Continuous Retraining,32,All_Base_Models,0.32739539998874534,0.3125,1500
+45,31,Event-Driven Baseline,18,RandomForest,0.15065449998655822,0.140625,1500
+45,31,Event-Driven Baseline,18,ExtraTrees,0.05181200000515673,0.0625,1500
+45,31,Event-Driven Baseline,18,GradientBoosting,0.13897040000301786,0.109375,1500
+45,31,Event-Driven Baseline,18,All_Base_Models,0.3414368999947328,0.3125,1500
+45,31,RAPT (K=8),6,RandomForest,0.08680960000492632,0.0625,500
+45,31,RAPT (K=8),6,ExtraTrees,0.0488374999986263,0.046875,500
+45,31,RAPT (K=8),6,GradientBoosting,0.10125420000986196,0.109375,500
+45,31,RAPT (K=8),6,All_Base_Models,0.23690130001341458,0.21875,500
+45,31,Two-Tier Hybrid RAPT,6,RandomForest,0.07197720000112895,0.078125,500
+45,31,Two-Tier Hybrid RAPT,6,ExtraTrees,0.049070100008975714,0.046875,500
+45,31,Two-Tier Hybrid RAPT,6,GradientBoosting,0.0949584999907529,0.09375,500
+45,31,Two-Tier Hybrid RAPT,6,All_Base_Models,0.21600580000085756,0.21875,500
+45,32,Continuous Retraining,33,RandomForest,0.09094029999687336,0.09375,1500
+45,32,Continuous Retraining,33,ExtraTrees,0.052917100008926354,0.046875,1500
+45,32,Continuous Retraining,33,GradientBoosting,0.08532680000644177,0.09375,1500
+45,32,Continuous Retraining,33,All_Base_Models,0.2291842000122415,0.234375,1500
+45,32,Event-Driven Baseline,19,RandomForest,0.13107099999615457,0.125,1500
+45,32,Event-Driven Baseline,19,ExtraTrees,0.05417899999883957,0.046875,1500
+45,32,Event-Driven Baseline,19,GradientBoosting,0.12754390000191052,0.140625,1500
+45,32,Event-Driven Baseline,19,All_Base_Models,0.31279389999690466,0.3125,1500
+45,33,Continuous Retraining,34,RandomForest,0.10367789999872912,0.09375,1500
+45,33,Continuous Retraining,34,ExtraTrees,0.06338849999883678,0.0625,1500
+45,33,Continuous Retraining,34,GradientBoosting,0.11901709999074228,0.125,1500
+45,33,Continuous Retraining,34,All_Base_Models,0.2860834999883082,0.28125,1500
+45,33,Event-Driven Baseline,20,RandomForest,0.1497347999975318,0.15625,1500
+45,33,Event-Driven Baseline,20,ExtraTrees,0.07250260000000708,0.0625,1500
+45,33,Event-Driven Baseline,20,GradientBoosting,0.11619319999590516,0.125,1500
+45,33,Event-Driven Baseline,20,All_Base_Models,0.33843059999344405,0.34375,1500
+45,33,RAPT (K=8),7,RandomForest,0.11787760000152048,0.125,500
+45,33,RAPT (K=8),7,ExtraTrees,0.08205240000097547,0.078125,500
+45,33,RAPT (K=8),7,GradientBoosting,0.08044130000052974,0.078125,500
+45,33,RAPT (K=8),7,All_Base_Models,0.2803713000030257,0.28125,500
+45,33,Two-Tier Hybrid RAPT,7,RandomForest,0.046326700001372956,0.046875,500
+45,33,Two-Tier Hybrid RAPT,7,ExtraTrees,0.04599149999557994,0.046875,500
+45,33,Two-Tier Hybrid RAPT,7,GradientBoosting,0.04191800000262447,0.046875,500
+45,33,Two-Tier Hybrid RAPT,7,All_Base_Models,0.13423619999957737,0.140625,500
+45,34,Continuous Retraining,35,RandomForest,0.08558079999056645,0.078125,1500
+45,34,Continuous Retraining,35,ExtraTrees,0.05849929999385495,0.0625,1500
+45,34,Continuous Retraining,35,GradientBoosting,0.123479200003203,0.109375,1500
+45,34,Continuous Retraining,35,All_Base_Models,0.2675592999876244,0.25,1500
+45,34,RAPT (K=8),8,RandomForest,0.11009539999940898,0.109375,500
+45,34,RAPT (K=8),8,ExtraTrees,0.03260950000549201,0.03125,500
+45,34,RAPT (K=8),8,GradientBoosting,0.038408299995353445,0.046875,500
+45,34,RAPT (K=8),8,All_Base_Models,0.18111320000025444,0.1875,500
+45,34,Two-Tier Hybrid RAPT,8,RandomForest,0.06448060000548139,0.0625,500
+45,34,Two-Tier Hybrid RAPT,8,ExtraTrees,0.030949200008763,0.03125,500
+45,34,Two-Tier Hybrid RAPT,8,GradientBoosting,0.06078550001257099,0.0625,500
+45,34,Two-Tier Hybrid RAPT,8,All_Base_Models,0.15621530002681538,0.15625,500
+45,35,Continuous Retraining,36,RandomForest,0.08526380000694189,0.078125,1500
+45,35,Continuous Retraining,36,ExtraTrees,0.059198999995714985,0.0625,1500
+45,35,Continuous Retraining,36,GradientBoosting,0.12341599998762831,0.125,1500
+45,35,Continuous Retraining,36,All_Base_Models,0.2678787999902852,0.265625,1500
+45,36,Continuous Retraining,37,RandomForest,0.1209653999976581,0.125,1500
+45,36,Continuous Retraining,37,ExtraTrees,0.04100879999168683,0.046875,1500
+45,36,Continuous Retraining,37,GradientBoosting,0.07597759999043774,0.078125,1500
+45,36,Continuous Retraining,37,All_Base_Models,0.23795179997978266,0.25,1500
+45,37,Continuous Retraining,38,RandomForest,0.07555090000096243,0.078125,1500
+45,37,Continuous Retraining,38,ExtraTrees,0.046355800004675984,0.046875,1500
+45,37,Continuous Retraining,38,GradientBoosting,0.07466049998765811,0.078125,1500
+45,37,Continuous Retraining,38,All_Base_Models,0.19656719999329653,0.203125,1500
+45,37,RAPT (K=8),9,RandomForest,0.07413939999241848,0.0625,500
+45,37,RAPT (K=8),9,ExtraTrees,0.07725200000277255,0.0625,500
+45,37,RAPT (K=8),9,GradientBoosting,0.0747787000000244,0.078125,500
+45,37,RAPT (K=8),9,All_Base_Models,0.22617009999521542,0.203125,500
+45,37,Two-Tier Hybrid RAPT,9,RandomForest,0.11606489999394398,0.078125,500
+45,37,Two-Tier Hybrid RAPT,9,ExtraTrees,0.04363360001298133,0.046875,500
+45,37,Two-Tier Hybrid RAPT,9,GradientBoosting,0.041693300008773804,0.03125,500
+45,37,Two-Tier Hybrid RAPT,9,All_Base_Models,0.20139180001569912,0.15625,500
+46,0,Continuous Retraining,1,RandomForest,0.10177830001339316,0.109375,1500
+46,0,Continuous Retraining,1,ExtraTrees,0.07641240001248661,0.078125,1500
+46,0,Continuous Retraining,1,GradientBoosting,0.10791920000337996,0.09375,1500
+46,0,Continuous Retraining,1,All_Base_Models,0.28610990002925973,0.28125,1500
+46,0,RAPT (K=8),1,RandomForest,0.09572769999795128,0.09375,500
+46,0,RAPT (K=8),1,ExtraTrees,0.05643199999758508,0.046875,500
+46,0,RAPT (K=8),1,GradientBoosting,0.08832579999580048,0.09375,500
+46,0,RAPT (K=8),1,All_Base_Models,0.24048549999133684,0.234375,500
+46,0,Two-Tier Hybrid RAPT,1,RandomForest,0.125670599998557,0.125,500
+46,0,Two-Tier Hybrid RAPT,1,ExtraTrees,0.05839219999324996,0.0625,500
+46,0,Two-Tier Hybrid RAPT,1,GradientBoosting,0.1331219000130659,0.09375,500
+46,0,Two-Tier Hybrid RAPT,1,All_Base_Models,0.31718470000487287,0.28125,500
+46,1,Continuous Retraining,2,RandomForest,0.11092950000602286,0.109375,1500
+46,1,Continuous Retraining,2,ExtraTrees,0.05485090000729542,0.0625,1500
+46,1,Continuous Retraining,2,GradientBoosting,0.150760700009414,0.140625,1500
+46,1,Continuous Retraining,2,All_Base_Models,0.3165411000227323,0.3125,1500
+46,2,Continuous Retraining,3,RandomForest,0.13892820000182837,0.140625,1500
+46,2,Continuous Retraining,3,ExtraTrees,0.07722809999540914,0.078125,1500
+46,2,Continuous Retraining,3,GradientBoosting,0.1320244999951683,0.140625,1500
+46,2,Continuous Retraining,3,All_Base_Models,0.3481807999924058,0.359375,1500
+46,3,Continuous Retraining,4,RandomForest,0.09370300000591669,0.09375,1500
+46,3,Continuous Retraining,4,ExtraTrees,0.06806029999279417,0.0625,1500
+46,3,Continuous Retraining,4,GradientBoosting,0.12014060000365134,0.125,1500
+46,3,Continuous Retraining,4,All_Base_Models,0.2819039000023622,0.28125,1500
+46,4,Continuous Retraining,5,RandomForest,0.07504250000056345,0.078125,1500
+46,4,Continuous Retraining,5,ExtraTrees,0.06665599999541882,0.0625,1500
+46,4,Continuous Retraining,5,GradientBoosting,0.11067879998881835,0.109375,1500
+46,4,Continuous Retraining,5,All_Base_Models,0.25237729998480063,0.25,1500
+46,5,Continuous Retraining,6,RandomForest,0.0901845000043977,0.09375,1500
+46,5,Continuous Retraining,6,ExtraTrees,0.03477009999915026,0.03125,1500
+46,5,Continuous Retraining,6,GradientBoosting,0.12808840000070632,0.109375,1500
+46,5,Continuous Retraining,6,All_Base_Models,0.2530430000042543,0.234375,1500
+46,6,Continuous Retraining,7,RandomForest,0.09686010000586975,0.109375,1500
+46,6,Continuous Retraining,7,ExtraTrees,0.05085430000326596,0.03125,1500
+46,6,Continuous Retraining,7,GradientBoosting,0.1131872999976622,0.109375,1500
+46,6,Continuous Retraining,7,All_Base_Models,0.2609017000067979,0.25,1500
+46,7,Continuous Retraining,8,RandomForest,0.06794389999413397,0.0625,1500
+46,7,Continuous Retraining,8,ExtraTrees,0.0347668999893358,0.03125,1500
+46,7,Continuous Retraining,8,GradientBoosting,0.13689209999574814,0.140625,1500
+46,7,Continuous Retraining,8,All_Base_Models,0.2396028999792179,0.234375,1500
+46,8,Continuous Retraining,9,RandomForest,0.07712790000368841,0.078125,1500
+46,8,Continuous Retraining,9,ExtraTrees,0.06851909999386407,0.046875,1500
+46,8,Continuous Retraining,9,GradientBoosting,0.10069469999871217,0.09375,1500
+46,8,Continuous Retraining,9,All_Base_Models,0.24634169999626465,0.21875,1500
+46,9,Continuous Retraining,10,RandomForest,0.10063179999997374,0.09375,1500
+46,9,Continuous Retraining,10,ExtraTrees,0.05638789999647997,0.0625,1500
+46,9,Continuous Retraining,10,GradientBoosting,0.0981539999920642,0.09375,1500
+46,9,Continuous Retraining,10,All_Base_Models,0.2551736999885179,0.25,1500
+46,10,Continuous Retraining,11,RandomForest,0.10486839999794029,0.109375,1500
+46,10,Continuous Retraining,11,ExtraTrees,0.07218740000098478,0.078125,1500
+46,10,Continuous Retraining,11,GradientBoosting,0.13844400001107715,0.125,1500
+46,10,Continuous Retraining,11,All_Base_Models,0.3154998000100022,0.3125,1500
+46,11,Continuous Retraining,12,RandomForest,0.125885899993591,0.125,1500
+46,11,Continuous Retraining,12,ExtraTrees,0.07117670000297949,0.078125,1500
+46,11,Continuous Retraining,12,GradientBoosting,0.21172540000407025,0.203125,1500
+46,11,Continuous Retraining,12,All_Base_Models,0.40878800000064075,0.40625,1500
+46,11,RAPT (K=8),2,RandomForest,0.08841169999504928,0.078125,500
+46,11,RAPT (K=8),2,ExtraTrees,0.07416449999436736,0.078125,500
+46,11,RAPT (K=8),2,GradientBoosting,0.08007009999710135,0.078125,500
+46,11,RAPT (K=8),2,All_Base_Models,0.242646299986518,0.234375,500
+46,11,Two-Tier Hybrid RAPT,2,RandomForest,0.0651679000002332,0.0625,500
+46,11,Two-Tier Hybrid RAPT,2,ExtraTrees,0.06215469999006018,0.0625,500
+46,11,Two-Tier Hybrid RAPT,2,GradientBoosting,0.08084609999787062,0.078125,500
+46,11,Two-Tier Hybrid RAPT,2,All_Base_Models,0.208168699988164,0.203125,500
+46,12,Continuous Retraining,13,RandomForest,0.07242359999509063,0.078125,1500
+46,12,Continuous Retraining,13,ExtraTrees,0.04886640000040643,0.046875,1500
+46,12,Continuous Retraining,13,GradientBoosting,0.11149720000685193,0.09375,1500
+46,12,Continuous Retraining,13,All_Base_Models,0.23278720000234898,0.21875,1500
+46,12,RAPT (K=8),3,RandomForest,0.10942700000305194,0.09375,500
+46,12,RAPT (K=8),3,ExtraTrees,0.048092900004121475,0.046875,500
+46,12,RAPT (K=8),3,GradientBoosting,0.09281550000014249,0.09375,500
+46,12,RAPT (K=8),3,All_Base_Models,0.2503354000073159,0.234375,500
+46,12,Two-Tier Hybrid RAPT,3,RandomForest,0.10462640000332613,0.09375,500
+46,12,Two-Tier Hybrid RAPT,3,ExtraTrees,0.0448441000044113,0.046875,500
+46,12,Two-Tier Hybrid RAPT,3,GradientBoosting,0.0609007000020938,0.046875,500
+46,12,Two-Tier Hybrid RAPT,3,All_Base_Models,0.21037120000983123,0.1875,500
+46,13,Continuous Retraining,14,RandomForest,0.06061910001153592,0.0625,1500
+46,13,Continuous Retraining,14,ExtraTrees,0.07978970000112895,0.078125,1500
+46,13,Continuous Retraining,14,GradientBoosting,0.10397650000231806,0.109375,1500
+46,13,Continuous Retraining,14,All_Base_Models,0.24438530001498293,0.25,1500
+46,13,Event-Driven Baseline,1,RandomForest,0.08727199998975266,0.078125,1500
+46,13,Event-Driven Baseline,1,ExtraTrees,0.09183080001093913,0.09375,1500
+46,13,Event-Driven Baseline,1,GradientBoosting,0.13983299999381416,0.140625,1500
+46,13,Event-Driven Baseline,1,All_Base_Models,0.31893579999450594,0.3125,1500
+46,14,Continuous Retraining,15,RandomForest,0.08838349999859929,0.09375,1500
+46,14,Continuous Retraining,15,ExtraTrees,0.06156400000327267,0.0625,1500
+46,14,Continuous Retraining,15,GradientBoosting,0.12472819999675266,0.109375,1500
+46,14,Continuous Retraining,15,All_Base_Models,0.2746756999986246,0.265625,1500
+46,15,Continuous Retraining,16,RandomForest,0.05678290000651032,0.046875,1500
+46,15,Continuous Retraining,16,ExtraTrees,0.04473139999026898,0.03125,1500
+46,15,Continuous Retraining,16,GradientBoosting,0.13571229999070056,0.125,1500
+46,15,Continuous Retraining,16,All_Base_Models,0.23722659998747986,0.203125,1500
+46,15,Event-Driven Baseline,2,RandomForest,0.06547820000560023,0.0625,1500
+46,15,Event-Driven Baseline,2,ExtraTrees,0.03573230000620242,0.046875,1500
+46,15,Event-Driven Baseline,2,GradientBoosting,0.12712040000769775,0.125,1500
+46,15,Event-Driven Baseline,2,All_Base_Models,0.2283309000195004,0.234375,1500
+46,16,Continuous Retraining,17,RandomForest,0.08744730000034906,0.09375,1500
+46,16,Continuous Retraining,17,ExtraTrees,0.05857269999978598,0.046875,1500
+46,16,Continuous Retraining,17,GradientBoosting,0.10451910000119824,0.109375,1500
+46,16,Continuous Retraining,17,All_Base_Models,0.2505391000013333,0.25,1500
+46,17,Continuous Retraining,18,RandomForest,0.0929076000029454,0.09375,1500
+46,17,Continuous Retraining,18,ExtraTrees,0.07430969999404624,0.078125,1500
+46,17,Continuous Retraining,18,GradientBoosting,0.14819350000470877,0.140625,1500
+46,17,Continuous Retraining,18,All_Base_Models,0.3154108000017004,0.3125,1500
+46,17,Event-Driven Baseline,3,RandomForest,0.12347449999651872,0.125,1500
+46,17,Event-Driven Baseline,3,ExtraTrees,0.06799179999507032,0.0625,1500
+46,17,Event-Driven Baseline,3,GradientBoosting,0.12291430000914261,0.125,1500
+46,17,Event-Driven Baseline,3,All_Base_Models,0.31438060000073165,0.3125,1500
+46,17,RAPT (K=8),4,RandomForest,0.08438509999541566,0.078125,500
+46,17,RAPT (K=8),4,ExtraTrees,0.058973699997295626,0.0625,500
+46,17,RAPT (K=8),4,GradientBoosting,0.06019910000031814,0.0625,500
+46,17,RAPT (K=8),4,All_Base_Models,0.20355789999302942,0.203125,500
+46,17,Two-Tier Hybrid RAPT,4,RandomForest,0.0905983999982709,0.09375,500
+46,17,Two-Tier Hybrid RAPT,4,ExtraTrees,0.03968489999533631,0.046875,500
+46,17,Two-Tier Hybrid RAPT,4,GradientBoosting,0.08546680001018103,0.078125,500
+46,17,Two-Tier Hybrid RAPT,4,All_Base_Models,0.21575010000378825,0.21875,500
+46,18,Continuous Retraining,19,RandomForest,0.07786180000402965,0.078125,1500
+46,18,Continuous Retraining,19,ExtraTrees,0.05421740000019781,0.0625,1500
+46,18,Continuous Retraining,19,GradientBoosting,0.1288769999955548,0.125,1500
+46,18,Continuous Retraining,19,All_Base_Models,0.26095619999978226,0.265625,1500
+46,18,Event-Driven Baseline,4,RandomForest,0.14342999999644235,0.140625,1500
+46,18,Event-Driven Baseline,4,ExtraTrees,0.06468589999713004,0.0625,1500
+46,18,Event-Driven Baseline,4,GradientBoosting,0.10235800000373274,0.109375,1500
+46,18,Event-Driven Baseline,4,All_Base_Models,0.3104738999973051,0.3125,1500
+46,19,Continuous Retraining,20,RandomForest,0.08000059999176301,0.078125,1500
+46,19,Continuous Retraining,20,ExtraTrees,0.0676616999990074,0.0625,1500
+46,19,Continuous Retraining,20,GradientBoosting,0.08639549999497831,0.09375,1500
+46,19,Continuous Retraining,20,All_Base_Models,0.23405779998574872,0.234375,1500
+46,19,Event-Driven Baseline,5,RandomForest,0.08745999999518972,0.09375,1500
+46,19,Event-Driven Baseline,5,ExtraTrees,0.05517469999904279,0.046875,1500
+46,19,Event-Driven Baseline,5,GradientBoosting,0.09975680000206921,0.109375,1500
+46,19,Event-Driven Baseline,5,All_Base_Models,0.24239149999630172,0.25,1500
+46,20,Continuous Retraining,21,RandomForest,0.06865930001367815,0.0625,1500
+46,20,Continuous Retraining,21,ExtraTrees,0.034068199995090254,0.03125,1500
+46,20,Continuous Retraining,21,GradientBoosting,0.07491329999174923,0.078125,1500
+46,20,Continuous Retraining,21,All_Base_Models,0.17764080000051763,0.171875,1500
+46,20,Event-Driven Baseline,6,RandomForest,0.10845840000547469,0.09375,1500
+46,20,Event-Driven Baseline,6,ExtraTrees,0.0614967000001343,0.0625,1500
+46,20,Event-Driven Baseline,6,GradientBoosting,0.13824970000132453,0.140625,1500
+46,20,Event-Driven Baseline,6,All_Base_Models,0.3082048000069335,0.296875,1500
+46,21,Continuous Retraining,22,RandomForest,0.07596460000786465,0.078125,1500
+46,21,Continuous Retraining,22,ExtraTrees,0.0993056000006618,0.09375,1500
+46,21,Continuous Retraining,22,GradientBoosting,0.10985649999929592,0.109375,1500
+46,21,Continuous Retraining,22,All_Base_Models,0.28512670000782236,0.28125,1500
+46,21,Event-Driven Baseline,7,RandomForest,0.09126869999454357,0.09375,1500
+46,21,Event-Driven Baseline,7,ExtraTrees,0.08113089999824297,0.078125,1500
+46,21,Event-Driven Baseline,7,GradientBoosting,0.14939310000045225,0.15625,1500
+46,21,Event-Driven Baseline,7,All_Base_Models,0.3217926999932388,0.328125,1500
+46,22,Continuous Retraining,23,RandomForest,0.05945630000496749,0.046875,1500
+46,22,Continuous Retraining,23,ExtraTrees,0.03526920000149403,0.046875,1500
+46,22,Continuous Retraining,23,GradientBoosting,0.13459580000198912,0.125,1500
+46,22,Continuous Retraining,23,All_Base_Models,0.22932130000845063,0.21875,1500
+46,22,Event-Driven Baseline,8,RandomForest,0.05827180000778753,0.0625,1500
+46,22,Event-Driven Baseline,8,ExtraTrees,0.034394100002828054,0.03125,1500
+46,22,Event-Driven Baseline,8,GradientBoosting,0.0911303000029875,0.09375,1500
+46,22,Event-Driven Baseline,8,All_Base_Models,0.18379620001360308,0.1875,1500
+46,23,Continuous Retraining,24,RandomForest,0.08485279999149498,0.09375,1500
+46,23,Continuous Retraining,24,ExtraTrees,0.05793199999607168,0.046875,1500
+46,23,Continuous Retraining,24,GradientBoosting,0.11250470000959467,0.109375,1500
+46,23,Continuous Retraining,24,All_Base_Models,0.25528949999716133,0.25,1500
+46,23,Event-Driven Baseline,9,RandomForest,0.07948030000261497,0.078125,1500
+46,23,Event-Driven Baseline,9,ExtraTrees,0.055866700000478886,0.046875,1500
+46,23,Event-Driven Baseline,9,GradientBoosting,0.13181219999387395,0.140625,1500
+46,23,Event-Driven Baseline,9,All_Base_Models,0.2671591999969678,0.265625,1500
+46,24,Continuous Retraining,25,RandomForest,0.12720099999569356,0.125,1500
+46,24,Continuous Retraining,25,ExtraTrees,0.0364908000046853,0.03125,1500
+46,24,Continuous Retraining,25,GradientBoosting,0.14306859999487642,0.109375,1500
+46,24,Continuous Retraining,25,All_Base_Models,0.3067603999952553,0.265625,1500
+46,24,Event-Driven Baseline,10,RandomForest,0.10912569999345578,0.109375,1500
+46,24,Event-Driven Baseline,10,ExtraTrees,0.06156259999261238,0.0625,1500
+46,24,Event-Driven Baseline,10,GradientBoosting,0.10832459999073762,0.109375,1500
+46,24,Event-Driven Baseline,10,All_Base_Models,0.2790128999768058,0.28125,1500
+46,24,RAPT (K=8),5,RandomForest,0.11666189999959897,0.125,500
+46,24,RAPT (K=8),5,ExtraTrees,0.0506601000088267,0.046875,500
+46,24,RAPT (K=8),5,GradientBoosting,0.06967969999823254,0.046875,500
+46,24,RAPT (K=8),5,All_Base_Models,0.2370017000066582,0.21875,500
+46,24,Two-Tier Hybrid RAPT,5,RandomForest,0.07171580000431277,0.0625,500
+46,24,Two-Tier Hybrid RAPT,5,ExtraTrees,0.039801100007025525,0.046875,500
+46,24,Two-Tier Hybrid RAPT,5,GradientBoosting,0.07041870000830386,0.0625,500
+46,24,Two-Tier Hybrid RAPT,5,All_Base_Models,0.18193560001964215,0.171875,500
+46,25,Continuous Retraining,26,RandomForest,0.11408369999844581,0.109375,1500
+46,25,Continuous Retraining,26,ExtraTrees,0.059909400006290525,0.0625,1500
+46,25,Continuous Retraining,26,GradientBoosting,0.14514039999630768,0.140625,1500
+46,25,Continuous Retraining,26,All_Base_Models,0.319133500001044,0.3125,1500
+46,25,Event-Driven Baseline,11,RandomForest,0.10709700000006706,0.109375,1500
+46,25,Event-Driven Baseline,11,ExtraTrees,0.07602170000609476,0.078125,1500
+46,25,Event-Driven Baseline,11,GradientBoosting,0.0965198999911081,0.09375,1500
+46,25,Event-Driven Baseline,11,All_Base_Models,0.2796385999972699,0.28125,1500
+46,26,Continuous Retraining,27,RandomForest,0.10297439999703784,0.09375,1500
+46,26,Continuous Retraining,27,ExtraTrees,0.06153429999540094,0.0625,1500
+46,26,Continuous Retraining,27,GradientBoosting,0.12634270000853576,0.140625,1500
+46,26,Continuous Retraining,27,All_Base_Models,0.29085140000097454,0.296875,1500
+46,26,Event-Driven Baseline,12,RandomForest,0.05795550000038929,0.0625,1500
+46,26,Event-Driven Baseline,12,ExtraTrees,0.035187600005883723,0.03125,1500
+46,26,Event-Driven Baseline,12,GradientBoosting,0.10635339999862481,0.09375,1500
+46,26,Event-Driven Baseline,12,All_Base_Models,0.19949650000489783,0.1875,1500
+46,27,Continuous Retraining,28,RandomForest,0.13076740001270082,0.125,1500
+46,27,Continuous Retraining,28,ExtraTrees,0.05053980000957381,0.0625,1500
+46,27,Continuous Retraining,28,GradientBoosting,0.0850236000114819,0.078125,1500
+46,27,Continuous Retraining,28,All_Base_Models,0.26633080003375653,0.265625,1500
+46,27,Event-Driven Baseline,13,RandomForest,0.07954209999297746,0.078125,1500
+46,27,Event-Driven Baseline,13,ExtraTrees,0.0364794999914011,0.03125,1500
+46,27,Event-Driven Baseline,13,GradientBoosting,0.11162619999959134,0.09375,1500
+46,27,Event-Driven Baseline,13,All_Base_Models,0.2276477999839699,0.203125,1500
+46,28,Continuous Retraining,29,RandomForest,0.07341889999224804,0.078125,1500
+46,28,Continuous Retraining,29,ExtraTrees,0.04711279999173712,0.03125,1500
+46,28,Continuous Retraining,29,GradientBoosting,0.11820599999919068,0.125,1500
+46,28,Continuous Retraining,29,All_Base_Models,0.23873769998317584,0.234375,1500
+46,28,Event-Driven Baseline,14,RandomForest,0.09635989999515004,0.09375,1500
+46,28,Event-Driven Baseline,14,ExtraTrees,0.04684750000888016,0.046875,1500
+46,28,Event-Driven Baseline,14,GradientBoosting,0.1579356000002008,0.15625,1500
+46,28,Event-Driven Baseline,14,All_Base_Models,0.301143000004231,0.296875,1500
+46,29,Continuous Retraining,30,RandomForest,0.10968870000215247,0.109375,1500
+46,29,Continuous Retraining,30,ExtraTrees,0.04173760001140181,0.046875,1500
+46,29,Continuous Retraining,30,GradientBoosting,0.12054069999430794,0.109375,1500
+46,29,Continuous Retraining,30,All_Base_Models,0.2719670000078622,0.265625,1500
+46,29,Event-Driven Baseline,15,RandomForest,0.06998929999826942,0.0625,1500
+46,29,Event-Driven Baseline,15,ExtraTrees,0.06355730000359472,0.0625,1500
+46,29,Event-Driven Baseline,15,GradientBoosting,0.14532690000487491,0.140625,1500
+46,29,Event-Driven Baseline,15,All_Base_Models,0.27887350000673905,0.265625,1500
+46,30,Continuous Retraining,31,RandomForest,0.09799470000143629,0.09375,1500
+46,30,Continuous Retraining,31,ExtraTrees,0.07697989999724086,0.078125,1500
+46,30,Continuous Retraining,31,GradientBoosting,0.1107484999956796,0.09375,1500
+46,30,Continuous Retraining,31,All_Base_Models,0.28572309999435674,0.265625,1500
+46,30,Event-Driven Baseline,16,RandomForest,0.10099570000602398,0.109375,1500
+46,30,Event-Driven Baseline,16,ExtraTrees,0.05632929998682812,0.046875,1500
+46,30,Event-Driven Baseline,16,GradientBoosting,0.10723050001251977,0.109375,1500
+46,30,Event-Driven Baseline,16,All_Base_Models,0.26455550000537187,0.265625,1500
+46,31,Continuous Retraining,32,RandomForest,0.07024619998992421,0.0625,1500
+46,31,Continuous Retraining,32,ExtraTrees,0.05149500000698026,0.0625,1500
+46,31,Continuous Retraining,32,GradientBoosting,0.09878140001092106,0.09375,1500
+46,31,Continuous Retraining,32,All_Base_Models,0.22052260000782553,0.21875,1500
+46,31,Event-Driven Baseline,17,RandomForest,0.09475319999910425,0.09375,1500
+46,31,Event-Driven Baseline,17,ExtraTrees,0.061044899994158186,0.0625,1500
+46,31,Event-Driven Baseline,17,GradientBoosting,0.12116629999945872,0.125,1500
+46,31,Event-Driven Baseline,17,All_Base_Models,0.27696439999272116,0.28125,1500
+46,31,RAPT (K=8),6,RandomForest,0.06315630000608508,0.0625,500
+46,31,RAPT (K=8),6,ExtraTrees,0.06993820000207052,0.078125,500
+46,31,RAPT (K=8),6,GradientBoosting,0.06988540000747889,0.0625,500
+46,31,RAPT (K=8),6,All_Base_Models,0.20297990001563448,0.203125,500
+46,31,Two-Tier Hybrid RAPT,6,RandomForest,0.04931850000866689,0.046875,500
+46,31,Two-Tier Hybrid RAPT,6,ExtraTrees,0.043309700005920604,0.046875,500
+46,31,Two-Tier Hybrid RAPT,6,GradientBoosting,0.07758680000551976,0.0625,500
+46,31,Two-Tier Hybrid RAPT,6,All_Base_Models,0.17021500002010725,0.15625,500
+46,32,Continuous Retraining,33,RandomForest,0.08596039999974892,0.078125,1500
+46,32,Continuous Retraining,33,ExtraTrees,0.03551159999915399,0.046875,1500
+46,32,Continuous Retraining,33,GradientBoosting,0.0752828000113368,0.0625,1500
+46,32,Continuous Retraining,33,All_Base_Models,0.1967548000102397,0.1875,1500
+46,32,Event-Driven Baseline,18,RandomForest,0.08296670000709128,0.09375,1500
+46,32,Event-Driven Baseline,18,ExtraTrees,0.05162479999125935,0.046875,1500
+46,32,Event-Driven Baseline,18,GradientBoosting,0.11778980000235606,0.125,1500
+46,32,Event-Driven Baseline,18,All_Base_Models,0.2523813000007067,0.265625,1500
+46,33,Continuous Retraining,34,RandomForest,0.11627779999980703,0.109375,1500
+46,33,Continuous Retraining,34,ExtraTrees,0.053106799998204224,0.046875,1500
+46,33,Continuous Retraining,34,GradientBoosting,0.12545069999760017,0.125,1500
+46,33,Continuous Retraining,34,All_Base_Models,0.2948352999956114,0.28125,1500
+46,33,Event-Driven Baseline,19,RandomForest,0.12557609999203123,0.109375,1500
+46,33,Event-Driven Baseline,19,ExtraTrees,0.056168200011597946,0.0625,1500
+46,33,Event-Driven Baseline,19,GradientBoosting,0.1814544999942882,0.171875,1500
+46,33,Event-Driven Baseline,19,All_Base_Models,0.3631987999979174,0.34375,1500
+46,33,RAPT (K=8),7,RandomForest,0.07802930001344066,0.0625,500
+46,33,RAPT (K=8),7,ExtraTrees,0.03786709999258164,0.046875,500
+46,33,RAPT (K=8),7,GradientBoosting,0.08135300000139978,0.0625,500
+46,33,RAPT (K=8),7,All_Base_Models,0.19724940000742208,0.171875,500
+46,33,Two-Tier Hybrid RAPT,7,RandomForest,0.07860310000251047,0.078125,500
+46,33,Two-Tier Hybrid RAPT,7,ExtraTrees,0.08365030000277329,0.078125,500
+46,33,Two-Tier Hybrid RAPT,7,GradientBoosting,0.08390839998901356,0.078125,500
+46,33,Two-Tier Hybrid RAPT,7,All_Base_Models,0.24616179999429733,0.234375,500
+46,34,Continuous Retraining,35,RandomForest,0.11469200000283308,0.109375,1500
+46,34,Continuous Retraining,35,ExtraTrees,0.07114839999121614,0.0625,1500
+46,34,Continuous Retraining,35,GradientBoosting,0.1187703000032343,0.125,1500
+46,34,Continuous Retraining,35,All_Base_Models,0.3046106999972835,0.296875,1500
+46,34,RAPT (K=8),8,RandomForest,0.05414540000492707,0.046875,500
+46,34,RAPT (K=8),8,ExtraTrees,0.052156099991407245,0.0625,500
+46,34,RAPT (K=8),8,GradientBoosting,0.043680000002495944,0.046875,500
+46,34,RAPT (K=8),8,All_Base_Models,0.14998149999883026,0.15625,500
+46,34,Two-Tier Hybrid RAPT,8,RandomForest,0.08082020000438206,0.078125,500
+46,34,Two-Tier Hybrid RAPT,8,ExtraTrees,0.043909400003030896,0.046875,500
+46,34,Two-Tier Hybrid RAPT,8,GradientBoosting,0.08781309999176301,0.078125,500
+46,34,Two-Tier Hybrid RAPT,8,All_Base_Models,0.21254269999917597,0.203125,500
+46,35,Continuous Retraining,36,RandomForest,0.11964630000875331,0.109375,1500
+46,35,Continuous Retraining,36,ExtraTrees,0.06249250000109896,0.0625,1500
+46,35,Continuous Retraining,36,GradientBoosting,0.11695320000580978,0.125,1500
+46,35,Continuous Retraining,36,All_Base_Models,0.29909200001566205,0.296875,1500
+46,36,Continuous Retraining,37,RandomForest,0.14355999999679625,0.140625,1500
+46,36,Continuous Retraining,37,ExtraTrees,0.08561759999429341,0.078125,1500
+46,36,Continuous Retraining,37,GradientBoosting,0.1182243999937782,0.125,1500
+46,36,Continuous Retraining,37,All_Base_Models,0.34740199998486787,0.34375,1500
+46,37,Continuous Retraining,38,RandomForest,0.09560339999734424,0.09375,1500
+46,37,Continuous Retraining,38,ExtraTrees,0.059750000000349246,0.0625,1500
+46,37,Continuous Retraining,38,GradientBoosting,0.08178720000432804,0.078125,1500
+46,37,Continuous Retraining,38,All_Base_Models,0.23714060000202153,0.234375,1500
+46,37,RAPT (K=8),9,RandomForest,0.10128770000301301,0.109375,500
+46,37,RAPT (K=8),9,ExtraTrees,0.059739900010754354,0.0625,500
+46,37,RAPT (K=8),9,GradientBoosting,0.04078239999944344,0.03125,500
+46,37,RAPT (K=8),9,All_Base_Models,0.2018100000132108,0.203125,500
+46,37,Two-Tier Hybrid RAPT,9,RandomForest,0.07208280000486411,0.078125,500
+46,37,Two-Tier Hybrid RAPT,9,ExtraTrees,0.041577500000130385,0.03125,500
+46,37,Two-Tier Hybrid RAPT,9,GradientBoosting,0.05698820001271088,0.0625,500
+46,37,Two-Tier Hybrid RAPT,9,All_Base_Models,0.17064850001770537,0.171875,500

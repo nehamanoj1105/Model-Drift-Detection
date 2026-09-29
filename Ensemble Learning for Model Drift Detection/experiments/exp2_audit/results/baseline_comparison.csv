@@ -1,0 +1,9 @@
+Stream,Method,Validated F1,Exp2 F1,Delta,Status
+9A_Original,RAPT-E,0.9942,0.3553,-0.6389,LARGE DROP
+9A_Original,Event-Driven,0.9959,0.3553,-0.6406,LARGE DROP
+9A_Original,Frozen,0.9909,0.3302,-0.6607,LARGE DROP
+9A_Original,Full Retraining,0.9959,0.356,-0.6399,LARGE DROP
+9B_Original,RAPT-E,0.8924,0.4136,-0.4788,LARGE DROP
+9B_Original,Event-Driven,0.8903,0.3295,-0.5608,LARGE DROP
+9B_Original,Frozen,0.7693,0.1984,-0.5709,LARGE DROP
+9B_Original,Full Retraining,0.8936,0.3579,-0.5357,LARGE DROP

@@ -1,0 +1,274 @@
+timestamp,dataset,seed,method,model,regime,number_of_samples,fit_duration,fit_type
+1790269988.3182805,9A,42,Frozen,BaseEnsemble,A,200,0.5696897999987414,initial
+1790270044.64669,9A,42,Event-Driven,EventDrivenEnsemble,A,200,0.539480999999796,initial
+1790270046.3096225,9A,42,Event-Driven,EventDrivenEnsemble,B,226,0.6846659000002546,event_retrain
+1790270052.0745878,9A,42,Event-Driven,EventDrivenEnsemble,B,346,0.6067468999972334,event_retrain
+1790270055.1468785,9A,42,Event-Driven,EventDrivenEnsemble,C,413,0.6728733999989345,event_retrain
+1790270057.5186186,9A,42,Event-Driven,EventDrivenEnsemble,C,453,0.6117206000017177,event_retrain
+1790270064.2689486,9A,42,Event-Driven,EventDrivenEnsemble,A,626,0.6166034000016225,event_retrain
+1790270068.5320563,9A,42,Event-Driven,EventDrivenEnsemble,A,706,0.7197033000011288,event_retrain
+1790270083.6648548,9A,42,Event-Driven,EventDrivenEnsemble,B,1000,0.7744486000010511,event_retrain
+1790270110.8660953,9A,42,Event-Driven,EventDrivenEnsemble,C,1000,0.7635373000011896,event_retrain
+1790270118.522674,9A,42,Full Retraining,BaseEnsemble,A,200,0.5542567000011331,initial
+1790270119.0888424,9A,42,Full Retraining,BaseEnsemble,B,200,0.5244296000018949,transition_retrain
+1790270127.8489943,9A,42,Full Retraining,BaseEnsemble,C,400,0.5675631999984034,transition_retrain
+1790270135.5982025,9A,42,Full Retraining,BaseEnsemble,A,600,0.5583243000000948,transition_retrain
+1790270143.2116346,9A,42,Full Retraining,BaseEnsemble,C,800,0.6230322999981581,transition_retrain
+1790270150.533952,9A,42,Full Retraining,BaseEnsemble,B,1000,0.6003464000023087,transition_retrain
+1790270157.0813332,9A,42,Full Retraining,BaseEnsemble,A,1000,0.5008754000009503,transition_retrain
+1790270163.788577,9A,42,Full Retraining,BaseEnsemble,B,1000,0.597655700003088,transition_retrain
+1790270170.6998403,9A,42,Full Retraining,BaseEnsemble,C,1000,0.6195047000001068,transition_retrain
+1790270177.9968834,9A,42,Original RAPT,RAPTSystem,A,200,0.4815894000021217,initial
+1790270178.3906345,9A,42,Original RAPT,RAPTSystem,B,200,0.3552389000033145,new_regime_checkpoint
+1790270185.6317275,9A,42,Original RAPT,RAPTSystem,C,400,0.5992335000009916,new_regime_checkpoint
+1790270232.0753262,9A,42,RAPT-E,RAPTv2Fixed,A,200,0.536532600002829,initial
+1790270232.5570393,9A,42,RAPT-E,RAPTv2Fixed,B,200,0.453714499999478,new_regime_checkpoint
+1790270240.1735773,9A,42,RAPT-E,RAPTv2Fixed,C,400,0.6557812999999442,new_regime_checkpoint
+1790270287.0316613,9A,43,Frozen,BaseEnsemble,A,200,0.47971989999859943,initial
+1790270331.435821,9A,43,Event-Driven,EventDrivenEnsemble,A,200,0.5182039999999688,initial
+1790270335.6636734,9A,43,Event-Driven,EventDrivenEnsemble,B,346,0.3574116999989201,event_retrain
+1790270337.8179147,9A,43,Event-Driven,EventDrivenEnsemble,C,413,0.3710743999981787,event_retrain
+1790270344.731015,9A,43,Event-Driven,EventDrivenEnsemble,A,626,0.5568725999983144,event_retrain
+1790270356.1100037,9A,43,Event-Driven,EventDrivenEnsemble,B,1000,0.42686419999881764,event_retrain
+1790270372.5760384,9A,43,Event-Driven,EventDrivenEnsemble,C,1000,0.4227439000023878,event_retrain
+1790270377.414828,9A,43,Full Retraining,BaseEnsemble,A,200,0.347361500000261,initial
+1790270377.8527458,9A,43,Full Retraining,BaseEnsemble,B,200,0.4139379000007466,transition_retrain
+1790270383.2942455,9A,43,Full Retraining,BaseEnsemble,C,400,0.4079688999991049,transition_retrain
+1790270388.8537831,9A,43,Full Retraining,BaseEnsemble,A,600,0.39294599999993807,transition_retrain
+1790270394.8323917,9A,43,Full Retraining,BaseEnsemble,C,800,0.39947989999927813,transition_retrain
+1790270400.4823325,9A,43,Full Retraining,BaseEnsemble,B,1000,0.46045690000028117,transition_retrain
+1790270406.0656803,9A,43,Full Retraining,BaseEnsemble,A,1000,0.4815283999996609,transition_retrain
+1790270412.3569431,9A,43,Full Retraining,BaseEnsemble,B,1000,0.4580900000000838,transition_retrain
+1790270417.9426858,9A,43,Full Retraining,BaseEnsemble,C,1000,0.4185899000003701,transition_retrain
+1790270423.3232262,9A,43,Original RAPT,RAPTSystem,A,200,0.3861451000011584,initial
+1790270423.8088286,9A,43,Original RAPT,RAPTSystem,B,200,0.4628021999997145,new_regime_checkpoint
+1790270429.4951854,9A,43,Original RAPT,RAPTSystem,C,400,0.3813088999995671,new_regime_checkpoint
+1790270468.5295055,9A,43,RAPT-E,RAPTv2Fixed,A,200,0.5611283999969601,initial
+1790270469.0579731,9A,43,RAPT-E,RAPTv2Fixed,B,200,0.4995974999983446,new_regime_checkpoint
+1790270475.2053218,9A,43,RAPT-E,RAPTv2Fixed,C,400,0.4553809999997611,new_regime_checkpoint
+1790270516.972144,9A,44,Frozen,BaseEnsemble,A,200,0.5282474999985425,initial
+1790270565.2597668,9A,44,Event-Driven,EventDrivenEnsemble,A,200,0.36859109999932116,initial
+1790270569.591204,9A,44,Event-Driven,EventDrivenEnsemble,B,346,0.4284829999996873,event_retrain
+1790270572.2952223,9A,44,Event-Driven,EventDrivenEnsemble,C,413,0.5430641999992076,event_retrain
+1790270579.8544323,9A,44,Event-Driven,EventDrivenEnsemble,A,626,0.5312984000011056,event_retrain
+1790270582.9092796,9A,44,Event-Driven,EventDrivenEnsemble,A,706,0.5505717999985791,event_retrain
+1790271545.151739,9A,44,Event-Driven,EventDrivenEnsemble,C,906,0.9144385999970837,event_retrain
+1790271564.4724882,9A,44,Event-Driven,EventDrivenEnsemble,B,1000,0.5683636000030674,event_retrain
+1790271590.9122467,9A,44,Event-Driven,EventDrivenEnsemble,C,1000,0.6079233000054955,event_retrain
+1790271600.0213602,9A,44,Full Retraining,BaseEnsemble,A,200,0.8637974999946891,initial
+1790271601.0492098,9A,44,Full Retraining,BaseEnsemble,B,200,0.957866800003103,transition_retrain
+1790271610.3615923,9A,44,Full Retraining,BaseEnsemble,C,400,0.5634752000041772,transition_retrain
+1790271617.8161514,9A,44,Full Retraining,BaseEnsemble,A,600,0.43208729999605566,transition_retrain
+1790271622.9906592,9A,44,Full Retraining,BaseEnsemble,C,800,0.549385500002245,transition_retrain
+1790271627.2811637,9A,44,Full Retraining,BaseEnsemble,B,1000,0.36488740000640973,transition_retrain
+1790271631.6103506,9A,44,Full Retraining,BaseEnsemble,A,1000,0.3887313000013819,transition_retrain
+1790271636.0309243,9A,44,Full Retraining,BaseEnsemble,B,1000,0.3334954000019934,transition_retrain
+1790271640.1714127,9A,44,Full Retraining,BaseEnsemble,C,1000,0.3494672000015271,transition_retrain
+1790271644.0983803,9A,44,Original RAPT,RAPTSystem,A,200,0.20440360000065994,initial
+1790271644.3644297,9A,44,Original RAPT,RAPTSystem,B,200,0.2523116999946069,new_regime_checkpoint
+1790271647.4398003,9A,44,Original RAPT,RAPTSystem,C,400,0.21030610000161687,new_regime_checkpoint
+1790271667.094854,9A,44,RAPT-E,RAPTv2Fixed,A,200,0.19862089999514865,initial
+1790271667.3323495,9A,44,RAPT-E,RAPTv2Fixed,B,200,0.22123830000055023,new_regime_checkpoint
+1790271670.287144,9A,44,RAPT-E,RAPTv2Fixed,C,400,0.22308429999975488,new_regime_checkpoint
+1790271688.7441459,9A,45,Frozen,BaseEnsemble,A,200,0.16662060000089696,initial
+1790271707.3155427,9A,45,Event-Driven,EventDrivenEnsemble,A,200,0.16687090000050375,initial
+1790271707.750133,9A,45,Event-Driven,EventDrivenEnsemble,B,226,0.14531020000140416,event_retrain
+1790271709.2830565,9A,45,Event-Driven,EventDrivenEnsemble,B,346,0.173805699996592,event_retrain
+1790271710.1827679,9A,45,Event-Driven,EventDrivenEnsemble,C,413,0.16920029999891995,event_retrain
+1790271712.782055,9A,45,Event-Driven,EventDrivenEnsemble,A,626,0.16873309999937192,event_retrain
+1790271717.7150848,9A,45,Event-Driven,EventDrivenEnsemble,B,1000,0.17363350000232458,event_retrain
+1790271724.7883022,9A,45,Event-Driven,EventDrivenEnsemble,C,1000,0.19330079999781447,event_retrain
+1790271727.028511,9A,45,Full Retraining,BaseEnsemble,A,200,0.15166199999657692,initial
+1790271727.1965737,9A,45,Full Retraining,BaseEnsemble,B,200,0.15619030000380008,transition_retrain
+1790271729.7163637,9A,45,Full Retraining,BaseEnsemble,C,400,0.16559540000162087,transition_retrain
+1790271732.7457519,9A,45,Full Retraining,BaseEnsemble,A,600,0.22921320000023115,transition_retrain
+1790271735.5553496,9A,45,Full Retraining,BaseEnsemble,C,800,0.16680790000100387,transition_retrain
+1790271738.533536,9A,45,Full Retraining,BaseEnsemble,B,1000,0.25402080000640126,transition_retrain
+1790271740.9690757,9A,45,Full Retraining,BaseEnsemble,A,1000,0.18652479999582283,transition_retrain
+1790271743.5012507,9A,45,Full Retraining,BaseEnsemble,B,1000,0.17768159999832278,transition_retrain
+1790271746.0313869,9A,45,Full Retraining,BaseEnsemble,C,1000,0.18685719999484718,transition_retrain
+1790271748.5938034,9A,45,Original RAPT,RAPTSystem,A,200,0.17881839999608928,initial
+1790271748.7654738,9A,45,Original RAPT,RAPTSystem,B,200,0.1614599000022281,new_regime_checkpoint
+1790271751.490744,9A,45,Original RAPT,RAPTSystem,C,400,0.22319759999663802,new_regime_checkpoint
+1790271768.6274722,9A,45,RAPT-E,RAPTv2Fixed,A,200,0.17159860000538174,initial
+1790271768.835393,9A,45,RAPT-E,RAPTv2Fixed,B,200,0.1964663999970071,new_regime_checkpoint
+1790271771.3805223,9A,45,RAPT-E,RAPTv2Fixed,C,400,0.21383299999433802,new_regime_checkpoint
+1790271789.4145389,9A,46,Frozen,BaseEnsemble,A,200,0.1591755000044941,initial
+1790271813.6302786,9A,46,Event-Driven,EventDrivenEnsemble,A,200,0.18451030000142055,initial
+1790271815.7145224,9A,46,Event-Driven,EventDrivenEnsemble,B,333,0.19194389999756822,event_retrain
+1790271816.1980298,9A,46,Event-Driven,EventDrivenEnsemble,B,346,0.2657859999962966,event_retrain
+1790271817.4056332,9A,46,Event-Driven,EventDrivenEnsemble,C,413,0.24766229999659117,event_retrain
+1790271821.1841285,9A,46,Event-Driven,EventDrivenEnsemble,A,626,0.22638299999380251,event_retrain
+1790271827.0232491,9A,46,Event-Driven,EventDrivenEnsemble,B,1000,0.23570330000075046,event_retrain
+1790271835.5194921,9A,46,Event-Driven,EventDrivenEnsemble,C,1000,0.23197490000166,event_retrain
+1790271836.4063709,9A,46,Event-Driven,EventDrivenEnsemble,C,1000,0.2876962999944226,event_retrain
+1790271838.626539,9A,46,Full Retraining,BaseEnsemble,A,200,0.33177730000170413,initial
+1790271838.830882,9A,46,Full Retraining,BaseEnsemble,B,200,0.19597439999779454,transition_retrain
+1790271842.6087456,9A,46,Full Retraining,BaseEnsemble,C,400,0.34969209999690065,transition_retrain
+1790271847.157959,9A,46,Full Retraining,BaseEnsemble,A,600,0.3470713999995496,transition_retrain
+1790271850.5358357,9A,46,Full Retraining,BaseEnsemble,C,800,0.2226996999961557,transition_retrain
+1790271854.88321,9A,46,Full Retraining,BaseEnsemble,B,1000,0.1983674000002793,transition_retrain
+1790271857.7759557,9A,46,Full Retraining,BaseEnsemble,A,1000,0.2682712999958312,transition_retrain
+1790271862.2058268,9A,46,Full Retraining,BaseEnsemble,B,1000,0.4559934999997495,transition_retrain
+1790271867.2943223,9A,46,Full Retraining,BaseEnsemble,C,1000,0.4398940999963088,transition_retrain
+1790271871.7413127,9A,46,Original RAPT,RAPTSystem,A,200,0.3405659000054584,initial
+1790271872.146482,9A,46,Original RAPT,RAPTSystem,B,200,0.36385519999748794,new_regime_checkpoint
+1790271876.8842347,9A,46,Original RAPT,RAPTSystem,C,400,0.33679120000306284,new_regime_checkpoint
+1790271904.745742,9A,46,RAPT-E,RAPTv2Fixed,A,200,0.207573699997738,initial
+1790271904.9613807,9A,46,RAPT-E,RAPTv2Fixed,B,200,0.19849710000562482,new_regime_checkpoint
+1790271909.305463,9A,46,RAPT-E,RAPTv2Fixed,C,400,0.3388130000021192,new_regime_checkpoint
+1790271932.02722,9B,42,Frozen,BaseEnsemble,regime_A,99,0.3314728999976069,initial
+1790271937.600091,9B,42,Event-Driven,EventDrivenEnsemble,regime_A,99,0.21233279999432852,initial
+1790271938.3619874,9B,42,Event-Driven,EventDrivenEnsemble,regime_D,156,0.1633916999999201,event_retrain
+1790271938.714866,9B,42,Event-Driven,EventDrivenEnsemble,regime_D,167,0.20962379999400582,event_retrain
+1790271939.6152172,9B,42,Event-Driven,EventDrivenEnsemble,regime_A,219,0.26236619999690447,event_retrain
+1790271939.9097612,9B,42,Event-Driven,EventDrivenEnsemble,regime_A,227,0.20483619999868097,event_retrain
+1790271940.9361362,9B,42,Event-Driven,EventDrivenEnsemble,regime_B,303,0.14571670000441372,event_retrain
+1790271941.4776142,9B,42,Event-Driven,EventDrivenEnsemble,regime_B,333,0.15551530000084313,event_retrain
+1790271941.7943687,9B,42,Event-Driven,EventDrivenEnsemble,regime_B,347,0.16136890000052517,event_retrain
+1790271942.044369,9B,42,Event-Driven,EventDrivenEnsemble,regime_D,356,0.15990000000601867,event_retrain
+1790271942.3598251,9B,42,Event-Driven,EventDrivenEnsemble,regime_D,367,0.19080679999751737,event_retrain
+1790271942.6032627,9B,42,Event-Driven,EventDrivenEnsemble,regime_D,373,0.16864790000545327,event_retrain
+1790271943.283537,9B,42,Event-Driven,EventDrivenEnsemble,regime_A,419,0.1676898000005167,event_retrain
+1790271943.869268,9B,42,Event-Driven,EventDrivenEnsemble,regime_B,451,0.18077530000300612,event_retrain
+1790271944.4958959,9B,42,Event-Driven,EventDrivenEnsemble,regime_B,490,0.16276539999671513,event_retrain
+1790271944.7805839,9B,42,Full Retraining,BaseEnsemble,regime_A,99,0.179486300003191,initial
+1790271944.9622407,9B,42,Full Retraining,BaseEnsemble,regime_B,99,0.16617730000143638,transition_retrain
+1790271945.1279502,9B,42,Full Retraining,BaseEnsemble,regime_C,100,0.15468259999761358,transition_retrain
+1790271945.8022983,9B,42,Full Retraining,BaseEnsemble,regime_D,150,0.14544439999735914,transition_retrain
+1790271946.5355031,9B,42,Full Retraining,BaseEnsemble,regime_A,200,0.15500500000052853,transition_retrain
+1790271947.2508538,9B,42,Full Retraining,BaseEnsemble,regime_C,250,0.17043659999762895,transition_retrain
+1790271947.9461684,9B,42,Full Retraining,BaseEnsemble,regime_B,300,0.15391190000082133,transition_retrain
+1790271948.730661,9B,42,Full Retraining,BaseEnsemble,regime_D,350,0.1732114000042202,transition_retrain
+1790271949.4677453,9B,42,Full Retraining,BaseEnsemble,regime_A,400,0.19049859999358887,transition_retrain
+1790271950.5089755,9B,42,Full Retraining,BaseEnsemble,regime_B,450,0.21754710000095656,transition_retrain
+1790271951.5741532,9B,42,Original RAPT,RAPTSystem,regime_A,99,0.2824551000012434,initial
+1790271951.8352082,9B,42,Original RAPT,RAPTSystem,regime_B,99,0.23840729999938048,new_regime_checkpoint
+1790271952.0673969,9B,42,Original RAPT,RAPTSystem,regime_C,100,0.21883079999679467,new_regime_checkpoint
+1790271953.0474765,9B,42,Original RAPT,RAPTSystem,regime_D,150,0.19821879999653902,new_regime_checkpoint
+1790271959.2138379,9B,42,RAPT-E,RAPTv2Fixed,regime_A,99,0.35023219999857247,initial
+1790271959.441562,9B,42,RAPT-E,RAPTv2Fixed,regime_B,99,0.2139956000028178,new_regime_checkpoint
+1790271959.683571,9B,42,RAPT-E,RAPTv2Fixed,regime_C,100,0.22328749999724096,new_regime_checkpoint
+1790271960.9672728,9B,42,RAPT-E,RAPTv2Fixed,regime_D,150,0.21946720000414643,new_regime_checkpoint
+1790271966.784586,9B,43,Frozen,BaseEnsemble,regime_A,99,0.20786450000014156,initial
+1790271973.0724142,9B,43,Event-Driven,EventDrivenEnsemble,regime_A,99,0.19689179999841144,initial
+1790271974.1815758,9B,43,Event-Driven,EventDrivenEnsemble,regime_D,156,0.21615929999825312,event_retrain
+1790271974.5564344,9B,43,Event-Driven,EventDrivenEnsemble,regime_D,167,0.22334829999454087,event_retrain
+1790271976.7829583,9B,43,Event-Driven,EventDrivenEnsemble,regime_B,303,0.20690019999892684,event_retrain
+1790271977.3441026,9B,43,Event-Driven,EventDrivenEnsemble,regime_B,333,0.1981826000046567,event_retrain
+1790271977.7659497,9B,43,Event-Driven,EventDrivenEnsemble,regime_B,347,0.22840829999768175,event_retrain
+1790271978.0742583,9B,43,Event-Driven,EventDrivenEnsemble,regime_D,356,0.17342310000094585,event_retrain
+1790271978.4511685,9B,43,Event-Driven,EventDrivenEnsemble,regime_D,367,0.19496880000224337,event_retrain
+1790271979.9177253,9B,43,Event-Driven,EventDrivenEnsemble,regime_B,455,0.1940859999958775,event_retrain
+1790271980.6486034,9B,43,Event-Driven,EventDrivenEnsemble,regime_B,490,0.18703139999706764,event_retrain
+1790271981.0468543,9B,43,Event-Driven,EventDrivenEnsemble,regime_B,497,0.2829464999958873,event_retrain
+1790271981.265847,9B,43,Full Retraining,BaseEnsemble,regime_A,99,0.1801437000031001,initial
+1790271981.4418852,9B,43,Full Retraining,BaseEnsemble,regime_B,99,0.16156869999394985,transition_retrain
+1790271981.6493714,9B,43,Full Retraining,BaseEnsemble,regime_C,100,0.19751019999966957,transition_retrain
+1790271982.594691,9B,43,Full Retraining,BaseEnsemble,regime_D,150,0.24657679999654647,transition_retrain
+1790271983.5317807,9B,43,Full Retraining,BaseEnsemble,regime_A,200,0.2154783000005409,transition_retrain
+1790271984.495149,9B,43,Full Retraining,BaseEnsemble,regime_C,250,0.21381339999788906,transition_retrain
+1790271985.4894059,9B,43,Full Retraining,BaseEnsemble,regime_B,300,0.23613369999657152,transition_retrain
+1790271986.9938076,9B,43,Full Retraining,BaseEnsemble,regime_D,350,0.3422729000012623,transition_retrain
+1790271987.8336709,9B,43,Full Retraining,BaseEnsemble,regime_A,400,0.18701910000527278,transition_retrain
+1790271988.7803411,9B,43,Full Retraining,BaseEnsemble,regime_B,450,0.23656949999713106,transition_retrain
+1790271989.6934116,9B,43,Original RAPT,RAPTSystem,regime_A,99,0.1924552999989828,initial
+1790271989.885012,9B,43,Original RAPT,RAPTSystem,regime_B,99,0.18176649999804795,new_regime_checkpoint
+1790271990.1066594,9B,43,Original RAPT,RAPTSystem,regime_C,100,0.19850050000241026,new_regime_checkpoint
+1790271990.984368,9B,43,Original RAPT,RAPTSystem,regime_D,150,0.19418370000494178,new_regime_checkpoint
+1790271996.4281595,9B,43,RAPT-E,RAPTv2Fixed,regime_A,99,0.21410080000350717,initial
+1790271996.634083,9B,43,RAPT-E,RAPTv2Fixed,regime_B,99,0.18954600000142818,new_regime_checkpoint
+1790271996.8584437,9B,43,RAPT-E,RAPTv2Fixed,regime_C,100,0.2051761999973678,new_regime_checkpoint
+1790271997.757147,9B,43,RAPT-E,RAPTv2Fixed,regime_D,150,0.19538539999484783,new_regime_checkpoint
+1790272003.2832491,9B,44,Frozen,BaseEnsemble,regime_A,99,0.2096218000006047,initial
+1790272009.23385,9B,44,Event-Driven,EventDrivenEnsemble,regime_A,99,0.1870307999997749,initial
+1790272010.1981776,9B,44,Event-Driven,EventDrivenEnsemble,regime_D,156,0.21442340000066906,event_retrain
+1790272010.5107155,9B,44,Event-Driven,EventDrivenEnsemble,regime_D,167,0.17349370000010822,event_retrain
+1790272011.4480128,9B,44,Event-Driven,EventDrivenEnsemble,regime_A,219,0.17989240000315476,event_retrain
+1790272011.7616205,9B,44,Event-Driven,EventDrivenEnsemble,regime_A,227,0.21816759999637725,event_retrain
+1790272013.1788158,9B,44,Event-Driven,EventDrivenEnsemble,regime_B,303,0.23549110000021756,event_retrain
+1790272014.1260805,9B,44,Event-Driven,EventDrivenEnsemble,regime_D,356,0.22506649999559158,event_retrain
+1790272014.513682,9B,44,Event-Driven,EventDrivenEnsemble,regime_D,367,0.23655000000144355,event_retrain
+1790272015.6024923,9B,44,Event-Driven,EventDrivenEnsemble,regime_A,427,0.20840389999648323,event_retrain
+1790272016.2245085,9B,44,Event-Driven,EventDrivenEnsemble,regime_B,455,0.2558890000000247,event_retrain
+1790272016.6724687,9B,44,Event-Driven,EventDrivenEnsemble,regime_B,468,0.23432180000236258,event_retrain
+1790272017.1691694,9B,44,Event-Driven,EventDrivenEnsemble,regime_B,490,0.20168130000092788,event_retrain
+1790272017.4945078,9B,44,Event-Driven,EventDrivenEnsemble,regime_B,497,0.2299353999987943,event_retrain
+1790272017.7256043,9B,44,Full Retraining,BaseEnsemble,regime_A,99,0.18991319999622647,initial
+1790272017.943612,9B,44,Full Retraining,BaseEnsemble,regime_B,99,0.20313780000287807,transition_retrain
+1790272018.225537,9B,44,Full Retraining,BaseEnsemble,regime_C,100,0.2658238000003621,transition_retrain
+1790272019.1031413,9B,44,Full Retraining,BaseEnsemble,regime_D,150,0.20077149999997346,transition_retrain
+1790272019.9298944,9B,44,Full Retraining,BaseEnsemble,regime_A,200,0.19644549999793526,transition_retrain
+1790272020.856861,9B,44,Full Retraining,BaseEnsemble,regime_C,250,0.1963543000019854,transition_retrain
+1790272021.9090405,9B,44,Full Retraining,BaseEnsemble,regime_B,300,0.23960269999952288,transition_retrain
+1790272022.817154,9B,44,Full Retraining,BaseEnsemble,regime_D,350,0.18471720000525238,transition_retrain
+1790272023.7018209,9B,44,Full Retraining,BaseEnsemble,regime_A,400,0.20669359999737935,transition_retrain
+1790272024.9549828,9B,44,Full Retraining,BaseEnsemble,regime_B,450,0.5633620000007795,transition_retrain
+1790272025.9835744,9B,44,Original RAPT,RAPTSystem,regime_A,99,0.23379399999976158,initial
+1790272026.226617,9B,44,Original RAPT,RAPTSystem,regime_B,99,0.22945150000305148,new_regime_checkpoint
+1790272026.531511,9B,44,Original RAPT,RAPTSystem,regime_C,100,0.294828600002802,new_regime_checkpoint
+1790272027.5269582,9B,44,Original RAPT,RAPTSystem,regime_D,150,0.20575000000098953,new_regime_checkpoint
+1790272033.0175848,9B,44,RAPT-E,RAPTv2Fixed,regime_A,99,0.4557299000007333,initial
+1790272033.39475,9B,44,RAPT-E,RAPTv2Fixed,regime_B,99,0.3516397000057623,new_regime_checkpoint
+1790272033.7865472,9B,44,RAPT-E,RAPTv2Fixed,regime_C,100,0.3682861999986926,new_regime_checkpoint
+1790272035.0491555,9B,44,RAPT-E,RAPTv2Fixed,regime_D,150,0.2492225000023609,new_regime_checkpoint
+1790272040.566492,9B,45,Frozen,BaseEnsemble,regime_A,99,0.19012870000005933,initial
+1790272046.0779788,9B,45,Event-Driven,EventDrivenEnsemble,regime_A,99,0.1990185000031488,initial
+1790272046.9937387,9B,45,Event-Driven,EventDrivenEnsemble,regime_D,156,0.19244310000067344,event_retrain
+1790272047.3304644,9B,45,Event-Driven,EventDrivenEnsemble,regime_D,167,0.19757480000407668,event_retrain
+1790272049.3182774,9B,45,Event-Driven,EventDrivenEnsemble,regime_B,303,0.18873439999879338,event_retrain
+1790272050.2641742,9B,45,Event-Driven,EventDrivenEnsemble,regime_D,356,0.20393759999569738,event_retrain
+1790272050.642571,9B,45,Event-Driven,EventDrivenEnsemble,regime_D,367,0.2241677999991225,event_retrain
+1790272051.2355354,9B,45,Event-Driven,EventDrivenEnsemble,regime_D,395,0.20563870000478346,event_retrain
+1790272052.3692212,9B,45,Event-Driven,EventDrivenEnsemble,regime_B,456,0.21415699999488425,event_retrain
+1790272053.0485435,9B,45,Event-Driven,EventDrivenEnsemble,regime_B,490,0.20853799999895273,event_retrain
+1790272053.4352705,9B,45,Full Retraining,BaseEnsemble,regime_A,99,0.21992580000369344,initial
+1790272053.6950088,9B,45,Full Retraining,BaseEnsemble,regime_B,99,0.24528380000265315,transition_retrain
+1790272053.957465,9B,45,Full Retraining,BaseEnsemble,regime_C,100,0.24378340000112075,transition_retrain
+1790272055.0759556,9B,45,Full Retraining,BaseEnsemble,regime_D,150,0.2435211000047275,transition_retrain
+1790272055.9981263,9B,45,Full Retraining,BaseEnsemble,regime_A,200,0.1966178000002401,transition_retrain
+1790272056.8978007,9B,45,Full Retraining,BaseEnsemble,regime_C,250,0.21182179999595974,transition_retrain
+1790272058.2892394,9B,45,Full Retraining,BaseEnsemble,regime_B,300,0.47844679999980144,transition_retrain
+1790272059.3034763,9B,45,Full Retraining,BaseEnsemble,regime_D,350,0.195429300001706,transition_retrain
+1790272060.2194932,9B,45,Full Retraining,BaseEnsemble,regime_A,400,0.20071119999920484,transition_retrain
+1790272060.999239,9B,45,Full Retraining,BaseEnsemble,regime_B,450,0.1852249000003212,transition_retrain
+1790272061.759497,9B,45,Original RAPT,RAPTSystem,regime_A,99,0.17044140000507468,initial
+1790272061.9200027,9B,45,Original RAPT,RAPTSystem,regime_B,99,0.15119659999618307,new_regime_checkpoint
+1790272062.0983646,9B,45,Original RAPT,RAPTSystem,regime_C,100,0.16611199999897508,new_regime_checkpoint
+1790272062.8626707,9B,45,Original RAPT,RAPTSystem,regime_D,150,0.1634462000001804,new_regime_checkpoint
+1790272067.115076,9B,45,RAPT-E,RAPTv2Fixed,regime_A,99,0.1845365999979549,initial
+1790272067.3245664,9B,45,RAPT-E,RAPTv2Fixed,regime_B,99,0.19660250000015367,new_regime_checkpoint
+1790272067.4824073,9B,45,RAPT-E,RAPTv2Fixed,regime_C,100,0.14913470000465168,new_regime_checkpoint
+1790272068.184747,9B,45,RAPT-E,RAPTv2Fixed,regime_D,150,0.156932500001858,new_regime_checkpoint
+1790272072.7499275,9B,46,Frozen,BaseEnsemble,regime_A,99,0.15228139999817358,initial
+1790272077.5944083,9B,46,Event-Driven,EventDrivenEnsemble,regime_A,99,0.23212629999761702,initial
+1790272078.6165473,9B,46,Event-Driven,EventDrivenEnsemble,regime_D,156,0.20100929999898653,event_retrain
+1790272078.947032,9B,46,Event-Driven,EventDrivenEnsemble,regime_D,167,0.1927090999961365,event_retrain
+1790272079.9035044,9B,46,Event-Driven,EventDrivenEnsemble,regime_A,219,0.16412409999611555,event_retrain
+1790272080.1502776,9B,46,Event-Driven,EventDrivenEnsemble,regime_A,227,0.16266950000135694,event_retrain
+1790272081.19937,9B,46,Event-Driven,EventDrivenEnsemble,regime_B,303,0.16676300000108313,event_retrain
+1790272081.6821349,9B,46,Event-Driven,EventDrivenEnsemble,regime_B,333,0.15450810000038473,event_retrain
+1790272082.1599863,9B,46,Event-Driven,EventDrivenEnsemble,regime_D,356,0.17559329999494366,event_retrain
+1790272082.4869342,9B,46,Event-Driven,EventDrivenEnsemble,regime_D,372,0.15783229999942705,event_retrain
+1790272083.1835535,9B,46,Event-Driven,EventDrivenEnsemble,regime_D,395,0.34177749999798834,event_retrain
+1790272083.808538,9B,46,Event-Driven,EventDrivenEnsemble,regime_A,427,0.17545479999535019,event_retrain
+1790272084.2940116,9B,46,Event-Driven,EventDrivenEnsemble,regime_B,455,0.1777003999959561,event_retrain
+1790272084.903729,9B,46,Event-Driven,EventDrivenEnsemble,regime_B,490,0.17005849999986822,event_retrain
+1790272085.2302125,9B,46,Full Retraining,BaseEnsemble,regime_A,99,0.20333580000442453,initial
+1790272085.4034863,9B,46,Full Retraining,BaseEnsemble,regime_B,99,0.1579907000050298,transition_retrain
+1790272085.5866165,9B,46,Full Retraining,BaseEnsemble,regime_C,100,0.1713067000018782,transition_retrain
+1790272086.3710268,9B,46,Full Retraining,BaseEnsemble,regime_D,150,0.16674800000328105,transition_retrain
+1790272087.1682875,9B,46,Full Retraining,BaseEnsemble,regime_A,200,0.2008138000019244,transition_retrain
+1790272087.9034426,9B,46,Full Retraining,BaseEnsemble,regime_C,250,0.15639749999536434,transition_retrain
+1790272088.6856458,9B,46,Full Retraining,BaseEnsemble,regime_B,300,0.166329500003485,transition_retrain
+1790272089.4841866,9B,46,Full Retraining,BaseEnsemble,regime_D,350,0.22286860000167508,transition_retrain
+1790272090.208482,9B,46,Full Retraining,BaseEnsemble,regime_A,400,0.17139830000087386,transition_retrain
+1790272090.9662745,9B,46,Full Retraining,BaseEnsemble,regime_B,450,0.16349980000086362,transition_retrain
+1790272091.6972604,9B,46,Original RAPT,RAPTSystem,regime_A,99,0.1820462999967276,initial
+1790272091.9457495,9B,46,Original RAPT,RAPTSystem,regime_B,99,0.23493570000573527,new_regime_checkpoint
+1790272092.130781,9B,46,Original RAPT,RAPTSystem,regime_C,100,0.1753134000027785,new_regime_checkpoint
+1790272092.8461206,9B,46,Original RAPT,RAPTSystem,regime_D,150,0.17737669999769423,new_regime_checkpoint
+1790272097.6105723,9B,46,RAPT-E,RAPTv2Fixed,regime_A,99,0.17835070000000997,initial
+1790272097.7865374,9B,46,RAPT-E,RAPTv2Fixed,regime_B,99,0.16780389999621548,new_regime_checkpoint
+1790272098.0186276,9B,46,RAPT-E,RAPTv2Fixed,regime_C,100,0.2200622999953339,new_regime_checkpoint
+1790272098.7360086,9B,46,RAPT-E,RAPTv2Fixed,regime_D,150,0.1681410000019241,new_regime_checkpoint

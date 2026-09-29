@@ -1,0 +1,19 @@
+# 9B Protocol & Execution Difference Analysis
+
+## Detailed Protocol Comparison
+
+| Category                  | Exp9b Baseline                                   | Final Validation (Buggy)                                   | Status                     |
+|:--------------------------|:-------------------------------------------------|:-----------------------------------------------------------|:---------------------------|
+| Regime Sequence           | A, B, C, D, A, C, B, D, A, B (50 windows/seg)    | A, B, C, D, A, C, B, D, A, B (50 windows/seg)              | MATCH                      |
+| Dataset Files             | processed_exp9b_stream.csv (499 windows)         | processed_exp9b_stream.csv (499 windows)                   | MATCH                      |
+| Feature Columns & Scaling | 12 QoS features, StandardScaler on df[:99]       | 12 QoS features, StandardScaler on df[:99]                 | MATCH                      |
+| Initial Reg Tracker       | prev_regime = initial_reg_id ('regime_A')        | prev_regime = df_stream.iloc[99]['regime_id'] ('regime_B') | MISMATCH (CRITICAL BUG)    |
+| Window 99 Transition      | Triggers transition (A->B), stores regime_B ckpt | Skipped (B==B), regime_B checkpoint never created          | MISMATCH (CRITICAL BUG)    |
+| Policy Reuse at W300      | Reuses stored regime_B checkpoint                | Retrains new model from scratch                            | MISMATCH (CRITICAL BUG)    |
+| Window ID in Seed         | w_id from df_stream['window_id']                 | idx (0..498 integer index)                                 | MATCH (both 99 at W99)     |
+| Seed 42 Macro F1          | 0.898858 (Original RAPT)                         | 0.880509 (Original RAPT)                                   | MISMATCH (Resolved by Fix) |
+| 5-Seed Mean Macro F1      | 0.889447 (Original RAPT)                         | 0.869900 (Original RAPT)                                   | MISMATCH (Resolved by Fix) |
+
+## Conclusion & Action Plan
+The exact protocol discrepancy causing the 9B regression from 0.889447 to 0.8699 has been isolated to line 159 of `final_validation.py`.
+Changing `prev_regime = df_stream.iloc[n_init][regime_col]` to `prev_regime = initial_regime` restores 100% identical predictions and exact metric match (0.889447) with the ground truth `exp9b` pipeline.

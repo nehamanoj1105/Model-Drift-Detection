@@ -1,0 +1,119 @@
+{
+  "total_windows": 499,
+  "initial_train_windows": 99,
+  "streaming_eval_windows": 400,
+  "qos_thresholds_ms": {
+    "t1_good": 2.307991204735103,
+    "t2_degraded": 4.1912314041154595
+  },
+  "regime_mapping": {
+    "A": "lat_UE10_SCS15_CAP1_MCSLEP_BW20_PKT1200_SINR5p0_BR10_TNmid_CNcloud_R3_SEED42.csv",
+    "B": "lat_UE10_SCS15_CAP2_MCSLEP_BW20_PKT1200_SINR15p0_BR10_TNmid_CNcloud_R3_SEED42.csv",
+    "C": "lat_UE10_SCS30_CAP1_MCSLEP_BW20_PKT1200_SINR5p0_BR5_TNmid_CNcloud_R3_SEED42.csv",
+    "D": "lat_UE1_SCS15_CAP2_MCSLEP_BW20_PKT1200_SINR15p0_BR10_TNmid_CNcloud_R3_SEED42.csv"
+  },
+  "regime_sequence": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "A",
+    "C",
+    "B",
+    "D",
+    "A",
+    "B"
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "regime_letter": "A",
+      "regime_id": "regime_A",
+      "filename": "lat_UE10_SCS15_CAP1_MCSLEP_BW20_PKT1200_SINR5p0_BR10_TNmid_CNcloud_R3_SEED42.csv",
+      "start_window": 0,
+      "end_window": 49,
+      "window_count": 50
+    },
+    {
+      "segment_index": 1,
+      "regime_letter": "B",
+      "regime_id": "regime_B",
+      "filename": "lat_UE10_SCS15_CAP2_MCSLEP_BW20_PKT1200_SINR15p0_BR10_TNmid_CNcloud_R3_SEED42.csv",
+      "start_window": 50,
+      "end_window": 99,
+      "window_count": 50
+    },
+    {
+      "segment_index": 2,
+      "regime_letter": "C",
+      "regime_id": "regime_C",
+      "filename": "lat_UE10_SCS30_CAP1_MCSLEP_BW20_PKT1200_SINR5p0_BR5_TNmid_CNcloud_R3_SEED42.csv",
+      "start_window": 100,
+      "end_window": 149,
+      "window_count": 50
+    },
+    {
+      "segment_index": 3,
+      "regime_letter": "D",
+      "regime_id": "regime_D",
+      "filename": "lat_UE1_SCS15_CAP2_MCSLEP_BW20_PKT1200_SINR15p0_BR10_TNmid_CNcloud_R3_SEED42.csv",
+      "start_window": 150,
+      "end_window": 199,
+      "window_count": 50
+    },
+    {
+      "segment_index": 4,
+      "regime_letter": "A",
+      "regime_id": "regime_A",
+      "filename": "lat_UE10_SCS15_CAP1_MCSLEP_BW20_PKT1200_SINR5p0_BR10_TNmid_CNcloud_R3_SEED42.csv",
+      "start_window": 200,
+      "end_window": 249,
+      "window_count": 50
+    },
+    {
+      "segment_index": 5,
+      "regime_letter": "C",
+      "regime_id": "regime_C",
+      "filename": "lat_UE10_SCS30_CAP1_MCSLEP_BW20_PKT1200_SINR5p0_BR5_TNmid_CNcloud_R3_SEED42.csv",
+      "start_window": 250,
+      "end_window": 299,
+      "window_count": 50
+    },
+    {
+      "segment_index": 6,
+      "regime_letter": "B",
+      "regime_id": "regime_B",
+      "filename": "lat_UE10_SCS15_CAP2_MCSLEP_BW20_PKT1200_SINR15p0_BR10_TNmid_CNcloud_R3_SEED42.csv",
+      "start_window": 300,
+      "end_window": 349,
+      "window_count": 50
+    },
+    {
+      "segment_index": 7,
+      "regime_letter": "D",
+      "regime_id": "regime_D",
+      "filename": "lat_UE1_SCS15_CAP2_MCSLEP_BW20_PKT1200_SINR15p0_BR10_TNmid_CNcloud_R3_SEED42.csv",
+      "start_window": 350,
+      "end_window": 399,
+      "window_count": 50
+    },
+    {
+      "segment_index": 8,
+      "regime_letter": "A",
+      "regime_id": "regime_A",
+      "filename": "lat_UE10_SCS15_CAP1_MCSLEP_BW20_PKT1200_SINR5p0_BR10_TNmid_CNcloud_R3_SEED42.csv",
+      "start_window": 400,
+      "end_window": 449,
+      "window_count": 50
+    },
+    {
+      "segment_index": 9,
+      "regime_letter": "B",
+      "regime_id": "regime_B",
+      "filename": "lat_UE10_SCS15_CAP2_MCSLEP_BW20_PKT1200_SINR15p0_BR10_TNmid_CNcloud_R3_SEED42.csv",
+      "start_window": 450,
+      "end_window": 499,
+      "window_count": 50
+    }
+  ]
+}

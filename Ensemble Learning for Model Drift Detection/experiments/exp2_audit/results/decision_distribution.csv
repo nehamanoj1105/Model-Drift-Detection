@@ -1,0 +1,45 @@
+stream_name,method,ABSTAIN,KEEP_ACTIVE,RETRAIN,TRANSFER,TRANSFER_ORACLE,TRANSFER_WEIGHTED
+9A_Enriched,Event-Driven,0,26945,40,0,0,0
+9A_Enriched,Frozen,0,26985,0,0,0,0
+9A_Enriched,Full Retraining,0,26945,40,0,0,0
+9A_Enriched,Historical Reliability,0,26945,0,40,0,0
+9A_Enriched,Oracle Transfer,0,26945,0,0,40,0
+9A_Enriched,Probability-Guided Top-1,10,26945,0,30,0,0
+9A_Enriched,Probability-Guided Weighted,10,26945,0,0,0,30
+9A_Enriched,RAPT-E,0,26945,40,0,0,0
+9A_Enriched,Random Historical,0,26945,0,40,0,0
+9A_Enriched,Similarity-Only,40,26945,0,0,0,0
+9A_Enriched,Similarity-Weighted,0,26945,0,0,0,40
+9A_Original,Event-Driven,0,8955,40,0,0,0
+9A_Original,Frozen,0,8995,0,0,0,0
+9A_Original,Full Retraining,0,8955,40,0,0,0
+9A_Original,Historical Reliability,0,8955,0,40,0,0
+9A_Original,Oracle Transfer,0,8955,0,0,40,0
+9A_Original,Probability-Guided Top-1,40,8955,0,0,0,0
+9A_Original,Probability-Guided Weighted,40,8955,0,0,0,0
+9A_Original,RAPT-E,0,8955,40,0,0,0
+9A_Original,Random Historical,0,8955,0,40,0,0
+9A_Original,Similarity-Only,40,8955,0,0,0,0
+9A_Original,Similarity-Weighted,0,8955,0,0,0,40
+9B_Enriched,Event-Driven,0,4660,90,0,0,0
+9B_Enriched,Frozen,0,4750,0,0,0,0
+9B_Enriched,Full Retraining,0,4660,90,0,0,0
+9B_Enriched,Historical Reliability,0,4660,0,90,0,0
+9B_Enriched,Oracle Transfer,0,4660,0,0,90,0
+9B_Enriched,Probability-Guided Top-1,45,4660,0,45,0,0
+9B_Enriched,Probability-Guided Weighted,45,4660,0,0,0,45
+9B_Enriched,RAPT-E,0,4660,90,0,0,0
+9B_Enriched,Random Historical,0,4660,0,90,0,0
+9B_Enriched,Similarity-Only,90,4660,0,0,0,0
+9B_Enriched,Similarity-Weighted,0,4660,0,0,0,90
+9B_Original,Event-Driven,0,2450,45,0,0,0
+9B_Original,Frozen,0,2495,0,0,0,0
+9B_Original,Full Retraining,0,2450,45,0,0,0
+9B_Original,Historical Reliability,0,2450,0,45,0,0
+9B_Original,Oracle Transfer,0,2450,0,0,45,0
+9B_Original,Probability-Guided Top-1,25,2450,0,20,0,0
+9B_Original,Probability-Guided Weighted,25,2450,0,0,0,20
+9B_Original,RAPT-E,0,2450,25,20,0,0
+9B_Original,Random Historical,0,2450,0,45,0,0
+9B_Original,Similarity-Only,25,2450,0,20,0,0
+9B_Original,Similarity-Weighted,0,2450,0,0,0,45

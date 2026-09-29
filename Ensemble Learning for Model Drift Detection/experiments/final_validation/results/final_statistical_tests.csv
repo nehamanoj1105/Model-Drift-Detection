@@ -1,0 +1,3 @@
+comparison,mean_difference,std_difference,wilcoxon_stat,p_value,cohen_d,significant_p05,margin_delta,non_inferior,dataset
+RAPT-E vs Event-Driven,-0.0016260162601626016,0.062247727550776115,71820.0,0.019550269092885545,-0.026121696713124882,True,0.005,True,9A
+RAPT-E vs Event-Driven,-0.001,0.2302151177929682,101270.0,0.845974518219281,-0.004343763387855776,False,0.005,True,9B

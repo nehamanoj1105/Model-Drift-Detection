@@ -1,0 +1,816 @@
+seed,detector,episode_idx,drift_type,start_window,end_window,length,detected,latency
+42,Custom Dual-Trigger,0,covariate,2,5,4,True,0
+42,Custom Dual-Trigger,1,mixed,6,6,1,True,0
+42,Custom Dual-Trigger,2,concept,7,7,1,False,1
+42,Custom Dual-Trigger,3,concept,10,10,1,True,0
+42,Custom Dual-Trigger,4,mixed,11,12,2,True,0
+42,Custom Dual-Trigger,5,concept,13,14,2,True,0
+42,Custom Dual-Trigger,6,covariate,16,16,1,False,1
+42,Custom Dual-Trigger,7,concept,17,19,3,True,1
+42,Custom Dual-Trigger,8,mixed,20,21,2,True,0
+42,Custom Dual-Trigger,9,covariate,22,22,1,True,0
+42,Custom Dual-Trigger,10,covariate,24,25,2,True,0
+42,Custom Dual-Trigger,11,mixed,27,28,2,False,2
+42,Custom Dual-Trigger,12,covariate,30,30,1,True,0
+42,Custom Dual-Trigger,13,mixed,31,32,2,True,1
+42,Custom Dual-Trigger,14,concept,33,33,1,False,1
+42,Custom Dual-Trigger,15,mixed,34,34,1,True,0
+42,Custom Dual-Trigger,16,covariate,35,35,1,True,0
+42,Custom Dual-Trigger,17,concept,36,37,2,True,1
+42,Custom Dual-Trigger,18,covariate,38,38,1,True,0
+42,Custom Dual-Trigger,19,mixed,41,41,1,True,0
+42,Custom Dual-Trigger,20,concept,42,42,1,True,0
+42,Custom Dual-Trigger,21,mixed,44,44,1,True,0
+42,Custom Dual-Trigger,22,concept,45,46,2,True,0
+42,Custom Dual-Trigger,23,mixed,47,48,2,True,1
+42,Custom Dual-Trigger,24,concept,49,49,1,False,1
+42,Custom Dual-Trigger,25,mixed,50,50,1,True,0
+42,Custom Dual-Trigger,26,covariate,52,52,1,True,0
+42,Custom Dual-Trigger,27,covariate,54,54,1,True,0
+42,Custom Dual-Trigger,28,covariate,56,57,2,True,0
+42,Custom Dual-Trigger,29,concept,59,59,1,False,1
+42,ADWIN,0,covariate,2,5,4,True,0
+42,ADWIN,1,mixed,6,6,1,False,1
+42,ADWIN,2,concept,7,7,1,True,0
+42,ADWIN,3,concept,10,10,1,True,0
+42,ADWIN,4,mixed,11,12,2,True,1
+42,ADWIN,5,concept,13,14,2,True,1
+42,ADWIN,6,covariate,16,16,1,True,0
+42,ADWIN,7,concept,17,19,3,True,1
+42,ADWIN,8,mixed,20,21,2,True,0
+42,ADWIN,9,covariate,22,22,1,True,0
+42,ADWIN,10,covariate,24,25,2,True,0
+42,ADWIN,11,mixed,27,28,2,True,0
+42,ADWIN,12,covariate,30,30,1,True,0
+42,ADWIN,13,mixed,31,32,2,True,1
+42,ADWIN,14,concept,33,33,1,True,0
+42,ADWIN,15,mixed,34,34,1,True,0
+42,ADWIN,16,covariate,35,35,1,False,1
+42,ADWIN,17,concept,36,37,2,True,1
+42,ADWIN,18,covariate,38,38,1,False,1
+42,ADWIN,19,mixed,41,41,1,True,0
+42,ADWIN,20,concept,42,42,1,True,0
+42,ADWIN,21,mixed,44,44,1,True,0
+42,ADWIN,22,concept,45,46,2,True,0
+42,ADWIN,23,mixed,47,48,2,True,0
+42,ADWIN,24,concept,49,49,1,True,0
+42,ADWIN,25,mixed,50,50,1,False,1
+42,ADWIN,26,covariate,52,52,1,True,0
+42,ADWIN,27,covariate,54,54,1,True,0
+42,ADWIN,28,covariate,56,57,2,False,2
+42,ADWIN,29,concept,59,59,1,True,0
+42,DDM,0,covariate,2,5,4,True,2
+42,DDM,1,mixed,6,6,1,False,1
+42,DDM,2,concept,7,7,1,False,1
+42,DDM,3,concept,10,10,1,False,1
+42,DDM,4,mixed,11,12,2,False,2
+42,DDM,5,concept,13,14,2,False,2
+42,DDM,6,covariate,16,16,1,True,0
+42,DDM,7,concept,17,19,3,False,3
+42,DDM,8,mixed,20,21,2,True,0
+42,DDM,9,covariate,22,22,1,True,0
+42,DDM,10,covariate,24,25,2,True,0
+42,DDM,11,mixed,27,28,2,True,1
+42,DDM,12,covariate,30,30,1,False,1
+42,DDM,13,mixed,31,32,2,False,2
+42,DDM,14,concept,33,33,1,True,0
+42,DDM,15,mixed,34,34,1,False,1
+42,DDM,16,covariate,35,35,1,True,0
+42,DDM,17,concept,36,37,2,True,1
+42,DDM,18,covariate,38,38,1,True,0
+42,DDM,19,mixed,41,41,1,False,1
+42,DDM,20,concept,42,42,1,False,1
+42,DDM,21,mixed,44,44,1,False,1
+42,DDM,22,concept,45,46,2,True,0
+42,DDM,23,mixed,47,48,2,True,0
+42,DDM,24,concept,49,49,1,True,0
+42,DDM,25,mixed,50,50,1,False,1
+42,DDM,26,covariate,52,52,1,True,0
+42,DDM,27,covariate,54,54,1,True,0
+42,DDM,28,covariate,56,57,2,False,2
+42,DDM,29,concept,59,59,1,False,1
+42,EDDM,0,covariate,2,5,4,True,0
+42,EDDM,1,mixed,6,6,1,True,0
+42,EDDM,2,concept,7,7,1,True,0
+42,EDDM,3,concept,10,10,1,True,0
+42,EDDM,4,mixed,11,12,2,True,0
+42,EDDM,5,concept,13,14,2,True,0
+42,EDDM,6,covariate,16,16,1,True,0
+42,EDDM,7,concept,17,19,3,True,0
+42,EDDM,8,mixed,20,21,2,True,0
+42,EDDM,9,covariate,22,22,1,True,0
+42,EDDM,10,covariate,24,25,2,True,0
+42,EDDM,11,mixed,27,28,2,True,0
+42,EDDM,12,covariate,30,30,1,True,0
+42,EDDM,13,mixed,31,32,2,True,0
+42,EDDM,14,concept,33,33,1,True,0
+42,EDDM,15,mixed,34,34,1,True,0
+42,EDDM,16,covariate,35,35,1,True,0
+42,EDDM,17,concept,36,37,2,True,0
+42,EDDM,18,covariate,38,38,1,True,0
+42,EDDM,19,mixed,41,41,1,True,0
+42,EDDM,20,concept,42,42,1,True,0
+42,EDDM,21,mixed,44,44,1,True,0
+42,EDDM,22,concept,45,46,2,True,0
+42,EDDM,23,mixed,47,48,2,True,0
+42,EDDM,24,concept,49,49,1,True,0
+42,EDDM,25,mixed,50,50,1,True,0
+42,EDDM,26,covariate,52,52,1,True,0
+42,EDDM,27,covariate,54,54,1,True,0
+42,EDDM,28,covariate,56,57,2,True,0
+42,EDDM,29,concept,59,59,1,True,0
+42,Page-Hinkley,0,covariate,2,5,4,True,1
+42,Page-Hinkley,1,mixed,6,6,1,False,1
+42,Page-Hinkley,2,concept,7,7,1,False,1
+42,Page-Hinkley,3,concept,10,10,1,True,0
+42,Page-Hinkley,4,mixed,11,12,2,False,2
+42,Page-Hinkley,5,concept,13,14,2,False,2
+42,Page-Hinkley,6,covariate,16,16,1,True,0
+42,Page-Hinkley,7,concept,17,19,3,True,1
+42,Page-Hinkley,8,mixed,20,21,2,False,2
+42,Page-Hinkley,9,covariate,22,22,1,True,0
+42,Page-Hinkley,10,covariate,24,25,2,True,1
+42,Page-Hinkley,11,mixed,27,28,2,False,2
+42,Page-Hinkley,12,covariate,30,30,1,False,1
+42,Page-Hinkley,13,mixed,31,32,2,False,2
+42,Page-Hinkley,14,concept,33,33,1,True,0
+42,Page-Hinkley,15,mixed,34,34,1,False,1
+42,Page-Hinkley,16,covariate,35,35,1,False,1
+42,Page-Hinkley,17,concept,36,37,2,False,2
+42,Page-Hinkley,18,covariate,38,38,1,False,1
+42,Page-Hinkley,19,mixed,41,41,1,True,0
+42,Page-Hinkley,20,concept,42,42,1,False,1
+42,Page-Hinkley,21,mixed,44,44,1,True,0
+42,Page-Hinkley,22,concept,45,46,2,False,2
+42,Page-Hinkley,23,mixed,47,48,2,False,2
+42,Page-Hinkley,24,concept,49,49,1,False,1
+42,Page-Hinkley,25,mixed,50,50,1,True,0
+42,Page-Hinkley,26,covariate,52,52,1,False,1
+42,Page-Hinkley,27,covariate,54,54,1,False,1
+42,Page-Hinkley,28,covariate,56,57,2,True,0
+42,Page-Hinkley,29,concept,59,59,1,False,1
+43,Custom Dual-Trigger,0,mixed,1,1,1,True,0
+43,Custom Dual-Trigger,1,covariate,2,2,1,True,0
+43,Custom Dual-Trigger,2,mixed,3,3,1,False,1
+43,Custom Dual-Trigger,3,concept,5,5,1,True,0
+43,Custom Dual-Trigger,4,mixed,6,6,1,False,1
+43,Custom Dual-Trigger,5,covariate,7,8,2,True,1
+43,Custom Dual-Trigger,6,mixed,9,9,1,True,0
+43,Custom Dual-Trigger,7,mixed,11,11,1,True,0
+43,Custom Dual-Trigger,8,concept,13,13,1,True,0
+43,Custom Dual-Trigger,9,mixed,14,14,1,True,0
+43,Custom Dual-Trigger,10,covariate,16,17,2,True,1
+43,Custom Dual-Trigger,11,mixed,18,18,1,True,0
+43,Custom Dual-Trigger,12,mixed,20,21,2,False,2
+43,Custom Dual-Trigger,13,concept,23,24,2,False,2
+43,Custom Dual-Trigger,14,covariate,25,25,1,True,0
+43,Custom Dual-Trigger,15,concept,28,29,2,False,2
+43,Custom Dual-Trigger,16,covariate,30,31,2,True,0
+43,Custom Dual-Trigger,17,mixed,32,32,1,True,0
+43,Custom Dual-Trigger,18,covariate,33,33,1,True,0
+43,Custom Dual-Trigger,19,concept,34,36,3,True,0
+43,Custom Dual-Trigger,20,covariate,37,39,3,True,1
+43,Custom Dual-Trigger,21,concept,40,42,3,True,2
+43,Custom Dual-Trigger,22,concept,45,45,1,False,1
+43,Custom Dual-Trigger,23,covariate,48,49,2,True,0
+43,Custom Dual-Trigger,24,mixed,50,50,1,False,1
+43,Custom Dual-Trigger,25,covariate,51,51,1,True,0
+43,Custom Dual-Trigger,26,mixed,52,52,1,False,1
+43,Custom Dual-Trigger,27,mixed,54,54,1,False,1
+43,Custom Dual-Trigger,28,concept,56,57,2,False,2
+43,Custom Dual-Trigger,29,mixed,58,59,2,True,1
+43,ADWIN,0,mixed,1,1,1,True,0
+43,ADWIN,1,covariate,2,2,1,False,1
+43,ADWIN,2,mixed,3,3,1,True,0
+43,ADWIN,3,concept,5,5,1,True,0
+43,ADWIN,4,mixed,6,6,1,True,0
+43,ADWIN,5,covariate,7,8,2,True,0
+43,ADWIN,6,mixed,9,9,1,True,0
+43,ADWIN,7,mixed,11,11,1,True,0
+43,ADWIN,8,concept,13,13,1,True,0
+43,ADWIN,9,mixed,14,14,1,True,0
+43,ADWIN,10,covariate,16,17,2,True,0
+43,ADWIN,11,mixed,18,18,1,True,0
+43,ADWIN,12,mixed,20,21,2,True,0
+43,ADWIN,13,concept,23,24,2,True,0
+43,ADWIN,14,covariate,25,25,1,True,0
+43,ADWIN,15,concept,28,29,2,True,0
+43,ADWIN,16,covariate,30,31,2,True,0
+43,ADWIN,17,mixed,32,32,1,True,0
+43,ADWIN,18,covariate,33,33,1,False,1
+43,ADWIN,19,concept,34,36,3,True,0
+43,ADWIN,20,covariate,37,39,3,True,0
+43,ADWIN,21,concept,40,42,3,True,0
+43,ADWIN,22,concept,45,45,1,True,0
+43,ADWIN,23,covariate,48,49,2,True,1
+43,ADWIN,24,mixed,50,50,1,True,0
+43,ADWIN,25,covariate,51,51,1,True,0
+43,ADWIN,26,mixed,52,52,1,False,1
+43,ADWIN,27,mixed,54,54,1,True,0
+43,ADWIN,28,concept,56,57,2,True,0
+43,ADWIN,29,mixed,58,59,2,True,0
+43,DDM,0,mixed,1,1,1,True,0
+43,DDM,1,covariate,2,2,1,True,0
+43,DDM,2,mixed,3,3,1,True,0
+43,DDM,3,concept,5,5,1,False,1
+43,DDM,4,mixed,6,6,1,False,1
+43,DDM,5,covariate,7,8,2,True,0
+43,DDM,6,mixed,9,9,1,True,0
+43,DDM,7,mixed,11,11,1,True,0
+43,DDM,8,concept,13,13,1,False,1
+43,DDM,9,mixed,14,14,1,False,1
+43,DDM,10,covariate,16,17,2,True,0
+43,DDM,11,mixed,18,18,1,True,0
+43,DDM,12,mixed,20,21,2,True,1
+43,DDM,13,concept,23,24,2,True,0
+43,DDM,14,covariate,25,25,1,True,0
+43,DDM,15,concept,28,29,2,True,0
+43,DDM,16,covariate,30,31,2,True,0
+43,DDM,17,mixed,32,32,1,True,0
+43,DDM,18,covariate,33,33,1,True,0
+43,DDM,19,concept,34,36,3,True,0
+43,DDM,20,covariate,37,39,3,True,0
+43,DDM,21,concept,40,42,3,False,3
+43,DDM,22,concept,45,45,1,False,1
+43,DDM,23,covariate,48,49,2,True,0
+43,DDM,24,mixed,50,50,1,False,1
+43,DDM,25,covariate,51,51,1,True,0
+43,DDM,26,mixed,52,52,1,True,0
+43,DDM,27,mixed,54,54,1,True,0
+43,DDM,28,concept,56,57,2,True,0
+43,DDM,29,mixed,58,59,2,False,2
+43,EDDM,0,mixed,1,1,1,True,0
+43,EDDM,1,covariate,2,2,1,True,0
+43,EDDM,2,mixed,3,3,1,True,0
+43,EDDM,3,concept,5,5,1,False,1
+43,EDDM,4,mixed,6,6,1,True,0
+43,EDDM,5,covariate,7,8,2,True,0
+43,EDDM,6,mixed,9,9,1,True,0
+43,EDDM,7,mixed,11,11,1,True,0
+43,EDDM,8,concept,13,13,1,False,1
+43,EDDM,9,mixed,14,14,1,True,0
+43,EDDM,10,covariate,16,17,2,True,0
+43,EDDM,11,mixed,18,18,1,True,0
+43,EDDM,12,mixed,20,21,2,True,0
+43,EDDM,13,concept,23,24,2,True,0
+43,EDDM,14,covariate,25,25,1,True,0
+43,EDDM,15,concept,28,29,2,True,0
+43,EDDM,16,covariate,30,31,2,True,0
+43,EDDM,17,mixed,32,32,1,True,0
+43,EDDM,18,covariate,33,33,1,True,0
+43,EDDM,19,concept,34,36,3,True,0
+43,EDDM,20,covariate,37,39,3,True,0
+43,EDDM,21,concept,40,42,3,True,0
+43,EDDM,22,concept,45,45,1,True,0
+43,EDDM,23,covariate,48,49,2,True,0
+43,EDDM,24,mixed,50,50,1,False,1
+43,EDDM,25,covariate,51,51,1,True,0
+43,EDDM,26,mixed,52,52,1,True,0
+43,EDDM,27,mixed,54,54,1,True,0
+43,EDDM,28,concept,56,57,2,True,0
+43,EDDM,29,mixed,58,59,2,True,0
+43,Page-Hinkley,0,mixed,1,1,1,False,1
+43,Page-Hinkley,1,covariate,2,2,1,True,0
+43,Page-Hinkley,2,mixed,3,3,1,False,1
+43,Page-Hinkley,3,concept,5,5,1,True,0
+43,Page-Hinkley,4,mixed,6,6,1,False,1
+43,Page-Hinkley,5,covariate,7,8,2,False,2
+43,Page-Hinkley,6,mixed,9,9,1,False,1
+43,Page-Hinkley,7,mixed,11,11,1,True,0
+43,Page-Hinkley,8,concept,13,13,1,True,0
+43,Page-Hinkley,9,mixed,14,14,1,False,1
+43,Page-Hinkley,10,covariate,16,17,2,True,0
+43,Page-Hinkley,11,mixed,18,18,1,False,1
+43,Page-Hinkley,12,mixed,20,21,2,False,2
+43,Page-Hinkley,13,concept,23,24,2,False,2
+43,Page-Hinkley,14,covariate,25,25,1,True,0
+43,Page-Hinkley,15,concept,28,29,2,True,0
+43,Page-Hinkley,16,covariate,30,31,2,False,2
+43,Page-Hinkley,17,mixed,32,32,1,False,1
+43,Page-Hinkley,18,covariate,33,33,1,True,0
+43,Page-Hinkley,19,concept,34,36,3,False,3
+43,Page-Hinkley,20,covariate,37,39,3,True,0
+43,Page-Hinkley,21,concept,40,42,3,True,0
+43,Page-Hinkley,22,concept,45,45,1,True,0
+43,Page-Hinkley,23,covariate,48,49,2,False,2
+43,Page-Hinkley,24,mixed,50,50,1,True,0
+43,Page-Hinkley,25,covariate,51,51,1,False,1
+43,Page-Hinkley,26,mixed,52,52,1,False,1
+43,Page-Hinkley,27,mixed,54,54,1,False,1
+43,Page-Hinkley,28,concept,56,57,2,True,1
+43,Page-Hinkley,29,mixed,58,59,2,True,1
+44,Custom Dual-Trigger,0,concept,1,2,2,True,1
+44,Custom Dual-Trigger,1,mixed,3,3,1,False,1
+44,Custom Dual-Trigger,2,concept,6,7,2,False,2
+44,Custom Dual-Trigger,3,covariate,8,8,1,False,1
+44,Custom Dual-Trigger,4,mixed,9,10,2,True,0
+44,Custom Dual-Trigger,5,covariate,12,12,1,True,0
+44,Custom Dual-Trigger,6,mixed,13,13,1,True,0
+44,Custom Dual-Trigger,7,covariate,14,14,1,True,0
+44,Custom Dual-Trigger,8,mixed,15,15,1,False,1
+44,Custom Dual-Trigger,9,concept,16,17,2,False,2
+44,Custom Dual-Trigger,10,mixed,18,18,1,True,0
+44,Custom Dual-Trigger,11,covariate,19,20,2,True,1
+44,Custom Dual-Trigger,12,mixed,21,21,1,False,1
+44,Custom Dual-Trigger,13,concept,22,22,1,False,1
+44,Custom Dual-Trigger,14,covariate,23,23,1,True,0
+44,Custom Dual-Trigger,15,covariate,25,25,1,True,0
+44,Custom Dual-Trigger,16,mixed,26,27,2,True,0
+44,Custom Dual-Trigger,17,concept,28,28,1,False,1
+44,Custom Dual-Trigger,18,covariate,29,29,1,False,1
+44,Custom Dual-Trigger,19,covariate,31,31,1,False,1
+44,Custom Dual-Trigger,20,concept,32,32,1,False,1
+44,Custom Dual-Trigger,21,covariate,33,34,2,False,2
+44,Custom Dual-Trigger,22,concept,35,35,1,False,1
+44,Custom Dual-Trigger,23,mixed,37,37,1,False,1
+44,Custom Dual-Trigger,24,concept,38,38,1,False,1
+44,Custom Dual-Trigger,25,covariate,39,39,1,True,0
+44,Custom Dual-Trigger,26,mixed,40,40,1,False,1
+44,Custom Dual-Trigger,27,covariate,41,41,1,True,0
+44,Custom Dual-Trigger,28,concept,42,42,1,True,0
+44,Custom Dual-Trigger,29,mixed,44,45,2,False,2
+44,Custom Dual-Trigger,30,concept,48,48,1,False,1
+44,Custom Dual-Trigger,31,mixed,49,49,1,True,0
+44,Custom Dual-Trigger,32,concept,53,53,1,True,0
+44,Custom Dual-Trigger,33,mixed,54,54,1,True,0
+44,Custom Dual-Trigger,34,covariate,55,55,1,True,0
+44,Custom Dual-Trigger,35,concept,56,56,1,False,1
+44,Custom Dual-Trigger,36,covariate,57,57,1,True,0
+44,ADWIN,0,concept,1,2,2,True,0
+44,ADWIN,1,mixed,3,3,1,False,1
+44,ADWIN,2,concept,6,7,2,True,0
+44,ADWIN,3,covariate,8,8,1,True,0
+44,ADWIN,4,mixed,9,10,2,True,0
+44,ADWIN,5,covariate,12,12,1,True,0
+44,ADWIN,6,mixed,13,13,1,True,0
+44,ADWIN,7,covariate,14,14,1,True,0
+44,ADWIN,8,mixed,15,15,1,True,0
+44,ADWIN,9,concept,16,17,2,True,1
+44,ADWIN,10,mixed,18,18,1,True,0
+44,ADWIN,11,covariate,19,20,2,True,1
+44,ADWIN,12,mixed,21,21,1,True,0
+44,ADWIN,13,concept,22,22,1,False,1
+44,ADWIN,14,covariate,23,23,1,True,0
+44,ADWIN,15,covariate,25,25,1,True,0
+44,ADWIN,16,mixed,26,27,2,True,1
+44,ADWIN,17,concept,28,28,1,True,0
+44,ADWIN,18,covariate,29,29,1,False,1
+44,ADWIN,19,covariate,31,31,1,False,1
+44,ADWIN,20,concept,32,32,1,True,0
+44,ADWIN,21,covariate,33,34,2,True,0
+44,ADWIN,22,concept,35,35,1,False,1
+44,ADWIN,23,mixed,37,37,1,False,1
+44,ADWIN,24,concept,38,38,1,False,1
+44,ADWIN,25,covariate,39,39,1,True,0
+44,ADWIN,26,mixed,40,40,1,True,0
+44,ADWIN,27,covariate,41,41,1,True,0
+44,ADWIN,28,concept,42,42,1,True,0
+44,ADWIN,29,mixed,44,45,2,True,1
+44,ADWIN,30,concept,48,48,1,True,0
+44,ADWIN,31,mixed,49,49,1,False,1
+44,ADWIN,32,concept,53,53,1,True,0
+44,ADWIN,33,mixed,54,54,1,True,0
+44,ADWIN,34,covariate,55,55,1,False,1
+44,ADWIN,35,concept,56,56,1,True,0
+44,ADWIN,36,covariate,57,57,1,False,1
+44,DDM,0,concept,1,2,2,True,0
+44,DDM,1,mixed,3,3,1,True,0
+44,DDM,2,concept,6,7,2,True,0
+44,DDM,3,covariate,8,8,1,True,0
+44,DDM,4,mixed,9,10,2,True,0
+44,DDM,5,covariate,12,12,1,True,0
+44,DDM,6,mixed,13,13,1,False,1
+44,DDM,7,covariate,14,14,1,True,0
+44,DDM,8,mixed,15,15,1,False,1
+44,DDM,9,concept,16,17,2,True,0
+44,DDM,10,mixed,18,18,1,True,0
+44,DDM,11,covariate,19,20,2,True,0
+44,DDM,12,mixed,21,21,1,True,0
+44,DDM,13,concept,22,22,1,True,0
+44,DDM,14,covariate,23,23,1,True,0
+44,DDM,15,covariate,25,25,1,True,0
+44,DDM,16,mixed,26,27,2,True,0
+44,DDM,17,concept,28,28,1,True,0
+44,DDM,18,covariate,29,29,1,True,0
+44,DDM,19,covariate,31,31,1,True,0
+44,DDM,20,concept,32,32,1,False,1
+44,DDM,21,covariate,33,34,2,True,0
+44,DDM,22,concept,35,35,1,True,0
+44,DDM,23,mixed,37,37,1,False,1
+44,DDM,24,concept,38,38,1,True,0
+44,DDM,25,covariate,39,39,1,True,0
+44,DDM,26,mixed,40,40,1,True,0
+44,DDM,27,covariate,41,41,1,True,0
+44,DDM,28,concept,42,42,1,True,0
+44,DDM,29,mixed,44,45,2,True,0
+44,DDM,30,concept,48,48,1,True,0
+44,DDM,31,mixed,49,49,1,True,0
+44,DDM,32,concept,53,53,1,False,1
+44,DDM,33,mixed,54,54,1,True,0
+44,DDM,34,covariate,55,55,1,True,0
+44,DDM,35,concept,56,56,1,True,0
+44,DDM,36,covariate,57,57,1,True,0
+44,EDDM,0,concept,1,2,2,True,0
+44,EDDM,1,mixed,3,3,1,True,0
+44,EDDM,2,concept,6,7,2,True,0
+44,EDDM,3,covariate,8,8,1,True,0
+44,EDDM,4,mixed,9,10,2,True,0
+44,EDDM,5,covariate,12,12,1,True,0
+44,EDDM,6,mixed,13,13,1,True,0
+44,EDDM,7,covariate,14,14,1,True,0
+44,EDDM,8,mixed,15,15,1,True,0
+44,EDDM,9,concept,16,17,2,True,0
+44,EDDM,10,mixed,18,18,1,True,0
+44,EDDM,11,covariate,19,20,2,True,0
+44,EDDM,12,mixed,21,21,1,True,0
+44,EDDM,13,concept,22,22,1,True,0
+44,EDDM,14,covariate,23,23,1,True,0
+44,EDDM,15,covariate,25,25,1,True,0
+44,EDDM,16,mixed,26,27,2,True,0
+44,EDDM,17,concept,28,28,1,True,0
+44,EDDM,18,covariate,29,29,1,True,0
+44,EDDM,19,covariate,31,31,1,True,0
+44,EDDM,20,concept,32,32,1,True,0
+44,EDDM,21,covariate,33,34,2,True,0
+44,EDDM,22,concept,35,35,1,True,0
+44,EDDM,23,mixed,37,37,1,True,0
+44,EDDM,24,concept,38,38,1,True,0
+44,EDDM,25,covariate,39,39,1,True,0
+44,EDDM,26,mixed,40,40,1,True,0
+44,EDDM,27,covariate,41,41,1,True,0
+44,EDDM,28,concept,42,42,1,True,0
+44,EDDM,29,mixed,44,45,2,True,0
+44,EDDM,30,concept,48,48,1,True,0
+44,EDDM,31,mixed,49,49,1,True,0
+44,EDDM,32,concept,53,53,1,True,0
+44,EDDM,33,mixed,54,54,1,True,0
+44,EDDM,34,covariate,55,55,1,True,0
+44,EDDM,35,concept,56,56,1,True,0
+44,EDDM,36,covariate,57,57,1,True,0
+44,Page-Hinkley,0,concept,1,2,2,True,1
+44,Page-Hinkley,1,mixed,3,3,1,False,1
+44,Page-Hinkley,2,concept,6,7,2,False,2
+44,Page-Hinkley,3,covariate,8,8,1,True,0
+44,Page-Hinkley,4,mixed,9,10,2,True,0
+44,Page-Hinkley,5,covariate,12,12,1,False,1
+44,Page-Hinkley,6,mixed,13,13,1,True,0
+44,Page-Hinkley,7,covariate,14,14,1,True,0
+44,Page-Hinkley,8,mixed,15,15,1,False,1
+44,Page-Hinkley,9,concept,16,17,2,True,1
+44,Page-Hinkley,10,mixed,18,18,1,False,1
+44,Page-Hinkley,11,covariate,19,20,2,False,2
+44,Page-Hinkley,12,mixed,21,21,1,False,1
+44,Page-Hinkley,13,concept,22,22,1,False,1
+44,Page-Hinkley,14,covariate,23,23,1,True,0
+44,Page-Hinkley,15,covariate,25,25,1,False,1
+44,Page-Hinkley,16,mixed,26,27,2,True,1
+44,Page-Hinkley,17,concept,28,28,1,False,1
+44,Page-Hinkley,18,covariate,29,29,1,True,0
+44,Page-Hinkley,19,covariate,31,31,1,False,1
+44,Page-Hinkley,20,concept,32,32,1,True,0
+44,Page-Hinkley,21,covariate,33,34,2,True,0
+44,Page-Hinkley,22,concept,35,35,1,True,0
+44,Page-Hinkley,23,mixed,37,37,1,False,1
+44,Page-Hinkley,24,concept,38,38,1,True,0
+44,Page-Hinkley,25,covariate,39,39,1,False,1
+44,Page-Hinkley,26,mixed,40,40,1,True,0
+44,Page-Hinkley,27,covariate,41,41,1,True,0
+44,Page-Hinkley,28,concept,42,42,1,False,1
+44,Page-Hinkley,29,mixed,44,45,2,True,1
+44,Page-Hinkley,30,concept,48,48,1,False,1
+44,Page-Hinkley,31,mixed,49,49,1,False,1
+44,Page-Hinkley,32,concept,53,53,1,True,0
+44,Page-Hinkley,33,mixed,54,54,1,False,1
+44,Page-Hinkley,34,covariate,55,55,1,True,0
+44,Page-Hinkley,35,concept,56,56,1,False,1
+44,Page-Hinkley,36,covariate,57,57,1,False,1
+45,Custom Dual-Trigger,0,covariate,1,1,1,True,0
+45,Custom Dual-Trigger,1,concept,3,4,2,False,2
+45,Custom Dual-Trigger,2,mixed,6,7,2,True,0
+45,Custom Dual-Trigger,3,covariate,8,9,2,True,0
+45,Custom Dual-Trigger,4,mixed,11,11,1,True,0
+45,Custom Dual-Trigger,5,covariate,12,12,1,True,0
+45,Custom Dual-Trigger,6,concept,13,14,2,True,0
+45,Custom Dual-Trigger,7,mixed,15,15,1,True,0
+45,Custom Dual-Trigger,8,concept,16,17,2,False,2
+45,Custom Dual-Trigger,9,covariate,18,18,1,True,0
+45,Custom Dual-Trigger,10,mixed,19,19,1,False,1
+45,Custom Dual-Trigger,11,concept,20,20,1,True,0
+45,Custom Dual-Trigger,12,covariate,22,22,1,True,0
+45,Custom Dual-Trigger,13,concept,23,23,1,False,1
+45,Custom Dual-Trigger,14,covariate,24,25,2,True,1
+45,Custom Dual-Trigger,15,covariate,27,27,1,True,0
+45,Custom Dual-Trigger,16,mixed,29,29,1,True,0
+45,Custom Dual-Trigger,17,covariate,30,30,1,True,0
+45,Custom Dual-Trigger,18,mixed,32,32,1,True,0
+45,Custom Dual-Trigger,19,mixed,34,34,1,False,1
+45,Custom Dual-Trigger,20,covariate,36,38,3,True,0
+45,Custom Dual-Trigger,21,mixed,39,40,2,True,0
+45,Custom Dual-Trigger,22,concept,41,41,1,False,1
+45,Custom Dual-Trigger,23,mixed,43,43,1,True,0
+45,Custom Dual-Trigger,24,concept,45,46,2,True,0
+45,Custom Dual-Trigger,25,mixed,47,47,1,True,0
+45,Custom Dual-Trigger,26,concept,48,48,1,False,1
+45,Custom Dual-Trigger,27,mixed,49,49,1,True,0
+45,Custom Dual-Trigger,28,concept,50,51,2,True,0
+45,Custom Dual-Trigger,29,mixed,53,53,1,False,1
+45,Custom Dual-Trigger,30,covariate,54,54,1,True,0
+45,Custom Dual-Trigger,31,mixed,55,55,1,False,1
+45,Custom Dual-Trigger,32,concept,57,57,1,False,1
+45,Custom Dual-Trigger,33,covariate,59,59,1,True,0
+45,ADWIN,0,covariate,1,1,1,False,1
+45,ADWIN,1,concept,3,4,2,True,0
+45,ADWIN,2,mixed,6,7,2,True,0
+45,ADWIN,3,covariate,8,9,2,True,0
+45,ADWIN,4,mixed,11,11,1,True,0
+45,ADWIN,5,covariate,12,12,1,True,0
+45,ADWIN,6,concept,13,14,2,True,0
+45,ADWIN,7,mixed,15,15,1,True,0
+45,ADWIN,8,concept,16,17,2,True,0
+45,ADWIN,9,covariate,18,18,1,True,0
+45,ADWIN,10,mixed,19,19,1,True,0
+45,ADWIN,11,concept,20,20,1,True,0
+45,ADWIN,12,covariate,22,22,1,True,0
+45,ADWIN,13,concept,23,23,1,True,0
+45,ADWIN,14,covariate,24,25,2,True,1
+45,ADWIN,15,covariate,27,27,1,True,0
+45,ADWIN,16,mixed,29,29,1,False,1
+45,ADWIN,17,covariate,30,30,1,True,0
+45,ADWIN,18,mixed,32,32,1,True,0
+45,ADWIN,19,mixed,34,34,1,True,0
+45,ADWIN,20,covariate,36,38,3,True,0
+45,ADWIN,21,mixed,39,40,2,False,2
+45,ADWIN,22,concept,41,41,1,False,1
+45,ADWIN,23,mixed,43,43,1,True,0
+45,ADWIN,24,concept,45,46,2,True,0
+45,ADWIN,25,mixed,47,47,1,True,0
+45,ADWIN,26,concept,48,48,1,True,0
+45,ADWIN,27,mixed,49,49,1,True,0
+45,ADWIN,28,concept,50,51,2,True,0
+45,ADWIN,29,mixed,53,53,1,True,0
+45,ADWIN,30,covariate,54,54,1,False,1
+45,ADWIN,31,mixed,55,55,1,True,0
+45,ADWIN,32,concept,57,57,1,True,0
+45,ADWIN,33,covariate,59,59,1,True,0
+45,DDM,0,covariate,1,1,1,False,1
+45,DDM,1,concept,3,4,2,True,0
+45,DDM,2,mixed,6,7,2,True,0
+45,DDM,3,covariate,8,9,2,True,0
+45,DDM,4,mixed,11,11,1,True,0
+45,DDM,5,covariate,12,12,1,False,1
+45,DDM,6,concept,13,14,2,True,0
+45,DDM,7,mixed,15,15,1,True,0
+45,DDM,8,concept,16,17,2,True,1
+45,DDM,9,covariate,18,18,1,True,0
+45,DDM,10,mixed,19,19,1,True,0
+45,DDM,11,concept,20,20,1,True,0
+45,DDM,12,covariate,22,22,1,True,0
+45,DDM,13,concept,23,23,1,True,0
+45,DDM,14,covariate,24,25,2,True,0
+45,DDM,15,covariate,27,27,1,True,0
+45,DDM,16,mixed,29,29,1,False,1
+45,DDM,17,covariate,30,30,1,False,1
+45,DDM,18,mixed,32,32,1,True,0
+45,DDM,19,mixed,34,34,1,False,1
+45,DDM,20,covariate,36,38,3,True,0
+45,DDM,21,mixed,39,40,2,True,0
+45,DDM,22,concept,41,41,1,True,0
+45,DDM,23,mixed,43,43,1,True,0
+45,DDM,24,concept,45,46,2,False,2
+45,DDM,25,mixed,47,47,1,True,0
+45,DDM,26,concept,48,48,1,True,0
+45,DDM,27,mixed,49,49,1,True,0
+45,DDM,28,concept,50,51,2,True,0
+45,DDM,29,mixed,53,53,1,False,1
+45,DDM,30,covariate,54,54,1,False,1
+45,DDM,31,mixed,55,55,1,True,0
+45,DDM,32,concept,57,57,1,True,0
+45,DDM,33,covariate,59,59,1,True,0
+45,EDDM,0,covariate,1,1,1,False,1
+45,EDDM,1,concept,3,4,2,True,0
+45,EDDM,2,mixed,6,7,2,True,0
+45,EDDM,3,covariate,8,9,2,True,0
+45,EDDM,4,mixed,11,11,1,True,0
+45,EDDM,5,covariate,12,12,1,False,1
+45,EDDM,6,concept,13,14,2,True,0
+45,EDDM,7,mixed,15,15,1,True,0
+45,EDDM,8,concept,16,17,2,True,0
+45,EDDM,9,covariate,18,18,1,True,0
+45,EDDM,10,mixed,19,19,1,True,0
+45,EDDM,11,concept,20,20,1,True,0
+45,EDDM,12,covariate,22,22,1,True,0
+45,EDDM,13,concept,23,23,1,True,0
+45,EDDM,14,covariate,24,25,2,True,0
+45,EDDM,15,covariate,27,27,1,True,0
+45,EDDM,16,mixed,29,29,1,True,0
+45,EDDM,17,covariate,30,30,1,True,0
+45,EDDM,18,mixed,32,32,1,True,0
+45,EDDM,19,mixed,34,34,1,True,0
+45,EDDM,20,covariate,36,38,3,True,0
+45,EDDM,21,mixed,39,40,2,True,0
+45,EDDM,22,concept,41,41,1,True,0
+45,EDDM,23,mixed,43,43,1,True,0
+45,EDDM,24,concept,45,46,2,True,0
+45,EDDM,25,mixed,47,47,1,True,0
+45,EDDM,26,concept,48,48,1,True,0
+45,EDDM,27,mixed,49,49,1,True,0
+45,EDDM,28,concept,50,51,2,True,0
+45,EDDM,29,mixed,53,53,1,False,1
+45,EDDM,30,covariate,54,54,1,False,1
+45,EDDM,31,mixed,55,55,1,True,0
+45,EDDM,32,concept,57,57,1,True,0
+45,EDDM,33,covariate,59,59,1,True,0
+45,Page-Hinkley,0,covariate,1,1,1,True,0
+45,Page-Hinkley,1,concept,3,4,2,True,0
+45,Page-Hinkley,2,mixed,6,7,2,False,2
+45,Page-Hinkley,3,covariate,8,9,2,True,1
+45,Page-Hinkley,4,mixed,11,11,1,True,0
+45,Page-Hinkley,5,covariate,12,12,1,True,0
+45,Page-Hinkley,6,concept,13,14,2,False,2
+45,Page-Hinkley,7,mixed,15,15,1,False,1
+45,Page-Hinkley,8,concept,16,17,2,False,2
+45,Page-Hinkley,9,covariate,18,18,1,True,0
+45,Page-Hinkley,10,mixed,19,19,1,False,1
+45,Page-Hinkley,11,concept,20,20,1,False,1
+45,Page-Hinkley,12,covariate,22,22,1,True,0
+45,Page-Hinkley,13,concept,23,23,1,False,1
+45,Page-Hinkley,14,covariate,24,25,2,True,1
+45,Page-Hinkley,15,covariate,27,27,1,True,0
+45,Page-Hinkley,16,mixed,29,29,1,False,1
+45,Page-Hinkley,17,covariate,30,30,1,True,0
+45,Page-Hinkley,18,mixed,32,32,1,False,1
+45,Page-Hinkley,19,mixed,34,34,1,False,1
+45,Page-Hinkley,20,covariate,36,38,3,True,1
+45,Page-Hinkley,21,mixed,39,40,2,False,2
+45,Page-Hinkley,22,concept,41,41,1,False,1
+45,Page-Hinkley,23,mixed,43,43,1,False,1
+45,Page-Hinkley,24,concept,45,46,2,False,2
+45,Page-Hinkley,25,mixed,47,47,1,False,1
+45,Page-Hinkley,26,concept,48,48,1,True,0
+45,Page-Hinkley,27,mixed,49,49,1,False,1
+45,Page-Hinkley,28,concept,50,51,2,False,2
+45,Page-Hinkley,29,mixed,53,53,1,False,1
+45,Page-Hinkley,30,covariate,54,54,1,True,0
+45,Page-Hinkley,31,mixed,55,55,1,False,1
+45,Page-Hinkley,32,concept,57,57,1,False,1
+45,Page-Hinkley,33,covariate,59,59,1,False,1
+46,Custom Dual-Trigger,0,concept,1,2,2,True,1
+46,Custom Dual-Trigger,1,covariate,3,5,3,True,0
+46,Custom Dual-Trigger,2,concept,6,6,1,False,1
+46,Custom Dual-Trigger,3,mixed,7,8,2,False,2
+46,Custom Dual-Trigger,4,concept,9,9,1,False,1
+46,Custom Dual-Trigger,5,mixed,10,11,2,True,0
+46,Custom Dual-Trigger,6,covariate,12,13,2,True,0
+46,Custom Dual-Trigger,7,concept,14,14,1,False,1
+46,Custom Dual-Trigger,8,mixed,18,18,1,False,1
+46,Custom Dual-Trigger,9,concept,20,21,2,True,1
+46,Custom Dual-Trigger,10,covariate,22,22,1,True,0
+46,Custom Dual-Trigger,11,mixed,24,24,1,True,0
+46,Custom Dual-Trigger,12,concept,25,25,1,False,1
+46,Custom Dual-Trigger,13,covariate,27,27,1,False,1
+46,Custom Dual-Trigger,14,mixed,28,28,1,True,0
+46,Custom Dual-Trigger,15,covariate,30,30,1,True,0
+46,Custom Dual-Trigger,16,mixed,31,31,1,True,0
+46,Custom Dual-Trigger,17,covariate,32,32,1,False,1
+46,Custom Dual-Trigger,18,mixed,33,33,1,False,1
+46,Custom Dual-Trigger,19,covariate,35,35,1,True,0
+46,Custom Dual-Trigger,20,concept,38,38,1,False,1
+46,Custom Dual-Trigger,21,covariate,39,39,1,True,0
+46,Custom Dual-Trigger,22,concept,40,42,3,True,2
+46,Custom Dual-Trigger,23,covariate,43,43,1,False,1
+46,Custom Dual-Trigger,24,concept,45,46,2,False,2
+46,Custom Dual-Trigger,25,mixed,47,47,1,False,1
+46,Custom Dual-Trigger,26,mixed,49,51,3,True,0
+46,Custom Dual-Trigger,27,covariate,52,52,1,False,1
+46,Custom Dual-Trigger,28,concept,53,53,1,True,0
+46,Custom Dual-Trigger,29,covariate,54,55,2,False,2
+46,Custom Dual-Trigger,30,mixed,57,57,1,True,0
+46,Custom Dual-Trigger,31,mixed,59,59,1,False,1
+46,ADWIN,0,concept,1,2,2,True,0
+46,ADWIN,1,covariate,3,5,3,True,0
+46,ADWIN,2,concept,6,6,1,False,1
+46,ADWIN,3,mixed,7,8,2,True,0
+46,ADWIN,4,concept,9,9,1,False,1
+46,ADWIN,5,mixed,10,11,2,True,0
+46,ADWIN,6,covariate,12,13,2,True,0
+46,ADWIN,7,concept,14,14,1,False,1
+46,ADWIN,8,mixed,18,18,1,True,0
+46,ADWIN,9,concept,20,21,2,True,0
+46,ADWIN,10,covariate,22,22,1,True,0
+46,ADWIN,11,mixed,24,24,1,True,0
+46,ADWIN,12,concept,25,25,1,False,1
+46,ADWIN,13,covariate,27,27,1,False,1
+46,ADWIN,14,mixed,28,28,1,False,1
+46,ADWIN,15,covariate,30,30,1,True,0
+46,ADWIN,16,mixed,31,31,1,True,0
+46,ADWIN,17,covariate,32,32,1,True,0
+46,ADWIN,18,mixed,33,33,1,False,1
+46,ADWIN,19,covariate,35,35,1,True,0
+46,ADWIN,20,concept,38,38,1,False,1
+46,ADWIN,21,covariate,39,39,1,True,0
+46,ADWIN,22,concept,40,42,3,True,1
+46,ADWIN,23,covariate,43,43,1,True,0
+46,ADWIN,24,concept,45,46,2,True,0
+46,ADWIN,25,mixed,47,47,1,False,1
+46,ADWIN,26,mixed,49,51,3,True,0
+46,ADWIN,27,covariate,52,52,1,True,0
+46,ADWIN,28,concept,53,53,1,True,0
+46,ADWIN,29,covariate,54,55,2,True,0
+46,ADWIN,30,mixed,57,57,1,True,0
+46,ADWIN,31,mixed,59,59,1,False,1
+46,DDM,0,concept,1,2,2,True,0
+46,DDM,1,covariate,3,5,3,True,0
+46,DDM,2,concept,6,6,1,False,1
+46,DDM,3,mixed,7,8,2,True,0
+46,DDM,4,concept,9,9,1,True,0
+46,DDM,5,mixed,10,11,2,True,0
+46,DDM,6,covariate,12,13,2,True,0
+46,DDM,7,concept,14,14,1,True,0
+46,DDM,8,mixed,18,18,1,True,0
+46,DDM,9,concept,20,21,2,True,0
+46,DDM,10,covariate,22,22,1,True,0
+46,DDM,11,mixed,24,24,1,True,0
+46,DDM,12,concept,25,25,1,True,0
+46,DDM,13,covariate,27,27,1,True,0
+46,DDM,14,mixed,28,28,1,False,1
+46,DDM,15,covariate,30,30,1,True,0
+46,DDM,16,mixed,31,31,1,True,0
+46,DDM,17,covariate,32,32,1,True,0
+46,DDM,18,mixed,33,33,1,True,0
+46,DDM,19,covariate,35,35,1,True,0
+46,DDM,20,concept,38,38,1,True,0
+46,DDM,21,covariate,39,39,1,True,0
+46,DDM,22,concept,40,42,3,True,0
+46,DDM,23,covariate,43,43,1,True,0
+46,DDM,24,concept,45,46,2,False,2
+46,DDM,25,mixed,47,47,1,False,1
+46,DDM,26,mixed,49,51,3,True,0
+46,DDM,27,covariate,52,52,1,True,0
+46,DDM,28,concept,53,53,1,True,0
+46,DDM,29,covariate,54,55,2,True,0
+46,DDM,30,mixed,57,57,1,True,0
+46,DDM,31,mixed,59,59,1,True,0
+46,EDDM,0,concept,1,2,2,True,0
+46,EDDM,1,covariate,3,5,3,True,0
+46,EDDM,2,concept,6,6,1,True,0
+46,EDDM,3,mixed,7,8,2,True,0
+46,EDDM,4,concept,9,9,1,True,0
+46,EDDM,5,mixed,10,11,2,True,0
+46,EDDM,6,covariate,12,13,2,True,0
+46,EDDM,7,concept,14,14,1,True,0
+46,EDDM,8,mixed,18,18,1,True,0
+46,EDDM,9,concept,20,21,2,True,0
+46,EDDM,10,covariate,22,22,1,True,0
+46,EDDM,11,mixed,24,24,1,True,0
+46,EDDM,12,concept,25,25,1,True,0
+46,EDDM,13,covariate,27,27,1,True,0
+46,EDDM,14,mixed,28,28,1,False,1
+46,EDDM,15,covariate,30,30,1,True,0
+46,EDDM,16,mixed,31,31,1,True,0
+46,EDDM,17,covariate,32,32,1,True,0
+46,EDDM,18,mixed,33,33,1,True,0
+46,EDDM,19,covariate,35,35,1,True,0
+46,EDDM,20,concept,38,38,1,True,0
+46,EDDM,21,covariate,39,39,1,True,0
+46,EDDM,22,concept,40,42,3,True,0
+46,EDDM,23,covariate,43,43,1,True,0
+46,EDDM,24,concept,45,46,2,True,0
+46,EDDM,25,mixed,47,47,1,True,0
+46,EDDM,26,mixed,49,51,3,True,0
+46,EDDM,27,covariate,52,52,1,True,0
+46,EDDM,28,concept,53,53,1,True,0
+46,EDDM,29,covariate,54,55,2,True,0
+46,EDDM,30,mixed,57,57,1,True,0
+46,EDDM,31,mixed,59,59,1,True,0
+46,Page-Hinkley,0,concept,1,2,2,True,1
+46,Page-Hinkley,1,covariate,3,5,3,False,3
+46,Page-Hinkley,2,concept,6,6,1,False,1
+46,Page-Hinkley,3,mixed,7,8,2,False,2
+46,Page-Hinkley,4,concept,9,9,1,False,1
+46,Page-Hinkley,5,mixed,10,11,2,True,0
+46,Page-Hinkley,6,covariate,12,13,2,False,2
+46,Page-Hinkley,7,concept,14,14,1,True,0
+46,Page-Hinkley,8,mixed,18,18,1,False,1
+46,Page-Hinkley,9,concept,20,21,2,True,0
+46,Page-Hinkley,10,covariate,22,22,1,False,1
+46,Page-Hinkley,11,mixed,24,24,1,False,1
+46,Page-Hinkley,12,concept,25,25,1,True,0
+46,Page-Hinkley,13,covariate,27,27,1,False,1
+46,Page-Hinkley,14,mixed,28,28,1,True,0
+46,Page-Hinkley,15,covariate,30,30,1,False,1
+46,Page-Hinkley,16,mixed,31,31,1,True,0
+46,Page-Hinkley,17,covariate,32,32,1,True,0
+46,Page-Hinkley,18,mixed,33,33,1,False,1
+46,Page-Hinkley,19,covariate,35,35,1,False,1
+46,Page-Hinkley,20,concept,38,38,1,False,1
+46,Page-Hinkley,21,covariate,39,39,1,False,1
+46,Page-Hinkley,22,concept,40,42,3,False,3
+46,Page-Hinkley,23,covariate,43,43,1,False,1
+46,Page-Hinkley,24,concept,45,46,2,True,0
+46,Page-Hinkley,25,mixed,47,47,1,True,0
+46,Page-Hinkley,26,mixed,49,51,3,True,0
+46,Page-Hinkley,27,covariate,52,52,1,True,0
+46,Page-Hinkley,28,concept,53,53,1,False,1
+46,Page-Hinkley,29,covariate,54,55,2,False,2
+46,Page-Hinkley,30,mixed,57,57,1,True,0
+46,Page-Hinkley,31,mixed,59,59,1,False,1

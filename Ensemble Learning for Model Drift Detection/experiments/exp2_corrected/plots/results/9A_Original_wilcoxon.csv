@@ -1,0 +1,7 @@
+method_1,method_2,mean_diff_f1,wilcoxon_stat,p_value,effect_size,n_windows,significant,stream
+Probability-Guided,RAPT-E,0.0,0.0,1.0,0.0,7995,False,9A_Original
+Probability-Guided,Similarity-Only,-0.0010006253908692933,22.5,0.03250944464571951,0.023912045868967308,7995,True,9A_Original
+Probability-Guided,Event-Driven,-0.0031269543464665416,48.0,7.117886553922698e-06,0.05021690329144199,7995,True,9A_Original
+RAPT-E,Event-Driven,-0.0031269543464665416,48.0,7.117886553922698e-06,0.05021690329144199,7995,True,9A_Original
+Oracle,Probability-Guided,0.0010006253908692933,22.5,0.03250944464571951,0.023912045868967308,7995,True,9A_Original
+Oracle,Similarity-Only,0.0,0.0,1.0,0.0,7995,False,9A_Original

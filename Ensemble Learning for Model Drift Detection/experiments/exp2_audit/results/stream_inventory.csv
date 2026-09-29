@@ -1,0 +1,5 @@
+stream,n_windows,n_regimes,n_transitions
+9A_Original,1799,3,8
+9B_Original,499,4,9
+9A_Enriched,5397,3,8
+9B_Enriched,950,10,18

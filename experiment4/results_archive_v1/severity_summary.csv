@@ -1,0 +1,5 @@
+Severity,Frozen Model F1,Continuously Retrained Ensemble F1,Event-Driven Ensemble F1
+None (Stationary),0.5311 ± 0.0752,0.6038 ± 0.0453,0.5992 ± 0.0516
+Mild,0.6681 ± 0.0603,0.7277 ± 0.0437,0.7258 ± 0.0412
+Moderate,0.7390 ± 0.0263,0.7969 ± 0.0318,0.7949 ± 0.0319
+Severe,0.7678 ± 0.0724,0.8420 ± 0.0363,0.8463 ± 0.0335

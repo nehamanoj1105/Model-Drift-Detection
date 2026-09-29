@@ -1,0 +1,7 @@
+method,weight_updates,gated_updates,fallback_retrains,weight_movement_mean,prediction_changes
+RAPT-v1,0,0,0,0.0,0
+RAPT-A,6,0,0,0.0,0
+RAPT-B,6,0,0,0.0,0
+RAPT-C,0,6,0,0.0,0
+RAPT-D,2,4,0,0.0,0
+RAPT-E,2,4,0,0.0,0

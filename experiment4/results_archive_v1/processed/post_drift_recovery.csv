@@ -1,0 +1,226 @@
+seed,approach,window_id,drift_type,severity,pre_drift_f1,onset_f1,f1_plus_1,f1_plus_2,f1_plus_3,performance_drop,recovery_plus_1,recovery_plus_2,windows_to_90_pct,windows_to_95_pct
+42,Frozen Model,3,covariate,severe,0.2824,0.8067,0.7833,0.5325,0.9027,0.0,-0.0234,-0.2742,1.0,1.0
+42,Frozen Model,6,concept,moderate,0.5325,0.9027,0.8252,0.8796,0.6,0.0,-0.0775,-0.0231,1.0,1.0
+42,Frozen Model,12,concept,mild,0.5975,0.7506,0.3462,0.7215,0.6239,0.0,-0.4044,-0.0291,2.0,2.0
+42,Frozen Model,18,concept,severe,0.7076,0.0095,0.0806,0.2812,0.2882,0.6981,0.0711,0.2717,0.0,0.0
+42,Frozen Model,24,covariate,moderate,0.3172,0.5443,0.5525,0.2619,0.5805,0.0,0.0082,-0.2824,1.0,1.0
+42,Frozen Model,27,mixed,moderate,0.2619,0.5805,0.3902,0.445,0.1356,0.0,-0.1903,-0.1355,1.0,1.0
+42,Frozen Model,30,concept,moderate,0.445,0.1356,0.0163,0.25,0.449,0.3094,-0.1193,0.1144,3.0,3.0
+42,Frozen Model,36,mixed,severe,0.6117,0.7396,0.5263,0.777,0.6311,0.0,-0.2133,0.0374,2.0,2.0
+42,Frozen Model,39,covariate,moderate,0.777,0.6311,0.7422,0.6908,0.1467,0.1459,0.1111,0.0597,1.0,1.0
+42,Frozen Model,42,covariate,mild,0.6908,0.1467,0.6342,0.5439,0.129,0.5441,0.4875,0.3972,1.0,0.0
+42,Frozen Model,45,mixed,mild,0.5439,0.129,0.2713,0.3247,0.8308,0.4149,0.1423,0.1957,3.0,3.0
+42,Frozen Model,48,mixed,mild,0.3247,0.8308,0.8552,0.391,0.833,0.0,0.0244,-0.4398,1.0,1.0
+42,Frozen Model,51,mixed,severe,0.391,0.833,0.8556,0.6169,0.2452,0.0,0.0226,-0.2161,1.0,1.0
+42,Frozen Model,54,concept,severe,0.6169,0.2452,0.0717,0.371,0.661,0.3717,-0.1735,0.1258,3.0,3.0
+42,Frozen Model,57,covariate,mild,0.371,0.661,0.25,0.7765,,0.0,-0.411,0.1155,2.0,2.0
+42,Continuously Retrained Ensemble,3,covariate,severe,0.2791,0.809,0.7812,0.5399,0.9113,0.0,-0.0278,-0.2691,1.0,1.0
+42,Continuously Retrained Ensemble,6,concept,moderate,0.5399,0.9113,0.8243,0.8786,0.6283,0.0,-0.087,-0.0327,1.0,1.0
+42,Continuously Retrained Ensemble,12,concept,mild,0.5857,0.0,0.1159,0.5899,0.5889,0.5857,0.1159,0.5899,2.0,2.0
+42,Continuously Retrained Ensemble,18,concept,severe,0.697,0.0095,0.0773,0.2289,0.0,0.6875,0.0678,0.2194,4.0,4.0
+42,Continuously Retrained Ensemble,24,covariate,moderate,0.7076,0.2095,0.2958,0.2986,0.828,0.4981,0.0863,0.0891,3.0,3.0
+42,Continuously Retrained Ensemble,27,mixed,moderate,0.2986,0.828,0.7494,0.8223,0.0916,0.0,-0.0786,-0.0057,1.0,1.0
+42,Continuously Retrained Ensemble,30,concept,moderate,0.8223,0.0916,0.0,0.0592,0.0368,0.7307,-0.0916,-0.0324,0.0,0.0
+42,Continuously Retrained Ensemble,36,mixed,severe,0.0139,0.0537,0.3025,0.7701,0.6111,0.0,0.2488,0.7164,1.0,1.0
+42,Continuously Retrained Ensemble,39,covariate,moderate,0.7701,0.6111,0.7184,0.6872,0.137,0.159,0.1073,0.0761,1.0,0.0
+42,Continuously Retrained Ensemble,42,covariate,mild,0.6872,0.137,0.6342,0.5336,0.0746,0.5502,0.4972,0.3966,1.0,0.0
+42,Continuously Retrained Ensemble,45,mixed,mild,0.5336,0.0746,0.2754,0.2773,0.8035,0.459,0.2008,0.2027,3.0,3.0
+42,Continuously Retrained Ensemble,48,mixed,mild,0.2773,0.8035,0.8245,0.1474,0.8039,0.0,0.021,-0.6561,1.0,1.0
+42,Continuously Retrained Ensemble,51,mixed,severe,0.1474,0.8039,0.8621,0.6381,0.2594,0.0,0.0582,-0.1658,1.0,1.0
+42,Continuously Retrained Ensemble,54,concept,severe,0.6381,0.2594,0.0093,0.2209,0.0645,0.3787,-0.2501,-0.0385,0.0,0.0
+42,Continuously Retrained Ensemble,57,covariate,mild,0.2209,0.0645,0.0,0.2679,,0.1564,-0.0645,0.2034,2.0,2.0
+42,Event-Driven Ensemble,3,covariate,severe,0.2824,0.8067,0.7833,0.5325,0.9027,0.0,-0.0234,-0.2742,1.0,1.0
+42,Event-Driven Ensemble,6,concept,moderate,0.5325,0.9027,0.8058,0.8407,0.582,0.0,-0.0969,-0.062,1.0,1.0
+42,Event-Driven Ensemble,12,concept,mild,0.4041,0.2037,0.2745,0.7093,0.6262,0.2004,0.0708,0.5056,2.0,2.0
+42,Event-Driven Ensemble,18,concept,severe,0.6858,0.0104,0.5,0.5697,0.8327,0.6754,0.4896,0.5593,3.0,3.0
+42,Event-Driven Ensemble,24,covariate,moderate,0.6934,0.3061,0.575,0.0159,0.5754,0.3873,0.2689,-0.2902,4.0,4.0
+42,Event-Driven Ensemble,27,mixed,moderate,0.0159,0.5754,0.8584,0.7371,0.0,0.0,0.283,0.1617,1.0,1.0
+42,Event-Driven Ensemble,30,concept,moderate,0.7371,0.0,0.0,0.0,0.0,0.7371,0.0,0.0,0.0,0.0
+42,Event-Driven Ensemble,36,mixed,severe,0.0,0.0348,0.4306,0.7658,0.6091,0.0,0.3958,0.731,1.0,1.0
+42,Event-Driven Ensemble,39,covariate,moderate,0.7658,0.6091,0.7119,0.6946,0.0952,0.1567,0.1028,0.0855,1.0,0.0
+42,Event-Driven Ensemble,42,covariate,mild,0.6946,0.0952,0.6269,0.0877,0.1374,0.5994,0.5317,-0.0075,1.0,0.0
+42,Event-Driven Ensemble,45,mixed,mild,0.0877,0.1374,0.2949,0.4299,0.5881,0.0,0.1575,0.2925,1.0,1.0
+42,Event-Driven Ensemble,48,mixed,mild,0.4299,0.5881,0.8484,0.2476,0.8348,0.0,0.2603,-0.3405,1.0,1.0
+42,Event-Driven Ensemble,51,mixed,severe,0.2476,0.8348,0.8576,0.6169,0.2476,0.0,0.0228,-0.2179,1.0,1.0
+42,Event-Driven Ensemble,54,concept,severe,0.6169,0.2476,0.6929,0.08,0.2174,0.3693,0.4453,-0.1676,1.0,1.0
+42,Event-Driven Ensemble,57,covariate,mild,0.08,0.2174,0.1316,0.7756,,0.0,-0.0858,0.5582,1.0,1.0
+43,Frozen Model,3,covariate,severe,0.36,0.8599,0.8374,0.6198,0.7563,0.0,-0.0225,-0.2401,1.0,1.0
+43,Frozen Model,6,concept,moderate,0.6198,0.7563,0.7117,0.75,0.7145,0.0,-0.0446,-0.0063,1.0,1.0
+43,Frozen Model,12,concept,mild,0.7621,0.3928,0.2905,0.5924,0.6032,0.3693,-0.1023,0.1996,4.0,4.0
+43,Frozen Model,18,concept,severe,0.6998,0.3192,0.541,0.4992,0.1146,0.3806,0.2218,0.18,0.0,0.0
+43,Frozen Model,24,covariate,moderate,0.2293,0.7256,0.6813,0.3883,0.3795,0.0,-0.0443,-0.3373,1.0,1.0
+43,Frozen Model,27,mixed,moderate,0.3883,0.3795,0.0605,0.1238,0.7205,0.0088,-0.319,-0.2557,3.0,3.0
+43,Frozen Model,30,concept,moderate,0.1238,0.7205,0.5185,0.6096,0.6162,0.0,-0.202,-0.1109,1.0,1.0
+43,Frozen Model,36,mixed,severe,0.6755,0.6713,0.4848,0.7004,0.8023,0.0042,-0.1865,0.0291,2.0,2.0
+43,Frozen Model,39,covariate,moderate,0.7004,0.8023,0.8055,0.8116,0.0837,0.0,0.0032,0.0093,1.0,1.0
+43,Frozen Model,42,covariate,mild,0.8116,0.0837,0.2746,0.3737,0.5469,0.7279,0.1909,0.29,4.0,4.0
+43,Frozen Model,45,mixed,mild,0.3737,0.5469,0.8706,0.6882,0.3857,0.0,0.3237,0.1413,1.0,1.0
+43,Frozen Model,48,mixed,mild,0.6882,0.3857,0.2157,0.219,0.649,0.3025,-0.17,-0.1667,3.0,0.0
+43,Frozen Model,51,mixed,severe,0.219,0.649,0.4337,0.5268,0.6809,0.0,-0.2153,-0.1222,1.0,1.0
+43,Frozen Model,54,concept,severe,0.5268,0.6809,0.5237,0.6469,0.7411,0.0,-0.1572,-0.034,1.0,1.0
+43,Frozen Model,57,covariate,mild,0.6469,0.7411,0.4884,0.8008,,0.0,-0.2527,0.0597,2.0,2.0
+43,Continuously Retrained Ensemble,3,covariate,severe,0.3883,0.8626,0.8373,0.6116,0.7628,0.0,-0.0253,-0.251,1.0,1.0
+43,Continuously Retrained Ensemble,6,concept,moderate,0.6116,0.7628,0.7173,0.7522,0.7187,0.0,-0.0455,-0.0106,1.0,1.0
+43,Continuously Retrained Ensemble,12,concept,mild,0.7571,0.3928,0.2921,0.5873,0.6148,0.3643,-0.1007,0.1945,4.0,0.0
+43,Continuously Retrained Ensemble,18,concept,severe,0.689,0.3713,0.7229,0.7421,0.2071,0.3177,0.3516,0.3708,1.0,1.0
+43,Continuously Retrained Ensemble,24,covariate,moderate,0.7136,0.1818,0.3207,0.1111,0.5631,0.5318,0.1389,-0.0707,0.0,0.0
+43,Continuously Retrained Ensemble,27,mixed,moderate,0.1111,0.5631,0.5531,0.5339,0.7624,0.0,-0.01,-0.0292,1.0,1.0
+43,Continuously Retrained Ensemble,30,concept,moderate,0.5339,0.7624,0.8571,0.6134,0.4571,0.0,0.0947,-0.149,1.0,1.0
+43,Continuously Retrained Ensemble,36,mixed,severe,0.6609,0.5888,0.4444,0.7009,0.6287,0.0721,-0.1444,0.1121,2.0,2.0
+43,Continuously Retrained Ensemble,39,covariate,moderate,0.7009,0.6287,0.824,0.8166,0.0643,0.0722,0.1953,0.1879,1.0,1.0
+43,Continuously Retrained Ensemble,42,covariate,mild,0.8166,0.0643,0.2835,0.5536,0.4308,0.7523,0.2192,0.4893,4.0,4.0
+43,Continuously Retrained Ensemble,45,mixed,mild,0.5536,0.4308,0.8582,0.5333,0.3757,0.1228,0.4274,0.1025,1.0,1.0
+43,Continuously Retrained Ensemble,48,mixed,mild,0.5333,0.3757,0.2459,0.1838,0.6559,0.1576,-0.1298,-0.1919,3.0,3.0
+43,Continuously Retrained Ensemble,51,mixed,severe,0.1838,0.6559,0.4945,0.5166,0.7319,0.0,-0.1614,-0.1393,1.0,1.0
+43,Continuously Retrained Ensemble,54,concept,severe,0.5166,0.7319,0.8479,0.7088,0.5368,0.0,0.116,-0.0231,1.0,1.0
+43,Continuously Retrained Ensemble,57,covariate,mild,0.7088,0.5368,0.3884,0.7944,,0.172,-0.1484,0.2576,2.0,2.0
+43,Event-Driven Ensemble,3,covariate,severe,0.36,0.8599,0.8317,0.6008,0.7676,0.0,-0.0282,-0.2591,1.0,1.0
+43,Event-Driven Ensemble,6,concept,moderate,0.6008,0.7676,0.7339,0.7396,0.7266,0.0,-0.0337,-0.028,1.0,1.0
+43,Event-Driven Ensemble,12,concept,mild,0.7479,0.3871,0.3086,0.5814,0.5837,0.3608,-0.0785,0.1943,4.0,4.0
+43,Event-Driven Ensemble,18,concept,severe,0.6974,0.3789,0.7041,0.6757,0.7602,0.3185,0.3252,0.2968,1.0,1.0
+43,Event-Driven Ensemble,24,covariate,moderate,0.7243,0.3727,0.6678,0.3579,0.383,0.3516,0.2951,-0.0148,1.0,4.0
+43,Event-Driven Ensemble,27,mixed,moderate,0.3579,0.383,0.823,0.4618,0.7624,0.0,0.44,0.0788,1.0,1.0
+43,Event-Driven Ensemble,30,concept,moderate,0.4618,0.7624,0.8997,0.6393,0.3657,0.0,0.1373,-0.1231,1.0,1.0
+43,Event-Driven Ensemble,36,mixed,severe,0.66,0.6604,0.4407,0.693,0.7984,0.0,-0.2197,0.0326,2.0,2.0
+43,Event-Driven Ensemble,39,covariate,moderate,0.693,0.7984,0.8238,0.8253,0.0586,0.0,0.0254,0.0269,1.0,1.0
+43,Event-Driven Ensemble,42,covariate,mild,0.8253,0.0586,0.42,0.51,0.3444,0.7667,0.3614,0.4514,4.0,4.0
+43,Event-Driven Ensemble,45,mixed,mild,0.51,0.3444,0.8622,0.6795,0.3433,0.1656,0.5178,0.3351,1.0,1.0
+43,Event-Driven Ensemble,48,mixed,mild,0.6795,0.3433,0.382,0.4305,0.6371,0.3362,0.0387,0.0872,3.0,0.0
+43,Event-Driven Ensemble,51,mixed,severe,0.4305,0.6371,0.5244,0.4232,0.7328,0.0,-0.1127,-0.2139,1.0,1.0
+43,Event-Driven Ensemble,54,concept,severe,0.4232,0.7328,0.7547,0.6227,0.2775,0.0,0.0219,-0.1101,1.0,1.0
+43,Event-Driven Ensemble,57,covariate,mild,0.6227,0.2775,0.4472,0.7899,,0.3452,0.1697,0.5124,2.0,2.0
+44,Frozen Model,3,covariate,severe,0.3529,0.2674,0.0853,0.1176,0.6627,0.0855,-0.1821,-0.1498,3.0,3.0
+44,Frozen Model,6,concept,moderate,0.1176,0.6627,0.4073,0.6349,0.1823,0.0,-0.2554,-0.0278,1.0,1.0
+44,Frozen Model,12,concept,mild,0.2564,0.052,0.0334,0.3181,0.4788,0.2044,-0.0186,0.2661,2.0,2.0
+44,Frozen Model,18,concept,severe,0.633,0.5226,0.8623,0.7747,0.3333,0.1104,0.3397,0.2521,1.0,1.0
+44,Frozen Model,24,covariate,moderate,0.6545,0.426,0.6347,0.2387,0.4718,0.2285,0.2087,-0.1873,1.0,1.0
+44,Frozen Model,27,mixed,moderate,0.2387,0.4718,0.3576,0.374,0.8243,0.0,-0.1142,-0.0978,1.0,1.0
+44,Frozen Model,30,concept,moderate,0.374,0.8243,0.7799,0.8311,0.629,0.0,-0.0444,0.0068,1.0,1.0
+44,Frozen Model,36,mixed,severe,0.6092,0.3695,0.1727,0.5187,0.6513,0.2397,-0.1968,0.1492,3.0,3.0
+44,Frozen Model,39,covariate,moderate,0.5187,0.6513,0.7797,0.7169,0.2651,0.0,0.1284,0.0656,1.0,1.0
+44,Frozen Model,42,covariate,mild,0.7169,0.2651,0.77,0.6513,0.7108,0.4518,0.5049,0.3862,1.0,1.0
+44,Frozen Model,45,mixed,mild,0.6513,0.7108,0.9141,0.7656,0.7771,0.0,0.2033,0.0548,1.0,1.0
+44,Frozen Model,48,mixed,mild,0.7656,0.7771,0.7358,0.2526,0.7685,0.0,-0.0413,-0.5245,1.0,1.0
+44,Frozen Model,51,mixed,severe,0.2526,0.7685,0.6985,0.4211,0.4093,0.0,-0.07,-0.3474,1.0,1.0
+44,Frozen Model,54,concept,severe,0.4211,0.4093,0.0481,0.296,0.6934,0.0118,-0.3612,-0.1133,3.0,3.0
+44,Frozen Model,57,covariate,mild,0.296,0.6934,0.3467,0.77,,0.0,-0.3467,0.0766,1.0,1.0
+44,Continuously Retrained Ensemble,3,covariate,severe,0.3333,0.2659,0.0793,0.0,0.6112,0.0674,-0.1866,-0.2659,3.0,3.0
+44,Continuously Retrained Ensemble,6,concept,moderate,0.0,0.6112,0.2522,0.597,0.0198,0.0,-0.359,-0.0142,1.0,1.0
+44,Continuously Retrained Ensemble,12,concept,mild,0.1905,0.4488,0.5591,0.0635,0.1934,0.0,0.1103,-0.3853,1.0,1.0
+44,Continuously Retrained Ensemble,18,concept,severe,0.1404,0.0,0.662,0.7615,0.2828,0.1404,0.662,0.7615,1.0,1.0
+44,Continuously Retrained Ensemble,24,covariate,moderate,0.6452,0.4613,0.7624,0.6909,0.6952,0.1839,0.3011,0.2296,1.0,1.0
+44,Continuously Retrained Ensemble,27,mixed,moderate,0.6909,0.6952,0.7924,0.6178,0.2292,0.0,0.0972,-0.0774,1.0,1.0
+44,Continuously Retrained Ensemble,30,concept,moderate,0.6178,0.2292,0.2248,0.8431,0.7437,0.3886,-0.0044,0.6139,2.0,2.0
+44,Continuously Retrained Ensemble,36,mixed,severe,0.6214,0.3546,0.0,0.0368,0.0,0.2668,-0.3546,-0.3178,4.0,4.0
+44,Continuously Retrained Ensemble,39,covariate,moderate,0.0368,0.0,0.7129,0.6889,0.1791,0.0368,0.7129,0.6889,1.0,1.0
+44,Continuously Retrained Ensemble,42,covariate,mild,0.6889,0.1791,0.7659,0.6368,0.7046,0.5098,0.5868,0.4577,1.0,1.0
+44,Continuously Retrained Ensemble,45,mixed,mild,0.6368,0.7046,0.9058,0.7824,0.7586,0.0,0.2012,0.0778,1.0,1.0
+44,Continuously Retrained Ensemble,48,mixed,mild,0.7824,0.7586,0.7327,0.2222,0.7861,0.0238,-0.0259,-0.5364,1.0,3.0
+44,Continuously Retrained Ensemble,51,mixed,severe,0.2222,0.7861,0.6909,0.4375,0.3979,0.0,-0.0952,-0.3486,1.0,1.0
+44,Continuously Retrained Ensemble,54,concept,severe,0.4375,0.3979,0.043,0.2347,0.4787,0.0396,-0.3549,-0.1632,3.0,3.0
+44,Continuously Retrained Ensemble,57,covariate,mild,0.2347,0.4787,0.037,0.5946,,0.0,-0.4417,0.1159,2.0,2.0
+44,Event-Driven Ensemble,3,covariate,severe,0.3529,0.2674,0.5546,0.3771,0.5487,0.0855,0.2872,0.1097,1.0,1.0
+44,Event-Driven Ensemble,6,concept,moderate,0.3771,0.5487,0.3538,0.6447,0.2006,0.0,-0.1949,0.096,1.0,2.0
+44,Event-Driven Ensemble,12,concept,mild,0.0619,0.8223,0.8112,0.1595,0.1755,0.0,-0.0111,-0.6628,1.0,1.0
+44,Event-Driven Ensemble,18,concept,severe,0.5434,0.5498,0.87,0.7821,0.3333,0.0,0.3202,0.2323,1.0,1.0
+44,Event-Driven Ensemble,24,covariate,moderate,0.6442,0.5727,0.7995,0.8304,0.7202,0.0715,0.2268,0.2577,1.0,1.0
+44,Event-Driven Ensemble,27,mixed,moderate,0.8304,0.7202,0.7979,0.5177,0.7621,0.1102,0.0777,-0.2025,1.0,1.0
+44,Event-Driven Ensemble,30,concept,moderate,0.5177,0.7621,0.7733,0.8338,0.5685,0.0,0.0112,0.0717,1.0,1.0
+44,Event-Driven Ensemble,36,mixed,severe,0.4186,0.0,0.0,0.1846,0.5026,0.4186,0.0,0.1846,3.0,3.0
+44,Event-Driven Ensemble,39,covariate,moderate,0.1846,0.5026,0.6505,0.7279,0.2368,0.0,0.1479,0.2253,1.0,1.0
+44,Event-Driven Ensemble,42,covariate,mild,0.7279,0.2368,0.7519,0.6301,0.2437,0.4911,0.5151,0.3933,1.0,1.0
+44,Event-Driven Ensemble,45,mixed,mild,0.6301,0.2437,0.9066,0.771,0.7657,0.3864,0.6629,0.5273,1.0,1.0
+44,Event-Driven Ensemble,48,mixed,mild,0.771,0.7657,0.7358,0.3303,0.7733,0.0053,-0.0299,-0.4354,1.0,1.0
+44,Event-Driven Ensemble,51,mixed,severe,0.3303,0.7733,0.7036,0.433,0.3902,0.0,-0.0697,-0.3403,1.0,1.0
+44,Event-Driven Ensemble,54,concept,severe,0.433,0.3902,0.0,0.1504,0.069,0.0428,-0.3902,-0.2398,5.0,5.0
+44,Event-Driven Ensemble,57,covariate,mild,0.1504,0.069,0.2899,0.7488,,0.0814,0.2209,0.6798,1.0,1.0
+45,Frozen Model,3,covariate,severe,0.3469,0.5743,0.5075,0.4851,0.7474,0.0,-0.0668,-0.0892,1.0,1.0
+45,Frozen Model,6,concept,moderate,0.4851,0.7474,0.7359,0.8012,0.6437,0.0,-0.0115,0.0538,1.0,1.0
+45,Frozen Model,12,concept,mild,0.6212,0.8812,0.6982,0.8623,0.7922,0.0,-0.183,-0.0189,1.0,1.0
+45,Frozen Model,18,concept,severe,0.7774,0.3269,0.7911,0.6876,0.3537,0.4505,0.4642,0.3607,1.0,1.0
+45,Frozen Model,24,covariate,moderate,0.4863,0.2449,0.1944,0.1523,0.3866,0.2414,-0.0505,-0.0926,0.0,0.0
+45,Frozen Model,27,mixed,moderate,0.1523,0.3866,0.1176,0.2924,0.783,0.0,-0.269,-0.0942,2.0,2.0
+45,Frozen Model,30,concept,moderate,0.2924,0.783,0.7393,0.7651,0.5638,0.0,-0.0437,-0.0179,1.0,1.0
+45,Frozen Model,36,mixed,severe,0.6444,0.1538,0.0629,0.2074,0.6352,0.4906,-0.0909,0.0536,3.0,3.0
+45,Frozen Model,39,covariate,moderate,0.2074,0.6352,0.7387,0.6744,0.0299,0.0,0.1035,0.0392,1.0,1.0
+45,Frozen Model,42,covariate,mild,0.6744,0.0299,0.0846,0.2323,0.635,0.6445,0.0547,0.2024,3.0,4.0
+45,Frozen Model,45,mixed,mild,0.2323,0.635,0.8567,0.6512,0.705,0.0,0.2217,0.0162,1.0,1.0
+45,Frozen Model,48,mixed,mild,0.6512,0.705,0.7079,0.4086,0.7658,0.0,0.0029,-0.2964,1.0,1.0
+45,Frozen Model,51,mixed,severe,0.4086,0.7658,0.6489,0.4545,0.6833,0.0,-0.1169,-0.3113,1.0,1.0
+45,Frozen Model,54,concept,severe,0.4545,0.6833,0.3467,0.634,0.5989,0.0,-0.3366,-0.0493,2.0,2.0
+45,Frozen Model,57,covariate,mild,0.634,0.5989,0.2281,0.6829,,0.0351,-0.3708,0.084,2.0,2.0
+45,Continuously Retrained Ensemble,3,covariate,severe,0.4,0.55,0.7608,0.7299,0.7536,0.0,0.2108,0.1799,1.0,1.0
+45,Continuously Retrained Ensemble,6,concept,moderate,0.7299,0.7536,0.6632,0.7966,0.6792,0.0,-0.0904,0.043,1.0,2.0
+45,Continuously Retrained Ensemble,12,concept,mild,0.6479,0.7593,0.5262,0.8793,0.7353,0.0,-0.2331,0.12,2.0,2.0
+45,Continuously Retrained Ensemble,18,concept,severe,0.7583,0.2609,0.7918,0.684,0.2985,0.4974,0.5309,0.4231,1.0,1.0
+45,Continuously Retrained Ensemble,24,covariate,moderate,0.498,0.2435,0.1905,0.0,0.3383,0.2545,-0.053,-0.2435,5.0,0.0
+45,Continuously Retrained Ensemble,27,mixed,moderate,0.0,0.3383,0.3915,0.4552,0.2095,0.0,0.0532,0.1169,1.0,1.0
+45,Continuously Retrained Ensemble,30,concept,moderate,0.4552,0.2095,0.3777,0.7278,0.5617,0.2457,0.1682,0.5183,2.0,2.0
+45,Continuously Retrained Ensemble,36,mixed,severe,0.6585,0.1401,0.0066,0.2762,0.0297,0.5184,-0.1335,0.1361,0.0,0.0
+45,Continuously Retrained Ensemble,39,covariate,moderate,0.2762,0.0297,0.1115,0.2069,0.0532,0.2465,0.0818,0.1772,4.0,4.0
+45,Continuously Retrained Ensemble,42,covariate,mild,0.2069,0.0532,0.2906,0.5124,0.4399,0.1537,0.2374,0.4592,1.0,1.0
+45,Continuously Retrained Ensemble,45,mixed,mild,0.5124,0.4399,0.8363,0.2844,0.1348,0.0725,0.3964,-0.1555,1.0,1.0
+45,Continuously Retrained Ensemble,48,mixed,mild,0.2844,0.1348,0.6497,0.3571,0.7626,0.1496,0.5149,0.2223,1.0,1.0
+45,Continuously Retrained Ensemble,51,mixed,severe,0.3571,0.7626,0.6519,0.48,0.6844,0.0,-0.1107,-0.2826,1.0,1.0
+45,Continuously Retrained Ensemble,54,concept,severe,0.48,0.6844,0.3459,0.6367,0.6004,0.0,-0.3385,-0.0477,2.0,2.0
+45,Continuously Retrained Ensemble,57,covariate,mild,0.6367,0.6004,0.214,0.6912,,0.0363,-0.3864,0.0908,2.0,2.0
+45,Event-Driven Ensemble,3,covariate,severe,0.3469,0.5743,0.8581,0.756,0.568,0.0,0.2838,0.1817,1.0,1.0
+45,Event-Driven Ensemble,6,concept,moderate,0.756,0.568,0.7273,0.7932,0.6261,0.188,0.1593,0.2252,1.0,1.0
+45,Event-Driven Ensemble,12,concept,mild,0.6532,0.8613,0.6769,0.8766,0.7508,0.0,-0.1844,0.0153,1.0,1.0
+45,Event-Driven Ensemble,18,concept,severe,0.752,0.2472,0.8018,0.6869,0.2946,0.5048,0.5546,0.4397,1.0,1.0
+45,Event-Driven Ensemble,24,covariate,moderate,0.3704,0.2321,0.4716,0.4642,0.4051,0.1383,0.2395,0.2321,1.0,1.0
+45,Event-Driven Ensemble,27,mixed,moderate,0.4642,0.4051,0.022,0.3471,0.7284,0.0591,-0.3831,-0.058,3.0,3.0
+45,Event-Driven Ensemble,30,concept,moderate,0.3471,0.7284,0.723,0.7821,0.5617,0.0,-0.0054,0.0537,1.0,1.0
+45,Event-Driven Ensemble,36,mixed,severe,0.478,0.0761,0.5677,0.137,0.0,0.4019,0.4916,0.0609,1.0,1.0
+45,Event-Driven Ensemble,39,covariate,moderate,0.137,0.0,0.0758,0.6887,0.0248,0.137,0.0758,0.6887,2.0,2.0
+45,Event-Driven Ensemble,42,covariate,mild,0.6887,0.0248,0.7031,0.6733,0.4399,0.6639,0.6783,0.6485,1.0,1.0
+45,Event-Driven Ensemble,45,mixed,mild,0.6733,0.4399,0.8351,0.6746,0.6846,0.2334,0.3952,0.2347,1.0,1.0
+45,Event-Driven Ensemble,48,mixed,mild,0.6746,0.6846,0.7007,0.321,0.7552,0.0,0.0161,-0.3636,1.0,1.0
+45,Event-Driven Ensemble,51,mixed,severe,0.321,0.7552,0.6667,0.451,0.6949,0.0,-0.0885,-0.3042,1.0,1.0
+45,Event-Driven Ensemble,54,concept,severe,0.451,0.6949,0.3546,0.6124,0.6139,0.0,-0.3403,-0.0825,2.0,2.0
+45,Event-Driven Ensemble,57,covariate,mild,0.6124,0.6139,0.199,0.6595,,0.0,-0.4149,0.0456,2.0,2.0
+46,Frozen Model,3,covariate,severe,0.3853,0.8889,0.903,0.7063,0.3349,0.0,0.0141,-0.1826,1.0,1.0
+46,Frozen Model,6,concept,moderate,0.7063,0.3349,0.136,0.3361,0.6828,0.3714,-0.1989,0.0012,3.0,3.0
+46,Frozen Model,12,concept,mild,0.78,0.3696,0.1307,0.5098,0.7036,0.4104,-0.2389,0.1402,3.0,0.0
+46,Frozen Model,18,concept,severe,0.7225,0.0511,0.176,0.2869,0.378,0.6714,0.1249,0.2358,4.0,4.0
+46,Frozen Model,24,covariate,moderate,0.654,0.7562,0.8349,0.4229,0.5035,0.0,0.0787,-0.3333,1.0,1.0
+46,Frozen Model,27,mixed,moderate,0.4229,0.5035,0.3953,0.4276,0.4104,0.0,-0.1082,-0.0759,1.0,2.0
+46,Frozen Model,30,concept,moderate,0.4276,0.4104,0.0657,0.3841,0.6479,0.0172,-0.3447,-0.0263,3.0,3.0
+46,Frozen Model,36,mixed,severe,0.7957,0.4938,0.5061,0.7005,0.7939,0.3019,0.0123,0.2067,3.0,3.0
+46,Frozen Model,39,covariate,moderate,0.7005,0.7939,0.8098,0.7756,0.4892,0.0,0.0159,-0.0183,1.0,1.0
+46,Frozen Model,42,covariate,mild,0.7756,0.4892,0.835,0.6938,0.3333,0.2864,0.3458,0.2046,1.0,1.0
+46,Frozen Model,45,mixed,mild,0.6938,0.3333,0.5961,0.5016,0.6708,0.3605,0.2628,0.1683,3.0,3.0
+46,Frozen Model,48,mixed,mild,0.5016,0.6708,0.588,0.323,0.584,0.0,-0.0828,-0.3478,1.0,1.0
+46,Frozen Model,51,mixed,severe,0.323,0.584,0.5337,0.5118,0.3554,0.0,-0.0503,-0.0722,1.0,1.0
+46,Frozen Model,54,concept,severe,0.5118,0.3554,0.035,0.2171,0.7565,0.1564,-0.3204,-0.1383,3.0,3.0
+46,Frozen Model,57,covariate,mild,0.2171,0.7565,0.5098,0.8387,,0.0,-0.2467,0.0822,1.0,1.0
+46,Continuously Retrained Ensemble,3,covariate,severe,0.3818,0.8899,0.8669,0.7176,0.3155,0.0,-0.023,-0.1723,1.0,1.0
+46,Continuously Retrained Ensemble,6,concept,moderate,0.7176,0.3155,0.098,0.2375,0.2049,0.4021,-0.2175,-0.078,5.0,5.0
+46,Continuously Retrained Ensemble,12,concept,mild,0.7377,0.3762,0.1899,0.5237,0.6696,0.3615,-0.1863,0.1475,3.0,4.0
+46,Continuously Retrained Ensemble,18,concept,severe,0.6897,0.0516,0.1796,0.3817,0.2051,0.6381,0.128,0.3301,4.0,0.0
+46,Continuously Retrained Ensemble,24,covariate,moderate,0.2165,0.5097,0.8307,0.4503,0.5078,0.0,0.321,-0.0594,1.0,1.0
+46,Continuously Retrained Ensemble,27,mixed,moderate,0.4503,0.5078,0.423,0.5586,0.3647,0.0,-0.0848,0.0508,1.0,2.0
+46,Continuously Retrained Ensemble,30,concept,moderate,0.5586,0.3647,0.0,0.1405,0.1481,0.1939,-0.3647,-0.2242,5.0,5.0
+46,Continuously Retrained Ensemble,36,mixed,severe,0.7104,0.6702,0.9637,0.7039,0.5652,0.0402,0.2935,0.0337,1.0,1.0
+46,Continuously Retrained Ensemble,39,covariate,moderate,0.7039,0.5652,0.7735,0.7734,0.4672,0.1387,0.2083,0.2082,1.0,1.0
+46,Continuously Retrained Ensemble,42,covariate,mild,0.7734,0.4672,0.852,0.6957,0.3438,0.3062,0.3848,0.2285,1.0,1.0
+46,Continuously Retrained Ensemble,45,mixed,mild,0.6957,0.3438,0.5951,0.5078,0.6729,0.3519,0.2513,0.164,3.0,3.0
+46,Continuously Retrained Ensemble,48,mixed,mild,0.5078,0.6729,0.5997,0.3462,0.7261,0.0,-0.0732,-0.3267,1.0,1.0
+46,Continuously Retrained Ensemble,51,mixed,severe,0.3462,0.7261,0.7937,0.7895,0.211,0.0,0.0676,0.0634,1.0,1.0
+46,Continuously Retrained Ensemble,54,concept,severe,0.7895,0.211,0.0,0.2222,0.2113,0.5785,-0.211,0.0112,5.0,5.0
+46,Continuously Retrained Ensemble,57,covariate,mild,0.2222,0.2113,0.1686,0.7992,,0.0109,-0.0427,0.5879,2.0,2.0
+46,Event-Driven Ensemble,3,covariate,severe,0.3853,0.8889,0.8958,0.6724,0.3236,0.0,0.0069,-0.2165,1.0,1.0
+46,Event-Driven Ensemble,6,concept,moderate,0.6724,0.3236,0.7094,0.2393,0.2007,0.3488,0.3858,-0.0843,1.0,1.0
+46,Event-Driven Ensemble,12,concept,mild,0.7775,0.3636,0.1304,0.3515,0.5549,0.4139,-0.2332,-0.0121,5.0,0.0
+46,Event-Driven Ensemble,18,concept,severe,0.7079,0.0513,0.6242,0.692,0.1388,0.6566,0.5729,0.6407,2.0,2.0
+46,Event-Driven Ensemble,24,covariate,moderate,0.6446,0.6853,0.8342,0.4311,0.5153,0.0,0.1489,-0.2542,1.0,1.0
+46,Event-Driven Ensemble,27,mixed,moderate,0.4311,0.5153,0.7803,0.524,0.3761,0.0,0.265,0.0087,1.0,1.0
+46,Event-Driven Ensemble,30,concept,moderate,0.524,0.3761,0.0,0.1267,0.4121,0.1479,-0.3761,-0.2494,5.0,5.0
+46,Event-Driven Ensemble,36,mixed,severe,0.7982,0.4354,0.9647,0.5961,0.6042,0.3628,0.5293,0.1607,1.0,1.0
+46,Event-Driven Ensemble,39,covariate,moderate,0.5961,0.6042,0.8067,0.7749,0.4262,0.0,0.2025,0.1707,1.0,1.0
+46,Event-Driven Ensemble,42,covariate,mild,0.7749,0.4262,0.8537,0.6861,0.3371,0.3487,0.4275,0.2599,1.0,1.0
+46,Event-Driven Ensemble,45,mixed,mild,0.6861,0.3371,0.6105,0.3333,0.6866,0.349,0.2734,-0.0038,3.0,3.0
+46,Event-Driven Ensemble,48,mixed,mild,0.3333,0.6866,0.6013,0.3277,0.6979,0.0,-0.0853,-0.3589,1.0,1.0
+46,Event-Driven Ensemble,51,mixed,severe,0.3277,0.6979,0.8755,0.7431,0.4482,0.0,0.1776,0.0452,1.0,1.0
+46,Event-Driven Ensemble,54,concept,severe,0.7431,0.4482,0.8741,0.3018,0.2686,0.2949,0.4259,-0.1464,1.0,1.0
+46,Event-Driven Ensemble,57,covariate,mild,0.3018,0.2686,0.4511,0.8371,,0.0332,0.1825,0.5685,1.0,1.0

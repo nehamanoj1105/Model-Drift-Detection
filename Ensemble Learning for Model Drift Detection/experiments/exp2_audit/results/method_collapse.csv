@@ -1,0 +1,5 @@
+stream,n_identical_pairs,examples
+9A_Original,21,Event-Driven == Probability-Guided Top-1; Event-Driven == Probability-Guided Weighted; Event-Driven == RAPT-E; Frozen == Historical Reliability
+9B_Original,18,Frozen == Historical Reliability; Frozen == Oracle Transfer; Frozen == Random Historical; Frozen == Similarity-Only
+9A_Enriched,17,Event-Driven == RAPT-E; Frozen == Historical Reliability; Frozen == Oracle Transfer; Frozen == Random Historical
+9B_Enriched,17,Event-Driven == RAPT-E; Frozen == Historical Reliability; Frozen == Oracle Transfer; Frozen == Random Historical

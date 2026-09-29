@@ -1,0 +1,91 @@
+seed,dataset,method,level_0_pure_reuse,level_1_weight_adapt,level_2_partial_update,level_3_full_retrain
+42,9A,Frozen,0,0,0,0
+42,9A,Event-Driven,1493,0,0,6
+42,9A,Full Retraining,1492,0,0,7
+42,9A,RAPT-v1,6,0,0,3
+42,9A,RAPT-A,0,6,0,3
+42,9A,RAPT-B,0,6,0,3
+42,9A,RAPT-C,0,6,0,3
+42,9A,RAPT-D,4,2,0,3
+42,9A,RAPT-E,4,2,0,3
+43,9A,Frozen,0,0,0,0
+43,9A,Event-Driven,1494,0,0,5
+43,9A,Full Retraining,1492,0,0,7
+43,9A,RAPT-v1,6,0,0,3
+43,9A,RAPT-A,0,6,0,3
+43,9A,RAPT-B,0,6,0,3
+43,9A,RAPT-C,0,6,0,3
+43,9A,RAPT-D,5,1,0,3
+43,9A,RAPT-E,5,1,0,3
+44,9A,Frozen,0,0,0,0
+44,9A,Event-Driven,1492,0,0,7
+44,9A,Full Retraining,1492,0,0,7
+44,9A,RAPT-v1,6,0,0,3
+44,9A,RAPT-A,0,6,0,3
+44,9A,RAPT-B,0,6,0,3
+44,9A,RAPT-C,0,6,0,3
+44,9A,RAPT-D,6,0,0,3
+44,9A,RAPT-E,6,0,0,3
+45,9A,Frozen,0,0,0,0
+45,9A,Event-Driven,1492,0,0,7
+45,9A,Full Retraining,1492,0,0,7
+45,9A,RAPT-v1,6,0,0,3
+45,9A,RAPT-A,0,6,0,3
+45,9A,RAPT-B,0,6,0,3
+45,9A,RAPT-C,0,6,0,3
+45,9A,RAPT-D,4,2,0,3
+45,9A,RAPT-E,4,2,0,3
+46,9A,Frozen,0,0,0,0
+46,9A,Event-Driven,1494,0,0,5
+46,9A,Full Retraining,1492,0,0,7
+46,9A,RAPT-v1,6,0,0,3
+46,9A,RAPT-A,0,6,0,3
+46,9A,RAPT-B,0,6,0,3
+46,9A,RAPT-C,0,6,0,3
+46,9A,RAPT-D,5,1,0,3
+46,9A,RAPT-E,5,1,0,3
+42,9B,Frozen,0,0,0,0
+42,9B,Event-Driven,387,0,0,13
+42,9B,Full Retraining,392,0,0,8
+42,9B,RAPT-v1,6,0,0,4
+42,9B,RAPT-A,0,6,0,4
+42,9B,RAPT-B,0,6,0,4
+42,9B,RAPT-C,0,6,0,4
+42,9B,RAPT-D,3,3,0,4
+42,9B,RAPT-E,3,3,0,4
+43,9B,Frozen,0,0,0,0
+43,9B,Event-Driven,390,0,0,10
+43,9B,Full Retraining,392,0,0,8
+43,9B,RAPT-v1,6,0,0,4
+43,9B,RAPT-A,0,6,0,4
+43,9B,RAPT-B,0,6,0,4
+43,9B,RAPT-C,0,6,0,4
+43,9B,RAPT-D,3,3,0,4
+43,9B,RAPT-E,3,3,0,4
+44,9B,Frozen,0,0,0,0
+44,9B,Event-Driven,388,0,0,12
+44,9B,Full Retraining,392,0,0,8
+44,9B,RAPT-v1,6,0,0,4
+44,9B,RAPT-A,0,6,0,4
+44,9B,RAPT-B,0,6,0,4
+44,9B,RAPT-C,0,6,0,4
+44,9B,RAPT-D,3,3,0,4
+44,9B,RAPT-E,3,3,0,4
+45,9B,Frozen,0,0,0,0
+45,9B,Event-Driven,392,0,0,8
+45,9B,Full Retraining,392,0,0,8
+45,9B,RAPT-v1,6,0,0,4
+45,9B,RAPT-A,0,6,0,4
+45,9B,RAPT-B,0,6,0,4
+45,9B,RAPT-C,0,6,0,4
+45,9B,RAPT-D,3,3,0,4
+45,9B,RAPT-E,3,3,0,4
+46,9B,Frozen,0,0,0,0
+46,9B,Event-Driven,388,0,0,12
+46,9B,Full Retraining,392,0,0,8
+46,9B,RAPT-v1,6,0,0,4
+46,9B,RAPT-A,0,6,0,4
+46,9B,RAPT-B,0,6,0,4
+46,9B,RAPT-C,0,6,0,4
+46,9B,RAPT-D,3,3,0,4
+46,9B,RAPT-E,3,3,0,4

@@ -1,0 +1,36 @@
+{
+    "Cold_vs_SimilarityPolicyTransfer": {
+        "mean_diff": 6.352631254130745e-05,
+        "std_diff": 0.004816028424130729,
+        "ci_lower": -0.00038220157933106775,
+        "ci_upper": 0.0005144454657540909,
+        "p_value": 0.64622871694284,
+        "effect_size": 0.013190601663189657,
+        "n_obs": 450
+    },
+    "Cold_vs_SimilarityModel-StateTransfer": {
+        "mean_diff": 0.0009139109128152442,
+        "std_diff": 0.009116957319981337,
+        "ci_lower": 8.718019897223652e-05,
+        "ci_upper": 0.0017676050171669961,
+        "p_value": 0.18617149742846606,
+        "effect_size": 0.10024297369608778,
+        "n_obs": 450
+    },
+    "Cold_vs_OracleRecurrenceTransfer": {
+        "mean_diff": 0.00032022554726388817,
+        "std_diff": 0.008456138052764498,
+        "ci_lower": -0.000452627106001945,
+        "ci_upper": 0.0011107188196982944,
+        "p_value": 0.7356425983809614,
+        "effect_size": 0.03786900654480202,
+        "n_obs": 450
+    },
+    "PolicyTransfer_vs_ModelStateTransfer": {
+        "mean_diff": 0.0008503846002739367,
+        "std_diff": 0.009095389410059117,
+        "p_value": 0.5101832636462719,
+        "effect_size": 0.09349622780674428,
+        "n_obs": 450
+    }
+}

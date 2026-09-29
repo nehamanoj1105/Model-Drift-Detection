@@ -1,0 +1,4 @@
+comparison,method_1,method_2,f1_difference,p_value,effect_size,n_windows,statistically_significant
+RAPT vs Event-Driven,RAPT,Event-Driven,-0.0016260162601626016,0.019550269092885535,0.026112789711553258,7995,True
+RAPT vs Frozen,RAPT,Frozen,0.0005003126954346467,0.28504940740261275,0.011956022934483649,7995,False
+Event-Driven vs Frozen,Event-Driven,Frozen,0.0021263289555972483,0.0003929930264148809,0.03964384498811234,7995,True

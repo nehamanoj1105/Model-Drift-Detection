@@ -1,0 +1,72 @@
+{
+  "dataset": "ToN_IoT (Train_Test_IoT_Weather.csv)",
+  "total_usable_samples": 39260,
+  "initial_training_samples": 20000,
+  "streaming_samples": 19260,
+  "window_size": 500,
+  "n_windows": 38,
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "features": [
+    "temperature",
+    "pressure",
+    "humidity"
+  ],
+  "target": "label",
+  "regimes": [
+    {
+      "name": "Initial Baseline",
+      "start_idx": 0,
+      "end_idx": 20000,
+      "phase": "training",
+      "dominant_type": "normal + baseline attacks",
+      "description": "Baseline operational regime (75% normal, 25% anomaly)"
+    },
+    {
+      "name": "Regime 1: DDoS",
+      "start_idx": 20000,
+      "end_idx": 25529,
+      "phase": "stream",
+      "dominant_type": "ddos",
+      "description": "High-frequency DDoS attack wave inducing severe thermal/pressure shifts"
+    },
+    {
+      "name": "Regime 2: Password",
+      "start_idx": 25529,
+      "end_idx": 30529,
+      "phase": "stream",
+      "dominant_type": "password",
+      "description": "Credential brute-force attack wave causing pressure spikes"
+    },
+    {
+      "name": "Regime 3: XSS/Ransomware",
+      "start_idx": 30529,
+      "end_idx": 34260,
+      "phase": "stream",
+      "dominant_type": "xss & ransomware",
+      "description": "Multi-stage exploit and encryption wave shifting humidity"
+    },
+    {
+      "name": "Regime 4: Backdoor",
+      "start_idx": 34260,
+      "end_idx": 39260,
+      "phase": "stream",
+      "dominant_type": "backdoor",
+      "description": "Persistent backdoor intrusion wave with partial environmental stabilization"
+    }
+  ],
+  "approaches": [
+    "Frozen Model",
+    "Continuously Retrained Ensemble",
+    "Event-Driven Ensemble",
+    "Adaptive Random Forest",
+    "Adaptive Extra Trees",
+    "Adaptive Gradient Boosting"
+  ],
+  "total_wall_clock_time_s": 473.2795343399048
+}

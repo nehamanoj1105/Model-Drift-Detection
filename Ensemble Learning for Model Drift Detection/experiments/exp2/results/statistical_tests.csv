@@ -1,0 +1,6 @@
+comparison,method_1,method_2,mean_diff_f1,win_rate_m1,wilcoxon_stat,p_value,significant_p05
+Probability-Guided Top-1 vs RAPT-E,Probability-Guided Top-1,RAPT-E,0.005922498554077502,0.06098322729901677,5970230.0,0.00030080244454694106,True
+Probability-Guided Top-1 vs Similarity-Only,Probability-Guided Top-1,Similarity-Only,0.02882591093117409,0.20550607287449393,63085438.5,3.1905582865305503e-22,True
+Probability-Guided Top-1 vs Event-Driven,Probability-Guided Top-1,Event-Driven,0.010780798149219202,0.06896471949103528,6912477.5,3.261089786201461e-10,True
+Probability-Guided Top-1 vs Frozen,Probability-Guided Top-1,Frozen,0.02882591093117409,0.20550607287449393,63085438.5,3.1905582865305503e-22,True
+Probability-Guided Top-1 vs Oracle Transfer,Probability-Guided Top-1,Oracle Transfer,0.02882591093117409,0.20550607287449393,63085438.5,3.1905582865305503e-22,True

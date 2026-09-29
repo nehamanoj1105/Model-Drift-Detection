@@ -1,0 +1,301 @@
+seed,window,drift_type,severity,transition,affected_features,drift_parameters
+42,0,none,none,stable,none,baseline
+42,1,none,none,sustained,none,baseline
+42,2,none,none,decay,none,baseline
+42,3,covariate,mild,gradual,"speed,distance,delay,throughput",mag=0.2
+42,4,covariate,mild,sustained,"speed,distance,delay,throughput",mag=0.2
+42,5,covariate,mild,decay,"speed,distance,delay,throughput",mag=0.2
+42,6,covariate,severe,sudden,"speed,distance,delay,throughput",mag=0.75
+42,7,covariate,severe,sustained,"speed,distance,delay,throughput",mag=0.75
+42,8,covariate,severe,decay,"speed,distance,delay,throughput",mag=0.75
+42,9,mixed,severe,sudden,Features + P(Y|X) linear coefficients + interactions,mixed_severe
+42,10,mixed,severe,sustained,Features + P(Y|X) linear coefficients + interactions,mixed_severe
+42,11,mixed,severe,decay,Features + P(Y|X) linear coefficients + interactions,mixed_severe
+42,12,none,none,stable,none,baseline
+42,13,none,none,sustained,none,baseline
+42,14,none,none,decay,none,baseline
+42,15,none,none,stable,none,baseline
+42,16,none,none,sustained,none,baseline
+42,17,none,none,decay,none,baseline
+42,18,concept,severe,gradual,P(Y|X) linear coefficients + interactions,concept_severe
+42,19,concept,severe,sustained,P(Y|X) linear coefficients + interactions,concept_severe
+42,20,concept,severe,decay,P(Y|X) linear coefficients + interactions,concept_severe
+42,21,mixed,moderate,sudden,Features + P(Y|X) linear coefficients + interactions,mixed_moderate
+42,22,mixed,moderate,sustained,Features + P(Y|X) linear coefficients + interactions,mixed_moderate
+42,23,mixed,moderate,decay,Features + P(Y|X) linear coefficients + interactions,mixed_moderate
+42,24,mixed,mild,gradual,Features + P(Y|X) linear coefficients + interactions,mixed_mild
+42,25,mixed,mild,sustained,Features + P(Y|X) linear coefficients + interactions,mixed_mild
+42,26,mixed,mild,decay,Features + P(Y|X) linear coefficients + interactions,mixed_mild
+42,27,mixed,severe,gradual,Features + P(Y|X) linear coefficients + interactions,mixed_severe
+42,28,mixed,severe,sustained,Features + P(Y|X) linear coefficients + interactions,mixed_severe
+42,29,mixed,severe,decay,Features + P(Y|X) linear coefficients + interactions,mixed_severe
+42,30,concept,severe,sudden,P(Y|X) linear coefficients + interactions,concept_severe
+42,31,concept,severe,sustained,P(Y|X) linear coefficients + interactions,concept_severe
+42,32,concept,severe,decay,P(Y|X) linear coefficients + interactions,concept_severe
+42,33,concept,mild,gradual,P(Y|X) linear coefficients + interactions,concept_mild
+42,34,concept,mild,sustained,P(Y|X) linear coefficients + interactions,concept_mild
+42,35,concept,mild,decay,P(Y|X) linear coefficients + interactions,concept_mild
+42,36,covariate,mild,recovery,"speed,distance,delay,throughput",mag=0.2
+42,37,covariate,mild,sustained,"speed,distance,delay,throughput",mag=0.2
+42,38,covariate,mild,decay,"speed,distance,delay,throughput",mag=0.2
+42,39,none,none,stable,none,baseline
+42,40,none,none,sustained,none,baseline
+42,41,none,none,decay,none,baseline
+42,42,mixed,mild,recovery,Features + P(Y|X) linear coefficients + interactions,mixed_mild
+42,43,mixed,mild,sustained,Features + P(Y|X) linear coefficients + interactions,mixed_mild
+42,44,mixed,mild,decay,Features + P(Y|X) linear coefficients + interactions,mixed_mild
+42,45,concept,moderate,recovery,P(Y|X) linear coefficients + interactions,concept_moderate
+42,46,concept,moderate,sustained,P(Y|X) linear coefficients + interactions,concept_moderate
+42,47,concept,moderate,decay,P(Y|X) linear coefficients + interactions,concept_moderate
+42,48,covariate,moderate,sudden,"speed,distance,delay,throughput",mag=0.45
+42,49,covariate,moderate,sustained,"speed,distance,delay,throughput",mag=0.45
+42,50,covariate,moderate,decay,"speed,distance,delay,throughput",mag=0.45
+42,51,covariate,moderate,gradual,"speed,distance,delay,throughput",mag=0.45
+42,52,covariate,moderate,sustained,"speed,distance,delay,throughput",mag=0.45
+42,53,covariate,moderate,decay,"speed,distance,delay,throughput",mag=0.45
+42,54,concept,moderate,sudden,P(Y|X) linear coefficients + interactions,concept_moderate
+42,55,concept,moderate,sustained,P(Y|X) linear coefficients + interactions,concept_moderate
+42,56,concept,moderate,decay,P(Y|X) linear coefficients + interactions,concept_moderate
+42,57,none,none,stable,none,baseline
+42,58,none,none,sustained,none,baseline
+42,59,none,none,decay,none,baseline
+43,0,none,none,stable,none,baseline
+43,1,none,none,sustained,none,baseline
+43,2,none,none,decay,none,baseline
+43,3,covariate,moderate,sudden,"speed,distance,delay,throughput",mag=0.45
+43,4,covariate,moderate,sustained,"speed,distance,delay,throughput",mag=0.45
+43,5,covariate,moderate,decay,"speed,distance,delay,throughput",mag=0.45
+43,6,covariate,mild,gradual,"speed,distance,delay,throughput",mag=0.2
+43,7,covariate,mild,sustained,"speed,distance,delay,throughput",mag=0.2
+43,8,covariate,mild,decay,"speed,distance,delay,throughput",mag=0.2
+43,9,none,none,stable,none,baseline
+43,10,none,none,sustained,none,baseline
+43,11,none,none,decay,none,baseline
+43,12,concept,mild,gradual,P(Y|X) linear coefficients + interactions,concept_mild
+43,13,concept,mild,sustained,P(Y|X) linear coefficients + interactions,concept_mild
+43,14,concept,mild,decay,P(Y|X) linear coefficients + interactions,concept_mild
+43,15,none,none,stable,none,baseline
+43,16,none,none,sustained,none,baseline
+43,17,none,none,decay,none,baseline
+43,18,mixed,moderate,sudden,Features + P(Y|X) linear coefficients + interactions,mixed_moderate
+43,19,mixed,moderate,sustained,Features + P(Y|X) linear coefficients + interactions,mixed_moderate
+43,20,mixed,moderate,decay,Features + P(Y|X) linear coefficients + interactions,mixed_moderate
+43,21,concept,severe,sudden,P(Y|X) linear coefficients + interactions,concept_severe
+43,22,concept,severe,sustained,P(Y|X) linear coefficients + interactions,concept_severe
+43,23,concept,severe,decay,P(Y|X) linear coefficients + interactions,concept_severe
+43,24,none,none,stable,none,baseline
+43,25,none,none,sustained,none,baseline
+43,26,none,none,decay,none,baseline
+43,27,concept,severe,gradual,P(Y|X) linear coefficients + interactions,concept_severe
+43,28,concept,severe,sustained,P(Y|X) linear coefficients + interactions,concept_severe
+43,29,concept,severe,decay,P(Y|X) linear coefficients + interactions,concept_severe
+43,30,mixed,severe,sudden,Features + P(Y|X) linear coefficients + interactions,mixed_severe
+43,31,mixed,severe,sustained,Features + P(Y|X) linear coefficients + interactions,mixed_severe
+43,32,mixed,severe,decay,Features + P(Y|X) linear coefficients + interactions,mixed_severe
+43,33,mixed,mild,recovery,Features + P(Y|X) linear coefficients + interactions,mixed_mild
+43,34,mixed,mild,sustained,Features + P(Y|X) linear coefficients + interactions,mixed_mild
+43,35,mixed,mild,decay,Features + P(Y|X) linear coefficients + interactions,mixed_mild
+43,36,none,none,stable,none,baseline
+43,37,none,none,sustained,none,baseline
+43,38,none,none,decay,none,baseline
+43,39,covariate,severe,sudden,"speed,distance,delay,throughput",mag=0.75
+43,40,covariate,severe,sustained,"speed,distance,delay,throughput",mag=0.75
+43,41,covariate,severe,decay,"speed,distance,delay,throughput",mag=0.75
+43,42,concept,moderate,sudden,P(Y|X) linear coefficients + interactions,concept_moderate
+43,43,concept,moderate,sustained,P(Y|X) linear coefficients + interactions,concept_moderate
+43,44,concept,moderate,decay,P(Y|X) linear coefficients + interactions,concept_moderate
+43,45,covariate,moderate,gradual,"speed,distance,delay,throughput",mag=0.45
+43,46,covariate,moderate,sustained,"speed,distance,delay,throughput",mag=0.45
+43,47,covariate,moderate,decay,"speed,distance,delay,throughput",mag=0.45
+43,48,concept,moderate,recovery,P(Y|X) linear coefficients + interactions,concept_moderate
+43,49,concept,moderate,sustained,P(Y|X) linear coefficients + interactions,concept_moderate
+43,50,concept,moderate,decay,P(Y|X) linear coefficients + interactions,concept_moderate
+43,51,mixed,mild,gradual,Features + P(Y|X) linear coefficients + interactions,mixed_mild
+43,52,mixed,mild,sustained,Features + P(Y|X) linear coefficients + interactions,mixed_mild
+43,53,mixed,mild,decay,Features + P(Y|X) linear coefficients + interactions,mixed_mild
+43,54,mixed,severe,gradual,Features + P(Y|X) linear coefficients + interactions,mixed_severe
+43,55,mixed,severe,sustained,Features + P(Y|X) linear coefficients + interactions,mixed_severe
+43,56,mixed,severe,decay,Features + P(Y|X) linear coefficients + interactions,mixed_severe
+43,57,covariate,mild,recovery,"speed,distance,delay,throughput",mag=0.2
+43,58,covariate,mild,sustained,"speed,distance,delay,throughput",mag=0.2
+43,59,covariate,mild,decay,"speed,distance,delay,throughput",mag=0.2
+44,0,none,none,stable,none,baseline
+44,1,none,none,sustained,none,baseline
+44,2,none,none,decay,none,baseline
+44,3,concept,moderate,sudden,P(Y|X) linear coefficients + interactions,concept_moderate
+44,4,concept,moderate,sustained,P(Y|X) linear coefficients + interactions,concept_moderate
+44,5,concept,moderate,decay,P(Y|X) linear coefficients + interactions,concept_moderate
+44,6,mixed,mild,recovery,Features + P(Y|X) linear coefficients + interactions,mixed_mild
+44,7,mixed,mild,sustained,Features + P(Y|X) linear coefficients + interactions,mixed_mild
+44,8,mixed,mild,decay,Features + P(Y|X) linear coefficients + interactions,mixed_mild
+44,9,concept,severe,gradual,P(Y|X) linear coefficients + interactions,concept_severe
+44,10,concept,severe,sustained,P(Y|X) linear coefficients + interactions,concept_severe
+44,11,concept,severe,decay,P(Y|X) linear coefficients + interactions,concept_severe
+44,12,concept,severe,sudden,P(Y|X) linear coefficients + interactions,concept_severe
+44,13,concept,severe,sustained,P(Y|X) linear coefficients + interactions,concept_severe
+44,14,concept,severe,decay,P(Y|X) linear coefficients + interactions,concept_severe
+44,15,mixed,mild,gradual,Features + P(Y|X) linear coefficients + interactions,mixed_mild
+44,16,mixed,mild,sustained,Features + P(Y|X) linear coefficients + interactions,mixed_mild
+44,17,mixed,mild,decay,Features + P(Y|X) linear coefficients + interactions,mixed_mild
+44,18,covariate,moderate,sudden,"speed,distance,delay,throughput",mag=0.45
+44,19,covariate,moderate,sustained,"speed,distance,delay,throughput",mag=0.45
+44,20,covariate,moderate,decay,"speed,distance,delay,throughput",mag=0.45
+44,21,none,none,stable,none,baseline
+44,22,none,none,sustained,none,baseline
+44,23,none,none,decay,none,baseline
+44,24,mixed,severe,gradual,Features + P(Y|X) linear coefficients + interactions,mixed_severe
+44,25,mixed,severe,sustained,Features + P(Y|X) linear coefficients + interactions,mixed_severe
+44,26,mixed,severe,decay,Features + P(Y|X) linear coefficients + interactions,mixed_severe
+44,27,mixed,moderate,sudden,Features + P(Y|X) linear coefficients + interactions,mixed_moderate
+44,28,mixed,moderate,sustained,Features + P(Y|X) linear coefficients + interactions,mixed_moderate
+44,29,mixed,moderate,decay,Features + P(Y|X) linear coefficients + interactions,mixed_moderate
+44,30,covariate,moderate,gradual,"speed,distance,delay,throughput",mag=0.45
+44,31,covariate,moderate,sustained,"speed,distance,delay,throughput",mag=0.45
+44,32,covariate,moderate,decay,"speed,distance,delay,throughput",mag=0.45
+44,33,mixed,severe,sudden,Features + P(Y|X) linear coefficients + interactions,mixed_severe
+44,34,mixed,severe,sustained,Features + P(Y|X) linear coefficients + interactions,mixed_severe
+44,35,mixed,severe,decay,Features + P(Y|X) linear coefficients + interactions,mixed_severe
+44,36,concept,mild,gradual,P(Y|X) linear coefficients + interactions,concept_mild
+44,37,concept,mild,sustained,P(Y|X) linear coefficients + interactions,concept_mild
+44,38,concept,mild,decay,P(Y|X) linear coefficients + interactions,concept_mild
+44,39,covariate,mild,recovery,"speed,distance,delay,throughput",mag=0.2
+44,40,covariate,mild,sustained,"speed,distance,delay,throughput",mag=0.2
+44,41,covariate,mild,decay,"speed,distance,delay,throughput",mag=0.2
+44,42,none,none,stable,none,baseline
+44,43,none,none,sustained,none,baseline
+44,44,none,none,decay,none,baseline
+44,45,covariate,severe,sudden,"speed,distance,delay,throughput",mag=0.75
+44,46,covariate,severe,sustained,"speed,distance,delay,throughput",mag=0.75
+44,47,covariate,severe,decay,"speed,distance,delay,throughput",mag=0.75
+44,48,covariate,mild,gradual,"speed,distance,delay,throughput",mag=0.2
+44,49,covariate,mild,sustained,"speed,distance,delay,throughput",mag=0.2
+44,50,covariate,mild,decay,"speed,distance,delay,throughput",mag=0.2
+44,51,none,none,stable,none,baseline
+44,52,none,none,sustained,none,baseline
+44,53,none,none,decay,none,baseline
+44,54,concept,moderate,recovery,P(Y|X) linear coefficients + interactions,concept_moderate
+44,55,concept,moderate,sustained,P(Y|X) linear coefficients + interactions,concept_moderate
+44,56,concept,moderate,decay,P(Y|X) linear coefficients + interactions,concept_moderate
+44,57,none,none,stable,none,baseline
+44,58,none,none,sustained,none,baseline
+44,59,none,none,decay,none,baseline
+45,0,none,none,stable,none,baseline
+45,1,none,none,sustained,none,baseline
+45,2,none,none,decay,none,baseline
+45,3,mixed,severe,sudden,Features + P(Y|X) linear coefficients + interactions,mixed_severe
+45,4,mixed,severe,sustained,Features + P(Y|X) linear coefficients + interactions,mixed_severe
+45,5,mixed,severe,decay,Features + P(Y|X) linear coefficients + interactions,mixed_severe
+45,6,covariate,mild,recovery,"speed,distance,delay,throughput",mag=0.2
+45,7,covariate,mild,sustained,"speed,distance,delay,throughput",mag=0.2
+45,8,covariate,mild,decay,"speed,distance,delay,throughput",mag=0.2
+45,9,mixed,severe,gradual,Features + P(Y|X) linear coefficients + interactions,mixed_severe
+45,10,mixed,severe,sustained,Features + P(Y|X) linear coefficients + interactions,mixed_severe
+45,11,mixed,severe,decay,Features + P(Y|X) linear coefficients + interactions,mixed_severe
+45,12,covariate,severe,sudden,"speed,distance,delay,throughput",mag=0.75
+45,13,covariate,severe,sustained,"speed,distance,delay,throughput",mag=0.75
+45,14,covariate,severe,decay,"speed,distance,delay,throughput",mag=0.75
+45,15,covariate,moderate,gradual,"speed,distance,delay,throughput",mag=0.45
+45,16,covariate,moderate,sustained,"speed,distance,delay,throughput",mag=0.45
+45,17,covariate,moderate,decay,"speed,distance,delay,throughput",mag=0.45
+45,18,none,none,stable,none,baseline
+45,19,none,none,sustained,none,baseline
+45,20,none,none,decay,none,baseline
+45,21,concept,mild,gradual,P(Y|X) linear coefficients + interactions,concept_mild
+45,22,concept,mild,sustained,P(Y|X) linear coefficients + interactions,concept_mild
+45,23,concept,mild,decay,P(Y|X) linear coefficients + interactions,concept_mild
+45,24,concept,moderate,sudden,P(Y|X) linear coefficients + interactions,concept_moderate
+45,25,concept,moderate,sustained,P(Y|X) linear coefficients + interactions,concept_moderate
+45,26,concept,moderate,decay,P(Y|X) linear coefficients + interactions,concept_moderate
+45,27,concept,moderate,recovery,P(Y|X) linear coefficients + interactions,concept_moderate
+45,28,concept,moderate,sustained,P(Y|X) linear coefficients + interactions,concept_moderate
+45,29,concept,moderate,decay,P(Y|X) linear coefficients + interactions,concept_moderate
+45,30,covariate,mild,gradual,"speed,distance,delay,throughput",mag=0.2
+45,31,covariate,mild,sustained,"speed,distance,delay,throughput",mag=0.2
+45,32,covariate,mild,decay,"speed,distance,delay,throughput",mag=0.2
+45,33,mixed,moderate,sudden,Features + P(Y|X) linear coefficients + interactions,mixed_moderate
+45,34,mixed,moderate,sustained,Features + P(Y|X) linear coefficients + interactions,mixed_moderate
+45,35,mixed,moderate,decay,Features + P(Y|X) linear coefficients + interactions,mixed_moderate
+45,36,concept,severe,gradual,P(Y|X) linear coefficients + interactions,concept_severe
+45,37,concept,severe,sustained,P(Y|X) linear coefficients + interactions,concept_severe
+45,38,concept,severe,decay,P(Y|X) linear coefficients + interactions,concept_severe
+45,39,none,none,stable,none,baseline
+45,40,none,none,sustained,none,baseline
+45,41,none,none,decay,none,baseline
+45,42,concept,severe,sudden,P(Y|X) linear coefficients + interactions,concept_severe
+45,43,concept,severe,sustained,P(Y|X) linear coefficients + interactions,concept_severe
+45,44,concept,severe,decay,P(Y|X) linear coefficients + interactions,concept_severe
+45,45,covariate,moderate,sudden,"speed,distance,delay,throughput",mag=0.45
+45,46,covariate,moderate,sustained,"speed,distance,delay,throughput",mag=0.45
+45,47,covariate,moderate,decay,"speed,distance,delay,throughput",mag=0.45
+45,48,none,none,stable,none,baseline
+45,49,none,none,sustained,none,baseline
+45,50,none,none,decay,none,baseline
+45,51,none,none,stable,none,baseline
+45,52,none,none,sustained,none,baseline
+45,53,none,none,decay,none,baseline
+45,54,mixed,mild,recovery,Features + P(Y|X) linear coefficients + interactions,mixed_mild
+45,55,mixed,mild,sustained,Features + P(Y|X) linear coefficients + interactions,mixed_mild
+45,56,mixed,mild,decay,Features + P(Y|X) linear coefficients + interactions,mixed_mild
+45,57,mixed,mild,gradual,Features + P(Y|X) linear coefficients + interactions,mixed_mild
+45,58,mixed,mild,sustained,Features + P(Y|X) linear coefficients + interactions,mixed_mild
+45,59,mixed,mild,decay,Features + P(Y|X) linear coefficients + interactions,mixed_mild
+46,0,none,none,stable,none,baseline
+46,1,none,none,sustained,none,baseline
+46,2,none,none,decay,none,baseline
+46,3,covariate,severe,sudden,"speed,distance,delay,throughput",mag=0.75
+46,4,covariate,severe,sustained,"speed,distance,delay,throughput",mag=0.75
+46,5,covariate,severe,decay,"speed,distance,delay,throughput",mag=0.75
+46,6,concept,moderate,sudden,P(Y|X) linear coefficients + interactions,concept_moderate
+46,7,concept,moderate,sustained,P(Y|X) linear coefficients + interactions,concept_moderate
+46,8,concept,moderate,decay,P(Y|X) linear coefficients + interactions,concept_moderate
+46,9,none,none,stable,none,baseline
+46,10,none,none,sustained,none,baseline
+46,11,none,none,decay,none,baseline
+46,12,concept,mild,gradual,P(Y|X) linear coefficients + interactions,concept_mild
+46,13,concept,mild,sustained,P(Y|X) linear coefficients + interactions,concept_mild
+46,14,concept,mild,decay,P(Y|X) linear coefficients + interactions,concept_mild
+46,15,none,none,stable,none,baseline
+46,16,none,none,sustained,none,baseline
+46,17,none,none,decay,none,baseline
+46,18,concept,severe,sudden,P(Y|X) linear coefficients + interactions,concept_severe
+46,19,concept,severe,sustained,P(Y|X) linear coefficients + interactions,concept_severe
+46,20,concept,severe,decay,P(Y|X) linear coefficients + interactions,concept_severe
+46,21,none,none,stable,none,baseline
+46,22,none,none,sustained,none,baseline
+46,23,none,none,decay,none,baseline
+46,24,covariate,moderate,gradual,"speed,distance,delay,throughput",mag=0.45
+46,25,covariate,moderate,sustained,"speed,distance,delay,throughput",mag=0.45
+46,26,covariate,moderate,decay,"speed,distance,delay,throughput",mag=0.45
+46,27,mixed,moderate,sudden,Features + P(Y|X) linear coefficients + interactions,mixed_moderate
+46,28,mixed,moderate,sustained,Features + P(Y|X) linear coefficients + interactions,mixed_moderate
+46,29,mixed,moderate,decay,Features + P(Y|X) linear coefficients + interactions,mixed_moderate
+46,30,concept,moderate,recovery,P(Y|X) linear coefficients + interactions,concept_moderate
+46,31,concept,moderate,sustained,P(Y|X) linear coefficients + interactions,concept_moderate
+46,32,concept,moderate,decay,P(Y|X) linear coefficients + interactions,concept_moderate
+46,33,none,none,stable,none,baseline
+46,34,none,none,sustained,none,baseline
+46,35,none,none,decay,none,baseline
+46,36,mixed,severe,gradual,Features + P(Y|X) linear coefficients + interactions,mixed_severe
+46,37,mixed,severe,sustained,Features + P(Y|X) linear coefficients + interactions,mixed_severe
+46,38,mixed,severe,decay,Features + P(Y|X) linear coefficients + interactions,mixed_severe
+46,39,covariate,moderate,sudden,"speed,distance,delay,throughput",mag=0.45
+46,40,covariate,moderate,sustained,"speed,distance,delay,throughput",mag=0.45
+46,41,covariate,moderate,decay,"speed,distance,delay,throughput",mag=0.45
+46,42,covariate,mild,recovery,"speed,distance,delay,throughput",mag=0.2
+46,43,covariate,mild,sustained,"speed,distance,delay,throughput",mag=0.2
+46,44,covariate,mild,decay,"speed,distance,delay,throughput",mag=0.2
+46,45,mixed,mild,gradual,Features + P(Y|X) linear coefficients + interactions,mixed_mild
+46,46,mixed,mild,sustained,Features + P(Y|X) linear coefficients + interactions,mixed_mild
+46,47,mixed,mild,decay,Features + P(Y|X) linear coefficients + interactions,mixed_mild
+46,48,mixed,mild,recovery,Features + P(Y|X) linear coefficients + interactions,mixed_mild
+46,49,mixed,mild,sustained,Features + P(Y|X) linear coefficients + interactions,mixed_mild
+46,50,mixed,mild,decay,Features + P(Y|X) linear coefficients + interactions,mixed_mild
+46,51,mixed,severe,sudden,Features + P(Y|X) linear coefficients + interactions,mixed_severe
+46,52,mixed,severe,sustained,Features + P(Y|X) linear coefficients + interactions,mixed_severe
+46,53,mixed,severe,decay,Features + P(Y|X) linear coefficients + interactions,mixed_severe
+46,54,concept,severe,gradual,P(Y|X) linear coefficients + interactions,concept_severe
+46,55,concept,severe,sustained,P(Y|X) linear coefficients + interactions,concept_severe
+46,56,concept,severe,decay,P(Y|X) linear coefficients + interactions,concept_severe
+46,57,covariate,mild,gradual,"speed,distance,delay,throughput",mag=0.2
+46,58,covariate,mild,sustained,"speed,distance,delay,throughput",mag=0.2
+46,59,covariate,mild,decay,"speed,distance,delay,throughput",mag=0.2

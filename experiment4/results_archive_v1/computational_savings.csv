@@ -1,0 +1,9 @@
+Metric,Value
+CPU Savings (%) vs. Continuous,38.93%
+Retraining Event Reduction (%) vs. Continuous,42.00%
+Event-Driven Cumulative CPU Time (s),74.78s
+Continuous Retraining Cumulative CPU Time (s),122.44s
+Frozen Model Cumulative CPU Time (s),9.68s
+Event-Driven Performance-Cost Efficiency (F1 / CPU s),0.0099
+Continuous Performance-Cost Efficiency (F1 / CPU s),0.0061
+Frozen Performance-Cost Efficiency (F1 / CPU s),0.0699

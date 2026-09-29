@@ -1,0 +1,10 @@
+comparison,metric,mean_a,mean_b,mean_diff,test_type,test_stat,p_value,effect_size,effect_type,p_value_adjusted,is_significant
+Event-Driven Ensemble vs Frozen Model,f1,0.7415626666666666,0.6765106666666666,0.065052,Wilcoxon signed-rank,1292.5,2.7152611810245845e-45,0.9423634336677815,Rank-biserial r,2.1722089448196676e-44,True
+Event-Driven Ensemble vs Frozen Model,accuracy,0.8314066666666667,0.8186466666666665,0.012759999999999997,Wilcoxon signed-rank,14328.5,6.67087249492163e-06,0.30659601238869527,Rank-biserial r,2.668348997968652e-05,True
+Event-Driven Ensemble vs Frozen Model,cpu_time,1.2463006666666667,0.16140133333333334,1.0848993333333332,Wilcoxon signed-rank,2680.0,1.2802391216814285e-35,0.8617879889636678,Rank-biserial r,7.681434730088571e-35,True
+Event-Driven Ensemble vs Continuously Retrained Ensemble,f1,0.7415626666666666,0.742597,-0.0010343333333333363,Wilcoxon signed-rank,7637.0,0.7257109865477755,0.030406906620961127,Rank-biserial r,1.0,False
+Event-Driven Ensemble vs Continuously Retrained Ensemble,accuracy,0.8314066666666667,0.83102,0.00038666666666666775,Wilcoxon signed-rank,6775.0,0.52071640919536,0.05673512008353643,Rank-biserial r,1.0,False
+Event-Driven Ensemble vs Continuously Retrained Ensemble,cpu_time,1.2463006666666667,2.0407300000000004,-0.7944293333333333,Wilcoxon signed-rank,6486.0,9.430922300050217e-25,0.6946758932354187,Rank-biserial r,4.715461150025109e-24,True
+Continuously Retrained Ensemble vs Frozen Model,f1,0.742597,0.6765106666666666,0.06608633333333333,Wilcoxon signed-rank,1409.5,8.212596671733676e-45,0.9371460423634337,Rank-biserial r,5.748817670213574e-44,True
+Continuously Retrained Ensemble vs Frozen Model,accuracy,0.83102,0.8186466666666665,0.01237333333333333,Wilcoxon signed-rank,15213.5,5.405594368230069e-05,0.273905261901921,Rank-biserial r,0.00016216783104690207,True
+Continuously Retrained Ensemble vs Frozen Model,cpu_time,2.0407300000000004,0.16140133333333334,1.8793286666666669,Wilcoxon signed-rank,0.0,5.935283619831489e-51,1.0,Rank-biserial r,5.34175525784834e-50,True

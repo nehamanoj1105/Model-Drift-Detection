@@ -1,0 +1,61 @@
+{
+  "S1": {
+    "window_size": 20,
+    "num_windows": 6000,
+    "segment_length_windows": 100,
+    "decision_interval_K": 20,
+    "warmup_W0": 100,
+    "num_features": 10,
+    "num_classes": 2,
+    "num_base_concepts": 4,
+    "recurrence_rates": {
+      "exact": 0.6,
+      "partial": 0.2,
+      "decoy": 0.2
+    },
+    "label_noise": 0.05,
+    "s_cov": 0.6
+  },
+  "N1": {
+    "window_size": 20,
+    "num_windows": 6000,
+    "segment_length_windows": 100,
+    "decision_interval_K": 20,
+    "warmup_W0": 100,
+    "num_features": 10,
+    "num_classes": 2,
+    "label_noise_type": "pure_noise"
+  },
+  "N2": {
+    "window_size": 20,
+    "num_windows": 6000,
+    "segment_length_windows": 100,
+    "decision_interval_K": 20,
+    "warmup_W0": 100,
+    "num_features": 10,
+    "num_classes": 2,
+    "concept_type": "fresh_unique"
+  },
+  "S2": {
+    "dataset_path": "experiments/exp9b/data/processed_exp9b_stream.csv",
+    "n_init_windows": 99,
+    "warmup_W0": 99,
+    "decision_interval_K": 15,
+    "protocol": "Exp1_Protocol"
+  },
+  "S4": {
+    "dataset": "river.datasets.Elec2",
+    "window_size": 50,
+    "block_length_windows": 20,
+    "warmup_W0": 20,
+    "decision_interval_K": 5
+  },
+  "S3": {
+    "dataset_path": "experiments/data/INSECTS/",
+    "window_size": 50,
+    "block_length_windows": 20,
+    "warmup_W0": 20,
+    "decision_interval_K": 5,
+    "optional": true
+  }
+}

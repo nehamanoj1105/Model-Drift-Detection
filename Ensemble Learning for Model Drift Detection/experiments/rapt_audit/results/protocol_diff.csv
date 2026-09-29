@@ -1,0 +1,14 @@
+dimension,original_rapt,rapt_v2,status
+Dataset 9A input,processed_exp9_stream.csv (1799 windows),processed_exp9_stream.csv (1799 windows),MATCH
+Dataset 9B input,processed_exp9b_stream.csv (499 windows),processed_exp9b_stream.csv (499 windows),MATCH
+Initial Train Windows (9A),200 (Regime A ONLY),300 (Blurs Regime A + B together!),PROTOCOL MISMATCH
+Initial Train Windows (9B),99 (Regime 0 ONLY),99 (Regime 0 ONLY),MATCH
+Regime Transition Trigger Window (9A),Window 200 (First transition A->B),Window 300 (Missed transition A->B at 200!),PROTOCOL MISMATCH
+Checkpoint Training Buffer (9A/9B),X_buffer = hist_X[-500:] (500 samples),X_buffer = hist_X[-50:] (Truncated to 50 samples!),IMPLEMENTATION BUG
+Feature Scaling (9A),Unscaled raw features (Tree models scale invariant),StandardScaler fitted on df_init[:300],DIFFERENCE
+Feature Scaling (9B),StreamingPreprocessor on df_init[:99],StandardScaler fitted on df_init[:99],MINOR DIFFERENCE
+Random Seeds,"[42, 43, 44, 45, 46]","[42, 43, 44, 45, 46]",MATCH
+Base Estimators,"RF(n=50, d=7) + ET(n=50, d=7)","RF(n=50, d=7) + ET(n=50, d=7)",MATCH
+Ensemble Voting,"Soft-voting with weights [w1, w2]","Soft-voting with weights [w1, w2]",MATCH
+EWMA Weight Calculation,Accuracy on X_buffer[-50:],EWMA decay beta=0.9 on X_buffer[-50:],INTENDED V2 MECHANISM
+Recent Errors State Update,N/A,Unpopulated during window loop -> Confidence gate unused,IMPLEMENTATION BUG

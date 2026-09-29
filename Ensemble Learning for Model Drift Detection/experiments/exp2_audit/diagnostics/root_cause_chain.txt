@@ -1,0 +1,29 @@
+
+ROOT CAUSE CHAIN FOR EXP2 ANOMALIES:
+======================================
+
+ANOMALY 1: F1 << validated baselines (9A drops from 0.9942 to 0.355)
+CAUSE: Exp2 stream has 1 sample per window (1799 rows = 1799 windows, 1 row each).
+  Models train on 1-2 samples → trivial RF/ET classifiers → F1 ~0.33 (chance level).
+  This is a DATA PREPROCESSING BUG: the stream was not properly aggregated.
+
+ANOMALY 2: Oracle Transfer F1 == Frozen
+CAUSE: CHECKPOINT POOL BUG (exp2.py L442-454)
+  After TRANSFER decision, active_rf = source model.
+  New checkpoint saves active_rf = source model under new regime key.
+  Pool fills with copies of initial model → Oracle picks identical models → same F1.
+  SEVERITY: HIGH - invalidates all transfer-based comparisons.
+
+ANOMALY 3: Successful Transfer Rate = 0.0
+CAUSE: Cascades from Bug above. delta_f1 = transferred_f1 - local_retrain_f1 <= 0 always.
+
+ANOMALY 4: AUROC = 0.5
+CAUSE: No positive transfer labels ever exist → meta-model never fitted → cold-start heuristic.
+
+ANOMALY 5: NTR = 66.7% for 9A_Enriched
+CAUSE: Based on n=6 episodes only, unreliable small-N estimate.
+
+ANOMALY 6: Cross-dataset experiment not actually cross-training
+CAUSE: run_exp2.py evaluates within-dataset quality, not true train-9A/test-9B.
+
+CLASSIFICATION: CASE 2 (pool collapse) + CASE 3 (Oracle bug) + CASE 4 (data issue: 1 sample/window)

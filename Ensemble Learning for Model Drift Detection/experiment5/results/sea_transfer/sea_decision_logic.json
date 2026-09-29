@@ -1,0 +1,23 @@
+{
+    "decision_case": "Case C (Similarity / Transfer Limitation)",
+    "recommendation": "Model-state transfer provides modest or insignificant gain (+0.0009 F1, p=0.1862). Inspect fingerprint similarity threshold or feature space representation.",
+    "h1_supported": false,
+    "h2_supported": false,
+    "h3_supported": true,
+    "f1_cold": 0.7943264918184576,
+    "f1_policy": 0.7943900181309989,
+    "f1_model": 0.7952404027312728,
+    "f1_oracle": 0.7946467173657215,
+    "gap_policy": 6.352631254125107e-05,
+    "gap_model": 0.0009139109128152301,
+    "gap_oracle": 0.00032022554726385266,
+    "rec1_cold": 0.6129705317989095,
+    "rec1_model": 0.6151221747900923,
+    "rec1_policy": 0.612975000788023,
+    "rec1_oracle": 0.6153981476828067,
+    "rec1_gain_model": 0.002151642991182867,
+    "rec1_gain_policy": 4.468989113548538e-06,
+    "rec1_gain_oracle": 0.0024276158838971718,
+    "p_model": 0.18617149742846606,
+    "p_policy": 0.64622871694284
+}

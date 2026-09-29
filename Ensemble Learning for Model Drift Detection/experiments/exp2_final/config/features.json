@@ -1,0 +1,62 @@
+{
+  "primary_features": [
+    "Wasserstein",
+    "MMD",
+    "Cosine",
+    "HistF1",
+    "Age",
+    "PoolSize",
+    "LocalRecentF1",
+    "W_rel",
+    "MMD_rel"
+  ],
+  "ablation_variants": {
+    "drop_similarity": [
+      "HistF1",
+      "Age",
+      "PoolSize",
+      "LocalRecentF1"
+    ],
+    "drop_histf1": [
+      "Wasserstein",
+      "MMD",
+      "Cosine",
+      "Age",
+      "PoolSize",
+      "LocalRecentF1",
+      "W_rel",
+      "MMD_rel"
+    ],
+    "drop_age_pool": [
+      "Wasserstein",
+      "MMD",
+      "Cosine",
+      "HistF1",
+      "LocalRecentF1",
+      "W_rel",
+      "MMD_rel"
+    ],
+    "drop_local_recent": [
+      "Wasserstein",
+      "MMD",
+      "Cosine",
+      "HistF1",
+      "Age",
+      "PoolSize",
+      "W_rel",
+      "MMD_rel"
+    ],
+    "add_recent_shadow_df1": [
+      "Wasserstein",
+      "MMD",
+      "Cosine",
+      "HistF1",
+      "Age",
+      "PoolSize",
+      "LocalRecentF1",
+      "W_rel",
+      "MMD_rel",
+      "RecentShadowDF1"
+    ]
+  }
+}

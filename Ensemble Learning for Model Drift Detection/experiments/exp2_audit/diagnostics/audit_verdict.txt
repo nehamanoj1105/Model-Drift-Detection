@@ -1,0 +1,27 @@
+
+EXPERIMENT 2 AUDIT - FINAL VERDICT
+=====================================
+
+CASE: 2 + 3 + 4
+
+BUG-1: Checkpoint Pool Collapse (exp2.py L442-454)
+  Transferred source models saved to pool -> all entries become identical.
+
+BUG-2: Positive Transfer Never Recorded (cascades from BUG-1)
+  delta_f1 never > 0.005 -> no positive transfer labels.
+
+BUG-3: Meta-Model Never Trained (cascades from BUG-2)
+  Only 1 class in data -> _refit_model() fails -> AUROC = 0.5.
+
+BUG-4: Cross-Dataset Experiment Not Implemented
+  run_exp2.py does within-dataset quality evaluation, not true cross-training.
+
+DATA-BUG: 1 Sample Per Window
+  processed_exp9_stream.csv has 1799 rows = 1799 windows, 1 row each.
+  Models see 1 training sample -> random predictions -> F1 ~0.33 (chance).
+  This explains the drastic gap vs validated Exp9 baselines (F1 ~0.99).
+
+CONFIRMED CORRECT:
+  - Temporal anti-leakage: record_outcome() called after prediction.
+  - Telemetry cache: data-derived only, not model-dependent.
+  - Wilcoxon tests: correctly computed on per-window data.

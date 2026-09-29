@@ -1,0 +1,6 @@
+stream,method,oracle_f1_mean,method_f1_mean,oracle_advantage,oracle_dominates
+9B_Original,Frozen,0.9041666666666667,0.9041666666666667,0.0,True
+9B_Original,Event-Driven,0.9041666666666667,0.9041666666666667,0.0,True
+9B_Original,RAPT-E,0.9041666666666667,0.935,-0.03083333333333338,False
+9B_Original,Similarity-Only,0.9041666666666667,0.9066666666666666,-0.0024999999999999467,True
+9B_Original,Probability-Guided,0.9041666666666667,0.935,-0.03083333333333338,False

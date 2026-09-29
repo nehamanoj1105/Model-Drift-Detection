@@ -1,0 +1,14 @@
+Approach,Cumulative CPU Time (s),CPU Savings (%) vs. Continuous,Retraining Events,Retraining Event Reduction (%),Performance-Cost Efficiency (F1 / CPU s)
+Frozen Model,0.64 ± 0.16,99.25%,0.0,100.00%,1.1061
+Frozen Ensemble,1.30 ± 0.26,98.48%,0.0,100.00%,0.5403
+Continuously Retrained Ensemble,85.49 ± 12.46,0.00%,60.0,0.00%,0.0087
+Event-Driven Ensemble (Custom Dual-Trigger),46.92 ± 16.97,45.12%,31.6,47.33%,0.0158
+Event-Driven Ensemble (ADWIN),66.88 ± 13.17,21.77%,46.8,22.00%,0.0111
+Event-Driven Ensemble (DDM),62.35 ± 10.49,27.07%,44.6,25.67%,0.0119
+Event-Driven Ensemble (EDDM),81.84 ± 12.76,4.27%,57.8,3.67%,0.0091
+Event-Driven Ensemble (Page-Hinkley),30.62 ± 5.77,64.18%,20.6,65.67%,0.0241
+Warm-Start Ensemble,11.76 ± 3.78,86.24%,31.6,47.33%,0.0614
+Component-Selective Ensemble,15.23 ± 3.65,82.19%,31.4,47.67%,0.0488
+Adaptive Random Forest (river),130.90 ± 20.66,-53.12%,0.0,100.00%,0.0037
+Streaming Random Patches (river),265.23 ± 38.99,-210.24%,0.0,100.00%,0.0026
+Two-Tier Hybrid Ensemble,62.15 ± 18.09,27.30%,32.0,46.67%,0.0119

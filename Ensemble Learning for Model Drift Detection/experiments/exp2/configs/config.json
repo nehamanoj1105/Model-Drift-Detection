@@ -1,0 +1,9 @@
+{
+  "seeds": [42, 43, 44, 45, 46],
+  "delta_threshold": 0.005,
+  "abstention_tau": 0.60,
+  "top_k_candidates": 5,
+  "horizon_H": 50,
+  "datasets": ["9A", "9B"],
+  "stream_types": ["original", "enriched"]
+}

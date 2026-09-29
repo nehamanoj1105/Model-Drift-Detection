@@ -1,0 +1,301 @@
+seed,window,drift_type,severity,transition,affected_features,drift_parameters
+42,0,none,none,stable,none,baseline
+42,1,none,none,stable,none,baseline
+42,2,covariate,mild,gradual,"speed,distance,delay,throughput",mag=0.2
+42,3,covariate,severe,sudden,"speed,distance,delay,throughput",mag=0.75
+42,4,covariate,moderate,recovery,"speed,distance,delay,throughput",mag=0.45
+42,5,covariate,mild,gradual,"speed,distance,delay,throughput",mag=0.2
+42,6,mixed,moderate,sudden,Features + P(Y|X) linear coefficients + interactions,"mag=0.45,delay=0.9,i1=1.0,i2=-0.8"
+42,7,concept,severe,gradual,P(Y|X) linear coefficients + interactions,"dist=1.2,delay=1.4,tp=-1.0,speed=0.6,i1=1.8,i2=-1.4"
+42,8,none,none,stable,none,baseline
+42,9,none,none,stable,none,baseline
+42,10,concept,moderate,recovery,P(Y|X) linear coefficients + interactions,"dist=0.7,delay=0.9,tp=-0.6,speed=0.4,i1=1.0,i2=-0.8"
+42,11,mixed,moderate,recovery,Features + P(Y|X) linear coefficients + interactions,"mag=0.45,delay=0.9,i1=1.0,i2=-0.8"
+42,12,mixed,mild,sudden,Features + P(Y|X) linear coefficients + interactions,"mag=0.2,delay=0.5,i1=0.5,i2=-0.4"
+42,13,concept,mild,sudden,P(Y|X) linear coefficients + interactions,"dist=0.4,delay=0.5,tp=-0.3,speed=0.2,i1=0.5,i2=-0.4"
+42,14,concept,moderate,gradual,P(Y|X) linear coefficients + interactions,"dist=0.7,delay=0.9,tp=-0.6,speed=0.4,i1=1.0,i2=-0.8"
+42,15,none,none,stable,none,baseline
+42,16,covariate,moderate,gradual,"speed,distance,delay,throughput",mag=0.45
+42,17,concept,mild,recovery,P(Y|X) linear coefficients + interactions,"dist=0.4,delay=0.5,tp=-0.3,speed=0.2,i1=0.5,i2=-0.4"
+42,18,concept,mild,sudden,P(Y|X) linear coefficients + interactions,"dist=0.4,delay=0.5,tp=-0.3,speed=0.2,i1=0.5,i2=-0.4"
+42,19,concept,severe,sudden,P(Y|X) linear coefficients + interactions,"dist=1.2,delay=1.4,tp=-1.0,speed=0.6,i1=1.8,i2=-1.4"
+42,20,mixed,moderate,sudden,Features + P(Y|X) linear coefficients + interactions,"mag=0.45,delay=0.9,i1=1.0,i2=-0.8"
+42,21,mixed,moderate,recovery,Features + P(Y|X) linear coefficients + interactions,"mag=0.45,delay=0.9,i1=1.0,i2=-0.8"
+42,22,covariate,moderate,sudden,"speed,distance,delay,throughput",mag=0.45
+42,23,none,none,stable,none,baseline
+42,24,covariate,moderate,sudden,"speed,distance,delay,throughput",mag=0.45
+42,25,covariate,mild,recovery,"speed,distance,delay,throughput",mag=0.2
+42,26,none,none,stable,none,baseline
+42,27,mixed,mild,recovery,Features + P(Y|X) linear coefficients + interactions,"mag=0.2,delay=0.5,i1=0.5,i2=-0.4"
+42,28,mixed,mild,recovery,Features + P(Y|X) linear coefficients + interactions,"mag=0.2,delay=0.5,i1=0.5,i2=-0.4"
+42,29,none,none,stable,none,baseline
+42,30,covariate,severe,recovery,"speed,distance,delay,throughput",mag=0.75
+42,31,mixed,moderate,gradual,Features + P(Y|X) linear coefficients + interactions,"mag=0.45,delay=0.9,i1=1.0,i2=-0.8"
+42,32,mixed,severe,recovery,Features + P(Y|X) linear coefficients + interactions,"mag=0.75,delay=1.4,i1=1.8,i2=-1.4"
+42,33,concept,severe,sudden,P(Y|X) linear coefficients + interactions,"dist=1.2,delay=1.4,tp=-1.0,speed=0.6,i1=1.8,i2=-1.4"
+42,34,mixed,mild,sudden,Features + P(Y|X) linear coefficients + interactions,"mag=0.2,delay=0.5,i1=0.5,i2=-0.4"
+42,35,covariate,moderate,gradual,"speed,distance,delay,throughput",mag=0.45
+42,36,concept,mild,sudden,P(Y|X) linear coefficients + interactions,"dist=0.4,delay=0.5,tp=-0.3,speed=0.2,i1=0.5,i2=-0.4"
+42,37,concept,moderate,recovery,P(Y|X) linear coefficients + interactions,"dist=0.7,delay=0.9,tp=-0.6,speed=0.4,i1=1.0,i2=-0.8"
+42,38,covariate,mild,gradual,"speed,distance,delay,throughput",mag=0.2
+42,39,none,none,stable,none,baseline
+42,40,none,none,stable,none,baseline
+42,41,mixed,moderate,recovery,Features + P(Y|X) linear coefficients + interactions,"mag=0.45,delay=0.9,i1=1.0,i2=-0.8"
+42,42,concept,severe,gradual,P(Y|X) linear coefficients + interactions,"dist=1.2,delay=1.4,tp=-1.0,speed=0.6,i1=1.8,i2=-1.4"
+42,43,none,none,stable,none,baseline
+42,44,mixed,severe,recovery,Features + P(Y|X) linear coefficients + interactions,"mag=0.75,delay=1.4,i1=1.8,i2=-1.4"
+42,45,concept,mild,gradual,P(Y|X) linear coefficients + interactions,"dist=0.4,delay=0.5,tp=-0.3,speed=0.2,i1=0.5,i2=-0.4"
+42,46,concept,severe,recovery,P(Y|X) linear coefficients + interactions,"dist=1.2,delay=1.4,tp=-1.0,speed=0.6,i1=1.8,i2=-1.4"
+42,47,mixed,mild,recovery,Features + P(Y|X) linear coefficients + interactions,"mag=0.2,delay=0.5,i1=0.5,i2=-0.4"
+42,48,mixed,severe,sudden,Features + P(Y|X) linear coefficients + interactions,"mag=0.75,delay=1.4,i1=1.8,i2=-1.4"
+42,49,concept,severe,gradual,P(Y|X) linear coefficients + interactions,"dist=1.2,delay=1.4,tp=-1.0,speed=0.6,i1=1.8,i2=-1.4"
+42,50,mixed,severe,sudden,Features + P(Y|X) linear coefficients + interactions,"mag=0.75,delay=1.4,i1=1.8,i2=-1.4"
+42,51,none,none,stable,none,baseline
+42,52,covariate,severe,sudden,"speed,distance,delay,throughput",mag=0.75
+42,53,none,none,stable,none,baseline
+42,54,covariate,moderate,gradual,"speed,distance,delay,throughput",mag=0.45
+42,55,none,none,stable,none,baseline
+42,56,covariate,severe,gradual,"speed,distance,delay,throughput",mag=0.75
+42,57,covariate,mild,gradual,"speed,distance,delay,throughput",mag=0.2
+42,58,none,none,stable,none,baseline
+42,59,concept,severe,gradual,P(Y|X) linear coefficients + interactions,"dist=1.2,delay=1.4,tp=-1.0,speed=0.6,i1=1.8,i2=-1.4"
+43,0,none,none,stable,none,baseline
+43,1,mixed,moderate,recovery,Features + P(Y|X) linear coefficients + interactions,"mag=0.45,delay=0.9,i1=1.0,i2=-0.8"
+43,2,covariate,mild,recovery,"speed,distance,delay,throughput",mag=0.2
+43,3,mixed,mild,gradual,Features + P(Y|X) linear coefficients + interactions,"mag=0.2,delay=0.5,i1=0.5,i2=-0.4"
+43,4,none,none,stable,none,baseline
+43,5,concept,mild,gradual,P(Y|X) linear coefficients + interactions,"dist=0.4,delay=0.5,tp=-0.3,speed=0.2,i1=0.5,i2=-0.4"
+43,6,mixed,mild,recovery,Features + P(Y|X) linear coefficients + interactions,"mag=0.2,delay=0.5,i1=0.5,i2=-0.4"
+43,7,covariate,moderate,gradual,"speed,distance,delay,throughput",mag=0.45
+43,8,covariate,moderate,sudden,"speed,distance,delay,throughput",mag=0.45
+43,9,mixed,moderate,gradual,Features + P(Y|X) linear coefficients + interactions,"mag=0.45,delay=0.9,i1=1.0,i2=-0.8"
+43,10,none,none,stable,none,baseline
+43,11,mixed,severe,sudden,Features + P(Y|X) linear coefficients + interactions,"mag=0.75,delay=1.4,i1=1.8,i2=-1.4"
+43,12,none,none,stable,none,baseline
+43,13,concept,mild,sudden,P(Y|X) linear coefficients + interactions,"dist=0.4,delay=0.5,tp=-0.3,speed=0.2,i1=0.5,i2=-0.4"
+43,14,mixed,moderate,recovery,Features + P(Y|X) linear coefficients + interactions,"mag=0.45,delay=0.9,i1=1.0,i2=-0.8"
+43,15,none,none,stable,none,baseline
+43,16,covariate,mild,sudden,"speed,distance,delay,throughput",mag=0.2
+43,17,covariate,severe,gradual,"speed,distance,delay,throughput",mag=0.75
+43,18,mixed,moderate,recovery,Features + P(Y|X) linear coefficients + interactions,"mag=0.45,delay=0.9,i1=1.0,i2=-0.8"
+43,19,none,none,stable,none,baseline
+43,20,mixed,mild,sudden,Features + P(Y|X) linear coefficients + interactions,"mag=0.2,delay=0.5,i1=0.5,i2=-0.4"
+43,21,mixed,severe,gradual,Features + P(Y|X) linear coefficients + interactions,"mag=0.75,delay=1.4,i1=1.8,i2=-1.4"
+43,22,none,none,stable,none,baseline
+43,23,concept,severe,sudden,P(Y|X) linear coefficients + interactions,"dist=1.2,delay=1.4,tp=-1.0,speed=0.6,i1=1.8,i2=-1.4"
+43,24,concept,severe,recovery,P(Y|X) linear coefficients + interactions,"dist=1.2,delay=1.4,tp=-1.0,speed=0.6,i1=1.8,i2=-1.4"
+43,25,covariate,mild,sudden,"speed,distance,delay,throughput",mag=0.2
+43,26,none,none,stable,none,baseline
+43,27,none,none,stable,none,baseline
+43,28,concept,mild,recovery,P(Y|X) linear coefficients + interactions,"dist=0.4,delay=0.5,tp=-0.3,speed=0.2,i1=0.5,i2=-0.4"
+43,29,concept,severe,recovery,P(Y|X) linear coefficients + interactions,"dist=1.2,delay=1.4,tp=-1.0,speed=0.6,i1=1.8,i2=-1.4"
+43,30,covariate,moderate,sudden,"speed,distance,delay,throughput",mag=0.45
+43,31,covariate,severe,gradual,"speed,distance,delay,throughput",mag=0.75
+43,32,mixed,moderate,sudden,Features + P(Y|X) linear coefficients + interactions,"mag=0.45,delay=0.9,i1=1.0,i2=-0.8"
+43,33,covariate,moderate,recovery,"speed,distance,delay,throughput",mag=0.45
+43,34,concept,severe,gradual,P(Y|X) linear coefficients + interactions,"dist=1.2,delay=1.4,tp=-1.0,speed=0.6,i1=1.8,i2=-1.4"
+43,35,concept,mild,gradual,P(Y|X) linear coefficients + interactions,"dist=0.4,delay=0.5,tp=-0.3,speed=0.2,i1=0.5,i2=-0.4"
+43,36,concept,moderate,gradual,P(Y|X) linear coefficients + interactions,"dist=0.7,delay=0.9,tp=-0.6,speed=0.4,i1=1.0,i2=-0.8"
+43,37,covariate,moderate,sudden,"speed,distance,delay,throughput",mag=0.45
+43,38,covariate,moderate,recovery,"speed,distance,delay,throughput",mag=0.45
+43,39,covariate,severe,recovery,"speed,distance,delay,throughput",mag=0.75
+43,40,concept,moderate,gradual,P(Y|X) linear coefficients + interactions,"dist=0.7,delay=0.9,tp=-0.6,speed=0.4,i1=1.0,i2=-0.8"
+43,41,concept,mild,sudden,P(Y|X) linear coefficients + interactions,"dist=0.4,delay=0.5,tp=-0.3,speed=0.2,i1=0.5,i2=-0.4"
+43,42,concept,mild,recovery,P(Y|X) linear coefficients + interactions,"dist=0.4,delay=0.5,tp=-0.3,speed=0.2,i1=0.5,i2=-0.4"
+43,43,none,none,stable,none,baseline
+43,44,none,none,stable,none,baseline
+43,45,concept,severe,sudden,P(Y|X) linear coefficients + interactions,"dist=1.2,delay=1.4,tp=-1.0,speed=0.6,i1=1.8,i2=-1.4"
+43,46,none,none,stable,none,baseline
+43,47,none,none,stable,none,baseline
+43,48,covariate,severe,gradual,"speed,distance,delay,throughput",mag=0.75
+43,49,covariate,severe,gradual,"speed,distance,delay,throughput",mag=0.75
+43,50,mixed,moderate,gradual,Features + P(Y|X) linear coefficients + interactions,"mag=0.45,delay=0.9,i1=1.0,i2=-0.8"
+43,51,covariate,severe,sudden,"speed,distance,delay,throughput",mag=0.75
+43,52,mixed,mild,gradual,Features + P(Y|X) linear coefficients + interactions,"mag=0.2,delay=0.5,i1=0.5,i2=-0.4"
+43,53,none,none,stable,none,baseline
+43,54,mixed,mild,recovery,Features + P(Y|X) linear coefficients + interactions,"mag=0.2,delay=0.5,i1=0.5,i2=-0.4"
+43,55,none,none,stable,none,baseline
+43,56,concept,severe,sudden,P(Y|X) linear coefficients + interactions,"dist=1.2,delay=1.4,tp=-1.0,speed=0.6,i1=1.8,i2=-1.4"
+43,57,concept,mild,recovery,P(Y|X) linear coefficients + interactions,"dist=0.4,delay=0.5,tp=-0.3,speed=0.2,i1=0.5,i2=-0.4"
+43,58,mixed,moderate,recovery,Features + P(Y|X) linear coefficients + interactions,"mag=0.45,delay=0.9,i1=1.0,i2=-0.8"
+43,59,mixed,severe,sudden,Features + P(Y|X) linear coefficients + interactions,"mag=0.75,delay=1.4,i1=1.8,i2=-1.4"
+44,0,none,none,stable,none,baseline
+44,1,concept,moderate,sudden,P(Y|X) linear coefficients + interactions,"dist=0.7,delay=0.9,tp=-0.6,speed=0.4,i1=1.0,i2=-0.8"
+44,2,concept,mild,sudden,P(Y|X) linear coefficients + interactions,"dist=0.4,delay=0.5,tp=-0.3,speed=0.2,i1=0.5,i2=-0.4"
+44,3,mixed,mild,gradual,Features + P(Y|X) linear coefficients + interactions,"mag=0.2,delay=0.5,i1=0.5,i2=-0.4"
+44,4,none,none,stable,none,baseline
+44,5,none,none,stable,none,baseline
+44,6,concept,moderate,sudden,P(Y|X) linear coefficients + interactions,"dist=0.7,delay=0.9,tp=-0.6,speed=0.4,i1=1.0,i2=-0.8"
+44,7,concept,moderate,recovery,P(Y|X) linear coefficients + interactions,"dist=0.7,delay=0.9,tp=-0.6,speed=0.4,i1=1.0,i2=-0.8"
+44,8,covariate,mild,gradual,"speed,distance,delay,throughput",mag=0.2
+44,9,mixed,severe,recovery,Features + P(Y|X) linear coefficients + interactions,"mag=0.75,delay=1.4,i1=1.8,i2=-1.4"
+44,10,mixed,moderate,recovery,Features + P(Y|X) linear coefficients + interactions,"mag=0.45,delay=0.9,i1=1.0,i2=-0.8"
+44,11,none,none,stable,none,baseline
+44,12,covariate,severe,gradual,"speed,distance,delay,throughput",mag=0.75
+44,13,mixed,severe,sudden,Features + P(Y|X) linear coefficients + interactions,"mag=0.75,delay=1.4,i1=1.8,i2=-1.4"
+44,14,covariate,moderate,gradual,"speed,distance,delay,throughput",mag=0.45
+44,15,mixed,severe,gradual,Features + P(Y|X) linear coefficients + interactions,"mag=0.75,delay=1.4,i1=1.8,i2=-1.4"
+44,16,concept,severe,recovery,P(Y|X) linear coefficients + interactions,"dist=1.2,delay=1.4,tp=-1.0,speed=0.6,i1=1.8,i2=-1.4"
+44,17,concept,mild,recovery,P(Y|X) linear coefficients + interactions,"dist=0.4,delay=0.5,tp=-0.3,speed=0.2,i1=0.5,i2=-0.4"
+44,18,mixed,mild,gradual,Features + P(Y|X) linear coefficients + interactions,"mag=0.2,delay=0.5,i1=0.5,i2=-0.4"
+44,19,covariate,mild,recovery,"speed,distance,delay,throughput",mag=0.2
+44,20,covariate,severe,sudden,"speed,distance,delay,throughput",mag=0.75
+44,21,mixed,severe,gradual,Features + P(Y|X) linear coefficients + interactions,"mag=0.75,delay=1.4,i1=1.8,i2=-1.4"
+44,22,concept,moderate,gradual,P(Y|X) linear coefficients + interactions,"dist=0.7,delay=0.9,tp=-0.6,speed=0.4,i1=1.0,i2=-0.8"
+44,23,covariate,severe,sudden,"speed,distance,delay,throughput",mag=0.75
+44,24,none,none,stable,none,baseline
+44,25,covariate,moderate,gradual,"speed,distance,delay,throughput",mag=0.45
+44,26,mixed,mild,gradual,Features + P(Y|X) linear coefficients + interactions,"mag=0.2,delay=0.5,i1=0.5,i2=-0.4"
+44,27,mixed,moderate,recovery,Features + P(Y|X) linear coefficients + interactions,"mag=0.45,delay=0.9,i1=1.0,i2=-0.8"
+44,28,concept,severe,recovery,P(Y|X) linear coefficients + interactions,"dist=1.2,delay=1.4,tp=-1.0,speed=0.6,i1=1.8,i2=-1.4"
+44,29,covariate,moderate,sudden,"speed,distance,delay,throughput",mag=0.45
+44,30,none,none,stable,none,baseline
+44,31,covariate,severe,recovery,"speed,distance,delay,throughput",mag=0.75
+44,32,concept,mild,recovery,P(Y|X) linear coefficients + interactions,"dist=0.4,delay=0.5,tp=-0.3,speed=0.2,i1=0.5,i2=-0.4"
+44,33,covariate,mild,recovery,"speed,distance,delay,throughput",mag=0.2
+44,34,covariate,severe,gradual,"speed,distance,delay,throughput",mag=0.75
+44,35,concept,mild,sudden,P(Y|X) linear coefficients + interactions,"dist=0.4,delay=0.5,tp=-0.3,speed=0.2,i1=0.5,i2=-0.4"
+44,36,none,none,stable,none,baseline
+44,37,mixed,moderate,sudden,Features + P(Y|X) linear coefficients + interactions,"mag=0.45,delay=0.9,i1=1.0,i2=-0.8"
+44,38,concept,moderate,gradual,P(Y|X) linear coefficients + interactions,"dist=0.7,delay=0.9,tp=-0.6,speed=0.4,i1=1.0,i2=-0.8"
+44,39,covariate,severe,sudden,"speed,distance,delay,throughput",mag=0.75
+44,40,mixed,moderate,recovery,Features + P(Y|X) linear coefficients + interactions,"mag=0.45,delay=0.9,i1=1.0,i2=-0.8"
+44,41,covariate,mild,recovery,"speed,distance,delay,throughput",mag=0.2
+44,42,concept,mild,gradual,P(Y|X) linear coefficients + interactions,"dist=0.4,delay=0.5,tp=-0.3,speed=0.2,i1=0.5,i2=-0.4"
+44,43,none,none,stable,none,baseline
+44,44,mixed,mild,sudden,Features + P(Y|X) linear coefficients + interactions,"mag=0.2,delay=0.5,i1=0.5,i2=-0.4"
+44,45,mixed,severe,recovery,Features + P(Y|X) linear coefficients + interactions,"mag=0.75,delay=1.4,i1=1.8,i2=-1.4"
+44,46,none,none,stable,none,baseline
+44,47,none,none,stable,none,baseline
+44,48,concept,severe,gradual,P(Y|X) linear coefficients + interactions,"dist=1.2,delay=1.4,tp=-1.0,speed=0.6,i1=1.8,i2=-1.4"
+44,49,mixed,mild,sudden,Features + P(Y|X) linear coefficients + interactions,"mag=0.2,delay=0.5,i1=0.5,i2=-0.4"
+44,50,none,none,stable,none,baseline
+44,51,none,none,stable,none,baseline
+44,52,none,none,stable,none,baseline
+44,53,concept,moderate,sudden,P(Y|X) linear coefficients + interactions,"dist=0.7,delay=0.9,tp=-0.6,speed=0.4,i1=1.0,i2=-0.8"
+44,54,mixed,severe,recovery,Features + P(Y|X) linear coefficients + interactions,"mag=0.75,delay=1.4,i1=1.8,i2=-1.4"
+44,55,covariate,moderate,sudden,"speed,distance,delay,throughput",mag=0.45
+44,56,concept,mild,sudden,P(Y|X) linear coefficients + interactions,"dist=0.4,delay=0.5,tp=-0.3,speed=0.2,i1=0.5,i2=-0.4"
+44,57,covariate,moderate,gradual,"speed,distance,delay,throughput",mag=0.45
+44,58,none,none,stable,none,baseline
+44,59,none,none,stable,none,baseline
+45,0,none,none,stable,none,baseline
+45,1,covariate,severe,sudden,"speed,distance,delay,throughput",mag=0.75
+45,2,none,none,stable,none,baseline
+45,3,concept,mild,gradual,P(Y|X) linear coefficients + interactions,"dist=0.4,delay=0.5,tp=-0.3,speed=0.2,i1=0.5,i2=-0.4"
+45,4,concept,moderate,sudden,P(Y|X) linear coefficients + interactions,"dist=0.7,delay=0.9,tp=-0.6,speed=0.4,i1=1.0,i2=-0.8"
+45,5,none,none,stable,none,baseline
+45,6,mixed,mild,sudden,Features + P(Y|X) linear coefficients + interactions,"mag=0.2,delay=0.5,i1=0.5,i2=-0.4"
+45,7,mixed,moderate,gradual,Features + P(Y|X) linear coefficients + interactions,"mag=0.45,delay=0.9,i1=1.0,i2=-0.8"
+45,8,covariate,severe,sudden,"speed,distance,delay,throughput",mag=0.75
+45,9,covariate,moderate,recovery,"speed,distance,delay,throughput",mag=0.45
+45,10,none,none,stable,none,baseline
+45,11,mixed,severe,gradual,Features + P(Y|X) linear coefficients + interactions,"mag=0.75,delay=1.4,i1=1.8,i2=-1.4"
+45,12,covariate,severe,sudden,"speed,distance,delay,throughput",mag=0.75
+45,13,concept,moderate,sudden,P(Y|X) linear coefficients + interactions,"dist=0.7,delay=0.9,tp=-0.6,speed=0.4,i1=1.0,i2=-0.8"
+45,14,concept,moderate,recovery,P(Y|X) linear coefficients + interactions,"dist=0.7,delay=0.9,tp=-0.6,speed=0.4,i1=1.0,i2=-0.8"
+45,15,mixed,mild,recovery,Features + P(Y|X) linear coefficients + interactions,"mag=0.2,delay=0.5,i1=0.5,i2=-0.4"
+45,16,concept,severe,recovery,P(Y|X) linear coefficients + interactions,"dist=1.2,delay=1.4,tp=-1.0,speed=0.6,i1=1.8,i2=-1.4"
+45,17,concept,severe,recovery,P(Y|X) linear coefficients + interactions,"dist=1.2,delay=1.4,tp=-1.0,speed=0.6,i1=1.8,i2=-1.4"
+45,18,covariate,moderate,sudden,"speed,distance,delay,throughput",mag=0.45
+45,19,mixed,mild,recovery,Features + P(Y|X) linear coefficients + interactions,"mag=0.2,delay=0.5,i1=0.5,i2=-0.4"
+45,20,concept,mild,gradual,P(Y|X) linear coefficients + interactions,"dist=0.4,delay=0.5,tp=-0.3,speed=0.2,i1=0.5,i2=-0.4"
+45,21,none,none,stable,none,baseline
+45,22,covariate,mild,recovery,"speed,distance,delay,throughput",mag=0.2
+45,23,concept,mild,gradual,P(Y|X) linear coefficients + interactions,"dist=0.4,delay=0.5,tp=-0.3,speed=0.2,i1=0.5,i2=-0.4"
+45,24,covariate,mild,sudden,"speed,distance,delay,throughput",mag=0.2
+45,25,covariate,severe,gradual,"speed,distance,delay,throughput",mag=0.75
+45,26,none,none,stable,none,baseline
+45,27,covariate,severe,gradual,"speed,distance,delay,throughput",mag=0.75
+45,28,none,none,stable,none,baseline
+45,29,mixed,severe,gradual,Features + P(Y|X) linear coefficients + interactions,"mag=0.75,delay=1.4,i1=1.8,i2=-1.4"
+45,30,covariate,severe,gradual,"speed,distance,delay,throughput",mag=0.75
+45,31,none,none,stable,none,baseline
+45,32,mixed,severe,recovery,Features + P(Y|X) linear coefficients + interactions,"mag=0.75,delay=1.4,i1=1.8,i2=-1.4"
+45,33,none,none,stable,none,baseline
+45,34,mixed,moderate,gradual,Features + P(Y|X) linear coefficients + interactions,"mag=0.45,delay=0.9,i1=1.0,i2=-0.8"
+45,35,none,none,stable,none,baseline
+45,36,covariate,mild,sudden,"speed,distance,delay,throughput",mag=0.2
+45,37,covariate,severe,gradual,"speed,distance,delay,throughput",mag=0.75
+45,38,covariate,severe,recovery,"speed,distance,delay,throughput",mag=0.75
+45,39,mixed,moderate,recovery,Features + P(Y|X) linear coefficients + interactions,"mag=0.45,delay=0.9,i1=1.0,i2=-0.8"
+45,40,mixed,moderate,gradual,Features + P(Y|X) linear coefficients + interactions,"mag=0.45,delay=0.9,i1=1.0,i2=-0.8"
+45,41,concept,moderate,sudden,P(Y|X) linear coefficients + interactions,"dist=0.7,delay=0.9,tp=-0.6,speed=0.4,i1=1.0,i2=-0.8"
+45,42,none,none,stable,none,baseline
+45,43,mixed,moderate,gradual,Features + P(Y|X) linear coefficients + interactions,"mag=0.45,delay=0.9,i1=1.0,i2=-0.8"
+45,44,none,none,stable,none,baseline
+45,45,concept,mild,recovery,P(Y|X) linear coefficients + interactions,"dist=0.4,delay=0.5,tp=-0.3,speed=0.2,i1=0.5,i2=-0.4"
+45,46,concept,moderate,sudden,P(Y|X) linear coefficients + interactions,"dist=0.7,delay=0.9,tp=-0.6,speed=0.4,i1=1.0,i2=-0.8"
+45,47,mixed,mild,recovery,Features + P(Y|X) linear coefficients + interactions,"mag=0.2,delay=0.5,i1=0.5,i2=-0.4"
+45,48,concept,severe,gradual,P(Y|X) linear coefficients + interactions,"dist=1.2,delay=1.4,tp=-1.0,speed=0.6,i1=1.8,i2=-1.4"
+45,49,mixed,mild,recovery,Features + P(Y|X) linear coefficients + interactions,"mag=0.2,delay=0.5,i1=0.5,i2=-0.4"
+45,50,concept,mild,sudden,P(Y|X) linear coefficients + interactions,"dist=0.4,delay=0.5,tp=-0.3,speed=0.2,i1=0.5,i2=-0.4"
+45,51,concept,moderate,recovery,P(Y|X) linear coefficients + interactions,"dist=0.7,delay=0.9,tp=-0.6,speed=0.4,i1=1.0,i2=-0.8"
+45,52,none,none,stable,none,baseline
+45,53,mixed,mild,recovery,Features + P(Y|X) linear coefficients + interactions,"mag=0.2,delay=0.5,i1=0.5,i2=-0.4"
+45,54,covariate,severe,sudden,"speed,distance,delay,throughput",mag=0.75
+45,55,mixed,moderate,gradual,Features + P(Y|X) linear coefficients + interactions,"mag=0.45,delay=0.9,i1=1.0,i2=-0.8"
+45,56,none,none,stable,none,baseline
+45,57,concept,mild,sudden,P(Y|X) linear coefficients + interactions,"dist=0.4,delay=0.5,tp=-0.3,speed=0.2,i1=0.5,i2=-0.4"
+45,58,none,none,stable,none,baseline
+45,59,covariate,moderate,sudden,"speed,distance,delay,throughput",mag=0.45
+46,0,none,none,stable,none,baseline
+46,1,concept,mild,gradual,P(Y|X) linear coefficients + interactions,"dist=0.4,delay=0.5,tp=-0.3,speed=0.2,i1=0.5,i2=-0.4"
+46,2,concept,moderate,sudden,P(Y|X) linear coefficients + interactions,"dist=0.7,delay=0.9,tp=-0.6,speed=0.4,i1=1.0,i2=-0.8"
+46,3,covariate,moderate,gradual,"speed,distance,delay,throughput",mag=0.45
+46,4,covariate,mild,sudden,"speed,distance,delay,throughput",mag=0.2
+46,5,covariate,moderate,gradual,"speed,distance,delay,throughput",mag=0.45
+46,6,concept,mild,sudden,P(Y|X) linear coefficients + interactions,"dist=0.4,delay=0.5,tp=-0.3,speed=0.2,i1=0.5,i2=-0.4"
+46,7,mixed,moderate,recovery,Features + P(Y|X) linear coefficients + interactions,"mag=0.45,delay=0.9,i1=1.0,i2=-0.8"
+46,8,mixed,mild,gradual,Features + P(Y|X) linear coefficients + interactions,"mag=0.2,delay=0.5,i1=0.5,i2=-0.4"
+46,9,concept,moderate,gradual,P(Y|X) linear coefficients + interactions,"dist=0.7,delay=0.9,tp=-0.6,speed=0.4,i1=1.0,i2=-0.8"
+46,10,mixed,mild,sudden,Features + P(Y|X) linear coefficients + interactions,"mag=0.2,delay=0.5,i1=0.5,i2=-0.4"
+46,11,mixed,mild,sudden,Features + P(Y|X) linear coefficients + interactions,"mag=0.2,delay=0.5,i1=0.5,i2=-0.4"
+46,12,covariate,moderate,sudden,"speed,distance,delay,throughput",mag=0.45
+46,13,covariate,moderate,sudden,"speed,distance,delay,throughput",mag=0.45
+46,14,concept,moderate,gradual,P(Y|X) linear coefficients + interactions,"dist=0.7,delay=0.9,tp=-0.6,speed=0.4,i1=1.0,i2=-0.8"
+46,15,none,none,stable,none,baseline
+46,16,none,none,stable,none,baseline
+46,17,none,none,stable,none,baseline
+46,18,mixed,moderate,recovery,Features + P(Y|X) linear coefficients + interactions,"mag=0.45,delay=0.9,i1=1.0,i2=-0.8"
+46,19,none,none,stable,none,baseline
+46,20,concept,severe,sudden,P(Y|X) linear coefficients + interactions,"dist=1.2,delay=1.4,tp=-1.0,speed=0.6,i1=1.8,i2=-1.4"
+46,21,concept,severe,recovery,P(Y|X) linear coefficients + interactions,"dist=1.2,delay=1.4,tp=-1.0,speed=0.6,i1=1.8,i2=-1.4"
+46,22,covariate,severe,gradual,"speed,distance,delay,throughput",mag=0.75
+46,23,none,none,stable,none,baseline
+46,24,mixed,severe,gradual,Features + P(Y|X) linear coefficients + interactions,"mag=0.75,delay=1.4,i1=1.8,i2=-1.4"
+46,25,concept,severe,recovery,P(Y|X) linear coefficients + interactions,"dist=1.2,delay=1.4,tp=-1.0,speed=0.6,i1=1.8,i2=-1.4"
+46,26,none,none,stable,none,baseline
+46,27,covariate,moderate,recovery,"speed,distance,delay,throughput",mag=0.45
+46,28,mixed,severe,recovery,Features + P(Y|X) linear coefficients + interactions,"mag=0.75,delay=1.4,i1=1.8,i2=-1.4"
+46,29,none,none,stable,none,baseline
+46,30,covariate,moderate,recovery,"speed,distance,delay,throughput",mag=0.45
+46,31,mixed,moderate,sudden,Features + P(Y|X) linear coefficients + interactions,"mag=0.45,delay=0.9,i1=1.0,i2=-0.8"
+46,32,covariate,severe,gradual,"speed,distance,delay,throughput",mag=0.75
+46,33,mixed,mild,recovery,Features + P(Y|X) linear coefficients + interactions,"mag=0.2,delay=0.5,i1=0.5,i2=-0.4"
+46,34,none,none,stable,none,baseline
+46,35,covariate,severe,sudden,"speed,distance,delay,throughput",mag=0.75
+46,36,none,none,stable,none,baseline
+46,37,none,none,stable,none,baseline
+46,38,concept,severe,gradual,P(Y|X) linear coefficients + interactions,"dist=1.2,delay=1.4,tp=-1.0,speed=0.6,i1=1.8,i2=-1.4"
+46,39,covariate,severe,sudden,"speed,distance,delay,throughput",mag=0.75
+46,40,concept,mild,sudden,P(Y|X) linear coefficients + interactions,"dist=0.4,delay=0.5,tp=-0.3,speed=0.2,i1=0.5,i2=-0.4"
+46,41,concept,mild,gradual,P(Y|X) linear coefficients + interactions,"dist=0.4,delay=0.5,tp=-0.3,speed=0.2,i1=0.5,i2=-0.4"
+46,42,concept,severe,gradual,P(Y|X) linear coefficients + interactions,"dist=1.2,delay=1.4,tp=-1.0,speed=0.6,i1=1.8,i2=-1.4"
+46,43,covariate,mild,sudden,"speed,distance,delay,throughput",mag=0.2
+46,44,none,none,stable,none,baseline
+46,45,concept,severe,sudden,P(Y|X) linear coefficients + interactions,"dist=1.2,delay=1.4,tp=-1.0,speed=0.6,i1=1.8,i2=-1.4"
+46,46,concept,moderate,recovery,P(Y|X) linear coefficients + interactions,"dist=0.7,delay=0.9,tp=-0.6,speed=0.4,i1=1.0,i2=-0.8"
+46,47,mixed,moderate,recovery,Features + P(Y|X) linear coefficients + interactions,"mag=0.45,delay=0.9,i1=1.0,i2=-0.8"
+46,48,none,none,stable,none,baseline
+46,49,mixed,severe,recovery,Features + P(Y|X) linear coefficients + interactions,"mag=0.75,delay=1.4,i1=1.8,i2=-1.4"
+46,50,mixed,moderate,gradual,Features + P(Y|X) linear coefficients + interactions,"mag=0.45,delay=0.9,i1=1.0,i2=-0.8"
+46,51,mixed,mild,recovery,Features + P(Y|X) linear coefficients + interactions,"mag=0.2,delay=0.5,i1=0.5,i2=-0.4"
+46,52,covariate,mild,sudden,"speed,distance,delay,throughput",mag=0.2
+46,53,concept,severe,recovery,P(Y|X) linear coefficients + interactions,"dist=1.2,delay=1.4,tp=-1.0,speed=0.6,i1=1.8,i2=-1.4"
+46,54,covariate,mild,gradual,"speed,distance,delay,throughput",mag=0.2
+46,55,covariate,mild,recovery,"speed,distance,delay,throughput",mag=0.2
+46,56,none,none,stable,none,baseline
+46,57,mixed,severe,recovery,Features + P(Y|X) linear coefficients + interactions,"mag=0.75,delay=1.4,i1=1.8,i2=-1.4"
+46,58,none,none,stable,none,baseline
+46,59,mixed,mild,gradual,Features + P(Y|X) linear coefficients + interactions,"mag=0.2,delay=0.5,i1=0.5,i2=-0.4"

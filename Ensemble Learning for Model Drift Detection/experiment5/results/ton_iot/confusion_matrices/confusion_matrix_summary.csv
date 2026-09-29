@@ -1,0 +1,7 @@
+approach,total_tn,total_fp,total_fn,total_tp
+Adaptive Extra Trees,0,0,1165,93835
+Adaptive Gradient Boosting,0,0,6741,88259
+Adaptive Random Forest,0,0,6307,88693
+Continuously Retrained Ensemble,0,0,2852,92148
+Event-Driven Ensemble,0,0,5378,89622
+Frozen Model,0,0,69339,25661

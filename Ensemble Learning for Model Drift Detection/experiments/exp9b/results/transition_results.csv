@@ -1,0 +1,181 @@
+seed,method,transition_window,new_regime_id,pre_transition_acc,post_transition_acc,min_post_acc,recovery_windows
+42,Frozen,50,regime_B,0.0,0.0,0.0,0
+42,Event-Driven,50,regime_B,0.0,0.0,0.0,0
+42,Full Retraining,50,regime_B,0.0,0.0,0.0,0
+42,RAPT,50,regime_B,0.0,0.0,0.0,0
+42,Frozen,100,regime_C,1.0,1.0,1.0,0
+42,Event-Driven,100,regime_C,1.0,1.0,1.0,0
+42,Full Retraining,100,regime_C,1.0,1.0,1.0,0
+42,RAPT,100,regime_C,1.0,1.0,1.0,0
+42,Frozen,150,regime_D,1.0,1.0,0.0,0
+42,Event-Driven,150,regime_D,1.0,1.0,0.0,0
+42,Full Retraining,150,regime_D,1.0,1.0,0.0,0
+42,RAPT,150,regime_D,1.0,1.0,0.0,0
+42,Frozen,200,regime_A,0.4,1.0,1.0,0
+42,Event-Driven,200,regime_A,0.8,1.0,1.0,0
+42,Full Retraining,200,regime_A,0.6,1.0,1.0,0
+42,RAPT,200,regime_A,0.4,1.0,1.0,0
+42,Frozen,250,regime_C,1.0,1.0,1.0,0
+42,Event-Driven,250,regime_C,1.0,1.0,1.0,0
+42,Full Retraining,250,regime_C,1.0,1.0,1.0,0
+42,RAPT,250,regime_C,1.0,1.0,1.0,0
+42,Frozen,300,regime_B,1.0,0.6,0.0,0
+42,Event-Driven,300,regime_B,1.0,0.6,0.0,0
+42,Full Retraining,300,regime_B,1.0,0.6,0.0,0
+42,RAPT,300,regime_B,1.0,0.6,0.0,0
+42,Frozen,350,regime_D,1.0,1.0,0.0,0
+42,Event-Driven,350,regime_D,0.8,1.0,0.0,0
+42,Full Retraining,350,regime_D,1.0,1.0,0.0,0
+42,RAPT,350,regime_D,1.0,1.0,0.0,0
+42,Frozen,400,regime_A,0.4,1.0,1.0,0
+42,Event-Driven,400,regime_A,1.0,1.0,1.0,0
+42,Full Retraining,400,regime_A,1.0,1.0,1.0,0
+42,RAPT,400,regime_A,0.4,1.0,1.0,0
+42,Frozen,450,regime_B,1.0,1.0,1.0,0
+42,Event-Driven,450,regime_B,1.0,0.6,0.0,1
+42,Full Retraining,450,regime_B,1.0,1.0,0.0,0
+42,RAPT,450,regime_B,1.0,1.0,1.0,0
+43,Frozen,50,regime_B,0.0,0.0,0.0,0
+43,Event-Driven,50,regime_B,0.0,0.0,0.0,0
+43,Full Retraining,50,regime_B,0.0,0.0,0.0,0
+43,RAPT,50,regime_B,0.0,0.0,0.0,0
+43,Frozen,100,regime_C,1.0,1.0,1.0,0
+43,Event-Driven,100,regime_C,1.0,1.0,1.0,0
+43,Full Retraining,100,regime_C,1.0,1.0,1.0,0
+43,RAPT,100,regime_C,1.0,1.0,1.0,0
+43,Frozen,150,regime_D,1.0,1.0,0.0,0
+43,Event-Driven,150,regime_D,1.0,1.0,0.0,0
+43,Full Retraining,150,regime_D,1.0,1.0,0.0,0
+43,RAPT,150,regime_D,1.0,1.0,0.0,0
+43,Frozen,200,regime_A,0.4,1.0,1.0,0
+43,Event-Driven,200,regime_A,0.8,1.0,1.0,0
+43,Full Retraining,200,regime_A,0.4,1.0,1.0,0
+43,RAPT,200,regime_A,0.4,1.0,1.0,0
+43,Frozen,250,regime_C,1.0,1.0,1.0,0
+43,Event-Driven,250,regime_C,1.0,1.0,1.0,0
+43,Full Retraining,250,regime_C,1.0,1.0,1.0,0
+43,RAPT,250,regime_C,1.0,1.0,1.0,0
+43,Frozen,300,regime_B,1.0,0.6,0.0,0
+43,Event-Driven,300,regime_B,1.0,0.6,0.0,0
+43,Full Retraining,300,regime_B,1.0,0.6,0.0,0
+43,RAPT,300,regime_B,1.0,0.6,0.0,0
+43,Frozen,350,regime_D,1.0,1.0,0.0,0
+43,Event-Driven,350,regime_D,0.8,1.0,0.0,0
+43,Full Retraining,350,regime_D,1.0,1.0,0.0,0
+43,RAPT,350,regime_D,1.0,1.0,0.0,0
+43,Frozen,400,regime_A,0.4,1.0,1.0,0
+43,Event-Driven,400,regime_A,1.0,1.0,1.0,0
+43,Full Retraining,400,regime_A,1.0,1.0,1.0,0
+43,RAPT,400,regime_A,0.4,1.0,1.0,0
+43,Frozen,450,regime_B,1.0,1.0,1.0,0
+43,Event-Driven,450,regime_B,1.0,0.8,0.0,0
+43,Full Retraining,450,regime_B,1.0,0.8,0.0,0
+43,RAPT,450,regime_B,1.0,1.0,1.0,0
+44,Frozen,50,regime_B,0.0,0.0,0.0,0
+44,Event-Driven,50,regime_B,0.0,0.0,0.0,0
+44,Full Retraining,50,regime_B,0.0,0.0,0.0,0
+44,RAPT,50,regime_B,0.0,0.0,0.0,0
+44,Frozen,100,regime_C,1.0,1.0,1.0,0
+44,Event-Driven,100,regime_C,1.0,1.0,1.0,0
+44,Full Retraining,100,regime_C,1.0,1.0,1.0,0
+44,RAPT,100,regime_C,1.0,1.0,1.0,0
+44,Frozen,150,regime_D,1.0,1.0,0.0,0
+44,Event-Driven,150,regime_D,1.0,1.0,0.0,0
+44,Full Retraining,150,regime_D,1.0,1.0,0.0,0
+44,RAPT,150,regime_D,1.0,1.0,0.0,0
+44,Frozen,200,regime_A,0.4,1.0,1.0,0
+44,Event-Driven,200,regime_A,0.8,1.0,1.0,0
+44,Full Retraining,200,regime_A,0.4,1.0,1.0,0
+44,RAPT,200,regime_A,0.4,1.0,1.0,0
+44,Frozen,250,regime_C,1.0,1.0,1.0,0
+44,Event-Driven,250,regime_C,1.0,1.0,1.0,0
+44,Full Retraining,250,regime_C,1.0,1.0,1.0,0
+44,RAPT,250,regime_C,1.0,1.0,1.0,0
+44,Frozen,300,regime_B,1.0,0.6,0.0,0
+44,Event-Driven,300,regime_B,1.0,0.6,0.0,0
+44,Full Retraining,300,regime_B,1.0,0.6,0.0,0
+44,RAPT,300,regime_B,1.0,0.6,0.0,0
+44,Frozen,350,regime_D,1.0,1.0,0.0,0
+44,Event-Driven,350,regime_D,1.0,1.0,0.0,0
+44,Full Retraining,350,regime_D,1.0,1.0,0.0,0
+44,RAPT,350,regime_D,1.0,1.0,0.0,0
+44,Frozen,400,regime_A,0.4,1.0,1.0,0
+44,Event-Driven,400,regime_A,1.0,1.0,1.0,0
+44,Full Retraining,400,regime_A,1.0,1.0,1.0,0
+44,RAPT,400,regime_A,0.4,1.0,1.0,0
+44,Frozen,450,regime_B,1.0,1.0,1.0,0
+44,Event-Driven,450,regime_B,1.0,0.8,0.0,0
+44,Full Retraining,450,regime_B,1.0,0.8,0.0,0
+44,RAPT,450,regime_B,1.0,1.0,1.0,0
+45,Frozen,50,regime_B,0.0,0.0,0.0,0
+45,Event-Driven,50,regime_B,0.0,0.0,0.0,0
+45,Full Retraining,50,regime_B,0.0,0.0,0.0,0
+45,RAPT,50,regime_B,0.0,0.0,0.0,0
+45,Frozen,100,regime_C,1.0,1.0,1.0,0
+45,Event-Driven,100,regime_C,1.0,1.0,1.0,0
+45,Full Retraining,100,regime_C,1.0,1.0,1.0,0
+45,RAPT,100,regime_C,1.0,1.0,1.0,0
+45,Frozen,150,regime_D,1.0,1.0,0.0,0
+45,Event-Driven,150,regime_D,1.0,1.0,0.0,0
+45,Full Retraining,150,regime_D,1.0,1.0,0.0,0
+45,RAPT,150,regime_D,1.0,1.0,0.0,0
+45,Frozen,200,regime_A,0.4,1.0,1.0,0
+45,Event-Driven,200,regime_A,0.8,1.0,1.0,0
+45,Full Retraining,200,regime_A,0.4,1.0,1.0,0
+45,RAPT,200,regime_A,0.4,1.0,1.0,0
+45,Frozen,250,regime_C,1.0,1.0,1.0,0
+45,Event-Driven,250,regime_C,1.0,1.0,1.0,0
+45,Full Retraining,250,regime_C,1.0,1.0,1.0,0
+45,RAPT,250,regime_C,1.0,1.0,1.0,0
+45,Frozen,300,regime_B,1.0,0.6,0.0,0
+45,Event-Driven,300,regime_B,1.0,0.6,0.0,0
+45,Full Retraining,300,regime_B,1.0,0.6,0.0,0
+45,RAPT,300,regime_B,1.0,0.6,0.0,0
+45,Frozen,350,regime_D,1.0,1.0,0.0,0
+45,Event-Driven,350,regime_D,1.0,1.0,0.0,0
+45,Full Retraining,350,regime_D,1.0,1.0,0.0,0
+45,RAPT,350,regime_D,1.0,1.0,0.0,0
+45,Frozen,400,regime_A,0.4,1.0,1.0,0
+45,Event-Driven,400,regime_A,1.0,1.0,1.0,0
+45,Full Retraining,400,regime_A,1.0,1.0,1.0,0
+45,RAPT,400,regime_A,0.4,1.0,1.0,0
+45,Frozen,450,regime_B,1.0,1.0,1.0,0
+45,Event-Driven,450,regime_B,1.0,1.0,0.0,0
+45,Full Retraining,450,regime_B,1.0,0.8,0.0,0
+45,RAPT,450,regime_B,1.0,1.0,1.0,0
+46,Frozen,50,regime_B,0.0,0.0,0.0,0
+46,Event-Driven,50,regime_B,0.0,0.0,0.0,0
+46,Full Retraining,50,regime_B,0.0,0.0,0.0,0
+46,RAPT,50,regime_B,0.0,0.0,0.0,0
+46,Frozen,100,regime_C,1.0,1.0,1.0,0
+46,Event-Driven,100,regime_C,1.0,1.0,1.0,0
+46,Full Retraining,100,regime_C,1.0,1.0,1.0,0
+46,RAPT,100,regime_C,1.0,1.0,1.0,0
+46,Frozen,150,regime_D,1.0,1.0,0.0,0
+46,Event-Driven,150,regime_D,1.0,1.0,0.0,0
+46,Full Retraining,150,regime_D,1.0,1.0,0.0,0
+46,RAPT,150,regime_D,1.0,1.0,0.0,0
+46,Frozen,200,regime_A,0.4,1.0,1.0,0
+46,Event-Driven,200,regime_A,0.8,1.0,1.0,0
+46,Full Retraining,200,regime_A,0.4,1.0,1.0,0
+46,RAPT,200,regime_A,0.4,1.0,1.0,0
+46,Frozen,250,regime_C,1.0,1.0,1.0,0
+46,Event-Driven,250,regime_C,1.0,1.0,1.0,0
+46,Full Retraining,250,regime_C,1.0,1.0,1.0,0
+46,RAPT,250,regime_C,1.0,1.0,1.0,0
+46,Frozen,300,regime_B,1.0,0.6,0.0,0
+46,Event-Driven,300,regime_B,1.0,0.6,0.0,0
+46,Full Retraining,300,regime_B,1.0,0.6,0.0,0
+46,RAPT,300,regime_B,1.0,0.6,0.0,0
+46,Frozen,350,regime_D,1.0,1.0,0.0,0
+46,Event-Driven,350,regime_D,1.0,1.0,0.0,0
+46,Full Retraining,350,regime_D,1.0,1.0,0.0,0
+46,RAPT,350,regime_D,1.0,1.0,0.0,0
+46,Frozen,400,regime_A,0.4,1.0,1.0,0
+46,Event-Driven,400,regime_A,1.0,1.0,1.0,0
+46,Full Retraining,400,regime_A,1.0,1.0,1.0,0
+46,RAPT,400,regime_A,0.4,1.0,1.0,0
+46,Frozen,450,regime_B,1.0,1.0,1.0,0
+46,Event-Driven,450,regime_B,1.0,0.8,0.0,0
+46,Full Retraining,450,regime_B,1.0,0.8,0.0,0
+46,RAPT,450,regime_B,1.0,0.8,0.0,0

@@ -1,0 +1,9 @@
+# Table 7: Paired Statistical Hypothesis Tests (Wilcoxon Signed-Rank)
+
+|    | comparison                                    |   mean_a |   mean_b |    mean_diff |   median_diff |   ci_95_lower |   ci_95_upper |   wilcoxon_stat |   p_value |   effect_size_r |   n_pairs |   p_value_corrected | significant_alpha_005   |
+|---:|:----------------------------------------------|---------:|---------:|-------------:|--------------:|--------------:|--------------:|----------------:|----------:|----------------:|----------:|--------------------:|:------------------------|
+|  0 | Proposed Value-Based vs Baseline Event-Driven | 0.779221 | 0.772936 | -0.00628433  |   -0.00810032 |   -0.0102657  |   -0.00181503 |               1 |    0.125  |        0.68608  |         5 |              0.625  | False                   |
+|  1 | Proposed Value-Based vs Baseline Continuous   | 0.779635 | 0.772936 | -0.00669841  |   -0.0105879  |   -0.0115723  |   -0.00182452 |               3 |    0.3125 |        0.451681 |         5 |              0.9375 | False                   |
+|  2 | Proposed Value-Based vs Weakest Selective     | 0.773288 | 0.772936 | -0.000351778 |   -0.00221241 |   -0.00735717 |    0.00891348 |               5 |    0.625  |        0.218587 |         5 |              0.9375 | False                   |
+|  3 | Proposed Value-Based vs Equal Budget          | 0.761947 | 0.772936 |  0.0109889   |    0.0145402  |    0.00315242 |    0.0183518  |               1 |    0.125  |        0.68608  |         5 |              0.625  | False                   |
+|  4 | Oracle Allocation vs Proposed Value-Based     | 0.772936 | 0.766617 | -0.00631931  |   -0.00418148 |   -0.0142575  |    0.00160992 |               4 |    0.4375 |        0.347226 |         5 |              0.9375 | False                   |

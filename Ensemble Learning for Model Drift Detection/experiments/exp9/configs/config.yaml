@@ -1,0 +1,30 @@
+dataset:
+  name: "5G Campus Network QoS Dataset for Open-Source gNB Implementations"
+  doi: "10.5281/zenodo.13754300"
+  window_size: 500
+  windows_per_block: 200
+  initial_train_windows: 200
+  target_classes: 3 # GOOD, DEGRADED, BAD
+
+models:
+  random_forest:
+    n_estimators: 50
+    max_depth: 7
+    n_jobs: 1
+  extra_trees:
+    n_estimators: 50
+    max_depth: 7
+    n_jobs: 1
+
+event_driven:
+  buffer_capacity: 1000
+  error_window_size: 20
+  error_threshold_k: 2.0
+
+rapt:
+  mode: "full"
+  enable_calibration: true
+
+experiment:
+  seeds: [42, 43, 44, 45, 46]
+  stream_pattern: ['A', 'B', 'C', 'A', 'C', 'B', 'A', 'B', 'C']
