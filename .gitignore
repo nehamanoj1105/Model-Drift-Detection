@@ -1,0 +1,6 @@
+﻿__pycache__/
+*.pyc
+
+# Large datasets
+**/exp9/data/*_owd_Packets_with_IATs.csv
+data/ton_iot/Train_Test_datasets.zip
