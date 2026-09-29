@@ -69,8 +69,8 @@ def generate_s1_stream(seed: int, variant: str = 'S1_Main', cfg: dict = None) ->
     s_cov = scfg.get('s_cov', 1.5)
     boundary_scale = scfg.get('boundary_scale', 1.0)
     label_noise = scfg.get('label_noise', 0.05)
-    pure_noise_labels = scfg.get('pure_noise_labels', False)
-    fresh_concepts = scfg.get('fresh_concepts', False)
+    pure_noise_labels = scfg.get('pure_noise_labels', False) or scfg.get('label_noise_type') == 'pure_noise'
+    fresh_concepts = scfg.get('fresh_concepts', False) or scfg.get('concept_type') == 'fresh_unique'
     partial_alphas = scfg.get('partial_alphas', [0.75, 0.50, 0.25])
     seg_type_probs = scfg.get('segment_types', {
         'exact_recurrence': 0.60,
@@ -172,9 +172,16 @@ def generate_s1_stream(seed: int, variant: str = 'S1_Main', cfg: dict = None) ->
         start = w * window_size
         end = start + window_size
         X_windows[w] = X_instances[start:end].mean(axis=0)
-        # Majority vote for label
-        counts = np.bincount(y_instances[start:end], minlength=2)
-        y_windows[w] = int(np.argmax(counts))
+        # Majority vote for label with random tie-break
+        c0 = np.sum(y_instances[start:end] == 0)
+        c1 = np.sum(y_instances[start:end] == 1)
+        if c1 > c0:
+            y_windows[w] = 1
+        elif c0 > c1:
+            y_windows[w] = 0
+        else:
+            y_windows[w] = int(rng.integers(0, 2))
+        
         # Regime ID based on segment
         seg_idx = w // windows_per_segment
         if seg_idx < len(segment_regime_ids):
@@ -182,6 +189,9 @@ def generate_s1_stream(seed: int, variant: str = 'S1_Main', cfg: dict = None) ->
         else:
             regime_ids.append(f'seg_{seg_idx}')
     
+    if pure_noise_labels:
+        y_windows = rng.integers(0, 2, size=n_windows)
+        
     regime_ids = np.array(regime_ids)
     
     # Config hash

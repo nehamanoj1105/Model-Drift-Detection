@@ -1,0 +1,154 @@
+{
+  "K4_ConfigHashes": {
+    "pass": true,
+    "message": "PASS: All 0 pre-registered config hashes match"
+  },
+  "K3_FeatureLeakage": {
+    "pass": true,
+    "message": "PASS: Feature extraction verified strict causal boundary"
+  },
+  "K2_TrainEvalLeak": {
+    "pass": true,
+    "message": "PASS: Local F1 on randomized labels = 0.4941 (<= 0.65)"
+  },
+  "K1_Admission_S1": {
+    "pass": true,
+    "message": "ADMITTED (Local: 0.7934, Frozen: 0.3618, diff: 0.4315)"
+  },
+  "K5_EstimatorVariance_S1": {
+    "pass": true,
+    "message": "PASS: Estimator score std = 0.248216 (> 1e-6)"
+  },
+  "K6_OnlineRecording_S1": {
+    "pass": true,
+    "message": "PASS: Estimator log empty or not logged separately"
+  },
+  "K8_EventDrivenTriggers_S1": {
+    "pass": true,
+    "message": "PASS: EventDriven recorded 130 trigger events"
+  },
+  "K9_OracleValidity_S1": {
+    "pass": true,
+    "message": "PASS: Oracle >= Local and Oracle >= candidates across all intervals"
+  },
+  "K10_SoftEnsemble_S1": {
+    "pass": true,
+    "message": "PASS: Soft ensemble evaluated (1215 window prediction differences)"
+  },
+  "K12_Consistency_S1": {
+    "pass": true,
+    "message": "PASS: Per-window macro F1 matches per-interval aggregated macro F1"
+  },
+  "K1_Admission_N1": {
+    "pass": false,
+    "message": "Local F1 0.4957 < 0.70 threshold"
+  },
+  "K5_EstimatorVariance_N1": {
+    "pass": true,
+    "message": "PASS: Estimator score std = 0.098209 (> 1e-6)"
+  },
+  "K6_OnlineRecording_N1": {
+    "pass": true,
+    "message": "PASS: Estimator log empty or not logged separately"
+  },
+  "K8_EventDrivenTriggers_N1": {
+    "pass": true,
+    "message": "PASS: EventDriven recorded 4 trigger events"
+  },
+  "K9_OracleValidity_N1": {
+    "pass": true,
+    "message": "PASS: Oracle >= Local and Oracle >= candidates across all intervals"
+  },
+  "K10_SoftEnsemble_N1": {
+    "pass": true,
+    "message": "PASS: Soft ensemble evaluated (1945 window prediction differences)"
+  },
+  "K12_Consistency_N1": {
+    "pass": true,
+    "message": "PASS: Per-window macro F1 matches per-interval aggregated macro F1"
+  },
+  "K1_Admission_N2": {
+    "pass": true,
+    "message": "ADMITTED (Local: 0.7456, Frozen: 0.3140, diff: 0.4316)"
+  },
+  "K5_EstimatorVariance_N2": {
+    "pass": true,
+    "message": "PASS: Estimator score std = 0.380961 (> 1e-6)"
+  },
+  "K6_OnlineRecording_N2": {
+    "pass": true,
+    "message": "PASS: Estimator log empty or not logged separately"
+  },
+  "K8_EventDrivenTriggers_N2": {
+    "pass": true,
+    "message": "PASS: EventDriven recorded 56 trigger events"
+  },
+  "K9_OracleValidity_N2": {
+    "pass": true,
+    "message": "PASS: Oracle >= Local and Oracle >= candidates across all intervals"
+  },
+  "K10_SoftEnsemble_N2": {
+    "pass": true,
+    "message": "PASS: Soft ensemble evaluated (809 window prediction differences)"
+  },
+  "K12_Consistency_N2": {
+    "pass": true,
+    "message": "PASS: Per-window macro F1 matches per-interval aggregated macro F1"
+  },
+  "K1_Admission_S2": {
+    "pass": false,
+    "message": "Local diff -0.0244 < 0.02 threshold"
+  },
+  "K5_EstimatorVariance_S2": {
+    "pass": true,
+    "message": "PASS: Estimator score std = 0.076632 (> 1e-6)"
+  },
+  "K6_OnlineRecording_S2": {
+    "pass": true,
+    "message": "PASS: Estimator log empty or not logged separately"
+  },
+  "K8_EventDrivenTriggers_S2": {
+    "pass": true,
+    "message": "PASS: EventDriven recorded 8 trigger events"
+  },
+  "K9_OracleValidity_S2": {
+    "pass": true,
+    "message": "PASS: Oracle >= Local and Oracle >= candidates across all intervals"
+  },
+  "K10_SoftEnsemble_S2": {
+    "pass": true,
+    "message": "PASS: Soft ensemble evaluated (4 window prediction differences)"
+  },
+  "K12_Consistency_S2": {
+    "pass": true,
+    "message": "PASS: Per-window macro F1 matches per-interval aggregated macro F1"
+  },
+  "K1_Admission_S4": {
+    "pass": false,
+    "message": "Local diff -0.0036 < 0.02 threshold"
+  },
+  "K5_EstimatorVariance_S4": {
+    "pass": true,
+    "message": "PASS: Estimator score std = 0.063315 (> 1e-6)"
+  },
+  "K6_OnlineRecording_S4": {
+    "pass": true,
+    "message": "PASS: Estimator log empty or not logged separately"
+  },
+  "K8_EventDrivenTriggers_S4": {
+    "pass": true,
+    "message": "PASS: EventDriven recorded 7 trigger events"
+  },
+  "K9_OracleValidity_S4": {
+    "pass": true,
+    "message": "PASS: Oracle >= Local and Oracle >= candidates across all intervals"
+  },
+  "K10_SoftEnsemble_S4": {
+    "pass": true,
+    "message": "PASS: Soft ensemble evaluated (181 window prediction differences)"
+  },
+  "K12_Consistency_S4": {
+    "pass": true,
+    "message": "PASS: Per-window macro F1 matches per-interval aggregated macro F1"
+  }
+}
