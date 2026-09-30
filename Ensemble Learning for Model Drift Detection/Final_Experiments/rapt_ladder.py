@@ -95,6 +95,8 @@ class LadderRAPT:
 
     def __init__(self, seed=42, use_tier1=False, use_refit=False, use_gate=False,
                  refit_mode="absolute", rel_drop=0.10, refresh_every=0,
+                 refresh_mode="periodic", refresh_trees=50, refresh_buffer=1000,
+                 refresh_min_acc=0.97, evidence_window=3,
                  anchor_X=None, anchor_y=None, buffer_capacity=1000,
                  gamma=1.0, novelty_threshold=0.65, refit_n=1500,
                  parity_threshold=0.5, parity_window=3):
@@ -104,12 +106,26 @@ class LadderRAPT:
         self.use_gate = use_gate
         self.refit_mode = refit_mode
         self.rel_drop = rel_drop
-        # Bounded periodic refresh: every `refresh_every` windows the ACTIVE
-        # policy is refit on the recent buffer, whether it was reused or newly
-        # trained. This is the mechanism that stops a reused policy from being
-        # frozen for the whole duration of a recurring regime.
+        # Bounded refresh of the ACTIVE policy (the mechanism that stops a reused
+        # policy from staying frozen across a whole regime).
+        #   refresh_mode="periodic": every `refresh_every` windows
+        #   refresh_mode="evidence": only when the rolling accuracy falls below
+        #                            its own decayed baseline by `rel_drop`
+        #   refresh_mode="absolute": only when the rolling accuracy falls below a
+        #                            fixed floor `refresh_min_acc` -- this is what
+        #                            catches a reused policy that was ALWAYS bad
+        #                            (a relative baseline decays down to match it)
+        # `refresh_trees` / `refresh_buffer` make each refresh cheaper than a
+        # full transition retrain.
         self.refresh_every = refresh_every
+        self.refresh_mode = refresh_mode
+        self.refresh_trees = refresh_trees
+        self.refresh_buffer = refresh_buffer
+        self.refresh_min_acc = refresh_min_acc
+        self.evidence_window = evidence_window
         self._windows_since_refresh = 0
+        self._acc_hist = []
+        self._acc_baseline = None
         self.anchor_X = anchor_X
         self.anchor_y = anchor_y
         self.buffer_capacity = buffer_capacity
@@ -207,10 +223,11 @@ class LadderRAPT:
         self.adaptation_cpu_time += cpu
         return self._current_reused, cpu, 0.0
 
-    def _train_policy(self, X_buffer, y_buffer):
-        ens = create_base_ensemble(seed=self.seed + self.created_policy_count * 19)
+    def _train_policy(self, X_buffer, y_buffer, n_trees=None, n_buf=None):
+        ens = create_base_ensemble(seed=self.seed + self.created_policy_count * 19,
+                                   n_estimators=n_trees or 50)
         if X_buffer is not None and len(X_buffer) > 50:
-            n = self.refit_n if self.use_refit else 500
+            n = n_buf or (self.refit_n if self.use_refit else 500)
             Xr = np.asarray(X_buffer)[-n:]; yr = np.asarray(y_buffer)[-n:]
             trX, trY = make_train_buffer(Xr, yr, self.anchor_X, self.anchor_y,
                                          self.buffer_capacity)
@@ -246,17 +263,47 @@ class LadderRAPT:
             else:
                 self.beta = 0.15
 
-        # Bounded periodic refresh of the active policy (the mechanism that
-        # prevents a reused policy from staying frozen across a whole regime).
+        # Bounded refresh of the active policy (the mechanism that prevents a
+        # reused policy from staying frozen across a whole regime).
         if self.refresh_every and X_buffer is not None and len(X_buffer) > 50:
-            self._windows_since_refresh += 1
-            if self._windows_since_refresh >= self.refresh_every:
-                self.active_ensemble = self._train_policy(X_buffer, y_buffer)
+            do_refresh = False
+            if self.refresh_mode == "evidence":
+                acc = float(np.mean(self.predict(X_win) == np.asarray(y_win)))
+                self._acc_hist.append(acc)
+                if len(self._acc_hist) > self.evidence_window:
+                    self._acc_hist.pop(0)
+                # decayed baseline of recent accuracy for this policy
+                if self._acc_baseline is None:
+                    self._acc_baseline = acc
+                else:
+                    self._acc_baseline = 0.9 * self._acc_baseline + 0.1 * acc
+                if (len(self._acc_hist) >= self.evidence_window
+                        and np.mean(self._acc_hist) < self._acc_baseline - self.rel_drop):
+                    do_refresh = True
+            elif self.refresh_mode == "absolute":
+                acc = float(np.mean(self.predict(X_win) == np.asarray(y_win)))
+                self._acc_hist.append(acc)
+                if len(self._acc_hist) > self.evidence_window:
+                    self._acc_hist.pop(0)
+                if (len(self._acc_hist) >= self.evidence_window
+                        and np.mean(self._acc_hist) < self.refresh_min_acc):
+                    do_refresh = True
+            else:
+                self._windows_since_refresh += 1
+                if self._windows_since_refresh >= self.refresh_every:
+                    do_refresh = True
+
+            if do_refresh:
+                self.active_ensemble = self._train_policy(
+                    X_buffer, y_buffer,
+                    n_trees=self.refresh_trees, n_buf=self.refresh_buffer)
                 self.repository[self.current_regime_id] = (
                     self.active_ensemble, list(self.active_ensemble.weights))
                 self.trees_trained_count += self.active_ensemble.get_num_trees()
                 self.refreshes += 1
                 self._windows_since_refresh = 0
+                self._acc_hist = []
+                self._acc_baseline = None
                 cpu += time.process_time() - t0
                 self.adaptation_cpu_time += cpu
                 self.cumulative_cpu_time += cpu
@@ -293,15 +340,29 @@ class LadderRAPT:
 
 def build_rapt(variant, **kw):
     rel = variant == "RAPT_REL_REFIT"
-    refresh = {"RAPT_REFRESH_W5": 5, "RAPT_REFRESH_W10": 10}.get(variant, 0)
+    refresh = {"RAPT_REFRESH_W5": 5, "RAPT_REFRESH_W10": 10,
+               "RAPT_CHEAP": 5}.get(variant, 0)
+    evidence = variant in ("RAPT_EVIDENCE", "RAPT_COMBO")
+    floor = variant == "RAPT_FLOOR"
+    cheap = variant in ("RAPT_CHEAP", "RAPT_COMBO", "RAPT_FLOOR")
+    # Each rung must add EXACTLY one mechanism on top of the previous rung.
+    tier1 = variant in ("RAPT_T1", "RAPT_T1_REFIT", "RAPT_FULL", "RAPT_REL_REFIT",
+                        "RAPT_REFRESH_W5", "RAPT_REFRESH_W10", "RAPT_EVIDENCE",
+                        "RAPT_CHEAP", "RAPT_COMBO", "RAPT_FLOOR")
+    refit = variant in ("RAPT_T1_REFIT", "RAPT_FULL", "RAPT_REL_REFIT",
+                        "RAPT_REFRESH_W5", "RAPT_REFRESH_W10", "RAPT_EVIDENCE",
+                        "RAPT_CHEAP", "RAPT_COMBO", "RAPT_FLOOR")
+    gate = variant in ("RAPT_FULL", "RAPT_REL_REFIT", "RAPT_REFRESH_W5",
+                       "RAPT_REFRESH_W10", "RAPT_EVIDENCE", "RAPT_CHEAP",
+                       "RAPT_COMBO", "RAPT_FLOOR")
     return LadderRAPT(
-        use_tier1=variant in ("RAPT_T1", "RAPT_T1_REFIT", "RAPT_FULL",
-                              "RAPT_REL_REFIT", "RAPT_REFRESH_W5", "RAPT_REFRESH_W10"),
-        use_refit=variant in ("RAPT_T1_REFIT", "RAPT_FULL", "RAPT_REL_REFIT",
-                              "RAPT_REFRESH_W5", "RAPT_REFRESH_W10"),
-        use_gate=variant in ("RAPT_FULL", "RAPT_REL_REFIT",
-                             "RAPT_REFRESH_W5", "RAPT_REFRESH_W10"),
+        use_tier1=tier1,
+        use_refit=refit,
+        use_gate=gate,
         refit_mode="relative" if rel else "absolute",
-        refresh_every=refresh,
+        refresh_every=(1 if (evidence or floor) else refresh),
+        refresh_mode=("evidence" if evidence else "absolute" if floor else "periodic"),
+        refresh_trees=(10 if cheap else 50),
+        refresh_buffer=(300 if cheap else 1000),
         **kw,
     )

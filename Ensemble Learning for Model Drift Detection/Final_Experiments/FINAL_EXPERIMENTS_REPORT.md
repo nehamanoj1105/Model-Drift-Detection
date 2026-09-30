@@ -39,35 +39,65 @@ Baselines (unchanged): **Frozen**, **Event-Driven**, **Full Retraining**.
 
 RAPT mechanism ladder (each rung adds exactly one mechanism):
 
-| Rung | Tier-1 online | Refit net | Similarity gate | Periodic refresh |
+| Rung | Tier-1 online | Refit net | Sim. gate | Refresh |
 |---|---|---|---|---|
 | RAPT_T2 | – | – | – | – |
 | RAPT_T1 | ✔ | – | – | – |
 | RAPT_T1_REFIT | ✔ | ✔ (absolute) | – | – |
 | RAPT_FULL | ✔ | ✔ (absolute) | ✔ | – |
 | RAPT_REL_REFIT | ✔ | ✔ (relative) | ✔ | – |
-| RAPT_REFRESH_W5 | ✔ | ✔ (absolute) | ✔ | every 5 windows |
-| RAPT_REFRESH_W10 | ✔ | ✔ (absolute) | ✔ | every 10 windows |
+| RAPT_REFRESH_W5 | ✔ | ✔ (absolute) | ✔ | periodic, every 5 windows |
+| RAPT_REFRESH_W10 | ✔ | ✔ (absolute) | ✔ | periodic, every 10 windows |
+| RAPT_EVIDENCE | ✔ | ✔ (absolute) | ✔ | relative evidence |
+| RAPT_CHEAP | ✔ | ✔ (absolute) | ✔ | periodic, 5 windows, **cheap refit** |
+| RAPT_COMBO | ✔ | ✔ (absolute) | ✔ | relative evidence + cheap refit |
+| RAPT_FLOOR | ✔ | ✔ (absolute) | ✔ | absolute floor + cheap refit |
 
-The periodic refresh is the mechanism that stops a *reused* policy from staying
-frozen for the whole duration of a recurring regime — the identified root cause
-of RAPT's deficit. The refresh interval (5 vs 10) is a cost/accuracy knob, not a
-tuned hyper-parameter.
+Three refresh *triggers* are compared:
+
+- **periodic** — refresh every N windows;
+- **evidence** (relative) — refresh when the policy's rolling accuracy falls
+  `rel_drop` below its own decayed baseline;
+- **floor** (absolute) — refresh when the rolling accuracy falls below a fixed
+  value (`refresh_min_acc = 0.97`).
+
+and two refresh *costs*:
+
+- **full refit** — 100 trees (50 RF + 50 ET), 1000-sample buffer;
+- **cheap refit** — 20 trees (10 RF + 10 ET), 300-sample buffer (measured ~4.7×
+  cheaper per call: 22 ms vs 104 ms).
+
+### Why the "evidence" trigger fails (measured, not assumed)
+
+`RAPT_EVIDENCE` and `RAPT_COMBO` fire **zero** refreshes and are therefore
+identical to `RAPT_FULL` (0.9587). The relative trigger cannot see regime A's
+problem, because regime A's reused policy is *uniformly* bad (0.930) rather than
+*degrading*: its decayed baseline converges down to match the bad accuracy, so
+`mean(recent) < baseline − 0.10` is never satisfied. A relative trigger detects
+degradation; it cannot detect persistent deficiency. The **absolute floor**
+detects it (7.6 refreshes, +0.021 F1).
+
+The cheap-refit mechanism was chosen from measured micro-benchmarks of the
+existing ensemble, not guessed (see "Cost drivers" below).
 
 ## 3. Results (mean ± sd over 5 seeds)
 
-| Model | Macro-F1 | Accuracy | Precision | Recall | Adapt CPU (s) | Runtime (s) | Retrains | Reuse ev. | Trees trained | Trees reused |
-|---|---|---|---|---|---|---|---|---|---|---|
-| Frozen | 0.9367 ± 0.0016 | 0.9824 | 0.9383 | 0.9378 | 0.0000 | 1.279 | 0 | 0 | 100 | 0 |
-| Event-Driven | 0.9639 ± 0.0000 | 0.9909 | 0.9641 | 0.9647 | 0.1059 | 1.392 | 1 | 0 | 200 | 0 |
-| Full Retraining | 0.9829 ± 0.0023 | 0.9950 | 0.9830 | 0.9836 | 1.4072 | 2.705 | 14 | 0 | 1500 | 0 |
-| RAPT_T2 | 0.9381 ± 0.0016 | 0.9838 | 0.9393 | 0.9392 | 0.2355 | 1.519 | 2 | 12 | 300 | 1200 |
-| RAPT_T1 | 0.9404 ± 0.0020 | 0.9842 | 0.9415 | 0.9414 | 0.2368 | 1.827 | 2 | 12 | 300 | 1200 |
-| RAPT_T1_REFIT | 0.9404 ± 0.0020 | 0.9842 | 0.9415 | 0.9414 | 0.2321 | 2.515 | 2 | 12 | 300 | 1200 |
-| RAPT_FULL | 0.9587 ± 0.0000 | 0.9888 | 0.9592 | 0.9598 | 0.4296 | 2.739 | 4 | 10 | 500 | 1000 |
-| RAPT_REL_REFIT | 0.9587 ± 0.0000 | 0.9888 | 0.9592 | 0.9598 | 0.4319 | 2.756 | 4 | 10 | 500 | 1000 |
-| **RAPT_REFRESH_W5** | **0.9847 ± 0.0028** | 0.9950 | 0.9850 | 0.9852 | 2.7294 | 4.916 | 4 | 10 | 2700 | 1000 |
-| RAPT_REFRESH_W10 | 0.9774 ± 0.0004 | 0.9926 | 0.9779 | 0.9783 | 0.9767 | 3.266 | 4 | 10 | 1000 | 1000 |
+| Model | Macro-F1 | Adapt CPU (s) | Runtime (s) | Retrains | Reuse ev. | Trees trained | Refreshes |
+|---|---|---|---|---|---|---|---|
+| Frozen | 0.9367 ± 0.0016 | 0.0000 | 1.278 | 0 | 0 | 100 | – |
+| Event-Driven | 0.9639 ± 0.0000 | 0.1047 | 1.393 | 1 | 0 | 200 | – |
+| Full Retraining | 0.9829 ± 0.0023 | 1.4035 | 2.692 | 14 | 0 | 1500 | – |
+| RAPT_T2 | 0.9381 ± 0.0016 | 0.2299 | 1.517 | 2 | 12 | 300 | 0 |
+| RAPT_T1 | 0.9404 ± 0.0020 | 0.2333 | 1.794 | 2 | 12 | 300 | 0 |
+| RAPT_T1_REFIT | 0.9404 ± 0.0020 | 0.2316 | 2.528 | 2 | 12 | 300 | 0 |
+| RAPT_FULL | 0.9587 ± 0.0000 | 0.4298 | 2.735 | 4 | 10 | 500 | 0 |
+| RAPT_REL_REFIT | 0.9587 ± 0.0000 | 0.4295 | 2.742 | 4 | 10 | 500 | 0 |
+| RAPT_REFRESH_W5 | 0.9847 ± 0.0028 | 2.7221 | 4.928 | 4 | 10 | 2700 | 22 |
+| RAPT_REFRESH_W10 | 0.9774 ± 0.0004 | 0.9750 | 3.242 | 4 | 10 | 1000 | 5 |
+| RAPT_EVIDENCE | 0.9587 ± 0.0000 | 0.4315 | 3.488 | 4 | 10 | 500 | **0** |
+| **RAPT_CHEAP** | **0.9851 ± 0.0029** | **0.8467** | **2.350** | 4 | 10 | 940 | 22 |
+| RAPT_COMBO | 0.9587 ± 0.0000 | 0.4368 | 3.462 | 4 | 10 | 500 | **0** |
+| RAPT_FLOOR | 0.9797 ± 0.0050 | 0.5829 | 2.620 | 4 | 10 | 652 | 7.6 |
 
 ### Statistical comparison vs Full Retraining (paired Wilcoxon over seeds)
 
@@ -80,78 +110,107 @@ tuned hyper-parameter.
 | RAPT_T1_REFIT | −0.0425 | [−0.0463, −0.0388] | −14.20 | 0.0625 |
 | RAPT_FULL | −0.0242 | [−0.0271, −0.0212] | −10.32 | 0.0625 |
 | RAPT_REL_REFIT | −0.0242 | [−0.0271, −0.0212] | −10.32 | 0.0625 |
-| **RAPT_REFRESH_W5** | **+0.0018** | [−0.0002, +0.0038] | +1.10 | **0.2500** |
+| RAPT_REFRESH_W5 | +0.0018 | [−0.0002, +0.0038] | +1.10 | 0.2500 |
 | RAPT_REFRESH_W10 | −0.0055 | [−0.0084, −0.0025] | −2.26 | 0.0625 |
+| RAPT_EVIDENCE | −0.0242 | [−0.0271, −0.0212] | −10.32 | 0.0625 |
+| **RAPT_CHEAP** | **+0.0022** | [−0.0036, +0.0080] | +0.47 | **0.3125** |
+| RAPT_COMBO | −0.0242 | [−0.0271, −0.0212] | −10.32 | 0.0625 |
+| RAPT_FLOOR | −0.0032 | [−0.0108, +0.0043] | −0.53 | 0.3750 |
 
 p = 0.0625 is the smallest two-sided Wilcoxon p attainable with n = 5 seeds
-(2/2^5); the effects are consistent in sign and large in standardised terms,
-but **not significant at α = 0.05** and are reported as such. RAPT_REFRESH_W5
-is the only variant that does not lose to Full Retraining (p = 0.25, i.e. no
-detectable difference), and it does **not** win significantly either.
+(2/2^5). **Nothing here is significant at α = 0.05.** RAPT_CHEAP (p = 0.31) and
+RAPT_FLOOR (p = 0.38) show no detectable difference from Full Retraining.
 
-### Per-regime Macro-F1 (where the gain comes from)
+### Per-regime Macro-F1
 
-| Regime | Frozen | Event-Driven | Full Retraining | RAPT_T2 | RAPT_FULL | RAPT_REFRESH_W5 |
+| Regime | Frozen | Full Retraining | RAPT_FULL | RAPT_CHEAP | RAPT_FLOOR | RAPT_REFRESH_W5 |
 |---|---|---|---|---|---|---|
-| A | 0.930 | 0.979 | 0.988 | 0.930 | 0.930 | **0.990** |
-| B | 0.976 | 0.980 | 0.980 | 0.980 | 0.980 | 0.982 |
-| C | 0.885 | 0.911 | 0.979 | 0.885 | 0.977 | 0.979 |
+| A | 0.930 | 0.988 | 0.930 | **0.990** | 0.982 | 0.990 |
+| B | 0.976 | 0.980 | 0.980 | 0.983 | 0.979 | 0.982 |
+| C | 0.885 | 0.979 | 0.977 | 0.978 | 0.975 | 0.979 |
 
-## 4. Key observations (observed, not interpreted)
+## 4. Cost drivers (measured micro-benchmarks)
 
-1. **The periodic refresh closes the gap and slightly exceeds Full Retraining**
-   (0.9847 vs 0.9829), driven entirely by regime A: 0.930 → 0.990. Regime A was
-   the case where RAPT_FULL served a weak reused policy identical to Frozen
-   (0.930); refreshing it every 5 windows fixes it.
-2. **The gain is not statistically significant** (Δ = +0.0018, p = 0.25). The
-   correct claim is "RAPT_REFRESH_W5 matches Full Retraining", not "beats".
-3. **The fingerprint similarity gate was the mechanism that fixed regime C**
-   (0.885 → 0.977) in the previous run; the refresh fixes regime A. The two
-   mechanisms address different failure modes and are complementary.
-4. **Refresh frequency is a real cost/accuracy trade-off.**
-   W10 (0.977, 0.98 s adaptation CPU) vs W5 (0.985, 2.73 s). W5 buys +0.007 F1
-   for ~2.8× the adaptation CPU, which erases RAPT's cost advantage: at W5
-   RAPT's runtime (4.92 s) exceeds Full Retraining's (2.71 s).
-5. **Tier-1 online blending and both refit triggers remain inert here**
-   (+0.002 F1 for Tier-1; the absolute trigger cannot fire on 3 classes and the
-   relative trigger did not fire either). Documented as negative results.
-6. **Cost ordering:** Frozen 1.28 s < Event-Driven 1.39 s < RAPT_T2 1.52 s <
-   RAPT_T1 1.83 s < RAPT_T1_REFIT 2.52 s < Full Retraining 2.71 s <
-   RAPT_REFRESH_W10 3.27 s < RAPT_REFRESH_W5 4.92 s.
+Cost model: `adapt CPU ≈ (number of refreshes) × (cost per refit)`. Measured on
+the existing ensemble:
 
-## 5. Interpretation
+| Factor | Setting | Cost per refit |
+|---|---|---|
+| n_estimators | 20 trees (10 RF + 10 ET) | **22 ms** |
+| | 50 trees | 54 ms |
+| | 100 trees (full) | **104 ms** |
+| Buffer size | 200 samples | 80 ms |
+| | 500 | 92 ms |
+| | 1000 (full) | 104 ms |
 
-RAPT's deficit on the 5G Campus QoS stream has two distinct causes, and each
-needs its own mechanism:
+Refit cost is dominated by `n_estimators`, not buffer size. The **cheap refit**
+(20 trees, 300-sample buffer) is therefore the highest-leverage cost lever,
+followed by reducing the *number* of refreshes.
+
+## 5. Key observations (observed, not interpreted)
+
+1. **RAPT_CHEAP is the only configuration in the sweep that is both at least as
+   accurate as Full Retraining and cheaper.** F1 0.9851 vs 0.9829, adaptation
+   CPU 0.85 s vs 1.40 s (**~40% lower**), runtime 2.35 s vs 2.69 s. This is the
+   first setting that does not trade accuracy against cost.
+2. **The difference is not statistically significant** (Δ = +0.0022, p = 0.31,
+   d = 0.47). The defensible claim is "RAPT_CHEAP matches Full Retraining at
+   ~60% of its adaptation cost", not "beats it".
+3. **The relative evidence trigger is ineffective** (0 refreshes, 0.9587). It
+   detects degradation, not persistent deficiency. This is a genuine negative
+   result and is why the absolute floor was added.
+4. **The absolute floor works but is weaker and less stable** (0.9797 ± 0.0050,
+   7.6 refreshes). It still beats RAPT_FULL, and it costs less than
+   RAPT_CHEAP (0.58 s vs 0.85 s), but its accuracy varies more across seeds.
+5. **The gain comes from regime A**, the recurring regime whose reused policy
+   was always bad: 0.930 → 0.990 (cheap) / 0.982 (floor). No regime is harmed
+   by the cheap refit.
+6. **Full-refit periodic refresh (W5) is now strictly dominated:** higher F1
+   variance, 3.2× the adaptation CPU of RAPT_CHEAP (2.72 s vs 0.85 s), and the
+   worst runtime of any model (4.93 s).
+7. **Cost ordering (adaptation CPU):** Frozen 0.00 < Event-Driven 0.10 <
+   RAPT_T2 0.23 < RAPT_T1_REFIT 0.23 < RAPT_FULL 0.43 < RAPT_FLOOR 0.58 <
+   RAPT_CHEAP 0.85 < RAPT_REFRESH_W10 0.98 < Full Retraining 1.40 <
+   RAPT_REFRESH_W5 2.72 s.
+
+## 6. Interpretation
+
+RAPT's deficit on the 5G Campus QoS stream has two distinct causes, each needing
+its own mechanism:
 
 - **Serving a stale policy for a *changed* regime** (regime C): fixed by the
-  fingerprint similarity gate, which refuses reuse and retrains (+0.021 F1).
-- **Serving a frozen policy for an *unchanged* regime** (regime A): fixed by the
-  bounded periodic refresh (+0.021 F1 on top of the gate).
+  fingerprint similarity gate (0.885 → 0.977).
+- **Serving a frozen policy that was *always* poor for a recurring regime**
+  (regime A): fixed by a refresh, and specifically by a refresh that (a) is
+  triggered on an **absolute** quality floor rather than a relative drop, and
+  (b) refits **cheaply** so the cure costs less than the disease.
 
-With both, RAPT reaches parity with Full Retraining (0.9847 vs 0.9829). The
-honest framing is that **RAPT becomes as accurate as Full Retraining but loses
-its cost advantage** at a 5-window refresh interval; at a 10-window interval it
-keeps a modest cost advantage but is slightly worse (0.9774). There is no
-setting in this sweep where RAPT is both more accurate *and* cheaper.
+Combining both, RAPT_CHEAP reaches Full-Retraining accuracy at ~60% of its
+adaptation CPU — i.e. the mechanism ladder can recover RAPT's cost advantage
+without giving up accuracy. The important caveat is that this is a *single
+dataset* result with n = 5 seeds and no statistical significance; the correct
+summary is that the ladder removed the previously observed cost/accuracy
+trade-off **on this stream**, not that RAPT is generally cheaper and better.
 
-## 6. Limitations
+## 7. Limitations
 
 - Single dataset, single target definition (3-class next-window p90-delay QoS).
-- n = 5 seeds; Wilcoxon cannot reach p < 0.05 at this n, so "matches" is the
-  strongest defensible claim for RAPT_REFRESH_W5.
-- Refresh interval (5, 10) was chosen as a small cost/accuracy sweep, not tuned
-  on the test stream for a maximum.
-- The similarity gate uses a normalized mean-feature fingerprint with γ = 1.0;
-  other scalings were not swept.
-- The refit triggers were ported with their reference thresholds rather than
-  tuned, to avoid test-stream leakage.
+- n = 5 seeds; nothing reaches p < 0.05, so "matches" is the strongest
+  defensible claim for RAPT_CHEAP.
+- The cheap refit (20 trees) reduces the refreshed policy's capacity. It happens
+  to be sufficient here because the refresh only needs to correct a policy that
+  is already close; on a harder stream it could underfit.
+- The absolute floor (0.97) is a fixed constant. It was not tuned on the test
+  stream, but a different stream would need a different floor; this is a
+  documented hyper-parameter, not a universal constant.
+- Refresh intervals / thresholds were chosen as a small sweep, not optimised.
+- The similarity gate uses a normalized mean-feature fingerprint with γ = 1.0.
 - Regime labels are treated as given; no detector-driven regime discovery.
 - RAPT is **not** modified in the existing 9A/9B experiments; this folder is a
   separate ablation, and the "RAPT" in the main experiments remains the Tier-2
   algorithm.
 
-## 7. Reproducibility
+## 8. Reproducibility
 
 ```bash
 cd "Ensemble Learning for Model Drift Detection/Final_Experiments"

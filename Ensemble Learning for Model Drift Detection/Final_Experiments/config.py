@@ -39,8 +39,19 @@ MODELS = ["Frozen", "Event-Driven", "Full Retraining", "RAPT"]
 #   RAPT_REFRESH_W{5,10} : RAPT_FULL + bounded periodic refresh every 5 / 10
 #                    windows, which stops a reused policy staying frozen for the
 #                    whole duration of a recurring regime.
+#   RAPT_EVIDENCE  : RAPT_FULL + evidence-triggered refresh (only when the
+#                    policy's rolling accuracy drops below its own decayed
+#                    baseline), so refreshes are paid only when needed.
+#   RAPT_CHEAP     : RAPT_REFRESH_W5 with a cheap refresh (20 trees, 300-sample
+#                    buffer) instead of a full 100-tree / 1000-sample refit.
+#   RAPT_COMBO     : RAPT_EVIDENCE + cheap refresh (the recommended combination).
+#   RAPT_FLOOR     : cheap refresh triggered by an ABSOLUTE accuracy floor
+#                    (rolling acc < 0.97), which catches a reused policy that
+#                    was always bad -- something the relative evidence trigger
+#                    cannot see because its baseline decays down to match.
 RAPT_VARIANTS = ["RAPT_T2", "RAPT_T1", "RAPT_T1_REFIT", "RAPT_FULL",
-                 "RAPT_REL_REFIT", "RAPT_REFRESH_W5", "RAPT_REFRESH_W10"]
+                 "RAPT_REL_REFIT", "RAPT_REFRESH_W5", "RAPT_REFRESH_W10",
+                 "RAPT_EVIDENCE", "RAPT_CHEAP", "RAPT_COMBO", "RAPT_FLOOR"]
 
 PROJECT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 EXP9A_DIR = os.path.join(PROJECT_DIR, "experiments", "exp9a")
