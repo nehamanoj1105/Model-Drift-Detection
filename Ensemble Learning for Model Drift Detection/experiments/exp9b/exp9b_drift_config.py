@@ -42,6 +42,9 @@ RECOVERY_THRESHOLD = 0.95
 # features *after* the drift point. Severity = fraction of those features that
 # receive the transformation. See drift_construct.build_concept_drift_stream.
 CONCEPT_DRIFT_FEATURE_COUNT = 6
+# Cap on how many of the ranked features the reversal may touch. Only five of the
+# ranked features vary within the source regime, so severities >= 50% saturate here.
+CONCEPT_DRIFT_MAX_AFFECTED = 5
 
 # --- Paths (relative to the "Ensemble Learning for Model Drift Detection" root) ---
 EXP9B_DIR = os.path.join("experiments", "exp9b")

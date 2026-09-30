@@ -261,8 +261,13 @@ def write_report(natural, cov_agg, cov_agg_rec, con_agg, con_agg_rec,
     A("| Severity | Covariate drift | Concept drift |")
     A("| :---: | :--- | :--- |")
     for l in CFG.DRIFT_LEVELS:
+        # Matches drift_construct.apply_concept_transform: k = ceil(level * |ranked|)
+        # over the CONCEPT_DRIFT_FEATURE_COUNT-feature ranked pool, capped at the
+        # number of features that actually vary within the source regime.
+        k_features = max(1, int(np.ceil(l * CFG.CONCEPT_DRIFT_FEATURE_COUNT)))
+        k_features = min(k_features, CFG.CONCEPT_DRIFT_MAX_AFFECTED)
         A(f"| {int(l*100)}% | {int(round(l*40))}/40 post-drift windows drawn from the target regime | "
-          f"top {max(1, int(np.ceil(l*5)))} predictive features rank-reversed |")
+          f"top {k_features} predictive features rank-reversed |")
     A("")
 
     # 8. Protocol
