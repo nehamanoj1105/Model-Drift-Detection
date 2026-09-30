@@ -1,0 +1,37 @@
+{
+  "dataset": "NordicDat",
+  "slug": "nordicdat",
+  "source": "/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/data/nordicdat/nordicdat.csv",
+  "temporal_field": "timestamp",
+  "target_desc": "3-class next-window median-delay QoS (prefix thresholds)",
+  "regime_desc": "mobile network operator (Nordic cross-border roaming)",
+  "window_size": 500,
+  "n_raw_samples": 91455,
+  "n_usable_samples": 91000,
+  "total_windows": 182,
+  "initial_train_windows": 36,
+  "feature_columns": [
+    "elevation",
+    "velocity_abs",
+    "acceleration_abs",
+    "rsrq",
+    "rssi",
+    "rsrp",
+    "sinr",
+    "velocity_long",
+    "acceleration_lat",
+    "acceleration_long",
+    "delay",
+    "gnss_mode",
+    "service_status",
+    "operator",
+    "throughput_downlink",
+    "throughput_uplink"
+  ],
+  "class_map": {
+    "0": "GOOD",
+    "1": "DEGRADED",
+    "2": "BAD"
+  },
+  "n_classes": 3
+}

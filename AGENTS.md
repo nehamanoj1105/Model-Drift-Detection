@@ -73,3 +73,52 @@
 - `experiments/exp9a/write_combined_report.py` -> `EXPERIMENT_9A_9B_FINAL_REPORT.md`.
 - Run everything from the `Ensemble Learning for Model Drift Detection`
   directory (all config paths are relative to it).
+
+## Experiment 9A — Three telecom datasets (final cross-dataset pass)
+
+9A was extended from a single INSECTS stream to **three independent telecom
+datasets** to test whether RAPT exploits recurring network conditions to keep
+predictive performance while cutting adaptation cost. Key files (in
+`experiments/exp9a/`):
+
+- `three_dataset_config.py` — all constants (seeds, window sizes, paths,
+  dataset list); no hard-coded values elsewhere.
+- `three_dataset_load.py` — loaders + sample-level windowing.
+- `three_dataset_profile.py` — dataset screening + recurrence analysis
+  (writes `dataset_screening/dataset_profile.csv` and `recurrence_analysis.csv`).
+- `drift_detectors_9a.py` — ADWIN / Page-Hinkley / EDD / EDMA baselines; they
+  decide WHEN to adapt on the shared class-anchored buffer.
+- `three_dataset_run.py [pilot|full]` — prequential runner.
+- `three_dataset_figures.py`, `three_dataset_tables.py`, `three_dataset_cross.py`,
+  `three_dataset_report.py` — outputs and reports.
+
+Datasets and documented choices:
+- **5G Campus Network QoS** — reuses the processed stream
+  (`experiments/exp9/data/…windowed.csv`); 3-class next-window p90-delay QoS.
+- **UGR'16** — `data/ugr16/UGR16v1.mat`. The calibration split (`X`/`Y`) has
+  only blacklist traffic and **no labelled attacks**, so the labelled 30-day
+  block (`test`/`Yt`) is used; target = binary anomaly (any non-blacklist
+  attack minute). Window = 240 min to align with the 4-hour regime block.
+- **NordicDat** — `data/nordicdat/nordicdat.csv`; 3-class next-window
+  median-delay QoS (prefix thresholds); regime = operator.
+
+Streams are **sample-level** (one row per raw observation, `window_id` groups
+`window_size` consecutive rows); models train/predict on raw samples, the window
+is the adaptation step. Window sizes differ per dataset (Campus 10, UGR 240,
+Nordic 500) because raw granularity differs; this is documented in the report.
+
+9A headline (5 seeds, macro-F1 / adapt CPU s):
+- 5G Campus: Frozen 0.936/0.00, Event 0.964/0.11, Full 0.984/1.45,
+  RAPT 0.938/0.24 (2 retrains, 12 reuses).
+- UGR'16: Frozen 0.969/0.00, Event 0.897/0.59, Full 0.960/24.1,
+  RAPT 0.836/2.07 (11 retrains, 133 reuses), RAPT-Enhanced 0.928/2.80.
+  Base RAPT's blind reuse is **harmful** under concept change coupled with
+  regime recurrence; parity refit recovers it.
+- NordicDat: Frozen 0.278/0.00, Event 0.255/0.26, Full 0.423/2.26,
+  RAPT 0.382/0.28 (2 retrains, 16 reuses).
+
+Outputs: `results/experiment_9a_three/raw/` (per-window + per-seed CSV);
+`experiments/exp9a/{figures,tables,models,drift_detectors,reports}/`;
+reports `EXPERIMENT_9A_THREE_TELECOM_DATASETS_REPORT.md` and
+`EXPERIMENT_9A_9B_FINAL_REPORT.md`. `tabulate` must be installed for the report
+generator.
