@@ -5,7 +5,7 @@
 | File | Purpose |
 |------|---------|
 | `manuscript.tex` | Final IEEE conference manuscript (two-column, IEEEtran) |
-| `references.bib` | BibTeX source of the 12 references (manuscript uses embedded `thebibliography`) |
+| `references.bib` | BibTeX source of the 29 references (manuscript uses an embedded `thebibliography`) |
 | `figures/` | Figure files referenced by the manuscript |
 | `manuscript.pdf` | Compiled PDF |
 

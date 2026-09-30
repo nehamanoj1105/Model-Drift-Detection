@@ -59,18 +59,24 @@ that monitoring systems observe, and a classifier fitted to one period of a 5G
 testbed or an ISP netflow archive will not stay accurate indefinitely. The standard
 remedy is to retrain when performance falls. That works, but it is paid for
 repeatedly, and on high-rate telemetry the cumulative rebuild cost can exceed the
-cost of serving predictions.
+cost of serving predictions. Keeping that cost within budget is a recurring concern
+in streaming deployments, and lightweight detection-and-adaptation frameworks have
+been proposed specifically for constrained devices \cite{9427288}.
 
 The streaming-learning literature has produced effective detectors for \emph{when}
-to adapt, including ADWIN \cite{bifet2007adwin}, Page-Hinkley tests
-\cite{page1954continuous}, and methods built on error-rate statistics
-\cite{gama2004learning,baena2006early}. What these detectors do not provide is a
-way to exploit the structure of the change. Network conditions are frequently
-\emph{recurring} rather than merely novel: a weekday congestion profile, a radio
-configuration, or an operator-specific QoS regime may appear, disappear, and
-return. When a previously encountered regime returns, the model trained for it is
-often still the right model, and rebuilding an equivalent one discards information
-that was already paid for.
+to adapt, including ADWIN \cite{bifet2007learning}, Page-Hinkley tests
+\cite{page1954continuous}, error-rate methods such as DDM and EDD
+\cite{gama2004learning,baena2006early}, and distributional tests based on
+exponentially weighted statistics or distance measures
+\cite{ross2012exponentially,dos2016fast,brockhoff2020time}. What these detectors do
+not provide is a way to exploit the structure of the change. Network conditions are
+frequently \emph{recurring} rather than merely novel: a weekday congestion profile,
+a radio configuration, or an operator-specific QoS regime may appear, disappear, and
+return. Recurring concepts motivated some of the earliest work in the field
+\cite{schlimmer1986incremental,widmer1994combining}, yet the common response remains
+to relearn. When a previously encountered regime returns, the model trained for it
+is often still the right model, and rebuilding an equivalent one discards
+information that was already paid for.
 
 This paper studies whether that information can be retained and reused. RAPT
 maintains a repository of adaptation policies indexed by operating regime. At a
@@ -110,45 +116,66 @@ learner dominated on both axes.
 \subsection{Concept and Data Drift}
 Distributional change in streaming data is conventionally separated into covariate
 shift, where $P(X)$ changes while $P(Y\mid X)$ is stable, and concept drift, where
-$P(Y\mid X)$ itself changes \cite{gama2014survey}. The two call for different
-responses, since covariate shift can often be absorbed by recalibrating a decision
-boundary whereas concept drift invalidates the mapping the model learned. Recurring
-drift, in which an earlier distribution reappears, has received less attention than
-gradual or abrupt drift despite being common in systems whose load and configuration
-follow periodic patterns \cite{gomes2017adaptive}.
+$P(Y\mid X)$ itself changes \cite{gama2014survey,lu2018learning}. Surveys of the
+area document a long history of taxonomies and adaptation strategies
+\cite{khamassi2018discussion}, beginning with the recurring concepts of the STAGGER
+system \cite{schlimmer1986incremental} and the robustness--flexibility trade-off
+studied by Widmer \cite{widmer1994combining}. The two call for different responses,
+since covariate shift can often be absorbed by recalibrating a decision boundary
+whereas concept drift invalidates the mapping the model learned. Recurring drift, in
+which an earlier distribution reappears, has received less attention than gradual or
+abrupt drift despite being common in systems whose load and configuration follow
+periodic patterns \cite{gomes2017adaptive}.
 
 \subsection{Drift Detection}
 Detectors provide the trigger for adaptation rather than the adaptation itself.
 ADWIN maintains an adaptive window over a stream and detects change by comparing
-sub-window means \cite{bifet2007adwin}. The Page-Hinkley test is a sequential
+sub-window means \cite{bifet2007learning}. The Page-Hinkley test is a sequential
 cumulative-sum procedure from industrial quality control \cite{page1954continuous}.
 DDM and its successor EDD monitor the error rate and its variance, signalling when
 the error distribution departs from its observed minimum
-\cite{gama2004learning,baena2006early}. EDMA tracks an exponentially weighted
-moving average of the error against its own dispersion. These detectors differ in
-sensitivity and in how often they fire, and that difference translates directly
-into adaptation cost.
+\cite{gama2004learning,baena2006early}, while RDDM reacts to the same statistics
+with reduced false alarms \cite{barros2017rddm}. EDMA tracks an exponentially
+weighted moving average of the error against its own dispersion, an idea also
+exploited by EWMA-based control charts \cite{ross2012exponentially}.
+Label-free detectors instead test the feature stream, using Hoeffding bounds
+\cite{frias2014online}, an incremental Kolmogorov--Smirnov statistic
+\cite{dos2016fast}, or the earth-mover distance \cite{brockhoff2020time}, and
+lightweight versions of these tests have been adapted for constrained IoT
+deployments \cite{9427288}. These detectors differ in sensitivity and in how often
+they fire, and that difference translates directly into adaptation cost.
 
 \subsection{Adaptive and Online Learning}
-Online ensembles adapt by updating constituent models as data arrives. Online
-bagging and boosting approximate batch resampling under a streaming constraint,
-and adaptive random forests extend this with drift-aware tree replacement
-\cite{gomes2017adaptive}. Single-pass incremental learners such as Hoeffding trees
-bound memory and update cost per example \cite{domingos2000mining}, and the River
-library provides practical implementations of both the detectors and the
-incremental learners used here \cite{montiel2021river}. Incremental updating is
-attractive because its per-example cost is independent of accumulated history, but
-it is a different mechanism from policy reuse: it changes \emph{how} a model is
-updated rather than whether an already-adequate model can be retrieved.
-Section~\ref{sec:ablation} reports a direct comparison, in which incremental
-updating did not improve the accuracy--cost trade-off on the stream we evaluated.
+Online ensembles adapt by updating constituent models as data arrives. Dynamic
+weighted majority weights its learners by recent accuracy and adds or removes them
+as the stream evolves \cite{JMLR:v8:kolter07a}, an idea that
+disagreement-minimizing methods had already applied to drifting concepts
+\cite{helmbold1994tracking}. Online bagging and boosting approximate batch
+resampling under a streaming constraint, and adaptive random forests extend this
+with drift-aware tree replacement \cite{gomes2017adaptive}. Rebuilding component
+weights in response to drift is the basis of the accuracy-updated ensemble
+\cite{brzezinski2013reacting}, and ensemble designs of this kind have been
+specialised to social big-data and IoT streams \cite{abbasi2021elstream,yang2021pwpae}.
+Single-pass incremental learners such as Hoeffding trees bound memory and update
+cost per example \cite{domingos2000mining}, and the River library provides
+practical implementations of both the detectors and the incremental learners used
+here \cite{montiel2021river}. Incremental updating is attractive because its
+per-example cost is independent of accumulated history, but it is a different
+mechanism from policy reuse: it changes \emph{how} a model is updated rather than
+whether an already-adequate model can be retrieved. Section~\ref{sec:ablation}
+reports a direct comparison, in which incremental updating did not improve the
+accuracy--cost trade-off on the stream we evaluated.
 
 \subsection{Transfer under Recurring Conditions}
 Transfer learning moves representations or parameters from a source task to a
 related target task \cite{pan2010transfer}, where the object transferred is model
-structure or feature representation. RAPT transfers something narrower: a
-previously fitted policy, together with the regime identity under which it was
-fitted, is stored and later retrieved as a whole. The decision RAPT makes is not
+structure or feature representation. Retaining rather than discarding previously
+learned structure has an older lineage in work on the role of forgetting
+\cite{markovitch1988role} and on the cost of reusing compiled knowledge chunks
+\cite{tambe1988some}, both of which observe that relearning what has already been
+learned is wasteful. RAPT transfers something narrower: a previously fitted policy,
+together with the regime identity under which it was fitted, is stored and later
+retrieved as a whole. The decision RAPT makes is not
 how to adapt a model but whether adaptation is needed at all, given that a
 candidate policy already exists. Where recurrence is absent the mechanism
 degenerates to ordinary retraining, as we observe on the stream with the fewest
@@ -840,12 +867,36 @@ Whether that estimate can be made without labels is left open.
 \begin{thebibliography}{00}
 
 \bibitem{gama2014survey}
-J. Gama, I. Žliobaitė, A. Bifet, M. Pechenizkiy, and A. Bouchachia, ``A survey on
-concept drift adaptation,'' \emph{ACM Computing Surveys}, vol. 46, no. 4, pp.
-1--37, 2014.
+J. Gama, I. \v{Z}liobait\.{e}, A. Bifet, M. Pechenizkiy, and A. Bouchachia, ``A
+survey on concept drift adaptation,'' \emph{ACM Computing Surveys}, vol. 46, no. 4,
+pp. 1--37, 2014.
 
-\bibitem{bifet2007adwin}
-A. Bifet and R. Gavaldà, ``Learning from time-changing data with adaptive
+\bibitem{lu2018learning}
+J. Lu, A. Liu, F. Dong, F. Gu, J. Gama, and G. Zhang, ``Learning under concept
+drift: A review,'' \emph{IEEE Trans. Knowledge and Data Engineering}, vol. 31,
+no. 12, pp. 2346--2363, 2018.
+
+\bibitem{khamassi2018discussion}
+I. Khamassi, M. Sayed-Mouchaweh, M. Hammami, and K. Gh\'edira, ``Discussion and
+review on evolving data streams and concept drift adapting,'' \emph{Evolving
+Systems}, vol. 9, no. 1, pp. 1--23, 2018.
+
+\bibitem{schlimmer1986incremental}
+J. C. Schlimmer and R. H. Granger, Jr., ``Incremental learning from noisy data,''
+\emph{Machine Learning}, vol. 1, no. 3, pp. 317--354, 1986.
+
+\bibitem{widmer1994combining}
+G. Widmer, ``Combining robustness and flexibility in learning drifting concepts,''
+in \emph{Proc. European Conf. Artificial Intelligence (ECAI)}, 1994, pp. 468--472.
+
+\bibitem{gomes2017adaptive}
+H. M. Gomes, A. Bifet, J. Read, J. P. Barddal, F. Enembreck, B. Pfharinger, G.
+Holmes, and T. Abdessalem, ``Adaptive random forests for evolving data stream
+classification,'' \emph{Machine Learning}, vol. 106, no. 9--10, pp. 1469--1495,
+2017.
+
+\bibitem{bifet2007learning}
+A. Bifet and R. Gavald\`a, ``Learning from time-changing data with adaptive
 windowing,'' in \emph{Proc. SIAM Int. Conf. Data Mining (SDM)}, 2007, pp. 443--448.
 
 \bibitem{page1954continuous}
@@ -858,15 +909,65 @@ detection,'' in \emph{Proc. Brazilian Symp. Artificial Intelligence (SBIA)}, 200
 pp. 286--295.
 
 \bibitem{baena2006early}
-M. Baena-García, J. del Campo-Ávila, R. Fidalgo, A. Bifet, R. Gavaldà, and R.
+M. Baena-Garc\'ia, J. del Campo-\'Avila, R. Fidalgo, A. Bifet, R. Gavald\`a, and R.
 Morales-Bueno, ``Early drift detection method,'' in \emph{Proc. Int. Workshop on
 Knowledge Discovery from Data Streams}, 2006, pp. 77--86.
 
-\bibitem{gomes2017adaptive}
-H. M. Gomes, A. Bifet, J. Read, J. P. Barddal, F. Enembreck, B. Pfharinger, G.
-Holmes, and T. Abdessalem, ``Adaptive random forests for evolving data stream
-classification,'' \emph{Machine Learning}, vol. 106, no. 9--10, pp. 1469--1495,
-2017.
+\bibitem{barros2017rddm}
+R. S. M. Barros, D. R. L. Cabral, P. M. Gon\c{c}alves, Jr., and S. G. T. C.
+Santos, ``RDDM: Reactive drift detection method,'' \emph{Expert Systems with
+Applications}, vol. 90, pp. 344--355, 2017.
+
+\bibitem{ross2012exponentially}
+G. J. Ross, N. M. Adams, D. K. Tasoulis, and D. J. Hand, ``Exponentially weighted
+moving average charts for detecting concept drift,'' \emph{Pattern Recognition
+Letters}, vol. 33, no. 2, pp. 191--198, 2012.
+
+\bibitem{frias2014online}
+I. Frias-Blanco, J. del Campo-\'Avila, G. Ramos-Jimenez, R. Morales-Bueno, A.
+Ortiz-Diaz, and Y. Caballero-Mota, ``Online and non-parametric drift detection
+methods based on Hoeffding's bounds,'' \emph{IEEE Trans. Knowledge and Data
+Engineering}, vol. 27, no. 3, pp. 810--823, 2015.
+
+\bibitem{dos2016fast}
+D. M. dos Reis, P. Flach, S. Matwin, and G. Batista, ``Fast unsupervised online
+drift detection using incremental Kolmogorov--Smirnov test,'' in \emph{Proc. ACM
+SIGKDD Int. Conf. Knowledge Discovery and Data Mining}, 2016, pp. 1545--1554.
+
+\bibitem{brockhoff2020time}
+T. Brockhoff, M. S. Uysal, and W. M. P. van der Aalst, ``Time-aware concept drift
+detection using the earth mover's distance,'' in \emph{Proc. Int. Conf. Process
+Mining (ICPM)}, 2020, pp. 33--40.
+
+\bibitem{9427288}
+L. Yang and A. Shami, ``A lightweight concept drift detection and adaptation
+framework for IoT data streams,'' \emph{IEEE Internet of Things Magazine}, vol. 4,
+no. 2, pp. 96--101, 2021.
+
+\bibitem{JMLR:v8:kolter07a}
+J. Z. Kolter and M. A. Maloof, ``Dynamic weighted majority: An ensemble method for
+drifting concepts,'' \emph{Journal of Machine Learning Research}, vol. 8, no. 91,
+pp. 2755--2790, 2007.
+
+\bibitem{helmbold1994tracking}
+D. P. Helmbold and P. M. Long, ``Tracking drifting concepts by minimizing
+disagreements,'' \emph{Machine Learning}, vol. 14, no. 1, pp. 27--45, 1994.
+
+\bibitem{brzezinski2013reacting}
+D. Brzezi\'nski and J. Stefanowski, ``Reacting to different types of concept drift:
+The accuracy updated ensemble algorithm,'' \emph{IEEE Trans. Neural Networks and
+Learning Systems}, vol. 25, no. 1, pp. 81--94, 2014.
+
+\bibitem{abbasi2021elstream}
+A. Abbasi, A. R. Javed, C. Chakraborty, J. Nebhen, W. Zehra, and Z. Jalil,
+``ElStream: An ensemble learning approach for concept drift detection in dynamic
+social big data stream learning,'' \emph{IEEE Access}, vol. 9, pp. 66408--66419,
+2021.
+
+\bibitem{yang2021pwpae}
+L. Yang, D. M. Manias, and A. Shami, ``PWPAE: An ensemble framework for concept
+drift adaptation in IoT data streams,'' in \emph{Proc. IEEE Global Communications
+Conf. (GLOBECOM)}, 2021, pp. 1--6.
 
 \bibitem{domingos2000mining}
 P. Domingos and G. Hulten, ``Mining high-speed data streams,'' in \emph{Proc. ACM
@@ -882,9 +983,18 @@ Research}, vol. 22, no. 110, pp. 1--8, 2021.
 S. J. Pan and Q. Yang, ``A survey on transfer learning,'' \emph{IEEE Trans.
 Knowledge and Data Engineering}, vol. 22, no. 10, pp. 1345--1359, 2010.
 
+\bibitem{markovitch1988role}
+S. Markovitch and P. D. Scott, ``The role of forgetting in learning,'' in
+\emph{Machine Learning Proceedings 1988}. San Francisco, CA, USA: Morgan Kaufmann,
+1988, pp. 459--465.
+
+\bibitem{tambe1988some}
+M. Tambe and A. Newell, ``Some chunks are expensive,'' in \emph{Machine Learning
+Proceedings 1988}. San Francisco, CA, USA: Morgan Kaufmann, 1988, pp. 451--458.
+
 \bibitem{ugr16}
-G. Maciá-Fernández, J. Camacho, R. Magán-Carrión, P. García-Teodoro, and R.
-Therón, ``UGR'16: A new dataset for the evaluation of cyclostationarity-based
+G. Maci\'a-Fern\'andez, J. Camacho, R. Mag\'an-Carri\'on, P. Garc\'ia-Teodoro, and
+R. Ther\'on, ``UGR'16: A new dataset for the evaluation of cyclostationarity-based
 network IDSs,'' \emph{Computers \& Security}, vol. 73, pp. 411--424, 2018.
 
 \bibitem{nordicdat}
