@@ -1,0 +1,3 @@
+Model,Reuse_events,Reused_trees,Retrained_trees,Adapt_CPU_s
+RAPT,4,400,600,0.7113
+RAPT-Enhanced,4,400,1200,2.2172

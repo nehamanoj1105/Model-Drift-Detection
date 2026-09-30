@@ -1,0 +1,40 @@
+{
+  "dataset": "5G Campus QoS",
+  "slug": "5g_campus",
+  "source": "/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9/data/processed_exp9_stream.csv",
+  "temporal_field": "_timestamp",
+  "target_desc": "3-class next-window p90-delay QoS (GOOD/DEGRADED/BAD)",
+  "regime_desc": "network scenario label (bandwidth/slots/ratio/scenario)",
+  "window_size": 10,
+  "n_raw_samples": 1799,
+  "n_usable_samples": 1790,
+  "total_windows": 179,
+  "initial_train_windows": 36,
+  "feature_columns": [
+    "mean_iat",
+    "std_iat",
+    "median_iat",
+    "p90_iat",
+    "mean_packet_size",
+    "std_packet_size",
+    "mean_delay",
+    "std_delay",
+    "median_delay",
+    "p90_delay",
+    "mean_pdist",
+    "mean_piat",
+    "mean_psize",
+    "bandwidth",
+    "slots",
+    "ratio",
+    "packet_count",
+    "_rep",
+    "next_p90_delay"
+  ],
+  "class_map": {
+    "0": "0",
+    "1": "1",
+    "2": "2"
+  },
+  "n_classes": 3
+}

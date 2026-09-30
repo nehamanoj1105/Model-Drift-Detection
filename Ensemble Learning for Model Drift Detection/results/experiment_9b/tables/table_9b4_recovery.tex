@@ -1,0 +1,85 @@
+\begin{table}
+\caption{table 9b4 recovery}
+\label{tab:table_9b4_recovery}
+\begin{tabular}{lllrrrrr}
+\toprule
+Model & Drift_type & Severity & Pre_drift_F1 & Minimum_F1 & Recovery_F1 & Recovery_windows & Delta_F1 \\
+\midrule
+Frozen & covariate & 10% & 0.5946 & 0.0833 & 0.4365 & 29.5000 & -0.1696 \\
+Frozen & covariate & 20% & 0.5946 & 0.0833 & 0.4250 & 27.5000 & -0.1934 \\
+Frozen & covariate & 30% & 0.5946 & 0.0833 & 0.3915 & 40.0000 & -0.2031 \\
+Frozen & covariate & 50% & 0.5946 & 0.0000 & 0.3500 & 40.0000 & -0.2446 \\
+Frozen & covariate & 100% & 0.5946 & 0.0000 & 0.0918 & 40.0000 & -0.5028 \\
+Event-Driven & covariate & 10% & 0.7466 & 0.1667 & 0.7296 & 36.0000 & -0.1273 \\
+Event-Driven & covariate & 20% & 0.7062 & 0.1667 & 0.6834 & 29.2000 & -0.0849 \\
+Event-Driven & covariate & 30% & 0.7020 & 0.1375 & 0.7015 & 25.0000 & -0.0791 \\
+Event-Driven & covariate & 50% & 0.6946 & 0.2440 & 0.6952 & 22.8000 & -0.0535 \\
+Event-Driven & covariate & 100% & 0.7032 & 0.3056 & 0.4546 & 20.5000 & -0.2486 \\
+Full Retraining & covariate & 10% & 0.6966 & 0.5357 & 0.8484 & 20.5000 & 0.1518 \\
+Full Retraining & covariate & 20% & 0.7696 & 0.6190 & 0.9118 & 20.5000 & 0.1422 \\
+Full Retraining & covariate & 30% & 0.7568 & 0.4206 & 0.8785 & 20.5000 & 0.1216 \\
+Full Retraining & covariate & 50% & 0.8176 & 0.6875 & 0.9039 & 20.5000 & 0.0863 \\
+Full Retraining & covariate & 100% & 0.9436 & 0.5000 & 1.0000 & 13.5000 & -0.1482 \\
+RAPT & covariate & 10% & 0.7018 & 0.5714 & 0.8515 & 20.5000 & 0.1498 \\
+RAPT & covariate & 20% & 0.7768 & 0.6429 & 0.9193 & 20.5000 & 0.1424 \\
+RAPT & covariate & 30% & 0.7626 & 0.5921 & 0.9051 & 20.5000 & 0.1425 \\
+RAPT & covariate & 50% & 0.8318 & 0.6875 & 0.9077 & 20.5000 & 0.0759 \\
+RAPT & covariate & 100% & 0.9479 & 0.5000 & 1.0000 & 13.5000 & -0.1525 \\
+RAPT-Enhanced & covariate & 10% & 0.7018 & 0.5714 & 0.8515 & 20.5000 & 0.1498 \\
+RAPT-Enhanced & covariate & 20% & 0.7768 & 0.6429 & 0.9193 & 20.5000 & 0.1424 \\
+RAPT-Enhanced & covariate & 30% & 0.7626 & 0.5921 & 0.9051 & 20.5000 & 0.1425 \\
+RAPT-Enhanced & covariate & 50% & 0.8318 & 0.6875 & 0.9077 & 20.5000 & 0.0759 \\
+RAPT-Enhanced & covariate & 100% & 0.9479 & 0.5000 & 1.0000 & 13.5000 & -0.1525 \\
+Frozen & concept & 10% & 1.0000 & 0.5067 & 0.6395 & 40.0000 & -0.3605 \\
+Frozen & concept & 20% & 1.0000 & 0.4333 & 0.6188 & 40.0000 & -0.3812 \\
+Frozen & concept & 30% & 1.0000 & 0.4333 & 0.6188 & 40.0000 & -0.3812 \\
+Frozen & concept & 50% & 1.0000 & 0.2143 & 0.4913 & 40.0000 & -0.5087 \\
+Frozen & concept & 100% & 1.0000 & 0.1667 & 0.4483 & 40.0000 & -0.5517 \\
+Event-Driven & concept & 10% & 1.0000 & 0.6381 & 0.7778 & 40.0000 & -0.2222 \\
+Event-Driven & concept & 20% & 1.0000 & 0.6305 & 0.8262 & 40.0000 & -0.1738 \\
+Event-Driven & concept & 30% & 1.0000 & 0.6305 & 0.8262 & 40.0000 & -0.1738 \\
+Event-Driven & concept & 50% & 1.0000 & 0.3232 & 0.5266 & 40.0000 & -0.4734 \\
+Event-Driven & concept & 100% & 1.0000 & 0.1667 & 0.4483 & 40.0000 & -0.5517 \\
+Full Retraining & concept & 10% & 1.0000 & 0.5067 & 0.6395 & 40.0000 & -0.3605 \\
+Full Retraining & concept & 20% & 1.0000 & 0.4333 & 0.6188 & 40.0000 & -0.3812 \\
+Full Retraining & concept & 30% & 1.0000 & 0.4333 & 0.6188 & 40.0000 & -0.3812 \\
+Full Retraining & concept & 50% & 1.0000 & 0.2143 & 0.4913 & 40.0000 & -0.5087 \\
+Full Retraining & concept & 100% & 1.0000 & 0.1667 & 0.4483 & 40.0000 & -0.5517 \\
+RAPT & concept & 10% & 1.0000 & 0.5067 & 0.6395 & 40.0000 & -0.3605 \\
+RAPT & concept & 20% & 1.0000 & 0.4333 & 0.6188 & 40.0000 & -0.3812 \\
+RAPT & concept & 30% & 1.0000 & 0.4333 & 0.6188 & 40.0000 & -0.3812 \\
+RAPT & concept & 50% & 1.0000 & 0.2143 & 0.4913 & 40.0000 & -0.5087 \\
+RAPT & concept & 100% & 1.0000 & 0.1667 & 0.4483 & 40.0000 & -0.5517 \\
+RAPT-Enhanced & concept & 10% & 1.0000 & 0.5067 & 0.6395 & 40.0000 & -0.3605 \\
+RAPT-Enhanced & concept & 20% & 1.0000 & 0.4333 & 0.6188 & 40.0000 & -0.3812 \\
+RAPT-Enhanced & concept & 30% & 1.0000 & 0.4333 & 0.6188 & 40.0000 & -0.3812 \\
+RAPT-Enhanced & concept & 50% & 1.0000 & 0.2143 & 0.4913 & 40.0000 & -0.5087 \\
+RAPT-Enhanced & concept & 100% & 1.0000 & 0.1667 & 0.4483 & 40.0000 & -0.5517 \\
+Frozen & recurring & 10% & 1.0000 & 0.5556 & 1.0000 & 10.6000 & -0.0456 \\
+Frozen & recurring & 20% & 1.0000 & 0.4167 & 1.0000 & 14.6000 & -0.1204 \\
+Frozen & recurring & 30% & 1.0000 & 0.4167 & 1.0000 & 14.6000 & -0.1204 \\
+Frozen & recurring & 50% & 1.0000 & 0.3750 & 0.9467 & 23.2000 & -0.2667 \\
+Frozen & recurring & 100% & 1.0000 & 0.3036 & 0.5187 & 40.0000 & -0.4813 \\
+Event-Driven & recurring & 10% & 1.0000 & 0.5556 & 1.0000 & 10.6000 & -0.0456 \\
+Event-Driven & recurring & 20% & 1.0000 & 0.5000 & 1.0000 & 13.8000 & -0.1229 \\
+Event-Driven & recurring & 30% & 1.0000 & 0.5000 & 1.0000 & 13.8000 & -0.1229 \\
+Event-Driven & recurring & 50% & 1.0000 & 0.3889 & 0.8713 & 27.4000 & -0.2277 \\
+Event-Driven & recurring & 100% & 1.0000 & 0.2560 & 0.5540 & 40.0000 & -0.4460 \\
+Full Retraining & recurring & 10% & 1.0000 & 0.5556 & 1.0000 & 10.6000 & -0.0704 \\
+Full Retraining & recurring & 20% & 1.0000 & 0.3750 & 1.0000 & 17.0000 & -0.1605 \\
+Full Retraining & recurring & 30% & 1.0000 & 0.3750 & 1.0000 & 17.0000 & -0.1605 \\
+Full Retraining & recurring & 50% & 1.0000 & 0.3750 & 0.9373 & 23.2000 & -0.2603 \\
+Full Retraining & recurring & 100% & 1.0000 & 0.3393 & 0.5578 & 40.0000 & -0.4422 \\
+RAPT & recurring & 10% & 1.0000 & 0.5556 & 1.0000 & 10.6000 & -0.0456 \\
+RAPT & recurring & 20% & 1.0000 & 0.4167 & 1.0000 & 14.6000 & -0.1204 \\
+RAPT & recurring & 30% & 1.0000 & 0.4167 & 1.0000 & 14.6000 & -0.1204 \\
+RAPT & recurring & 50% & 1.0000 & 0.3750 & 0.9467 & 23.2000 & -0.2667 \\
+RAPT & recurring & 100% & 1.0000 & 0.3036 & 0.5187 & 40.0000 & -0.4813 \\
+RAPT-Enhanced & recurring & 10% & 1.0000 & 0.5556 & 1.0000 & 10.6000 & -0.0456 \\
+RAPT-Enhanced & recurring & 20% & 1.0000 & 0.4167 & 1.0000 & 14.6000 & -0.1204 \\
+RAPT-Enhanced & recurring & 30% & 1.0000 & 0.4167 & 1.0000 & 14.6000 & -0.1204 \\
+RAPT-Enhanced & recurring & 50% & 1.0000 & 0.3750 & 1.0000 & 19.0000 & -0.2510 \\
+RAPT-Enhanced & recurring & 100% & 1.0000 & 0.3036 & 0.5249 & 40.0000 & -0.4751 \\
+\bottomrule
+\end{tabular}
+\end{table}

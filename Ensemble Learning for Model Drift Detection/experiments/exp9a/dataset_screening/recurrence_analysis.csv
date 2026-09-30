@@ -1,0 +1,4 @@
+unique_regimes,repeated_regimes,recurrence_events,avg_recurrence_distance_windows,mean_feature_wasserstein_between_visits,recurrence_fraction,samples_per_recurrence,dataset
+3,3,14,29.14,0.2169,0.08,12.79,5G Campus QoS
+12,12,168,10.93,0.1705,1.0,1.07,UGR'16
+3,3,17,21.65,0.4761,0.095,10.71,NordicDat

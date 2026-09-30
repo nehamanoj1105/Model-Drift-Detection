@@ -1,0 +1,11 @@
+Dataset,Model,Macro-F1,Accuracy,Adapt CPU (s),Retrains
+9A UGR'16 (binary anomaly),Frozen,0.9690 +/- 0.0029,0.9899 +/- 0.0007,0.000,0.0
+9A UGR'16 (binary anomaly),Event-Driven,0.8972 +/- 0.0277,0.9898 +/- 0.0013,0.575,3.0
+9A UGR'16 (binary anomaly),Full Retraining,0.9595 +/- 0.0012,0.9873 +/- 0.0007,23.632,144.0
+9A UGR'16 (binary anomaly),RAPT,0.8360 +/- 0.0262,0.9635 +/- 0.0182,1.971,11.0
+9A UGR'16 (binary anomaly),RAPT-Enhanced,0.9276 +/- 0.0123,0.9880 +/- 0.0017,2.718,11.0
+9B 5G latency QoS (3-class),Frozen,0.8961 +/- 0.0099,0.9075 +/- 0.0061,0.000,0.0
+9B 5G latency QoS (3-class),Event-Driven,0.8903 +/- 0.0107,0.9055 +/- 0.0060,1.041,11.0
+9B 5G latency QoS (3-class),Full Retraining,0.9027 +/- 0.0059,0.9145 +/- 0.0045,0.764,9.0
+9B 5G latency QoS (3-class),RAPT,0.8894 +/- 0.0110,0.9025 +/- 0.0068,0.396,3.0
+9B 5G latency QoS (3-class),RAPT-Enhanced,0.8915 +/- 0.0117,0.9055 +/- 0.0076,0.861,3.0

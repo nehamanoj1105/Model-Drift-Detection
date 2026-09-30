@@ -4,3 +4,6 @@
 # Large datasets
 **/exp9/data/*_owd_Packets_with_IATs.csv
 data/ton_iot/Train_Test_datasets.zip
+# Experiment 9A third-party datasets (see experiments/exp9a/data/DATASETS.md)
+**/exp9a/data/ugr16/*.mat
+**/exp9a/data/nordicdat/*.csv

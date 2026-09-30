@@ -1,0 +1,19 @@
+Experiment 9B — Scientific Integrity Checks
+initial_train_windows = 99
+
+[PASS] Same seeds across experiments — [42, 43, 44, 45, 46]
+[PASS] Same window size (500 packets) — 500
+[PASS] Same drift levels — [0.1, 0.2, 0.3, 0.5, 1.0]
+[PASS] covariate: chronological window ids
+[PASS] concept: chronological window ids
+[PASS] recurring: chronological window ids
+[PASS] Concept: initial training prefix untouched
+[PASS] Concept: pre-drift block unchanged
+[PASS] Concept: post-drift is a permutation of P(X) (marginals preserved) — affected=['median_latency', 'p90_latency', 'p95_latency', 'mean_latency', 'std_latency']
+[PASS] Covariate: labels unchanged from source regimes — match_rate=1.0000
+[PASS] Covariate uses mixed-provenance post block, concept uses permutation
+[PASS] Covariate: 2 drift points (2 transitions) — [129, 279]
+[PASS] Concept: 1 drift point — [129]
+[PASS] Raw covariate per-window saved for all seeds
+[PASS] Raw covariate per-window saved for all levels
+[PASS] RAPT algorithm unmodified (no variant symbols)

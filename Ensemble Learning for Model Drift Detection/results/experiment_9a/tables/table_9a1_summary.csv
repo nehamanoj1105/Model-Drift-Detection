@@ -1,0 +1,6 @@
+Model,Macro_F1,Accuracy,Precision,Recall,Adapt_CPU_s,Retrains,Reuse_events,Trees_trained,Trees_reused
+Frozen,0.2374 ± 0.0011,0.3431,0.2991,0.2554,0.0000,0,0,100,0
+Event-Driven,0.2223 ± 0.0026,0.3523,0.2947,0.3175,0.7883,4,0,500,0
+Full_Retraining,0.3721 ± 0.0022,0.4991,0.4678,0.4231,1.7586,9,0,1000,0
+RAPT,0.2972 ± 0.0036,0.4306,0.3738,0.3382,0.7113,5,4,600,400
+RAPT-Enhanced,0.3707 ± 0.0032,0.5047,0.4552,0.4133,2.2172,5,4,1200,400

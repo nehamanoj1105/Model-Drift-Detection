@@ -1,0 +1,4 @@
+Dataset,Samples,Usable_samples,Features,Target,Temporal_field,Classes,Regimes,Total_windows,Window_size,Initial_train_windows,Missing_pct,Duplicate_rows,Chronological_span,File_size_MB
+5G Campus QoS,1799,1790,19,3-class next-window p90-delay QoS (GOOD/DEGRADED/BAD),_timestamp,3,3,179,10,36,0.0,0,1720177327..1720212213,0.57
+UGR'16,43200,43200,134,binary anomaly: any non-blacklist attack minute in window,obs_lt (minute timestamp string),2,12,180,240,36,0.0,0,201607280000..201608262359,27.94
+NordicDat,91455,91000,16,3-class next-window median-delay QoS (prefix thresholds),timestamp,3,3,182,500,36,0.0,1183,1704732134..1710343461,14.29
