@@ -1,0 +1,11 @@
+segment_index,regime_id,start_window,end_window,window_count,is_transition
+0,regime_A,0,49,50,0
+1,regime_B,50,99,50,1
+2,regime_C,100,149,50,1
+3,regime_D,150,199,50,1
+4,regime_A,200,249,50,1
+5,regime_C,250,299,50,1
+6,regime_B,300,349,50,1
+7,regime_D,350,399,50,1
+8,regime_A,400,449,50,1
+9,regime_B,450,499,50,1
