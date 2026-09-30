@@ -13,7 +13,8 @@ ALL_MODELS = MODELS + RAPT_VARIANTS
 COLORS = {
     "Frozen": "#7f7f7f", "Event-Driven": "#1f77b4", "Full Retraining": "#d62728",
     "RAPT_T2": "#2ca02c", "RAPT_T1": "#98df8a", "RAPT_T1_REFIT": "#17becf",
-    "RAPT_FULL": "#9467bd",
+    "RAPT_FULL": "#9467bd", "RAPT_REL_REFIT": "#c5b0d5",
+    "RAPT_REFRESH_W5": "#e377c2", "RAPT_REFRESH_W10": "#f7b6d2",
 }
 plt.rcParams.update({"figure.dpi": 150, "font.size": 10, "axes.grid": True,
                      "grid.alpha": 0.3, "axes.axisbelow": True})
@@ -132,7 +133,8 @@ def fig_regime_f1(w):
 
 def fig_ladder(s):
     """Incremental effect of each mechanism: F1 (left) and adapt CPU (right)."""
-    order = [m for m in ["RAPT_T2", "RAPT_T1", "RAPT_T1_REFIT", "RAPT_FULL"] if m in set(s.method)]
+    order = [m for m in ["RAPT_T2", "RAPT_T1", "RAPT_FULL", "RAPT_REFRESH_W10",
+                         "RAPT_REFRESH_W5"] if m in set(s.method)]
     g = s.groupby("method")[["macro_f1", "adaptation_cpu_sec"]].mean().reindex(order)
     fig, axes = plt.subplots(1, 2, figsize=(10, 4))
     axes[0].plot(order, g["macro_f1"], "o-", color="#9467bd")

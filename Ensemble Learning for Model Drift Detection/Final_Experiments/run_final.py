@@ -164,7 +164,7 @@ def run_seed(stream, seed):
         agg(variant, records, init_cpu, sys_.adaptation_cpu_time,
             sys_.created_policy_count - 1, sys_.trees_trained_count,
             sys_.trees_reused_count, reuse_ev, time.perf_counter() - tw,
-            extra={"parity_refits": sys_.parity_refits})
+            extra={"parity_refits": sys_.parity_refits, "refreshes": sys_.refreshes})
 
     return pd.DataFrame(records), pd.DataFrame(summaries)
 

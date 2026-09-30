@@ -94,7 +94,7 @@ class LadderRAPT:
     """Configurable RAPT. Flags select the mechanisms (see module docstring)."""
 
     def __init__(self, seed=42, use_tier1=False, use_refit=False, use_gate=False,
-                 refit_mode="absolute", rel_drop=0.10,
+                 refit_mode="absolute", rel_drop=0.10, refresh_every=0,
                  anchor_X=None, anchor_y=None, buffer_capacity=1000,
                  gamma=1.0, novelty_threshold=0.65, refit_n=1500,
                  parity_threshold=0.5, parity_window=3):
@@ -104,6 +104,12 @@ class LadderRAPT:
         self.use_gate = use_gate
         self.refit_mode = refit_mode
         self.rel_drop = rel_drop
+        # Bounded periodic refresh: every `refresh_every` windows the ACTIVE
+        # policy is refit on the recent buffer, whether it was reused or newly
+        # trained. This is the mechanism that stops a reused policy from being
+        # frozen for the whole duration of a recurring regime.
+        self.refresh_every = refresh_every
+        self._windows_since_refresh = 0
         self.anchor_X = anchor_X
         self.anchor_y = anchor_y
         self.buffer_capacity = buffer_capacity
@@ -128,6 +134,7 @@ class LadderRAPT:
         self.adaptation_cpu_time = 0.0
         self.cumulative_cpu_time = 0.0
         self.parity_refits = 0
+        self.refreshes = 0
         self._recent_acc = []
         self._base_acc = None
         self._current_reused = False
@@ -193,6 +200,8 @@ class LadderRAPT:
             self._current_reused = False
         self.current_regime_id = new_regime_id
         self._recent_acc = []
+        self._base_acc = None
+        self._windows_since_refresh = 0
         cpu = time.process_time() - t0
         self.cumulative_cpu_time += cpu
         self.adaptation_cpu_time += cpu
@@ -236,6 +245,23 @@ class LadderRAPT:
                         0.15, 0.85))
             else:
                 self.beta = 0.15
+
+        # Bounded periodic refresh of the active policy (the mechanism that
+        # prevents a reused policy from staying frozen across a whole regime).
+        if self.refresh_every and X_buffer is not None and len(X_buffer) > 50:
+            self._windows_since_refresh += 1
+            if self._windows_since_refresh >= self.refresh_every:
+                self.active_ensemble = self._train_policy(X_buffer, y_buffer)
+                self.repository[self.current_regime_id] = (
+                    self.active_ensemble, list(self.active_ensemble.weights))
+                self.trees_trained_count += self.active_ensemble.get_num_trees()
+                self.refreshes += 1
+                self._windows_since_refresh = 0
+                cpu += time.process_time() - t0
+                self.adaptation_cpu_time += cpu
+                self.cumulative_cpu_time += cpu
+                return cpu
+
         if self.use_refit:
             acc = float(np.mean(self.predict(X_win) == np.asarray(y_win)))
             # Track a pre-drift baseline of accuracy for the active policy so the
@@ -267,10 +293,15 @@ class LadderRAPT:
 
 def build_rapt(variant, **kw):
     rel = variant == "RAPT_REL_REFIT"
+    refresh = {"RAPT_REFRESH_W5": 5, "RAPT_REFRESH_W10": 10}.get(variant, 0)
     return LadderRAPT(
-        use_tier1=variant in ("RAPT_T1", "RAPT_T1_REFIT", "RAPT_FULL", "RAPT_REL_REFIT"),
-        use_refit=variant in ("RAPT_T1_REFIT", "RAPT_FULL", "RAPT_REL_REFIT"),
-        use_gate=variant in ("RAPT_FULL", "RAPT_REL_REFIT"),
+        use_tier1=variant in ("RAPT_T1", "RAPT_T1_REFIT", "RAPT_FULL",
+                              "RAPT_REL_REFIT", "RAPT_REFRESH_W5", "RAPT_REFRESH_W10"),
+        use_refit=variant in ("RAPT_T1_REFIT", "RAPT_FULL", "RAPT_REL_REFIT",
+                              "RAPT_REFRESH_W5", "RAPT_REFRESH_W10"),
+        use_gate=variant in ("RAPT_FULL", "RAPT_REL_REFIT",
+                             "RAPT_REFRESH_W5", "RAPT_REFRESH_W10"),
         refit_mode="relative" if rel else "absolute",
+        refresh_every=refresh,
         **kw,
     )

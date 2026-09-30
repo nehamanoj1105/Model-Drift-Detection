@@ -36,7 +36,11 @@ MODELS = ["Frozen", "Event-Driven", "Full Retraining", "RAPT"]
 #   RAPT_REL_REFIT : RAPT_FULL + RELATIVE-drop refit trigger (accuracy drop vs
 #                    pre-drift baseline), which the absolute trigger cannot fire
 #                    on a 3-class stream where degraded policies still score ~0.95
-RAPT_VARIANTS = ["RAPT_T2", "RAPT_T1", "RAPT_T1_REFIT", "RAPT_FULL", "RAPT_REL_REFIT"]
+#   RAPT_REFRESH_W{5,10} : RAPT_FULL + bounded periodic refresh every 5 / 10
+#                    windows, which stops a reused policy staying frozen for the
+#                    whole duration of a recurring regime.
+RAPT_VARIANTS = ["RAPT_T2", "RAPT_T1", "RAPT_T1_REFIT", "RAPT_FULL",
+                 "RAPT_REL_REFIT", "RAPT_REFRESH_W5", "RAPT_REFRESH_W10"]
 
 PROJECT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 EXP9A_DIR = os.path.join(PROJECT_DIR, "experiments", "exp9a")
