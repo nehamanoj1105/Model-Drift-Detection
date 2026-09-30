@@ -52,6 +52,7 @@ RAPT mechanism ladder (each rung adds exactly one mechanism):
 | RAPT_CHEAP | ✔ | ✔ (absolute) | ✔ | periodic, 5 windows, **cheap refit** |
 | RAPT_COMBO | ✔ | ✔ (absolute) | ✔ | relative evidence + cheap refit |
 | RAPT_FLOOR | ✔ | ✔ (absolute) | ✔ | absolute floor + cheap refit |
+| RAPT_INCR | ✔ | ✔ (absolute) | ✔ | incremental (river `learn_one`) blend |
 
 Three refresh *triggers* are compared:
 
@@ -98,6 +99,7 @@ existing ensemble, not guessed (see "Cost drivers" below).
 | **RAPT_CHEAP** | **0.9851 ± 0.0029** | **0.8467** | **2.350** | 4 | 10 | 940 | 22 |
 | RAPT_COMBO | 0.9587 ± 0.0000 | 0.4368 | 3.462 | 4 | 10 | 500 | **0** |
 | RAPT_FLOOR | 0.9797 ± 0.0050 | 0.5829 | 2.620 | 4 | 10 | 652 | 7.6 |
+| RAPT_INCR | 0.9549 ± 0.0020 | 0.5813 | 2.921 | 4 | 10 | 500 | 0 |
 
 ### Statistical comparison vs Full Retraining (paired Wilcoxon over seeds)
 
@@ -116,6 +118,7 @@ existing ensemble, not guessed (see "Cost drivers" below).
 | **RAPT_CHEAP** | **+0.0022** | [−0.0036, +0.0080] | +0.47 | **0.3125** |
 | RAPT_COMBO | −0.0242 | [−0.0271, −0.0212] | −10.32 | 0.0625 |
 | RAPT_FLOOR | −0.0032 | [−0.0108, +0.0043] | −0.53 | 0.3750 |
+| RAPT_INCR | −0.0279 | [−0.0305, −0.0254] | −13.51 | 0.0625 |
 
 p = 0.0625 is the smallest two-sided Wilcoxon p attainable with n = 5 seeds
 (2/2^5). **Nothing here is significant at α = 0.05.** RAPT_CHEAP (p = 0.31) and
@@ -169,9 +172,19 @@ followed by reducing the *number* of refreshes.
    variance, 3.2× the adaptation CPU of RAPT_CHEAP (2.72 s vs 0.85 s), and the
    worst runtime of any model (4.93 s).
 7. **Cost ordering (adaptation CPU):** Frozen 0.00 < Event-Driven 0.10 <
-   RAPT_T2 0.23 < RAPT_T1_REFIT 0.23 < RAPT_FULL 0.43 < RAPT_FLOOR 0.58 <
-   RAPT_CHEAP 0.85 < RAPT_REFRESH_W10 0.98 < Full Retraining 1.40 <
-   RAPT_REFRESH_W5 2.72 s.
+   RAPT_T2 0.23 < RAPT_T1_REFIT 0.23 < RAPT_FULL 0.43 < RAPT_INCR 0.58 ≈
+   RAPT_FLOOR 0.59 < RAPT_CHEAP 0.85 < RAPT_REFRESH_W10 0.96 <
+   Full Retraining 1.41 < RAPT_REFRESH_W5 2.72 s.
+8. **Incremental update is strictly dominated (negative result).** RAPT_INCR
+   scores 0.9549 ± 0.0020 — *worse* than the cheaper RAPT_FULL (0.9587) — while
+   costing *more* adaptation CPU (0.58 s vs 0.43 s). Two separate probes explain
+   why: (a) a standalone river Hoeffding ensemble reaches only ~0.945 F1 on this
+   stream versus ~0.98 for the batch ensemble, and adding trees does not help
+   (1 tree 0.946, 3 trees 0.945, 10 trees 0.941) while cost grows linearly; and
+   (b) blending that learner into the reused batch policy at weight 0.5 *lowers*
+   F1 to 0.963, while a weight small enough to be harmless (0.3) leaves the
+   result unchanged. The mechanism cannot replace the batch refresh and cannot
+   usefully supplement it on this stream.
 
 ## 6. Interpretation
 
@@ -205,6 +218,12 @@ trade-off **on this stream**, not that RAPT is generally cheaper and better.
   documented hyper-parameter, not a universal constant.
 - Refresh intervals / thresholds were chosen as a small sweep, not optimised.
 - The similarity gate uses a normalized mean-feature fingerprint with γ = 1.0.
+- **Incremental update does not pay off on this stream.** It was the most
+  promising cost lever on paper (O(1) per sample, no rebuild), but the river
+  Hoeffding ensemble is ~0.035 F1 weaker than the batch ensemble, so blending it
+  in either hurts (large weight) or does nothing (small weight) while still
+  costing CPU. This may be specific to a 179-window, 3-class, 19-feature stream;
+  on a longer stream with more incremental signal it could behave differently.
 - Regime labels are treated as given; no detector-driven regime discovery.
 - RAPT is **not** modified in the existing 9A/9B experiments; this folder is a
   separate ablation, and the "RAPT" in the main experiments remains the Tier-2

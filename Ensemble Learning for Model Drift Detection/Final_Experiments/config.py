@@ -49,9 +49,12 @@ MODELS = ["Frozen", "Event-Driven", "Full Retraining", "RAPT"]
 #                    (rolling acc < 0.97), which catches a reused policy that
 #                    was always bad -- something the relative evidence trigger
 #                    cannot see because its baseline decays down to match.
+#   RAPT_INCR      : incremental update (river learn_one) blended into the
+#                    reused batch policy, replacing the batch refresh.
 RAPT_VARIANTS = ["RAPT_T2", "RAPT_T1", "RAPT_T1_REFIT", "RAPT_FULL",
                  "RAPT_REL_REFIT", "RAPT_REFRESH_W5", "RAPT_REFRESH_W10",
-                 "RAPT_EVIDENCE", "RAPT_CHEAP", "RAPT_COMBO", "RAPT_FLOOR"]
+                 "RAPT_EVIDENCE", "RAPT_CHEAP", "RAPT_COMBO", "RAPT_FLOOR",
+                 "RAPT_INCR"]
 
 PROJECT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 EXP9A_DIR = os.path.join(PROJECT_DIR, "experiments", "exp9a")

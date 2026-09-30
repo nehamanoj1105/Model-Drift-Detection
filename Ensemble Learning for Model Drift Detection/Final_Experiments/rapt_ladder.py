@@ -97,6 +97,7 @@ class LadderRAPT:
                  refit_mode="absolute", rel_drop=0.10, refresh_every=0,
                  refresh_mode="periodic", refresh_trees=50, refresh_buffer=1000,
                  refresh_min_acc=0.97, evidence_window=3,
+                 use_incr=False, incr_weight=0.3,
                  anchor_X=None, anchor_y=None, buffer_capacity=1000,
                  gamma=1.0, novelty_threshold=0.65, refit_n=1500,
                  parity_threshold=0.5, parity_window=3):
@@ -123,6 +124,12 @@ class LadderRAPT:
         self.refresh_buffer = refresh_buffer
         self.refresh_min_acc = refresh_min_acc
         self.evidence_window = evidence_window
+        # Incremental refresh: instead of rebuilding the policy, keep a river
+        # tree updated with learn_one and blend it into the active policy.
+        self.use_incr = use_incr
+        self.incr_weight = incr_weight
+        self._incr = None
+        self._incr_cost = 0.0
         self._windows_since_refresh = 0
         self._acc_hist = []
         self._acc_baseline = None
@@ -168,6 +175,9 @@ class LadderRAPT:
         self.created_policy_count += 1
         if self.use_tier1:
             self.online.warm_start(X_init, y_init)
+        if self.use_incr:
+            self._incr = OnlineMicroLearner(seed=self.seed + 777)
+            self._incr.warm_start(X_init, y_init)
         if self.use_gate:
             self.fp = RegimeFingerprint(X_init)
             self.fingerprints[regime_id] = self.fp.extract(X_init)
@@ -237,6 +247,9 @@ class LadderRAPT:
     # -- streaming ----------------------------------------------------------
     def predict_proba(self, X_win):
         p_rapt = self.active_ensemble.predict_proba(X_win)
+        if self.use_incr and self._incr is not None:
+            p_inc = self._incr.predict_proba(X_win, self.active_ensemble.classes_)
+            return (1.0 - self.incr_weight) * p_rapt + self.incr_weight * p_inc
         if not self.use_tier1 or self.beta < 1e-3:
             return p_rapt
         p_on = self.online.predict_proba(X_win, self.active_ensemble.classes_)
@@ -262,6 +275,14 @@ class LadderRAPT:
                         0.15, 0.85))
             else:
                 self.beta = 0.15
+
+        if self.use_incr and self._incr is not None:
+            t_inc = time.process_time()
+            self._incr.learn_window(X_win, y_win)
+            inc_cpu = time.process_time() - t_inc
+            cpu += inc_cpu
+            self.adaptation_cpu_time += inc_cpu
+            self.cumulative_cpu_time += inc_cpu
 
         # Bounded refresh of the active policy (the mechanism that prevents a
         # reused policy from staying frozen across a whole regime).
@@ -348,13 +369,13 @@ def build_rapt(variant, **kw):
     # Each rung must add EXACTLY one mechanism on top of the previous rung.
     tier1 = variant in ("RAPT_T1", "RAPT_T1_REFIT", "RAPT_FULL", "RAPT_REL_REFIT",
                         "RAPT_REFRESH_W5", "RAPT_REFRESH_W10", "RAPT_EVIDENCE",
-                        "RAPT_CHEAP", "RAPT_COMBO", "RAPT_FLOOR")
+                        "RAPT_CHEAP", "RAPT_COMBO", "RAPT_FLOOR", "RAPT_INCR")
     refit = variant in ("RAPT_T1_REFIT", "RAPT_FULL", "RAPT_REL_REFIT",
                         "RAPT_REFRESH_W5", "RAPT_REFRESH_W10", "RAPT_EVIDENCE",
-                        "RAPT_CHEAP", "RAPT_COMBO", "RAPT_FLOOR")
+                        "RAPT_CHEAP", "RAPT_COMBO", "RAPT_FLOOR", "RAPT_INCR")
     gate = variant in ("RAPT_FULL", "RAPT_REL_REFIT", "RAPT_REFRESH_W5",
                        "RAPT_REFRESH_W10", "RAPT_EVIDENCE", "RAPT_CHEAP",
-                       "RAPT_COMBO", "RAPT_FLOOR")
+                       "RAPT_COMBO", "RAPT_FLOOR", "RAPT_INCR")
     return LadderRAPT(
         use_tier1=tier1,
         use_refit=refit,
@@ -364,5 +385,6 @@ def build_rapt(variant, **kw):
         refresh_mode=("evidence" if evidence else "absolute" if floor else "periodic"),
         refresh_trees=(10 if cheap else 50),
         refresh_buffer=(300 if cheap else 1000),
+        use_incr=(variant == "RAPT_INCR"),
         **kw,
     )
