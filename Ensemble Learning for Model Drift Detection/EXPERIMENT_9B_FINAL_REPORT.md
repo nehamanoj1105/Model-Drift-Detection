@@ -359,7 +359,7 @@ Per-phase F1 (severity 100%):
 | Severity | Covariate drift | Concept drift |
 | :---: | :--- | :--- |
 | 10% | 4/40 post-drift windows drawn from the target regime | top 1 predictive features rank-reversed |
-| 20% | 8/40 post-drift windows drawn from the target regime | top 1 predictive features rank-reversed |
+| 20% | 8/40 post-drift windows drawn from the target regime | top 2 predictive features rank-reversed |
 | 30% | 12/40 post-drift windows drawn from the target regime | top 2 predictive features rank-reversed |
 | 50% | 20/40 post-drift windows drawn from the target regime | top 3 predictive features rank-reversed |
 | 100% | 40/40 post-drift windows drawn from the target regime | top 5 predictive features rank-reversed |

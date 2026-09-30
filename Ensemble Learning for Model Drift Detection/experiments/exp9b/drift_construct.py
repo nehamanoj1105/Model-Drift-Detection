@@ -28,7 +28,10 @@ transform: the drift point and severity are fixed by configuration.
 import numpy as np
 import pandas as pd
 
-from exp9b_drift_config import INITIAL_TRAIN_FRACTION, CONCEPT_DRIFT_FEATURE_COUNT
+from exp9b_drift_config import (
+    INITIAL_TRAIN_FRACTION, CONCEPT_DRIFT_FEATURE_COUNT,
+    CONCEPT_DRIFT_MAX_AFFECTED,
+)
 from preprocessing_9b import FEATURE_COLS
 
 
@@ -258,6 +261,7 @@ def select_affected_features(df, target_regime_id, level, ranked=None):
     tgt = get_regime_windows(df, target_regime_id)
     varying = [f for f in ranked if float(np.std(tgt[f].values)) > 1e-9]
     k = max(1, int(np.ceil(level * len(ranked))))
+    k = min(k, CONCEPT_DRIFT_MAX_AFFECTED)
     return varying[:k]
 
 
