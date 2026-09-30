@@ -1,0 +1,221 @@
+% =========================================================================
+% Results_Final -- final Results-section tables for the IEEE RAPT manuscript.
+% All values are copied verbatim from the authoritative generated result
+% files listed in the header comment of each table. Do not hand-edit values.
+% =========================================================================
+
+% -------------------------------------------------------------------------
+% Table 1 -- Overall predictive performance.
+% Source: experiments/exp9a/tables/table9a_main.csv        (5G Campus QoS, UGR'16, NordicDat)
+%         results/experiment_9b/natural_drift/summary.csv  (9B 5G latency QoS, 3-class)
+% Protocol: prequential Test-Then-Train, seeds [42,43,44,45,46], mean +/- sd.
+% -------------------------------------------------------------------------
+\begin{table*}[t]
+\centering
+\caption{Overall predictive performance across the four evaluated datasets
+(mean $\pm$ standard deviation over seeds 42--46, prequential Test-Then-Train).
+RAPT is the Tier-2 policy-reuse algorithm; RAPT-Enhanced adds the existing
+Enhanced-Hybrid-RAPT mechanisms.}
+\label{tab:results_main_performance}
+\begin{tabular}{llcccc}
+\toprule
+Dataset & Model & Accuracy & Macro-F1 & Precision & Recall \\
+\midrule
+\multirow{5}{*}{5G Campus QoS}
+ & Frozen          & 0.9822 $\pm$ 0.0006 & 0.9364 $\pm$ 0.0023 & 0.9379 $\pm$ 0.0025 & 0.9377 $\pm$ 0.0017 \\
+ & Event-Driven    & 0.9908 $\pm$ 0.0003 & 0.9636 $\pm$ 0.0006 & 0.9637 $\pm$ 0.0008 & 0.9646 $\pm$ 0.0002 \\
+ & Full Retraining & 0.9951 $\pm$ 0.0000 & 0.9836 $\pm$ 0.0013 & 0.9838 $\pm$ 0.0015 & 0.9843 $\pm$ 0.0012 \\
+ & RAPT            & 0.9838 $\pm$ 0.0003 & 0.9381 $\pm$ 0.0016 & 0.9393 $\pm$ 0.0017 & 0.9392 $\pm$ 0.0016 \\
+ & RAPT-Enhanced   & 0.9838 $\pm$ 0.0003 & 0.9381 $\pm$ 0.0016 & 0.9393 $\pm$ 0.0017 & 0.9392 $\pm$ 0.0016 \\
+\midrule
+\multirow{5}{*}{UGR'16}
+ & Frozen          & 0.9899 $\pm$ 0.0007 & 0.9690 $\pm$ 0.0029 & 0.9795 $\pm$ 0.0030 & 0.9662 $\pm$ 0.0028 \\
+ & Event-Driven    & 0.9898 $\pm$ 0.0013 & 0.8972 $\pm$ 0.0277 & 0.9042 $\pm$ 0.0269 & 0.8955 $\pm$ 0.0280 \\
+ & Full Retraining & 0.9873 $\pm$ 0.0007 & 0.9595 $\pm$ 0.0012 & 0.9726 $\pm$ 0.0014 & 0.9580 $\pm$ 0.0015 \\
+ & RAPT            & 0.9635 $\pm$ 0.0182 & 0.8360 $\pm$ 0.0262 & 0.8527 $\pm$ 0.0205 & 0.8336 $\pm$ 0.0294 \\
+ & RAPT-Enhanced   & 0.9880 $\pm$ 0.0017 & 0.9276 $\pm$ 0.0123 & 0.9375 $\pm$ 0.0117 & 0.9251 $\pm$ 0.0123 \\
+\midrule
+\multirow{5}{*}{NordicDat}
+ & Frozen          & 0.4770 $\pm$ 0.0123 & 0.2779 $\pm$ 0.0224 & 0.4215 $\pm$ 0.0226 & 0.2487 $\pm$ 0.0229 \\
+ & Event-Driven    & 0.4583 $\pm$ 0.0367 & 0.2547 $\pm$ 0.0177 & 0.3909 $\pm$ 0.0208 & 0.2274 $\pm$ 0.0151 \\
+ & Full Retraining & 0.5694 $\pm$ 0.0075 & 0.4227 $\pm$ 0.0299 & 0.4938 $\pm$ 0.0233 & 0.4085 $\pm$ 0.0293 \\
+ & RAPT            & 0.6172 $\pm$ 0.0127 & 0.3818 $\pm$ 0.0184 & 0.4703 $\pm$ 0.0185 & 0.3582 $\pm$ 0.0192 \\
+ & RAPT-Enhanced   & 0.5677 $\pm$ 0.0222 & 0.3783 $\pm$ 0.0321 & 0.4600 $\pm$ 0.0307 & 0.3614 $\pm$ 0.0318 \\
+\midrule
+\multirow{5}{*}{9B 5G latency QoS (3-class)}
+ & Frozen          & 0.9075 $\pm$ 0.0061 & 0.8961 $\pm$ 0.0099 & 0.9314 $\pm$ 0.0083 & 0.8798 $\pm$ 0.0085 \\
+ & Event-Driven    & 0.9055 $\pm$ 0.0060 & 0.8903 $\pm$ 0.0107 & 0.9475 $\pm$ 0.0085 & 0.8688 $\pm$ 0.0083 \\
+ & Full Retraining & 0.9145 $\pm$ 0.0045 & 0.9027 $\pm$ 0.0059 & 0.9478 $\pm$ 0.0053 & 0.8829 $\pm$ 0.0055 \\
+ & RAPT            & 0.9025 $\pm$ 0.0068 & 0.8894 $\pm$ 0.0110 & 0.9258 $\pm$ 0.0103 & 0.8737 $\pm$ 0.0092 \\
+ & RAPT-Enhanced   & 0.9055 $\pm$ 0.0076 & 0.8915 $\pm$ 0.0117 & 0.9348 $\pm$ 0.0106 & 0.8737 $\pm$ 0.0098 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+% -------------------------------------------------------------------------
+% Table 2 -- Computational cost.
+% Source: experiments/exp9a/tables/table9a_main.csv, results/experiment_9b/natural_drift/summary.csv
+% Adapt CPU = time spent inside adaptation routines only.
+% Runtime    = total wall/process time of the streaming evaluation.
+% Reuse events are RAPT-specific (checkpoint reuses); "---" = not applicable.
+% -------------------------------------------------------------------------
+\begin{table*}[t]
+\centering
+\caption{Adaptation and runtime cost. Adapt CPU measures time inside adaptation
+routines only; Runtime is the total streaming-evaluation time and also contains
+feature construction and prediction. Reuse events are RAPT-specific and denote
+reuse of a stored regime policy instead of retraining.}
+\label{tab:results_cost}
+\begin{tabular}{llcccc}
+\toprule
+Dataset & Model & Adapt CPU (s) & Runtime (s) & Retrains & Reuse events \\
+\midrule
+\multirow{5}{*}{5G Campus QoS}
+ & Frozen          & 0.0000 $\pm$ 0.0000  & 1.2482 $\pm$ 0.0126 & 0.0  & --- \\
+ & Event-Driven    & 0.1080 $\pm$ 0.0062  & 1.3926 $\pm$ 0.0187 & 1.0  & --- \\
+ & Full Retraining & 1.4008 $\pm$ 0.0103  & 2.6677 $\pm$ 0.0158 & 14.0 & --- \\
+ & RAPT            & 0.2292 $\pm$ 0.0057  & 1.4931 $\pm$ 0.0181 & 2.0  & 12.0 \\
+ & RAPT-Enhanced   & 0.2337 $\pm$ 0.0147  & 2.1046 $\pm$ 0.0468 & 2.0  & 12.0 \\
+\midrule
+\multirow{5}{*}{UGR'16}
+ & Frozen          & 0.0000 $\pm$ 0.0000  & 2.4914 $\pm$ 0.0201  & 0.0   & --- \\
+ & Event-Driven    & 0.5754 $\pm$ 0.0066  & 3.1303 $\pm$ 0.0293  & 3.0   & --- \\
+ & Full Retraining & 23.6318 $\pm$ 0.3942 & 26.2627 $\pm$ 0.4072 & 144.0 & --- \\
+ & RAPT            & 1.9711 $\pm$ 0.0198  & 4.4990 $\pm$ 0.0165  & 11.0  & 133.0 \\
+ & RAPT-Enhanced   & 2.7182 $\pm$ 0.0243  & 5.9329 $\pm$ 0.0465  & 11.0  & 133.0 \\
+\midrule
+\multirow{5}{*}{NordicDat}
+ & Frozen          & 0.0000 $\pm$ 0.0000 & 2.5488 $\pm$ 0.0128 & 0.0  & --- \\
+ & Event-Driven    & 0.2533 $\pm$ 0.0474 & 2.8435 $\pm$ 0.0490 & 2.2  & --- \\
+ & Full Retraining & 2.2034 $\pm$ 0.0100 & 4.7593 $\pm$ 0.0193 & 18.0 & --- \\
+ & RAPT            & 0.2594 $\pm$ 0.0021 & 2.8257 $\pm$ 0.0331 & 2.0  & 16.0 \\
+ & RAPT-Enhanced   & 2.6492 $\pm$ 0.2561 & 5.8812 $\pm$ 0.2327 & 2.0  & 16.0 \\
+\midrule
+\multirow{5}{*}{9B 5G latency QoS (3-class)}
+ & Frozen          & 0.0000 $\pm$ 0.0000 & 1.7862 $\pm$ 0.0097 & 0.0  & --- \\
+ & Event-Driven    & 1.0406 $\pm$ 0.1764 & 2.7561 $\pm$ 0.1797 & 11.0 & --- \\
+ & Full Retraining & 0.7636 $\pm$ 0.0072 & 2.4689 $\pm$ 0.0243 & 9.0  & --- \\
+ & RAPT            & 0.3955 $\pm$ 0.0345 & 2.1112 $\pm$ 0.0394 & 3.0  & 6.0 \\
+ & RAPT-Enhanced   & 0.8609 $\pm$ 0.0714 & 2.5710 $\pm$ 0.0660 & 3.0  & 6.0 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+% -------------------------------------------------------------------------
+% Table 3 -- RAPT efficiency ablation.
+% Source: Final_Experiments/results/tables/table_final_main.csv (5G Campus QoS, seeds 42--46)
+% Refreshes = bounded refresh events that rebuild the active policy in place.
+% Full Retraining is included as an accuracy/cost reference row.
+% -------------------------------------------------------------------------
+\begin{table}[t]
+\centering
+\caption{RAPT efficiency ablation on the 5G Campus QoS stream (mean over seeds
+42--46). Each variant adds one mechanism to the base ladder. ``Refreshes'' counts
+bounded in-place policy refreshes; RAPT-Incremental instead updates a river
+Hoeffding learner online. Full Retraining is shown as a reference row.}
+\label{tab:results_rapt_ablation}
+\begin{tabular}{lcccc}
+\toprule
+Variant & Macro-F1 & Adapt CPU (s) & Runtime (s) & Refreshes \\
+\midrule
+Full Retraining (ref.) & 0.9829 $\pm$ 0.0023 & 1.4063 & 2.696 & --- \\
+RAPT-Full              & 0.9587 $\pm$ 0.0000 & 0.4283 & 2.731 & 0 \\
+RAPT-Refresh-W10       & 0.9774 $\pm$ 0.0004 & 0.9618 & 3.229 & 5 \\
+RAPT-Evidence          & 0.9587 $\pm$ 0.0000 & 0.4260 & 3.414 & 0 \\
+RAPT-Floor             & 0.9797 $\pm$ 0.0050 & 0.5865 & 2.604 & 7.6 \\
+RAPT-Cheap             & \textbf{0.9851} $\pm$ 0.0029 & \textbf{0.8477} & \textbf{2.330} & 22 \\
+RAPT-Incremental       & 0.9549 $\pm$ 0.0020 & 0.5813 & 2.921 & 0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% -------------------------------------------------------------------------
+% Table 5 -- Statistical comparisons.
+% Source: experiments/exp9a/tables/statistics_9a.csv          (per-window, 9A)
+%         results/experiment_9b/natural_drift/statistical_tests.csv (per-window, 9B)
+%         Final_Experiments/results/tables/table_final_stats.csv (per-seed, ablation)
+% Paired Wilcoxon signed-rank; effect size = Cohen's d.
+% "n.s." = not significant at alpha = 0.05. CI shown where available.
+% -------------------------------------------------------------------------
+\begin{table*}[t]
+\centering
+\caption{Statistical comparisons. Paired Wilcoxon signed-rank tests with Cohen's
+$d$. The 9A and 9B rows use per-window pairing; the ablation rows use per-seed
+pairing ($n=5$, whose smallest attainable two-sided $p$ is $0.0625$). ``n.s.''
+denotes not significant at $\alpha = 0.05$; a non-significant result is not
+evidence that the models are equivalent.}
+\label{tab:results_stats}
+\begin{tabular}{llcccl}
+\toprule
+Dataset & Comparison & $\Delta$ & $p$ & Cohen's $d$ & Sig. \\
+\midrule
+\multirow{3}{*}{5G Campus QoS}
+ & RAPT vs Full Retraining          & $-0.0455$ & $2.6\times10^{-4}$ & $-0.32$ & yes \\
+ & RAPT-Enhanced vs RAPT            & $0.0000$  & ---                & $0.00$  & n.s. \\
+ & RAPT vs Event-Driven             & $-0.0255$ & $0.0057$           & $-0.23$ & yes \\
+\midrule
+\multirow{4}{*}{UGR'16}
+ & RAPT vs Full Retraining          & $-0.1236$ & $2.6\times10^{-11}$ & $-0.67$ & yes \\
+ & RAPT-Enhanced vs Full Retraining & $-0.0319$ & $0.0031$            & $-0.25$ & yes \\
+ & RAPT-Enhanced vs RAPT            & $+0.0917$ & $5.4\times10^{-9}$  & $+0.56$ & yes \\
+ & RAPT vs Event-Driven             & $-0.0612$ & $2.6\times10^{-4}$  & $-0.30$ & yes \\
+\midrule
+\multirow{3}{*}{NordicDat}
+ & RAPT vs Full Retraining          & $-0.0409$ & $0.2552$ & $-0.12$ & n.s. \\
+ & RAPT-Enhanced vs Full Retraining & $-0.0444$ & $0.2389$ & $-0.13$ & n.s. \\
+ & RAPT vs Event-Driven             & $+0.1271$ & $1.8\times10^{-4}$ & $+0.36$ & yes \\
+\midrule
+\multirow{3}{*}{9B 5G latency QoS}
+ & RAPT vs Full Retraining (acc.)   & $-0.014$  & $0.0043$ & $-0.064$ & yes \\
+ & RAPT vs Frozen (acc.)            & $-0.005$  & $0.0075$ & $-0.060$ & yes \\
+ & RAPT vs Event-Driven (acc.)      & $-0.003$  & $0.5637$ & $-0.013$ & n.s. \\
+\midrule
+\multirow{4}{*}{5G Campus QoS (ablation, $n=5$)}
+ & RAPT-Cheap vs Full Retraining    & $+0.0022$ & $0.3125$ & $+0.47$ & n.s. \\
+ & RAPT-Floor vs Full Retraining    & $-0.0032$ & $0.3750$ & $-0.53$ & n.s. \\
+ & RAPT-Full vs Full Retraining     & $-0.0242$ & $0.0625$ & $-10.32$ & n.s. \\
+ & RAPT-Incremental vs Full Retrain.& $-0.0279$ & $0.0625$ & $-13.51$ & n.s. \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+% -------------------------------------------------------------------------
+% Table 4 -- Historical drift-detector comparison.
+% Source: experiments/exp9a/tables/table9a_drift_detectors.csv
+% Detectors are adaptation triggers evaluated inside the same harness; RAPT is
+% the regime-aware policy-reuse model.
+% -------------------------------------------------------------------------
+\begin{table*}[t]
+\centering
+\caption{Comparison against historical drift detectors. Each detector drives the
+same retraining/adaptation harness; RAPT instead performs regime-aware policy
+reuse. ``Adapt. events'' counts drift detections that led to an adaptation.
+Values are mean $\pm$ sd over seeds 42--46.}
+\label{tab:results_detectors}
+\begin{tabular}{llcccc}
+\toprule
+Dataset & Method & Macro-F1 & Accuracy & Adapt CPU (s) & Adapt. events \\
+\midrule
+\multirow{5}{*}{5G Campus QoS}
+ & ADWIN        & 0.9364 $\pm$ 0.0023 & 0.9822 $\pm$ 0.0006 & 0.0000 $\pm$ 0.0000 & 0.0  \\
+ & Page-Hinkley & 0.9364 $\pm$ 0.0023 & 0.9822 $\pm$ 0.0006 & 0.0000 $\pm$ 0.0000 & 0.0  \\
+ & EDMA         & 0.9364 $\pm$ 0.0023 & 0.9822 $\pm$ 0.0006 & 0.0000 $\pm$ 0.0000 & 0.0  \\
+ & EDD          & 0.9847 $\pm$ 0.0019 & 0.9951 $\pm$ 0.0005 & 3.9824 $\pm$ 0.0416 & 38.0 \\
+ & RAPT         & 0.9381 $\pm$ 0.0016 & 0.9838 $\pm$ 0.0003 & 0.2292 $\pm$ 0.0057 & 2.0  \\
+\midrule
+\multirow{5}{*}{UGR'16}
+ & ADWIN        & 0.9690 $\pm$ 0.0029 & 0.9899 $\pm$ 0.0007 & 0.0000 $\pm$ 0.0000 & 0.0  \\
+ & Page-Hinkley & 0.9690 $\pm$ 0.0029 & 0.9899 $\pm$ 0.0007 & 0.0000 $\pm$ 0.0000 & 0.0  \\
+ & EDMA         & 0.9690 $\pm$ 0.0029 & 0.9899 $\pm$ 0.0007 & 0.0000 $\pm$ 0.0000 & 0.0  \\
+ & EDD          & 0.9655 $\pm$ 0.0016 & 0.9900 $\pm$ 0.0008 & 6.1012 $\pm$ 0.1002 & 39.0 \\
+ & RAPT         & 0.8360 $\pm$ 0.0262 & 0.9635 $\pm$ 0.0182 & 1.9711 $\pm$ 0.0198 & 11.0 \\
+\midrule
+\multirow{5}{*}{NordicDat}
+ & ADWIN        & 0.2779 $\pm$ 0.0224 & 0.4770 $\pm$ 0.0123 & 0.0000 $\pm$ 0.0000 & 0.0  \\
+ & Page-Hinkley & 0.2779 $\pm$ 0.0224 & 0.4770 $\pm$ 0.0123 & 0.0000 $\pm$ 0.0000 & 0.0  \\
+ & EDMA         & 0.2779 $\pm$ 0.0224 & 0.4770 $\pm$ 0.0123 & 0.0000 $\pm$ 0.0000 & 0.0  \\
+ & EDD          & 0.4184 $\pm$ 0.0165 & 0.5434 $\pm$ 0.0084 & 4.6875 $\pm$ 0.0309 & 39.0 \\
+ & RAPT         & 0.3818 $\pm$ 0.0184 & 0.6172 $\pm$ 0.0127 & 0.2594 $\pm$ 0.0021 & 2.0  \\
+\bottomrule
+\end{tabular}
+\end{table*}
