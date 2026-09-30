@@ -26,11 +26,9 @@ standard additional space.
 
 To reach six pages the following were condensed without removing any result:
 preprocessing and leakage control were merged into one subsection; the nine
-method subsections were consolidated into three; the historical-detector and
-ablation figures were dropped because Table (detector) and Table (ablation) carry
-the same numbers; the architecture placeholder figure was removed; and prose was
-tightened throughout. All measured values, statistical tests and claims are
-unchanged from the 8-page version.
+method subsections were consolidated into three; the architecture placeholder
+figure was removed; and prose was tightened throughout. All measured values,
+statistical tests and claims are unchanged from the 8-page version.
 
 ## Number provenance
 
@@ -57,8 +55,16 @@ lower adaptation cost. Non-significant results are labelled as such.
 
 ## Figures
 
-The manuscript includes two figures: `primary_performance.png` (macro-F1 across
-models) and `computational_cost.png` (adaptation CPU). The methodology-diagram
-placeholder has been removed from the 6-page version; no architecture diagram file
-exists in the repository, and it should be added as a rendered diagram if the
-venue permits a full-width figure.
+The manuscript includes five figures:
+
+| Fig. | File | Content |
+|------|------|---------|
+| 1 | `primary_performance.png` | Macro-F1 on the two largest cross-dataset streams |
+| 2 | `computational_cost.png` | Adaptation CPU on the two largest streams |
+| 3 | `rapt_ablation.png` | Efficiency-ablation ladder (5G Campus) |
+| 4 | `detector_comparison.png` | Historical detector comparison |
+| 5 | `cost_tradeoff.png` | Accuracy--cost trade-off (5G Campus) |
+
+The architecture-diagram placeholder has been removed; no architecture diagram file
+exists in the repository, and it should be added as a rendered diagram if the venue
+permits a full-width figure.
