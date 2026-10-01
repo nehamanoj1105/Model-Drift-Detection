@@ -121,9 +121,11 @@ def run_oracle_same_regime(stream_df, sd, seed):
     wid = stream_df["window_id"].values
     init_regime = regimes[np.where(wid == n_init - 1)[0][0]]
     # record window samples per regime (known a-priori -> oracle)
+    wid_all = stream_df["window_id"].values
+    all_slices = {w: np.where(wid_all == w)[0] for w in range(0, n_windows)}
     reg_windows = {}
-    for w in range(n_init, n_windows):
-        r = str(regimes[win_slices[w][0]])
+    for w in range(0, n_windows):
+        r = str(regimes[all_slices[w][0]])
         reg_windows.setdefault(r, []).append(w)
 
     drv = OracleSameRegime(seed, anchor_X=anchor_X, anchor_y=anchor_y)
@@ -138,9 +140,8 @@ def run_oracle_same_regime(stream_df, sd, seed):
             prev_visits = seen.get(reg, [])
             if prev_visits:
                 ws = prev_visits[-1]
-                Xr = np.vstack([X[win_slices[x]] for x in ws if x in win_slices or x < n_init])
-                yr = np.concatenate([y_all[win_slices[x]] for x in ws
-                                     if x in win_slices or x < n_init])
+                Xr = np.vstack([X[all_slices[x]] for x in ws])
+                yr = np.concatenate([y_all[all_slices[x]] for x in ws])
                 if len(Xr):
                     drv.adapt_on_regime_data(Xr, yr)
             seen.setdefault(reg, []).append([w])
