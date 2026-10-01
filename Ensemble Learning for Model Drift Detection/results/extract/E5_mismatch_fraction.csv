@@ -1,0 +1,2 @@
+numerator,denominator,fraction_trained_on_different_regime,denominator_definition,source_file,console_confirmation
+80,80,1.0,"number of STORED checkpoints (rows with a non-empty train_regimes field, i.e. creation events), pooled over all four streams and seeds 42-46; reuse rows are excluded",Ensemble Learning for Model Drift Detection/results/revalidation/A2_checkpoint_provenance.csv [train_regime_matches_key],"results/revalidation/logs/a2.log: 'checkpoints created: 80, trained on a DIFFERENT regime: 80 (100.0%)'"

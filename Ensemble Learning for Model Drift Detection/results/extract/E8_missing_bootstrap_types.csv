@@ -1,0 +1,3 @@
+item,status,searched_in,note
+day-block bootstrap,MISSING,Ensemble Learning for Model Drift Detection/results/revalidation/A7_block_bootstrap.csv ; Ensemble Learning for Model Drift Detection/results/revalidation/run_stream_v2.py,A7 block bootstrap resamples contiguous regime visits; no day-block bootstrap exists
+visit-block bootstrap,MISSING,Ensemble Learning for Model Drift Detection/results/revalidation/A7_block_bootstrap.csv,"blocks are contiguous runs of equal regime_id, labelled 'window-block'"

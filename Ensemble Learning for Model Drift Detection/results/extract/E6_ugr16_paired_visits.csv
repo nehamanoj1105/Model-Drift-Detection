@@ -1,0 +1,2 @@
+ugr16_paired_visits,definition,source_file
+15,regime visits with a previous same-regime visit and a fitted transfer model,Ensemble Learning for Model Drift Detection/results/revalidation/A2_regime_stability.csv [f1_same_regime_prev_visit]

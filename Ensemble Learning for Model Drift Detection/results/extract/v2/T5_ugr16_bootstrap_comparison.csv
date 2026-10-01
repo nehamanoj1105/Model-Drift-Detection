@@ -1,0 +1,7 @@
+comparison,bootstrap_type,metric,obs_diff,ci_low,ci_high,n_blocks,n_seeds,source
+RAPT vs Frozen,day-block (24 calendar days),pooled_macro_f1,-0.1587719298464703,-0.2452282566007954,-0.1057981412922167,24.0,5,results/extract/v2/T5_ugr16_dayblock.csv
+RAPT-Enhanced vs Frozen,day-block (24 calendar days),pooled_macro_f1,-0.0208438530208457,-0.0783766486178667,0.0167939874121012,24.0,5,results/extract/v2/T5_ugr16_dayblock.csv
+RAPT-Enhanced vs Full Retraining,day-block (24 calendar days),pooled_macro_f1,0.0404671484056773,-0.040024597021831,0.1012942469412551,24.0,5,results/extract/v2/T5_ugr16_dayblock.csv
+RAPT-Enhanced vs Frozen,regime-run (contiguous regime visits) [existing A7],macro_f1,-0.0413479067912171,-0.0661419348686684,-0.0191469363997525,144.0,5,results/revalidation/A7_block_bootstrap.csv
+RAPT-Enhanced vs Full Retraining,regime-run (contiguous regime visits) [existing A7],macro_f1,-0.0318768300280937,-0.057098322315535,-0.0082330236175959,144.0,5,results/revalidation/A7_block_bootstrap.csv
+RAPT vs Frozen,regime-run (contiguous regime visits) [existing A7],macro_f1,-0.1330259172848157,-0.1710697360353432,-0.0975022872240461,144.0,5,results/revalidation/A7_block_bootstrap.csv

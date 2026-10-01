@@ -1,0 +1,6 @@
+method,per_window_macro_f1,pooled_macro_f1,table_ii_value,per_window_accuracy,pooled_accuracy,source_pw,source_pooled
+Frozen,0.9075,0.8961242960403275,0.8961242960403275,0.9075,0.9075,results/revalidation/A1_summary_all_streams.csv [per_window_macro_f1],results/revalidation/A1_pooled_all_streams.csv [pooled_macro_f1]
+Event-Driven,0.906,0.8923243191960635,0.8903276344969004,0.906,0.906,results/revalidation/A1_summary_all_streams.csv [per_window_macro_f1],results/revalidation/A1_pooled_all_streams.csv [pooled_macro_f1]
+Full Retraining,0.9110000000000001,0.9017624105088922,0.9026755168825724,0.9110000000000001,0.9110000000000001,results/revalidation/A1_summary_all_streams.csv [per_window_macro_f1],results/revalidation/A1_pooled_all_streams.csv [pooled_macro_f1]
+RAPT,0.9040000000000001,0.8930033536079863,0.8894467650259822,0.9040000000000001,0.9040000000000001,results/revalidation/A1_summary_all_streams.csv [per_window_macro_f1],results/revalidation/A1_pooled_all_streams.csv [pooled_macro_f1]
+RAPT-Enhanced,0.9085000000000001,0.8965159634119324,0.8914659297475742,0.9085000000000001,0.9085000000000001,results/revalidation/A1_summary_all_streams.csv [per_window_macro_f1],results/revalidation/A1_pooled_all_streams.csv [pooled_macro_f1]
