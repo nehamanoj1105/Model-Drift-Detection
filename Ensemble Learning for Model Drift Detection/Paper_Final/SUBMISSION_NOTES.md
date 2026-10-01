@@ -27,8 +27,32 @@ standard additional space.
 To reach six pages the following were condensed without removing any result:
 preprocessing and leakage control were merged into one subsection; the nine
 method subsections were consolidated into three; the architecture placeholder
-figure was removed; and prose was tightened throughout. All measured values,
-statistical tests and claims are unchanged from the 8-page version.
+figure was removed; and prose was tightened throughout. All measured values and
+statistical tests are unchanged from the 8-page version; the interpretation
+corrections below are the only substantive prose changes since.
+
+## Interpretation corrections (post-audit)
+
+The number audit (`audit/verify_paper_numbers.py`, 205/205 checks) only verifies
+that prose matches the committed CSVs; it does not validate the *causal reading*
+of a number. A separate review of the E/A artifacts found four places where the
+reading, not the number, was wrong. These are corrected in the manuscript, and the
+supporting evidence is in `audit/AUDIT_FINDINGS.md`:
+
+- **Abstract, UGR'16 paragraph, Discussion, Conclusion.** The RAPT → RAPT-Enhanced
+  gain (0.8360 → 0.9276) was attributed to parity refitting. Parity refits are 0 on
+  every stream and seed, so the gain is the larger novelty-refit buffer
+  (1500 requested, capped at 1000 rows).
+- **UGR'16 paragraph.** "Regime identifiers recur but the feature-to-label mapping
+  does not" is not supported: the conditional-vs-covariate test is inconclusive on
+  UGR'16, and `A2_hypothesis_verdict.csv` records H2 as INCONCLUSIVE.
+- **Re-validation section.** "Within measurement noise" overstated the equivalence
+  test, which holds at ±0.010 but not ±0.005.
+- **Cost claims.** "48–92% less adaptation CPU" applies to base RAPT; the
+  RAPT-Enhanced configuration that recovers accuracy saves less.
+
+`results/revalidation/A2_hypothesis_verdict.csv` is the artifact for the second
+item; it is produced by `results/revalidation/a2_hypothesis_verdict.py`.
 
 ## Number provenance
 

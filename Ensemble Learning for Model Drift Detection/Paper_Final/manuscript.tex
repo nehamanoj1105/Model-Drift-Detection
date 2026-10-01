@@ -57,14 +57,17 @@ radio configuration or an operator comes back. We ask whether a policy learned f
 regime can be reused when that regime returns, and when doing so is safe. Regime-Aware
 Policy Transfer (RAPT) stores one ensemble policy per regime, retrieves it on
 recurrence, and refits it when rolling accuracy shows it no longer fits. On four
-network streams under a strict prequential protocol, RAPT uses 48--92\% less adaptation
-CPU than full retraining. Macro-F1 is lower on all four streams, significantly so on
-two. The clearest failure is UGR'16, where regime identifiers recur but the
-feature-to-label mapping does not. Blind reuse drops macro-F1 to $0.836$, and a parity
-refit that checks the reused policy's recent accuracy recovers it to $0.928$. So reuse
-keyed on regime identity alone is unsafe, and reuse with a performance check is not. On
-5G Campus, a cost-aware refit configuration matches full retraining within measurement
-noise ($\Delta$macro-F1 $=+0.0022$, $p=0.31$) at about 40\% less adaptation CPU. Two
+network streams under a strict prequential protocol, base RAPT uses 48--92\% less
+adaptation CPU than full retraining, though the cost-aware variant that recovers
+accuracy saves less. Macro-F1 is lower on all four streams,
+significantly so on two. UGR'16 is the clearest failure: base RAPT reaches $0.836$,
+and refitting a reused policy on a larger recent buffer recovers it to $0.928$. The
+parity check intended to trigger that refit never fires at any threshold we tried, so
+the recovery is the buffer's, not the check's. Our tests do not settle whether the
+UGR'16 failure is a changed feature-to-label mapping or a covariate shift. On
+5G Campus, a cost-aware refit configuration matches full retraining within a $\pm0.010$
+macro-F1 margin ($\Delta=+0.0022$, $p=0.31$) at about 40\% less adaptation CPU, though a
+periodic cheap refit matches it on both accuracy and cost. Two
 other mechanisms failed under measurement and we report them: a relative-degradation
 trigger that cannot fire on a policy that was poor from the start, and an incremental
 learner that was worse on both accuracy and cost.
@@ -107,10 +110,11 @@ its streaming accuracy and refreshes the policy if needed.
 
 
  If regimes recur with stable label
-semantics, reuse keeps accuracy and removes most of the adaptation cost. If regimes
-recur but the feature-to-label relationship has moved, reuse brings back a stale policy
-and accuracy suffers, and the repair mechanism is the reason the approach still works
-in that setting. Our contributions are as follows:
+semantics, reuse keeps accuracy and removes most of the adaptation cost. If a reused
+policy no longer fits the returning regime, the accuracy that reuse was meant to
+protect suffers; in the one stream where that happens (UGR'16) the repair that works
+is refitting on a larger recent buffer, not the parity check. Our contributions are as
+follows:
 \begin{itemize}
 \item a regime-conditioned policy-transfer mechanism that stores and retrieves
 ensemble policies by regime;
@@ -130,8 +134,8 @@ by construction, and an incremental learner that loses on both axes.
 Drift in a data stream is usually sorted into two cases. Under covariate shift the
 marginal $P(X)$ changes while $P(Y\mid X)$ holds, and under concept drift it is the
 conditional $P(Y\mid X)$ that changes \cite{gama2004learning,lu2018learning}. Surveys
-have catalogued the taxonomies and adaptation strategies built up over the years
-\cite{khamassi2018discussion}. The story starts with STAGGER and its recurring concepts
+have catalogued the resulting taxonomies \cite{khamassi2018discussion}. The story starts
+with STAGGER and its recurring concepts
 \cite{schlimmer1986incremental}, and with Widmer's analysis of robustness against
 flexibility \cite{widmer1994combining}. 
 
@@ -145,10 +149,10 @@ DDM and EDD follow the error rate together with its variance
 \cite{gama2004learning,baena2006early}. RDDM was designed to give fewer false alarms
 \cite{barros2017rddm}, while the EDMA and EWMA charts track an exponentially weighted
 moving average of the error \cite{ross2012exponentially}. A separate family needs no
-labels and tests the features directly. Examples use Hoeffding bounds
+labels and tests the features directly, using Hoeffding bounds
 \cite{frias2014online}, an incremental Kolmogorov--Smirnov statistic
-\cite{dos2016fast}, or the earth-mover distance \cite{brockhoff2020time}, and
-lightweight versions exist for constrained IoT deployments \cite{9427288}. 
+\cite{dos2016fast}, or the earth-mover distance \cite{brockhoff2020time}, with
+lightweight versions for constrained IoT deployments \cite{9427288}. 
 
 
 \subsection{Adaptive and Online Learning}
@@ -164,21 +168,18 @@ Single-pass incremental learners, of which Hoeffding trees are the standard exam
 keep memory use and per-example update cost bounded \cite{domingos2000mining}. The
 detectors and incremental learners in our experiments come from the River library
 \cite{montiel2021river}. All of this work is about \emph{how} a model gets
-updated. None of it considers fetching a model that is already good enough. In
+updated; none of it considers fetching a model that is already good enough. In
 Section~\ref{sec:ablation} we test one incremental learner against our approach, and
 on our stream it does not improve the accuracy--cost trade-off.
 
 
 \subsection{Transfer under Recurring Conditions}
 Transfer learning moves representations or parameters learned on a source task over to
-a related target task \cite{pan2010transfer}. The idea of holding on to learned structure
-has a long history, with roots in work on the role of forgetting
+a related target task \cite{pan2010transfer}, with roots in work on the role of forgetting
 \cite{markovitch1988role} and on the cost of reusing compiled knowledge chunks
-\cite{tambe1988some}.
- It saves a fitted policy
-with its regime identity and retrieves the two together. The decision it makes is
-whether any adaptation is needed, and how to adapt is left aside. With no recurrence,
-the mechanism collapses into ordinary retraining.
+\cite{tambe1988some}. RAPT saves a fitted policy with its regime identity and retrieves
+the two together. The decision it makes is whether any adaptation is needed; how to adapt
+is left aside. With no recurrence, the mechanism collapses into ordinary retraining.
 
 
 \section{Problem Formulation}
@@ -300,10 +301,14 @@ A refresh rebuilds the active policy from the recent buffer and replaces its che
 and any later reuse then gets the refreshed policy. In the default refresh, the
 100-tree ensemble is refit on a 1000-observation buffer. The cost-aware refresh has the
 same trigger but refits 20 trees on a 300-observation buffer.RAPT-Enhanced contains two additions. \emph{Buffer-blended novelty refitting} refits a
-novel regime on a 1500-observation buffer, where the original used 500.
-\emph{Selective parity refitting} refits a reused policy and replaces its checkpoint
-whenever rolling accuracy falls under a parity threshold over a short window. This
-targets stale reuse directly.  When there is no checkpoint, or the similarity gate
+novel regime on a larger recent buffer, requested at 1500 observations against 500 for
+the original; the adaptation buffer is capped at 1000, so on UGR'16 the refit
+effectively uses about 1000 rows (Section~\ref{sec:protocol}).
+\emph{Selective parity refitting} was intended to refit a reused policy and replace its
+checkpoint whenever rolling accuracy falls under a parity threshold over a short window.
+At the configured threshold this branch never activates in any of our runs
+($\mathrm{parity\_refits}=0$ on every stream and seed), so it contributes nothing to
+the reported numbers.  When there is no checkpoint, or the similarity gate
 turns down the one that exists, the controller trains a fresh policy and stores it under
 the incoming regime identifier. 
 \section{Experimental Methodology}\label{sec:protocol} 
@@ -416,23 +421,28 @@ $d = -0.32$).
 
 UGR'16 is where the assumptions of the mechanism fail, and it teaches us the most. Frozen
 has the highest macro-F1 ($0.9690 \pm 0.0029$), which is consistent with attacks being
-sparse and clustered. RAPT reaches only $0.8360 \pm 0.0262$. This is $0.1236$ below Full
+sparse and clustered. RAPT reaches only $0.8360 \pm 0.0262$: $0.1236$ below Full
 Retraining ($p = 2.6 \times 10^{-11}$, $d = -0.67$) and the worst of the five models,
-despite its 133 reuses. The twelve regimes do recur, and their identifiers stay valid
-throughout the 30-day block, but the mapping from netflow features to attack labels does
-not stay put.  When RAPT-Enhanced parity-refits a reused
-policy that has degraded, macro-F1 recovers to $0.9276 \pm 0.0123$. The gain of $0.0917$
+despite its 133 reuses. The twelve regimes do recur and their identifiers stay valid
+through the 30-day block. Two readings of the deficit are consistent with our data and
+we do not separate them: the refit buffer is too small, and the buffer a policy is
+stored under can belong to the previous regime. RAPT-Enhanced, which refits on a larger
+recent buffer, recovers macro-F1 to $0.9276 \pm 0.0123$; that gain of $0.0917$
 ($p = 5.4 \times 10^{-9}$, $d = 0.56$) is the one statistically supported improvement of
-a variant over another on this stream.
+a variant over another on this stream, and its parity branch never activates, so the
+recovery is the buffer's. Re-scoring pooled over all evaluation samples shifts the
+ranking (Frozen $0.8216$, RAPT $0.6629$) and RAPT's false-alarm rate on attack-free
+windows is two orders of magnitude above Frozen's, so we treat UGR'16 per-window macro-F1
+as metric-sensitive.
 
 
 NordicDat is hard to predict. Frozen scores $0.2779 \pm 0.0224$, adaptation helps, and
 Full Retraining gets $0.4227 \pm 0.0299$ against $0.3818 \pm 0.0184$ for RAPT. The
 deficit of $0.0409$ is not significant ($p = 0.255$, $d = -0.12$). RAPT does have the
-highest accuracy on this stream ($0.6172 \pm 0.0127$ against $0.5694 \pm 0.0075$). On 5G NR the five models are only $0.0133$ apart. Taken together, the predictive results give no basis for saying that RAPT improves
-accuracy. Full Retraining has the best macro-F1 on three of the four streams, and RAPT
-sits below it on all four. The case for RAPT depends on cost, and on knowing when reuse
-is safe.
+highest accuracy on this stream ($0.6172 \pm 0.0127$ against $0.5694 \pm 0.0075$). On 5G NR the five models are only $0.0133$ apart. Taken together, these results give no basis
+for saying RAPT improves accuracy: Full Retraining has the best macro-F1 on three of four
+streams, and RAPT sits below it on all four. The case for RAPT rests on cost and on
+knowing when reuse is safe.
 
 
 
@@ -443,9 +453,9 @@ is safe.
 \centering
 \figorbox{ugr_rolling_accuracy.png}{\columnwidth}{UGR'16 rolling accuracy over windows for RAPT, RAPT-Enhanced and Full Retraining}
 \caption{Rolling accuracy over evaluation windows on UGR'16. RAPT sags once reused
-policies go stale, and the parity refit in RAPT-Enhanced pulls accuracy back toward
-Full Retraining. Vertical ticks mark novelty refits: the first window of each new
-regime, where RAPT trains a fresh policy.}
+policies go stale, and refitting on a larger recent buffer (RAPT-Enhanced) pulls
+accuracy back toward Full Retraining. Vertical ticks mark novelty refits: the first
+window of each new regime, where RAPT trains a fresh policy.}
 \label{fig:ugr_rolling}
 \end{figure}
 % ---------- END NEW FIGURE ----------
@@ -469,7 +479,7 @@ time than Full Retraining and records lower macro-F1.}
 \centering
 \begin{tikzpicture}
 \begin{axis}[
-  width=0.95\columnwidth, height=6cm,          % was width=\columnwidth, height=6.2cm
+  width=0.95\columnwidth, height=5.3cm,          % was width=\columnwidth, height=6.2cm
   xlabel={CPU saved vs.\ Full Retraining (\%)},% shorter
   ylabel={$\Delta$ macro-F1},                  % shorter, the caption already says "vs. Full Retraining"
   scaled y ticks=false,                        % kills the odd "5 · 10^-2" tick label
@@ -552,7 +562,7 @@ RAPT-Incremental & $0.9549 \pm 0.0020$ & $0.5813$ & 0\\
 
 \subsection{Determinants of Cost and Trigger Behavior}
 \label{sec:cost}
-The cheap refresh was chosen from direct refit-timing measurements, varying one factor at a time with the ensemble held fixed: a 20-tree refit takes about 22\,ms against 104\,ms for 100 trees, and a 200-observation buffer about 80\,ms against 104\,ms for 1000 observations. Tree count dominates, so the cheap refit cuts refit time by about four-fifths at 20 trees.
+The cheap refresh follows direct refit-timing measurements with the ensemble held fixed: a 20-tree refit takes about 22\,ms against 104\,ms for 100 trees, and a 200-observation buffer about 80\,ms against 104\,ms for 1000. Tree count dominates, so the cheap refit cuts refit time by about four-fifths.
 
 \label{sec:trigger}
 The zero-refresh result for RAPT-Evidence is a property of the mechanism, not a tuning
@@ -562,8 +572,7 @@ is persistently poor rather than deteriorating, the reference decays toward the 
 level, the gap the rule tests for never opens, and the trigger stays silent even though
 the policy is unfit. RAPT-Floor tests the same condition against a fixed floor and fires
 7.6 refreshes where the relative rule fires none; that floor is stream-specific and would
-need calibration elsewhere, which is why it is offered as a mechanism to be tuned rather
-than a recommended constant.
+need calibration elsewhere.
 
 
 \subsection{Comparison to Historical Detectors}
@@ -572,18 +581,21 @@ adaptation events on all three streams and so reproduce the frozen baseline by
 construction. EDD fired 38--39 times per stream and reached the highest macro-F1 of any
 method on 5G Campus ($0.9847 \pm 0.0019$) and NordicDat ($0.4184 \pm 0.0165$), at the
 highest adaptation cost ($3.98$, $6.10$ and $4.69$\,s). RAPT fires 2--11 times per stream
-depending on configuration. Its adaptation cost is below EDD's on all three datasets
-($0.2292$ against $3.98$\,s on Campus, $1.9711$ against $6.10$\,s on UGR'16, $0.2594$
-against $4.69$\,s on NordicDat), and on Campus its macro-F1 is within $0.002$ of EDD's.
-On UGR'16 and NordicDat the cheaper trigger also yields lower macro-F1, so RAPT is the
-lowest-cost adaptive option here rather than the most accurate one.
+depending on configuration, at lower adaptation cost than EDD on all three datasets
+($0.2292$ vs.\ $3.98$\,s on Campus, $1.9711$ vs.\ $6.10$\,s on UGR'16, $0.2594$ vs.\
+$4.69$\,s on NordicDat), and on Campus within $0.002$ macro-F1 of EDD. On UGR'16 and
+NordicDat the cheaper trigger also yields lower macro-F1, so RAPT is the lowest-cost
+adaptive option here rather than the most accurate one.
 
 
 
 \begin{figure}[t]
 \centering
 \includegraphics[width=\columnwidth]{detector_comparison.png}
-\caption{Historical detectors comparison. Since ADWIN, Page-Hinkley and EDMA never fire they replicate the frozen baseline exactly. EDD fires most often and produces the highest macro-F1 at the highest adaptation cost. In contrast to these behaviors, RAPT has adapted less frequently than all but two of the methods studied here (and less accurately). } 
+\caption{Historical detectors. ADWIN, Page-Hinkley and EDMA never fire, so they
+replicate the frozen baseline. EDD fires most often, reaching the highest macro-F1 at
+the highest adaptation cost. RAPT adapts less often than all but two methods, and less
+accurately.} 
 \label{fig:detector}
 \end{figure}
 
@@ -591,12 +603,14 @@ lowest-cost adaptive option here rather than the most accurate one.
 \section{Discussion}
 
 
-The mechanism is worth deploying when there is recurrence. The cost saving appears
-wherever reuse occurs, but the accuracy penalty is concentrated on UGR'16, where regimes
-recur and their label relationship does not. There a reused policy is stale, and the
-parity refit earns its place by taking $0.8360$ to $0.9276$. For this reason reuse
-should come with a check on the reused policy's recent performance. Reusing on the
-regime identifier alone is unsafe when label semantics can drift independently of it.
+The cost saving appears wherever reuse occurs, but the accuracy penalty is concentrated
+on UGR'16. There a reused policy fits poorly, and enlarging the refit buffer takes
+$0.8360$ to $0.9276$; the parity check the design relied on never fires. Reuse should
+therefore come with a check on the reused policy's recent performance, but our runs do
+not show that the parity check we implemented is that check. Reusing on the regime
+identifier alone is unsafe when a returning regime no longer behaves as it did when its
+policy was stored; our evidence on UGR'16 does not separate a moved mapping from moved
+features.
 
 
 \section{Independent Re-validation}
@@ -605,53 +619,49 @@ regime identifier alone is unsafe when label semantics can drift independently o
 Every number here was re-derived from raw per-window records by a harness that
 re-implements the streaming protocol rather than reading the committed aggregates. It
 reproduces Tables~\ref{tab:primary} and~\ref{tab:ablation} to four decimal places on
-every predictive metric, and an automated check of 199 quantitative claims against the
+every predictive metric, and an automated check of 205 quantitative claims against the
 committed artifacts passes in full. Three findings are worth recording.
 
 \emph{Cost is machine-dependent.} A re-run of the 9B drift pipeline reproduced every F1,
-accuracy, precision and recall exactly but shifted adaptation CPU by up to $0.14$\,s. The
-cost \emph{ordering} is stable and the gaps large (48--92\%); the absolute seconds are
-indicative, not exact.
+accuracy, precision and recall exactly but shifted adaptation CPU by up to $0.14$\,s; the
+ordering is stable, the absolute seconds are not.
 
-\emph{Retrieval keys do not track label semantics.} An oracle retraining on the previous
-visit of the \emph{same} regime reaches only $0.5926 \pm 0.0077$ macro-F1 on UGR'16,
-against $0.9595$ for Full Retraining, but $0.9905 \pm 0.0014$ on Campus. Regime identity
-survives on Campus and not on UGR'16, exactly where blind reuse collapses. Recurrence
-alone does not license reuse: on Campus a same-regime revisit predicts the previous visit
-well (mean F1 $0.9876$), yet the class-conditional feature distributions differ by up to
-a factor of $10^{8}$.
+\emph{Retrieval keys do not track behaviour.} An oracle retraining on the previous
+visit of the \emph{same} regime reaches only $0.5926 \pm 0.0077$ macro-F1 on UGR'16
+against $0.9595$ for Full Retraining, but $0.9905 \pm 0.0014$ on Campus: regime identity
+survives on Campus and not on UGR'16, exactly where blind reuse collapses. Whether the
+UGR'16 failure is a moved label mapping or a covariate shift is not settled here, since
+the conditional-vs-covariate test is inconclusive on that stream and a frozen model's AUC
+is a weak probe of $P(Y\mid X)$.
 
-\emph{Controls.} On Campus a 20-tree cheap refit and a periodic 5-window schedule sit on
-the cost--accuracy frontier and neither dominates RAPT-Cheap. A two-sided equivalence test
-on UGR'16 rejects equivalence to Full Retraining at a $\pm0.005$ margin ($p = 0.95$), so
-that gap is real and not a power artifact. A label-delay variant, where the target
+\emph{Controls.} Equivalence to Full Retraining on Campus holds at a $\pm0.010$ macro-F1
+margin ($p = 0.0102$) but not at $\pm0.005$ ($p = 0.13$): bounded equivalence within about
+one F1 point, not "within measurement noise". A label-delay variant, where the target
 arrives one window late, leaves Frozen and Event-Driven unchanged but costs RAPT $0.13$
-macro-F1 on NordicDat and Full Retraining $0.06$; the headline numbers assume labels
-arrive with their window.
+macro-F1 on NordicDat and Full Retraining $0.06$.
 
 \section{Limitations and Threats to Validity}
 \label{sec:limitations}
 With five seeds the smallest attainable two-sided $p$-value in a seed-level comparison is
 $0.0625$, so some large effects cannot reach formal significance; this applies most to the
 ablation. Window-level tests assume windows from one stream are independent, which inflates
-the effective sample size and weakens any claim meant to generalise. The mechanism also
-relies on regime recurrence, which we measure and do not assume: a stream with no
-recurrence never exercises the repository, and a novel regime falls back to retraining with
-no advantage over the baseline. The RAPT-Floor threshold was calibrated on the evaluated
-stream and the 20-tree cheap refit was chosen for this ensemble; both would need revisiting
-where the pre/post-drift gap is larger. Finally, the repository is never pruned, and the
-approach treats regime similarity as meaningful, which may fail if the regime signal is
-noisy.
+the effective sample size. UGR'16 per-window macro-F1 is metric-sensitive, and 7.6\% of its
+stored policies carry a provenance mismatch we have not isolated. The mechanism relies on
+regime recurrence, which we measure and do not assume: without recurrence the repository is
+never exercised. The RAPT-Floor threshold and the 20-tree cheap refit were tuned on the
+evaluated stream. Finally, the repository is never pruned, and the approach treats regime
+similarity as meaningful.
 \section{Conclusion}
 Retraining is the standard response to drift, but when conditions return, part of what was
 paid for is already in a previously trained model. RAPT keeps one policy per regime and
 retrieves it on recurrence, training anew only when no suitable policy exists and
 refreshing a stored policy once monitoring shows it no longer fits. Across four network
 streams adaptation CPU was 48--92\% below full retraining, while macro-F1 was lower on all
-four. Where regimes recurred with changed label relations, blind reuse caused substantial
-damage; the parity-refit mechanism recovered most of it. Policy reuse is worth deploying
-when regimes recur with consistent or monitored label meanings, and the natural next step
-is to test whether a retrieved regime still means what it did when its policy was stored.
+four. Where a returning regime no longer matched its stored policy, blind reuse caused
+substantial damage; enlarging the refit buffer recovered most of it, while the parity
+check we implemented never fired. Policy reuse is worth deploying when regimes recur with
+consistent or monitored behaviour, and the next step is to test whether a retrieved regime
+still means what it did when its policy was stored.
 \bibliographystyle{plain}
 \bibliography{references}
 

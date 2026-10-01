@@ -1,0 +1,9 @@
+dataset,hypothesis,paired_n,mean_same_regime,mean_contiguous,mean_diff,t_stat,p_value,class_cond_feature_shift,verdict
+5g_campus,H1_identity_tracks_behaviour,11,0.9876,0.9888,-0.0003,-0.0482,0.9625,16351261.537129123,NOT_SUPPORTED
+5g_campus,H2_deficit_is_concept_drift,11,0.9876,0.9888,-0.0003,-0.0482,0.9625,16351261.537129123,NOT_APPLICABLE
+5g_nr,H1_identity_tracks_behaviour,3,0.95,0.2125,0.6424,5.6224,0.0302,0.058397722587354865,NOT_SUPPORTED
+5g_nr,H2_deficit_is_concept_drift,3,0.95,0.2125,0.6424,5.6224,0.0302,0.058397722587354865,NOT_APPLICABLE
+nordicdat,H1_identity_tracks_behaviour,5,0.3204,0.3429,-0.0651,-1.0866,0.3383,296875.7879247694,NOT_SUPPORTED
+nordicdat,H2_deficit_is_concept_drift,5,0.3204,0.3429,-0.0651,-1.0866,0.3383,296875.7879247694,NOT_APPLICABLE
+ugr16,H1_identity_tracks_behaviour,2,0.7504,0.662,,,,138834.0111457085,INSUFFICIENT_DATA
+ugr16,H2_deficit_is_concept_drift,2,0.7504,0.662,,,,138834.0111457085,INCONCLUSIVE
