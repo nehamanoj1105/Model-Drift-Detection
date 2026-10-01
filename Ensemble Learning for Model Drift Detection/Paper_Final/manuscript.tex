@@ -598,7 +598,10 @@ noisy. Class imbalance remains a factor throughout.
 
 The controlled drift-severity study (severity definitions, evidence that the
 concept-drift transformation changes $P(Y\mid X)$ rather than $P(X)$, and the
-resulting curves) is reported in the supplementary material.
+resulting curves) is reported in the supplementary material. Its concept-drift
+isolation uses a boundary-only controller with no in-regime trigger, so the inertness
+it records under regime-internal concept drift bounds that controller rather than the
+monitored variant described here.
 
 
 

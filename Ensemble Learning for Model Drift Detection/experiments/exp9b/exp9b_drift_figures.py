@@ -71,7 +71,7 @@ def fig_natural_timeline(natural):
 # Severity curves
 # --------------------------------------------------------------------------
 def _severity_curve(agg, metric_mean, ylabel, title, fname, agg_rec=None,
-                    rec_metric=None):
+                    rec_metric=None, note=None):
     fig, ax = plt.subplots(figsize=(7, 4.6), dpi=DPI)
     for m in ["Frozen", "Event-Driven", "Full Retraining", "RAPT", "RAPT-Enhanced"]:
         df_m = agg[agg["method"] == m].sort_values("drift_level")
@@ -91,6 +91,10 @@ def _severity_curve(agg, metric_mean, ylabel, title, fname, agg_rec=None,
     ax.set_title(title)
     ax.set_xticks([l * 100 for l in LEVELS])
     ax.legend(frameon=True, fontsize=8)
+    if note:
+        ax.text(0.5, 0.02, note, transform=ax.transAxes, ha="center", va="bottom",
+                fontsize=7, style="italic", color="#555",
+                bbox=dict(boxstyle="round,pad=0.3", fc="white", ec="#bbb", alpha=0.85))
     _save(fig, fname)
 
 
@@ -115,9 +119,13 @@ def fig_concept(con_agg, con_agg_rec):
                     "Fig 9B-6  Concept drift severity vs accuracy",
                     "fig9b_concept_severity_accuracy.png")
     _severity_curve(con_agg, "macro_f1", "Recovery time (windows)",
-                    "Fig 9B-7  Concept drift severity vs recovery time",
+                    "Fig 9B-7  Concept drift severity vs recovery time\n"
+                    "(censored: permanent drift, no model recovers)",
                     "fig9b_concept_severity_recovery.png",
-                    agg_rec=con_agg_rec, rec_metric="recovery_windows")
+                    agg_rec=con_agg_rec, rec_metric="recovery_windows",
+                    note="Recovery censored for every model: the concept reversal is "
+                         "permanent, so the 95%-of-pre-drift target is unreachable and "
+                         "every value equals the 40-window horizon.")
 
 
 # --------------------------------------------------------------------------
