@@ -152,3 +152,29 @@ protocol. Corrections that supersede the 9A headline above:
 Re-run commands (from `Ensemble Learning for Model Drift Detection/`):
 `python results/final/v2/b_pooled.py` then `c_reconcile.py`, `d_figures.py`,
 `a10_detector_recheck.py`.
+
+## Experiment 9B drift-severity study
+
+`experiments/exp9b/run_exp9b_drift.py` runs 9B-B/C/D and regenerates
+`EXPERIMENT_9B_FINAL_REPORT.md`, the figures, and the tables. Do not hand-edit the
+report: `exp9b_drift_report.py` overwrites it, so change the generator and re-run.
+
+Harness scope that must not be misread as an algorithm result:
+
+- The 9B RAPT controller acts **only at regime boundaries**. It has no in-regime
+  monitoring or refresh path, so a single-regime stream is never adapted and
+  `RAPT == Frozen` exactly. The manuscript's RAPT adds in-regime monitoring, so
+  9B-C concept-drift inertness bounds the boundary-only controller, not the
+  manuscript algorithm. The recurring A->B->A' result is the stronger finding
+  because RAPT does fire there (1 reuse event, 100 reused trees) yet the reused
+  policy is stale.
+- Concept-drift recovery is **censored** for every model: the reversed P(Y|X) is
+  permanent, so the 95%-of-pre-drift target is unreachable and every recovery
+  value equals the 40-window horizon. Recovered-rate 0.00 (n=125) vs 0.48
+  covariate (n=250) and 0.76 recurring (n=125). Concept recovery rows carry no
+  discriminative signal.
+- Concept-drift severity is feature-granular (`ceil(level*6)`, capped at 5), so
+  20% and 30% both affect 2 features and their curves are identical.
+
+Predictive metrics are deterministic across runs; only CPU/runtime columns drift.
+Report numbers are derived from the saved CSVs, so do not hardcode timings.
