@@ -1,0 +1,17 @@
+dataset,method,seed,stored_checkpoints,reuse_events,stored_trained_on_own_regime_key,fraction_provenance_correct
+5g_campus,RAPT,42,0,0,0,
+5g_campus,RAPT-Enhanced,42,0,0,0,
+5g_campus,RAPT-Cheap,42,2,12,0,0.0
+5g_campus,RAPT-Deferred,42,2,12,2,1.0
+ugr16,RAPT,42,0,0,0,
+ugr16,RAPT-Enhanced,42,0,0,0,
+ugr16,RAPT-Cheap,42,11,133,0,0.0
+ugr16,RAPT-Deferred,42,11,133,11,1.0
+nordicdat,RAPT,42,0,0,0,
+nordicdat,RAPT-Enhanced,42,0,0,0,
+nordicdat,RAPT-Cheap,42,2,16,0,0.0
+nordicdat,RAPT-Deferred,42,2,16,2,1.0
+5g_nr,RAPT,42,0,0,0,
+5g_nr,RAPT-Enhanced,42,0,0,0,
+5g_nr,RAPT-Cheap,42,3,5,0,0.0
+5g_nr,RAPT-Deferred,42,3,5,3,1.0

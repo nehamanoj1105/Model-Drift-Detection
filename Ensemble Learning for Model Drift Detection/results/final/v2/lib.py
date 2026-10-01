@@ -97,5 +97,5 @@ def streams():
 
 
 def runner():
-    import run_stream_v2 as R
+    import run_v3 as R
     return R

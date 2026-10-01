@@ -1,0 +1,5 @@
+method,seed,cls,n_trees,buffer_capacity,refit_n,refresh,parity,gate,tier1,anchor_rows,retrain_events,reuse_events,refresh_events,trees_trained,trees_reused,refit_n_observed,n_refits,refit_buffer_rows_max,refit_anchor_rows,refit_total_rows_max,parity_refits,cheap_settings_applied
+RAPT,42,orig (RAPTSystem),50,1000,500,none,none,none,False,30,11,133,0,1200,13300,500,11,500,30,530,0,n/a
+RAPT-Enhanced,42,orig (RAPTEnhancedSystem),50,1000,1500,none,threshold 0.5 (unreachable on 3-class),none,False,30,11,133,0,1200,13300,1500,11,1000,30,1030,0,n/a
+RAPT-Cheap,42,RAPTV2,50,1000,1000,"periodic every 5 windows, 20 trees, 300-row buffer",none,none,False,30,11,133,0,1200,13300,1000,11,1000,30,1030,0,"yes (refresh_events>0, trees_trained matches cheap refit)"
+RAPT-Deferred,42,RAPTV2 (deferred),50,1000,1000,none,none,none,False,30,11,133,11,1200,13300,1000,11,1000,30,1030,0,n/a

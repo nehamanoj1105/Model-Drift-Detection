@@ -1,0 +1,3 @@
+quantity,value,meaning
+"provenance log rows, UGR'16, earlier revalidation",720,5 seeds x (11 checkpoint creations + 133 reuse events) for RAPT
+"stored (non-reuse) checkpoints, UGR'16, earlier revalidation",55,the 'policies' in '55 of 720 policies'; the other 665 rows are reuses

@@ -1,0 +1,3 @@
+comparison,config,novelty_refit_n,buffer_capacity,refit_buffer_rows,anchor_rows,total_rows,delta_macro_f1_vs_RAPT
+H2 (novelty refit buffer),RAPT-Enhanced,1500,1000,1000,30,1030,
+Driver 1 (novelty refit buffer),RAPT,500,1000,500,30,530,0.0
