@@ -122,3 +122,33 @@ Outputs: `results/experiment_9a_three/raw/` (per-window + per-seed CSV);
 reports `EXPERIMENT_9A_THREE_TELECOM_DATASETS_REPORT.md` and
 `EXPERIMENT_9A_9B_FINAL_REPORT.md`. `tabulate` must be installed for the report
 generator.
+
+## Revalidation (results/final) — corrections to earlier claims
+
+The v2 revalidation (`results/final/v2/`, `results/final/FINAL_RESULTS.md`,
+`results/final/SUBMISSION_AUDIT.md`) re-ran all four streams under one frozen
+protocol. Corrections that supersede the 9A headline above:
+
+- **Metric.** Paper Table II mixes scales: 5G Campus / UGR'16 / NordicDat use the
+  per-window mean macro-F1, 5G NR uses the pooled value. Corrected tables:
+  `results/final/latex_tables/C_primary_perwindow.tex` (recommended) and
+  `..._pooled.tex`. `C_metric_reconciliation.csv` maps every cell.
+- **UGR'16 mechanism.** The RAPT-Enhanced recovery (0.8360 -> 0.9276) is the
+  novelty-refit buffer size (500 -> 1000 rows, +0.0917), NOT the parity refit.
+  The parity branch never fires on UGR'16 (0 refits at thresholds 0.5-0.95).
+  A second real contributor is checkpoint provenance (stored checkpoints were
+  mis-keyed; correcting the keying is +0.0798).
+- **Detectors.** ADWIN and Page-Hinkley never fire because river 0.26.1
+  `update()` returns `None` and the harness does `bool(...)`; EDMA is NOT
+  degenerate once its comparison-order bug is fixed (fires 2.8-16.2 events);
+  EDD's old counts (114/115/117/344) were inflated by a first-window spurious
+  fire. See `results/final/v2/A10_detector_corrected.csv`.
+- **Cost.** The cheap-refresh advantage is 5G Campus-specific. On 5G NR
+  RAPT-Cheap is slower (3.26 s vs 0.72 s, +351%) and lower-F1 (0.8830 vs 0.9110)
+  because window size 1 makes "every 5 windows" fire every 5 samples.
+- Still supported: RAPT below Full Retraining on all four streams (both metrics);
+  RAPT worst on UGR'16; the UGR'16 RAPT-Enhanced recovery as a number.
+
+Re-run commands (from `Ensemble Learning for Model Drift Detection/`):
+`python results/final/v2/b_pooled.py` then `c_reconcile.py`, `d_figures.py`,
+`a10_detector_recheck.py`.
