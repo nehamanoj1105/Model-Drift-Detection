@@ -1,0 +1,35 @@
+nohup: ignoring input
+
+### 5G Campus QoS
+   seed 42 done
+   seed 43 done
+   seed 44 done
+   seed 45 done
+   seed 46 done
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream[c] = X[:, j]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:255: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream["_t0"] = np.asarray(data["timestamp"])[:n]
+
+### UGR'16
+   seed 42 done
+   seed 43 done
+   seed 44 done
+   seed 45 done
+   seed 46 done
+
+### NordicDat
+   seed 42 done
+   seed 43 done
+   seed 44 done
+   seed 45 done
+   seed 46 done
+
+### 5G NR
+   seed 42 done
+   seed 43 done
+   seed 44 done
+   seed 45 done
+   seed 46 done
+
+checkpoints created: 80, trained on a DIFFERENT regime: 80 (100.0%)
