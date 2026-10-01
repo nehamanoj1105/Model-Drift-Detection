@@ -1,0 +1,4 @@
+dataset,method_a,method_b,margin,tost_p,equivalent,primary
+5g_campus,RAPT,RAPT-Enhanced,0.005,0.03125,True,False
+5g_campus,RAPT,RAPT-Enhanced,0.01,0.03125,True,True
+5g_campus,RAPT,RAPT-Enhanced,0.02,0.03125,True,False

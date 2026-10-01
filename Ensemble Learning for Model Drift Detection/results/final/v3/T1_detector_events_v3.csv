@@ -1,4 +1,4 @@
-dataset,detector,events_window_signal,events_per_sample_signal
+dataset,detector,fires_window_signal,fires_per_sample_signal
 5g_campus,ADWIN,0,0
 5g_campus,Page-Hinkley,0,0
 5g_campus,EDD,114,1220

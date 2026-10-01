@@ -1,0 +1,4 @@
+comparison,mean_diff,wilcoxon_p,holm_p,label
+RAPT-Enhanced_v2 vs RAPT_v2,0.0,1.0,1.0,exploratory
+RAPT_v2_pure vs RAPT_v2,-0.019831709848138358,0.0625,0.1875,exploratory
+RAPT-Enhanced_v2_pure vs RAPT_v2,-0.019831709848138358,0.0625,0.1875,exploratory

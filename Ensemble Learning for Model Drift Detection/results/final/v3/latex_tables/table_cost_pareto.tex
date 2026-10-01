@@ -1,0 +1,59 @@
+\begin{table}[t]
+\centering
+\caption{Cost-matched Pareto analysis}
+\label{tab:t4}
+\begin{tabular}{lllllllll}
+\toprule
+dataset & method & pooled\_macro\_f1 & pooled\_macro\_f1\_sd & adaptation\_cpu\_sec & per\_window\_macro\_f1 & retrain\_events & refresh\_events & pareto \\
+\midrule
+5g\_campus & Event-Driven & 0.9908 & 0.0003 & 0.1075 & 0.9636 & 1.0000 & 0.0000 & True \\
+5g\_campus & Event-Driven-Cheap & 0.9906 & 0.0006 & 0.0761 & 0.9624 & 1.0000 & 0.0000 & True \\
+5g\_campus & FR-Cheap & 0.9913 & 0.0009 & 0.5388 & 0.9780 & 14.0000 & 0.0000 & True \\
+5g\_campus & Frozen & 0.9822 & 0.0006 & 0.0865 & 0.9364 & 0.0000 & 0.0000 & False \\
+5g\_campus & Full Retraining & 0.9951 & 0.0000 & 1.5761 & 0.9836 & 14.0000 & 0.0000 & True \\
+5g\_campus & Periodic-Cheap-10 & 0.9923 & 0.0013 & 0.5576 & 0.9784 & 14.0000 & 0.0000 & True \\
+5g\_campus & Periodic-Cheap-5 & 0.9924 & 0.0013 & 1.1217 & 0.9804 & 28.0000 & 0.0000 & False \\
+5g\_campus & Periodic-Cheap-Matched & 0.9924 & 0.0013 & 1.0931 & 0.9804 & 28.0000 & 0.0000 & False \\
+5g\_campus & RAPT-Cheap & 0.9944 & 0.0009 & 1.1100 & 0.9817 & 2.0000 & 24.0000 & False \\
+5g\_campus & RAPT-Cheap-Floor & 0.9938 & 0.0006 & 0.6409 & 0.9788 & 2.0000 & 10.0000 & True \\
+5g\_campus & RAPT-Cheap-Original & 0.9944 & 0.0009 & 1.1023 & 0.9817 & 2.0000 & 22.0000 & True \\
+5g\_campus & RAPT-Cheap-WinEq & 0.9945 & 0.0009 & 1.3588 & 0.9813 & 2.0000 & 30.0000 & True \\
+5g\_nr & Event-Driven & 0.8923 & 0.0065 & 0.9032 & 0.9060 & 10.0000 & 0.0000 & False \\
+5g\_nr & Event-Driven-Cheap & 0.8699 & 0.0092 & 0.4961 & 0.8885 & 11.6000 & 0.0000 & False \\
+5g\_nr & FR-Cheap & 0.8764 & 0.0105 & 0.3267 & 0.8935 & 8.0000 & 0.0000 & False \\
+5g\_nr & Frozen & 0.8961 & 0.0099 & 0.0872 & 0.9075 & 0.0000 & 0.0000 & True \\
+5g\_nr & Full Retraining & 0.9018 & 0.0054 & 0.7957 & 0.9110 & 8.0000 & 0.0000 & True \\
+5g\_nr & Periodic-Cheap-10 & 0.8639 & 0.0084 & 1.5130 & 0.8855 & 40.0000 & 0.0000 & False \\
+5g\_nr & Periodic-Cheap-5 & 0.8669 & 0.0153 & 3.0323 & 0.8870 & 80.0000 & 0.0000 & False \\
+5g\_nr & Periodic-Cheap-Matched & 0.8669 & 0.0153 & 3.0084 & 0.8870 & 80.0000 & 0.0000 & False \\
+5g\_nr & RAPT-Cheap & 0.8583 & 0.0153 & 3.2153 & 0.8805 & 3.0000 & 81.0000 & False \\
+5g\_nr & RAPT-Cheap-Floor & 0.8818 & 0.0147 & 2.0389 & 0.8950 & 3.0000 & 45.0000 & False \\
+5g\_nr & RAPT-Cheap-Original & 0.8614 & 0.0159 & 3.2551 & 0.8830 & 3.0000 & 79.0000 & False \\
+5g\_nr & RAPT-Cheap-WinEq & 0.8691 & 0.0073 & 3.3109 & 0.8880 & 3.0000 & 82.0000 & False \\
+nordicdat & Event-Driven & 0.4399 & 0.0288 & 0.2628 & 0.2547 & 2.2000 & 0.0000 & True \\
+nordicdat & Event-Driven-Cheap & 0.4514 & 0.0278 & 0.5486 & 0.2458 & 2.4000 & 0.0000 & True \\
+nordicdat & FR-Cheap & 0.4764 & 0.0095 & 1.1343 & 0.3916 & 18.0000 & 0.0000 & False \\
+nordicdat & Frozen & 0.3250 & 0.0079 & 1.1694 & 0.2779 & 0.0000 & 0.0000 & False \\
+nordicdat & Full Retraining & 0.4806 & 0.0099 & 3.4640 & 0.4227 & 18.0000 & 0.0000 & False \\
+nordicdat & Periodic-Cheap-10 & 0.5037 & 0.0227 & 1.0364 & 0.4577 & 14.0000 & 0.0000 & True \\
+nordicdat & Periodic-Cheap-5 & 0.4983 & 0.0138 & 1.5348 & 0.4662 & 29.0000 & 0.0000 & False \\
+nordicdat & Periodic-Cheap-Matched & 0.4983 & 0.0138 & 1.6082 & 0.4662 & 29.0000 & 0.0000 & False \\
+nordicdat & RAPT-Cheap & 0.4410 & 0.0070 & 2.3176 & 0.4300 & 2.0000 & 24.0000 & False \\
+nordicdat & RAPT-Cheap-Floor & 0.5349 & 0.0072 & 4.1490 & 0.5471 & 2.0000 & 66.4000 & True \\
+nordicdat & RAPT-Cheap-Original & 0.4283 & 0.0127 & 2.2868 & 0.4100 & 2.0000 & 21.0000 & False \\
+nordicdat & RAPT-Cheap-WinEq & 0.4248 & 0.0113 & 2.5116 & 0.4329 & 2.0000 & 30.0000 & False \\
+ugr16 & Event-Driven & 0.8413 & 0.0170 & 0.6034 & 0.8972 & 3.0000 & 0.0000 & True \\
+ugr16 & Event-Driven-Cheap & 0.6399 & 0.0286 & 0.6603 & 0.8259 & 3.6000 & 0.0000 & False \\
+ugr16 & FR-Cheap & 0.5984 & 0.0456 & 6.4333 & 0.8641 & 144.0000 & 0.0000 & False \\
+ugr16 & Frozen & 0.8216 & 0.0177 & 1.2408 & 0.9690 & 0.0000 & 0.0000 & False \\
+ugr16 & Full Retraining & 0.7603 & 0.0194 & 25.5187 & 0.9595 & 144.0000 & 0.0000 & False \\
+ugr16 & Periodic-Cheap-10 & 0.6462 & 0.0823 & 1.0798 & 0.8910 & 14.0000 & 0.0000 & False \\
+ugr16 & Periodic-Cheap-5 & 0.6451 & 0.0892 & 1.6268 & 0.8566 & 28.0000 & 0.0000 & False \\
+ugr16 & Periodic-Cheap-Matched & 0.6451 & 0.0892 & 1.6328 & 0.8566 & 28.0000 & 0.0000 & False \\
+ugr16 & RAPT-Cheap & 0.7805 & 0.0165 & 4.0589 & 0.9157 & 11.0000 & 11.0000 & False \\
+ugr16 & RAPT-Cheap-Floor & 0.7571 & 0.0143 & 4.3860 & 0.9125 & 11.0000 & 22.4000 & False \\
+ugr16 & RAPT-Cheap-Original & 0.8008 & 0.0305 & 4.0811 & 0.9276 & 11.0000 & 0.0000 & False \\
+ugr16 & RAPT-Cheap-WinEq & 0.6878 & 0.0196 & 4.8772 & 0.9025 & 11.0000 & 37.0000 & False \\
+\bottomrule
+\end{tabular}
+\end{table}

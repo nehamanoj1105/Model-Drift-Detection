@@ -1,0 +1,27 @@
+\begin{table}[t]
+\centering
+\caption{Single-factor component ablation}
+\label{tab:t7}
+\begin{tabular}{llllll}
+\toprule
+dataset & variant & delta\_f1\_vs\_base & wilcoxon\_p & base\_f1 & variant\_f1 \\
+\midrule
+5g\_campus & cheap\_refit & 0.0000 & 1.0000 & 0.9838 & 0.9838 \\
+5g\_campus & floor\_trigger & 0.0101 & 0.0625 & 0.9838 & 0.9938 \\
+5g\_campus & gate\_on & 0.0110 & 0.0625 & 0.9838 & 0.9948 \\
+5g\_campus & novelty\_refit\_small & 0.0000 & 1.0000 & 0.9838 & 0.9838 \\
+5g\_campus & parity\_on & 0.0000 & 1.0000 & 0.9838 & 0.9838 \\
+5g\_campus & periodic\_refresh & 0.0106 & 0.0625 & 0.9838 & 0.9944 \\
+5g\_campus & relative\_trigger & 0.0052 & 0.0625 & 0.9838 & 0.9890 \\
+5g\_campus & tier1\_off & 0.0000 & 1.0000 & 0.9838 & 0.9838 \\
+ugr16 & cheap\_refit & 0.0000 & 1.0000 & 0.7805 & 0.7805 \\
+ugr16 & floor\_trigger & -0.0234 & 0.0625 & 0.7805 & 0.7571 \\
+ugr16 & gate\_on & -0.0046 & 0.6250 & 0.7805 & 0.7759 \\
+ugr16 & novelty\_refit\_small & -0.0278 & 0.0625 & 0.7805 & 0.7527 \\
+ugr16 & parity\_on & 0.0000 & 1.0000 & 0.7805 & 0.7805 \\
+ugr16 & periodic\_refresh & 0.0000 & 1.0000 & 0.7805 & 0.7805 \\
+ugr16 & relative\_trigger & -0.0352 & 0.0625 & 0.7805 & 0.7454 \\
+ugr16 & tier1\_off & -0.0013 & 0.3750 & 0.7805 & 0.7792 \\
+\bottomrule
+\end{tabular}
+\end{table}

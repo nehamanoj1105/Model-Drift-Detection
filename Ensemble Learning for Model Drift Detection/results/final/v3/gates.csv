@@ -1,3 +1,19 @@
 gate,status,note,timestamp
 T1,PASS,detector provenance established,2026-10-01T13:10:19Z
 T2,PASS,5G NR structure + cadence-matched cheap refresh,2026-10-01T13:16:50Z
+T2,PASS,5G NR structure + cadence-matched cheap refresh,2026-10-01T13:19:51Z
+T3,PASS,provenance-fixed variants as primary,2026-10-01T13:38:25Z
+T4,PASS,cost Pareto: repository claim not supported,2026-10-01T13:56:39Z
+T5,PASS,"statistics: block bootstrap, wilcoxon, TOST, 20-seed cheap, Holm",2026-10-01T14:03:42Z
+T5b,PASS,20-seed cheap-config statistics,2026-10-01T14:04:30Z
+T1,PASS,detector provenance established,2026-10-01T14:07:02Z
+T7,PASS,single-factor component ablation,2026-10-01T14:12:52Z
+T6,PASS,label-delay sensitivity (UGR'16 not applicable),2026-10-01T14:17:44Z
+T8,PASS,timing medians + range over 5 repeats,2026-10-01T14:34:57Z
+T9,PASS,report + tables + figures assembled,2026-10-01T14:37:40Z
+T10,REVIEW,20 of 20 primary-table F1 cells not traceable to a CSV,2026-10-01T14:40:28Z
+T10,REVIEW,2 of 20 primary-table F1 cells not traceable to a CSV,2026-10-01T14:40:36Z
+T9,PASS,report + tables + figures assembled,2026-10-01T14:41:10Z
+T10,PASS,0 of 20 primary-table F1 cells not traceable to a CSV,2026-10-01T14:41:30Z
+T10,REVIEW,1 of 26 audited F1 cells not traceable to a CSV,2026-10-01T14:42:39Z
+T10,PASS,0 of 26 audited F1 cells not traceable to a CSV,2026-10-01T14:42:44Z

@@ -87,7 +87,16 @@ def edd_provenance():
 
 
 def fixed_events():
-    """Fixed wiring: read drift_detected after update(); EDMA pre-update EWMA."""
+    """Fixed wiring: read drift_detected after update(); EDMA pre-update EWMA.
+
+    Reports fires under two harness wiring rules on the same signal, because the
+    two rules explain the 38/39/39 vs 114/115/117 gap:
+      * `throttle3`   : a fire is only acted on when >= 3 windows have passed
+                        since the last retrain (the revalidation `run_detector`
+                        rule); this reproduces 38/39/39;
+      * `every_fire`  : every fire is counted and every fire retrains; this
+                        reproduces 114/115/117.
+    """
     class EDMAfixed(_CustomEDMA):
         def update(self, error):
             if self.n == 0:
@@ -133,9 +142,32 @@ def fixed_events():
                         per_sample[d] += 1
         for d in lib.DETECTORS:
             rows.append({"dataset": lib.S.SLUG[ds], "detector": d,
-                         "events_window_signal": per_window[d],
-                         "events_per_sample_signal": per_sample[d]})
-    return pd.DataFrame(rows)
+                         "fires_window_signal": per_window[d],
+                         "fires_per_sample_signal": per_sample[d]})
+    df = pd.DataFrame(rows)
+
+    # EDMA throttle reconciliation on the window signal (dataset slug matches)
+    rec = []
+    for ds in lib.DATASETS:
+        stream, sd = lib.S.get_stream(ds)
+        X, y_all, regimes, X_init, y_init, win_slices, n_init, n_windows = lib.prepare(stream, sd)
+        ens = lib.create_base_ensemble(seed=42)
+        ens.fit(X_init, y_init)
+        det = EDMAfixed()
+        n_thr, last = 0, -999
+        for w in range(n_init, n_windows):
+            idx = win_slices[w]
+            yp = ens.predict(X[idx])
+            err = 1.0 - float(np.mean(yp == y_all[idx]))
+            det.update(err)
+            if getattr(det, "drift_detected", False) and (w - last) >= 3:
+                n_thr += 1
+                last = w
+        rec.append({"dataset": lib.S.SLUG[ds], "detector": "EDMA",
+                    "fires_every_fire_rule": int(df[(df.dataset == lib.S.SLUG[ds]) &
+                                                    (df.detector == "EDMA")]["fires_window_signal"].iloc[0]),
+                    "retrains_throttle3_rule": n_thr})
+    return df, pd.DataFrame(rec)
 
 
 def adwin_ph_scale():
@@ -189,7 +221,7 @@ def main():
 
     pc = paper_counts()
     ed = edd_provenance()
-    ev = fixed_events()
+    ev, edma_rec = fixed_events()
     sc = adwin_ph_scale()
 
     # harness provenance: paper detected vs retrain, bug flag
@@ -211,6 +243,7 @@ def main():
     lib.write_csv(prov, "T1_harness_provenance.csv")
     lib.write_csv(ed, "T1_edd_provenance.csv")
     lib.write_csv(ev, "T1_detector_events_v3.csv")
+    lib.write_csv(edma_rec, "T1_edma_reconciliation.csv")
     lib.write_csv(sc, "T1_adwin_ph_scale.csv")
 
     print("\n== paper counts (seed 42) ==")

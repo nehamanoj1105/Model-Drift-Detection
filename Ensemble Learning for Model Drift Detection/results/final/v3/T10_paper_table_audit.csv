@@ -1,0 +1,27 @@
+table,stream,model,paper_f1,harness_scale,harness_f1,abs_diff,source,matches_within_0.001
+primary,5G Campus,Frozen,0.9364,f1_per_window,0.9364172780462372,1.7278046237190203e-05,C_metric_reconciliation,True
+primary,5G Campus,Event-Driven,0.9636,f1_per_window,0.9636071933940475,7.193394047533275e-06,C_metric_reconciliation,True
+primary,5G Campus,Full Retraining,0.9836,f1_per_window,0.983634954788801,3.495478880100045e-05,C_metric_reconciliation,True
+primary,5G Campus,RAPT,0.9381,f1_per_window,0.938148390071467,4.839007146695273e-05,C_metric_reconciliation,True
+primary,5G Campus,RAPT-Enhanced,0.9381,f1_per_window,0.938148390071467,4.839007146695273e-05,C_metric_reconciliation,True
+primary,UGR'16,Frozen,0.969,f1_per_window,0.9689941841995422,5.815800457775744e-06,C_metric_reconciliation,True
+primary,UGR'16,Event-Driven,0.8972,f1_per_window,0.8971626539702452,3.734602975480339e-05,C_metric_reconciliation,True
+primary,UGR'16,Full Retraining,0.9595,f1_per_window,0.9595231074364186,2.3107436418534633e-05,C_metric_reconciliation,True
+primary,UGR'16,RAPT,0.836,f1_per_window,0.8359682669147264,3.173308527359975e-05,C_metric_reconciliation,True
+primary,UGR'16,RAPT-Enhanced,0.9276,f1_per_window,0.927646277408325,4.6277408324968405e-05,C_metric_reconciliation,True
+primary,NordicDat,Frozen,0.2779,f1_per_window,0.2778595709418129,4.042905818707476e-05,C_metric_reconciliation,True
+primary,NordicDat,Event-Driven,0.2547,f1_per_window,0.2546972369750753,2.7630249246901606e-06,C_metric_reconciliation,True
+primary,NordicDat,Full Retraining,0.4227,f1_per_window,0.4227106786360449,1.0678636044869627e-05,C_metric_reconciliation,True
+primary,NordicDat,RAPT,0.3818,f1_per_window,0.3817865282400001,1.3471759999883481e-05,C_metric_reconciliation,True
+primary,NordicDat,RAPT-Enhanced,0.3783,f1_per_window,0.3783190450570193,1.9045057019273504e-05,C_metric_reconciliation,True
+primary,5G NR Lat.,Frozen,0.8961,f1_per_window,0.8961242960403275,2.4296040327498325e-05,exp9b per_seed_results,True
+primary,5G NR Lat.,Event-Driven,0.8903,f1_per_window,0.8903276344969004,2.7634496900463823e-05,exp9b per_seed_results,True
+primary,5G NR Lat.,Full Retraining,0.9027,f1_natural9b,0.9026755168825724,2.448311742753173e-05,experiment_9b natural_drift/summary,True
+primary,5G NR Lat.,RAPT,0.8894,f1_per_window,0.8894467650259822,4.676502598222054e-05,exp9b per_seed_results,True
+primary,5G NR Lat.,RAPT-Enhanced,0.8915,f1_natural9b,0.8914659297475742,3.407025242574413e-05,experiment_9b natural_drift/summary,True
+ablation,5G Campus,Full Retrain. (ref.),0.9829,per_window,0.9828988487895371,1.151210462846386e-06,Final_Experiments summary_full,True
+ablation,5G Campus,RAPT-Full,0.9587,per_window,0.9587440225092048,4.402250920476636e-05,Final_Experiments summary_full,True
+ablation,5G Campus,RAPT-Evidence,0.9587,per_window,0.9587440225092048,4.402250920476636e-05,Final_Experiments summary_full,True
+ablation,5G Campus,RAPT-Floor,0.9797,per_window,0.9796594594625512,4.054053744884101e-05,Final_Experiments summary_full,True
+ablation,5G Campus,RAPT-Cheap,0.9851,per_window,0.9851075768285493,7.576828549349379e-06,Final_Experiments summary_full,True
+ablation,5G Campus,RAPT-Incremental,0.9549,per_window,0.9549496377339588,4.963773395882942e-05,Final_Experiments summary_full,True

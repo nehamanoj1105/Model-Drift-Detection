@@ -1,0 +1,5 @@
+dataset,detector,fires_every_fire_rule,retrains_throttle3_rule
+5g_campus,EDMA,10,10
+ugr16,EDMA,1,1
+nordicdat,EDMA,4,4
+5g_nr,EDMA,14,13

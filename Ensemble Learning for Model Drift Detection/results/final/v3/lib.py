@@ -441,7 +441,7 @@ def run_stream(stream_df, sd, seed, methods, label_delay=False):
                     pending = w
                 else:
                     append(buf_X, buf_y, w, idx)
-                trig, adapt_cpu, _ = ed.update_and_adapt(X[idx], y_all[idx], err, buf_X, buf_y)
+                adapt_cpu, trig = ed.update_and_adapt(X[idx], y_all[idx], err, buf_X, buf_y)
                 recs.append(_rec(seed, method, w, reg, y_all[idx], y_p, adapt_cpu, pc,
                                  int(trig), 0, 0, n_classes))
                 yt.append(y_all[idx]); yp.append(y_p)
@@ -502,7 +502,7 @@ def run_stream(stream_df, sd, seed, methods, label_delay=False):
                     nbuf_win = max(1, int(np.ceil(nbuf / max(1, sd["window_size"]))))
                     train_wids = [x for x in range(max(n_init, w - nbuf_win), w)]
                     train_regs = [wreg.get(x, "?") for x in train_wids]
-                    if kind == "orig":
+                    if kind in ("orig", "orig_enh"):
                         ri, wa, _ = sys_.handle_regime_transition(
                             reg, w, X_buffer=buf_X[-refit_n:], y_buffer=buf_y[-refit_n:])
                     else:
@@ -517,7 +517,7 @@ def run_stream(stream_df, sd, seed, methods, label_delay=False):
                     pending = w
                 else:
                     append(buf_X, buf_y, w, idx)
-                if kind == "orig":
+                if kind in ("orig", "orig_enh"):
                     wa += sys_.update(X[idx], y_all[idx], X_buffer=buf_X[-refit_n:],
                                       y_buffer=buf_y[-refit_n:])
                 else:
@@ -530,7 +530,7 @@ def run_stream(stream_df, sd, seed, methods, label_delay=False):
             reuse_events = int(sum(r["is_reuse"] for r in recs))
             refresh_events = int(sum(r["is_refresh"] for r in recs))
             extra = {}
-            if kind == "orig":
+            if kind in ("orig", "orig_enh"):
                 extra["parity_refits"] = getattr(sys_, "parity_refits", 0)
                 extra["n_refits"] = int(getattr(sys_, "created_policy_count", 0) - 1)
             else:
