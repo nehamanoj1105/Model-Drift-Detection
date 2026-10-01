@@ -1,0 +1,69 @@
+nohup: ignoring input
+=== seed-level Wilcoxon ===
+  dataset      method_1        method_2  n_seeds  mean_diff  median_diff  p_value  min_possible_p  significant_0.05
+5g_campus RAPT-Enhanced          Frozen        5     0.0015       0.0014   0.0625          0.0625             False
+    ugr16 RAPT-Enhanced          Frozen        5    -0.0208      -0.0219   0.4375          0.0625             False
+nordicdat RAPT-Enhanced          Frozen        5     0.1412       0.1413   0.0625          0.0625             False
+    5g_nr RAPT-Enhanced          Frozen        5     0.0004      -0.0008   1.0000          0.0625             False
+5g_campus RAPT-Enhanced Full Retraining        5    -0.0113      -0.0112   0.0625          0.0625             False
+    ugr16 RAPT-Enhanced Full Retraining        5     0.0405       0.0318   0.0625          0.0625             False
+nordicdat RAPT-Enhanced Full Retraining        5    -0.0144      -0.0184   0.1875          0.0625             False
+    5g_nr RAPT-Enhanced Full Retraining        5    -0.0052      -0.0044   0.3125          0.0625             False
+5g_campus          RAPT          Frozen        5     0.0015       0.0014   0.0625          0.0625             False
+    ugr16          RAPT          Frozen        5    -0.1588      -0.1681   0.0625          0.0625             False
+nordicdat          RAPT          Frozen        5     0.1368       0.1376   0.0625          0.0625             False
+    5g_nr          RAPT          Frozen        5    -0.0031      -0.0063   0.6250          0.0625             False
+5g_campus          RAPT Full Retraining        5    -0.0113      -0.0112   0.0625          0.0625             False
+    ugr16          RAPT Full Retraining        5    -0.0975      -0.1112   0.1250          0.0625             False
+nordicdat          RAPT Full Retraining        5    -0.0188      -0.0197   0.0625          0.0625             False
+    5g_nr          RAPT Full Retraining        5    -0.0088      -0.0044   0.0625          0.0625             False
+5g_campus  Event-Driven            RAPT        5     0.0070       0.0070   0.0625          0.0625             False
+    ugr16  Event-Driven            RAPT        5     0.1784       0.1928   0.0625          0.0625             False
+nordicdat  Event-Driven            RAPT        5    -0.0219      -0.0169   0.4375          0.0625             False
+    5g_nr  Event-Driven            RAPT        5    -0.0007       0.0020   1.0000          0.0625             False
+5g_campus  Event-Driven Full Retraining        5    -0.0043      -0.0042   0.0625          0.0625             False
+    ugr16  Event-Driven Full Retraining        5     0.0809       0.0764   0.0625          0.0625             False
+nordicdat  Event-Driven Full Retraining        5    -0.0407      -0.0321   0.1250          0.0625             False
+    5g_nr  Event-Driven Full Retraining        5    -0.0094      -0.0092   0.0625          0.0625             False
+
+=== block bootstrap 95% CI ===
+  dataset      method_1        method_2   metric  mean_diff  ci95_low  ci95_high  n_blocks_mean
+5g_campus RAPT-Enhanced          Frozen macro_f1     0.0017    0.0000     0.0047           14.0
+5g_campus RAPT-Enhanced Full Retraining macro_f1    -0.0455   -0.0733    -0.0206           14.0
+5g_campus          RAPT          Frozen macro_f1     0.0017    0.0000     0.0047           14.0
+5g_campus          RAPT Full Retraining macro_f1    -0.0455   -0.0733    -0.0206           14.0
+5g_campus  Event-Driven            RAPT macro_f1     0.0255    0.0048     0.0483           14.0
+5g_campus  Event-Driven Full Retraining macro_f1    -0.0200   -0.0448    -0.0013           14.0
+    ugr16 RAPT-Enhanced          Frozen macro_f1    -0.0413   -0.0661    -0.0191          144.0
+    ugr16 RAPT-Enhanced Full Retraining macro_f1    -0.0319   -0.0571    -0.0082          144.0
+    ugr16          RAPT          Frozen macro_f1    -0.1330   -0.1711    -0.0975          144.0
+    ugr16          RAPT Full Retraining macro_f1    -0.1236   -0.1621    -0.0859          144.0
+    ugr16  Event-Driven            RAPT macro_f1     0.0612    0.0181     0.1049          144.0
+    ugr16  Event-Driven Full Retraining macro_f1    -0.0624   -0.0932    -0.0330          144.0
+nordicdat RAPT-Enhanced          Frozen macro_f1     0.1005   -0.0119     0.3674           19.0
+nordicdat RAPT-Enhanced Full Retraining macro_f1    -0.0444   -0.1449     0.0540           19.0
+nordicdat          RAPT          Frozen macro_f1     0.1039    0.0145     0.3273           19.0
+nordicdat          RAPT Full Retraining macro_f1    -0.0409   -0.1621     0.0668           19.0
+nordicdat  Event-Driven            RAPT macro_f1    -0.1271   -0.2732    -0.0030           19.0
+nordicdat  Event-Driven Full Retraining macro_f1    -0.1680   -0.3461    -0.0319           19.0
+    5g_nr RAPT-Enhanced          Frozen macro_f1     0.0010   -0.0311     0.0421            9.0
+    5g_nr RAPT-Enhanced Full Retraining macro_f1    -0.0025   -0.0206     0.0182            9.0
+    5g_nr          RAPT          Frozen macro_f1    -0.0035   -0.0108     0.0020            9.0
+    5g_nr          RAPT Full Retraining macro_f1    -0.0070   -0.0574     0.0339            9.0
+    5g_nr  Event-Driven            RAPT macro_f1     0.0020   -0.0369     0.0474            9.0
+    5g_nr  Event-Driven Full Retraining macro_f1    -0.0050   -0.0212     0.0128            9.0
+
+=== TOST RAPT-Cheap vs Full Retraining ===
+  dataset   method_1        method_2  margin  mean_diff  tost_p  equivalent_0.05
+5g_campus RAPT-Cheap Full Retraining   0.005    -0.0007  0.0002             True
+5g_campus RAPT-Cheap Full Retraining   0.010    -0.0007  0.0000             True
+5g_campus RAPT-Cheap Full Retraining   0.020    -0.0007  0.0000             True
+    ugr16 RAPT-Cheap Full Retraining   0.005     0.0405  0.9503            False
+    ugr16 RAPT-Cheap Full Retraining   0.010     0.0405  0.9299            False
+    ugr16 RAPT-Cheap Full Retraining   0.020     0.0405  0.8575            False
+nordicdat RAPT-Cheap Full Retraining   0.005    -0.0523  0.9965            False
+nordicdat RAPT-Cheap Full Retraining   0.010    -0.0523  0.9948            False
+nordicdat RAPT-Cheap Full Retraining   0.020    -0.0523  0.9872            False
+    5g_nr RAPT-Cheap Full Retraining   0.005    -0.0403  0.9952            False
+    5g_nr RAPT-Cheap Full Retraining   0.010    -0.0403  0.9920            False
+    5g_nr RAPT-Cheap Full Retraining   0.020    -0.0403  0.9725            False

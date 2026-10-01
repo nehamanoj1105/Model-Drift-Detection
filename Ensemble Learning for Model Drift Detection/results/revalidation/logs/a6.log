@@ -1,0 +1,49 @@
+nohup: ignoring input
+### 5G Campus QoS
+   ADWIN done
+   Page-Hinkley done
+   EDMA done
+   EDD done
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream[c] = X[:, j]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:255: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream["_t0"] = np.asarray(data["timestamp"])[:n]
+### UGR'16
+   ADWIN done
+   Page-Hinkley done
+   EDMA done
+   EDD done
+### NordicDat
+   ADWIN done
+   Page-Hinkley done
+   EDMA done
+   EDD done
+### 5G NR
+   ADWIN done
+   Page-Hinkley done
+   EDMA done
+   EDD done
+
+-- 5g_campus: max events over settings
+   ADWIN          max_events=0 (default_events=0)
+   EDD            max_events=114 (default_events=114)
+   EDMA           max_events=5 (default_events=5)
+   Page-Hinkley   max_events=0 (default_events=0)
+
+-- ugr16: max events over settings
+   ADWIN          max_events=0 (default_events=0)
+   EDD            max_events=115 (default_events=115)
+   EDMA           max_events=3 (default_events=3)
+   Page-Hinkley   max_events=0 (default_events=0)
+
+-- nordicdat: max events over settings
+   ADWIN          max_events=0 (default_events=0)
+   EDD            max_events=117 (default_events=117)
+   EDMA           max_events=29 (default_events=29)
+   Page-Hinkley   max_events=0 (default_events=0)
+
+-- 5g_nr: max events over settings
+   ADWIN          max_events=0 (default_events=0)
+   EDD            max_events=344 (default_events=344)
+   EDMA           max_events=39 (default_events=39)
+   Page-Hinkley   max_events=0 (default_events=0)

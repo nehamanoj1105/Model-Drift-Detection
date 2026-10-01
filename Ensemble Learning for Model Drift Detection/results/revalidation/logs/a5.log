@@ -1,0 +1,36 @@
+nohup: ignoring input
+              variant  Tier1_learner  policy_repository  novelty_refit  parity_refit  fingerprint_gate  periodic_refresh  cheap_refit refresh_mode
+         TableII_RAPT              0                  1              1             0                 0                 0            0          NaN
+TableII_RAPT-Enhanced              0                  1              1             1                 0                 0            0          NaN
+              RAPT_T2              0                  1              1             0                 0                 0            0     periodic
+              RAPT_T1              1                  1              1             0                 0                 0            0     periodic
+        RAPT_T1_REFIT              1                  1              1             1                 0                 0            0     periodic
+            RAPT_FULL              1                  1              1             1                 1                 0            0     periodic
+       RAPT_REL_REFIT              1                  1              1             1                 1                 0            0     periodic
+      RAPT_REFRESH_W5              1                  1              1             1                 1                 5            0     periodic
+     RAPT_REFRESH_W10              1                  1              1             1                 1                10            0     periodic
+        RAPT_EVIDENCE              1                  1              1             1                 1                 1            0     evidence
+           RAPT_CHEAP              1                  1              1             1                 1                 5            1     periodic
+           RAPT_COMBO              1                  1              1             1                 1                 1            1     evidence
+           RAPT_FLOOR              1                  1              1             1                 1                 1            1     absolute
+            RAPT_INCR              1                  1              1             1                 1                 0            0     periodic
+### 5G Campus QoS
+   5G Campus QoS done
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream[c] = X[:, j]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:255: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream["_t0"] = np.asarray(data["timestamp"])[:n]
+### UGR'16
+   UGR'16 done
+### NordicDat
+   NordicDat done
+### 5G NR
+   5G NR done
+
+novelty buffer max training rows (capacity 1000):
+dataset
+5g_campus     485
+5g_nr         245
+nordicdat    1045
+ugr16        1030
+Name: max_refit_rows, dtype: int64

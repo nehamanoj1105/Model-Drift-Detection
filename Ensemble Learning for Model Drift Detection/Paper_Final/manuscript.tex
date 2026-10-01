@@ -1,6 +1,7 @@
 \documentclass[conference]{IEEEtran}
 \IEEEoverridecommandlockouts
 
+
 \usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{graphicx}
@@ -10,310 +11,360 @@
 \usepackage{multirow}
 \usepackage{array}
 \usepackage{url}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.16}
+\usetikzlibrary{shapes.geometric,arrows.meta}
+
 
 \graphicspath{{figures/}}
+
+
+% Uses the PNG if it exists in figures/, otherwise draws a labelled placeholder box
+\newcommand{\figorbox}[3]{%
+  \IfFileExists{figures/#1}%
+    {\includegraphics[width=#2]{#1}}%
+    {\fbox{\parbox[c][3.4cm][c]{\dimexpr#2-2\fboxsep-2\fboxrule\relax}{\centering\footnotesize TODO: #3\\(\texttt{figures/\detokenize{#1}})}}}}
+
 
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 
+
 \begin{document}
 
-\title{Regime-Aware Policy Transfer for Computationally\\ Efficient Adaptation under Network Data Drift}
 
-\author{\IEEEauthorblockN{Anonymous Submission}
-\IEEEauthorblockA{Paper ID: \textit{under double-blind review}}}
+\title{When Is Reuse Safe? Regime-Aware Policy Transfer for Recurring Drift in Network Telemetry}
+
+
+\author{
+\IEEEauthorblockN{Neha Manoj}
+\IEEEauthorblockA{
+Ericsson Research\\
+Bangalore,India\\
+neha.manoj@ericsson.com
+}
+}
+
 
 \maketitle
 
+
 \begin{abstract}
-Network telemetry is non-stationary, and predictive models trained on an earlier
-period degrade when operating conditions change. Conventional adaptation responds by
-retraining, effectively but at the repeated full cost of rebuilding a model. We ask
-whether adaptation policies learned for previously observed operating regimes can be
-reused instead of rebuilt. We present Regime-Aware Policy Transfer (RAPT), which
-associates a learned ensemble policy with each regime, retrieves it when a matching
-regime recurs, and refreshes it when monitoring shows the stored policy no longer
-fits. Evaluated against frozen, event-driven and full-retraining baselines on four
-network streams under a strictly prequential protocol, RAPT reduced adaptation CPU
-relative to full retraining by 48--92\%, but its predictive performance was not
-uniformly better: it recorded lower macro-F1 on all four streams, and on one stream
-blind reuse was actively harmful, a failure a parity-refit mechanism repairs. A
-cost-aware configuration matched full retraining within measurement noise
-($\Delta$macro-F1 $=+0.0022$, $p=0.31$) at roughly 40\% lower adaptation cost. Two
-mechanisms were rejected on measured evidence: a relative-degradation trigger that
-cannot fire on persistently poor policies, and an incremental learner dominated on
-both accuracy and cost.
+Network telemetry drifts, and the standard fix, retraining, pays the full cost of
+rebuilding the model every time. But network regimes recur: a congestion profile, a
+radio configuration or an operator comes back. We ask whether a policy learned for a
+regime can be reused when that regime returns, and when doing so is safe. Regime-Aware
+Policy Transfer (RAPT) stores one ensemble policy per regime, retrieves it on
+recurrence, and refits it when rolling accuracy shows it no longer fits. On four
+network streams under a strict prequential protocol, RAPT uses 48--92\% less adaptation
+CPU than full retraining. Macro-F1 is lower on all four streams, significantly so on
+two. The clearest failure is UGR'16, where regime identifiers recur but the
+feature-to-label mapping does not. Blind reuse drops macro-F1 to $0.836$, and a parity
+refit that checks the reused policy's recent accuracy recovers it to $0.928$. So reuse
+keyed on regime identity alone is unsafe, and reuse with a performance check is not. On
+5G Campus, a cost-aware refit configuration matches full retraining within measurement
+noise ($\Delta$macro-F1 $=+0.0022$, $p=0.31$) at about 40\% less adaptation CPU. Two
+other mechanisms failed under measurement and we report them: a relative-degradation
+trigger that cannot fire on a policy that was poor from the start, and an incremental
+learner that was worse on both accuracy and cost.
 \end{abstract}
+
 
 \begin{IEEEkeywords}
 concept drift, network telemetry, online learning, adaptive ensembles,
 regime-aware learning, computationally efficient adaptation
 \end{IEEEkeywords}
 
+
 \section{Introduction}
 
-Operational network data rarely holds still. Load, radio conditions, subscriber
-mobility and configuration changes all shift the distribution of the measurements
-that monitoring systems observe, and a classifier fitted to one period of a 5G
-testbed or an ISP netflow archive will not stay accurate indefinitely. The standard
-remedy is to retrain when performance falls. That works, but it is paid for
-repeatedly, and on high-rate telemetry the cumulative rebuild cost can exceed the
-cost of serving predictions; lightweight detection-and-adaptation frameworks have
-been proposed specifically for constrained devices \cite{9427288}.
 
-Many effective detectors exist for \emph{when} to adapt
+The data seen by network monitoring systems does not stay the same for long. Load,
+radio conditions, subscriber mobility and configuration changes each move the
+distribution, and a classifier fitted on a period of a 5G testbed or an ISP netflow
+archive will not stay accurate for very long. Retraining once performance drops is the
+standard answer. It works, but it has to be paid for again every time, and with
+high-rate telemetry the total spent on rebuilding models may end up above what it costs
+to serve predictions. Lightweight detection and adaptation frameworks for constrained devices already exist
+\cite{9427288}, and many good detectors decide \emph{when} to adapt
 \cite{bifet2007learning,page1954continuous,gama2004learning,baena2006early,ross2012exponentially,dos2016fast,brockhoff2020time},
-but none exploits the structure of the change. Network conditions are
-frequently \emph{recurring} rather than merely novel: a weekday congestion profile,
-a radio configuration, or an operator-specific QoS regime may appear, disappear, and
-return. Recurring concepts motivated some of the earliest work in the field
-\cite{schlimmer1986incremental,widmer1994combining}, yet the common response remains
-to relearn, discarding a model that is often still the right one.
+but they make no use of how the change is structured. Conditions in networks often come
+back. A weekday congestion profile, a radio configuration or an operator-specific QoS
+regime may go away and return later. Some of the earliest work in the field was driven
+by recurring concepts \cite{schlimmer1986incremental,widmer1994combining}, and still
+the usual practice is to learn again from scratch, even though the model being thrown
+away may well be the right one.
 
-This paper studies whether that information can be retained and reused. RAPT
-maintains a repository of adaptation policies indexed by operating regime. At a
-regime boundary it checks whether a policy for the incoming regime is already
-stored; if so, the stored ensemble is retrieved at near-zero adaptation cost, and
-otherwise a policy is trained and stored. Because a retrieved policy may no longer
-fit if the regime's label relationship has changed, RAPT also monitors its
-streaming accuracy and can refresh it. RAPT changes when training is paid for, not
-how the ensemble is trained.
 
-Our answer to whether the substitution is safe is conditional. Where regimes recur
-with stable label semantics, reuse preserves accuracy while removing most of the
-adaptation cost; where regimes recur but the feature-to-label relationship has
-shifted, reuse retrieves a stale policy and degrades performance, and the
-enhancement that repairs it is what makes the approach viable there. The
-contributions are a regime-conditioned policy-transfer mechanism that stores and
-retrieves ensemble policies by regime; a monitoring and refresh strategy whose
-cost-aware configuration matches full-retraining accuracy at a fraction of its cost;
-an evaluation across four network streams under one prequential protocol against four
-established drift detectors; and a failure analysis of harmful blind reuse, a trigger
-that cannot fire by construction, and an incremental learner dominated on both axes.
+The question we ask here is whether the discarded information can be kept and used. RAPT
+keeps a repository of adaptation policies, each indexed by an operating regime. At a
+regime boundary it looks up whether the incoming regime already has a stored policy.
+When it does, that ensemble is retrieved at close to zero adaptation cost, and when it
+does not, a new policy is trained and added to the repository. Since a retrieved policy
+can be wrong if the label relationship in that regime has changed, RAPT also follows
+its streaming accuracy and refreshes the policy if needed. 
+
+
+ If regimes recur with stable label
+semantics, reuse keeps accuracy and removes most of the adaptation cost. If regimes
+recur but the feature-to-label relationship has moved, reuse brings back a stale policy
+and accuracy suffers, and the repair mechanism is the reason the approach still works
+in that setting. Our contributions are as follows:
+\begin{itemize}
+\item a regime-conditioned policy-transfer mechanism that stores and retrieves
+ensemble policies by regime;
+\item a monitoring and refresh strategy whose cost-aware configuration matches
+full-retraining accuracy at a fraction of the cost;
+\item an evaluation on four network streams under one prequential protocol,
+against four established drift detectors;
+\item a failure analysis covering harmful blind reuse, a trigger that cannot fire
+by construction, and an incremental learner that loses on both axes.
+\end{itemize}
+
 
 \section{Related Work}
 
+
 \subsection{Concept and Data Drift}
-Distributional change in streaming data is separated into covariate shift, where
-$P(X)$ changes while $P(Y\mid X)$ is stable, and concept drift, where $P(Y\mid X)$
-itself changes \cite{gama2014survey,lu2018learning}. Survey work documents a long
-history of taxonomies and adaptation strategies \cite{khamassi2018discussion},
-beginning with the recurring concepts of STAGGER \cite{schlimmer1986incremental} and
-the robustness--flexibility trade-off studied by Widmer \cite{widmer1994combining}.
-The two call for different responses, since covariate shift can often be absorbed by
-recalibrating a decision boundary whereas concept drift invalidates the learned
-mapping. Recurring drift has received less attention than gradual or abrupt drift
-despite being common in systems whose load follows periodic patterns
-\cite{gomes2017adaptive}.
+Drift in a data stream is usually sorted into two cases. Under covariate shift the
+marginal $P(X)$ changes while $P(Y\mid X)$ holds, and under concept drift it is the
+conditional $P(Y\mid X)$ that changes \cite{gama2004learning,lu2018learning}. Surveys
+have catalogued the taxonomies and adaptation strategies built up over the years
+\cite{khamassi2018discussion}. The story starts with STAGGER and its recurring concepts
+\cite{schlimmer1986incremental}, and with Widmer's analysis of robustness against
+flexibility \cite{widmer1994combining}. 
+
 
 \subsection{Drift Detection}
-Detectors trigger adaptation rather than performing it. ADWIN compares sub-window
-means over an adaptive window \cite{bifet2007learning}; Page-Hinkley is a sequential
-cumulative-sum procedure \cite{page1954continuous}; DDM and EDD monitor the error rate
-and its variance \cite{gama2004learning,baena2006early}, while RDDM adds reduced false
-alarms \cite{barros2017rddm} and EDMA and EWMA charts track an exponentially weighted
-moving average of the error \cite{ross2012exponentially}. Label-free detectors test the feature stream instead,
-using Hoeffding bounds \cite{frias2014online}, an incremental Kolmogorov--Smirnov
-statistic \cite{dos2016fast}, or the earth-mover distance \cite{brockhoff2020time},
-with lightweight variants for constrained IoT deployments \cite{9427288}. They
-differ in sensitivity and firing frequency, which translates into adaptation cost.
+
+
+ADWIN compares sub-window means inside an adaptive window \cite{bifet2007learning},
+and Page-Hinkley is a sequential cumulative-sum procedure \cite{page1954continuous}.
+DDM and EDD follow the error rate together with its variance
+\cite{gama2004learning,baena2006early}. RDDM was designed to give fewer false alarms
+\cite{barros2017rddm}, while the EDMA and EWMA charts track an exponentially weighted
+moving average of the error \cite{ross2012exponentially}. A separate family needs no
+labels and tests the features directly. Examples use Hoeffding bounds
+\cite{frias2014online}, an incremental Kolmogorov--Smirnov statistic
+\cite{dos2016fast}, or the earth-mover distance \cite{brockhoff2020time}, and
+lightweight versions exist for constrained IoT deployments \cite{9427288}. 
+
 
 \subsection{Adaptive and Online Learning}
-Online ensembles adapt by updating constituent models as data arrives. Dynamic
-weighted majority weights learners by recent accuracy and adds or removes them as the
-stream evolves \cite{JMLR:v8:kolter07a}, an idea disagreement-minimizing methods had
-already applied to drifting concepts \cite{helmbold1994tracking}; adaptive random
-forests extend online bagging with drift-aware tree replacement \cite{gomes2017adaptive},
-the accuracy-updated ensemble reweights components under drift \cite{brzezinski2013reacting},
-and such designs have been specialised to social big-data and IoT streams
-\cite{abbasi2021elstream,yang2021pwpae}. Single-pass incremental learners such as
-Hoeffding trees bound memory and update cost per example \cite{domingos2000mining},
-and the River library implements the detectors and incremental learners used here
-\cite{montiel2021river}. Incremental updating changes \emph{how} a model is updated
-rather than whether an already-adequate model can be retrieved;
-Section~\ref{sec:ablation} reports a comparison in which it did not improve the
-accuracy--cost trade-off on our stream.
+Online ensembles handle drift by updating their members as new data arrives. Dynamic
+weighted majority weights each learner by its recent accuracy and adds or drops
+learners along the way \cite{JMLR:v8:kolter07a}; it grew out of earlier methods that
+minimize disagreement on drifting concepts \cite{helmbold1994tracking}. Adaptive random
+forests pair online bagging with drift-aware tree replacement
+\cite{gomes2017adaptive}, and the accuracy-updated ensemble reweights its components
+when drift appears \cite{brzezinski2013reacting}. Similar designs have been proposed
+for social big-data and IoT streams \cite{abbasi2021elstream,yang2021pwpae}.
+Single-pass incremental learners, of which Hoeffding trees are the standard example,
+keep memory use and per-example update cost bounded \cite{domingos2000mining}. The
+detectors and incremental learners in our experiments come from the River library
+\cite{montiel2021river}. All of this work is about \emph{how} a model gets
+updated. None of it considers fetching a model that is already good enough. In
+Section~\ref{sec:ablation} we test one incremental learner against our approach, and
+on our stream it does not improve the accuracy--cost trade-off.
+
 
 \subsection{Transfer under Recurring Conditions}
-Transfer learning moves representations or parameters from a source task to a
-related target task \cite{pan2010transfer}. Retaining rather than discarding learned
-structure has an older lineage in work on the role of forgetting \cite{markovitch1988role}
-and the cost of reusing compiled knowledge chunks \cite{tambe1988some}, both
-observing that relearning what is already known is wasteful. RAPT transfers something
-narrower: a previously fitted policy and its regime identity are stored and retrieved
-whole, so the decision is not how to adapt but whether adaptation is needed at all;
-without recurrence the mechanism degenerates to ordinary retraining.
+Transfer learning moves representations or parameters learned on a source task over to
+a related target task \cite{pan2010transfer}. The idea of holding on to learned structure
+has a long history, with roots in work on the role of forgetting
+\cite{markovitch1988role} and on the cost of reusing compiled knowledge chunks
+\cite{tambe1988some}.
+ It saves a fitted policy
+with its regime identity and retrieves the two together. The decision it makes is
+whether any adaptation is needed, and how to adapt is left aside. With no recurrence,
+the mechanism collapses into ordinary retraining.
+
 
 \section{Problem Formulation}
 
-Let a stream be a chronological sequence $x_1, x_2, \dots$, where
-$x_t \in \mathbb{R}^d$ is a feature vector and $y_t \in \{1,\dots,C\}$ its label,
-available only after the prediction for $x_t$. The stream is partitioned into
-fixed-size windows $W_1, \dots, W_T$, and window $W_k$ carries a regime identifier
-$r_k \in \mathcal{R}$. A regime is a semantically defined operating condition
-rather than a cluster label, such as a network scenario or a time-of-day block. A
-\emph{policy} $\pi$ is a fitted model with its decision rule, and the repository is a
-mapping
-$\mathcal{P}: \mathcal{R} \rightarrow \pi$ populated as regimes are encountered.
-When the stream moves from $r_{k-1}$ to $r_k$, the
-controller chooses $a_k \in \{\textsc{reuse}, \textsc{train}\}$: reuse
-$\mathcal{P}(r_k)$ if it exists, or train a new policy from the recent buffer. With
-$M(\pi, W)$ a performance measure (macro-F1 here) and $c(\pi)$ the cost of producing
-$\pi$ in adaptation CPU time, the problem is to keep $M(\cdot, W_k)$ close to a
-freshly trained policy's while minimizing $\sum_k c(a_k)$. Reuse assumes
-$P(Y \mid X, r_k)$ is unchanged since the policy was stored; if the regime identifier
-recurs but the conditional relationship has shifted, the stale policy is applied with
-no signal that it is stale. Distinguishing recurrence of the regime from recurrence
-of the label relationship is the central difficulty.
+
+We treat the data as a chronological stream $x_1, x_2, \dots$, where
+$x_t \in \mathbb{R}^d$ is a feature vector and $y_t \in \{1,\dots,C\}$ is its label. The
+label is unknown until the prediction for $x_t$ has been issued. The stream is divided
+into fixed-size windows $W_1, \dots, W_T$, and each window $W_k$ is tagged with a regime
+identifier $r_k \in \mathcal{R}$. A regime is a semantically defined operating
+condition, such as a network scenario or a time-of-day block. It is not a cluster label.
+A \emph{policy} $\pi$ is a fitted model plus its decision rule, and the repository is a
+mapping $\mathcal{P}: \mathcal{R} \rightarrow \pi$ that is filled in as new regimes show
+up. Whenever the stream moves from $r_{k-1}$ to $r_k$, the controller picks an action
+$a_k \in \{\textsc{reuse}, \textsc{train}\}$. It reuses $\mathcal{P}(r_k)$ when that
+exists, and trains a new policy on the recent buffer when it does not. Let $M(\pi, W)$
+be a performance measure, which is macro-F1 in this paper, and let $c(\pi)$ be the cost
+of producing $\pi$ in adaptation CPU time. The objective is to hold $M(\cdot, W_k)$ near
+the level a freshly trained policy would reach while making $\sum_k c(a_k)$ as small as
+possible.
+
+
+Reuse rests on an assumption, namely that $P(Y \mid X, r_k)$ has not changed since the
+policy was stored. If the regime identifier returns after the conditional relationship
+has shifted, the stale policy gets applied and nothing flags it. The hard part is
+separating a recurring regime from a recurring label relationship.
+
 
 \section{Proposed Method: RAPT}
+\label{sec:method}
+
 
 \subsection{Architecture and Repository}
-RAPT sits between the stream and the model and makes one decision per regime
-boundary. Each window is predicted with the currently active policy and evaluated
-once its labels are available, and the policy changes only at a regime transition or
-when monitoring reports degradation --- the prequential discipline of
-Section~\ref{sec:protocol}, which prevents a window's labels from influencing its own
-prediction. A regime is represented by its semantic identifier rather than a learned
-clustering, which keeps repository keys stable and avoids the failure mode in which
-clustering splits one operating condition into several keys and defeats reuse; the
-mechanism therefore depends on a usable regime signal, an assumption we revisit in
-Section~\ref{sec:limitations}. The repository stores, per regime, a checkpoint
-holding the fitted ensemble, its soft-voting weights, and creation and last-access
-timestamps. Checkpoints are immutable, so reuse retrieves the ensemble by reference
-rather than copying it, and only the small weight vector is adjusted when calibration
-applies; retrieval cost is therefore independent of model size, making reuse cheap
-relative to retraining.
+RAPT sits between the stream and the model and makes one decision at each regime
+boundary. The active policy predicts each window, and the window is scored when its
+labels arrive. A change of policy happens only at a regime transition or when
+monitoring reports degradation.
+
+
+% ---------- NEW FIGURE: method overview ----------
+\begin{figure*}[!t]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tikzpicture}[>=Stealth, font=\footnotesize,
+  box/.style={draw, rounded corners=2pt, align=center, minimum height=8mm, minimum width=18mm, inner sep=3pt},
+  dec/.style={draw, diamond, aspect=2.2, align=center, inner sep=0pt},
+  repo/.style={draw, align=center, fill=gray!15, minimum height=30mm, minimum width=19mm},
+  flow/.style={->, thick},
+  mem/.style={->, dashed, thick}]
+\node[box]  (win)  at (0,0)     {Window $W_k$\\regime $r_k$};
+\node[dec]  (chg)  at (2.9,0)   {regime\\changed?};
+\node[dec]  (hit)  at (5.9,0)   {$r_k \in \mathcal{P}$?};
+\node[box]  (reuse) at (8.7,1.0) {\textsc{reuse}\\recalibrate weights};
+\node[box]  (train) at (8.7,-1.0){\textsc{train}\\on buffer};
+\node[repo] (repo) at (11.5,0)  {Repository\\$\mathcal{P}$\\[1mm]\scriptsize one checkpoint\\\scriptsize per regime};
+\node[box]  (act)  at (14.0,0)  {Active policy\\predict, then\\score};
+\node[dec]  (mon)  at (16.5,0)  {rolling acc.\\below floor?};
+\node[box]  (ref)  at (16.5,-2.1){Refresh:\\refit policy};
+
+
+\draw[flow] (win) -- (chg);
+\draw[flow] (chg) -- node[above]{yes} (hit);
+\draw[flow] (chg.north) -- ++(0,0.55) node[above]{no: keep active policy} ;
+\draw[flow] (hit.east) -- ++(0.3,0) |- node[pos=0.8,above]{yes} (reuse.west);
+\draw[flow] (hit.east) -- ++(0.3,0) |- node[pos=0.8,above]{no} (train.west);
+\draw[mem] (repo.west |- reuse.east) -- node[above]{retrieve} (reuse.east);
+\draw[mem] (train.east) -- node[above]{store} (repo.west |- train.east);
+\draw[flow] (repo.east) -- (act.west);
+\draw[flow] (act.east) -- (mon.west);
+\draw[flow] (mon.south) -- node[right]{yes} (ref.north);
+\draw[mem] (ref.west) -| node[pos=0.25,above]{replace} (repo.south);
+\end{tikzpicture}}
+\caption{RAPT overview. At each regime boundary the controller looks up the incoming
+regime in the repository and either reuses the stored policy or trains and stores a new
+one. The active policy predicts and is scored as labels arrive. A monitor refits the
+policy and replaces its checkpoint when rolling accuracy degrades. Solid arrows are
+control flow, dashed arrows are repository reads and writes.}
+\label{fig:overview}
+\end{figure*}
+% ---------- END NEW FIGURE ----------
+
+
+We represent a regime with its semantic identifier and do not learn a clustering.  What we give up is that
+the mechanism requires a usable regime signal; see Section~\ref{sec:limitations}. The
+repository holds one checkpoint per regime, made up of the fitted ensemble, its
+soft-voting weights, and timestamps for creation and last access. Checkpoints are
+immutable.
+
 
 \subsection{Matching and Transfer}
-Matching is by regime identifier: on a transition to regime $r$ the controller tests
-whether $r \in \mathcal{P}$. In the enhanced variant a fingerprint-similarity gate
-also requires the current window's feature summary to be close to the fingerprint
-recorded at checkpoint creation, converting ``has this regime been seen?'' into the
-weaker ``has a sufficiently similar instance been seen?'' and letting the mechanism
-decline reuse when a regime recurs under visibly different conditions. On reuse the
-retrieved ensemble becomes the active policy and its soft-voting weights may be
-recalibrated on the most recent buffered window by measuring the recent accuracy of
-the two components and renormalizing them; calibration is bounded to the last 50
-observations and skipped below 20, so its cost is fixed and small. When no checkpoint
-exists a new policy is trained from a class-anchored buffer and stored; that buffer
-retains a stratified slice of the training prefix, applied identically to every
-adaptive model here, to prevent a refit from collapsing onto one class when the recent
-window is homogeneous.
+Matching uses the regime identifier. On a transition to regime $r$, the controller tests
+whether $r \in \mathcal{P}$. The enhanced variant also applies a fingerprint-similarity
+gate, which requires the feature summary of the current window to be close to the
+fingerprint saved when the checkpoint was created. The effect is to relax the question
+``has this regime been seen?'' into ``has a sufficiently similar instance been seen?''.
+
+
+When reuse goes ahead, the retrieved ensemble becomes the active policy, and its
+soft-voting weights can be recalibrated using the most recent buffered window.
+Calibration computes the recent accuracy of the two components and renormalizes their
+weights. It covers at most the last 50 observations and is skipped when fewer than 20
+are available, so its cost is small and fixed. If no checkpoint exists, we train a new
+policy from a class-anchored buffer and store it. The buffer holds a stratified slice of
+the training prefix. All adaptive models here use it in the same way, which stops a
+refit from collapsing onto a single class when the recent window has only one.
+
 
 \subsection{Monitoring, Refresh, and Fallback}
-Two monitoring rules are available, and their difference is one finding of this work.
-The \emph{absolute} rule fires when rolling accuracy falls below a fixed floor; the
-\emph{relative} rule fires when accuracy has dropped by more than a fixed margin
-relative to a decayed reference built from that policy's earlier accuracy.
-Section~\ref{sec:trigger} shows the sharp consequence: a policy that was never good
-cannot be detected by a relative rule, because the reference decays toward the poor
-level and the gap the rule looks for never opens. A refresh rebuilds the active
-policy from the recent buffer and replaces its checkpoint, so later reuses retrieve
-the refreshed policy. The default refresh refits the 100-tree ensemble on a
-1000-observation buffer; the cost-aware refresh keeps the trigger but refits 20 trees
-on a 300-observation buffer, and Section~\ref{sec:cost} reports the motivating
-measurement.
-
-RAPT-Enhanced adds \emph{buffer-blended novelty refitting}, refitting a novel regime
-on a 1500-observation buffer rather than 500, and \emph{selective parity refitting},
-refitting a reused policy and replacing its checkpoint when rolling accuracy falls
-below a parity threshold over a short window. Parity refitting addresses the
-stale-reuse failure directly, since it does not require the regime identifier to
-change before a retrieved policy can be corrected. When no checkpoint exists and the
-similarity gate declines an available one, the controller trains a fresh policy and
-stores it under the incoming regime identifier; this fallback is exactly the
-full-retraining behaviour RAPT avoids only when unnecessary.
+We use two monitoring rules, and how they differ is one of our findings. The
+\emph{absolute} rule triggers when rolling accuracy goes under a fixed floor. The
+\emph{relative} rule triggers when accuracy has dropped by more than a fixed margin from
+a decayed reference, which is built from that policy's own earlier accuracy.
+ A relative rule cannot catch a
+policy that was never good, because the reference decays toward the poor level and so
+the gap it looks for never appears.
 
 
-\section{Experimental Methodology}
-\label{sec:protocol}
+A refresh rebuilds the active policy from the recent buffer and replaces its checkpoint,
+and any later reuse then gets the refreshed policy. In the default refresh, the
+100-tree ensemble is refit on a 1000-observation buffer. The cost-aware refresh has the
+same trigger but refits 20 trees on a 300-observation buffer.RAPT-Enhanced contains two additions. \emph{Buffer-blended novelty refitting} refits a
+novel regime on a 1500-observation buffer, where the original used 500.
+\emph{Selective parity refitting} refits a reused policy and replaces its checkpoint
+whenever rolling accuracy falls under a parity threshold over a short window. This
+targets stale reuse directly.  When there is no checkpoint, or the similarity gate
+turns down the one that exists, the controller trains a fresh policy and stores it under
+the incoming regime identifier. 
+\section{Experimental Methodology}\label{sec:protocol} 
+\subsection{Datasets} 
+Four datasets are summarized in Tab.~\ref{tab:datasets}; all are real network traces.
+\emph{5G Campus} is a testbed QoS stream with delay metrics labelled GOOD, DEGRADED or
+BAD from the 90th-percentile delay of the next window; each of the three scenarios recurs
+fourteen times. \emph{UGR'16} is aggregated ISP netflow with 134 features. Because the
+calibration split contains almost no labelled attack traffic, we use the first thirty days
+of labelled data, one sample per minute (43{,}200 samples); time-of-day crossed with
+weekday/weekend gives twelve regimes and 168 recurrences. \emph{NordicDat} is a
+cross-border LTE/5G predictive-QoS trace \cite{nordicdat} whose regimes are operators.
+Both of these label the median delay of the next window into three classes. \emph{5G NR}
+is a simulated end-to-end latency stream \cite{nrlatency} of 499 windows of 500 packets
+across four regimes (ABCDACBDAB), labelled with the same rule as Campus.
 
-\subsection{Datasets}
-Four network streams are used, summarised in Table~\ref{tab:datasets}.
-\textbf{5G Campus Network QoS} is a per-window QoS stream from a 5G campus testbed
-with 19 features and a three-class target (GOOD, DEGRADED, BAD) from the next
-window's 90th-percentile delay; regimes are scenario labels and three recur 14 times.
-\textbf{UGR'16} is an ISP netflow archive of per-minute aggregates with 134 features
-\cite{ugr16}; its calibration split holds only blacklisted traffic with no labelled
-attacks, so the labelled 30-day block is used, with a binary target and
-workday/weekend crossed with four-hour time-of-day blocks giving twelve regimes and
-168 recurrence events, the strongest recurrence structure here. \textbf{NordicDat}
-is a set of cross-border LTE and 5G predictive-QoS traces \cite{nordicdat} with a
-three-class next-window median-delay target and mobile-operator regimes, the weakest
-and fewest-transition stream. \textbf{5G NR End-to-End Latency} is a simulated dataset
-\cite{nrlatency} of 499 windows of 500 packets spanning four regimes ($ABCDACBDAB$)
-with the campus QoS target, used for the natural-drift baseline and controlled drift
-experiments.
 
-\begin{table}[t]
-\caption{Datasets used in the evaluation. Recurrences count regime re-visits.}
-\label{tab:datasets}
-\centering
-\footnotesize
-\begin{tabular}{@{}lrrrr@{}}
+\begin{table}[hbt!] 
+\small 
+\caption{Datasets used in evaluations. Recurrences denote occurrences where a particular regime is revisited.} 
+\label{tab:datasets} 
+\centering 
+\begin{tabular}{@{}llrrrr@{}}
 \toprule
-\textbf{Property} & \textbf{Campus} & \textbf{UGR'16} & \textbf{Nordic} & \textbf{5G NR} \\
+\textbf{Property} & \textbf{Campus} & \textbf{UGR'16} & \textbf{Nordic} & \textbf{5G NR}\\
 \midrule
-Samples     & 1{,}799  & 43{,}200 & 91{,}455 & 249{,}500 \\
-Features    & 19       & 134      & 16       & 12 \\
-Classes     & 3        & 2        & 3        & 3 \\
-Windows     & 179      & 180      & 182      & 499 \\
-Window size & 10       & 240      & 500      & 500 \\
-Regimes     & 3        & 12       & 3        & 4 \\
-Recurrences & 14       & 168      & 17       & 10 \\
+Samples & 1,799 & 43,200 & 91,455 & 249,500\\
+Features & 19 & 134 & 16 & 12\\
+Classes & 3 & 2 & 3 & 3\\
+Windows & 179 & 180 & 182 & 499\\
+Window size & 10 & 240 & 500 & 500\\
+Regimes & 3 & 12 & 3 & 4\\
+Recurrences & 14 & 168 & 17 & 6\\
 \bottomrule
-\end{tabular}
+\end{tabular} 
 \end{table}
 
-\subsection{Preprocessing, Ordering, and Leakage Control}
-All streams follow one lightweight pipeline: order by timestamp, drop identifier and
-constant columns, keep numeric features, map infinities to missing, drop rows with
-missing targets, impute with training-prefix medians, encode categorical targets
-deterministically, and window. No PCA, feature selection, hyper-parameter search or
-global normalization is applied, and target thresholds and scaling statistics are
-computed on the initial training prefix only. Streams are never shuffled. The prefix
-is 20\% of the windows (36 for the three cross-dataset streams, 99 for 5G NR), is
-never evaluated as test data, and is the only source of target thresholds. Windows
-are predicted before their labels are used for adaptation, giving the prequential
-order \textbf{predict $\rightarrow$ evaluate $\rightarrow$ adapt}; regime annotations
-are read from the stream, not derived from the target.
 
-\subsection{Models and Detectors}
-The five primary models share one base architecture and one retraining buffer, so
-differences reflect only the adaptation mechanism: a heterogeneous soft-voting
-ensemble of a random forest and an extra trees classifier, each 50 trees of depth 7. \emph{Frozen} trains once on the prefix and never
-adapts; \emph{Event-Driven} retrains when window accuracy drops below a fixed
-threshold; \emph{Full Retraining} rebuilds at every regime transition; \emph{RAPT}
-and \emph{RAPT-Enhanced} are the controllers of Section~IV.
+\subsection{Preprocessing, Ordering, and Leakage Control} 
+All four streams undergo the exact same processing. First, all four streams undergo sorting by row according to timestamp. Then, all identifier and constant columns are dropped. Finally, only those features that are numeric are retained. Any infinite values present within a stream are treated as missing. Any rows that lack a target value are deleted. Any remaining gaps are then filled using medians computed solely from the training prefix. Target thresholds and any scale-related statistics also derive from that prefix. None of the streams are shuffled. The prefix is the first twenty percent of windows: thirty-six for the three cross-dataset streams and ninety-nine for 5G NR. That prefix is completely excluded from evaluation, and that is the sole source of target thresholds. The order of operations is predict → evaluate → adapt for every window prior to its labels being used for adaptation. Regime annotation occurs directly from reading the stream. Therefore, no derivation of annotation can occur based upon the target.
 
-ADWIN, Page-Hinkley, EDD and EDMA drive the same retraining harness with identical
-model, buffer, capacity and minimum retrain interval, so only the trigger differs.
-Parameters are fixed a priori and not tuned on the test stream (ADWIN
-$\delta=0.002$; Page-Hinkley minimum 30 instances, threshold 50; EDD warning 2, drift
-3; EDMA $\alpha=0.2$, $k=2.0$). As ground-truth boundaries are unavailable, we report
-detected events, adaptation cost and predictive performance rather than detector
-precision and recall.
 
-\subsection{Metrics and Statistics}
-Predictive performance is reported as macro-F1, accuracy, precision and recall.
-Adaptation cost is reported as \emph{adaptation CPU}, the time inside adaptation
-routines only, and \emph{runtime}, the total streaming time; these are kept separate
-because a reduction in adaptation time does not translate proportionally into total
-runtime. We also record retraining and reuse events and trees trained or reused. All
-experiments use seeds $[42, 43, 44, 45, 46]$ and report mean $\pm$ standard
-deviation; paired comparisons use the Wilcoxon signed-rank test with Cohen's $d$.
-Window pairing has 143--146 observations, seed pairing $n=5$ and a smallest attainable
-two-sided $p$-value of $0.0625$; that ceiling is stated wherever it binds, and
-non-significant results are reported as a failure to establish a difference rather
-than as equivalence. Measurements used a single process with \texttt{n\_jobs}$=1$,
-so timings are comparable within the study but not portable.
+\subsection{Models And Detectors} 
+Each of the five primary models utilizes exactly the same base architecture and the same retraining buffer. Therefore, any variation between them is due to their respective adaptation mechanisms only. The base is an ensemble of a random forest classifier and an extra-trees classifier, both having fifty trees of depth seven. Frozen is trained once on the prefix and receives no subsequent updates. Event-Driven will update when window accuracy falls below a fixed threshold. Full Retraining will recreate/rebuild the model at every regime transition. RAPT and RAPT-Enhanced represent the controller(s) explained in Section~\ref{sec:method}.
 
-\section{Results}
+
+ADWIN, Page-Hinkley, EDD and EDMA operate within the same retraining harness, with identical model, buffer, capacity and minimum-retrain-interval. They differ only by how they detect triggers. We pre-set their parameters in advance and did not adjust them via testing against our test streams (ADWIN $\delta$ = .002; Page-Hinkley min = Thirty; THRESHOLD = Fifty; EDD WARNING = Two; DRIFT = Three; EDMA $\alpha$ = .2 k = Two). Since none of our streams include true ground truth drift boundary indicators we report detected events, adaptation costs and predictive performance. Precision and Recall were not reported for our detectors.
+
+
+\subsection{Metrics And Statistics} 
+Performance is evaluated through macro-F1, Accuracy, Precision and Recall measures. Costs may be measured in two fashions. Adaptation CPU denotes CPU time exclusively devoted to adaptation routines while Runtime indicates Total Streaming Time. A reduction in Adaptation Time does not necessarily translate into a proportional reduction in Total Runtime.
+
+
+Each experiment had seeds [42,43,44,45,46]. Therefore we report Mean and Standard Deviation for each measure. For comparison purposes we use the Wilcoxon Signed-Ranked Test for paired comparisons along with Cohen’s d. With respect to pairing by Window there would be approximately 143–146 observations. When paired by Seed we would have n = 5 with a minimum two-sided p-value available to us of .0625. If a result shows no significance we state that no difference was demonstrated between methods.
+
 
 \subsection{Predictive Performance}
-Table~\ref{tab:primary} reports the primary comparison and
-Fig.~\ref{fig:primary} shows the macro-F1 values side by side.
+Table~\ref{tab:primary} holds the primary comparison. On UGR'16, RAPT tracks the frozen
+baseline and not the retrained models, the signature of stale policy reuse; on 5G NR the
+five models are within $0.0133$ of one another.
+
 
 \begin{table*}[t]
 \caption{Primary comparison and cost, mean over seeds 42--46. Bold marks the
@@ -326,440 +377,283 @@ best macro-F1 per stream; CPU and runtime in seconds, events are counts.}
 \textbf{Dataset} & \textbf{Model} & \textbf{F1} & \textbf{Acc.} & \textbf{Prec.} & \textbf{Rec.} & \textbf{CPU (s)} & \textbf{Run (s)} & \textbf{Retr.} & \textbf{Reuse} \\
 \midrule
 \multirow{5}{*}{5G Campus}
- & Frozen          & $0.9364 \pm 0.0023$ & $0.9822 \pm 0.0006$ & $0.9379 \pm 0.0025$ & $0.9377 \pm 0.0017$ & 0.0000 & 1.2482 & 0 & -- \\
- & Event-Driven    & $0.9636 \pm 0.0006$ & $0.9908 \pm 0.0003$ & $0.9637 \pm 0.0008$ & $0.9646 \pm 0.0002$ & 0.1080 & 1.3926 & 1 & -- \\
+ & Frozen & $0.9364 \pm 0.0023$ & $0.9822 \pm 0.0006$ & $0.9379 \pm 0.0025$ & $0.9377 \pm 0.0017$ & 0.0000 & 1.2482 & 0 & -- \\
+ & Event-Driven & $0.9636 \pm 0.0006$ & $0.9908 \pm 0.0003$ & $0.9637 \pm 0.0008$ & $0.9646 \pm 0.0002$ & 0.1080 & 1.3926 & 1 & -- \\
  & Full Retraining & $\mathbf{0.9836 \pm 0.0013}$ & $0.9951 \pm 0.0000$ & $0.9838 \pm 0.0015$ & $0.9843 \pm 0.0012$ & 1.4008 & 2.6677 & 14 & -- \\
- & RAPT            & $0.9381 \pm 0.0016$ & $0.9838 \pm 0.0003$ & $0.9393 \pm 0.0017$ & $0.9392 \pm 0.0016$ & 0.2292 & 1.4931 & 2 & 12 \\
- & RAPT-Enhanced   & $0.9381 \pm 0.0016$ & $0.9838 \pm 0.0003$ & $0.9393 \pm 0.0017$ & $0.9392 \pm 0.0016$ & 0.2337 & 2.1046 & 2 & 12 \\
+ & RAPT & $0.9381 \pm 0.0016$ & $0.9838 \pm 0.0003$ & $0.9393 \pm 0.0017$ & $0.9392 \pm 0.0016$ & 0.2292 & 1.4931 & 2 & 12 \\
+ & RAPT-Enhanced & $0.9381 \pm 0.0016$ & $0.9838 \pm 0.0003$ & $0.9393 \pm 0.0017$ & $0.9392 \pm 0.0016$ & 0.2337 & 2.1046 & 2 & 12 \\
 \midrule
 \multirow{5}{*}{UGR'16}
- & Frozen          & $\mathbf{0.9690 \pm 0.0029}$ & $0.9899 \pm 0.0007$ & $0.9795 \pm 0.0030$ & $0.9662 \pm 0.0028$ & 0.0000 & 2.4914 & 0 & -- \\
- & Event-Driven    & $0.8972 \pm 0.0277$ & $0.9898 \pm 0.0013$ & $0.9042 \pm 0.0269$ & $0.8955 \pm 0.0280$ & 0.5754 & 3.1303 & 3 & -- \\
+ & Frozen & $\mathbf{0.9690 \pm 0.0029}$ & $0.9899 \pm 0.0007$ & $0.9795 \pm 0.0030$ & $0.9662 \pm 0.0028$ & 0.0000 & 2.4914 & 0 & -- \\
+ & Event-Driven & $0.8972 \pm 0.0277$ & $0.9898 \pm 0.0013$ & $0.9042 \pm 0.0269$ & $0.8955 \pm 0.0280$ & 0.5754 & 3.1303 & 3 & -- \\
  & Full Retraining & $0.9595 \pm 0.0012$ & $0.9873 \pm 0.0007$ & $0.9726 \pm 0.0014$ & $0.9580 \pm 0.0015$ & 23.6318 & 26.2627 & 144 & -- \\
- & RAPT            & $0.8360 \pm 0.0262$ & $0.9635 \pm 0.0182$ & $0.8527 \pm 0.0205$ & $0.8336 \pm 0.0294$ & 1.9711 & 4.4990 & 11 & 133 \\
- & RAPT-Enhanced   & $0.9276 \pm 0.0123$ & $0.9880 \pm 0.0017$ & $0.9375 \pm 0.0117$ & $0.9251 \pm 0.0123$ & 2.7182 & 5.9329 & 11 & 133 \\
+ & RAPT & $0.8360 \pm 0.0262$ & $0.9635 \pm 0.0182$ & $0.8527 \pm 0.0205$ & $0.8336 \pm 0.0294$ & 1.9711 & 4.4990 & 11 & 133 \\
+ & RAPT-Enhanced & $0.9276 \pm 0.0123$ & $0.9880 \pm 0.0017$ & $0.9375 \pm 0.0117$ & $0.9251 \pm 0.0123$ & 2.7182 & 5.9329 & 11 & 133 \\
 \midrule
 \multirow{5}{*}{NordicDat}
- & Frozen          & $0.2779 \pm 0.0224$ & $0.4770 \pm 0.0123$ & $0.4215 \pm 0.0226$ & $0.2487 \pm 0.0229$ & 0.0000 & 2.5488 & 0 & -- \\
- & Event-Driven    & $0.2547 \pm 0.0177$ & $0.4583 \pm 0.0367$ & $0.3909 \pm 0.0208$ & $0.2274 \pm 0.0151$ & 0.2533 & 2.8435 & 2 & -- \\
+ & Frozen & $0.2779 \pm 0.0224$ & $0.4770 \pm 0.0123$ & $0.4215 \pm 0.0226$ & $0.2487 \pm 0.0229$ & 0.0000 & 2.5488 & 0 & -- \\
+ & Event-Driven & $0.2547 \pm 0.0177$ & $0.4583 \pm 0.0367$ & $0.3909 \pm 0.0208$ & $0.2274 \pm 0.0151$ & 0.2533 & 2.8435 & 2.2 & -- \\
  & Full Retraining & $\mathbf{0.4227 \pm 0.0299}$ & $0.5694 \pm 0.0075$ & $0.4938 \pm 0.0233$ & $0.4085 \pm 0.0293$ & 2.2034 & 4.7593 & 18 & -- \\
- & RAPT            & $0.3818 \pm 0.0184$ & $\mathbf{0.6172 \pm 0.0127}$ & $0.4703 \pm 0.0185$ & $0.3582 \pm 0.0192$ & 0.2594 & 2.8257 & 2 & 16 \\
- & RAPT-Enhanced   & $0.3783 \pm 0.0321$ & $0.5677 \pm 0.0222$ & $0.4600 \pm 0.0307$ & $0.3614 \pm 0.0318$ & 2.6492 & 5.8812 & 2 & 16 \\
+ & RAPT & $0.3818 \pm 0.0184$ & $\mathbf{0.6172 \pm 0.0127}$ & $0.4703 \pm 0.0185$ & $0.3582 \pm 0.0192$ & 0.2594 & 2.8257 & 2 & 16 \\
+ & RAPT-Enhanced & $0.3783 \pm 0.0321$ & $0.5677 \pm 0.0222$ & $0.4600 \pm 0.0307$ & $0.3614 \pm 0.0318$ & 2.6492 & 5.8812 & 2 & 16 \\
 \midrule
 \multirow{5}{*}{5G NR Lat.}
- & Frozen          & $0.8961 \pm 0.0099$ & $0.9075 \pm 0.0061$ & $0.9314 \pm 0.0083$ & $0.8798 \pm 0.0085$ & 0.0000 & 1.7862 & 0 & -- \\
- & Event-Driven    & $0.8903 \pm 0.0107$ & $0.9055 \pm 0.0060$ & $0.9475 \pm 0.0085$ & $0.8688 \pm 0.0083$ & 1.0406 & 2.7561 & 11 & -- \\
+ & Frozen & $0.8961 \pm 0.0099$ & $0.9075 \pm 0.0061$ & $0.9314 \pm 0.0083$ & $0.8798 \pm 0.0085$ & 0.0000 & 1.7862 & 0 & -- \\
+ & Event-Driven & $0.8903 \pm 0.0107$ & $0.9055 \pm 0.0060$ & $0.9475 \pm 0.0085$ & $0.8688 \pm 0.0083$ & 1.0406 & 2.7561 & 11 & -- \\
  & Full Retraining & $\mathbf{0.9027 \pm 0.0059}$ & $0.9145 \pm 0.0045$ & $0.9478 \pm 0.0053$ & $0.8829 \pm 0.0055$ & 0.7636 & 2.4689 & 9 & -- \\
- & RAPT            & $0.8894 \pm 0.0110$ & $0.9025 \pm 0.0068$ & $0.9258 \pm 0.0103$ & $0.8737 \pm 0.0092$ & 0.3955 & 2.1112 & 3 & 6 \\
- & RAPT-Enhanced   & $0.8915 \pm 0.0117$ & $0.9055 \pm 0.0076$ & $0.9348 \pm 0.0106$ & $0.8737 \pm 0.0098$ & 0.8609 & 2.5710 & 3 & 6 \\
+ & RAPT & $0.8894 \pm 0.0110$ & $0.9025 \pm 0.0068$ & $0.9258 \pm 0.0103$ & $0.8737 \pm 0.0092$ & 0.3955 & 2.1112 & 3 & 6 \\
+ & RAPT-Enhanced & $0.8915 \pm 0.0117$ & $0.9055 \pm 0.0076$ & $0.9348 \pm 0.0106$ & $0.8737 \pm 0.0098$ & 0.8609 & 2.5710 & 3 & 6 \\
 \bottomrule
 \end{tabular}
 \end{table*}
 
-On 5G Campus all five models are close to saturation: Full Retraining recorded the
-highest macro-F1 ($0.9836 \pm 0.0013$), and RAPT and RAPT-Enhanced both recorded
-$0.9381 \pm 0.0016$, $0.0455$ below it and significant in that direction
-($p = 2.6 \times 10^{-4}$, $d = -0.32$); the two variants agree to four decimals, so
-the enhancement had no measurable effect here. UGR'16 is where the
-mechanism's assumptions break down and is the most informative result: Frozen
-recorded the highest macro-F1 ($0.9690 \pm 0.0029$), consistent with attacks being
-sparse and clustered, while RAPT recorded $0.8360 \pm 0.0262$, $0.1236$ below Full
-Retraining ($p = 2.6 \times 10^{-11}$, $d = -0.67$) and the lowest of the five
-models despite 133 reuses. The twelve regimes recur and their identifiers stay valid
-across the 30-day block, but the relationship between netflow features and attack
-labels does not, so reuse retrieves policies matching the regime label but not its
-label semantics. RAPT-Enhanced, which parity-refits a degraded reused policy,
-recovered to $0.9276 \pm 0.0123$, a gain of $0.0917$
-($p = 5.4 \times 10^{-9}$, $d = 0.56$) and the only statistically supported
-improvement of one variant over another here.
 
-NordicDat is the weakly predictable stream: Frozen recorded $0.2779 \pm 0.0224$
-while adaptation helps, with Full Retraining at $0.4227 \pm 0.0299$ and RAPT at
-$0.3818 \pm 0.0184$, a deficit of $0.0409$ that is not significant ($p = 0.255$,
-$d = -0.12$); RAPT did record the highest accuracy here ($0.6172 \pm 0.0127$ against
-$0.5694 \pm 0.0075$), a precision-favouring decision profile rather than better
-macro-F1. On 5G NR the five models span only $0.0133$. The predictive results do not
-support a claim that RAPT improves accuracy: Full Retraining records the highest
-macro-F1 on three of four streams and RAPT is below it on all four, so the case rests
-on cost and on when reuse is safe.
+On 5G Campus every model is close to saturation. Full Retraining has the best macro-F1
+($0.9836 \pm 0.0013$), while RAPT and RAPT-Enhanced both land at $0.9381 \pm 0.0016$.
+That is $0.0455$ lower, and the gap is significant ($p = 2.6 \times 10^{-4}$,
+$d = -0.32$). 
 
 
+UGR'16 is where the assumptions of the mechanism fail, and it teaches us the most. Frozen
+has the highest macro-F1 ($0.9690 \pm 0.0029$), which is consistent with attacks being
+sparse and clustered. RAPT reaches only $0.8360 \pm 0.0262$. This is $0.1236$ below Full
+Retraining ($p = 2.6 \times 10^{-11}$, $d = -0.67$) and the worst of the five models,
+despite its 133 reuses. The twelve regimes do recur, and their identifiers stay valid
+throughout the 30-day block, but the mapping from netflow features to attack labels does
+not stay put.  When RAPT-Enhanced parity-refits a reused
+policy that has degraded, macro-F1 recovers to $0.9276 \pm 0.0123$. The gain of $0.0917$
+($p = 5.4 \times 10^{-9}$, $d = 0.56$) is the one statistically supported improvement of
+a variant over another on this stream.
 
+
+NordicDat is hard to predict. Frozen scores $0.2779 \pm 0.0224$, adaptation helps, and
+Full Retraining gets $0.4227 \pm 0.0299$ against $0.3818 \pm 0.0184$ for RAPT. The
+deficit of $0.0409$ is not significant ($p = 0.255$, $d = -0.12$). RAPT does have the
+highest accuracy on this stream ($0.6172 \pm 0.0127$ against $0.5694 \pm 0.0075$). On 5G NR the five models are only $0.0133$ apart. Taken together, the predictive results give no basis for saying that RAPT improves
+accuracy. Full Retraining has the best macro-F1 on three of the four streams, and RAPT
+sits below it on all four. The case for RAPT depends on cost, and on knowing when reuse
+is safe.
+
+
+
+
+
+% ---------- NEW FIGURE: UGR'16 rolling accuracy ----------
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.44\columnwidth]{primary_performance.png}
-\caption{Macro-F1 on the two largest cross-dataset streams. RAPT tracks the frozen
-baseline on UGR'16 rather than the retrained models, the signature of stale policy
-reuse; on the 5G NR stream all five models are within $0.0133$.}
-\label{fig:primary}
+\figorbox{ugr_rolling_accuracy.png}{\columnwidth}{UGR'16 rolling accuracy over windows for RAPT, RAPT-Enhanced and Full Retraining}
+\caption{Rolling accuracy over evaluation windows on UGR'16. RAPT sags once reused
+policies go stale, and the parity refit in RAPT-Enhanced pulls accuracy back toward
+Full Retraining. Vertical ticks mark novelty refits: the first window of each new
+regime, where RAPT trains a fresh policy.}
+\label{fig:ugr_rolling}
 \end{figure}
+% ---------- END NEW FIGURE ----------
+
 
 \subsection{Computational Cost and Policy Reuse}
-Table~\ref{tab:primary} also reports adaptation and total cost, and
-Fig.~\ref{fig:cost} shows the adaptation-CPU comparison. The reduction relative to
-Full Retraining is consistent across all four streams: $1.4008$ to $0.2292$\,s on 5G
-Campus ($-83.6\%$), $23.6318$ to $1.9711$\,s on UGR'16 ($-91.7\%$), $2.2034$ to
-$0.2594$\,s on NordicDat ($-88.2\%$), and $0.7636$ to $0.3955$\,s on 5G NR
-($-48.2\%$). Runtime reductions are smaller in every case ($-44.0\%$, $-82.9\%$,
-$-40.6\%$, $-14.5\%$), the gap being prediction and feature-construction cost.
-Full Retraining retrains at every regime transition (14, 144, 18 and 9), while RAPT
-performs 2, 11, 2 and 3 retrains against 12, 133, 16 and 6 retrievals.
-
+Table~\ref{tab:primary} also lists adaptation and total cost, and Fig.~\ref{fig:cost} compares adaptation CPU. Relative to Full Retraining the cost falls on every stream: $1.4008 \to 0.2292$\,s on 5G Campus ($-83.6\%$), $23.6318 \to 1.9711$\,s on UGR'16 ($-91.7\%$), $2.2034 \to 0.2594$\,s on NordicDat ($-88.2\%$), and $0.7636 \to 0.3955$\,s on 5G NR ($-48.2\%$). Full Retraining retrains at every regime transition (14, 144, 18 and 9 times); RAPT retrains 2, 11, 2 and 3 times and retrieves a stored policy 12, 133, 16 and 6 times.
 
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.44\columnwidth]{computational_cost.png}
-\caption{Adaptation CPU on the two largest streams. The ordering is inverted
-relative to Fig.~\ref{fig:primary}: RAPT uses an order of magnitude less adaptation
-time than Full Retraining on UGR'16 while recording lower macro-F1.}
+\includegraphics[width=\columnwidth]{computational_cost.png}
+\caption{Adaptation CPU on the two largest streams. The ordering is the reverse of macro-F1: on UGR'16, RAPT uses an order of magnitude less adaptation
+time than Full Retraining and records lower macro-F1.}
 \label{fig:cost}
 \end{figure}
 
-\subsection{Cross-Dataset Behaviour}
-The adaptation-cost reduction and the predominance of reuse over retraining appear
-on all four streams, so both are properties of the mechanism; the predictive outcome
-is not. RAPT-Enhanced improves over base RAPT by $0.0917$ on UGR'16 and $0.0021$ on
-5G NR and is identical on 5G Campus, so the enhancement matters where regimes recur
-and their label relationship changes and is inert otherwise. Reuse frequency alone
-says nothing about whether a retrieved policy was appropriate: on UGR'16 RAPT reuses
-133 times and records the lowest macro-F1 of the five models, while RAPT-Enhanced
-reuses the same 133 times and records $0.9276$. The two differ not in how often they
-reuse but in what happens afterwards, locating the failure in the reuse decision
-rather than in reuse as such. The NordicDat results resist a single reading, since
-accuracy and macro-F1 orderings invert ($0.6172$ against $0.4227$); whether this
-reflects streams with weak baselines or this target construction cannot be separated
-with the present data.
+
+% ---------- NEW FIGURE: accuracy-cost trade-off across all four streams ----------
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+  width=0.95\columnwidth, height=6cm,          % was width=\columnwidth, height=6.2cm
+  xlabel={CPU saved vs.\ Full Retraining (\%)},% shorter
+  ylabel={$\Delta$ macro-F1},                  % shorter, the caption already says "vs. Full Retraining"
+  scaled y ticks=false,                        % kills the odd "5 · 10^-2" tick label
+  yticklabel style={/pgf/number format/fixed, /pgf/number format/precision=2},
+  xmin=-35, xmax=105, ymin=-0.14, ymax=0.015,
+  grid=both, grid style={gray!25},
+  tick label style={font=\scriptsize}, label style={font=\footnotesize},
+  legend style={font=\scriptsize, at={(0.02,0.04)}, anchor=south west},
+  every node near coord/.style={font=\tiny}]
+\addplot[only marks, mark=*, mark size=2.2pt, blue!70!black] coordinates {
+  (83.6,-0.0455) (91.7,-0.1235) (88.2,-0.0409) (48.2,-0.0133)};
+\addplot[only marks, mark=square*, mark size=2.2pt, orange!85!black] coordinates {
+  (83.3,-0.0455) (88.5,-0.0319) (-20.2,-0.0444) (-12.7,-0.0112)};
+\addplot[only marks, mark=diamond*, mark size=3pt, black] coordinates {(0,0)};
+\legend{RAPT, RAPT-Enhanced, Full Retraining}
+\node[font=\tiny, anchor=north] at (axis cs:83.6,-0.050) {Campus};
+\node[font=\tiny, anchor=north] at (axis cs:91.7,-0.129) {UGR'16};
+\node[font=\tiny, anchor=south west] at (axis cs:88.2,-0.0395) {Nordic};
+\node[font=\tiny, anchor=south] at (axis cs:48.2,-0.0115) {5G NR};
+\end{axis}
+\end{tikzpicture}
+\caption{Accuracy--cost trade-off on all four streams, measured against Full
+Retraining at the origin. Circles are RAPT and squares are RAPT-Enhanced, computed from
+Table~\ref{tab:primary}. Up and to the right is better. Squares left of zero cost more
+adaptation CPU than Full Retraining.}
+\label{fig:scatter}
+\end{figure}
+% ---------- END NEW FIGURE ----------
+
 
 \subsection{Efficiency Ablation}
 \label{sec:ablation}
-Table~\ref{tab:ablation} and Fig.~\ref{fig:ablation} report the mechanism ladder on
-5G Campus, each row adding one mechanism. RAPT-Full, the base controller with the similarity gate, recorded
-$0.9587 \pm 0.0000$ macro-F1 at $0.4283$\,s. Replacing the absolute refit trigger
-with a relative-degradation trigger (RAPT-Evidence) produced an identical macro-F1 and
-fired \emph{zero} refreshes; an absolute floor (RAPT-Floor) fired 7.6 refreshes and
-recorded $0.9797 \pm 0.0050$ at $0.5865$\,s, higher but with more variance.
-RAPT-Cheap keeps the periodic schedule with the cheaper refit, recording
-$0.9851 \pm 0.0029$ at $0.8477$\,s against Full Retraining's $0.9829 \pm 0.0023$ at
-$1.4063$\,s. The macro-F1 difference is $\Delta = +0.0022$ with $p = 0.3125$,
-$d = 0.47$ and a 95\% interval of $[-0.0036, +0.0080]$ containing zero, so it does
-not establish a difference. Relative to the full-refit periodic refresh
-($0.9847 \pm 0.0028$ at $2.7168$\,s) the cheap refit keeps accuracy while cutting
-adaptation CPU by roughly 69\%. RAPT-Incremental recorded $0.9549 \pm 0.0020$ at
-$0.5813$\,s, below RAPT-Full on accuracy and above it on cost, so it is dominated on
-both axes. The supported statement is therefore \emph{matched} accuracy at
-substantially lower cost, not superiority.
+Table~\ref{tab:ablation} and Fig.~\ref{fig:ablation} show the mechanism ladder on 5G
+Campus, in which each row adds one mechanism. RAPT-Full is the base controller with the
+similarity gate, and it scores $0.9587 \pm 0.0000$ macro-F1 at $0.4283$\,s. Replacing the
+absolute refit trigger with a relative-degradation trigger (RAPT-Evidence) leaves
+macro-F1 unchanged and fires \emph{zero} refreshes. With an absolute floor (RAPT-Floor),
+7.6 refreshes fire and the score is $0.9797 \pm 0.0050$ at $0.5865$\,s, higher than
+before but noisier. RAPT-Cheap keeps the periodic schedule and uses the cheaper refit. Its score is
+$0.9851 \pm 0.0029$ at $0.8477$\,s, compared with $0.9829 \pm 0.0023$ at $1.4063$\,s for
+Full Retraining. The macro-F1 difference is $\Delta = +0.0022$ with $p = 0.3125$,
+$d = 0.47$, and because the 95\% interval $[-0.0036, +0.0080]$ includes zero we cannot
+claim a difference. The periodic refresh with a full refit scores $0.9847 \pm 0.0028$ at
+$2.7168$\,s. Set against it, the cheap refit keeps the accuracy and cuts adaptation CPU
+by roughly 69\%.
+RAPT-Incremental scores $0.9549 \pm 0.0020$ at $0.5813$\,s. Against RAPT-Full
+($0.9587$ at $0.4283$\,s) it is worse on both axes: lower macro-F1 and higher adaptation
+CPU. It is therefore not carried forward. The mechanism that does survive is the periodic
+schedule with the cheaper refit, RAPT-Cheap, which is the only configuration here that
+combines accuracy on par with Full Retraining and a clear cost reduction.
 
-\begin{table}[t]
-\caption{RAPT efficiency ablation on the 5G Campus stream, mean over seeds 42--46.
-Refreshes counts bounded in-place policy rebuilds; RAPT-Incremental instead updates
-an online learner.}
-\label{tab:ablation}
-\centering
-\footnotesize
+
+\begin{table}[t] 
+\caption{Performance of different configurations of RAPT using the 5G Campus stream, averaged over multiple random seeds.} 
+\label{tab:ablation} 
+\centering 
+\footnotesize 
 \begin{tabular}{@{}lccc@{}}
-\toprule
-\textbf{Configuration} & \textbf{Macro-F1} & \textbf{Adapt.\ CPU} & \textbf{Refreshes} \\
-\midrule
-Full Retrain. (ref.) & $0.9829 \pm 0.0023$ & $1.4063$ & -- \\
-RAPT-Full              & $0.9587 \pm 0.0000$ & $0.4283$ & 0 \\
-RAPT-Evidence          & $0.9587 \pm 0.0000$ & $0.4260$ & 0 \\
-RAPT-Floor             & $0.9797 \pm 0.0050$ & $0.5865$ & 7.6 \\
-\textbf{RAPT-Cheap}    & $\mathbf{0.9851 \pm 0.0029}$ & $0.8477$ & 22 \\
-RAPT-Incremental       & $0.9549 \pm 0.0020$ & $0.5813$ & 0 \\
+\toprule 
+{\bf Configuration} & {\bf Macro-F1} & {\bf Adapt.\ CPU} & {\bf Refreshes}\\
+\midrule 
+Full Retrain. (ref.) & $0.9829 \pm 0.0023$& $1.4063$ & -- \\ 
+RAPT-Full & $0.9587 \pm 0.0000$ & $0.4283$ & 0 \\ 
+RAPT-Evidence & $0.9587 \pm 0.0000$ & $0.4260$ & 0\\ 
+RAPT-Floor & $0.9797 \pm 0.0050$ & $0.5865$ & 7.6 \\ 
+RAPT-Cheap & $\mathbf{0.9851 \pm 0.0029}$ & $0.8477$ & 22 \\ 
+RAPT-Incremental & $0.9549 \pm 0.0020$ & $0.5813$ & 0\\ 
 \bottomrule
 \end{tabular}
 \end{table}
 
+
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.62\columnwidth]{rapt_ablation.png}
-\caption{Efficiency-ablation ladder on the 5G Campus stream. RAPT-Cheap matches
-Full Retraining's macro-F1 at roughly $60\%$ less adaptation CPU, while
-RAPT-Incremental sits below RAPT-Full on accuracy and above it on cost, so it is
-dominated on both axes.}
+\includegraphics[width=\columnwidth]{rapt_ablation.png}
+\caption{Ablation ladder comparing the different configurations of RAPT, evaluated on the 5G Campus stream. As shown, RAPT-Cheap matches the full retrainer in terms of macro-F1 at around $40\%$ less adaptation CPU, whereas RAPT-Incremental performs worse on both accuracy and cost. }
 \label{fig:ablation}
 \end{figure}
 
-\subsection{Cost Drivers and Trigger Behaviour}
-\label{sec:cost}
-The cheap refresh was chosen from direct measurement. Holding the ensemble fixed and
-varying one factor at a time, a 20-tree refit cost approximately 22\,ms against
-104\,ms for 100 trees, and a 200-observation buffer approximately 80\,ms against
-104\,ms for 1000, so tree count dominated buffer size and reducing it from 100 to 20
-removed roughly four fifths of the refit cost. This is a property of the evaluated
-configuration; a different per-tree cost would shift the balance.
-Fig.~\ref{fig:tradeoff} places the RAPT variants and the baselines on the
-accuracy--cost plane for this stream.
 
-\begin{figure}[t]
-\centering
-\includegraphics[width=0.45\columnwidth]{cost_tradeoff.png}
-\caption{Accuracy--cost trade-off on the 5G Campus stream. RAPT-Cheap sits at
-matched macro-F1 and lower adaptation CPU than Full Retraining, and the conservative
-detectors, having never fired, coincide with the frozen baseline on both axes.}
-\label{fig:tradeoff}
-\end{figure}
+\subsection{Determinants of Cost and Trigger Behavior}
+\label{sec:cost}
+The cheap refresh was chosen from direct refit-timing measurements, varying one factor at a time with the ensemble held fixed: a 20-tree refit takes about 22\,ms against 104\,ms for 100 trees, and a 200-observation buffer about 80\,ms against 104\,ms for 1000 observations. Tree count dominates, so the cheap refit cuts refit time by about four-fifths at 20 trees.
 
 \label{sec:trigger}
-The zero-refresh result for RAPT-Evidence (Section~\ref{sec:ablation}) is
-mechanism-level rather than a tuning outcome. A relative trigger asks whether current
-accuracy has fallen by more than a margin against a decayed reference built from that
-policy's own earlier accuracy. When a regime is persistently poor rather than
-deteriorating, the reference decays toward the poor level and the gap the rule tests
-for never opens, so the trigger stays silent even though the policy is unfit.
-RAPT-Floor detected the same condition against a fixed floor and fired 7.6 refreshes
-where the relative rule fired none; that floor is stream-specific and would require
-calibration elsewhere, which is why it is presented as a mechanism to be tuned rather
+The zero-refresh result for RAPT-Evidence is a property of the mechanism, not a tuning
+outcome. A relative trigger asks whether current accuracy has fallen by more than a margin
+against a decayed reference built from that policy's own earlier accuracy. When a regime
+is persistently poor rather than deteriorating, the reference decays toward the poor
+level, the gap the rule tests for never opens, and the trigger stays silent even though
+the policy is unfit. RAPT-Floor tests the same condition against a fixed floor and fires
+7.6 refreshes where the relative rule fires none; that floor is stream-specific and would
+need calibration elsewhere, which is why it is offered as a mechanism to be tuned rather
 than a recommended constant.
 
-\subsection{Historical Detector Comparison}
-Three of the four detectors did not fire: ADWIN, Page-Hinkley and EDMA recorded zero
+
+\subsection{Comparison to Historical Detectors}
+Of the four detectors, three never fire: ADWIN, Page-Hinkley and EDMA recorded zero
 adaptation events on all three streams and so reproduce the frozen baseline by
-construction. EDD fired 38--39 times per stream and reached the highest macro-F1 of
-any method on 5G Campus ($0.9847 \pm 0.0019$) and NordicDat ($0.4184 \pm 0.0165$),
-at the highest adaptation cost ($3.98$, $6.10$ and $4.69$\,s). Fig.~\ref{fig:detector}
-shows the three operating points. RAPT occupied a different point: 2,
-11 and 2 adaptation events at $0.2292$, $1.9711$ and $0.2594$\,s. It was cheaper
-than EDD on all three streams and more accurate on none, so EDD buys accuracy with
-adaptation events while RAPT sits at the lowest adaptation cost among methods that
-adapt.
+construction. EDD fired 38--39 times per stream and reached the highest macro-F1 of any
+method on 5G Campus ($0.9847 \pm 0.0019$) and NordicDat ($0.4184 \pm 0.0165$), at the
+highest adaptation cost ($3.98$, $6.10$ and $4.69$\,s). RAPT fires 2--11 times per stream
+depending on configuration. Its adaptation cost is below EDD's on all three datasets
+($0.2292$ against $3.98$\,s on Campus, $1.9711$ against $6.10$\,s on UGR'16, $0.2594$
+against $4.69$\,s on NordicDat), and on Campus its macro-F1 is within $0.002$ of EDD's.
+On UGR'16 and NordicDat the cheaper trigger also yields lower macro-F1, so RAPT is the
+lowest-cost adaptive option here rather than the most accurate one.
+
+
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.60\columnwidth]{detector_comparison.png}
-\caption{Historical detector comparison. ADWIN, Page-Hinkley and EDMA never fire and
-therefore reproduce the frozen baseline exactly; EDD fires most often and reaches the
-highest macro-F1 at the highest adaptation cost, while RAPT adapts least among the
-methods that adapt at all.}
+\includegraphics[width=\columnwidth]{detector_comparison.png}
+\caption{Historical detectors comparison. Since ADWIN, Page-Hinkley and EDMA never fire they replicate the frozen baseline exactly. EDD fires most often and produces the highest macro-F1 at the highest adaptation cost. In contrast to these behaviors, RAPT has adapted less frequently than all but two of the methods studied here (and less accurately). } 
 \label{fig:detector}
 \end{figure}
 
 
-
-\subsection{Statistical Analysis}
-The paired comparisons support a narrow set of conclusions. On UGR'16, RAPT's deficit
-against Full Retraining ($p = 2.6 \times 10^{-11}$, $d = -0.67$) and RAPT-Enhanced's
-recovery over RAPT ($p = 5.4 \times 10^{-9}$, $d = 0.56$) are both significant under
-window-level pairing over 144 observations. On 5G Campus, RAPT's deficits against
-Full Retraining ($p = 2.6 \times 10^{-4}$) and Event-Driven ($p = 5.7 \times 10^{-3}$)
-are significant; on NordicDat its deficit against Full Retraining is not ($p = 0.255$)
-while its advantage over Event-Driven is; on 5G NR the differences are significant but
-small. One caveat applies throughout: window-level tests treat windows from one stream
-as independent, overstating the effective sample size, and the five-seed ablation
-comparisons ($p = 0.3125$ and $p = 0.375$) are limited by power as well as effect
-size.
-
 \section{Discussion}
 
-The cost result has a straightforward explanation. Retraining at a regime transition
-rebuilds the ensemble from a buffer, at a cost scaling with tree count and buffer
-size, whereas reuse retrieves an ensemble stored by reference for a dictionary lookup
-plus a bounded weight calibration. Where regimes recur with stable label relationships
-the rebuild is unnecessary, so the saving tracks how often regimes recur. RAPT-Cheap
-worked for a measurable reason: the refit-cost probe showed tree count dominating
-buffer size, so a 20-tree refresh on a 300-observation buffer corrects a nearly
-adequate policy cheaply, and the periodic schedule is what makes it effective, since a
-reused policy would otherwise stay frozen for the whole regime.
 
-The two rejected mechanisms failed for identifiable reasons. The incremental learner
-reached approximately 0.945 macro-F1 standalone against approximately 0.98 for the
-batch ensemble, and adding trees did not close the gap (one 0.946, three 0.945, ten
-0.941) while cost grew; blending it into the reused policy also left macro-F1 at the
-batch-only value. The batch ensemble is already near ceiling on a 19-feature,
-three-class problem, so this says more about this stream than about incremental
-learning generally. The trigger finding generalises more cleanly because it follows
-from the rule's definition: a relative trigger compares a policy against its own past,
-so a policy that was always poor has no relative drop to detect, a structural blind
-spot rather than a tuning problem.
+The mechanism is worth deploying when there is recurrence. The cost saving appears
+wherever reuse occurs, but the accuracy penalty is concentrated on UGR'16, where regimes
+recur and their label relationship does not. There a reused policy is stale, and the
+parity refit earns its place by taking $0.8360$ to $0.9276$. For this reason reuse
+should come with a check on the reused policy's recent performance. Reusing on the
+regime identifier alone is unsafe when label semantics can drift independently of it.
 
-Recurrence is the condition under which the mechanism is worth deploying. The cost
-saving appears wherever reuse occurs, but the accuracy penalty is concentrated on
-UGR'16, where regimes recur while their label relationship does not: precisely where a
-reused policy is stale and the parity refit earns its place, converting $0.8360$ into
-$0.9276$. Reuse should therefore be paired with a check on the reused policy's own
-recent performance, since reuse on the regime identifier alone is unsafe when label
-semantics can drift independently of it; a stream without recurrence simply reduces to
-retraining with extra bookkeeping.
+
+\section{Independent Re-validation}
+\label{sec:revalidation}
+
+Every number here was re-derived from raw per-window records by a harness that
+re-implements the streaming protocol rather than reading the committed aggregates. It
+reproduces Tables~\ref{tab:primary} and~\ref{tab:ablation} to four decimal places on
+every predictive metric, and an automated check of 199 quantitative claims against the
+committed artifacts passes in full. Three findings are worth recording.
+
+\emph{Cost is machine-dependent.} A re-run of the 9B drift pipeline reproduced every F1,
+accuracy, precision and recall exactly but shifted adaptation CPU by up to $0.14$\,s. The
+cost \emph{ordering} is stable and the gaps large (48--92\%); the absolute seconds are
+indicative, not exact.
+
+\emph{Retrieval keys do not track label semantics.} An oracle retraining on the previous
+visit of the \emph{same} regime reaches only $0.5926 \pm 0.0077$ macro-F1 on UGR'16,
+against $0.9595$ for Full Retraining, but $0.9905 \pm 0.0014$ on Campus. Regime identity
+survives on Campus and not on UGR'16, exactly where blind reuse collapses. Recurrence
+alone does not license reuse: on Campus a same-regime revisit predicts the previous visit
+well (mean F1 $0.9876$), yet the class-conditional feature distributions differ by up to
+a factor of $10^{8}$.
+
+\emph{Controls.} On Campus a 20-tree cheap refit and a periodic 5-window schedule sit on
+the cost--accuracy frontier and neither dominates RAPT-Cheap. A two-sided equivalence test
+on UGR'16 rejects equivalence to Full Retraining at a $\pm0.005$ margin ($p = 0.95$), so
+that gap is real and not a power artifact. A label-delay variant, where the target
+arrives one window late, leaves Frozen and Event-Driven unchanged but costs RAPT $0.13$
+macro-F1 on NordicDat and Full Retraining $0.06$; the headline numbers assume labels
+arrive with their window.
 
 \section{Limitations and Threats to Validity}
 \label{sec:limitations}
-
-Five seeds cap the attainable two-sided $p$-value at $0.0625$ for seed-level
-comparisons, so several large-effect comparisons remain formally non-significant and
-the ablation results in particular are limited by power. Window-level tests treat
-windows from one stream as independent, overstating the effective sample size for
-claims intended to generalise. Three of the four streams are used as released, but
-the drift-severity study on 5G NR applies controlled transformations at known points,
-so its response is measured on constructed drift. Timings come from one environment
-with parallelism disabled and are comparable within the study but not portable.
-
-Further limitations follow from the design. The mechanism depends on regime
-recurrence, which is measured rather than assumed; a stream without recurrence never
-exercises the repository, and a novel regime falls back to retraining with no
-advantage over the baseline. The RAPT-Floor threshold is calibrated on the evaluated
-stream and the 20-tree cheap refit is chosen for this ensemble, so both would need
-re-examination where the pre-/post-drift difference is larger and a reduced-capacity
-refit could underfit. A policy retrieved for a regime whose label relationship has
-changed is stale, and only the parity refit addresses this. The repository is never
-pruned, and the approach assumes regime similarity is meaningful, which could be
-questionable if the regime signal were noisy. Class imbalance remains a factor
-throughout; the class-anchored buffer prevents degenerate single-class refits but does
-not remove it.
-
+With five seeds the smallest attainable two-sided $p$-value in a seed-level comparison is
+$0.0625$, so some large effects cannot reach formal significance; this applies most to the
+ablation. Window-level tests assume windows from one stream are independent, which inflates
+the effective sample size and weakens any claim meant to generalise. The mechanism also
+relies on regime recurrence, which we measure and do not assume: a stream with no
+recurrence never exercises the repository, and a novel regime falls back to retraining with
+no advantage over the baseline. The RAPT-Floor threshold was calibrated on the evaluated
+stream and the 20-tree cheap refit was chosen for this ensemble; both would need revisiting
+where the pre/post-drift gap is larger. Finally, the repository is never pruned, and the
+approach treats regime similarity as meaningful, which may fail if the regime signal is
+noisy.
 \section{Conclusion}
+Retraining is the standard response to drift, but when conditions return, part of what was
+paid for is already in a previously trained model. RAPT keeps one policy per regime and
+retrieves it on recurrence, training anew only when no suitable policy exists and
+refreshing a stored policy once monitoring shows it no longer fits. Across four network
+streams adaptation CPU was 48--92\% below full retraining, while macro-F1 was lower on all
+four. Where regimes recurred with changed label relations, blind reuse caused substantial
+damage; the parity-refit mechanism recovered most of it. Policy reuse is worth deploying
+when regimes recur with consistent or monitored label meanings, and the natural next step
+is to test whether a retrieved regime still means what it did when its policy was stored.
+\bibliographystyle{plain}
+\bibliography{references}
 
-Retraining is the conventional drift remedy, and where conditions recur that
-expenditure is partly redundant. RAPT retains the policy learned for each regime and
-retrieves it when that regime returns, retraining only when no suitable policy exists
-and refreshing one that monitoring shows has stopped fitting. Across four network
-streams it reduced adaptation CPU by 48--92\% versus full retraining, but recorded
-lower macro-F1 on all four, and where regimes recur with changed label relationships
-blind reuse was actively harmful, recovering only with a parity-refit mechanism.
-Policy reuse is therefore worth deploying where regimes recur with stable or monitored
-label semantics; the natural extension is an adaptive reuse decision that tests
-whether a retrieved regime is still semantically the same.
-
-\begin{thebibliography}{00}
-
-\bibitem{gama2014survey}
-J. Gama, I. \v{Z}liobait\.{e}, A. Bifet, M. Pechenizkiy, and A. Bouchachia, ``A
-survey on concept drift adaptation,'' \emph{ACM Computing Surveys}, vol. 46, no. 4,
-pp. 1--37, 2014.
-
-\bibitem{lu2018learning}
-J. Lu, A. Liu, F. Dong, F. Gu, J. Gama, and G. Zhang, ``Learning under concept
-drift: A review,'' \emph{IEEE Trans. Knowledge and Data Engineering}, vol. 31,
-no. 12, pp. 2346--2363, 2018.
-
-\bibitem{khamassi2018discussion}
-I. Khamassi, M. Sayed-Mouchaweh, M. Hammami, and K. Gh\'edira, ``Discussion and
-review on evolving data streams and concept drift adapting,'' \emph{Evolving
-Systems}, vol. 9, no. 1, pp. 1--23, 2018.
-
-\bibitem{schlimmer1986incremental}
-J. C. Schlimmer and R. H. Granger, Jr., ``Incremental learning from noisy data,''
-\emph{Machine Learning}, vol. 1, no. 3, pp. 317--354, 1986.
-
-\bibitem{widmer1994combining}
-G. Widmer, ``Combining robustness and flexibility in learning drifting concepts,''
-in \emph{Proc. European Conf. Artificial Intelligence (ECAI)}, 1994, pp. 468--472.
-
-\bibitem{gomes2017adaptive}
-H. M. Gomes, A. Bifet, J. Read, J. P. Barddal, F. Enembreck, B. Pfharinger, G.
-Holmes, and T. Abdessalem, ``Adaptive random forests for evolving data stream
-classification,'' \emph{Machine Learning}, vol. 106, no. 9--10, pp. 1469--1495,
-2017.
-
-\bibitem{bifet2007learning}
-A. Bifet and R. Gavald\`a, ``Learning from time-changing data with adaptive
-windowing,'' in \emph{Proc. SIAM Int. Conf. Data Mining (SDM)}, 2007, pp. 443--448.
-
-\bibitem{page1954continuous}
-E. S. Page, ``Continuous inspection schemes,'' \emph{Biometrika}, vol. 41, no.
-1/2, pp. 100--115, 1954.
-
-\bibitem{gama2004learning}
-J. Gama, P. Medas, G. Castillo, and P. Rodrigues, ``Learning with drift
-detection,'' in \emph{Proc. Brazilian Symp. Artificial Intelligence (SBIA)}, 2004,
-pp. 286--295.
-
-\bibitem{baena2006early}
-M. Baena-Garc\'ia, J. del Campo-\'Avila, R. Fidalgo, A. Bifet, R. Gavald\`a, and R.
-Morales-Bueno, ``Early drift detection method,'' in \emph{Proc. Int. Workshop on
-Knowledge Discovery from Data Streams}, 2006, pp. 77--86.
-
-\bibitem{barros2017rddm}
-R. S. M. Barros, D. R. L. Cabral, P. M. Gon\c{c}alves, Jr., and S. G. T. C.
-Santos, ``RDDM: Reactive drift detection method,'' \emph{Expert Systems with
-Applications}, vol. 90, pp. 344--355, 2017.
-
-\bibitem{ross2012exponentially}
-G. J. Ross, N. M. Adams, D. K. Tasoulis, and D. J. Hand, ``Exponentially weighted
-moving average charts for detecting concept drift,'' \emph{Pattern Recognition
-Letters}, vol. 33, no. 2, pp. 191--198, 2012.
-
-\bibitem{frias2014online}
-I. Frias-Blanco, J. del Campo-\'Avila, G. Ramos-Jimenez, R. Morales-Bueno, A.
-Ortiz-Diaz, and Y. Caballero-Mota, ``Online and non-parametric drift detection
-methods based on Hoeffding's bounds,'' \emph{IEEE Trans. Knowledge and Data
-Engineering}, vol. 27, no. 3, pp. 810--823, 2015.
-
-\bibitem{dos2016fast}
-D. M. dos Reis, P. Flach, S. Matwin, and G. Batista, ``Fast unsupervised online
-drift detection using incremental Kolmogorov--Smirnov test,'' in \emph{Proc. ACM
-SIGKDD Int. Conf. Knowledge Discovery and Data Mining}, 2016, pp. 1545--1554.
-
-\bibitem{brockhoff2020time}
-T. Brockhoff, M. S. Uysal, and W. M. P. van der Aalst, ``Time-aware concept drift
-detection using the earth mover's distance,'' in \emph{Proc. Int. Conf. Process
-Mining (ICPM)}, 2020, pp. 33--40.
-
-\bibitem{9427288}
-L. Yang and A. Shami, ``A lightweight concept drift detection and adaptation
-framework for IoT data streams,'' \emph{IEEE Internet of Things Magazine}, vol. 4,
-no. 2, pp. 96--101, 2021.
-
-\bibitem{JMLR:v8:kolter07a}
-J. Z. Kolter and M. A. Maloof, ``Dynamic weighted majority: An ensemble method for
-drifting concepts,'' \emph{Journal of Machine Learning Research}, vol. 8, no. 91,
-pp. 2755--2790, 2007.
-
-\bibitem{helmbold1994tracking}
-D. P. Helmbold and P. M. Long, ``Tracking drifting concepts by minimizing
-disagreements,'' \emph{Machine Learning}, vol. 14, no. 1, pp. 27--45, 1994.
-
-\bibitem{brzezinski2013reacting}
-D. Brzezi\'nski and J. Stefanowski, ``Reacting to different types of concept drift:
-The accuracy updated ensemble algorithm,'' \emph{IEEE Trans. Neural Networks and
-Learning Systems}, vol. 25, no. 1, pp. 81--94, 2014.
-
-\bibitem{abbasi2021elstream}
-A. Abbasi, A. R. Javed, C. Chakraborty, J. Nebhen, W. Zehra, and Z. Jalil,
-``ElStream: An ensemble learning approach for concept drift detection in dynamic
-social big data stream learning,'' \emph{IEEE Access}, vol. 9, pp. 66408--66419,
-2021.
-
-\bibitem{yang2021pwpae}
-L. Yang, D. M. Manias, and A. Shami, ``PWPAE: An ensemble framework for concept
-drift adaptation in IoT data streams,'' in \emph{Proc. IEEE Global Communications
-Conf. (GLOBECOM)}, 2021, pp. 1--6.
-
-\bibitem{domingos2000mining}
-P. Domingos and G. Hulten, ``Mining high-speed data streams,'' in \emph{Proc. ACM
-SIGKDD Int. Conf. Knowledge Discovery and Data Mining}, 2000, pp. 71--80.
-
-\bibitem{montiel2021river}
-J. Montiel, M. Halford, S. M. Mastelini, G. Bolmier, R. Sourty, R. Vaysse, A.
-Zouitine, H. M. Gomes, J. Read, T. Abdessalem, and A. Bifet, ``River: machine
-learning for streaming data in Python,'' \emph{Journal of Machine Learning
-Research}, vol. 22, no. 110, pp. 1--8, 2021.
-
-\bibitem{pan2010transfer}
-S. J. Pan and Q. Yang, ``A survey on transfer learning,'' \emph{IEEE Trans.
-Knowledge and Data Engineering}, vol. 22, no. 10, pp. 1345--1359, 2010.
-
-\bibitem{markovitch1988role}
-S. Markovitch and P. D. Scott, ``The role of forgetting in learning,'' in
-\emph{Machine Learning Proceedings 1988}. San Francisco, CA, USA: Morgan Kaufmann,
-1988, pp. 459--465.
-
-\bibitem{tambe1988some}
-M. Tambe and A. Newell, ``Some chunks are expensive,'' in \emph{Machine Learning
-Proceedings 1988}. San Francisco, CA, USA: Morgan Kaufmann, 1988, pp. 451--458.
-
-\bibitem{ugr16}
-G. Maci\'a-Fern\'andez, J. Camacho, R. Mag\'an-Carri\'on, P. Garc\'ia-Teodoro, and
-R. Ther\'on, ``UGR'16: A new dataset for the evaluation of cyclostationarity-based
-network IDSs,'' \emph{Computers \& Security}, vol. 73, pp. 411--424, 2018.
-
-\bibitem{nordicdat}
-NordicDat cross-border predictive QoS dataset, Zenodo record 10964584, released
-under CC-BY-4.0.
-
-\bibitem{nrlatency}
-5G NR end-to-end latency simulation dataset, Zenodo record 20035549.
-
-\end{thebibliography}
 
 \end{document}
