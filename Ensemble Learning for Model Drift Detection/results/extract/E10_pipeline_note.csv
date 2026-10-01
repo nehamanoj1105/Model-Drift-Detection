@@ -1,0 +1,2 @@
+item,value,source_file
+9B numbers using a different pipeline from Table II,"All 9B (recurring A->B->A') numbers use the exp9b drift harness (run_exp9b_drift.py), not the revalidation A1/A3 harness. Table II 5G NR cells use results/experiment_9b/natural_drift/summary.csv (natural stream), which the revalidation A1 reproduces under slug 5g_nr with a pooled convention.",Ensemble Learning for Model Drift Detection/results/experiment_9b/recurring_concept_drift/aggregated.csv ; Ensemble Learning for Model Drift Detection/results/experiment_9b/natural_drift/summary.csv
