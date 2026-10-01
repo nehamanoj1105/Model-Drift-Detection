@@ -1,0 +1,127 @@
+{
+  "experiment": "revalidation",
+  "created": "2026-10-01",
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "seeds_cheap": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61
+  ],
+  "window_prefix_fraction": 0.2,
+  "protocol": "chronological, prequential test-then-train, no shuffling",
+  "n_jobs": 1,
+  "thread_env": {
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "buffer_capacity": 1000,
+  "ensemble": {
+    "type": "RandomForest+ExtraTrees soft vote",
+    "n_estimators": 50,
+    "max_depth": 7
+  },
+  "cheap_refit": {
+    "n_trees": 20,
+    "buffer": 300
+  },
+  "full_refit": {
+    "n_trees": 50,
+    "buffer": 1000
+  },
+  "periodic_refresh_windows": [
+    5,
+    10
+  ],
+  "tost_margin_macro_f1": 0.01,
+  "tost_margins_reported": [
+    0.005,
+    0.01,
+    0.02
+  ],
+  "recovery_threshold": 0.95,
+  "concept_gate_similarity_threshold": 0.65,
+  "parity_threshold_default": 0.5,
+  "parity_threshold_sweep": [
+    0.5,
+    0.7,
+    0.8,
+    0.9,
+    0.95
+  ],
+  "rel_drop_sweep": [
+    0.02,
+    0.03,
+    0.05,
+    0.1
+  ],
+  "adwin_delta_sweep": [
+    0.002,
+    0.01,
+    0.05,
+    0.1,
+    0.3
+  ],
+  "ph_threshold_sweep": [
+    0.05,
+    0.1,
+    0.5,
+    1,
+    5,
+    50
+  ],
+  "ph_min_instances_sweep": [
+    5,
+    10,
+    30
+  ],
+  "ewma_k_sweep": [
+    1,
+    2,
+    3
+  ],
+  "ewma_alpha_sweep": [
+    0.05,
+    0.2,
+    0.4
+  ],
+  "bootstrap_n": 2000,
+  "bootstrap_seed": 0,
+  "selection_note": "All values above are fixed before the evaluation run. Sweeps are labelled sensitivity, not selection.",
+  "environment": {
+    "cpu": "AMD EPYC 9B14",
+    "cores": 4,
+    "platform": "Linux-6.8.0-1055-gke-x86_64-with-glibc2.41",
+    "libs": {
+      "python": "3.13.15",
+      "numpy": "2.5.3",
+      "pandas": "3.0.6",
+      "sklearn": "1.9.1",
+      "scipy": "1.18.1",
+      "river": "0.26.1",
+      "psutil": "7.2.2"
+    }
+  }
+}
