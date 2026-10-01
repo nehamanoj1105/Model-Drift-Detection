@@ -20,9 +20,15 @@ Requires `IEEEtran.cls` (`texlive-publishers`) and `booktabs`, `multirow`.
 
 ## Length
 
-Technical content ends on page 8; the reference list begins on page 8 and
-continues to page 9. This satisfies the COMSNETS 8-page limit for technical
-content, with references in the standard additional space.
+Technical content ends on page 6; the reference list begins on page 7. This
+satisfies the COMSNETS 6-page limit for technical content, with references in the
+standard additional space.
+
+To reach six pages the following were condensed without removing any result:
+preprocessing and leakage control were merged into one subsection; the nine
+method subsections were consolidated into three; the architecture placeholder
+figure was removed; and prose was tightened throughout. All measured values,
+statistical tests and claims are unchanged from the 8-page version.
 
 ## Number provenance
 
@@ -47,9 +53,18 @@ cost-aware configuration *matched* Full Retraining within measurement noise
 (Δmacro-F1 = +0.0022, p = 0.3125, 95% CI [−0.0036, +0.0080]) at roughly 40%
 lower adaptation cost. Non-significant results are labelled as such.
 
-## Placeholder
+## Figures
 
-`fig9b_rapt_ablation` in the methodology figure is a labelled placeholder box
-(`METHODOLOGY DIAGRAM PLACEHOLDER`) because no architecture diagram file exists in
-the repository. Replace it with a rendered diagram before camera-ready; the
-structure is described in the caption.
+The manuscript includes five figures:
+
+| Fig. | File | Content |
+|------|------|---------|
+| 1 | `primary_performance.png` | Macro-F1 on the two largest cross-dataset streams |
+| 2 | `computational_cost.png` | Adaptation CPU on the two largest streams |
+| 3 | `rapt_ablation.png` | Efficiency-ablation ladder (5G Campus) |
+| 4 | `detector_comparison.png` | Historical detector comparison |
+| 5 | `cost_tradeoff.png` | Accuracy--cost trade-off (5G Campus) |
+
+The architecture-diagram placeholder has been removed; no architecture diagram file
+exists in the repository, and it should be added as a rendered diagram if the venue
+permits a full-width figure.

@@ -1,0 +1,159 @@
+/home/openhands/.local/lib/python3.13/site-packages/numpy/_core/fromnumeric.py:3862: RuntimeWarning: Mean of empty slice
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/home/openhands/.local/lib/python3.13/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream[c] = X[:, j]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:255: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream["_t0"] = np.asarray(data["timestamp"])[:n]
+/home/openhands/.local/lib/python3.13/site-packages/numpy/_core/fromnumeric.py:3862: RuntimeWarning: Mean of empty slice
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/home/openhands/.local/lib/python3.13/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream[c] = X[:, j]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:255: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream["_t0"] = np.asarray(data["timestamp"])[:n]
+E3b -- conditional vs covariate change on regime recurrence
+
+Stream       n  |dP(Y=1)|   |dAUC|  dCentroid  between-regime  covariate ratio
+Campus       0     0.3421      nan     3.9727          1.5791            2.516
+UGR16        6     0.0730   0.0098     8.6161          3.8583            2.233
+Nordic       0     0.1399      nan     6.6576          7.6285            0.873
+
+Reading: a low covariate ratio with a large |dP| and |dAUC| means the
+regime looks similar but its label relationship has changed.
+
+UGR'16 paired detail (first occurrence -> each recurrence):
+  pair 1: dP=+0.1125  dAUC=+0.0021  dCentroid=4.4525
+  pair 2: dP=+0.1167  dAUC=+0.0276  dCentroid=11.4588
+  pair 3: dP=+0.0000  dAUC=-0.0074  dCentroid=4.2040
+  pair 4: dP=+0.0000  dAUC=+0.0156  dCentroid=5.0157
+  pair 5: dP=+0.0000  dAUC=+0.0002  dCentroid=6.9494
+  pair 6: dP=+0.0000  dAUC=+0.0062  dCentroid=5.4323
+  pair 7: dP=+0.0000  dAUC=   n/a  dCentroid=5.5171
+  pair 8: dP=+0.0000  dAUC=   n/a  dCentroid=10.4598
+  pair 9: dP=+0.0000  dAUC=   n/a  dCentroid=6.4805
+  pair 10: dP=+0.0000  dAUC=   n/a  dCentroid=7.2705
+  pair 11: dP=+0.0000  dAUC=   n/a  dCentroid=8.8582
+  pair 12: dP=+0.0000  dAUC=   n/a  dCentroid=7.4185
+  pair 13: dP=+0.0000  dAUC=   n/a  dCentroid=10.9293
+  pair 14: dP=+0.0000  dAUC=   n/a  dCentroid=12.5341
+  pair 15: dP=+0.0000  dAUC=   n/a  dCentroid=10.3450
+  pair 16: dP=+0.0000  dAUC=   n/a  dCentroid=15.1293
+  pair 17: dP=+0.0000  dAUC=   n/a  dCentroid=13.8025
+  pair 18: dP=+0.0000  dAUC=   n/a  dCentroid=3.6905
+  pair 19: dP=+0.0000  dAUC=   n/a  dCentroid=3.6743
+  pair 20: dP=+0.0000  dAUC=   n/a  dCentroid=4.5329
+  pair 21: dP=+0.0000  dAUC=   n/a  dCentroid=5.4796
+  pair 22: dP=+0.0000  dAUC=   n/a  dCentroid=5.2004
+  pair 23: dP=+0.0000  dAUC=   n/a  dCentroid=6.1358
+  pair 24: dP=+0.0000  dAUC=   n/a  dCentroid=4.6087
+  pair 25: dP=+0.0000  dAUC=   n/a  dCentroid=6.8338
+  pair 26: dP=+0.0000  dAUC=   n/a  dCentroid=6.1711
+  pair 27: dP=+0.0000  dAUC=   n/a  dCentroid=7.4931
+  pair 28: dP=+0.0000  dAUC=   n/a  dCentroid=8.9442
+  pair 29: dP=+0.0000  dAUC=   n/a  dCentroid=7.4817
+  pair 30: dP=+0.0000  dAUC=   n/a  dCentroid=12.0468
+  pair 31: dP=+0.0000  dAUC=   n/a  dCentroid=13.1257
+  pair 32: dP=+0.0000  dAUC=   n/a  dCentroid=10.2857
+  pair 33: dP=+0.0000  dAUC=   n/a  dCentroid=13.5944
+  pair 34: dP=+0.0000  dAUC=   n/a  dCentroid=14.1916
+  pair 35: dP=-0.0042  dAUC=   n/a  dCentroid=9.2130
+  pair 36: dP=-0.0042  dAUC=   n/a  dCentroid=3.7222
+  pair 37: dP=+0.1000  dAUC=   n/a  dCentroid=4.0008
+  pair 38: dP=+0.0625  dAUC=   n/a  dCentroid=5.6369
+  pair 39: dP=-0.0042  dAUC=   n/a  dCentroid=4.4842
+  pair 40: dP=-0.0042  dAUC=   n/a  dCentroid=5.5755
+  pair 41: dP=-0.0042  dAUC=   n/a  dCentroid=6.1263
+  pair 42: dP=-0.0042  dAUC=   n/a  dCentroid=9.6885
+  pair 43: dP=-0.0042  dAUC=   n/a  dCentroid=11.7110
+  pair 44: dP=-0.0042  dAUC=   n/a  dCentroid=7.6921
+  pair 45: dP=-0.0042  dAUC=   n/a  dCentroid=8.1044
+  pair 46: dP=-0.0042  dAUC=   n/a  dCentroid=8.1060
+  pair 47: dP=-0.0042  dAUC=   n/a  dCentroid=13.7824
+  pair 48: dP=-0.0042  dAUC=   n/a  dCentroid=13.4505
+  pair 49: dP=-0.0042  dAUC=   n/a  dCentroid=12.2789
+  pair 50: dP=-0.0042  dAUC=   n/a  dCentroid=14.5719
+  pair 51: dP=-0.0042  dAUC=   n/a  dCentroid=16.6601
+  pair 52: dP=+0.0042  dAUC=   n/a  dCentroid=3.2400
+  pair 53: dP=-0.3583  dAUC=   n/a  dCentroid=3.8601
+  pair 54: dP=-0.3625  dAUC=   n/a  dCentroid=4.8570
+  pair 55: dP=-0.3625  dAUC=   n/a  dCentroid=4.7564
+  pair 56: dP=-0.3625  dAUC=   n/a  dCentroid=5.4210
+  pair 57: dP=-0.3625  dAUC=   n/a  dCentroid=5.3911
+  pair 58: dP=-0.3625  dAUC=   n/a  dCentroid=8.8594
+  pair 59: dP=-0.3625  dAUC=   n/a  dCentroid=10.6388
+  pair 60: dP=-0.3625  dAUC=   n/a  dCentroid=31.8748
+  pair 61: dP=-0.3625  dAUC=   n/a  dCentroid=9.1421
+  pair 62: dP=-0.3625  dAUC=   n/a  dCentroid=8.5656
+  pair 63: dP=-0.3625  dAUC=   n/a  dCentroid=8.4429
+  pair 64: dP=-0.3625  dAUC=   n/a  dCentroid=13.8006
+  pair 65: dP=-0.3625  dAUC=   n/a  dCentroid=12.6250
+  pair 66: dP=-0.3625  dAUC=   n/a  dCentroid=12.1975
+  pair 67: dP=-0.3625  dAUC=   n/a  dCentroid=17.2213
+  pair 68: dP=-0.3625  dAUC=   n/a  dCentroid=15.0813
+  pair 69: dP=+0.0000  dAUC=   n/a  dCentroid=8.6557
+  pair 70: dP=+0.3625  dAUC=   n/a  dCentroid=4.7154
+  pair 71: dP=+0.0000  dAUC=   n/a  dCentroid=5.5766
+  pair 72: dP=+0.0000  dAUC=   n/a  dCentroid=4.0372
+  pair 73: dP=+0.0000  dAUC=   n/a  dCentroid=6.6985
+  pair 74: dP=+0.0000  dAUC=   n/a  dCentroid=4.8170
+  pair 75: dP=+0.0000  dAUC=   n/a  dCentroid=6.7504
+  pair 76: dP=+0.0000  dAUC=   n/a  dCentroid=9.6970
+  pair 77: dP=+0.0000  dAUC=   n/a  dCentroid=8.8457
+  pair 78: dP=+0.0000  dAUC=   n/a  dCentroid=7.9126
+  pair 79: dP=+0.0000  dAUC=   n/a  dCentroid=8.7093
+  pair 80: dP=+0.0000  dAUC=   n/a  dCentroid=8.1106
+  pair 81: dP=+0.0000  dAUC=   n/a  dCentroid=12.3442
+  pair 82: dP=+0.0000  dAUC=   n/a  dCentroid=11.4960
+  pair 83: dP=+0.0000  dAUC=   n/a  dCentroid=15.2614
+  pair 84: dP=+0.0000  dAUC=   n/a  dCentroid=16.1066
+  pair 85: dP=+0.0000  dAUC=   n/a  dCentroid=17.0294
+  pair 86: dP=+0.0000  dAUC=   n/a  dCentroid=18.6054
+  pair 87: dP=+0.0000  dAUC=   n/a  dCentroid=4.6896
+  pair 88: dP=+0.3667  dAUC=   n/a  dCentroid=4.6500
+  pair 89: dP=+0.0000  dAUC=   n/a  dCentroid=4.2217
+  pair 90: dP=+0.0000  dAUC=   n/a  dCentroid=4.3002
+  pair 91: dP=+0.0000  dAUC=   n/a  dCentroid=6.6913
+  pair 92: dP=+0.0000  dAUC=   n/a  dCentroid=4.5723
+  pair 93: dP=+0.0000  dAUC=   n/a  dCentroid=6.6049
+  pair 94: dP=+0.0000  dAUC=   n/a  dCentroid=7.9027
+  pair 95: dP=+0.0000  dAUC=   n/a  dCentroid=8.0020
+  pair 96: dP=+0.0000  dAUC=   n/a  dCentroid=8.0826
+  pair 97: dP=+0.0000  dAUC=   n/a  dCentroid=7.5430
+  pair 98: dP=+0.0000  dAUC=   n/a  dCentroid=11.5176
+  pair 99: dP=+0.0000  dAUC=   n/a  dCentroid=10.5871
+  pair 100: dP=+0.0000  dAUC=   n/a  dCentroid=13.7417
+  pair 101: dP=+0.0000  dAUC=   n/a  dCentroid=15.2647
+  pair 102: dP=+0.0000  dAUC=   n/a  dCentroid=14.3288
+  pair 103: dP=+0.0000  dAUC=   n/a  dCentroid=3.9258
+  pair 104: dP=+0.0000  dAUC=   n/a  dCentroid=4.4237
+  pair 105: dP=+0.0000  dAUC=   n/a  dCentroid=5.3571
+  pair 106: dP=+0.0000  dAUC=   n/a  dCentroid=5.4167
+  pair 107: dP=+0.0000  dAUC=   n/a  dCentroid=12.1050
+  pair 108: dP=-0.0333  dAUC=   n/a  dCentroid=2.3025
+  pair 109: dP=-0.1083  dAUC=   n/a  dCentroid=3.0750
+  pair 110: dP=-0.1083  dAUC=   n/a  dCentroid=5.2631
+  pair 111: dP=-0.1083  dAUC=   n/a  dCentroid=6.0302
+  pair 112: dP=-0.1083  dAUC=   n/a  dCentroid=11.3882
+  pair 113: dP=+0.0000  dAUC=   n/a  dCentroid=3.5140
+  pair 114: dP=+0.0000  dAUC=   n/a  dCentroid=6.6477
+  pair 115: dP=+0.0000  dAUC=   n/a  dCentroid=7.2649
+  pair 116: dP=+0.0000  dAUC=   n/a  dCentroid=6.5248
+  pair 117: dP=+0.0000  dAUC=   n/a  dCentroid=12.8053
+  pair 118: dP=+0.0000  dAUC=   n/a  dCentroid=6.1171
+  pair 119: dP=+0.0000  dAUC=   n/a  dCentroid=8.9746
+  pair 120: dP=+0.0000  dAUC=   n/a  dCentroid=8.6705
+  pair 121: dP=+0.0000  dAUC=   n/a  dCentroid=8.4406
+  pair 122: dP=+0.0000  dAUC=   n/a  dCentroid=14.2500
+  pair 123: dP=-0.3625  dAUC=   n/a  dCentroid=3.3624
+  pair 124: dP=-0.3667  dAUC=   n/a  dCentroid=6.4977
+  pair 125: dP=-0.3667  dAUC=   n/a  dCentroid=6.6692
+  pair 126: dP=-0.3667  dAUC=   n/a  dCentroid=9.2227
+  pair 127: dP=-0.3667  dAUC=   n/a  dCentroid=13.1765
+  pair 128: dP=+0.3625  dAUC=   n/a  dCentroid=2.3958
+  pair 129: dP=+0.0000  dAUC=   n/a  dCentroid=6.8372
+  pair 130: dP=+0.0000  dAUC=   n/a  dCentroid=5.1971
+  pair 131: dP=+0.0000  dAUC=   n/a  dCentroid=11.2684
+  pair 132: dP=+0.0000  dAUC=   n/a  dCentroid=11.6096
