@@ -1,0 +1,105 @@
+nohup: ignoring input
+config_frozen sha256: 85b2ec23d17d29dbc981d71174f6e05e329b0e35477d52c77392ca5d8203fbc5
+
+### 5G Campus QoS windows=179 init=36 classes=3 window_size=10
+   seed 42: 19.3s
+   seed 43: 19.2s
+   seed 44: 19.5s
+   seed 45: 19.3s
+   seed 46: 19.3s
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream[c] = X[:, j]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:255: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream["_t0"] = np.asarray(data["timestamp"])[:n]
+
+### UGR'16 windows=180 init=36 classes=2 window_size=240
+   seed 42: 60.8s
+   seed 43: 60.8s
+   seed 44: 59.9s
+   seed 45: 60.7s
+   seed 46: 59.5s
+
+### NordicDat windows=182 init=36 classes=3 window_size=500
+   seed 42: 35.5s
+   seed 43: 35.9s
+   seed 44: 36.1s
+   seed 45: 35.8s
+   seed 46: 35.7s
+
+### 5G NR windows=499 init=99 classes=3 window_size=1
+   seed 42: 48.2s
+   seed 43: 47.7s
+   seed 44: 48.0s
+   seed 45: 48.1s
+   seed 46: 48.1s
+
+=== pooled macro-F1 (mean +/- sd over seeds) ===
+-- 5G Campus QoS
+   ADWIN            0.9822 +/- 0.0006
+   EDD              0.9951 +/- 0.0005
+   EDMA             0.9822 +/- 0.0006
+   Event-Driven     0.9908 +/- 0.0003
+   Frozen           0.9822 +/- 0.0006
+   Full Retraining  0.9951 +/- 0.0000
+   Page-Hinkley     0.9822 +/- 0.0006
+   RAPT             0.9838 +/- 0.0003
+   RAPT-Enhanced    0.9838 +/- 0.0003
+-- UGR'16
+   ADWIN            0.8216 +/- 0.0177
+   EDD              0.8256 +/- 0.0187
+   EDMA             0.8216 +/- 0.0177
+   Event-Driven     0.8413 +/- 0.0170
+   Frozen           0.8216 +/- 0.0177
+   Full Retraining  0.7603 +/- 0.0194
+   Page-Hinkley     0.8216 +/- 0.0177
+   RAPT             0.6629 +/- 0.0750
+   RAPT-Enhanced    0.8008 +/- 0.0305
+-- NordicDat
+   ADWIN            0.3250 +/- 0.0079
+   EDD              0.4694 +/- 0.0047
+   EDMA             0.3250 +/- 0.0079
+   Event-Driven     0.4399 +/- 0.0288
+   Frozen           0.3250 +/- 0.0079
+   Full Retraining  0.4806 +/- 0.0099
+   Page-Hinkley     0.3250 +/- 0.0079
+   RAPT             0.4618 +/- 0.0112
+   RAPT-Enhanced    0.4662 +/- 0.0172
+-- 5G NR
+   ADWIN            0.8961 +/- 0.0099
+   EDD              0.8854 +/- 0.0069
+   EDMA             0.8961 +/- 0.0099
+   Event-Driven     0.8923 +/- 0.0065
+   Frozen           0.8961 +/- 0.0099
+   Full Retraining  0.9018 +/- 0.0054
+   Page-Hinkley     0.8961 +/- 0.0099
+   RAPT             0.8930 +/- 0.0067
+   RAPT-Enhanced    0.8965 +/- 0.0082
+
+=== reproduction check vs results/experiment_9a_three ===
+   5G Campus QoS    Frozen           old=0.9364 new=0.9364
+   5G Campus QoS    Event-Driven     old=0.9636 new=0.9636
+   5G Campus QoS    Full Retraining  old=0.9836 new=0.9836
+   5G Campus QoS    RAPT             old=0.9381 new=0.9381
+   5G Campus QoS    RAPT-Enhanced    old=0.9381 new=0.9381
+   5G Campus QoS    ADWIN            old=0.9364 new=0.9364
+   5G Campus QoS    EDD              old=0.9847 new=0.9847
+   5G Campus QoS    Page-Hinkley     old=0.9364 new=0.9364
+   5G Campus QoS    EDMA             old=0.9364 new=0.9364
+   UGR'16           Frozen           old=0.9690 new=0.9690
+   UGR'16           Event-Driven     old=0.8972 new=0.8972
+   UGR'16           Full Retraining  old=0.9595 new=0.9595
+   UGR'16           RAPT             old=0.8360 new=0.8360
+   UGR'16           RAPT-Enhanced    old=0.9276 new=0.9276
+   UGR'16           ADWIN            old=0.9690 new=0.9690
+   UGR'16           EDD              old=0.9655 new=0.9655
+   UGR'16           Page-Hinkley     old=0.9690 new=0.9690
+   UGR'16           EDMA             old=0.9690 new=0.9690
+   NordicDat        Frozen           old=0.2779 new=0.2779
+   NordicDat        Event-Driven     old=0.2547 new=0.2547
+   NordicDat        Full Retraining  old=0.4227 new=0.4227
+   NordicDat        RAPT             old=0.3818 new=0.3818
+   NordicDat        RAPT-Enhanced    old=0.3783 new=0.3783
+   NordicDat        ADWIN            old=0.2779 new=0.2779
+   NordicDat        EDD              old=0.4184 new=0.4184
+   NordicDat        Page-Hinkley     old=0.2779 new=0.2779
+   NordicDat        EDMA             old=0.2779 new=0.2779
