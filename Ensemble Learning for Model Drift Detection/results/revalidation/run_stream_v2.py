@@ -565,7 +565,7 @@ def run_seed_v2(stream_df, sd, seed, methods, label_delay=False,
             yt_all.append(y_all[idx]); yp_all.append(yp)
             if label_delay:
                 if pending is not None:
-                    buffer_append(buf_X, buf_y, w, pending)
+                    buffer_append(buf_X, buf_y, w, pending, delay_from=pending)
                 pending = w
             else:
                 buffer_append(buf_X, buf_y, w, idx)
@@ -626,7 +626,7 @@ def run_seed_v2(stream_df, sd, seed, methods, label_delay=False,
             err = 1.0 - float(np.mean(yp == y_all[idx]))
             if label_delay:
                 if pending is not None:
-                    buffer_append(buf_X, buf_y, w, pending)
+                    buffer_append(buf_X, buf_y, w, pending, delay_from=pending)
                 pending = w
             else:
                 buffer_append(buf_X, buf_y, w, idx)
@@ -673,7 +673,7 @@ def run_seed_v2(stream_df, sd, seed, methods, label_delay=False,
             err = 1.0 - float(np.mean(yp == y_all[idx]))
             if label_delay:
                 if pending is not None:
-                    buffer_append(buf_X, buf_y, w, pending)
+                    buffer_append(buf_X, buf_y, w, pending, delay_from=pending)
                 pending = w
             else:
                 buffer_append(buf_X, buf_y, w, idx)
@@ -757,7 +757,7 @@ def run_seed_v2(stream_df, sd, seed, methods, label_delay=False,
             t0 = time.process_time(); yp = sys_.predict(X[idx]); pc = time.process_time() - t0
             if label_delay:
                 if pending is not None:
-                    buffer_append(buf_X, buf_y, w, pending)
+                    buffer_append(buf_X, buf_y, w, pending, delay_from=pending)
                 pending = w
             else:
                 buffer_append(buf_X, buf_y, w, idx)
