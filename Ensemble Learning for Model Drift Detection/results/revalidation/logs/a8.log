@@ -1,0 +1,45 @@
+nohup: ignoring input
+### 5G Campus QoS
+   seed 42 done
+   seed 43 done
+   seed 44 done
+   seed 45 done
+   seed 46 done
+### NordicDat
+   seed 42 done
+   seed 43 done
+   seed 44 done
+   seed 45 done
+   seed 46 done
+### 5G NR
+   seed 42 done
+   seed 43 done
+   seed 44 done
+   seed 45 done
+   seed 46 done
+
+=== pooled macro-F1: immediate vs delayed ===
+-- 5g_campus
+                 immediate  delayed  delta
+method                                    
+Event-Driven        0.9908   0.9908    0.0
+Frozen              0.9822   0.9822    0.0
+Full Retraining     0.9951   0.9951    0.0
+RAPT                0.9838   0.9838    0.0
+RAPT-Enhanced       0.9838   0.9838    0.0
+-- nordicdat
+                 immediate  delayed   delta
+method                                     
+Event-Driven        0.4399   0.4399  0.0000
+Frozen              0.3250   0.3250  0.0000
+Full Retraining     0.4806   0.4205 -0.0601
+RAPT                0.4618   0.3362 -0.1256
+RAPT-Enhanced       0.4662   0.4126 -0.0536
+-- 5g_nr
+                 immediate  delayed   delta
+method                                     
+Event-Driven        0.8923   0.8923  0.0000
+Frozen              0.8961   0.8961  0.0000
+Full Retraining     0.9018   0.9007 -0.0011
+RAPT                0.8930   0.8922 -0.0008
+RAPT-Enhanced       0.8965   0.8984  0.0019

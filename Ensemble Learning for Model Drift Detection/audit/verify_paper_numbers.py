@@ -193,6 +193,26 @@ def main():
     check("abstract range low", min(reds), 48, tol=0.6)
     check("abstract range high", max(reds), 92, tol=0.6)
 
+    # ---- Controls: equivalence test and label-delay protocol ----
+    # TOST (A7) and label-delay (A8) live on the revalidation branch and are
+    # carried on paper-audit under results/revalidation/.
+    rev = os.path.join(ROOT, "results", "revalidation")
+    tost = pd.read_csv(os.path.join(rev, "A7_tost.csv"))
+    r = tost[(tost.dataset == "ugr16") & (tost.method_1 == "RAPT-Cheap")
+             & (tost.method_2 == "Full Retraining") & (tost.margin == 0.005)].iloc[0]
+    check("UGR16 TOST p", round(r.tost_p, 2), 0.95, tol=6e-3)
+    check("UGR16 TOST equivalence rejected",
+          0.0 if not bool(r["equivalent_0.05"]) else 1.0, 0.0)
+    ldel = pd.read_csv(os.path.join(rev, "A8_label_delay.csv"))
+    piv = ldel.groupby(["dataset", "method", "label_delay"]).pooled_macro_f1.mean().unstack()
+    check("label-delay RAPT nordic", round(piv.loc[("nordicdat", "RAPT")][0]
+                                            - piv.loc[("nordicdat", "RAPT")][1], 2), 0.13, tol=6e-3)
+    check("label-delay FR nordic", round(piv.loc[("nordicdat", "Full Retraining")][0]
+                                          - piv.loc[("nordicdat", "Full Retraining")][1], 2), 0.06, tol=6e-3)
+    for m in ["Frozen", "Event-Driven"]:
+        check(f"label-delay {m} campus unchanged",
+              round(piv.loc[("5g_campus", m)][0] - piv.loc[("5g_campus", m)][1], 6), 0.0, tol=1e-6)
+
     # ---- report ----
     n_pass = sum(1 for c in checks if c[3])
     print(f"{'CLAIM':58s} {'ARTIFACT':>12s} {'PAPER':>12s}  OK")
