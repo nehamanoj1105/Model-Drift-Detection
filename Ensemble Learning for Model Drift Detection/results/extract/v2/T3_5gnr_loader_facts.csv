@@ -1,0 +1,8 @@
+item,value,source
+one row in the Table-II 5G NR stream,"one 500-packet telemetry window (a fixed-size aggregate), with 12 QoS features","experiments/exp9b/load_and_prepare_stream_9b.py:34-59 extract_window_features (window = WINDOW_SIZE=500 packets, line 15/56-62)"
+number of rows / windows,499,experiments/exp9b/results/stream_definition.json [total_windows]
+initial train prefix,99,experiments/exp9b/results/stream_definition.json [initial_train_windows]
+label granularity,"3-class QoS class of the window's own p90 latency (GOOD/DEGRADED/BAD), thresholds frozen on the initial 20% prefix",experiments/exp9b/load_and_prepare_stream_9b.py:189-197 assign_qos_class(df_stream['target_p90_lat']); thresholds in stream_definition.json [qos_thresholds_ms]
+loader that produced Table II (5G NR),9B: experiments/exp9b/load_and_prepare_stream_9b.py -> processed_exp9b_stream.csv; consumed by experiments/exp9b/run_exp9b.py / drift_harness.py,results/experiment_9b/natural_drift/summary.csv ; experiments/exp9b/run_exp9b.py
+loader that produced the revalidation numbers,"results/revalidation/streams.py:33-62 load_5g_nr (reads the SAME processed_exp9b_stream.csv but re-declares window_size=1, one row per window)",results/revalidation/streams.py:33-62
+window_size as seen by the revalidation,1 (one pre-built window per streaming step),results/revalidation/streams.py:52
