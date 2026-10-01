@@ -37,9 +37,10 @@ fits. Evaluated against frozen, event-driven and full-retraining baselines on fo
 network streams under a strictly prequential protocol, RAPT reduced adaptation CPU
 relative to full retraining by 48--92\%, but its predictive performance was not
 uniformly better: it recorded lower macro-F1 on all four streams, and on one stream
-blind reuse was actively harmful, a failure a parity-refit mechanism repairs. A
-cost-aware configuration matched full retraining within measurement noise
-($\Delta$macro-F1 $=+0.0022$, $p=0.31$) at roughly 40\% lower adaptation cost. Two
+blind reuse was actively harmful, a failure a parity-refit mechanism repairs. On the 5G
+Campus ablation stream a cost-aware configuration matched full retraining within
+measurement noise ($\Delta$macro-F1 $=+0.0022$, $p=0.31$) at roughly 40\% lower
+adaptation cost. Two
 mechanisms were rejected on measured evidence: a relative-degradation trigger that
 cannot fire on persistently poor policies, and an incremental learner dominated on
 both accuracy and cost.
@@ -86,7 +87,8 @@ shifted, reuse retrieves a stale policy and degrades performance, and the
 enhancement that repairs it is what makes the approach viable there. The
 contributions are a regime-conditioned policy-transfer mechanism that stores and
 retrieves ensemble policies by regime; a monitoring and refresh strategy whose
-cost-aware configuration matches full-retraining accuracy at a fraction of its cost;
+cost-aware configuration matches full-retraining accuracy on the evaluated stream at a
+fraction of its cost;
 an evaluation across four network streams under one prequential protocol against four
 established drift detectors; and a failure analysis of harmful blind reuse, a trigger
 that cannot fire by construction, and an incremental learner dominated on both axes.
