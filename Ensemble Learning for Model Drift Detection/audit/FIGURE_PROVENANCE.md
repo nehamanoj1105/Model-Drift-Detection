@@ -44,6 +44,6 @@ but is **not referenced** by `main.tex`. Left in place; noted for the author.
 
 `Paper_Final/make_ugr_rolling_figure.py` is the generator for
 `ugr_rolling_accuracy.png` (Fig. 2). Its vertical ticks come from
-`novelty_refit_windows()` — novelty refits, not parity refits. The caption says
-"parity refits"; see `PHASE2_FINDINGS.md` (a wording issue outside this audit's
-scope).
+`novelty_refit_windows()` — novelty refits, not parity refits. The caption in
+`paper/main.tex` was corrected to say "novelty refits: the first window of each
+new regime, where RAPT trains a fresh policy", which is what the ticks mark.
