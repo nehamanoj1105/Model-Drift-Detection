@@ -1,0 +1,166 @@
+\begin{thebibliography}{10}
+
+\bibitem{nrlatency}
+5g nr end-to-end latency simulation dataset.
+\newblock Zenodo record 20035549.
+\newblock Accessed 2026.
+
+\bibitem{nordicdat}
+Nordicdat cross-border predictive qos dataset.
+\newblock Zenodo record 10964584, CC-BY-4.0.
+\newblock Accessed 2026.
+
+\bibitem{abbasi2021elstream}
+Ahmad Abbasi, Abdul~Rehman Javed, Chinmay Chakraborty, Jamel Nebhen, Wisha
+  Zehra, and Zunera Jalil.
+\newblock Elstream: An ensemble learning approach for concept drift detection
+  in dynamic social big data stream learning.
+\newblock {\em IEEE Access}, 9:66408--66419, 2021.
+
+\bibitem{baena2006early}
+Manuel Baena-Garc{\'i}a, Jos{\'e} del Campo-{\'A}vila, Raul Fidalgo, Albert
+  Bifet, Ricard Gavald{\`a}, and Rafael Morales-Bueno.
+\newblock Early drift detection method.
+\newblock In {\em Proc. Int. Workshop on Knowledge Discovery from Data
+  Streams}, pages 77--86, 2006.
+
+\bibitem{barros2017rddm}
+Roberto S.~M. Barros, Danilo R.~L. Cabral, Paulo~M. Gon{\c{c}}alves, and Silas
+  G. T.~C. Santos.
+\newblock Rddm: Reactive drift detection method.
+\newblock {\em Expert Systems with Applications}, 90:344--355, 2017.
+
+\bibitem{bifet2007learning}
+Albert Bifet and Ricard Gavald{\`a}.
+\newblock Learning from time-changing data with adaptive windowing.
+\newblock In {\em Proc. SIAM Int. Conf. Data Mining (SDM)}, pages 443--448,
+  2007.
+
+\bibitem{brockhoff2020time}
+Tobias Brockhoff, Merih~Seran Uysal, and Wil M.~P. van~der Aalst.
+\newblock Time-aware concept drift detection using the earth mover's distance.
+\newblock In {\em Proc. Int. Conf. Process Mining (ICPM)}, pages 33--40, 2020.
+
+\bibitem{brzezinski2013reacting}
+Dariusz Brzezi{\'n}ski and Jerzy Stefanowski.
+\newblock Reacting to different types of concept drift: The accuracy updated
+  ensemble algorithm.
+\newblock {\em IEEE Transactions on Neural Networks and Learning Systems},
+  25(1):81--94, 2014.
+
+\bibitem{domingos2000mining}
+Pedro Domingos and Geoff Hulten.
+\newblock Mining high-speed data streams.
+\newblock In {\em Proc. ACM SIGKDD Int. Conf. Knowledge Discovery and Data
+  Mining}, pages 71--80, 2000.
+
+\bibitem{dos2016fast}
+Denis~Moreira dos Reis, Peter Flach, Stan Matwin, and Gustavo Batista.
+\newblock Fast unsupervised online drift detection using incremental
+  kolmogorov--smirnov test.
+\newblock In {\em Proc. ACM SIGKDD Int. Conf. Knowledge Discovery and Data
+  Mining}, pages 1545--1554, 2016.
+
+\bibitem{frias2014online}
+Isvani Frias-Blanco, Jos{\'e} del Campo-{\'A}vila, Gonzalo Ramos-Jimenez,
+  Rafael Morales-Bueno, Agustin Ortiz-Diaz, and Yail{\'e} Caballero-Mota.
+\newblock Online and non-parametric drift detection methods based on
+  hoeffding's bounds.
+\newblock {\em IEEE Transactions on Knowledge and Data Engineering},
+  27(3):810--823, 2015.
+
+\bibitem{gama2004learning}
+Joao Gama, Pedro Medas, Gladys Castillo, and Pedro Rodrigues.
+\newblock Learning with drift detection.
+\newblock In {\em Proc. Brazilian Symp. Artificial Intelligence (SBIA)}, pages
+  286--295, 2004.
+
+\bibitem{gomes2017adaptive}
+Heitor~M. Gomes, Albert Bifet, Jesse Read, Jean~Paul Barddal, Fabr{\'i}cio
+  Enembreck, Bernhard Pfharinger, Geoff Holmes, and Talel Abdessalem.
+\newblock Adaptive random forests for evolving data stream classification.
+\newblock {\em Machine Learning}, 106(9--10):1469--1495, 2017.
+
+\bibitem{helmbold1994tracking}
+David~P. Helmbold and Philip~M. Long.
+\newblock Tracking drifting concepts by minimizing disagreements.
+\newblock {\em Machine Learning}, 14(1):27--45, 1994.
+
+\bibitem{khamassi2018discussion}
+Imen Khamassi, Moamar Sayed-Mouchaweh, Moez Hammami, and Khaled Gh{\'e}dira.
+\newblock Discussion and review on evolving data streams and concept drift
+  adapting.
+\newblock {\em Evolving Systems}, 9(1):1--23, 2018.
+
+\bibitem{JMLR:v8:kolter07a}
+J.~Zico Kolter and Marcus~A. Maloof.
+\newblock Dynamic weighted majority: An ensemble method for drifting concepts.
+\newblock {\em Journal of Machine Learning Research}, 8(91):2755--2790, 2007.
+
+\bibitem{lu2018learning}
+Jie Lu, Anjin Liu, Fan Dong, Feng Gu, Joao Gama, and Guangquan Zhang.
+\newblock Learning under concept drift: A review.
+\newblock {\em IEEE Transactions on Knowledge and Data Engineering},
+  31(12):2346--2363, 2018.
+
+\bibitem{markovitch1988role}
+Shaul Markovitch and Paul~D. Scott.
+\newblock The role of forgetting in learning.
+\newblock In {\em Machine Learning Proceedings 1988}, pages 459--465. Morgan
+  Kaufmann, 1988.
+
+\bibitem{montiel2021river}
+Jacob Montiel, Max Halford, Saulo~Martiello Mastelini, Geoffrey Bolmier,
+  Raphael Sourty, Robin Vaysse, Adil Zouitine, Heitor~Murilo Gomes, Jesse Read,
+  Talel Abdessalem, and Albert Bifet.
+\newblock River: machine learning for streaming data in python.
+\newblock {\em Journal of Machine Learning Research}, 22(110):1--8, 2021.
+
+\bibitem{page1954continuous}
+Ewan~S. Page.
+\newblock Continuous inspection schemes.
+\newblock {\em Biometrika}, 41(1/2):100--115, 1954.
+
+\bibitem{pan2010transfer}
+Sinno~Jialin Pan and Qiang Yang.
+\newblock A survey on transfer learning.
+\newblock {\em IEEE Transactions on Knowledge and Data Engineering},
+  22(10):1345--1359, 2010.
+
+\bibitem{ross2012exponentially}
+Gordon~J. Ross, Niall~M. Adams, Dimitris~K. Tasoulis, and David~J. Hand.
+\newblock Exponentially weighted moving average charts for detecting concept
+  drift.
+\newblock {\em Pattern Recognition Letters}, 33(2):191--198, 2012.
+
+\bibitem{schlimmer1986incremental}
+Jeffrey~C. Schlimmer and Richard~H. Granger.
+\newblock Incremental learning from noisy data.
+\newblock {\em Machine Learning}, 1(3):317--354, 1986.
+
+\bibitem{tambe1988some}
+Milind Tambe and Allen Newell.
+\newblock Some chunks are expensive.
+\newblock In {\em Machine Learning Proceedings 1988}, pages 451--458. Morgan
+  Kaufmann, 1988.
+
+\bibitem{widmer1994combining}
+Gerhard Widmer.
+\newblock Combining robustness and flexibility in learning drifting concepts.
+\newblock In {\em Proc. European Conf. Artificial Intelligence (ECAI)}, pages
+  468--472, 1994.
+
+\bibitem{yang2021pwpae}
+Li~Yang, Dimitrios~Michael Manias, and Abdallah Shami.
+\newblock Pwpae: An ensemble framework for concept drift adaptation in iot data
+  streams.
+\newblock In {\em Proc. IEEE Global Communications Conf. (GLOBECOM)}, pages
+  1--6, 2021.
+
+\bibitem{9427288}
+Li~Yang and Abdallah Shami.
+\newblock A lightweight concept drift detection and adaptation framework for
+  iot data streams.
+\newblock {\em IEEE Internet of Things Magazine}, 4(2):96--101, 2021.
+
+\end{thebibliography}
