@@ -1,0 +1,13 @@
+dataset,detector,paper_detected_events,paper_retrain_events,paper_macro_f1,river_return_value_bug,edd_detected_equals_reval_original,edd_retrain_equals_reval_original
+5g_campus,ADWIN,0.0,0,0.9374276196138543,True,False,False
+5g_campus,EDD,114.0,38,0.9867330712472414,True,True,False
+5g_campus,Page-Hinkley,0.0,0,0.9374276196138543,True,False,False
+5g_campus,EDMA,0.0,0,0.9374276196138543,True,False,False
+ugr16,ADWIN,0.0,0,0.966695674961459,True,False,False
+ugr16,EDD,115.0,39,0.96750142605928,True,True,False
+ugr16,Page-Hinkley,0.0,0,0.966695674961459,True,False,False
+ugr16,EDMA,0.0,0,0.966695674961459,True,False,False
+nordicdat,ADWIN,0.0,0,0.2567329904988491,True,False,False
+nordicdat,EDD,117.0,39,0.4062836475832138,True,True,False
+nordicdat,Page-Hinkley,0.0,0,0.2567329904988491,True,False,False
+nordicdat,EDMA,0.0,0,0.2567329904988491,True,False,False

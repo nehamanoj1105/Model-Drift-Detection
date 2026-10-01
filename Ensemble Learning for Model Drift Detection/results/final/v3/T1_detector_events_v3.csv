@@ -1,0 +1,17 @@
+dataset,detector,events_window_signal,events_per_sample_signal
+5g_campus,ADWIN,0,0
+5g_campus,Page-Hinkley,0,0
+5g_campus,EDD,114,1220
+5g_campus,EDMA,10,17
+ugr16,ADWIN,0,12
+ugr16,Page-Hinkley,0,4
+ugr16,EDD,115,33841
+ugr16,EDMA,1,84
+nordicdat,ADWIN,0,187
+nordicdat,Page-Hinkley,0,115
+nordicdat,EDD,111,72517
+nordicdat,EDMA,4,740
+5g_nr,ADWIN,0,0
+5g_nr,Page-Hinkley,0,0
+5g_nr,EDD,344,344
+5g_nr,EDMA,14,14

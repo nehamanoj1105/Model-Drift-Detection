@@ -1,0 +1,9 @@
+dataset,variant,events
+5g_campus,"paper harness (_CustomEDD, window err)",114
+5g_campus,revalidation A6 (window signal),114
+ugr16,"paper harness (_CustomEDD, window err)",115
+ugr16,revalidation A6 (window signal),115
+nordicdat,"paper harness (_CustomEDD, window err)",111
+nordicdat,revalidation A6 (window signal),117
+5g_nr,"paper harness (_CustomEDD, window err)",344
+5g_nr,revalidation A6 (window signal),344
