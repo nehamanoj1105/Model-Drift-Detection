@@ -1,0 +1,5 @@
+dataset,best_at_delay0,best_at_max_delay,ranking_stable,max_abs_f1_shift,delays_tested
+5g_campus,Full Retraining,Full Retraining,True,0.0,"[0, 1]"
+ugr16,,,,,not run for this stream
+nordicdat,Full Retraining,Event-Driven,False,0.12561169893486152,"[0, 1]"
+5g_nr,Full Retraining,Full Retraining,True,0.0019222816508410734,"[0, 1]"

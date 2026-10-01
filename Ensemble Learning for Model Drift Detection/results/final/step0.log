@@ -1,0 +1,25 @@
+nohup: ignoring input
+config sha256 85b2ec23d17d29dbc981d71174f6e05e329b0e35477d52c77392ca5d8203fbc5
+0.1 provenance
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream[c] = X[:, j]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:255: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream["_t0"] = np.asarray(data["timestamp"])[:n]
+0.2 duplication
+0.3 buffer
+Traceback (most recent call last):
+  File "/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/results/final/step0_resolve.py", line 311, in <module>
+    main()
+    ~~~~^^
+  File "/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/results/final/step0_resolve.py", line 297, in main
+    step_0_3()
+    ~~~~~~~~^^
+  File "/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/results/final/step0_resolve.py", line 149, in step_0_3
+    stream, sd = get_stream(ds)
+                 ~~~~~~~~~~^^^^
+  File "/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/results/revalidation/streams.py", line 68, in get_stream
+    return load_9a(name, mode)
+  File "/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/results/revalidation/streams.py", line 27, in load_9a
+    data = LOADERS[name]()
+           ~~~~~~~^^^^^^
+KeyError: '5g_campus'

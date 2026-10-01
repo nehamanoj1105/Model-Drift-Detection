@@ -1,0 +1,13 @@
+check,passed,evidence
+config frozen before runs,True,config_frozen.json created date
+seeds are 42-46,True,"[42, 43, 44, 45, 46]"
+protocol is prequential test-then-train,True,"chronological, prequential test-then-train, no shuffling"
+no shuffling,True,"chronological, prequential test-then-train, no shuffling"
+window size consistent within stream,True,"{'5g_campus': 10, 'ugr16': 240, 'nordicdat': 500, '5g_nr': 1}"
+"all five seeds per (dataset, method)",True,min seeds = 5
+cost measured with repeats (>=3 per seed),True,"T8_cost_per_run.csv repeats per (dataset, method, seed)"
+primary table present and complete,True,T1 rows = 36
+9A statistics reproduced exactly,True,18/18 mean diffs match
+metric reconciliation recorded,True,T1_metric_reconciliation.csv (paper mixes per-window and pooled)
+no synthetic drift transformation introduced,True,no drift-construction artifacts; the audit only re-analyses existing streams
+primary table has no fabricated NaNs,True,T1 macro_f1/accuracy non-null

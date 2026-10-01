@@ -1,0 +1,8 @@
+component,evidence,verdict
+Tier-1 learner (extra trees base),RAPT_FULL=0.9587 vs RAPT_T2=0.9381,LOAD-BEARING: removing it costs F1
+policy repository (reuse),"UGR'16 reuse=133 events, RAPT=0.8360 vs Frozen=0.9690",LOAD-BEARING and the source of the failure
+novelty refit,UGR'16 refit buffer 500->1000: +0.0917 macro-F1 (Step 2),LOAD-BEARING
+parity refit,UGR'16 parity_refits=0 at every threshold; parity on/off delta=0.0000,INERT as configured
+fingerprint gate,A5_gate campus: orig=0.9892 fix=0.9948,ACTIVE but only matters when reuse fires; never fires on Campus/UGR'16
+periodic refresh,Final_Exp RAPT_REFRESH_W5=0.9847 vs RAPT_EVIDENCE=0.9587,ACTIVE; refreshes drive most of the campus gain
+cheap refit,RAPT_CHEAP=0.9851 vs Full Retraining=0.9829,LOAD-BEARING for the cost claim on Campus only (Step 4)

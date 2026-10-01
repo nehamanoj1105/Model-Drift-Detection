@@ -1,0 +1,35 @@
+\begin{table*}[t]
+\caption{Corrected primary table, per-window mean macro-F1 over seeds 42--46, all four streams on one metric. This is the scale the paper used for three of the four streams.}
+\label{tab:primary_pw}
+\centering
+\scriptsize
+\begin{tabular}{@{}llccccc@{}}
+\toprule
+\textbf{Dataset} & \textbf{Model} & \textbf{Macro-F1} & \textbf{Acc.} & \textbf{Prec.} & \textbf{Rec.} & \textbf{Adapt. CPU (s)} \\
+\midrule
+5G Campus & Frozen & $0.9364 \pm 0.0023$ & $0.9822$ & $0.9379$ & $0.9377$ & $0.0000$ \\
+ & Event-Driven & $0.9636 \pm 0.0006$ & $0.9908$ & $0.9637$ & $0.9646$ & $0.1074$ \\
+ & Full Retraining & $0.9836 \pm 0.0013$ & $0.9951$ & $0.9838$ & $0.9843$ & $1.4387$ \\
+ & RAPT & $0.9381 \pm 0.0016$ & $0.9838$ & $0.9393$ & $0.9392$ & $0.2390$ \\
+ & RAPT-Enhanced & $0.9381 \pm 0.0016$ & $0.9838$ & $0.9393$ & $0.9392$ & $0.2460$ \\
+\midrule
+UGR'16 & Frozen & $0.9690 \pm 0.0029$ & $0.9899$ & $0.9795$ & $0.9662$ & $0.0000$ \\
+ & Event-Driven & $0.8972 \pm 0.0277$ & $0.9898$ & $0.9042$ & $0.8955$ & $0.5807$ \\
+ & Full Retraining & $0.9595 \pm 0.0012$ & $0.9873$ & $0.9726$ & $0.9580$ & $24.1753$ \\
+ & RAPT & $0.8360 \pm 0.0262$ & $0.9635$ & $0.8527$ & $0.8336$ & $2.0703$ \\
+ & RAPT-Enhanced & $0.9276 \pm 0.0123$ & $0.9880$ & $0.9375$ & $0.9251$ & $2.7872$ \\
+\midrule
+NordicDat & Frozen & $0.2779 \pm 0.0224$ & $0.4770$ & $0.4215$ & $0.2487$ & $0.0000$ \\
+ & Event-Driven & $0.2547 \pm 0.0177$ & $0.4583$ & $0.3909$ & $0.2274$ & $0.2770$ \\
+ & Full Retraining & $0.4227 \pm 0.0299$ & $0.5694$ & $0.4938$ & $0.4085$ & $2.2672$ \\
+ & RAPT & $0.3818 \pm 0.0184$ & $0.6172$ & $0.4703$ & $0.3582$ & $0.2738$ \\
+ & RAPT-Enhanced & $0.3783 \pm 0.0321$ & $0.5677$ & $0.4600$ & $0.3614$ & $2.7234$ \\
+\midrule
+5G NR Lat. & Frozen & $0.9075 \pm 0.0061$ & $0.9075$ & $0.9075$ & $0.9075$ & $0.0000$ \\
+ & Event-Driven & $0.9060 \pm 0.0042$ & $0.9060$ & $0.9060$ & $0.9060$ & $0.9281$ \\
+ & Full Retraining & $0.9110 \pm 0.0065$ & $0.9110$ & $0.9110$ & $0.9110$ & $0.7078$ \\
+ & RAPT & $0.9040 \pm 0.0052$ & $0.9040$ & $0.9040$ & $0.9040$ & $0.2720$ \\
+ & RAPT-Enhanced & $0.9085 \pm 0.0068$ & $0.9085$ & $0.9085$ & $0.9085$ & $0.7895$ \\
+\bottomrule
+\end{tabular}
+\end{table*}

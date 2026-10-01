@@ -1,0 +1,7 @@
+hypothesis,deciding_test,value,verdict,note
+H1 label semantics drift per regime visit,"same-regime-visit vs contiguous-block transfer F1, UGR'16","{""n_pairs"": 2, ""mean_diff_same_minus_contiguous"": 0.0}",INCONCLUSIVE,only 2 paired regime visits on UGR'16; too few for a test
+H2 provenance bug (checkpoints trained on wrong regime),"RAPT-Deferred (provenance fixed) vs RAPT, UGR'16","delta=0.0798 CI=[0.0609,0.0996] p=0.0625",SUPPORTED,"the bug is real (Step 0.1: all stored checkpoints mis-keyed); correcting it lifts UGR'16 macro-F1 by this much at the same retrain/reuse counts, so it is one real contributor"
+H3 attack non-stationarity in time,"Frozen macro-F1 first third minus last third, UGR'16",frozen_degradation=-0.0888,NOT SUPPORTED,Frozen does not degrade over the 30-day block
+DRIVER 1: novelty-refit training-set composition,"refit buffer 500->1000, parity off, UGR'16","delta=0.0917 CI=[0.0661,0.1210] p=0.0625",SUPPORTED,buffer size alone accounts for most of the UGR'16 recovery
+DRIVER 2: parity refit (paper's proposed fix),"parity on vs off at refit buffer 500, UGR'16","delta=0.0000 CI=[0.0000,0.0000] p=1.0000",NOT SUPPORTED,"the parity branch never fires on UGR'16 (parity_refits=0 at every threshold 0.5-0.95, Step 0.4); the refit-buffer change alone reproduces the whole recovery"
+REPORTED RECOVERY (0.8360 -> 0.9276),"RAPT-Enhanced vs RAPT, UGR'16","delta=0.0917 CI=[0.0661,0.1210] p=0.0625",SUPPORTED,"RAPT-Enhanced and RAPT-Cheap are identical on UGR'16; both differ from RAPT-Deferred (delta=0.0119 CI=[0.0035,0.0232] p=0.1250)"
