@@ -1,0 +1,14 @@
+
+seed-paired (n=5): Delta=+0.00221 sd=0.00468
+  Wilcoxon p=0.3125
+  TOST margin +/-0.005: p=0.1268 90% CI [-0.0023,+0.0067] -> not shown
+  TOST margin +/-0.010: p=0.0102 90% CI [-0.0023,+0.0067] -> EQUIVALENT
+  TOST margin +/-0.020: p=0.0005 90% CI [-0.0023,+0.0067] -> EQUIVALENT
+  TOST margin +/-0.050: p=0.0000 90% CI [-0.0023,+0.0067] -> EQUIVALENT
+
+window-paired (n=143): Delta=+0.00221 sd=0.06199
+  Wilcoxon p=1.0000
+  TOST margin +/-0.005: p=0.2955 90% CI [-0.0064,+0.0108] -> not shown
+  TOST margin +/-0.010: p=0.0675 90% CI [-0.0064,+0.0108] -> not shown
+  TOST margin +/-0.020: p=0.0004 90% CI [-0.0064,+0.0108] -> EQUIVALENT
+  TOST margin +/-0.050: p=0.0000 90% CI [-0.0064,+0.0108] -> EQUIVALENT

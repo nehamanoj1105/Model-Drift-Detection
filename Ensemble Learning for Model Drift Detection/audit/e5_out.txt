@@ -1,0 +1,139 @@
+nohup: ignoring input
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream[c] = X[:, j]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:255: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream["_t0"] = np.asarray(data["timestamp"])[:n]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream[c] = X[:, j]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:255: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream["_t0"] = np.asarray(data["timestamp"])[:n]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream[c] = X[:, j]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:255: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream["_t0"] = np.asarray(data["timestamp"])[:n]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream[c] = X[:, j]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:255: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream["_t0"] = np.asarray(data["timestamp"])[:n]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream[c] = X[:, j]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:255: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream["_t0"] = np.asarray(data["timestamp"])[:n]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream[c] = X[:, j]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:255: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream["_t0"] = np.asarray(data["timestamp"])[:n]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream[c] = X[:, j]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:255: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream["_t0"] = np.asarray(data["timestamp"])[:n]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream[c] = X[:, j]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:255: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream["_t0"] = np.asarray(data["timestamp"])[:n]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream[c] = X[:, j]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:255: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream["_t0"] = np.asarray(data["timestamp"])[:n]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream[c] = X[:, j]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:255: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream["_t0"] = np.asarray(data["timestamp"])[:n]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream[c] = X[:, j]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:255: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream["_t0"] = np.asarray(data["timestamp"])[:n]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream[c] = X[:, j]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:255: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream["_t0"] = np.asarray(data["timestamp"])[:n]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream[c] = X[:, j]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:255: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream["_t0"] = np.asarray(data["timestamp"])[:n]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream[c] = X[:, j]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:255: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream["_t0"] = np.asarray(data["timestamp"])[:n]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream[c] = X[:, j]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:255: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream["_t0"] = np.asarray(data["timestamp"])[:n]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream[c] = X[:, j]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:255: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream["_t0"] = np.asarray(data["timestamp"])[:n]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream[c] = X[:, j]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:255: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream["_t0"] = np.asarray(data["timestamp"])[:n]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream[c] = X[:, j]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:255: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream["_t0"] = np.asarray(data["timestamp"])[:n]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream[c] = X[:, j]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:255: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream["_t0"] = np.asarray(data["timestamp"])[:n]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream[c] = X[:, j]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:255: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream["_t0"] = np.asarray(data["timestamp"])[:n]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream[c] = X[:, j]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:255: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream["_t0"] = np.asarray(data["timestamp"])[:n]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream[c] = X[:, j]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:255: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream["_t0"] = np.asarray(data["timestamp"])[:n]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream[c] = X[:, j]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:255: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream["_t0"] = np.asarray(data["timestamp"])[:n]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream[c] = X[:, j]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:255: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream["_t0"] = np.asarray(data["timestamp"])[:n]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream[c] = X[:, j]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:255: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream["_t0"] = np.asarray(data["timestamp"])[:n]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream[c] = X[:, j]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:255: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream["_t0"] = np.asarray(data["timestamp"])[:n]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream[c] = X[:, j]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:255: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream["_t0"] = np.asarray(data["timestamp"])[:n]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream[c] = X[:, j]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:255: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream["_t0"] = np.asarray(data["timestamp"])[:n]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream[c] = X[:, j]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:255: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream["_t0"] = np.asarray(data["timestamp"])[:n]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream[c] = X[:, j]
+/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9a/three_dataset_load.py:255: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  stream["_t0"] = np.asarray(data["timestamp"])[:n]
+
+E5 -- absolute-floor safe variant on UGR'16
+ floor  F1 (mean)  refits  adapt CPU s
+  None     0.8360     0.0       1.9998  base RAPT
+   0.6     0.8360     0.0       1.9921  
+   0.7     0.8360     0.0       1.9927  
+   0.8     0.8360     0.0       2.0072  
+   0.9     0.8360     0.0       2.0023  
+  0.95     0.8360     0.0       1.9964  
+
+E5 -- absolute-floor safe variant on 5G Campus
+ floor  F1 (mean)  refits  adapt CPU s
+  None     0.9381     0.0       0.2359  base RAPT
+   0.6     0.9381     0.0       0.2312  
+   0.7     0.9381     0.0       0.2303  
+   0.8     0.9381     0.0       0.2357  
+   0.9     0.9381     0.0       0.2313  
+  0.95     0.9646     5.0       0.2355  

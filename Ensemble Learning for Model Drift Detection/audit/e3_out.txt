@@ -1,0 +1,9 @@
+E3 -- does the feature-to-label mapping survive regime recurrence?
+
+Stream    recur  P(store)  P(recur)     gap  p (Wilcoxon)  gap>0.10
+Campus      700    1.0000    0.9351 +0.0649      4.81e-21    15.3%
+UGR16       660    0.8960    0.9741 -0.0782      4.32e-21     6.2%
+Nordic      715    0.3995    0.2786 +0.1209      1.58e-32    55.1%
+
+UGR'16: 660 recurrences, mean frozen-F1 drop on recurrence -0.0782 (p=4.32e-21); 6% of recurrences drop more than 0.10.
+Campus and Nordic gaps for comparison: Campus +0.0649, Nordic +0.1209

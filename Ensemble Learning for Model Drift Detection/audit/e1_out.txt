@@ -1,0 +1,8 @@
+E1 -- exp9a RAPTSystem vs Final_Experiments RAPT_T2 on 5G Campus
+  seed 42: 1430/1430 predictions identical -> IDENTICAL
+  seed 43: 1430/1430 predictions identical -> IDENTICAL
+  seed 44: 1430/1430 predictions identical -> IDENTICAL
+  seed 45: 1430/1430 predictions identical -> IDENTICAL
+  seed 46: 1430/1430 predictions identical -> IDENTICAL
+
+Verdict: implementations are EQUIVALENT
