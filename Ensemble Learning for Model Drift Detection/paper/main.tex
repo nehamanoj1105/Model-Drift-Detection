@@ -361,8 +361,9 @@ Each experiment had seeds [42,43,44,45,46]. Therefore we report Mean and Standar
 
 
 \subsection{Predictive Performance}
-Table~\ref{tab:primary} holds the primary comparison, and Fig.~\ref{fig:primary} shows
-the macro-F1 values side by side.
+Table~\ref{tab:primary} holds the primary comparison. On UGR'16, RAPT tracks the frozen
+baseline and not the retrained models, the signature of stale policy reuse; on 5G NR the
+five models are within $0.0133$ of one another.
 
 
 \begin{table*}[t]
@@ -434,14 +435,7 @@ sits below it on all four. The case for RAPT depends on cost, and on knowing whe
 is safe.
 
 
-\begin{figure}[t]
-\centering
-\includegraphics[width=\columnwidth]{primary_performance.png}
-\caption{Macro-F1 on the two largest cross-dataset streams. On UGR'16, RAPT tracks
-the frozen baseline and not the retrained models, which is the signature of stale
-policy reuse. On the 5G NR stream all five models are within $0.0133$.}
-\label{fig:primary}
-\end{figure}
+
 
 
 % ---------- NEW FIGURE: UGR'16 rolling accuracy ----------
@@ -458,19 +452,13 @@ regime, where RAPT trains a fresh policy.}
 
 
 \subsection{Computational Cost and Policy Reuse}
-Table~\ref{tab:primary} also lists adaptation and total cost, and Fig.~\ref{fig:cost} compares adaptation CPU. Relative to Full Retraining, the cost falls on every stream:
-from $1.4008$ to $0.2292$\,s on 5G Campus ($-83.6\%$), from $23.6318$ to $1.9711$\,s on
-UGR'16 ($-91.7\%$), from $2.2034$ to $0.2594$\,s on NordicDat ($-88.2\%$), and from
-$0.7636$ to $0.3955$\,s on 5G NR ($-48.2\%$). Full Retraining retrains at every regime
-transition, meaning 14, 144, 18 and 9 times. RAPT retrains 2, 11, 2 and 3 times and
-retrieves a stored policy 12, 133, 16 and 6 times.
+Table~\ref{tab:primary} also lists adaptation and total cost, and Fig.~\ref{fig:cost} compares adaptation CPU. Relative to Full Retraining the cost falls on every stream: $1.4008 \to 0.2292$\,s on 5G Campus ($-83.6\%$), $23.6318 \to 1.9711$\,s on UGR'16 ($-91.7\%$), $2.2034 \to 0.2594$\,s on NordicDat ($-88.2\%$), and $0.7636 \to 0.3955$\,s on 5G NR ($-48.2\%$). Full Retraining retrains at every regime transition (14, 144, 18 and 9 times); RAPT retrains 2, 11, 2 and 3 times and retrieves a stored policy 12, 133, 16 and 6 times.
 
 
 \begin{figure}[t]
 \centering
 \includegraphics[width=\columnwidth]{computational_cost.png}
-\caption{Adaptation CPU on the two largest streams. The ordering is the reverse of
-Fig.~\ref{fig:primary}: on UGR'16, RAPT uses an order of magnitude less adaptation
+\caption{Adaptation CPU on the two largest streams. The ordering is the reverse of macro-F1: on UGR'16, RAPT uses an order of magnitude less adaptation
 time than Full Retraining and records lower macro-F1.}
 \label{fig:cost}
 \end{figure}
@@ -637,40 +625,32 @@ a factor of $10^{8}$.
 the cost--accuracy frontier and neither dominates RAPT-Cheap. A two-sided equivalence test
 on UGR'16 rejects equivalence to Full Retraining at a $\pm0.005$ margin ($p = 0.95$), so
 that gap is real and not a power artifact. A label-delay variant costs RAPT $0.13$
-macro-F1 on NordicDat and $0.06$ on UGR'16 while leaving eager baselines unchanged; the
-headline numbers assume labels arrive with their window.
+macro-F1 on NordicDat and $0.06$ on UGR'16; the headline numbers assume labels arrive with
+their window.
 
 \section{Limitations and Threats to Validity}
 \label{sec:limitations}
-
-
-Statistical power is the first concern. With five seeds, the smallest two-sided
-$p$-value attainable in a seed-level comparison is $0.0625$, so some large effects
-cannot reach formal significance, and this applies most to the ablation results.
-Window-level tests assume that windows from one stream are independent, which inflates
-the effective sample size and weakens any claim meant to generalise. Other limitations come from the design itself. The mechanism relies on regime
-recurrence, which we measure and do not assume. A stream with no recurrence never
-exercises the repository, and a novel regime falls back to retraining with no advantage
-over the baseline. The RAPT-Floor threshold was calibrated on the evaluated stream, and
-the 20-tree cheap refit was chosen for this particular ensemble. Both would have to be
-revisited where the gap between pre- and post-drift data is larger, since a refit with
-reduced capacity could underfit. The repository is never pruned, and the approach takes regime
-similarity to be meaningful, which may fail if the regime signal is noisy.
-
-
+With five seeds the smallest attainable two-sided $p$-value in a seed-level comparison is
+$0.0625$, so some large effects cannot reach formal significance; this applies most to the
+ablation. Window-level tests assume windows from one stream are independent, which inflates
+the effective sample size and weakens any claim meant to generalise. The mechanism also
+relies on regime recurrence, which we measure and do not assume: a stream with no
+recurrence never exercises the repository, and a novel regime falls back to retraining with
+no advantage over the baseline. The RAPT-Floor threshold was calibrated on the evaluated
+stream and the 20-tree cheap refit was chosen for this ensemble; both would need revisiting
+where the pre/post-drift gap is larger. Finally, the repository is never pruned, and the
+approach treats regime similarity as meaningful, which may fail if the regime signal is
+noisy.
 \section{Conclusion}
-
-Retraining is the standard response to drift, but when conditions return, part of what
-was paid for is already in a previously trained model. RAPT keeps one policy per regime
-and retrieves it on recurrence, training anew only when no suitable policy exists and
+Retraining is the standard response to drift, but when conditions return, part of what was
+paid for is already in a previously trained model. RAPT keeps one policy per regime and
+retrieves it on recurrence, training anew only when no suitable policy exists and
 refreshing a stored policy once monitoring shows it no longer fits. Across four network
-streams adaptation CPU was 48--92\% below full retraining, while macro-F1 was lower on
-all four. Where regimes recurred with changed label relations, blind reuse caused
-substantial damage; the parity-refit mechanism recovered most of it. Policy reuse is
-worth deploying when regimes recur with consistent or monitored label meanings, and the
-natural next step is to test whether a retrieved regime still means what it did when its
-policy was stored.
-
+streams adaptation CPU was 48--92\% below full retraining, while macro-F1 was lower on all
+four. Where regimes recurred with changed label relations, blind reuse caused substantial
+damage; the parity-refit mechanism recovered most of it. Policy reuse is worth deploying
+when regimes recur with consistent or monitored label meanings, and the natural next step
+is to test whether a retrieved regime still means what it did when its policy was stored.
 \bibliographystyle{plain}
 \bibliography{references}
 
