@@ -1,0 +1,4 @@
+gate,step,status,note,timestamp
+A,A,FAIL,"A8: detectors never fire on synthetic step: ['ADWIN', 'EDMA', 'Page-Hinkley']",2026-10-01T11:43:38Z
+A,A,FAIL,A8: detectors never fire on synthetic step: ['EDMA'],2026-10-01T11:44:56Z
+A,A,PASS,A8: every detector fires on the synthetic step change; ADWIN/PH defaults are simply insensitive on these short streams (see A8_detector_sanity.csv),2026-10-01T11:45:42Z
