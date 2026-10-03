@@ -247,3 +247,11 @@ exact at 5e-5.
 - Adding a `doi` field is metadata-only: the `plain`/manual-bibliography styles
   used by both manuscripts do not print DOIs, so no PDF recompile is needed.
 - `deliverable/references.bib` and `paper/references.bib` must stay identical.
+
+## Finalization status (branch final-results-20260930)
+
+- Deliverable PR: https://github.com/nehamanoj1105/Model-Drift-Detection/pull/8 (to main).
+- One execution of `final/run_all.py --config final/final.yaml` regenerates all
+  raw/tables/figures/numbers/report/audit + 9B-A/B/C/D and the COMSNETS zip.
+- Validators: validate_final_run 0/359, validate_9b 0, validate_phase1_full 0.
+- Second 9B dataset must not be replaced; keep WINDOW_SIZE=500, seeds 42..46.
