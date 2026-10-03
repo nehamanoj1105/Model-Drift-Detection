@@ -1,0 +1,121 @@
+experiment: final
+seeds:
+- 42
+- 43
+- 44
+- 45
+- 46
+initial_train_fraction: 0.2
+prefix_rounding: round_half_up
+datasets:
+- name: 5G Campus
+  slug: campus
+  window_rows: 10
+  kind: measured
+  label_type: QoS
+  desc: 5G campus testbed per-window QoS; 3-class next-window p90-delay target.
+- name: UGR'16
+  slug: ugr16
+  window_rows: 240
+  kind: measured
+  label_type: attack
+  desc: ISP netflow per-minute aggregates; binary attack label.
+- name: NordicDat
+  slug: nordicdat
+  window_rows: 500
+  kind: measured
+  label_type: QoS
+  desc: Cross-border LTE/5G predictive-QoS traces; 3-class next-window median-delay
+    target.
+- name: 5G NR Lat.
+  slug: nrlat
+  window_rows: 1
+  kind: simulated
+  label_type: QoS
+  desc: Simulated 5G NR end-to-end latency; 3-class campus QoS target.
+ensemble:
+  n_estimators: 50
+  max_depth: 7
+  weights:
+  - 0.5
+  - 0.5
+buffer_capacity: 1000
+class_anchor_per_class: 15
+event_driven:
+  error_window_size: 20
+  error_threshold_k: 2.0
+rapt:
+  calibration_last_n: 50
+  calibration_min_n: 20
+  similarity_gate_threshold: 0.5
+  novel_refit_n: 500
+  floor_threshold: 0.6
+  relative_margin: 0.1
+  relative_decay: 0.95
+  relative_window: 5
+  periodic_period_windows: 5
+  full_refit_trees: 100
+  full_refit_buffer: 1000
+  cheap_refit_trees: 20
+  cheap_refit_buffer: 300
+rapt_enhanced:
+  novelty_refit_n: 1500
+  parity_threshold: 0.5
+  parity_window: 3
+rapt_incremental:
+  grace_period: 50
+  delta: 0.01
+detectors:
+  adwin:
+    delta: 0.002
+  page_hinkley:
+    min_instances: 30
+    delta: 0.005
+    threshold: 50.0
+    alpha: 0.9999
+  eddm:
+    warm_start: 30
+    alpha: 0.95
+    beta: 0.9
+  ecdd_ewma:
+    alpha: 0.2
+    k: 2.0
+    min_instances: 30
+detector_min_retrain_interval: 3
+models:
+  primary:
+  - Frozen
+  - Event-Driven
+  - Full Retraining
+  - RAPT
+  - RAPT-Enhanced
+  ablation:
+  - RAPT-Full
+  - RAPT-Evidence
+  - RAPT-Floor
+  - RAPT-Periodic-FullRefit
+  - RAPT-Cheap
+  - RAPT-Incremental
+  detectors:
+  - ADWIN
+  - Page-Hinkley
+  - EDDM
+  - ECDD-EWMA
+stats:
+  bootstrap_block_windows: 10
+  bootstrap_reps: 2000
+  alpha: 0.05
+  min_two_sided_p: 0.0625
+refit_timing:
+  trees:
+  - 20
+  - 50
+  - 100
+  buffers:
+  - 200
+  - 300
+  - 500
+  - 1000
+  - 1500
+  repeats: 30
+output_dir: results/paper_final_run

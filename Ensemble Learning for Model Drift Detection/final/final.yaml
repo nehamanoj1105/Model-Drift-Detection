@@ -1,0 +1,108 @@
+# Final experimental configuration for the RAPT paper.
+# Single source of truth: run_all.py reads this file and writes results/config_used.yaml.
+experiment: final
+
+seeds: [42, 43, 44, 45, 46]
+
+# Initial training prefix = 20% of the windows. One rounding rule for all
+# datasets: round-half-up on the window count. Evaluated as n_init = floor(0.2*W + 0.5).
+initial_train_fraction: 0.20
+prefix_rounding: round_half_up
+
+# Per-dataset streaming step (rows consumed per adaptation window).
+# 5G NR rows are already 500-packet aggregates, so one row is one window.
+datasets:
+  - name: 5G Campus
+    slug: campus
+    window_rows: 10
+    kind: measured
+    label_type: QoS
+    desc: 5G campus testbed per-window QoS; 3-class next-window p90-delay target.
+  - name: UGR'16
+    slug: ugr16
+    window_rows: 240
+    kind: measured
+    label_type: attack
+    desc: ISP netflow per-minute aggregates; binary attack label.
+  - name: NordicDat
+    slug: nordicdat
+    window_rows: 500
+    kind: measured
+    label_type: QoS
+    desc: Cross-border LTE/5G predictive-QoS traces; 3-class next-window median-delay target.
+  - name: 5G NR Lat.
+    slug: nrlat
+    window_rows: 1
+    kind: simulated
+    label_type: QoS
+    desc: Simulated 5G NR end-to-end latency; 3-class campus QoS target.
+
+ensemble:
+  n_estimators: 50        # trees per base learner (RF and ET)
+  max_depth: 7
+  weights: [0.5, 0.5]
+
+buffer_capacity: 1000     # shared adaptation buffer cap for every adaptive model
+class_anchor_per_class: 15
+
+event_driven:
+  error_window_size: 20
+  error_threshold_k: 2.0
+
+rapt:
+  calibration_last_n: 50
+  calibration_min_n: 20
+  # Similarity gate (RAPT-Full): reuse only if the current window fingerprint is
+  # close to the stored one. similarity = 1 - L2(fingerprint)/sqrt(d); gate >= threshold.
+  similarity_gate_threshold: 0.50
+  novel_refit_n: 500
+  # Absolute-floor refresh (RAPT-Floor)
+  floor_threshold: 0.60
+  # Relative-degradation refresh (RAPT-Evidence)
+  relative_margin: 0.10
+  relative_decay: 0.95
+  relative_window: 5
+  # Periodic refresh (RAPT-Periodic-FullRefit / RAPT-Cheap)
+  periodic_period_windows: 5
+  full_refit_trees: 100
+  full_refit_buffer: 1000
+  cheap_refit_trees: 20
+  cheap_refit_buffer: 300
+
+rapt_enhanced:
+  novelty_refit_n: 1500
+  parity_threshold: 0.50
+  parity_window: 3
+
+rapt_incremental:
+  grace_period: 50
+  delta: 0.01
+
+detectors:
+  adwin: {delta: 0.002}
+  page_hinkley: {min_instances: 30, delta: 0.005, threshold: 50.0, alpha: 0.9999}
+  # EDDM = Early Drift Detection Method (river.drift.binary.EDDM); the paper's
+  # "EDD". River's EDDM takes warm_start/alpha/beta, not warning/drift levels.
+  eddm: {warm_start: 30, alpha: 0.95, beta: 0.9}
+  # ECDD-EWMA = EWMA control chart (Ross et al. 2012); the paper's "EDMA".
+  ecdd_ewma: {alpha: 0.2, k: 2.0, min_instances: 30}
+
+detector_min_retrain_interval: 3
+
+models:
+  primary: [Frozen, Event-Driven, Full Retraining, RAPT, RAPT-Enhanced]
+  ablation: [RAPT-Full, RAPT-Evidence, RAPT-Floor, RAPT-Periodic-FullRefit, RAPT-Cheap, RAPT-Incremental]
+  detectors: [ADWIN, Page-Hinkley, EDDM, ECDD-EWMA]
+
+stats:
+  bootstrap_block_windows: 10
+  bootstrap_reps: 2000
+  alpha: 0.05
+  min_two_sided_p: 0.0625   # n=5 Wilcoxon ceiling
+
+refit_timing:
+  trees: [20, 50, 100]
+  buffers: [200, 300, 500, 1000, 1500]
+  repeats: 30
+
+output_dir: results/paper_final_run

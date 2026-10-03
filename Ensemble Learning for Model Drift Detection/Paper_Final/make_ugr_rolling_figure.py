@@ -20,6 +20,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, ".."))
 PER_WINDOW = os.path.join(ROOT, "results", "experiment_9a_three", "raw",
                           "per_window_ugr16_full.csv")
+FRESH = os.path.join(ROOT, "results", "paper_final_run", "final", "raw",
+                     "per_window_ugr16.parquet")
 OUT = os.path.join(HERE, "ugr_rolling_accuracy.png")
 
 MODELS = ["RAPT", "RAPT-Enhanced", "Full Retraining"]
@@ -29,6 +31,20 @@ LABELS = {"Full Retraining": "Full Retraining"}
 
 
 def load():
+    if os.path.exists(FRESH):
+        import pandas as pd
+        df = pd.read_parquet(FRESH)
+        series = {}
+        for m in MODELS:
+            g = df[df.model == m]
+            agg = g.groupby("window_idx")["window_acc"].mean()
+            ws = agg.index.to_numpy()
+            vals = agg.to_numpy()
+            rolling = np.convolve(vals, np.ones(5) / 5, mode="full")[:len(vals)]
+            for i in range(min(4, len(rolling))):
+                rolling[i] = vals[: i + 1].mean()
+            series[m] = (ws, vals, rolling)
+        return series
     with open(PER_WINDOW) as f:
         rows = list(csv.DictReader(f))
     acc = collections.defaultdict(lambda: collections.defaultdict(list))
@@ -48,6 +64,11 @@ def load():
 
 def novelty_refit_windows():
     """First window at which each regime appears -> RAPT trains a new policy."""
+    if os.path.exists(FRESH):
+        import pandas as pd
+        df = pd.read_parquet(FRESH)
+        g = df[(df.model == "RAPT") & (df.seed == 42)]
+        return sorted(int(w) for w in g.groupby("regime")["window_idx"].min())
     with open(PER_WINDOW) as f:
         rows = list(csv.DictReader(f))
     first = {}

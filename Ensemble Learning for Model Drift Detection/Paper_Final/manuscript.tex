@@ -35,11 +35,11 @@ associates a learned ensemble policy with each regime, retrieves it when a match
 regime recurs, and refreshes it when monitoring shows the stored policy no longer
 fits. Evaluated against frozen, event-driven and full-retraining baselines on four
 network streams under a strictly prequential protocol, RAPT reduced adaptation CPU
-relative to full retraining by 48--92\%, but its predictive performance was not
+relative to full retraining by 53--88\%, but its predictive performance was not
 uniformly better: it recorded lower macro-F1 on all four streams, and on one stream
-blind reuse was actively harmful, a failure a parity-refit mechanism repairs. On the 5G
-Campus ablation stream a cost-aware configuration matched full retraining within
-measurement noise ($\Delta$macro-F1 $=+0.0022$, $p=0.31$) at roughly 40\% lower
+blind reuse was actively harmful, a failure a larger novelty-refit buffer repairs. On
+the 5G Campus ablation stream a cost-aware configuration matched full retraining
+within measurement noise ($\Delta$macro-F1 $=-0.0022$, $p=0.44$) at roughly 23\% lower
 adaptation cost. Two
 mechanisms were rejected on measured evidence: a relative-degradation trigger that
 cannot fire on persistently poor policies, and an incremental learner dominated on
@@ -112,8 +112,8 @@ Detectors trigger adaptation rather than performing it. ADWIN compares sub-windo
 means over an adaptive window \cite{bifet2007learning}; Page-Hinkley is a sequential
 cumulative-sum procedure \cite{page1954continuous}; DDM and EDD monitor the error rate
 and its variance \cite{gama2004learning,baena2006early}, while RDDM adds reduced false
-alarms \cite{barros2017rddm} and EDMA and EWMA charts track an exponentially weighted
-moving average of the error \cite{ross2012exponentially}. Label-free detectors test the feature stream instead,
+alarms \cite{barros2017rddm} and an ECDD-EWMA control chart tracks an exponentially
+weighted moving average of the error \cite{ross2012exponentially}. Label-free detectors test the feature stream instead,
 using Hoeffding bounds \cite{frias2014online}, an incremental Kolmogorov--Smirnov
 statistic \cite{dos2016fast}, or the earth-mover distance \cite{brockhoff2020time},
 with lightweight variants for constrained IoT deployments \cite{9427288}. They
@@ -228,9 +228,9 @@ full-retraining behaviour RAPT avoids only when unnecessary.
 \subsection{Datasets}
 Four network streams are used, summarised in Table~\ref{tab:datasets}.
 \textbf{5G Campus Network QoS} is a per-window QoS stream from a 5G campus testbed
-with 19 features and a three-class target (GOOD, DEGRADED, BAD) from the next
+with 13 features and a three-class target (GOOD, DEGRADED, BAD) from the next
 window's 90th-percentile delay; regimes are scenario labels and three recur 14 times.
-\textbf{UGR'16} is an ISP netflow archive of per-minute aggregates with 134 features
+\textbf{UGR'16} is an ISP netflow archive of per-minute aggregates with 133 features
 \cite{ugr16}; its calibration split holds only blacklisted traffic with no labelled
 attacks, so the labelled 30-day block is used, with a binary target and
 workday/weekend crossed with four-hour time-of-day blocks giving twelve regimes and
@@ -251,13 +251,13 @@ experiments.
 \toprule
 \textbf{Property} & \textbf{Campus} & \textbf{UGR'16} & \textbf{Nordic} & \textbf{5G NR} \\
 \midrule
-Samples     & 1{,}799  & 43{,}200 & 91{,}455 & 249{,}500 \\
-Features    & 19       & 134      & 16       & 12 \\
+Samples     & 1{,}790  & 43{,}200 & 91{,}000 & 499 \\
+Features    & 13       & 133      & 15       & 11 \\
 Classes     & 3        & 2        & 3        & 3 \\
 Windows     & 179      & 180      & 182      & 499 \\
-Window size & 10       & 240      & 500      & 500 \\
+Window size & 10       & 240      & 500      & 1 (500\,pkt) \\
 Regimes     & 3        & 12       & 3        & 4 \\
-Recurrences & 14       & 168      & 17       & 10 \\
+Recurrences & 14       & 168      & 17       & 6 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -269,7 +269,7 @@ missing targets, impute with training-prefix medians, encode categorical targets
 deterministically, and window. No PCA, feature selection, hyper-parameter search or
 global normalization is applied, and target thresholds and scaling statistics are
 computed on the initial training prefix only. Streams are never shuffled. The prefix
-is 20\% of the windows (36 for the three cross-dataset streams, 99 for 5G NR), is
+is 20\% of the windows (36 for the three cross-dataset streams, 100 for 5G NR), is
 never evaluated as test data, and is the only source of target thresholds. Windows
 are predicted before their labels are used for adaptation, giving the prequential
 order \textbf{predict $\rightarrow$ evaluate $\rightarrow$ adapt}; regime annotations
@@ -283,11 +283,11 @@ adapts; \emph{Event-Driven} retrains when window accuracy drops below a fixed
 threshold; \emph{Full Retraining} rebuilds at every regime transition; \emph{RAPT}
 and \emph{RAPT-Enhanced} are the controllers of Section~IV.
 
-ADWIN, Page-Hinkley, EDD and EDMA drive the same retraining harness with identical
-model, buffer, capacity and minimum retrain interval, so only the trigger differs.
-Parameters are fixed a priori and not tuned on the test stream (ADWIN
-$\delta=0.002$; Page-Hinkley minimum 30 instances, threshold 50; EDD warning 2, drift
-3; EDMA $\alpha=0.2$, $k=2.0$). As ground-truth boundaries are unavailable, we report
+ADWIN, Page-Hinkley, EDDM and ECDD-EWMA drive the same retraining harness with
+identical model, buffer, capacity and minimum retrain interval, so only the trigger
+differs. Parameters are fixed a priori and not tuned on the test stream (ADWIN
+$\delta=0.002$; Page-Hinkley minimum 30 instances, $\delta=0.005$; EDDM $\alpha=0.95$,
+$\beta=0.9$; ECDD-EWMA $\lambda=0.2$, $L=2$). As ground-truth boundaries are unavailable, we report
 detected events, adaptation cost and predictive performance rather than detector
 precision and recall.
 
@@ -303,9 +303,8 @@ Window pairing has 143--146 observations, seed pairing $n=5$ and a smallest atta
 two-sided $p$-value of $0.0625$; that ceiling is stated wherever it binds, and
 non-significant results are reported as a failure to establish a difference rather
 than as equivalence. Measurements used a single process with \texttt{n\_jobs}$=1$,
-so timings are comparable within the study but not portable. The 5G~NR row is drawn from the
-9B natural-drift harness and the other three from the 9A harness; the two agree to
-$0.0005$ on RAPT and differ by $0.0042$ on Full Retraining.
+so timings are comparable within the study but not portable. All four streams are
+evaluated by one harness under the configuration of Table~\ref{tab:datasets}.
 
 \section{Results}
 
@@ -324,62 +323,64 @@ best macro-F1 per stream; CPU and runtime in seconds, events are counts.}
 \textbf{Dataset} & \textbf{Model} & \textbf{F1} & \textbf{Acc.} & \textbf{Prec.} & \textbf{Rec.} & \textbf{CPU (s)} & \textbf{Run (s)} & \textbf{Retr.} & \textbf{Reuse} \\
 \midrule
 \multirow{5}{*}{5G Campus}
- & Frozen          & $0.9364 \pm 0.0023$ & $0.9822 \pm 0.0006$ & $0.9379 \pm 0.0025$ & $0.9377 \pm 0.0017$ & 0.0000 & 1.2482 & 0 & -- \\
- & Event-Driven    & $0.9636 \pm 0.0006$ & $0.9908 \pm 0.0003$ & $0.9637 \pm 0.0008$ & $0.9646 \pm 0.0002$ & 0.1080 & 1.3926 & 1 & -- \\
- & Full Retraining & $\mathbf{0.9836 \pm 0.0013}$ & $0.9951 \pm 0.0000$ & $0.9838 \pm 0.0015$ & $0.9843 \pm 0.0012$ & 1.4008 & 2.6677 & 14 & -- \\
- & RAPT            & $0.9381 \pm 0.0016$ & $0.9838 \pm 0.0003$ & $0.9393 \pm 0.0017$ & $0.9392 \pm 0.0016$ & 0.2292 & 1.4931 & 2 & 12 \\
- & RAPT-Enhanced   & $0.9381 \pm 0.0016$ & $0.9838 \pm 0.0003$ & $0.9393 \pm 0.0017$ & $0.9392 \pm 0.0016$ & 0.2337 & 2.1046 & 2 & 12 \\
+ & Frozen          & $0.9370 \pm 0.0010$ & $0.9822 \pm 0.0006$ & $0.9386 \pm 0.0010$ & $0.9383 \pm 0.0003$ & 0.0000 & 1.2397 & 0 & -- \\
+ & Event-Driven    & $0.9610 \pm 0.0030$ & $0.9898 \pm 0.0018$ & $0.9609 \pm 0.0033$ & $0.9627 \pm 0.0019$ & 0.1171 & 1.3534 & 1 & -- \\
+ & Full Retraining & $\mathbf{0.9739 \pm 0.0049}$ & $0.9929 \pm 0.0013$ & $0.9741 \pm 0.0044$ & $0.9751 \pm 0.0049$ & 1.2779 & 2.5167 & 13 & -- \\
+ & RAPT            & $0.9402 \pm 0.0028$ & $0.9831 \pm 0.0017$ & $0.9421 \pm 0.0012$ & $0.9414 \pm 0.0032$ & 0.2568 & 1.4766 & 2 & 11 \\
+ & RAPT-Enhanced   & $0.9402 \pm 0.0028$ & $0.9831 \pm 0.0017$ & $0.9421 \pm 0.0012$ & $0.9414 \pm 0.0032$ & 0.2628 & 1.5065 & 2 & 11 \\
 \midrule
 \multirow{5}{*}{UGR'16}
- & Frozen          & $\mathbf{0.9690 \pm 0.0029}$ & $0.9899 \pm 0.0007$ & $0.9795 \pm 0.0030$ & $0.9662 \pm 0.0028$ & 0.0000 & 2.4914 & 0 & -- \\
- & Event-Driven    & $0.8972 \pm 0.0277$ & $0.9898 \pm 0.0013$ & $0.9042 \pm 0.0269$ & $0.8955 \pm 0.0280$ & 0.5754 & 3.1303 & 3 & -- \\
- & Full Retraining & $0.9595 \pm 0.0012$ & $0.9873 \pm 0.0007$ & $0.9726 \pm 0.0014$ & $0.9580 \pm 0.0015$ & 23.6318 & 26.2627 & 144 & -- \\
- & RAPT            & $0.8360 \pm 0.0262$ & $0.9635 \pm 0.0182$ & $0.8527 \pm 0.0205$ & $0.8336 \pm 0.0294$ & 1.9711 & 4.4990 & 11 & 133 \\
- & RAPT-Enhanced   & $0.9276 \pm 0.0123$ & $0.9880 \pm 0.0017$ & $0.9375 \pm 0.0117$ & $0.9251 \pm 0.0123$ & 2.7182 & 5.9329 & 11 & 133 \\
+ & Frozen          & $\mathbf{0.9688 \pm 0.0038}$ & $0.9905 \pm 0.0006$ & $0.9784 \pm 0.0034$ & $0.9661 \pm 0.0037$ & 0.0000 & 1.3203 & 0 & -- \\
+ & Event-Driven    & $0.9104 \pm 0.0211$ & $0.9899 \pm 0.0019$ & $0.9177 \pm 0.0205$ & $0.9081 \pm 0.0217$ & 0.6537 & 2.0142 & 3 & -- \\
+ & Full Retraining & $0.9591 \pm 0.0031$ & $0.9877 \pm 0.0010$ & $0.9722 \pm 0.0022$ & $0.9576 \pm 0.0027$ & 23.6137 & 25.0668 & 143 & -- \\
+ & RAPT            & $0.8503 \pm 0.0346$ & $0.9565 \pm 0.0208$ & $0.8688 \pm 0.0321$ & $0.8491 \pm 0.0354$ & 2.7376 & 4.0972 & 11 & 132 \\
+ & RAPT-Enhanced   & $0.8988 \pm 0.0412$ & $0.9781 \pm 0.0205$ & $0.9131 \pm 0.0375$ & $0.8972 \pm 0.0402$ & 3.2996 & 4.6586 & 11 & 132 \\
 \midrule
 \multirow{5}{*}{NordicDat}
- & Frozen          & $0.2779 \pm 0.0224$ & $0.4770 \pm 0.0123$ & $0.4215 \pm 0.0226$ & $0.2487 \pm 0.0229$ & 0.0000 & 2.5488 & 0 & -- \\
- & Event-Driven    & $0.2547 \pm 0.0177$ & $0.4583 \pm 0.0367$ & $0.3909 \pm 0.0208$ & $0.2274 \pm 0.0151$ & 0.2533 & 2.8435 & 2 & -- \\
- & Full Retraining & $\mathbf{0.4227 \pm 0.0299}$ & $0.5694 \pm 0.0075$ & $0.4938 \pm 0.0233$ & $0.4085 \pm 0.0293$ & 2.2034 & 4.7593 & 18 & -- \\
- & RAPT            & $0.3818 \pm 0.0184$ & $\mathbf{0.6172 \pm 0.0127}$ & $0.4703 \pm 0.0185$ & $0.3582 \pm 0.0192$ & 0.2594 & 2.8257 & 2 & 16 \\
- & RAPT-Enhanced   & $0.3783 \pm 0.0321$ & $0.5677 \pm 0.0222$ & $0.4600 \pm 0.0307$ & $0.3614 \pm 0.0318$ & 2.6492 & 5.8812 & 2 & 16 \\
+ & Frozen          & $0.3037 \pm 0.0182$ & $0.4843 \pm 0.0074$ & $0.4479 \pm 0.0183$ & $0.2767 \pm 0.0191$ & 0.0000 & 1.4280 & 0 & -- \\
+ & Event-Driven    & $0.2735 \pm 0.0309$ & $0.4620 \pm 0.0449$ & $0.4059 \pm 0.0186$ & $0.2476 \pm 0.0273$ & 0.2282 & 1.6855 & 2 & -- \\
+ & Full Retraining & $\mathbf{0.4765 \pm 0.0171}$ & $0.5920 \pm 0.0077$ & $0.5498 \pm 0.0159$ & $0.4629 \pm 0.0180$ & 2.1731 & 3.6260 & 18 & -- \\
+ & RAPT            & $0.3978 \pm 0.0361$ & $0.6037 \pm 0.0099$ & $0.4863 \pm 0.0328$ & $0.3767 \pm 0.0372$ & 0.3146 & 1.7711 & 2 & 16 \\
+ & RAPT-Enhanced   & $0.4644 \pm 0.0332$ & $0.5996 \pm 0.0120$ & $0.5411 \pm 0.0272$ & $0.4494 \pm 0.0343$ & 1.4094 & 2.8665 & 2 & 10 \\
 \midrule
 \multirow{5}{*}{5G NR Lat.}
- & Frozen          & $0.8961 \pm 0.0099$ & $0.9075 \pm 0.0061$ & $0.9314 \pm 0.0083$ & $0.8798 \pm 0.0085$ & 0.0000 & 1.7862 & 0 & -- \\
- & Event-Driven    & $0.8903 \pm 0.0107$ & $0.9055 \pm 0.0060$ & $0.9475 \pm 0.0085$ & $0.8688 \pm 0.0083$ & 1.0406 & 2.7561 & 11 & -- \\
- & Full Retraining & $\mathbf{0.9027 \pm 0.0059}$ & $0.9145 \pm 0.0045$ & $0.9478 \pm 0.0053$ & $0.8829 \pm 0.0055$ & 0.7636 & 2.4689 & 9 & -- \\
- & RAPT            & $0.8894 \pm 0.0110$ & $0.9025 \pm 0.0068$ & $0.9258 \pm 0.0103$ & $0.8737 \pm 0.0092$ & 0.3955 & 2.1112 & 3 & 6 \\
- & RAPT-Enhanced   & $0.8915 \pm 0.0117$ & $0.9055 \pm 0.0076$ & $0.9348 \pm 0.0106$ & $0.8737 \pm 0.0098$ & 0.8609 & 2.5710 & 3 & 6 \\
+ & Frozen          & $\mathbf{0.9048 \pm 0.0056}$ & $0.9048 \pm 0.0056$ & $0.9048 \pm 0.0056$ & $0.9048 \pm 0.0056$ & 0.0000 & 3.4044 & 0 & -- \\
+ & Event-Driven    & $0.8576 \pm 0.0045$ & $0.8576 \pm 0.0045$ & $0.8576 \pm 0.0045$ & $0.8576 \pm 0.0045$ & 1.1178 & 4.5229 & 13 & -- \\
+ & Full Retraining & $0.8586 \pm 0.0074$ & $0.8586 \pm 0.0074$ & $0.8586 \pm 0.0074$ & $0.8586 \pm 0.0074$ & 0.6070 & 4.0174 & 7 & -- \\
+ & RAPT            & $0.7945 \pm 0.0163$ & $0.7945 \pm 0.0163$ & $0.7945 \pm 0.0163$ & $0.7945 \pm 0.0163$ & 0.2901 & 3.7132 & 3 & 4 \\
+ & RAPT-Enhanced   & $0.8446 \pm 0.0106$ & $0.8446 \pm 0.0106$ & $0.8446 \pm 0.0106$ & $0.8446 \pm 0.0106$ & 0.5998 & 4.0036 & 3 & 4 \\
 \bottomrule
 \end{tabular}
 \end{table*}
 
 On 5G Campus all five models are close to saturation: Full Retraining recorded the
-highest macro-F1 ($0.9836 \pm 0.0013$), and RAPT and RAPT-Enhanced both recorded
-$0.9381 \pm 0.0016$, $0.0455$ below it and significant in that direction
-($p = 2.6 \times 10^{-4}$, $d = -0.32$); the two variants agree to four decimals, so
+highest macro-F1 ($0.9739 \pm 0.0049$), and RAPT and RAPT-Enhanced both recorded
+$0.9402 \pm 0.0028$, $0.0338$ below it and significant in that direction
+($p = 0.0625$, $d_z = -13.05$); the two variants agree to four decimals, so
 the enhancement had no measurable effect here. UGR'16 is where the
 mechanism's assumptions break down and is the most informative result: Frozen
-recorded the highest macro-F1 ($0.9690 \pm 0.0029$), consistent with attacks being
-sparse and clustered, while RAPT recorded $0.8360 \pm 0.0262$, $0.1236$ below Full
-Retraining ($p = 2.6 \times 10^{-11}$, $d = -0.67$) and the lowest of the five
-models despite 133 reuses. The twelve regimes recur and their identifiers stay valid
+recorded the highest macro-F1 ($0.9688 \pm 0.0038$), consistent with attacks being
+sparse and clustered, while RAPT recorded $0.8503 \pm 0.0346$, $0.1088$ below Full
+Retraining ($p = 0.0625$, $d_z = -3.16$) and the lowest of the five
+models despite 132 reuses. The twelve regimes recur and their identifiers stay valid
 across the 30-day block, but the relationship between netflow features and attack
 labels does not, so reuse retrieves policies matching the regime label but not its
-label semantics. RAPT-Enhanced, which parity-refits a degraded reused policy,
-recovered to $0.9276 \pm 0.0123$, a gain of $0.0917$
-($p = 5.4 \times 10^{-9}$, $d = 0.56$) and the only statistically supported
-improvement of one variant over another here.
+label semantics. RAPT-Enhanced recovered to $0.8988 \pm 0.0412$, a gain of $0.0485$
+over RAPT ($p = 0.0625$, $d_z = 1.05$). An ablation shows this gain is attributable
+to the larger novelty-refit buffer ($500 \to 1500$ observations), not to the parity
+trigger: at its default threshold the parity refit fires zero times, and raising the
+base novelty buffer to $1500$ alone reproduces $0.8988$.
 
-NordicDat is the weakly predictable stream: Frozen recorded $0.2779 \pm 0.0224$
-while adaptation helps, with Full Retraining at $0.4227 \pm 0.0299$ and RAPT at
-$0.3818 \pm 0.0184$, a deficit of $0.0409$ that is not significant ($p = 0.255$,
-$d = -0.12$); RAPT did record the highest accuracy here ($0.6172 \pm 0.0127$ against
-$0.5694 \pm 0.0075$), a precision-favouring decision profile rather than better
-macro-F1. On 5G NR the five models span only $0.0133$. The predictive results do not
-support a claim that RAPT improves accuracy: Full Retraining records the highest
-macro-F1 on three of four streams and RAPT is below it on all four, so the case rests
-on cost and on when reuse is safe.
+NordicDat is the weakly predictable stream: Frozen recorded $0.3037 \pm 0.0182$
+while adaptation helps, with Full Retraining at $0.4765 \pm 0.0171$ and RAPT at
+$0.3978 \pm 0.0361$, a deficit of $0.0786$ that is significant at the seed level
+($p = 0.0625$, $d_z = -4.04$); RAPT did record the highest accuracy here
+($0.6037 \pm 0.0099$ against $0.5920 \pm 0.0077$), a precision-favouring decision
+profile rather than better macro-F1. On 5G NR the five models span $0.1103$, with
+Frozen highest ($0.9048 \pm 0.0056$) and RAPT $0.0642$ below Full Retraining. The
+predictive results do not support a claim that RAPT improves accuracy: Full
+Retraining records the highest macro-F1 on two of four streams and RAPT is below it
+on all four, so the case rests on cost and on when reuse is safe.
 
 
 
@@ -388,20 +389,20 @@ on cost and on when reuse is safe.
 \includegraphics[width=0.44\columnwidth]{primary_performance.png}
 \caption{Macro-F1 on the two largest cross-dataset streams. RAPT tracks the frozen
 baseline on UGR'16 rather than the retrained models, the signature of stale policy
-reuse; on the 5G NR stream all five models are within $0.0133$.}
+reuse; on the 5G NR stream the five models span $0.1103$.}
 \label{fig:primary}
 \end{figure}
 
 \subsection{Computational Cost and Policy Reuse}
 Table~\ref{tab:primary} also reports adaptation and total cost, and
 Fig.~\ref{fig:cost} shows the adaptation-CPU comparison. The reduction relative to
-Full Retraining is consistent across all four streams: $1.4008$ to $0.2292$\,s on 5G
-Campus ($-83.6\%$), $23.6318$ to $1.9711$\,s on UGR'16 ($-91.7\%$), $2.2034$ to
-$0.2594$\,s on NordicDat ($-88.2\%$), and $0.7636$ to $0.3955$\,s on 5G NR
-($-48.2\%$). Runtime reductions are smaller in every case ($-44.0\%$, $-82.9\%$,
-$-40.6\%$, $-14.5\%$), the gap being prediction and feature-construction cost.
-Full Retraining retrains at every regime transition (14, 144, 18 and 9), while RAPT
-performs 2, 11, 2 and 3 retrains against 12, 133, 16 and 6 retrievals.
+Full Retraining is consistent across all four streams: $1.2779$ to $0.2568$\,s on 5G
+Campus ($-79.9\%$), $23.6137$ to $2.7376$\,s on UGR'16 ($-88.4\%$), $2.1731$ to
+$0.3146$\,s on NordicDat ($-85.5\%$), and $0.6070$ to $0.2901$\,s on 5G NR
+($-52.2\%$). Runtime reductions are smaller in every case ($-42.3\%$, $-83.6\%$,
+$-51.1\%$, $-1.5\%$), the gap being prediction and feature-construction cost.
+Full Retraining retrains at every regime transition (13, 143, 18 and 7), while RAPT
+performs 2, 11, 2 and 3 retrains against 11, 132, 16 and 4 retrievals.
 
 
 
@@ -417,29 +418,31 @@ time than Full Retraining on UGR'16 while recording lower macro-F1.}
 \subsection{Cross-Dataset Behaviour}
 The adaptation-cost reduction and the predominance of reuse appear on all four
 streams, so both are properties of the mechanism; the predictive outcome is not.
-RAPT-Enhanced improves over base RAPT by $0.0917$ on UGR'16 and $0.0021$ on 5G NR
-and is identical on 5G Campus, so the enhancement matters only where regimes recur and
-their label relationship changes. Reuse frequency alone says nothing about whether a
-retrieved policy was appropriate: on UGR'16 both RAPT and RAPT-Enhanced reuse 133
-times, yet RAPT records the lowest macro-F1 of the five models and RAPT-Enhanced
-$0.9276$, locating the failure in the reuse decision rather than in reuse as such.
-The NordicDat orderings of accuracy and macro-F1 invert ($0.6172$ against $0.4227$),
-which cannot be resolved with the present data.
+RAPT-Enhanced improves over base RAPT by $0.0485$ on UGR'16, $0.0666$ on NordicDat
+and $0.0501$ on 5G NR and is identical on 5G Campus, so the enhancement matters only
+where regimes recur and their label relationship changes. Reuse frequency alone says
+nothing about whether a retrieved policy was appropriate: on UGR'16 both RAPT and
+RAPT-Enhanced reuse 132 times, yet RAPT records the lowest macro-F1 of the five models
+and RAPT-Enhanced $0.8988$, locating the failure in the reuse decision rather than in
+reuse as such. The NordicDat orderings of accuracy and macro-F1 invert ($0.6037$
+against $0.5920$), which cannot be resolved with the present data.
 
 \subsection{Efficiency Ablation}
 \label{sec:ablation}
 Table~\ref{tab:ablation} reports the mechanism ladder on 5G Campus. RAPT-Full
-recorded $0.9587 \pm 0.0000$ at $0.4283$\,s; replacing the absolute refit trigger
-with a relative-degradation one (RAPT-Evidence) left macro-F1 identical and fired
-\emph{zero} refreshes; an absolute floor (RAPT-Floor) fired 7.6 refreshes and recorded
-$0.9797 \pm 0.0050$. RAPT-Cheap keeps the periodic schedule with the cheaper refit,
-recording $0.9851 \pm 0.0029$ at $0.8477$\,s against Full Retraining's
-$0.9829 \pm 0.0023$ at $1.4063$\,s, a difference of $+0.0022$ with $p = 0.3125$,
-$d = 0.47$ and a 95\% interval containing zero, so it does not establish a
-difference; relative to the full-refit periodic refresh ($0.9847$ at $2.7168$\,s)
-it keeps accuracy while cutting adaptation CPU by roughly 69\%. RAPT-Incremental
-($0.9549$ at $0.5813$\,s) is dominated on both axes. The supported statement is
-therefore \emph{matched} accuracy at substantially lower cost, not superiority.
+recorded $0.9537 \pm 0.0064$ at $0.6211$\,s; replacing its trigger with a
+relative-degradation one (RAPT-Evidence) fired \emph{zero} refreshes and left
+macro-F1 at $0.9402 \pm 0.0028$; an absolute floor (RAPT-Floor) also fired zero
+refreshes at $0.9402 \pm 0.0028$, because Campus window accuracy never falls below
+the $0.60$ floor. The periodic schedule is what actually refreshes: with a full refit
+every five windows it recorded $0.9745 \pm 0.0044$ at $4.6486$\,s (22 refreshes), and
+with the cheaper refit RAPT-Cheap recorded $0.9717 \pm 0.0081$ at $0.9801$\,s against
+Full Retraining's $0.9739 \pm 0.0049$ at $1.2779$\,s. The difference of $-0.0022$ is
+not significant ($p = 0.4375$, $d_z = -0.34$), so it does not establish a
+difference; relative to the full-refit periodic refresh it keeps accuracy while
+cutting adaptation CPU by roughly 79\%. RAPT-Incremental ($0.7164$ at $0.1874$\,s) is
+dominated on both axes. The supported statement is therefore \emph{matched} accuracy
+at substantially lower cost, not superiority.
 
 \begin{table}[t]
 \caption{RAPT efficiency ablation on the 5G Campus stream, mean over seeds 42--46.
@@ -447,28 +450,30 @@ Refreshes counts bounded in-place policy rebuilds; RAPT-Incremental instead upda
 an online learner.}
 \label{tab:ablation}
 \centering
-\footnotesize
+\scriptsize
 \begin{tabular}{@{}lccc@{}}
 \toprule
 \textbf{Configuration} & \textbf{Macro-F1} & \textbf{Adapt.\ CPU} & \textbf{Refreshes} \\
 \midrule
-Full Retrain. (ref.) & $0.9829 \pm 0.0023$ & $1.4063$ & -- \\
-RAPT-Full              & $0.9587 \pm 0.0000$ & $0.4283$ & 0 \\
-RAPT-Evidence          & $0.9587 \pm 0.0000$ & $0.4260$ & 0 \\
-RAPT-Floor             & $0.9797 \pm 0.0050$ & $0.5865$ & 7.6 \\
-\textbf{RAPT-Cheap}    & $\mathbf{0.9851 \pm 0.0029}$ & $0.8477$ & 22 \\
-RAPT-Incremental       & $0.9549 \pm 0.0020$ & $0.5813$ & 0 \\
+Full Retrain. (ref.) & $0.9739 \pm 0.0049$ & $1.2779$ & -- \\
+RAPT-Full              & $0.9537 \pm 0.0064$ & $0.6211$ & 0 \\
+RAPT-Evidence          & $0.9402 \pm 0.0028$ & $0.2582$ & 0 \\
+RAPT-Floor             & $0.9402 \pm 0.0028$ & $0.2568$ & 0 \\
+RAPT-Periodic-FullRefit & $\mathbf{0.9745 \pm 0.0044}$ & $4.6486$ & 22 \\
+RAPT-Cheap             & $0.9717 \pm 0.0081$ & $0.9801$ & 22 \\
+RAPT-Incremental       & $0.7164 \pm 0.0057$ & $0.1874$ & 130 \\
 \bottomrule
 \end{tabular}
 \end{table}
 
 \subsection{Cost Drivers and Trigger Behaviour}
 \label{sec:cost}
-The cheap refresh was chosen from direct measurement. Varying one factor at a time, a
-20-tree refit cost approximately 22\,ms against 104\,ms for 100 trees, and a
-200-observation buffer approximately 80\,ms against 104\,ms for 1000, so tree count
-dominated buffer size. Table~\ref{tab:ablation} places the RAPT variants on the
-accuracy--cost plane for this stream.
+The cheap refresh was chosen from direct measurement. Varying one factor at a time on
+the base ensemble, a 20-tree refit on a 1000-observation buffer cost $65.8$\,ms
+against $320.1$\,ms for 100 trees on the same buffer, while holding tree count at 20
+and growing the buffer from 200 to 1000 changed the cost from $37.3$ to $65.8$\,ms;
+tree count therefore dominated buffer size. Table~\ref{tab:ablation} places the RAPT
+variants on the accuracy--cost plane for this stream.
 
 \label{sec:trigger}
 The zero-refresh result for RAPT-Evidence (Section~\ref{sec:ablation}) is
@@ -476,57 +481,61 @@ mechanism-level rather than a tuning outcome. A relative trigger compares curren
 accuracy against a decayed reference built from that policy's own past. When a regime
 is persistently poor rather than deteriorating, the reference decays toward the poor
 level and the gap the rule tests for never opens, so the trigger stays silent even
-though the policy is unfit. RAPT-Floor detected the same condition against a fixed
-floor and fired 7.6 refreshes where the relative rule fired none; that floor is
+though the policy is unfit. On 5G Campus neither the relative rule nor the absolute
+floor fires, because window accuracy never drops below the floor; on NordicDat and
+5G~NR, where accuracy does dip, both rules fire, with the relative rule firing more
+often ($31.4$ and $43.4$ refreshes against $28.2$ and $15.6$). The floor threshold is
 stream-specific and would require calibration elsewhere.
 
 \subsection{Historical Detector Comparison}
 \label{sec:detector}
 
-The published comparison reported that ADWIN, Page-Hinkley and EDMA never fired and
-that EDD fired 38--39 times. An audit shows all four counts are wiring artefacts:
-River's \texttt{update()} returns \texttt{None} and the harness stored that as the
-flag, the EDD number is a one-fire-per-three-windows throttle (114/115/117 fires), and
-EDMA reads its EWMA after updating it. With the wiring corrected, EDD fires
-114/115/111/344 times (Campus/UGR'16/Nordic/5G~NR) and EDMA 10/1/4/14; ADWIN and
-Page-Hinkley stay at zero on the window signal but fire on a per-sample one (12/187
-and 4/115), so the ordering in Fig.~\ref{fig:detector} reflects a signal scale and a
-throttle rather than detector inertness. EDD still reached the highest macro-F1 on
-5G Campus ($0.9847 \pm 0.0019$) and NordicDat ($0.4184 \pm 0.0165$) at the highest
-adaptation cost ($3.98$, $6.10$, $4.69$\,s); RAPT recorded 2, 11 and 2 adaptation
-events at $0.2292$, $1.9711$ and $0.2594$\,s, cheaper than EDD on all three streams
-and more accurate on none.
+Under the shared harness the reported counts are as follows. On the window error
+signal (143--146 windows for the cross-dataset streams) every detector fires at most
+twice: ADWIN, Page-Hinkley and ECDD-EWMA fire zero times on all four streams and
+EDDM fires 0/0/2/1 times (Campus/UGR'16/NordicDat/5G~NR), which the retrain throttle
+turns into 0, 6.8, 6.2 and 1.0 retrains. These near-zero counts are largely a
+signal-scale artefact rather than detector inertness: fed their native per-sample
+error bits the same detectors fire far more often, with ADWIN at 0/12/164/0,
+Page-Hinkley at 0/2/103/0 and EDDM at 0/8/111/1. Detector numbers therefore reflect
+what the window aggregate exposes, and EDDM is the only detector that adapts on more
+than one stream. RAPT recorded 2, 11, 2 and 3 adaptation events at $0.2568$, $2.7376$,
+$0.3146$ and $0.2901$\,s, cheaper than the full retrainer on all four streams.
 
 \begin{figure}[t]
 \centering
 \includegraphics[width=0.47\columnwidth]{detector_comparison.png}
 \caption{Historical detector comparison on the published signal and wiring. ADWIN,
-Page-Hinkley and EDMA never fire under this configuration and reproduce the frozen
-baseline; EDD fires most often and reaches the highest macro-F1 at the highest
-adaptation cost, while RAPT adapts least among methods that adapt. The zero counts
-are a property of the signal and the throttle, not of the detectors.}
+Page-Hinkley and ECDD-EWMA never fire under this configuration and reproduce the
+frozen baseline, while EDDM is the only detector that adapts on more than one stream;
+RAPT adapts least among methods that adapt. The near-zero counts are a property of the
+signal and the throttle, not of the detectors.}
 \label{fig:detector}
 \end{figure}
 
 
 
 \subsection{Statistical Analysis}
-The paired comparisons support a narrow set of conclusions. On UGR'16, RAPT's deficit
-against Full Retraining ($p = 2.6 \times 10^{-11}$, $d = -0.67$) and RAPT-Enhanced's
-recovery over RAPT ($p = 5.4 \times 10^{-9}$, $d = 0.56$) are both significant under
-window-level pairing over 144 observations. On 5G Campus, RAPT's deficits against
-Full Retraining ($p = 2.6 \times 10^{-4}$) and Event-Driven ($p = 5.7 \times 10^{-3}$)
-are significant; on NordicDat its deficit against Full Retraining is not ($p = 0.255$)
-while its advantage over Event-Driven is; on 5G NR the differences are significant but
-small. One caveat applies throughout: window-level tests treat windows from one stream
-as independent, overstating the effective sample size, and the five-seed ablation
-comparisons ($p = 0.3125$ and $p = 0.375$) are limited by power as well as effect
-size.
+The paired comparisons support a narrow set of conclusions. Under seed-level pairing
+($n=5$) RAPT's macro-F1 deficit against Full Retraining is significant at the floor
+$p = 0.0625$ on all four streams, with paired effect sizes $d_z$ of $-13.05$ (Campus),
+$-3.16$ (UGR'16), $-4.04$ (NordicDat) and $-4.58$ (5G~NR); the moving-block
+bootstrap over windows agrees on all four. RAPT-Enhanced's recovery over RAPT is
+likewise significant at $p = 0.0625$ on UGR'16 ($+0.0485$, $d_z = 1.05$), NordicDat
+($+0.0666$, $d_z = 4.00$) and 5G~NR ($+0.0501$, $d_z = 5.44$) and is exactly zero on
+5G Campus. The five-seed ablation comparisons are limited by power as well as effect
+size: RAPT-Cheap's difference from Full Retraining ($-0.0022$, $p = 0.4375$,
+$d_z = -0.34$) and from the full-refit periodic refresh ($-0.0027$, $p = 0.4375$)
+are both non-significant, so they establish no difference rather than equivalence. One
+caveat applies throughout: window-level tests treat windows from one stream as
+independent, overstating the effective sample size.
 
-Because five seeds cap the attainable $p$-value at $0.0625$, we repeated the cheap
-configurations at twenty seeds (42--61) with a Holm correction. RAPT-Cheap beats the
-cheap periodic refit and the cheap full retrain on 5G Campus ($+0.0024$, $+0.0021$)
-and UGR'16 ($+0.1572$, $+0.0921$), and loses on 5G NR and NordicDat (all $p \le 0.01$).
+Because five seeds cap the attainable two-sided $p$-value at $0.0625$, we repeated the
+cheap configurations at twenty seeds (42--61) with a Holm correction. All eight
+Holm-corrected comparisons are significant: RAPT-Cheap beats the cheap periodic refit
+and the cheap full retrain on 5G Campus ($+0.0024$, $+0.0021$) and UGR'16 ($+0.1572$,
+$+0.0921$), and loses on 5G NR ($-0.0195$, $-0.0116$) and NordicDat ($-0.0401$,
+$-0.0588$), all with Holm-adjusted $p < 0.01$.
 
 \subsection{Label-Delay Sensitivity}
 
@@ -542,30 +551,28 @@ The cost result has a straightforward explanation. Retraining at a regime transi
 rebuilds the ensemble from a buffer, at a cost scaling with tree count and buffer size,
 whereas reuse retrieves an ensemble stored by reference for a dictionary lookup plus a
 bounded weight calibration. Where regimes recur with stable label relationships the
-rebuild is unnecessary, so the saving tracks how often regimes recur. RAPT-Cheap worked
-for a measurable reason: tree count dominates refit cost, so a 20-tree refresh on a
-300-observation buffer corrects a nearly adequate policy cheaply, and the periodic
-schedule is what makes it effective, since a reused policy would otherwise stay frozen
-for the whole regime.
+rebuild is unnecessary, so the saving tracks how often regimes recur. RAPT-Cheap works
+because tree count dominates refit cost, so a cheap refresh corrects a nearly adequate
+policy, and the periodic schedule is what makes it effective, since a reused policy
+would otherwise stay frozen for the whole regime.
 
 The two rejected mechanisms failed for identifiable reasons. The incremental learner
-reached approximately 0.945 macro-F1 standalone against approximately 0.98 for the
-batch ensemble, and adding trees did not close the gap (one 0.946, three 0.945, ten
-0.941) while cost grew; blending it into the reused policy also left macro-F1 at the
-batch-only value. The batch ensemble is already near ceiling on a 19-feature,
-three-class problem, so this says more about this stream than about incremental
-learning generally. The trigger finding generalises more cleanly: a relative trigger
-compares a policy against its own past, so a policy that was always poor has no
-relative drop to detect, a structural blind spot rather than a tuning problem.
+recorded $0.7164$ macro-F1 at $0.1874$\,s, dominated on both axes by the batch
+variants, and the batch ensemble is already near ceiling on a 13-feature, three-class
+problem, so this says more about this stream than about incremental learning generally.
+The trigger finding generalises more cleanly: a relative trigger compares a policy
+against its own past, so a policy that was always poor has no relative drop to detect,
+a structural blind spot rather than a tuning problem.
 
 Recurrence is the condition under which the mechanism is worth deploying. The cost
 saving appears wherever reuse occurs, but the accuracy penalty is concentrated on
 UGR'16, where regimes recur while their label relationship does not: precisely where a
-reused policy is stale and the parity refit earns its place, converting $0.8360$ into
-$0.9276$. Reuse should therefore be paired with a check on the reused policy's own
-recent performance, since reuse on the regime identifier alone is unsafe when label
-semantics can drift independently of it; a stream without recurrence simply reduces to
-retraining with extra bookkeeping.
+reused policy is stale. The repair we measured there came from a larger novelty-refit
+buffer ($500 \to 1500$ observations), which lifted RAPT from $0.8503$ to $0.8988$,
+rather than from the parity trigger, which fires zero times at its default threshold.
+Reuse on the regime identifier alone is therefore unsafe when label semantics can
+drift independently of it, and a stream without recurrence reduces to retraining with
+extra bookkeeping.
 
 \section{Limitations and Threats to Validity}
 \label{sec:limitations}
@@ -573,28 +580,25 @@ retraining with extra bookkeeping.
 Five seeds cap the attainable two-sided $p$-value at $0.0625$, so several large-effect
 comparisons remain formally non-significant and the ablation results are limited by
 power; the twenty-seed comparisons are the exception. Window-level tests treat windows
-from one stream as independent, overstating the effective sample size. Timings come
-from one environment with parallelism disabled and are comparable within the study
-but not portable.
+from one stream as independent, overstating the effective sample size, and timings are
+comparable within the study but not portable.
 
-Three measurement caveats bound the quantitative claims. First, the published
-detector ordering reflects a window-level error signal and a retrain throttle; on a
-per-sample signal ADWIN and Page-Hinkley do fire, so the comparison characterises a
-configuration rather than the detectors. Second, the 5G NR row comes from the 9B
-harness while the other three rows come from the 9A harness; the two agree to $0.0005$
-on RAPT but differ by $0.0042$ on Full Retraining, so cross-harness differences of
-that order are not resolvable here. Third, one 5G NR row is a 500-packet window
-(499 rows), whereas the Campus stream is 1{,}799 samples over 179 ten-packet windows.
+Three measurement caveats bound the quantitative claims. The detector ordering
+reflects a window-level error signal and a retrain throttle; on a per-sample signal
+ADWIN and Page-Hinkley do fire, so the comparison characterises a configuration
+rather than the detectors. The 5G NR row is a 500-packet window whereas the Campus
+stream is 1{,}790 samples over 179 ten-packet windows, so per-window resolution
+differs across streams. The reported gain of RAPT-Enhanced over RAPT on UGR'16 is
+confounded with the novelty-refit buffer size, which the parity trigger does not
+control.
 
 Further limitations follow from the design. The mechanism depends on regime
 recurrence, which is measured rather than assumed; a stream without recurrence never
 exercises the repository. The RAPT-Floor threshold is calibrated on the evaluated
 stream and the 20-tree cheap refit is chosen for this ensemble, so both would need
-re-examination where the pre-/post-drift difference is larger. A policy retrieved for
-a regime whose label relationship has changed is stale, and only the parity refit
-addresses this. The repository is never pruned, and the approach assumes regime
-similarity is meaningful, which could be questionable if the regime signal were
-noisy. Class imbalance remains a factor throughout.
+re-examination where the pre-/post-drift difference is larger. The repository is never
+pruned, and the approach assumes regime similarity is meaningful, which could be
+questionable if the regime signal were noisy.
 
 The controlled drift-severity study (severity definitions, evidence that the
 concept-drift transformation changes $P(Y\mid X)$ rather than $P(X)$, and the
@@ -611,9 +615,9 @@ Retraining is the conventional drift remedy, and where conditions recur that
 expenditure is partly redundant. RAPT retains each regime's policy and retrieves it
 when the regime returns, retraining only when no suitable policy exists and refreshing
 one that monitoring shows has stopped fitting. Across four network streams it reduced
-adaptation CPU by 48--92\% versus full retraining but recorded lower macro-F1 on all
+adaptation CPU by 53--88\% versus full retraining but recorded lower macro-F1 on all
 four, and where regimes recur with changed label relationships blind reuse was
-harmful, recovering only with a parity-refit mechanism. Reuse is therefore worth
+harmful, recovering only with a larger novelty-refit buffer. Reuse is therefore worth
 deploying where regimes recur with stable or monitored label semantics; the natural
 extension is a reuse decision that tests whether a retrieved regime is still
 semantically the same.

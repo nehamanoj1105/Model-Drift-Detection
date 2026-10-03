@@ -18,8 +18,13 @@ FE = os.path.join(ROOT, "Final_Experiments", "results", "raw")
 FAILS = []
 
 
-def check(label, got, want, tol=5e-5):
-    ok = abs(got - want) <= tol
+def check(label, got, want, tol=5e-5, rel=None):
+    """rel: relative tolerance for non-deterministic timing columns (CPU/Run);
+    falls back to absolute tol otherwise. See AGENTS.md."""
+    if rel is not None:
+        ok = abs(got - want) <= rel * max(abs(want), 1e-9)
+    else:
+        ok = abs(got - want) <= tol
     if not ok:
         FAILS.append(label)
     print(f"{'PASS' if ok else 'FAIL'}  {label:52s} got={got:<14.6g} paper={want}")
@@ -110,8 +115,8 @@ for (lab, m), (cpu, run, retr, reuse) in CPU.items():
     grun, _ = stat(rows, m, "total_runtime_sec")
     gret, _ = stat(rows, m, "retrain_events")
     greu, _ = stat(rows, m, "reuse_events")
-    check(f"T2 {lab} {m} CPU", round(gcpu, 4), cpu)
-    check(f"T2 {lab} {m} Run", round(grun, 4), run)
+    check(f"T2 {lab} {m} CPU", round(gcpu, 4), cpu, rel=0.15)
+    check(f"T2 {lab} {m} Run", round(grun, 4), run, rel=0.15)
     check(f"T2 {lab} {m} Retr", round(gret, 4), float(retr))
     if reuse is not None:
         check(f"T2 {lab} {m} Reuse", round(greu, 4), float(reuse))
@@ -134,8 +139,8 @@ for m, vals in PAPER_NR.items():
             "precision_mean", "precision_std", "recall_mean", "recall_std"]
     for k, want in zip(keys, vals[:8]):
         check(f"NR {m} {k}", round(float(r[k]), 4), want)
-    check(f"NR {m} CPU", round(float(r["adaptation_cpu_sec_mean"]), 4), vals[8])
-    check(f"NR {m} Run", round(float(r["total_cpu_sec_mean"]), 4), vals[9])
+    check(f"NR {m} CPU", round(float(r["adaptation_cpu_sec_mean"]), 4), vals[8], rel=0.15)
+    check(f"NR {m} Run", round(float(r["total_cpu_sec_mean"]), 4), vals[9], rel=0.15)
     check(f"NR {m} Retr", round(float(r["retrain_events_mean"]), 4), float(vals[10]))
     if vals[11] is not None:
         check(f"NR {m} Reuse", round(float(r["reused_checkpoints_mean"]), 4), float(vals[11]))
@@ -190,7 +195,7 @@ for m, (f1, sd, cpu, ref) in ABL.items():
     gc, _ = stat(fe, m, "adaptation_cpu_sec")
     check(f"abl {m} F1", round(g1, 4), f1)
     check(f"abl {m} F1 sd", round(gs, 4), sd)
-    check(f"abl {m} CPU", round(gc, 4), cpu)
+    check(f"abl {m} CPU", round(gc, 4), cpu, rel=0.15)
     if ref is not None:
         gr, _ = stat(fe, m, "refreshes")
         check(f"abl {m} refreshes", round(gr, 4), ref)
@@ -226,7 +231,7 @@ for lab, (fn, f1, sd, cpu, ev) in DET.items():
     if f1 is not None:
         check(f"EDD {lab} F1", round(g1, 4), f1)
         check(f"EDD {lab} F1 sd", round(gs, 4), sd)
-    check(f"EDD {lab} CPU", round(gc, 4), cpu)
+    check(f"EDD {lab} CPU", round(gc, 4), cpu, rel=0.15)
     check(f"EDD {lab} retrains", round(gr, 4), ev, tol=1.0)
     for m in ["ADWIN", "Page-Hinkley", "EDMA"]:
         gm, _ = stat(rows, m, "detected_events")

@@ -1,0 +1,36 @@
+\begin{table*}[t]
+\caption{Ablation ladder on all four datasets, mean over seeds 42--46.}
+\label{tab:ablation}
+\centering
+\scriptsize
+\begin{tabular}{@{}llccccc@{}}
+\toprule
+\textbf{Dataset} & \textbf{Configuration} & \textbf{F1} & \textbf{CPU (s)} & \textbf{Retr.} & \textbf{Reuse} & \textbf{Refresh} \\
+\midrule
+5G Campus & RAPT-Full & $0.9537 \pm 0.0064$ & 0.6098 & 6 & 7 & 0.0 \\
+5G Campus & RAPT-Evidence & $0.9402 \pm 0.0028$ & 0.2539 & 2 & 11 & 0.0 \\
+5G Campus & RAPT-Floor & $0.9402 \pm 0.0028$ & 0.2502 & 2 & 11 & 0.0 \\
+5G Campus & RAPT-Periodic-FullRefit & $0.9745 \pm 0.0044$ & 4.5428 & 2 & 11 & 22.0 \\
+5G Campus & RAPT-Cheap & $0.9717 \pm 0.0081$ & 0.9513 & 2 & 11 & 22.0 \\
+5G Campus & RAPT-Incremental & $0.7164 \pm 0.0057$ & 0.1871 & 2 & 11 & 130.0 \\
+UGR'16 & RAPT-Full & $0.8573 \pm 0.0623$ & 9.0261 & 69 & 74 & 0.0 \\
+UGR'16 & RAPT-Evidence & $0.8482 \pm 0.0322$ & 2.9699 & 10 & 130 & 2.2 \\
+UGR'16 & RAPT-Floor & $0.8503 \pm 0.0346$ & 2.6464 & 11 & 132 & 0.0 \\
+UGR'16 & RAPT-Periodic-FullRefit & $0.8503 \pm 0.0346$ & 2.6446 & 11 & 132 & 0.0 \\
+UGR'16 & RAPT-Cheap & $0.8503 \pm 0.0346$ & 2.6585 & 11 & 132 & 0.0 \\
+UGR'16 & RAPT-Incremental & $0.8633 \pm 0.0109$ & 16.1589 & 11 & 132 & 1.0 \\
+NordicDat & RAPT-Full & $0.4009 \pm 0.0485$ & 1.6390 & 16 & 2 & 0.0 \\
+NordicDat & RAPT-Evidence & $0.4383 \pm 0.0456$ & 3.9280 & 1 & 11 & 31.4 \\
+NordicDat & RAPT-Floor & $0.4781 \pm 0.0078$ & 3.5797 & 2 & 12 & 28.2 \\
+NordicDat & RAPT-Periodic-FullRefit & $0.3926 \pm 0.0094$ & 5.0600 & 2 & 16 & 21.0 \\
+NordicDat & RAPT-Cheap & $0.4043 \pm 0.0212$ & 0.9904 & 2 & 16 & 21.0 \\
+NordicDat & RAPT-Incremental & $0.5920 \pm 0.0085$ & 7.9874 & 2 & 16 & 128.0 \\
+5G NR Lat. & RAPT-Full & $0.7945 \pm 0.0163$ & 0.3596 & 4 & 3 & 0.0 \\
+5G NR Lat. & RAPT-Evidence & $0.8516 \pm 0.0131$ & 3.9846 & 3 & 3 & 43.4 \\
+5G NR Lat. & RAPT-Floor & $0.8607 \pm 0.0086$ & 1.5729 & 3 & 3 & 15.6 \\
+5G NR Lat. & RAPT-Periodic-FullRefit & $0.8486 \pm 0.0082$ & 13.6410 & 3 & 4 & 79.0 \\
+5G NR Lat. & RAPT-Cheap & $0.8581 \pm 0.0084$ & 3.0453 & 3 & 4 & 79.0 \\
+5G NR Lat. & RAPT-Incremental & $0.7248 \pm 0.0076$ & 0.0557 & 3 & 4 & 392.0 \\
+\bottomrule
+\end{tabular}
+\end{table*}

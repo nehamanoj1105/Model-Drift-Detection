@@ -1,0 +1,5 @@
+computational_cost: adaptation CPU by dataset (matches table_primary)
+accuracy_cost_scatter: CPU saved vs delta macro-F1 (matches cost_savings + table_primary)
+ugr_rolling_accuracy: UGR'16 rolling accuracy, 95% band, novelty-refit ticks
+ugr_staleness: stored-policy accuracy on origin regime (from policy events)
+numeric check: all cost-reduction bars within 0.1 pp of cost_savings.csv (ratio-of-means vs mean-of-ratios) and derived from table_primary.csv adaptation CPU

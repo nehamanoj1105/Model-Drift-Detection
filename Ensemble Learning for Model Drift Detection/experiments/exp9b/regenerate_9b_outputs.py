@@ -69,8 +69,20 @@ def main():
 
     print("Writing report ...", flush=True)
     from exp9b_drift_report import write_report
+
+    def _censoring(rec):
+        out = {}
+        for scenario, df in rec.items():
+            if df is None or len(df) == 0:
+                out[scenario] = None
+                continue
+            out[scenario] = {"rate": float(df["recovered"].mean()), "n": int(len(df))}
+        return out
+
+    censoring = _censoring({"covariate": cov_rec, "concept": con_rec,
+                            "recurring": rec_rec})
     write_report(natural, cov_agg, cov_agg_rec, con_agg, con_agg_rec,
-                 rec_agg, rec_agg_rec, phase_df, stats)
+                 rec_agg, rec_agg_rec, phase_df, stats, censoring)
     print("Done.")
 
 

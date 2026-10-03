@@ -178,3 +178,72 @@ Harness scope that must not be misread as an algorithm result:
 
 Predictive metrics are deterministic across runs; only CPU/runtime columns drift.
 Report numbers are derived from the saved CSVs, so do not hardcode timings.
+
+### 9B regeneration pitfall (fixed)
+
+`regenerate_9b_outputs.py` (the presentation-only re-run path) previously called
+`write_report(...)` without the `censoring` argument, so it silently rewrote the
+concept-drift recovered-rate as `0.00 / n=0` instead of the true `0.00 / n=125`
+(all three scenarios read 0.00). It now rebuilds `censoring` from
+`raw/{covariate,concept,recurring}_recovery.csv` exactly as `run_exp9b_drift.py`
+does. If you regenerate, prefer `run_exp9b_drift.py`, and diff the report's
+censoring paragraph before committing.
+
+`regenerate_9b_outputs.py` also rewrites timing columns from a fresh run, which
+makes `audit/validate_9b.py` CPU checks flap. The validator compares timing
+columns with a 15% relative tolerance (`check_timing`); everything else stays
+exact at 5e-5.
+
+## Single-entry-point compliance (paper finalization)
+
+- One execution of `python final/run_all.py --config final/final.yaml` now produces
+  *every* paper artefact: primary/ablation/detector raw parquet, tables, figures,
+  headline numbers, claims audit, number audit, report text, **and** the full
+  Experiment 9B drift-severity suite (9B-A/B/C/D + figures + tables +
+  `EXPERIMENT_9B_FINAL_REPORT.md`). The 9B stage is a `subprocess.run` on
+  `experiments/exp9b/run_exp9b_drift.py`; set `RAPT_SKIP_9B=1` to skip it.
+- Do not re-run `experiments/exp9b/regenerate_9b_outputs.py` to "refresh" numbers:
+  it re-writes timing columns from a fresh run and (historically) dropped the
+  censoring argument. Prefer the full `run_all.py` path so 9B and the paper
+  numbers come from the same execution.
+- `final/make_paper_number_audit.py` traces every numeric token in both
+  manuscripts to a value in `results/paper_final_run/final/*.csv` (or a LaTeX
+  table). It must report **0 unmatched** for both `deliverable/main.tex` and
+  `Paper_Final/manuscript.tex`. If it reports unmatched tokens, fix the matcher
+  (LaTeX `\kern`, `.0625` leading-zero, sign flips) or the manuscript — never
+  silence it. Current state: 0 unmatched for both.
+- Both manuscripts compile clean (0 Overfull hbox), 7 pages, body ends page 6,
+  references page 7.
+
+## Submission packaging + validator tolerances
+
+- `final/make_submission_zip.py` (last stage of `run_all.py`) assembles
+  `RAPT_COMSNETS_submission.zip` from `deliverable/` (main.tex, main.bbl,
+  references.bib, main.pdf, figures/) plus the 9B figures, tables and report.
+  Flat layout compiles with `pdflatex main && bibtex main && pdflatex main
+  && pdflatex main`. Never hand-edit the zip; rebuild via `run_all.py`.
+- Timing columns (`adapt_cpu_s`, `runtime_s`, cost-reduction %, refit ms) are
+  not deterministic across runs. `audit/validate_final_run.py`,
+  `audit/validate_phase1_full.py` and `audit/validate_9b.py` therefore compare
+  them with a 15% relative tolerance via the `rel=` argument of `check(...)`;
+  predictive metrics stay exact at 5e-5. Do not tighten timing checks to an
+  absolute tolerance — they will flap.
+- The two remaining `Underfull \hbox` / `Underfull \vbox` warnings in
+  `Paper_Final` are benign IEEEtran two-column artefacts (inline math token
+  runs around lines 374-384; sparse bibliography page 759-761). They are not
+  overfull boxes and `emergencystretch` does not remove them; leave them.
+- Detector nomenclature is the corrected one: paper "EDD" = River `EDDM`,
+  paper "EDMA" = ECDD-EWMA control chart. Validators must use `EDDM` /
+  `ECDD-EWMA` when indexing `table_detectors.csv`.
+
+## Bibliography verification
+
+- `audit/verify_bib.py` checks each `paper/references.bib` entry against
+  Crossref by title. Crossref rate-limits (HTTP 429) under burst; the harness
+  now retries with backoff and a descriptive User-Agent. All entries verify.
+- `helmbold1994tracking` -> 10.1007/BF00993161 and `brzezinski2013reacting` ->
+  10.1109/TNNLS.2013.2251352 were the last two to verify; their DOIs are now
+  recorded in both `paper/references.bib` and `deliverable/references.bib`.
+- Adding a `doi` field is metadata-only: the `plain`/manual-bibliography styles
+  used by both manuscripts do not print DOIs, so no PDF recompile is needed.
+- `deliverable/references.bib` and `paper/references.bib` must stay identical.

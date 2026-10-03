@@ -56,10 +56,10 @@ Regime transitions and recurrences in the natural stream:
 | Model | Macro-F1 | Accuracy | Adapt CPU (s) | Retrains | Reuse events |
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | Frozen | 0.8961 ± 0.0099 | 0.9075 | 0.0000 | 0.00 | 0.00 |
-| Event-Driven | 0.8903 ± 0.0107 | 0.9055 | 1.0511 | 11.00 | 0.00 |
-| Full Retraining | 0.9027 ± 0.0059 | 0.9145 | 0.7633 | 9.00 | 0.00 |
-| RAPT | 0.8894 ± 0.0110 | 0.9025 | 0.3848 | 3.00 | 6.00 |
-| RAPT-Enhanced | 0.8915 ± 0.0117 | 0.9055 | 0.8695 | 3.00 | 6.00 |
+| Event-Driven | 0.8903 ± 0.0107 | 0.9055 | 1.0478 | 11.00 | 0.00 |
+| Full Retraining | 0.9027 ± 0.0059 | 0.9145 | 0.7741 | 9.00 | 0.00 |
+| RAPT | 0.8894 ± 0.0110 | 0.9025 | 0.3835 | 3.00 | 6.00 |
+| RAPT-Enhanced | 0.8915 ± 0.0117 | 0.9055 | 0.8630 | 3.00 | 6.00 |
 
 _Observed_: The natural stream recurs over regimes A/B/C/D. RAPT stores one policy
 per regime and reuses it on every recurrence (6 reuse events, 600 reused trees,
@@ -105,31 +105,31 @@ regime than the pre-drift reference.
 
 | Model | Severity | F1 (mean ± std) | Accuracy | Precision | Recall | Adapt CPU (s) | Runtime (s) | Retrains |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Frozen | 10% | 0.5265 ± 0.0000 | 0.4900 | 0.7964 | 0.6699 | 0.0000 | 0.9484 | 0.00 |
-| Frozen | 20% | 0.5201 ± 0.0000 | 0.4750 | 0.7904 | 0.6698 | 0.0000 | 0.9560 | 0.00 |
-| Frozen | 30% | 0.5192 ± 0.0000 | 0.4700 | 0.7897 | 0.6698 | 0.0000 | 0.9469 | 0.00 |
-| Frozen | 50% | 0.5102 ± 0.0000 | 0.4400 | 0.7817 | 0.6696 | 0.0000 | 0.9510 | 0.00 |
-| Frozen | 100% | 0.4893 ± 0.0000 | 0.3700 | 0.7640 | 0.6693 | 0.0000 | 0.9406 | 0.00 |
-| Event-Driven | 10% | 0.6819 ± 0.0106 | 0.6000 | 0.6947 | 0.6953 | 0.2444 | 1.1312 | 2.00 |
-| Event-Driven | 20% | 0.6489 ± 0.0174 | 0.5650 | 0.7104 | 0.7005 | 0.1567 | 1.0209 | 1.00 |
-| Event-Driven | 30% | 0.6438 ± 0.0074 | 0.5560 | 0.7071 | 0.6980 | 0.1665 | 1.0327 | 1.00 |
-| Event-Driven | 50% | 0.6489 ± 0.0178 | 0.5510 | 0.7141 | 0.7059 | 0.1595 | 1.0161 | 1.00 |
-| Event-Driven | 100% | 0.6672 ± 0.0082 | 0.5550 | 0.7258 | 0.7278 | 0.1557 | 1.0268 | 1.00 |
-| Full Retraining | 10% | 0.6850 ± 0.0171 | 0.6120 | 0.7537 | 0.7334 | 0.2439 | 1.1236 | 3.00 |
-| Full Retraining | 20% | 0.7894 ± 0.0068 | 0.7770 | 0.8236 | 0.7843 | 0.2422 | 1.1164 | 3.00 |
-| Full Retraining | 30% | 0.7189 ± 0.0106 | 0.6440 | 0.7452 | 0.7461 | 0.2402 | 1.0939 | 3.00 |
-| Full Retraining | 50% | 0.7671 ± 0.0177 | 0.7280 | 0.7684 | 0.7677 | 0.2445 | 1.1214 | 3.00 |
-| Full Retraining | 100% | 0.8080 ± 0.0017 | 0.7940 | 0.8133 | 0.8040 | 0.2415 | 1.1081 | 3.00 |
-| RAPT | 10% | 0.6854 ± 0.0309 | 0.6140 | 0.7607 | 0.7373 | 0.3339 | 1.1965 | 3.00 |
-| RAPT | 20% | 0.7944 ± 0.0114 | 0.7880 | 0.8471 | 0.7886 | 0.3291 | 1.2063 | 3.00 |
-| RAPT | 30% | 0.7285 ± 0.0170 | 0.6570 | 0.7467 | 0.7501 | 0.3348 | 1.2097 | 3.00 |
-| RAPT | 50% | 0.7767 ± 0.0159 | 0.7430 | 0.7786 | 0.7755 | 0.3340 | 1.2006 | 3.00 |
-| RAPT | 100% | 0.8122 ± 0.0038 | 0.8000 | 0.8193 | 0.8072 | 0.3343 | 1.1918 | 3.00 |
-| RAPT-Enhanced | 10% | 0.6854 ± 0.0309 | 0.6140 | 0.7607 | 0.7373 | 0.3320 | 1.1974 | 3.00 |
-| RAPT-Enhanced | 20% | 0.7944 ± 0.0114 | 0.7880 | 0.8471 | 0.7886 | 0.3393 | 1.2137 | 3.00 |
-| RAPT-Enhanced | 30% | 0.7285 ± 0.0170 | 0.6570 | 0.7467 | 0.7501 | 0.3326 | 1.1970 | 3.00 |
-| RAPT-Enhanced | 50% | 0.7767 ± 0.0159 | 0.7430 | 0.7786 | 0.7755 | 0.3321 | 1.1955 | 3.00 |
-| RAPT-Enhanced | 100% | 0.8122 ± 0.0038 | 0.8000 | 0.8193 | 0.8072 | 0.3321 | 1.2018 | 3.00 |
+| Frozen | 10% | 0.5265 ± 0.0000 | 0.4900 | 0.7964 | 0.6699 | 0.0000 | 0.9633 | 0.00 |
+| Frozen | 20% | 0.5201 ± 0.0000 | 0.4750 | 0.7904 | 0.6698 | 0.0000 | 0.9551 | 0.00 |
+| Frozen | 30% | 0.5192 ± 0.0000 | 0.4700 | 0.7897 | 0.6698 | 0.0000 | 0.9568 | 0.00 |
+| Frozen | 50% | 0.5102 ± 0.0000 | 0.4400 | 0.7817 | 0.6696 | 0.0000 | 0.9559 | 0.00 |
+| Frozen | 100% | 0.4893 ± 0.0000 | 0.3700 | 0.7640 | 0.6693 | 0.0000 | 0.9535 | 0.00 |
+| Event-Driven | 10% | 0.6819 ± 0.0106 | 0.6000 | 0.6947 | 0.6953 | 0.2399 | 1.1342 | 2.00 |
+| Event-Driven | 20% | 0.6489 ± 0.0174 | 0.5650 | 0.7104 | 0.7005 | 0.1561 | 1.0364 | 1.00 |
+| Event-Driven | 30% | 0.6438 ± 0.0074 | 0.5560 | 0.7071 | 0.6980 | 0.1561 | 1.0283 | 1.00 |
+| Event-Driven | 50% | 0.6489 ± 0.0178 | 0.5510 | 0.7141 | 0.7059 | 0.1565 | 1.0353 | 1.00 |
+| Event-Driven | 100% | 0.6672 ± 0.0082 | 0.5550 | 0.7258 | 0.7278 | 0.1557 | 1.0410 | 1.00 |
+| Full Retraining | 10% | 0.6850 ± 0.0171 | 0.6120 | 0.7537 | 0.7334 | 0.2420 | 1.1260 | 3.00 |
+| Full Retraining | 20% | 0.7894 ± 0.0068 | 0.7770 | 0.8236 | 0.7843 | 0.2472 | 1.1328 | 3.00 |
+| Full Retraining | 30% | 0.7189 ± 0.0106 | 0.6440 | 0.7452 | 0.7461 | 0.2399 | 1.1172 | 3.00 |
+| Full Retraining | 50% | 0.7671 ± 0.0177 | 0.7280 | 0.7684 | 0.7677 | 0.2433 | 1.1207 | 3.00 |
+| Full Retraining | 100% | 0.8080 ± 0.0017 | 0.7940 | 0.8133 | 0.8040 | 0.2465 | 1.1180 | 3.00 |
+| RAPT | 10% | 0.6854 ± 0.0309 | 0.6140 | 0.7607 | 0.7373 | 0.3431 | 1.2268 | 3.00 |
+| RAPT | 20% | 0.7944 ± 0.0114 | 0.7880 | 0.8471 | 0.7886 | 0.3320 | 1.2142 | 3.00 |
+| RAPT | 30% | 0.7285 ± 0.0170 | 0.6570 | 0.7467 | 0.7501 | 0.3360 | 1.2218 | 3.00 |
+| RAPT | 50% | 0.7767 ± 0.0159 | 0.7430 | 0.7786 | 0.7755 | 0.3305 | 1.2108 | 3.00 |
+| RAPT | 100% | 0.8122 ± 0.0038 | 0.8000 | 0.8193 | 0.8072 | 0.3417 | 1.2364 | 3.00 |
+| RAPT-Enhanced | 10% | 0.6854 ± 0.0309 | 0.6140 | 0.7607 | 0.7373 | 0.3315 | 1.2190 | 3.00 |
+| RAPT-Enhanced | 20% | 0.7944 ± 0.0114 | 0.7880 | 0.8471 | 0.7886 | 0.3296 | 1.2056 | 3.00 |
+| RAPT-Enhanced | 30% | 0.7285 ± 0.0170 | 0.6570 | 0.7467 | 0.7501 | 0.3359 | 1.2124 | 3.00 |
+| RAPT-Enhanced | 50% | 0.7767 ± 0.0159 | 0.7430 | 0.7786 | 0.7755 | 0.3349 | 1.2171 | 3.00 |
+| RAPT-Enhanced | 100% | 0.8122 ± 0.0038 | 0.8000 | 0.8193 | 0.8072 | 0.3336 | 1.2216 | 3.00 |
 
 ### Recovery
 
@@ -213,31 +213,31 @@ Diagnostics are saved under `results/experiment_9b/concept_drift/`:
 
 | Model | Severity | F1 (mean ± std) | Accuracy | Precision | Recall | Adapt CPU (s) | Runtime (s) | Retrains |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Frozen | 10% | 0.8777 ± 0.0085 | 0.9725 | 0.9865 | 0.8250 | 0.0000 | 0.3028 | 0.00 |
-| Frozen | 20% | 0.8683 ± 0.0000 | 0.9608 | 0.9810 | 0.8125 | 0.0000 | 0.2989 | 0.00 |
-| Frozen | 30% | 0.8683 ± 0.0000 | 0.9608 | 0.9810 | 0.8125 | 0.0000 | 0.2985 | 0.00 |
-| Frozen | 50% | 0.8117 ± 0.0187 | 0.8902 | 0.9241 | 0.7568 | 0.0000 | 0.3026 | 0.00 |
-| Frozen | 100% | 0.7916 ± 0.0000 | 0.8627 | 0.8983 | 0.7405 | 0.0000 | 0.2935 | 0.00 |
-| Event-Driven | 10% | 0.9241 ± 0.0550 | 0.9804 | 0.9902 | 0.8917 | 0.1586 | 0.3811 | 1.00 |
-| Event-Driven | 20% | 0.9379 ± 0.0635 | 0.9725 | 0.9865 | 0.9125 | 0.1644 | 0.3825 | 1.00 |
-| Event-Driven | 30% | 0.9379 ± 0.0635 | 0.9725 | 0.9865 | 0.9125 | 0.1575 | 0.3776 | 1.00 |
-| Event-Driven | 50% | 0.8274 ± 0.0247 | 0.9098 | 0.9389 | 0.7734 | 0.2152 | 0.4326 | 1.80 |
-| Event-Driven | 100% | 0.7916 ± 0.0000 | 0.8627 | 0.8983 | 0.7405 | 0.2334 | 0.4528 | 2.00 |
-| Full Retraining | 10% | 0.8777 ± 0.0085 | 0.9725 | 0.9865 | 0.8250 | 0.0000 | 0.2271 | 0.00 |
-| Full Retraining | 20% | 0.8683 ± 0.0000 | 0.9608 | 0.9810 | 0.8125 | 0.0000 | 0.2216 | 0.00 |
-| Full Retraining | 30% | 0.8683 ± 0.0000 | 0.9608 | 0.9810 | 0.8125 | 0.0000 | 0.2215 | 0.00 |
-| Full Retraining | 50% | 0.8117 ± 0.0187 | 0.8902 | 0.9241 | 0.7568 | 0.0000 | 0.2171 | 0.00 |
-| Full Retraining | 100% | 0.7916 ± 0.0000 | 0.8627 | 0.8983 | 0.7405 | 0.0000 | 0.2200 | 0.00 |
-| RAPT | 10% | 0.8777 ± 0.0085 | 0.9725 | 0.9865 | 0.8250 | 0.0796 | 0.2974 | 0.00 |
-| RAPT | 20% | 0.8683 ± 0.0000 | 0.9608 | 0.9810 | 0.8125 | 0.0757 | 0.2956 | 0.00 |
-| RAPT | 30% | 0.8683 ± 0.0000 | 0.9608 | 0.9810 | 0.8125 | 0.0769 | 0.2927 | 0.00 |
-| RAPT | 50% | 0.8117 ± 0.0187 | 0.8902 | 0.9241 | 0.7568 | 0.0750 | 0.2882 | 0.00 |
-| RAPT | 100% | 0.7916 ± 0.0000 | 0.8627 | 0.8983 | 0.7405 | 0.0745 | 0.2949 | 0.00 |
-| RAPT-Enhanced | 10% | 0.8777 ± 0.0085 | 0.9725 | 0.9865 | 0.8250 | 0.0764 | 0.2944 | 0.00 |
-| RAPT-Enhanced | 20% | 0.8683 ± 0.0000 | 0.9608 | 0.9810 | 0.8125 | 0.0764 | 0.2975 | 0.00 |
-| RAPT-Enhanced | 30% | 0.8683 ± 0.0000 | 0.9608 | 0.9810 | 0.8125 | 0.0746 | 0.2931 | 0.00 |
-| RAPT-Enhanced | 50% | 0.8117 ± 0.0187 | 0.8902 | 0.9241 | 0.7568 | 0.0761 | 0.2934 | 0.00 |
-| RAPT-Enhanced | 100% | 0.7916 ± 0.0000 | 0.8627 | 0.8983 | 0.7405 | 0.0765 | 0.3000 | 0.00 |
+| Frozen | 10% | 0.8777 ± 0.0085 | 0.9725 | 0.9865 | 0.8250 | 0.0000 | 0.3058 | 0.00 |
+| Frozen | 20% | 0.8683 ± 0.0000 | 0.9608 | 0.9810 | 0.8125 | 0.0000 | 0.3002 | 0.00 |
+| Frozen | 30% | 0.8683 ± 0.0000 | 0.9608 | 0.9810 | 0.8125 | 0.0000 | 0.2997 | 0.00 |
+| Frozen | 50% | 0.8117 ± 0.0187 | 0.8902 | 0.9241 | 0.7568 | 0.0000 | 0.3187 | 0.00 |
+| Frozen | 100% | 0.7916 ± 0.0000 | 0.8627 | 0.8983 | 0.7405 | 0.0000 | 0.3006 | 0.00 |
+| Event-Driven | 10% | 0.9241 ± 0.0550 | 0.9804 | 0.9902 | 0.8917 | 0.1566 | 0.3871 | 1.00 |
+| Event-Driven | 20% | 0.9379 ± 0.0635 | 0.9725 | 0.9865 | 0.9125 | 0.1575 | 0.3791 | 1.00 |
+| Event-Driven | 30% | 0.9379 ± 0.0635 | 0.9725 | 0.9865 | 0.9125 | 0.1565 | 0.3819 | 1.00 |
+| Event-Driven | 50% | 0.8274 ± 0.0247 | 0.9098 | 0.9389 | 0.7734 | 0.2215 | 0.4462 | 1.80 |
+| Event-Driven | 100% | 0.7916 ± 0.0000 | 0.8627 | 0.8983 | 0.7405 | 0.2366 | 0.4606 | 2.00 |
+| Full Retraining | 10% | 0.8777 ± 0.0085 | 0.9725 | 0.9865 | 0.8250 | 0.0000 | 0.2237 | 0.00 |
+| Full Retraining | 20% | 0.8683 ± 0.0000 | 0.9608 | 0.9810 | 0.8125 | 0.0000 | 0.2227 | 0.00 |
+| Full Retraining | 30% | 0.8683 ± 0.0000 | 0.9608 | 0.9810 | 0.8125 | 0.0000 | 0.2332 | 0.00 |
+| Full Retraining | 50% | 0.8117 ± 0.0187 | 0.8902 | 0.9241 | 0.7568 | 0.0000 | 0.2255 | 0.00 |
+| Full Retraining | 100% | 0.7916 ± 0.0000 | 0.8627 | 0.8983 | 0.7405 | 0.0000 | 0.2235 | 0.00 |
+| RAPT | 10% | 0.8777 ± 0.0085 | 0.9725 | 0.9865 | 0.8250 | 0.0787 | 0.3020 | 0.00 |
+| RAPT | 20% | 0.8683 ± 0.0000 | 0.9608 | 0.9810 | 0.8125 | 0.0773 | 0.3058 | 0.00 |
+| RAPT | 30% | 0.8683 ± 0.0000 | 0.9608 | 0.9810 | 0.8125 | 0.0768 | 0.3036 | 0.00 |
+| RAPT | 50% | 0.8117 ± 0.0187 | 0.8902 | 0.9241 | 0.7568 | 0.0772 | 0.3025 | 0.00 |
+| RAPT | 100% | 0.7916 ± 0.0000 | 0.8627 | 0.8983 | 0.7405 | 0.0789 | 0.3142 | 0.00 |
+| RAPT-Enhanced | 10% | 0.8777 ± 0.0085 | 0.9725 | 0.9865 | 0.8250 | 0.0764 | 0.3015 | 0.00 |
+| RAPT-Enhanced | 20% | 0.8683 ± 0.0000 | 0.9608 | 0.9810 | 0.8125 | 0.0810 | 0.3061 | 0.00 |
+| RAPT-Enhanced | 30% | 0.8683 ± 0.0000 | 0.9608 | 0.9810 | 0.8125 | 0.0770 | 0.3014 | 0.00 |
+| RAPT-Enhanced | 50% | 0.8117 ± 0.0187 | 0.8902 | 0.9241 | 0.7568 | 0.0781 | 0.3046 | 0.00 |
+| RAPT-Enhanced | 100% | 0.7916 ± 0.0000 | 0.8627 | 0.8983 | 0.7405 | 0.0778 | 0.3022 | 0.00 |
 
 ### Recovery
 
@@ -572,10 +572,12 @@ _Observed results_ (directly measured):
 * Under **covariate drift**, Frozen degrades monotonically with severity
   (F1 0.527→0.489). Full Retraining and RAPT are the strongest adapters and track
   each other closely at every severity; RAPT is marginally higher (0.685→0.812).
-  RAPT's advantage over Frozen and Event-Driven is statistically significant at
-  every severity (paired Wilcoxon, p<0.01), but its advantage over Full Retraining
-  is **not** significant (p≈0.06–0.82, small Cohen's d).
-* RAPT's adaptation CPU under covariate drift (~0.33 s) is flat across severity and
+  RAPT's advantage over Frozen is statistically significant at every severity
+  (paired Wilcoxon, p<0.001). Its advantage over Event-Driven is significant at
+  20--100% (p<0.001) but **not** at 10% (p=0.36, Cohen's d=0.03). Its advantage
+  over Full Retraining is **not** significant at any severity
+  (p≈0.06–0.83, small Cohen's d).
+* RAPT's adaptation CPU under covariate drift (~0.34 s) is flat across severity and
   is in fact **slightly higher** than Full Retraining (~0.24 s); because the
   post-drift block is a single new regime id there is no policy reuse, so RAPT
   retrains three times, like Full Retraining. No cost advantage is observed here.
@@ -635,12 +637,16 @@ censored for every model because the reversal is permanent — the concept-drift
 recovery numbers are not informative and should not be read as null results.
 
 ## 16. Reproducibility Information
-Run from the `Ensemble Learning for Model Drift Detection` directory:
+Run from the `Ensemble Learning for Model Drift Detection` directory. The 9B
+drift-severity suite is part of the single paper entry point, so one execution of
+`run_all.py` regenerates every 9B number, table, figure and this report:
 
 ```bash
-python experiments/exp9b/run_exp9b.py               # 9B-A natural (existing)
-python experiments/exp9b/run_exp9b_drift.py         # 9B-B/C/D + figures + tables + report
-python experiments/exp9b/exp9b_recovery_censoring.py  # recovery-censoring evidence
+python final/run_all.py --config final/final.yaml   # primary + ablation + detectors
+                                                    # + 9B-A/B/C/D + all artefacts
+# 9B only, without the rest of the paper pipeline:
+python experiments/exp9b/run_exp9b_drift.py         # 9B-A/B/C/D + figures + tables + report
+python experiments/exp9b/run_exp9b.py               # 9B-A natural (original baseline)
 ```
 
 Configuration (`experiments/exp9b/exp9b_drift_config.py`):
