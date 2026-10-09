@@ -1,0 +1,43 @@
+\begin{table*}[t]
+\caption{Primary comparison, mean over 30 seeds. Bold marks the best macro-F1 per stream; CPU in seconds, retrains and reuses are counts. RAPT-Anchor's total CPU includes its doubled inference.}
+\label{tab:primary}
+\centering
+\scriptsize
+\begin{tabular}{@{}llrrrrr@{}}
+\toprule
+\textbf{Dataset} & \textbf{Model} & \textbf{Macro-F1} & \textbf{Adapt CPU} & \textbf{Total CPU} & \textbf{Retr.} & \textbf{Reuse}\\
+\midrule
+\multirow{7}{*}{Campus} & Frozen & 0.9371 & 0.000 & 1.185 & 0 & 0 \\
+ & Event-Driven & 0.9638 & 0.166 & 1.358 & 1 & 0 \\
+ & Full Retraining & $\mathbf{0.9836}$ & 2.192 & 3.375 & 14 & 0 \\
+ & RAPT & 0.9385 & 0.281 & 1.452 & 2 & 12 \\
+ & RAPT-Enhanced & 0.9385 & 0.279 & 1.431 & 2 & 12 \\
+ & RAPT-Guard & 0.9391 & 0.499 & 1.675 & 2 & 12 \\
+ & RAPT-Anchor & 0.9385 & 0.282 & 3.893 & 2 & 12 \\
+\midrule
+\multirow{7}{*}{UGR'16} & Frozen & $\mathbf{0.9693}$ & 0.000 & 1.037 & 0 & 0 \\
+ & Event-Driven & 0.8978 & 0.835 & 1.942 & 4 & 0 \\
+ & Full Retraining & 0.9511 & 29.771 & 30.872 & 144 & 0 \\
+ & RAPT & 0.9137 & 2.571 & 3.640 & 11 & 133 \\
+ & RAPT-Enhanced & 0.9137 & 2.595 & 3.669 & 11 & 133 \\
+ & RAPT-Guard & 0.9357 & 5.743 & 6.810 & 17 & 127 \\
+ & RAPT-Anchor & 0.9247 & 2.595 & 5.683 & 11 & 133 \\
+\midrule
+\multirow{7}{*}{Nordic} & Frozen & 0.2851 & 0.000 & 1.396 & 0 & 0 \\
+ & Event-Driven & 0.2739 & 0.346 & 1.706 & 2 & 0 \\
+ & Full Retraining & $\mathbf{0.4376}$ & 3.310 & 4.644 & 19 & 0 \\
+ & RAPT & 0.3845 & 0.344 & 1.679 & 2 & 16 \\
+ & RAPT-Enhanced & 0.3775 & 3.686 & 5.061 & 21 & 16 \\
+ & RAPT-Guard & 0.3793 & 1.154 & 2.537 & 5 & 13 \\
+ & RAPT-Anchor & 0.3838 & 0.351 & 4.130 & 2 & 16 \\
+\midrule
+\multirow{7}{*}{5G NR} & Frozen & 0.9110 & 0.000 & 2.709 & 0 & 0 \\
+ & Event-Driven & 0.9081 & 1.312 & 3.984 & 11 & 0 \\
+ & Full Retraining & 0.9121 & 0.981 & 3.769 & 8 & 0 \\
+ & RAPT & 0.8969 & 0.350 & 3.092 & 3 & 5 \\
+ & RAPT-Enhanced & 0.9045 & 0.963 & 3.677 & 8 & 5 \\
+ & RAPT-Guard & $\mathbf{0.9148}$ & 0.558 & 3.221 & 4 & 4 \\
+ & RAPT-Anchor & 0.9042 & 0.349 & 8.851 & 3 & 5 \\
+\bottomrule
+\end{tabular}
+\end{table*}

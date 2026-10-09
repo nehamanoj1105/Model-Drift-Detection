@@ -138,7 +138,9 @@ def main():
              ("RAPT-Anchor", "Frozen"), ("RAPT-Anchor", "Event-Driven"),
              ("RAPT", "Frozen"), ("RAPT", "Event-Driven"),
              ("RAPT-Enhanced", "Frozen"), ("RAPT-Enhanced", "Event-Driven"),
-             ("Frozen+Periodic", "Frozen"), ("Event-Driven+Reuse", "Event-Driven")]
+             ("Frozen+Periodic", "Frozen"), ("Event-Driven+Reuse", "Event-Driven"),
+             ("RAPT", "Full Retraining"), ("RAPT-Guard", "Full Retraining"),
+             ("RAPT-Anchor", "Full Retraining")]
     stat_rows = []
     for s, df in frames.items():
         pvals = []
