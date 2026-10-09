@@ -1,0 +1,6 @@
+{
+  "cheap_mode": "t20_b300",
+  "cheap_n_trees": 20,
+  "cheap_buffer": 300,
+  "criterion": "macro_F1 per total_CPU, mean over Event-Driven+Reuse and RAPT-Guard, dev 5 seeds"
+}

@@ -1,0 +1,46 @@
+{
+  "q1_on_frontier_2plus": true,
+  "q1_per_stream": {
+    "campus": false,
+    "ugr16": true,
+    "5g_nr": true,
+    "kpiops": true
+  },
+  "q2_cpu_within_30pct_2plus": true,
+  "q2_per_stream": {
+    "campus": true,
+    "ugr16": true,
+    "5g_nr": true,
+    "kpiops": true
+  },
+  "q3_f1_within_002_fullretrain_2plus": false,
+  "q3_per_stream": {
+    "campus": false,
+    "ugr16": false,
+    "5g_nr": true,
+    "kpiops": false
+  },
+  "q4_cheap_loses_over_002_any": true,
+  "q4_per_stream": {
+    "campus": {
+      "event_driven_loss": 0.0004907373328426612,
+      "full_retraining_loss": 0.004096010621509105,
+      "loses_more_than_002": false
+    },
+    "ugr16": {
+      "event_driven_loss": 0.08484374708407028,
+      "full_retraining_loss": 0.08578028576655738,
+      "loses_more_than_002": true
+    },
+    "5g_nr": {
+      "event_driven_loss": 0.012949039264828821,
+      "full_retraining_loss": 0.016290726817042467,
+      "loses_more_than_002": false
+    },
+    "kpiops": {
+      "event_driven_loss": 0.017734934730568308,
+      "full_retraining_loss": 0.0014645755460238608,
+      "loses_more_than_002": false
+    }
+  }
+}

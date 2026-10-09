@@ -1,0 +1,5 @@
+stream,method,kind,detail
+campus,RAPT,zero_variance_macro_f1,"sd=1.13e-16, mean=0.9426"
+kpiops,Frozen,zero_variance_macro_f1,"sd=3.39e-16, mean=0.6797"
+campus,Event-Driven+Reuse+Event-Driven-cheap,identical_macro_f1_vectors,sorted per-seed F1 identical
+campus,Event-Driven+Reuse,never_reused,0 reuse events in 30 seeds; equals a trigger-only run
