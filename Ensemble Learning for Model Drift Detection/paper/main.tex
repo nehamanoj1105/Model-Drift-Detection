@@ -350,8 +350,9 @@ use where identity-only reuse is not.
 
 
 \subsection{Computational Cost and Policy Reuse}
-Table~\ref{tab:primary} also lists adaptation and total cost
-compares total CPU. Relative to Full Retraining the adaptation CPU falls on every stream:
+Table~\ref{tab:primary} lists both adaptation and total CPU; the total column is what a
+deployment pays, because it also charges inference. Relative to Full Retraining the
+adaptation CPU falls on every stream:
 $2.192 \to 0.281$\,s on 5G Campus ($-87.2\%$), $29.771 \to 2.571$\,s on UGR'16
 ($-91.4\%$), $3.310 \to 0.344$\,s on NordicDat ($-89.6\%$), and $0.981 \to 0.350$\,s on
 5G NR ($-64.3\%$). Full Retraining retrains at every regime transition (14, 144, 19 and 8
