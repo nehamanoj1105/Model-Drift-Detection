@@ -29,5 +29,5 @@ ph_delta: 0.005
 ph_min_instances: 10
 ph_threshold: 0.002
 gate_skip_window: 3
-gate_skip_acc: 0.9
+gate_skip_acc: 1.0
 cheap_mode: t20_b300

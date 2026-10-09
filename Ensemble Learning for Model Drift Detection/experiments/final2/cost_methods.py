@@ -21,6 +21,7 @@ import numpy as np
 
 from final_methods import (EventDriven, EventDrivenReuse, FullRetraining,
                            RAPTGuard, _Base)
+from models_9a import create_base_ensemble
 
 
 def cheap_params(cfg):
@@ -92,6 +93,27 @@ class EventDrivenReuseCheap(_CheapRefit, EventDrivenReuse):
         return ac
 
 
+class FrozenCheap(_CheapRefit, _Base):
+    """Frozen model built with the cheap base config (20 trees / buffer 300).
+    Purely a fairness control for Frozen: no adaptation, but the base learner
+    matches the cheap refits so the CPU/F1 comparison is apples-to-apples."""
+
+    def fit_initial(self, X_init, y_init, init_regime=None):
+        n_trees, _ = cheap_params(self.cfg)
+        t0 = time.process_time()
+        self.ens = create_base_ensemble(seed=self.seed, n_estimators=n_trees)
+        self.ens.fit(X_init, y_init)
+        self.init_cpu = time.process_time() - t0
+        self.buf_X, self.buf_y = list(X_init), list(y_init)
+        self.last_flags = {}
+        return self.init_cpu
+
+    def post_predict(self, w, idx, X_win, y_win, *a, **k):
+        self._push(X_win, y_win)
+        self.last_flags = {"retrain": 0, "reuse": 0}
+        return 0.0
+
+
 class RAPTGuardCheap(_CheapRefit, RAPTGuard):
     """RAPT-Guard with a cheaper gate. Same decision rule and margin; the gate
     is only consulted at regime returns, the prefix model's per-window
@@ -154,8 +176,11 @@ class RAPTGuardCheap(_CheapRefit, RAPTGuard):
 
         stored_model = self.repo[reg]
         skip_win = int(self.cfg.get("gate_skip_window", 3))
-        skip_acc = float(self.cfg.get("gate_skip_acc", 0.90))
-        if (len(self._win_acc) >= skip_win and
+        skip_acc = float(self.cfg.get("gate_skip_acc", 1.0))
+        # The raw-accuracy skip is disabled by config (gate_skip_acc >= 1.0)
+        # because raw accuracy is majority-dominated on imbalanced streams and
+        # would let stale policies through unchecked.
+        if (skip_acc < 1.0 and len(self._win_acc) >= skip_win and
                 float(np.mean(self._win_acc[-skip_win:])) >= skip_acc):
             self.ens = stored_model
             self._reused = True
@@ -192,7 +217,7 @@ class RAPTGuardCheap(_CheapRefit, RAPTGuard):
         return time.process_time() - t0
 
 
-METHODS = ["Frozen", "Full Retraining", "Full Retraining-cheap",
+METHODS = ["Frozen", "Frozen-cheap", "Full Retraining", "Full Retraining-cheap",
            "Event-Driven", "Event-Driven-cheap", "Event-Driven+Reuse",
            "Page-Hinkley", "RAPT", "RAPT-Guard"]
 
@@ -202,10 +227,12 @@ def build_cost_method(name, seed=42, anchor_X=None, anchor_y=None, cfg=None):
     cfg.setdefault("buffer_capacity", 1000)
     from final_methods import build_method
     table = {
+        "Frozen-cheap": FrozenCheap,
         "Full Retraining-cheap": FullRetrainingCheap,
         "Event-Driven-cheap": EventDrivenCheap,
         "Event-Driven+Reuse": EventDrivenReuseCheap,
         "RAPT-Guard": RAPTGuardCheap,
+        "RAPT-Guard-std": RAPTGuard,
     }
     if name in table:
         return table[name](seed, anchor_X, anchor_y, cfg)

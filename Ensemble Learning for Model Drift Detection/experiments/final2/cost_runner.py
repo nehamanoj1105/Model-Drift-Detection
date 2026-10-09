@@ -75,11 +75,12 @@ def run_seed(stream, sd, seed, cfg, stop_frac, methods=None):
                         "Event-Driven", "Event-Driven-cheap", "Event-Driven+Reuse"):
             m.fit_initial(init_regime=regimes[n_init - 1], X_init=X_init, y_init=y_init)
         else:
-            m.fit_initial(X_init, y_init)
+            m.fit_initial(init_regime=regimes[n_init - 1], X_init=X_init, y_init=y_init)
         buf_X, buf_y = list(X_init), list(y_init)
         prev = regimes[n_init - 1]
         for w in range(n_init, stop_w):
             idx = win_slices[w]; reg = regimes[w]
+            m.last_flags = {}
             needs_err = method in ("Event-Driven", "Event-Driven-cheap",
                                    "Event-Driven+Reuse", "Page-Hinkley")
             er = err_of(m.predict(X[idx]), idx) if needs_err else None
@@ -110,7 +111,7 @@ def run_seed(stream, sd, seed, cfg, stop_frac, methods=None):
                 t0 = time.process_time(); yp = m.predict(X[idx]); pc = time.process_time() - t0
                 ac = m.post_predict(w, idx, X[idx], y_all[idx], buf_X, buf_y, err=er)
                 prev = reg
-            elif method == "RAPT":
+            elif method in ("RAPT", "RAPT-Guard-std"):
                 yp, pc = m.predict_window(X[idx], buf_X, buf_y)
                 ac = 0.0
                 if reg != prev:
@@ -142,6 +143,7 @@ def main():
     ap.add_argument("--seeds", default="")
     ap.add_argument("--tag", default="cost_final")
     ap.add_argument("--n-jobs", type=int, default=4)
+    ap.add_argument("--methods", default="")
     a = ap.parse_args()
     import yaml
     cfg = yaml.safe_load(open(os.path.join(ROOT, "configs", "final.yaml"))) or {}
@@ -151,13 +153,14 @@ def main():
     seeds = ([int(s) for s in a.seeds.split(",")] if a.seeds
              else (SEEDS_DEV if a.mode == "dev" else SEEDS_FINAL))
     stop_frac = DEV_WINDOW_FRACTION if a.mode == "dev" else 1.0
+    methods = [m for m in a.methods.split(",") if m] or None
 
     from joblib import Parallel, delayed
     jobs = [(s, seed) for s in slugs for seed in seeds]
 
     def one(slug, seed):
         stream, sd = prepare(SLUGS[slug])
-        df = run_seed(stream, sd, seed, cfg, stop_frac)
+        df = run_seed(stream, sd, seed, cfg, stop_frac, methods=methods)
         df["dataset"] = SLUGS[slug]
         df["dataset_slug"] = slug
         return df
