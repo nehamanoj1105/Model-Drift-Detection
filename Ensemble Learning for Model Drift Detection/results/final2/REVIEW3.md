@@ -270,3 +270,22 @@ Criterion: macro-F1 per total CPU, mean over Event-Driven+Reuse and RAPT-Guard. 
 
 
 Full list: `results/final2/cost_suspicious.csv`.
+
+
+## 9. Interpretation and caveats (read with the numbers)
+
+- **The cheaper gate's error-skip breaks on an imbalanced stream.** On UGR'16 RAPT-Guard invokes the gate but skips the actual comparison when the rolling accuracy is >= `gate_skip_acc`. Raw accuracy there is dominated by the majority (normal) class, so the skip fires often (mean gate_skipped below) and stale policies are reused unchecked, dropping RAPT-Guard to the value in the summary. Detailed per-stream counts:
+
+
+| method | 5G Campus QoS | 5G NR Latency | Network operator KPIs | UGR'16 |
+|---|---|---|---|---|
+| RAPT-Guard | 127.0000 | 189.0667 | 111.0000 | 109.9333 |
+
+
+- **On Campus, Event-Driven+Reuse and Event-Driven-cheap are numerically identical** (0 reuse events in 30 seeds; see the suspicious table), so their Pareto status is a tie broken by a ~0.001 s CPU difference. Treat them as the same point when reading Table B.
+
+- **The cheap refit hurts UGR'16 most** (Event-Driven loss and Full Retraining loss both about 0.085 F1 vs their standard refits); on the other three streams the loss is <= 0.018. See Q4 above.
+
+- **RAPT collapses to Frozen on KPI-ops** (0.6802 vs 0.6797, reuse 172/seed): on this stream identity-only reuse is never useful.
+
+- **Total CPU, not adaptation CPU, is where the story lives.** Full Retraining spends most of its UGR'16/KPI-ops total CPU on adaptation, so cheap variants cut total CPU sharply there (Table A), but on Campus/5G NR inference dominates and every adaptive method is within a few percent of Frozen.
