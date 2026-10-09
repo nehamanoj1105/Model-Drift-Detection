@@ -28,8 +28,10 @@ def main():
         with open(p) as f:
             choice = json.load(f)
         if fn.startswith("detector"):
-            adwin = {k: v for k, v in choice["ADWIN"].items() if not k.startswith("_")}
-            ph = {k: v for k, v in choice["Page-Hinkley"].items() if not k.startswith("_")}
+            adwin = {k: v for k, v in choice["ADWIN"].items()
+                     if k.startswith("adwin_")}
+            ph = {k: v for k, v in choice["Page-Hinkley"].items()
+                  if k.startswith("ph_")}
             cfg.update(adwin); cfg.update(ph)
             notes["ADWIN"] = {k: v for k, v in choice["ADWIN"].items()}
             notes["Page-Hinkley"] = {k: v for k, v in choice["Page-Hinkley"].items()}
@@ -38,9 +40,18 @@ def main():
             notes["guard"] = choice
     os.makedirs(CONFIG_DIR, exist_ok=True)
     out = {"frozen_from_dev": True, "config": cfg, "dev_notes": notes}
+
+    def norm(v):
+        if isinstance(v, bool) or v is None:
+            return v
+        if isinstance(v, float) and float(v).is_integer():
+            return int(v)
+        if isinstance(v, float):
+            return float(v)
+        return v
+
     with open(os.path.join(CONFIG_DIR, "final.yaml"), "w") as f:
-        yaml.safe_dump({k: (float(v) if isinstance(v, (int, float)) and not isinstance(v, bool) else v)
-                        for k, v in cfg.items()}, f, sort_keys=True)
+        yaml.safe_dump({k: norm(v) for k, v in cfg.items()}, f, sort_keys=True)
     with open(os.path.join(CONFIG_DIR, "final_full.yaml"), "w") as f:
         yaml.safe_dump(out, f, sort_keys=False, default_flow_style=False)
     print(json.dumps({"frozen": {k: cfg[k] for k in

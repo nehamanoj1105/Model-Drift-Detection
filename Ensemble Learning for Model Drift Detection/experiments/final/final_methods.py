@@ -443,11 +443,12 @@ class DetectorModel(_Base):
         self._push(X_win, y_win)
         if err is None:
             err = 0.0
-        err = np.atleast_1d(err)
         fired = False
-        for e in err:
-            ret = self.det.update(float(e))
-            if ret or getattr(self.det, "drift_detected", False):
+        # ADWIN / Page-Hinkley operate on the per-sample 0/1 error stream, which
+        # is the granularity they are designed for.
+        for e in np.atleast_1d(err):
+            self.det.update(float(e))
+            if getattr(self.det, "drift_detected", False):
                 fired = True
         self.last_flags = {"retrain": 0, "detected": int(fired)}
         if fired and (w - self.last_retrain) >= self.cfg["detector_min_retrain_interval"]:

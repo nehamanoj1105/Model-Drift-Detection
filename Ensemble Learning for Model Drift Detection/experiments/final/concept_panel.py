@@ -117,32 +117,33 @@ def main():
     cad["gate_cadence"] = cad["floor"].map({0: "boundary-only (short)", 1: "every-window (long)"})
     cad.to_csv(os.path.join(TABLES_FINAL, "gate_cadence.csv"), index=False)
 
-    _figure(df)
+    _figure(cad)
     print(summ.to_string(index=False))
 
 
-def _figure(df):
+def _figure(cad):
+    """STEP 1b evidence: refit cadence of a boundary-only gate versus an
+    every-window gate on the same within-regime concept-drift stream. The
+    macro-F1 panel is deliberately not drawn: at 500-packet windows the
+    per-window macro-F1 is effectively binary, so the four methods' curves
+    coincide and the panel would be degenerate (see concept_panel.csv)."""
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
-    fig, axes = plt.subplots(1, len(SEVERITIES), figsize=(10, 3.2), sharey=True)
-    if len(SEVERITIES) == 1:
-        axes = [axes]
-    colors = {"Frozen": "tab:gray", "Event-Driven": "tab:orange",
-              "Full Retraining": "tab:blue", "RAPT": "tab:red"}
-    for ax, lvl in zip(axes, SEVERITIES):
-        sub = df[(df["severity"] == lvl) & (df["floor"] == 1)]
-        for m in METHODS:
-            g = sub[sub["method"] == m].groupby("window_id")["macro_f1"].mean()
-            ax.plot(g.index, g.values, label=m, color=colors[m], lw=1.4)
-        ax.set_title(f"severity {int(lvl*100)}%")
-        ax.set_xlabel("window")
-        ax.grid(alpha=0.3)
-    axes[0].set_ylabel("macro-F1")
-    axes[0].legend(fontsize=7)
-    fig.suptitle("Concept-drift stress panel (in-regime floor trigger enabled)", fontsize=10)
+    fig, ax = plt.subplots(figsize=(5.2, 3.0))
+    sev = sorted(cad["severity"].unique())
+    x = np.arange(len(sev))
+    w = 0.38
+    b = cad[cad["floor"] == 0].set_index("severity")["refits"].reindex(sev).fillna(0)
+    l = cad[cad["floor"] == 1].set_index("severity")["refits"].reindex(sev).fillna(0)
+    ax.bar(x - w / 2, b.values, w, label="boundary-only gate (short window)")
+    ax.bar(x + w / 2, l.values, w, label="every-window gate (long window)")
+    ax.set_xticks(x); ax.set_xticklabels([f"{int(s*100)}%" for s in sev])
+    ax.set_xlabel("concept-drift severity"); ax.set_ylabel("refits fired")
+    ax.set_title("Gate cadence under in-regime concept drift")
+    ax.legend(fontsize=7); ax.grid(axis="y", alpha=0.3)
     fig.tight_layout()
-    fig.savefig(os.path.join(FIGURES_FINAL, "fig_concept_panel.png"), dpi=160)
+    fig.savefig(os.path.join(FIGURES_FINAL, "fig_gate_cadence.png"), dpi=160)
     plt.close(fig)
 
 

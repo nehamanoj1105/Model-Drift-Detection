@@ -109,9 +109,9 @@ def _parallel(jobs, fn):
 
 def sweep_detectors():
     grid = []
-    for d in [0.002, 0.01, 0.05, 0.1, 0.2, 0.5, 1.0]:
+    for d in [0.002, 0.01, 0.05, 0.2]:
         grid.append(("ADWIN", {"adwin_delta": d}))
-    for th in [0.05, 0.5, 5.0, 50.0]:
+    for th in [0.002, 0.01, 0.05, 0.2]:
         for mi in [5, 10, 30]:
             grid.append(("Page-Hinkley",
                          {"ph_threshold": th, "ph_min_instances": mi,
@@ -129,10 +129,22 @@ def sweep_detectors():
         g = sub.groupby("cfg").agg(median_events=("detected_events", "median"),
                                    retrains=("retrain_events", "mean"),
                                    cpu=("adaptation_cpu_sec", "mean")).reset_index()
-        g["score"] = (g["median_events"] - 15).abs()
-        best = g.sort_values(["score", "median_events"]).iloc[0]
+        # target a sensible 5-20 fire rate on dev; tie-break on the minimum
+        # stream (we want a detector that fires on every stream, not zero
+        # somewhere), then on the distance to the middle of the band.
+        mins = sub.groupby("cfg")["detected_events"].min().rename("min_events")
+        g = g.merge(mins, on="cfg")
+        g = g[g["median_events"] > 0]
+        if len(g) == 0:
+            g = sub.groupby("cfg").agg(median_events=("detected_events", "median"),
+                                       retrains=("retrain_events", "mean"),
+                                       cpu=("adaptation_cpu_sec", "mean")).reset_index()
+            g["min_events"] = 0
+        g["score"] = (g["median_events"] - 12).abs()
+        best = g.sort_values(["min_events", "score"], ascending=[False, True]).iloc[0]
         out[det] = json.loads(best["cfg"])
         out[det]["_median_events"] = float(best["median_events"])
+        out[det]["_min_events"] = float(best["min_events"])
         out[det]["_mean_retrains"] = float(best["retrains"])
         print(det, "->", out[det], flush=True)
     with open(os.path.join(DEV_DIR, "detector_choice.json"), "w") as f:

@@ -1,20 +1,22 @@
 {
   "ADWIN": {
-    "adwin_delta": 0.002,
+    "adwin_delta": 0.2,
     "ph_alpha": NaN,
     "ph_delta": NaN,
     "ph_min_instances": NaN,
     "ph_threshold": NaN,
-    "_median_events": 0.0,
-    "_mean_retrains": 0.0
+    "_median_events": 12.0,
+    "_min_events": 0.0,
+    "_mean_retrains": 8.066666666666666
   },
   "Page-Hinkley": {
     "adwin_delta": NaN,
     "ph_alpha": 0.9999,
     "ph_delta": 0.005,
     "ph_min_instances": 10.0,
-    "ph_threshold": 0.05,
-    "_median_events": 0.0,
-    "_mean_retrains": 0.0
+    "ph_threshold": 0.002,
+    "_median_events": 20.0,
+    "_min_events": 6.0,
+    "_mean_retrains": 13.266666666666667
   }
 }

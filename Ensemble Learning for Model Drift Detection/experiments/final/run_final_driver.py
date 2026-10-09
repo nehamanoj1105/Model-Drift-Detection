@@ -23,7 +23,7 @@ sys.path.insert(0, HERE)
 sys.path.insert(0, os.path.join(HERE, "..", "exp9a"))
 
 from final_config import (SEEDS_DEV, SEEDS_FINAL, DEFAULT_CFG, RAW_FINAL,
-                          ensure_dirs)
+                          CONFIG_DIR, ensure_dirs)
 from run_final import _prepare_stream, run_seed
 
 SLUGS = {
@@ -142,9 +142,21 @@ def main():
     else:
         seeds = SEEDS_DEV if a.mode == "dev" else SEEDS_FINAL
     cfg = dict(DEFAULT_CFG)
-    if a.cfg:
-        with open(a.cfg) as f:
-            cfg.update(json.load(f))
+    cfg_path = a.cfg
+    if not cfg_path and a.mode == "final":
+        cand = os.path.join(CONFIG_DIR, "final.yaml")
+        if os.path.exists(cand):
+            cfg_path = cand
+    if cfg_path:
+        with open(cfg_path) as f:
+            text = f.read()
+        try:
+            import yaml
+            loaded = yaml.safe_load(text) or {}
+        except Exception:
+            loaded = json.loads(text)
+        cfg.update({k: v for k, v in loaded.items() if v is not None})
+        print(f"loaded config {cfg_path}", flush=True)
     out_tag = a.tag or a.mode
     t0 = time.time()
     run(streams, seeds, cfg, a.mode, out_tag, n_jobs=a.n_jobs,

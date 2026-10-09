@@ -11,10 +11,10 @@ config:
   periodic_buffer: 300
   cheap_n_trees: 20
   cheap_buffer: 300
-  adwin_delta: .nan
+  adwin_delta: 0.2
   ph_min_instances: 10.0
   ph_delta: 0.005
-  ph_threshold: 0.05
+  ph_threshold: 0.002
   ph_alpha: 0.9999
   edd_warning: 2.0
   edd_drift: 3.0
@@ -27,21 +27,23 @@ config:
   enable_floor: false
 dev_notes:
   ADWIN:
-    adwin_delta: 0.002
+    adwin_delta: 0.2
     ph_alpha: .nan
     ph_delta: .nan
     ph_min_instances: .nan
     ph_threshold: .nan
-    _median_events: 0.0
-    _mean_retrains: 0.0
+    _median_events: 12.0
+    _min_events: 0.0
+    _mean_retrains: 8.066666666666666
   Page-Hinkley:
     adwin_delta: .nan
     ph_alpha: 0.9999
     ph_delta: 0.005
     ph_min_instances: 10.0
-    ph_threshold: 0.05
-    _median_events: 0.0
-    _mean_retrains: 0.0
+    ph_threshold: 0.002
+    _median_events: 20.0
+    _min_events: 6.0
+    _mean_retrains: 13.266666666666667
   guard:
     guard_lookback: 100
     guard_margin: 0.0
