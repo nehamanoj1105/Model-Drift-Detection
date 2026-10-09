@@ -447,9 +447,10 @@ adaptation CPU by up to $0.14$\,s, so the ordering is stable and the seconds ind
 Retrieval keys do not track label semantics: an oracle retraining on the previous visit of
 the \emph{same} regime reaches only $0.5926$ macro-F1 on UGR'16 against $0.9595$ for Full
 Retraining, but $0.9905$ on Campus, exactly where identity-only reuse collapses. The added
-controls separate the trigger from reuse: Frozen+Periodic is best on NordicDat ($0.4872$)
-and Event-Driven+Reuse best on UGR'16 ($0.9639$), so on UGR'16 the event trigger plus
-reuse recovers what identity-keyed reuse loses. A label-delay variant costs RAPT $0.13$
+controls separate the trigger from reuse: Frozen+Periodic is the best model on NordicDat
+($0.4872$, above Full Retraining's $0.4376$), and on UGR'16 Event-Driven+Reuse recovers to
+$0.9639$, above Event-Driven ($0.8978$) and base RAPT ($0.9137$) though still below Frozen
+($0.9693$). A label-delay variant costs RAPT $0.13$
 macro-F1 on NordicDat; the headline numbers assume labels arrive with their window.
 
 
