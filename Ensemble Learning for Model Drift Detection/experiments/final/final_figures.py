@@ -182,17 +182,83 @@ def table_gate(frame_df):
         return pd.read_csv(p)
 
 
+def figure_primary(frames):
+    """Macro-F1 per method and stream, mean over seeds (manuscript Fig. 2)."""
+    fig, ax = plt.subplots(figsize=(6.6, 3.1))
+    names = [m for m in CORE if any(m in set(df["method"]) for df in frames.values())]
+    x = np.arange(len(frames)); width = 0.8 / len(names)
+    for i, m in enumerate(names):
+        vals = []
+        for s in frames:
+            df = frames[s]
+            vals.append(_seed_mean(df, m)["f1"].mean()
+                        if m in set(df["method"]) else np.nan)
+        ax.bar(x + i * width, vals, width, label=m)
+    ax.set_xticks(x + 0.4 - width / 2)
+    ax.set_xticklabels([LABEL[s] for s in frames], fontsize=8)
+    ax.set_ylabel("macro-F1")
+    ax.legend(fontsize=6, ncol=3)
+    ax.grid(axis="y", alpha=0.3)
+    fig.tight_layout()
+    fig.savefig(os.path.join(FIGURES_FINAL, "fig_primary.png"), dpi=160)
+    plt.close(fig)
+
+
+def table_ablation():
+    """The 5G Campus mechanism ladder is produced by the legacy ablation
+    harness (Final_Experiments); we surface its saved table unchanged so the
+    manuscript number stays traceable to a results file."""
+    p = os.path.join(os.path.dirname(RAW_FINAL), "..", "..",
+                     "Final_Experiments", "results", "tables",
+                     "table_final_main.csv")
+    p = os.path.abspath(p)
+    if os.path.exists(p):
+        return pd.read_csv(p)
+    return None
+
+
+def figure_ablation():
+    t = table_ablation()
+    if t is None:
+        return
+    order = ["Full Retraining", "RAPT_FULL", "RAPT_EVIDENCE", "RAPT_FLOOR",
+             "RAPT_CHEAP", "RAPT_INCR"]
+    pretty = {"Full Retraining": "Full Retrain.", "RAPT_FULL": "RAPT-Full",
+              "RAPT_EVIDENCE": "RAPT-Evidence", "RAPT_FLOOR": "RAPT-Floor",
+              "RAPT_CHEAP": "RAPT-Cheap", "RAPT_INCR": "RAPT-Incremental"}
+    d = t.set_index("Model")
+    order = [o for o in order if o in d.index]
+    d = d.loc[order]
+    f1 = d["Macro-F1"].str.split(r"\s*\+/-\s*", expand=True, regex=True)[0].astype(float).values
+    cpu = d["Adapt CPU (s)"].str.split(r"\s*\+/-\s*", expand=True, regex=True)[0].astype(float).values
+    fig, ax = plt.subplots(figsize=(6.4, 3.0))
+    xs = np.arange(len(order))
+    ax.plot(xs, f1, "o-", color="#9467bd", label="Macro-F1")
+    ax.set_ylabel("macro-F1", color="#9467bd"); ax.set_ylim(0.94, 1.0)
+    ax.set_xticks(xs); ax.set_xticklabels([pretty[o] for o in order],
+                                          rotation=15, ha="right", fontsize=7)
+    ax2 = ax.twinx()
+    ax2.bar(xs, cpu, 0.5, color="#1f77b4", alpha=0.35, label="adapt CPU")
+    ax2.set_ylabel("adaptation CPU (s)", color="#1f77b4"); ax2.grid(False)
+    ax.set_title("5G Campus mechanism ladder")
+    fig.tight_layout()
+    fig.savefig(os.path.join(FIGURES_FINAL, "fig_ablation.png"), dpi=160)
+    plt.close(fig)
+
+
 def main():
     ensure_dirs()
     frames = load("final")
     if not frames:
         raise SystemExit("no final results yet")
     table_primary(frames)
+    figure_primary(frames)
     figure_cost(frames)
     figure_rolling(frames)
     figure_tradeoff(frames)
     table_detectors(frames)
     figure_detectors(frames)
+    figure_ablation()
     print("figures/tables written to", FIGURES_FINAL, TABLES_FINAL)
 
 
