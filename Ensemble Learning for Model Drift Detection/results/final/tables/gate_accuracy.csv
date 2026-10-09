@@ -1,0 +1,5 @@
+stream,reuse_returns,allows,blocks,bad_allows,bad_blocks,bad_allow_rate,missed_reuse
+5g_nr,15,11,4,11,0,1.0,0
+campus,36,36,0,36,0,1.0,0
+nordicdat,48,39,9,30,3,0.769,3
+ugr16,399,387,12,366,0,0.946,0

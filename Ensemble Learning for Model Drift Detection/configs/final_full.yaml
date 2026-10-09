@@ -1,0 +1,51 @@
+frozen_from_dev: true
+config:
+  guard_lookback: 100
+  guard_margin: 0.0
+  guard_min_rows: 30
+  anchor_share_prefix: 0.5
+  anchor_lookback: 75
+  ed_refit_interval: 3
+  periodic_interval: 5
+  periodic_n_trees: 20
+  periodic_buffer: 300
+  cheap_n_trees: 20
+  cheap_buffer: 300
+  adwin_delta: .nan
+  ph_min_instances: 10.0
+  ph_delta: 0.005
+  ph_threshold: 0.05
+  ph_alpha: 0.9999
+  edd_warning: 2.0
+  edd_drift: 3.0
+  edma_alpha: 0.2
+  edma_k: 2.0
+  detector_min_retrain_interval: 3
+  floor_acc_threshold: 0.6
+  floor_window: 3
+  floor_min_interval: 2
+  enable_floor: false
+dev_notes:
+  ADWIN:
+    adwin_delta: 0.002
+    ph_alpha: .nan
+    ph_delta: .nan
+    ph_min_instances: .nan
+    ph_threshold: .nan
+    _median_events: 0.0
+    _mean_retrains: 0.0
+  Page-Hinkley:
+    adwin_delta: .nan
+    ph_alpha: 0.9999
+    ph_delta: 0.005
+    ph_min_instances: 10.0
+    ph_threshold: 0.05
+    _median_events: 0.0
+    _mean_retrains: 0.0
+  guard:
+    guard_lookback: 100
+    guard_margin: 0.0
+    _dev_f1: 0.7437885033532122
+    _allow: 419
+    _block: 26
+    _allow_rate: 0.9415730337078652

@@ -1,0 +1,6121 @@
+method,window_id,macro_f1,is_retrain,severity,seed,floor
+Frozen,99,1.0,0,0.2,42,0
+Frozen,100,1.0,0,0.2,42,0
+Frozen,101,1.0,0,0.2,42,0
+Frozen,102,1.0,0,0.2,42,0
+Frozen,103,1.0,0,0.2,42,0
+Frozen,104,1.0,0,0.2,42,0
+Frozen,105,1.0,0,0.2,42,0
+Frozen,106,1.0,0,0.2,42,0
+Frozen,107,1.0,0,0.2,42,0
+Frozen,108,1.0,0,0.2,42,0
+Frozen,109,1.0,0,0.2,42,0
+Frozen,110,1.0,0,0.2,42,0
+Frozen,111,1.0,0,0.2,42,0
+Frozen,112,1.0,0,0.2,42,0
+Frozen,113,1.0,0,0.2,42,0
+Frozen,114,1.0,0,0.2,42,0
+Frozen,115,1.0,0,0.2,42,0
+Frozen,116,1.0,0,0.2,42,0
+Frozen,117,1.0,0,0.2,42,0
+Frozen,118,1.0,0,0.2,42,0
+Frozen,119,1.0,0,0.2,42,0
+Frozen,120,1.0,0,0.2,42,0
+Frozen,121,1.0,0,0.2,42,0
+Frozen,122,1.0,0,0.2,42,0
+Frozen,123,1.0,0,0.2,42,0
+Frozen,124,1.0,0,0.2,42,0
+Frozen,125,1.0,0,0.2,42,0
+Frozen,126,1.0,0,0.2,42,0
+Frozen,127,1.0,0,0.2,42,0
+Frozen,128,1.0,0,0.2,42,0
+Frozen,129,1.0,0,0.2,42,0
+Frozen,130,1.0,0,0.2,42,0
+Frozen,131,1.0,0,0.2,42,0
+Frozen,132,1.0,0,0.2,42,0
+Frozen,133,1.0,0,0.2,42,0
+Frozen,134,1.0,0,0.2,42,0
+Frozen,135,1.0,0,0.2,42,0
+Frozen,136,1.0,0,0.2,42,0
+Frozen,137,1.0,0,0.2,42,0
+Frozen,138,1.0,0,0.2,42,0
+Frozen,139,1.0,0,0.2,42,0
+Frozen,140,1.0,0,0.2,42,0
+Frozen,141,1.0,0,0.2,42,0
+Frozen,142,1.0,0,0.2,42,0
+Frozen,143,1.0,0,0.2,42,0
+Frozen,144,1.0,0,0.2,42,0
+Frozen,145,0.0,0,0.2,42,0
+Frozen,146,1.0,0,0.2,42,0
+Frozen,147,1.0,0,0.2,42,0
+Frozen,148,1.0,0,0.2,42,0
+Frozen,149,0.0,0,0.2,42,0
+Event-Driven,99,1.0,0,0.2,42,0
+Event-Driven,100,1.0,0,0.2,42,0
+Event-Driven,101,1.0,0,0.2,42,0
+Event-Driven,102,1.0,0,0.2,42,0
+Event-Driven,103,1.0,0,0.2,42,0
+Event-Driven,104,1.0,0,0.2,42,0
+Event-Driven,105,1.0,0,0.2,42,0
+Event-Driven,106,1.0,0,0.2,42,0
+Event-Driven,107,1.0,0,0.2,42,0
+Event-Driven,108,1.0,0,0.2,42,0
+Event-Driven,109,1.0,0,0.2,42,0
+Event-Driven,110,1.0,0,0.2,42,0
+Event-Driven,111,1.0,0,0.2,42,0
+Event-Driven,112,1.0,0,0.2,42,0
+Event-Driven,113,1.0,0,0.2,42,0
+Event-Driven,114,1.0,0,0.2,42,0
+Event-Driven,115,1.0,0,0.2,42,0
+Event-Driven,116,1.0,0,0.2,42,0
+Event-Driven,117,1.0,0,0.2,42,0
+Event-Driven,118,1.0,0,0.2,42,0
+Event-Driven,119,1.0,0,0.2,42,0
+Event-Driven,120,1.0,0,0.2,42,0
+Event-Driven,121,1.0,0,0.2,42,0
+Event-Driven,122,1.0,0,0.2,42,0
+Event-Driven,123,1.0,0,0.2,42,0
+Event-Driven,124,1.0,0,0.2,42,0
+Event-Driven,125,1.0,0,0.2,42,0
+Event-Driven,126,1.0,0,0.2,42,0
+Event-Driven,127,1.0,0,0.2,42,0
+Event-Driven,128,1.0,0,0.2,42,0
+Event-Driven,129,1.0,0,0.2,42,0
+Event-Driven,130,1.0,0,0.2,42,0
+Event-Driven,131,1.0,0,0.2,42,0
+Event-Driven,132,1.0,0,0.2,42,0
+Event-Driven,133,1.0,0,0.2,42,0
+Event-Driven,134,1.0,0,0.2,42,0
+Event-Driven,135,1.0,0,0.2,42,0
+Event-Driven,136,1.0,0,0.2,42,0
+Event-Driven,137,1.0,0,0.2,42,0
+Event-Driven,138,1.0,0,0.2,42,0
+Event-Driven,139,1.0,0,0.2,42,0
+Event-Driven,140,1.0,0,0.2,42,0
+Event-Driven,141,1.0,0,0.2,42,0
+Event-Driven,142,1.0,0,0.2,42,0
+Event-Driven,143,1.0,0,0.2,42,0
+Event-Driven,144,1.0,0,0.2,42,0
+Event-Driven,145,0.0,0,0.2,42,0
+Event-Driven,146,1.0,0,0.2,42,0
+Event-Driven,147,1.0,0,0.2,42,0
+Event-Driven,148,1.0,0,0.2,42,0
+Event-Driven,149,0.0,0,0.2,42,0
+Full Retraining,99,1.0,0,0.2,42,0
+Full Retraining,100,1.0,0,0.2,42,0
+Full Retraining,101,1.0,0,0.2,42,0
+Full Retraining,102,1.0,0,0.2,42,0
+Full Retraining,103,1.0,0,0.2,42,0
+Full Retraining,104,1.0,0,0.2,42,0
+Full Retraining,105,1.0,0,0.2,42,0
+Full Retraining,106,1.0,0,0.2,42,0
+Full Retraining,107,1.0,0,0.2,42,0
+Full Retraining,108,1.0,0,0.2,42,0
+Full Retraining,109,1.0,0,0.2,42,0
+Full Retraining,110,1.0,0,0.2,42,0
+Full Retraining,111,1.0,0,0.2,42,0
+Full Retraining,112,1.0,0,0.2,42,0
+Full Retraining,113,1.0,0,0.2,42,0
+Full Retraining,114,1.0,0,0.2,42,0
+Full Retraining,115,1.0,0,0.2,42,0
+Full Retraining,116,1.0,0,0.2,42,0
+Full Retraining,117,1.0,0,0.2,42,0
+Full Retraining,118,1.0,0,0.2,42,0
+Full Retraining,119,1.0,0,0.2,42,0
+Full Retraining,120,1.0,0,0.2,42,0
+Full Retraining,121,1.0,0,0.2,42,0
+Full Retraining,122,1.0,0,0.2,42,0
+Full Retraining,123,1.0,0,0.2,42,0
+Full Retraining,124,1.0,0,0.2,42,0
+Full Retraining,125,1.0,0,0.2,42,0
+Full Retraining,126,1.0,0,0.2,42,0
+Full Retraining,127,1.0,0,0.2,42,0
+Full Retraining,128,1.0,0,0.2,42,0
+Full Retraining,129,1.0,0,0.2,42,0
+Full Retraining,130,1.0,0,0.2,42,0
+Full Retraining,131,1.0,0,0.2,42,0
+Full Retraining,132,1.0,0,0.2,42,0
+Full Retraining,133,1.0,0,0.2,42,0
+Full Retraining,134,1.0,0,0.2,42,0
+Full Retraining,135,1.0,0,0.2,42,0
+Full Retraining,136,1.0,0,0.2,42,0
+Full Retraining,137,1.0,0,0.2,42,0
+Full Retraining,138,1.0,0,0.2,42,0
+Full Retraining,139,1.0,0,0.2,42,0
+Full Retraining,140,1.0,0,0.2,42,0
+Full Retraining,141,1.0,0,0.2,42,0
+Full Retraining,142,1.0,0,0.2,42,0
+Full Retraining,143,1.0,0,0.2,42,0
+Full Retraining,144,1.0,0,0.2,42,0
+Full Retraining,145,0.0,0,0.2,42,0
+Full Retraining,146,1.0,0,0.2,42,0
+Full Retraining,147,1.0,0,0.2,42,0
+Full Retraining,148,1.0,0,0.2,42,0
+Full Retraining,149,0.0,0,0.2,42,0
+RAPT,99,1.0,0,0.2,42,0
+RAPT,100,1.0,0,0.2,42,0
+RAPT,101,1.0,0,0.2,42,0
+RAPT,102,1.0,0,0.2,42,0
+RAPT,103,1.0,0,0.2,42,0
+RAPT,104,1.0,0,0.2,42,0
+RAPT,105,1.0,0,0.2,42,0
+RAPT,106,1.0,0,0.2,42,0
+RAPT,107,1.0,0,0.2,42,0
+RAPT,108,1.0,0,0.2,42,0
+RAPT,109,1.0,0,0.2,42,0
+RAPT,110,1.0,0,0.2,42,0
+RAPT,111,1.0,0,0.2,42,0
+RAPT,112,1.0,0,0.2,42,0
+RAPT,113,1.0,0,0.2,42,0
+RAPT,114,1.0,0,0.2,42,0
+RAPT,115,1.0,0,0.2,42,0
+RAPT,116,1.0,0,0.2,42,0
+RAPT,117,1.0,0,0.2,42,0
+RAPT,118,1.0,0,0.2,42,0
+RAPT,119,1.0,0,0.2,42,0
+RAPT,120,1.0,0,0.2,42,0
+RAPT,121,1.0,0,0.2,42,0
+RAPT,122,1.0,0,0.2,42,0
+RAPT,123,1.0,0,0.2,42,0
+RAPT,124,1.0,0,0.2,42,0
+RAPT,125,1.0,0,0.2,42,0
+RAPT,126,1.0,0,0.2,42,0
+RAPT,127,1.0,0,0.2,42,0
+RAPT,128,1.0,0,0.2,42,0
+RAPT,129,1.0,0,0.2,42,0
+RAPT,130,1.0,0,0.2,42,0
+RAPT,131,1.0,0,0.2,42,0
+RAPT,132,1.0,0,0.2,42,0
+RAPT,133,1.0,0,0.2,42,0
+RAPT,134,1.0,0,0.2,42,0
+RAPT,135,1.0,0,0.2,42,0
+RAPT,136,1.0,0,0.2,42,0
+RAPT,137,1.0,0,0.2,42,0
+RAPT,138,1.0,0,0.2,42,0
+RAPT,139,1.0,0,0.2,42,0
+RAPT,140,1.0,0,0.2,42,0
+RAPT,141,1.0,0,0.2,42,0
+RAPT,142,1.0,0,0.2,42,0
+RAPT,143,1.0,0,0.2,42,0
+RAPT,144,1.0,0,0.2,42,0
+RAPT,145,0.0,0,0.2,42,0
+RAPT,146,1.0,0,0.2,42,0
+RAPT,147,1.0,0,0.2,42,0
+RAPT,148,1.0,0,0.2,42,0
+RAPT,149,0.0,0,0.2,42,0
+Frozen,99,1.0,0,0.2,42,1
+Frozen,100,1.0,0,0.2,42,1
+Frozen,101,1.0,0,0.2,42,1
+Frozen,102,1.0,0,0.2,42,1
+Frozen,103,1.0,0,0.2,42,1
+Frozen,104,1.0,0,0.2,42,1
+Frozen,105,1.0,0,0.2,42,1
+Frozen,106,1.0,0,0.2,42,1
+Frozen,107,1.0,0,0.2,42,1
+Frozen,108,1.0,0,0.2,42,1
+Frozen,109,1.0,0,0.2,42,1
+Frozen,110,1.0,0,0.2,42,1
+Frozen,111,1.0,0,0.2,42,1
+Frozen,112,1.0,0,0.2,42,1
+Frozen,113,1.0,0,0.2,42,1
+Frozen,114,1.0,0,0.2,42,1
+Frozen,115,1.0,0,0.2,42,1
+Frozen,116,1.0,0,0.2,42,1
+Frozen,117,1.0,0,0.2,42,1
+Frozen,118,1.0,0,0.2,42,1
+Frozen,119,1.0,0,0.2,42,1
+Frozen,120,1.0,0,0.2,42,1
+Frozen,121,1.0,0,0.2,42,1
+Frozen,122,1.0,0,0.2,42,1
+Frozen,123,1.0,0,0.2,42,1
+Frozen,124,1.0,0,0.2,42,1
+Frozen,125,1.0,0,0.2,42,1
+Frozen,126,1.0,0,0.2,42,1
+Frozen,127,1.0,0,0.2,42,1
+Frozen,128,1.0,0,0.2,42,1
+Frozen,129,1.0,0,0.2,42,1
+Frozen,130,1.0,0,0.2,42,1
+Frozen,131,1.0,0,0.2,42,1
+Frozen,132,1.0,0,0.2,42,1
+Frozen,133,1.0,0,0.2,42,1
+Frozen,134,1.0,0,0.2,42,1
+Frozen,135,1.0,0,0.2,42,1
+Frozen,136,1.0,0,0.2,42,1
+Frozen,137,1.0,0,0.2,42,1
+Frozen,138,1.0,0,0.2,42,1
+Frozen,139,1.0,0,0.2,42,1
+Frozen,140,1.0,0,0.2,42,1
+Frozen,141,1.0,0,0.2,42,1
+Frozen,142,1.0,0,0.2,42,1
+Frozen,143,1.0,0,0.2,42,1
+Frozen,144,1.0,0,0.2,42,1
+Frozen,145,0.0,0,0.2,42,1
+Frozen,146,1.0,0,0.2,42,1
+Frozen,147,1.0,0,0.2,42,1
+Frozen,148,1.0,0,0.2,42,1
+Frozen,149,0.0,0,0.2,42,1
+Event-Driven,99,1.0,0,0.2,42,1
+Event-Driven,100,1.0,0,0.2,42,1
+Event-Driven,101,1.0,0,0.2,42,1
+Event-Driven,102,1.0,0,0.2,42,1
+Event-Driven,103,1.0,0,0.2,42,1
+Event-Driven,104,1.0,0,0.2,42,1
+Event-Driven,105,1.0,0,0.2,42,1
+Event-Driven,106,1.0,0,0.2,42,1
+Event-Driven,107,1.0,0,0.2,42,1
+Event-Driven,108,1.0,0,0.2,42,1
+Event-Driven,109,1.0,0,0.2,42,1
+Event-Driven,110,1.0,0,0.2,42,1
+Event-Driven,111,1.0,0,0.2,42,1
+Event-Driven,112,1.0,0,0.2,42,1
+Event-Driven,113,1.0,0,0.2,42,1
+Event-Driven,114,1.0,0,0.2,42,1
+Event-Driven,115,1.0,0,0.2,42,1
+Event-Driven,116,1.0,0,0.2,42,1
+Event-Driven,117,1.0,0,0.2,42,1
+Event-Driven,118,1.0,0,0.2,42,1
+Event-Driven,119,1.0,0,0.2,42,1
+Event-Driven,120,1.0,0,0.2,42,1
+Event-Driven,121,1.0,0,0.2,42,1
+Event-Driven,122,1.0,0,0.2,42,1
+Event-Driven,123,1.0,0,0.2,42,1
+Event-Driven,124,1.0,0,0.2,42,1
+Event-Driven,125,1.0,0,0.2,42,1
+Event-Driven,126,1.0,0,0.2,42,1
+Event-Driven,127,1.0,0,0.2,42,1
+Event-Driven,128,1.0,0,0.2,42,1
+Event-Driven,129,1.0,0,0.2,42,1
+Event-Driven,130,1.0,0,0.2,42,1
+Event-Driven,131,1.0,0,0.2,42,1
+Event-Driven,132,1.0,0,0.2,42,1
+Event-Driven,133,1.0,0,0.2,42,1
+Event-Driven,134,1.0,0,0.2,42,1
+Event-Driven,135,1.0,0,0.2,42,1
+Event-Driven,136,1.0,0,0.2,42,1
+Event-Driven,137,1.0,0,0.2,42,1
+Event-Driven,138,1.0,0,0.2,42,1
+Event-Driven,139,1.0,0,0.2,42,1
+Event-Driven,140,1.0,0,0.2,42,1
+Event-Driven,141,1.0,0,0.2,42,1
+Event-Driven,142,1.0,0,0.2,42,1
+Event-Driven,143,1.0,0,0.2,42,1
+Event-Driven,144,1.0,0,0.2,42,1
+Event-Driven,145,0.0,0,0.2,42,1
+Event-Driven,146,1.0,0,0.2,42,1
+Event-Driven,147,1.0,0,0.2,42,1
+Event-Driven,148,1.0,0,0.2,42,1
+Event-Driven,149,0.0,0,0.2,42,1
+Full Retraining,99,1.0,0,0.2,42,1
+Full Retraining,100,1.0,0,0.2,42,1
+Full Retraining,101,1.0,0,0.2,42,1
+Full Retraining,102,1.0,0,0.2,42,1
+Full Retraining,103,1.0,0,0.2,42,1
+Full Retraining,104,1.0,0,0.2,42,1
+Full Retraining,105,1.0,0,0.2,42,1
+Full Retraining,106,1.0,0,0.2,42,1
+Full Retraining,107,1.0,0,0.2,42,1
+Full Retraining,108,1.0,0,0.2,42,1
+Full Retraining,109,1.0,0,0.2,42,1
+Full Retraining,110,1.0,0,0.2,42,1
+Full Retraining,111,1.0,0,0.2,42,1
+Full Retraining,112,1.0,0,0.2,42,1
+Full Retraining,113,1.0,0,0.2,42,1
+Full Retraining,114,1.0,0,0.2,42,1
+Full Retraining,115,1.0,0,0.2,42,1
+Full Retraining,116,1.0,0,0.2,42,1
+Full Retraining,117,1.0,0,0.2,42,1
+Full Retraining,118,1.0,0,0.2,42,1
+Full Retraining,119,1.0,0,0.2,42,1
+Full Retraining,120,1.0,0,0.2,42,1
+Full Retraining,121,1.0,0,0.2,42,1
+Full Retraining,122,1.0,0,0.2,42,1
+Full Retraining,123,1.0,0,0.2,42,1
+Full Retraining,124,1.0,0,0.2,42,1
+Full Retraining,125,1.0,0,0.2,42,1
+Full Retraining,126,1.0,0,0.2,42,1
+Full Retraining,127,1.0,0,0.2,42,1
+Full Retraining,128,1.0,0,0.2,42,1
+Full Retraining,129,1.0,0,0.2,42,1
+Full Retraining,130,1.0,0,0.2,42,1
+Full Retraining,131,1.0,0,0.2,42,1
+Full Retraining,132,1.0,0,0.2,42,1
+Full Retraining,133,1.0,0,0.2,42,1
+Full Retraining,134,1.0,0,0.2,42,1
+Full Retraining,135,1.0,0,0.2,42,1
+Full Retraining,136,1.0,0,0.2,42,1
+Full Retraining,137,1.0,0,0.2,42,1
+Full Retraining,138,1.0,0,0.2,42,1
+Full Retraining,139,1.0,0,0.2,42,1
+Full Retraining,140,1.0,0,0.2,42,1
+Full Retraining,141,1.0,0,0.2,42,1
+Full Retraining,142,1.0,0,0.2,42,1
+Full Retraining,143,1.0,0,0.2,42,1
+Full Retraining,144,1.0,0,0.2,42,1
+Full Retraining,145,0.0,0,0.2,42,1
+Full Retraining,146,1.0,0,0.2,42,1
+Full Retraining,147,1.0,0,0.2,42,1
+Full Retraining,148,1.0,0,0.2,42,1
+Full Retraining,149,0.0,0,0.2,42,1
+RAPT,99,1.0,0,0.2,42,1
+RAPT,100,1.0,0,0.2,42,1
+RAPT,101,1.0,0,0.2,42,1
+RAPT,102,1.0,0,0.2,42,1
+RAPT,103,1.0,0,0.2,42,1
+RAPT,104,1.0,0,0.2,42,1
+RAPT,105,1.0,0,0.2,42,1
+RAPT,106,1.0,0,0.2,42,1
+RAPT,107,1.0,0,0.2,42,1
+RAPT,108,1.0,0,0.2,42,1
+RAPT,109,1.0,0,0.2,42,1
+RAPT,110,1.0,0,0.2,42,1
+RAPT,111,1.0,0,0.2,42,1
+RAPT,112,1.0,0,0.2,42,1
+RAPT,113,1.0,0,0.2,42,1
+RAPT,114,1.0,0,0.2,42,1
+RAPT,115,1.0,0,0.2,42,1
+RAPT,116,1.0,0,0.2,42,1
+RAPT,117,1.0,0,0.2,42,1
+RAPT,118,1.0,0,0.2,42,1
+RAPT,119,1.0,0,0.2,42,1
+RAPT,120,1.0,0,0.2,42,1
+RAPT,121,1.0,0,0.2,42,1
+RAPT,122,1.0,0,0.2,42,1
+RAPT,123,1.0,0,0.2,42,1
+RAPT,124,1.0,0,0.2,42,1
+RAPT,125,1.0,0,0.2,42,1
+RAPT,126,1.0,0,0.2,42,1
+RAPT,127,1.0,0,0.2,42,1
+RAPT,128,1.0,0,0.2,42,1
+RAPT,129,1.0,0,0.2,42,1
+RAPT,130,1.0,0,0.2,42,1
+RAPT,131,1.0,0,0.2,42,1
+RAPT,132,1.0,0,0.2,42,1
+RAPT,133,1.0,0,0.2,42,1
+RAPT,134,1.0,0,0.2,42,1
+RAPT,135,1.0,0,0.2,42,1
+RAPT,136,1.0,0,0.2,42,1
+RAPT,137,1.0,0,0.2,42,1
+RAPT,138,1.0,0,0.2,42,1
+RAPT,139,1.0,0,0.2,42,1
+RAPT,140,1.0,0,0.2,42,1
+RAPT,141,1.0,0,0.2,42,1
+RAPT,142,1.0,0,0.2,42,1
+RAPT,143,1.0,0,0.2,42,1
+RAPT,144,1.0,0,0.2,42,1
+RAPT,145,0.0,0,0.2,42,1
+RAPT,146,1.0,0,0.2,42,1
+RAPT,147,1.0,0,0.2,42,1
+RAPT,148,1.0,0,0.2,42,1
+RAPT,149,0.0,0,0.2,42,1
+Frozen,99,1.0,0,0.2,43,0
+Frozen,100,1.0,0,0.2,43,0
+Frozen,101,1.0,0,0.2,43,0
+Frozen,102,1.0,0,0.2,43,0
+Frozen,103,1.0,0,0.2,43,0
+Frozen,104,1.0,0,0.2,43,0
+Frozen,105,1.0,0,0.2,43,0
+Frozen,106,1.0,0,0.2,43,0
+Frozen,107,1.0,0,0.2,43,0
+Frozen,108,1.0,0,0.2,43,0
+Frozen,109,1.0,0,0.2,43,0
+Frozen,110,1.0,0,0.2,43,0
+Frozen,111,1.0,0,0.2,43,0
+Frozen,112,1.0,0,0.2,43,0
+Frozen,113,1.0,0,0.2,43,0
+Frozen,114,1.0,0,0.2,43,0
+Frozen,115,1.0,0,0.2,43,0
+Frozen,116,1.0,0,0.2,43,0
+Frozen,117,1.0,0,0.2,43,0
+Frozen,118,1.0,0,0.2,43,0
+Frozen,119,1.0,0,0.2,43,0
+Frozen,120,1.0,0,0.2,43,0
+Frozen,121,1.0,0,0.2,43,0
+Frozen,122,1.0,0,0.2,43,0
+Frozen,123,1.0,0,0.2,43,0
+Frozen,124,1.0,0,0.2,43,0
+Frozen,125,1.0,0,0.2,43,0
+Frozen,126,1.0,0,0.2,43,0
+Frozen,127,1.0,0,0.2,43,0
+Frozen,128,1.0,0,0.2,43,0
+Frozen,129,1.0,0,0.2,43,0
+Frozen,130,1.0,0,0.2,43,0
+Frozen,131,1.0,0,0.2,43,0
+Frozen,132,1.0,0,0.2,43,0
+Frozen,133,1.0,0,0.2,43,0
+Frozen,134,1.0,0,0.2,43,0
+Frozen,135,1.0,0,0.2,43,0
+Frozen,136,1.0,0,0.2,43,0
+Frozen,137,1.0,0,0.2,43,0
+Frozen,138,1.0,0,0.2,43,0
+Frozen,139,1.0,0,0.2,43,0
+Frozen,140,1.0,0,0.2,43,0
+Frozen,141,1.0,0,0.2,43,0
+Frozen,142,1.0,0,0.2,43,0
+Frozen,143,1.0,0,0.2,43,0
+Frozen,144,1.0,0,0.2,43,0
+Frozen,145,0.0,0,0.2,43,0
+Frozen,146,1.0,0,0.2,43,0
+Frozen,147,1.0,0,0.2,43,0
+Frozen,148,1.0,0,0.2,43,0
+Frozen,149,0.0,0,0.2,43,0
+Event-Driven,99,1.0,0,0.2,43,0
+Event-Driven,100,1.0,0,0.2,43,0
+Event-Driven,101,1.0,0,0.2,43,0
+Event-Driven,102,1.0,0,0.2,43,0
+Event-Driven,103,1.0,0,0.2,43,0
+Event-Driven,104,1.0,0,0.2,43,0
+Event-Driven,105,1.0,0,0.2,43,0
+Event-Driven,106,1.0,0,0.2,43,0
+Event-Driven,107,1.0,0,0.2,43,0
+Event-Driven,108,1.0,0,0.2,43,0
+Event-Driven,109,1.0,0,0.2,43,0
+Event-Driven,110,1.0,0,0.2,43,0
+Event-Driven,111,1.0,0,0.2,43,0
+Event-Driven,112,1.0,0,0.2,43,0
+Event-Driven,113,1.0,0,0.2,43,0
+Event-Driven,114,1.0,0,0.2,43,0
+Event-Driven,115,1.0,0,0.2,43,0
+Event-Driven,116,1.0,0,0.2,43,0
+Event-Driven,117,1.0,0,0.2,43,0
+Event-Driven,118,1.0,0,0.2,43,0
+Event-Driven,119,1.0,0,0.2,43,0
+Event-Driven,120,1.0,0,0.2,43,0
+Event-Driven,121,1.0,0,0.2,43,0
+Event-Driven,122,1.0,0,0.2,43,0
+Event-Driven,123,1.0,0,0.2,43,0
+Event-Driven,124,1.0,0,0.2,43,0
+Event-Driven,125,1.0,0,0.2,43,0
+Event-Driven,126,1.0,0,0.2,43,0
+Event-Driven,127,1.0,0,0.2,43,0
+Event-Driven,128,1.0,0,0.2,43,0
+Event-Driven,129,1.0,0,0.2,43,0
+Event-Driven,130,1.0,0,0.2,43,0
+Event-Driven,131,1.0,0,0.2,43,0
+Event-Driven,132,1.0,0,0.2,43,0
+Event-Driven,133,1.0,0,0.2,43,0
+Event-Driven,134,1.0,0,0.2,43,0
+Event-Driven,135,1.0,0,0.2,43,0
+Event-Driven,136,1.0,0,0.2,43,0
+Event-Driven,137,1.0,0,0.2,43,0
+Event-Driven,138,1.0,0,0.2,43,0
+Event-Driven,139,1.0,0,0.2,43,0
+Event-Driven,140,1.0,0,0.2,43,0
+Event-Driven,141,1.0,0,0.2,43,0
+Event-Driven,142,1.0,0,0.2,43,0
+Event-Driven,143,1.0,0,0.2,43,0
+Event-Driven,144,1.0,0,0.2,43,0
+Event-Driven,145,0.0,0,0.2,43,0
+Event-Driven,146,1.0,0,0.2,43,0
+Event-Driven,147,1.0,0,0.2,43,0
+Event-Driven,148,1.0,0,0.2,43,0
+Event-Driven,149,0.0,0,0.2,43,0
+Full Retraining,99,1.0,0,0.2,43,0
+Full Retraining,100,1.0,0,0.2,43,0
+Full Retraining,101,1.0,0,0.2,43,0
+Full Retraining,102,1.0,0,0.2,43,0
+Full Retraining,103,1.0,0,0.2,43,0
+Full Retraining,104,1.0,0,0.2,43,0
+Full Retraining,105,1.0,0,0.2,43,0
+Full Retraining,106,1.0,0,0.2,43,0
+Full Retraining,107,1.0,0,0.2,43,0
+Full Retraining,108,1.0,0,0.2,43,0
+Full Retraining,109,1.0,0,0.2,43,0
+Full Retraining,110,1.0,0,0.2,43,0
+Full Retraining,111,1.0,0,0.2,43,0
+Full Retraining,112,1.0,0,0.2,43,0
+Full Retraining,113,1.0,0,0.2,43,0
+Full Retraining,114,1.0,0,0.2,43,0
+Full Retraining,115,1.0,0,0.2,43,0
+Full Retraining,116,1.0,0,0.2,43,0
+Full Retraining,117,1.0,0,0.2,43,0
+Full Retraining,118,1.0,0,0.2,43,0
+Full Retraining,119,1.0,0,0.2,43,0
+Full Retraining,120,1.0,0,0.2,43,0
+Full Retraining,121,1.0,0,0.2,43,0
+Full Retraining,122,1.0,0,0.2,43,0
+Full Retraining,123,1.0,0,0.2,43,0
+Full Retraining,124,1.0,0,0.2,43,0
+Full Retraining,125,1.0,0,0.2,43,0
+Full Retraining,126,1.0,0,0.2,43,0
+Full Retraining,127,1.0,0,0.2,43,0
+Full Retraining,128,1.0,0,0.2,43,0
+Full Retraining,129,1.0,0,0.2,43,0
+Full Retraining,130,1.0,0,0.2,43,0
+Full Retraining,131,1.0,0,0.2,43,0
+Full Retraining,132,1.0,0,0.2,43,0
+Full Retraining,133,1.0,0,0.2,43,0
+Full Retraining,134,1.0,0,0.2,43,0
+Full Retraining,135,1.0,0,0.2,43,0
+Full Retraining,136,1.0,0,0.2,43,0
+Full Retraining,137,1.0,0,0.2,43,0
+Full Retraining,138,1.0,0,0.2,43,0
+Full Retraining,139,1.0,0,0.2,43,0
+Full Retraining,140,1.0,0,0.2,43,0
+Full Retraining,141,1.0,0,0.2,43,0
+Full Retraining,142,1.0,0,0.2,43,0
+Full Retraining,143,1.0,0,0.2,43,0
+Full Retraining,144,1.0,0,0.2,43,0
+Full Retraining,145,0.0,0,0.2,43,0
+Full Retraining,146,1.0,0,0.2,43,0
+Full Retraining,147,1.0,0,0.2,43,0
+Full Retraining,148,1.0,0,0.2,43,0
+Full Retraining,149,0.0,0,0.2,43,0
+RAPT,99,1.0,0,0.2,43,0
+RAPT,100,1.0,0,0.2,43,0
+RAPT,101,1.0,0,0.2,43,0
+RAPT,102,1.0,0,0.2,43,0
+RAPT,103,1.0,0,0.2,43,0
+RAPT,104,1.0,0,0.2,43,0
+RAPT,105,1.0,0,0.2,43,0
+RAPT,106,1.0,0,0.2,43,0
+RAPT,107,1.0,0,0.2,43,0
+RAPT,108,1.0,0,0.2,43,0
+RAPT,109,1.0,0,0.2,43,0
+RAPT,110,1.0,0,0.2,43,0
+RAPT,111,1.0,0,0.2,43,0
+RAPT,112,1.0,0,0.2,43,0
+RAPT,113,1.0,0,0.2,43,0
+RAPT,114,1.0,0,0.2,43,0
+RAPT,115,1.0,0,0.2,43,0
+RAPT,116,1.0,0,0.2,43,0
+RAPT,117,1.0,0,0.2,43,0
+RAPT,118,1.0,0,0.2,43,0
+RAPT,119,1.0,0,0.2,43,0
+RAPT,120,1.0,0,0.2,43,0
+RAPT,121,1.0,0,0.2,43,0
+RAPT,122,1.0,0,0.2,43,0
+RAPT,123,1.0,0,0.2,43,0
+RAPT,124,1.0,0,0.2,43,0
+RAPT,125,1.0,0,0.2,43,0
+RAPT,126,1.0,0,0.2,43,0
+RAPT,127,1.0,0,0.2,43,0
+RAPT,128,1.0,0,0.2,43,0
+RAPT,129,1.0,0,0.2,43,0
+RAPT,130,1.0,0,0.2,43,0
+RAPT,131,1.0,0,0.2,43,0
+RAPT,132,1.0,0,0.2,43,0
+RAPT,133,1.0,0,0.2,43,0
+RAPT,134,1.0,0,0.2,43,0
+RAPT,135,1.0,0,0.2,43,0
+RAPT,136,1.0,0,0.2,43,0
+RAPT,137,1.0,0,0.2,43,0
+RAPT,138,1.0,0,0.2,43,0
+RAPT,139,1.0,0,0.2,43,0
+RAPT,140,1.0,0,0.2,43,0
+RAPT,141,1.0,0,0.2,43,0
+RAPT,142,1.0,0,0.2,43,0
+RAPT,143,1.0,0,0.2,43,0
+RAPT,144,1.0,0,0.2,43,0
+RAPT,145,0.0,0,0.2,43,0
+RAPT,146,1.0,0,0.2,43,0
+RAPT,147,1.0,0,0.2,43,0
+RAPT,148,1.0,0,0.2,43,0
+RAPT,149,0.0,0,0.2,43,0
+Frozen,99,1.0,0,0.2,43,1
+Frozen,100,1.0,0,0.2,43,1
+Frozen,101,1.0,0,0.2,43,1
+Frozen,102,1.0,0,0.2,43,1
+Frozen,103,1.0,0,0.2,43,1
+Frozen,104,1.0,0,0.2,43,1
+Frozen,105,1.0,0,0.2,43,1
+Frozen,106,1.0,0,0.2,43,1
+Frozen,107,1.0,0,0.2,43,1
+Frozen,108,1.0,0,0.2,43,1
+Frozen,109,1.0,0,0.2,43,1
+Frozen,110,1.0,0,0.2,43,1
+Frozen,111,1.0,0,0.2,43,1
+Frozen,112,1.0,0,0.2,43,1
+Frozen,113,1.0,0,0.2,43,1
+Frozen,114,1.0,0,0.2,43,1
+Frozen,115,1.0,0,0.2,43,1
+Frozen,116,1.0,0,0.2,43,1
+Frozen,117,1.0,0,0.2,43,1
+Frozen,118,1.0,0,0.2,43,1
+Frozen,119,1.0,0,0.2,43,1
+Frozen,120,1.0,0,0.2,43,1
+Frozen,121,1.0,0,0.2,43,1
+Frozen,122,1.0,0,0.2,43,1
+Frozen,123,1.0,0,0.2,43,1
+Frozen,124,1.0,0,0.2,43,1
+Frozen,125,1.0,0,0.2,43,1
+Frozen,126,1.0,0,0.2,43,1
+Frozen,127,1.0,0,0.2,43,1
+Frozen,128,1.0,0,0.2,43,1
+Frozen,129,1.0,0,0.2,43,1
+Frozen,130,1.0,0,0.2,43,1
+Frozen,131,1.0,0,0.2,43,1
+Frozen,132,1.0,0,0.2,43,1
+Frozen,133,1.0,0,0.2,43,1
+Frozen,134,1.0,0,0.2,43,1
+Frozen,135,1.0,0,0.2,43,1
+Frozen,136,1.0,0,0.2,43,1
+Frozen,137,1.0,0,0.2,43,1
+Frozen,138,1.0,0,0.2,43,1
+Frozen,139,1.0,0,0.2,43,1
+Frozen,140,1.0,0,0.2,43,1
+Frozen,141,1.0,0,0.2,43,1
+Frozen,142,1.0,0,0.2,43,1
+Frozen,143,1.0,0,0.2,43,1
+Frozen,144,1.0,0,0.2,43,1
+Frozen,145,0.0,0,0.2,43,1
+Frozen,146,1.0,0,0.2,43,1
+Frozen,147,1.0,0,0.2,43,1
+Frozen,148,1.0,0,0.2,43,1
+Frozen,149,0.0,0,0.2,43,1
+Event-Driven,99,1.0,0,0.2,43,1
+Event-Driven,100,1.0,0,0.2,43,1
+Event-Driven,101,1.0,0,0.2,43,1
+Event-Driven,102,1.0,0,0.2,43,1
+Event-Driven,103,1.0,0,0.2,43,1
+Event-Driven,104,1.0,0,0.2,43,1
+Event-Driven,105,1.0,0,0.2,43,1
+Event-Driven,106,1.0,0,0.2,43,1
+Event-Driven,107,1.0,0,0.2,43,1
+Event-Driven,108,1.0,0,0.2,43,1
+Event-Driven,109,1.0,0,0.2,43,1
+Event-Driven,110,1.0,0,0.2,43,1
+Event-Driven,111,1.0,0,0.2,43,1
+Event-Driven,112,1.0,0,0.2,43,1
+Event-Driven,113,1.0,0,0.2,43,1
+Event-Driven,114,1.0,0,0.2,43,1
+Event-Driven,115,1.0,0,0.2,43,1
+Event-Driven,116,1.0,0,0.2,43,1
+Event-Driven,117,1.0,0,0.2,43,1
+Event-Driven,118,1.0,0,0.2,43,1
+Event-Driven,119,1.0,0,0.2,43,1
+Event-Driven,120,1.0,0,0.2,43,1
+Event-Driven,121,1.0,0,0.2,43,1
+Event-Driven,122,1.0,0,0.2,43,1
+Event-Driven,123,1.0,0,0.2,43,1
+Event-Driven,124,1.0,0,0.2,43,1
+Event-Driven,125,1.0,0,0.2,43,1
+Event-Driven,126,1.0,0,0.2,43,1
+Event-Driven,127,1.0,0,0.2,43,1
+Event-Driven,128,1.0,0,0.2,43,1
+Event-Driven,129,1.0,0,0.2,43,1
+Event-Driven,130,1.0,0,0.2,43,1
+Event-Driven,131,1.0,0,0.2,43,1
+Event-Driven,132,1.0,0,0.2,43,1
+Event-Driven,133,1.0,0,0.2,43,1
+Event-Driven,134,1.0,0,0.2,43,1
+Event-Driven,135,1.0,0,0.2,43,1
+Event-Driven,136,1.0,0,0.2,43,1
+Event-Driven,137,1.0,0,0.2,43,1
+Event-Driven,138,1.0,0,0.2,43,1
+Event-Driven,139,1.0,0,0.2,43,1
+Event-Driven,140,1.0,0,0.2,43,1
+Event-Driven,141,1.0,0,0.2,43,1
+Event-Driven,142,1.0,0,0.2,43,1
+Event-Driven,143,1.0,0,0.2,43,1
+Event-Driven,144,1.0,0,0.2,43,1
+Event-Driven,145,0.0,0,0.2,43,1
+Event-Driven,146,1.0,0,0.2,43,1
+Event-Driven,147,1.0,0,0.2,43,1
+Event-Driven,148,1.0,0,0.2,43,1
+Event-Driven,149,0.0,0,0.2,43,1
+Full Retraining,99,1.0,0,0.2,43,1
+Full Retraining,100,1.0,0,0.2,43,1
+Full Retraining,101,1.0,0,0.2,43,1
+Full Retraining,102,1.0,0,0.2,43,1
+Full Retraining,103,1.0,0,0.2,43,1
+Full Retraining,104,1.0,0,0.2,43,1
+Full Retraining,105,1.0,0,0.2,43,1
+Full Retraining,106,1.0,0,0.2,43,1
+Full Retraining,107,1.0,0,0.2,43,1
+Full Retraining,108,1.0,0,0.2,43,1
+Full Retraining,109,1.0,0,0.2,43,1
+Full Retraining,110,1.0,0,0.2,43,1
+Full Retraining,111,1.0,0,0.2,43,1
+Full Retraining,112,1.0,0,0.2,43,1
+Full Retraining,113,1.0,0,0.2,43,1
+Full Retraining,114,1.0,0,0.2,43,1
+Full Retraining,115,1.0,0,0.2,43,1
+Full Retraining,116,1.0,0,0.2,43,1
+Full Retraining,117,1.0,0,0.2,43,1
+Full Retraining,118,1.0,0,0.2,43,1
+Full Retraining,119,1.0,0,0.2,43,1
+Full Retraining,120,1.0,0,0.2,43,1
+Full Retraining,121,1.0,0,0.2,43,1
+Full Retraining,122,1.0,0,0.2,43,1
+Full Retraining,123,1.0,0,0.2,43,1
+Full Retraining,124,1.0,0,0.2,43,1
+Full Retraining,125,1.0,0,0.2,43,1
+Full Retraining,126,1.0,0,0.2,43,1
+Full Retraining,127,1.0,0,0.2,43,1
+Full Retraining,128,1.0,0,0.2,43,1
+Full Retraining,129,1.0,0,0.2,43,1
+Full Retraining,130,1.0,0,0.2,43,1
+Full Retraining,131,1.0,0,0.2,43,1
+Full Retraining,132,1.0,0,0.2,43,1
+Full Retraining,133,1.0,0,0.2,43,1
+Full Retraining,134,1.0,0,0.2,43,1
+Full Retraining,135,1.0,0,0.2,43,1
+Full Retraining,136,1.0,0,0.2,43,1
+Full Retraining,137,1.0,0,0.2,43,1
+Full Retraining,138,1.0,0,0.2,43,1
+Full Retraining,139,1.0,0,0.2,43,1
+Full Retraining,140,1.0,0,0.2,43,1
+Full Retraining,141,1.0,0,0.2,43,1
+Full Retraining,142,1.0,0,0.2,43,1
+Full Retraining,143,1.0,0,0.2,43,1
+Full Retraining,144,1.0,0,0.2,43,1
+Full Retraining,145,0.0,0,0.2,43,1
+Full Retraining,146,1.0,0,0.2,43,1
+Full Retraining,147,1.0,0,0.2,43,1
+Full Retraining,148,1.0,0,0.2,43,1
+Full Retraining,149,0.0,0,0.2,43,1
+RAPT,99,1.0,0,0.2,43,1
+RAPT,100,1.0,0,0.2,43,1
+RAPT,101,1.0,0,0.2,43,1
+RAPT,102,1.0,0,0.2,43,1
+RAPT,103,1.0,0,0.2,43,1
+RAPT,104,1.0,0,0.2,43,1
+RAPT,105,1.0,0,0.2,43,1
+RAPT,106,1.0,0,0.2,43,1
+RAPT,107,1.0,0,0.2,43,1
+RAPT,108,1.0,0,0.2,43,1
+RAPT,109,1.0,0,0.2,43,1
+RAPT,110,1.0,0,0.2,43,1
+RAPT,111,1.0,0,0.2,43,1
+RAPT,112,1.0,0,0.2,43,1
+RAPT,113,1.0,0,0.2,43,1
+RAPT,114,1.0,0,0.2,43,1
+RAPT,115,1.0,0,0.2,43,1
+RAPT,116,1.0,0,0.2,43,1
+RAPT,117,1.0,0,0.2,43,1
+RAPT,118,1.0,0,0.2,43,1
+RAPT,119,1.0,0,0.2,43,1
+RAPT,120,1.0,0,0.2,43,1
+RAPT,121,1.0,0,0.2,43,1
+RAPT,122,1.0,0,0.2,43,1
+RAPT,123,1.0,0,0.2,43,1
+RAPT,124,1.0,0,0.2,43,1
+RAPT,125,1.0,0,0.2,43,1
+RAPT,126,1.0,0,0.2,43,1
+RAPT,127,1.0,0,0.2,43,1
+RAPT,128,1.0,0,0.2,43,1
+RAPT,129,1.0,0,0.2,43,1
+RAPT,130,1.0,0,0.2,43,1
+RAPT,131,1.0,0,0.2,43,1
+RAPT,132,1.0,0,0.2,43,1
+RAPT,133,1.0,0,0.2,43,1
+RAPT,134,1.0,0,0.2,43,1
+RAPT,135,1.0,0,0.2,43,1
+RAPT,136,1.0,0,0.2,43,1
+RAPT,137,1.0,0,0.2,43,1
+RAPT,138,1.0,0,0.2,43,1
+RAPT,139,1.0,0,0.2,43,1
+RAPT,140,1.0,0,0.2,43,1
+RAPT,141,1.0,0,0.2,43,1
+RAPT,142,1.0,0,0.2,43,1
+RAPT,143,1.0,0,0.2,43,1
+RAPT,144,1.0,0,0.2,43,1
+RAPT,145,0.0,0,0.2,43,1
+RAPT,146,1.0,0,0.2,43,1
+RAPT,147,1.0,0,0.2,43,1
+RAPT,148,1.0,0,0.2,43,1
+RAPT,149,0.0,0,0.2,43,1
+Frozen,99,1.0,0,0.2,44,0
+Frozen,100,1.0,0,0.2,44,0
+Frozen,101,1.0,0,0.2,44,0
+Frozen,102,1.0,0,0.2,44,0
+Frozen,103,1.0,0,0.2,44,0
+Frozen,104,1.0,0,0.2,44,0
+Frozen,105,1.0,0,0.2,44,0
+Frozen,106,1.0,0,0.2,44,0
+Frozen,107,1.0,0,0.2,44,0
+Frozen,108,1.0,0,0.2,44,0
+Frozen,109,1.0,0,0.2,44,0
+Frozen,110,1.0,0,0.2,44,0
+Frozen,111,1.0,0,0.2,44,0
+Frozen,112,1.0,0,0.2,44,0
+Frozen,113,1.0,0,0.2,44,0
+Frozen,114,1.0,0,0.2,44,0
+Frozen,115,1.0,0,0.2,44,0
+Frozen,116,1.0,0,0.2,44,0
+Frozen,117,1.0,0,0.2,44,0
+Frozen,118,1.0,0,0.2,44,0
+Frozen,119,1.0,0,0.2,44,0
+Frozen,120,1.0,0,0.2,44,0
+Frozen,121,1.0,0,0.2,44,0
+Frozen,122,1.0,0,0.2,44,0
+Frozen,123,1.0,0,0.2,44,0
+Frozen,124,1.0,0,0.2,44,0
+Frozen,125,1.0,0,0.2,44,0
+Frozen,126,1.0,0,0.2,44,0
+Frozen,127,1.0,0,0.2,44,0
+Frozen,128,1.0,0,0.2,44,0
+Frozen,129,1.0,0,0.2,44,0
+Frozen,130,1.0,0,0.2,44,0
+Frozen,131,1.0,0,0.2,44,0
+Frozen,132,1.0,0,0.2,44,0
+Frozen,133,1.0,0,0.2,44,0
+Frozen,134,1.0,0,0.2,44,0
+Frozen,135,1.0,0,0.2,44,0
+Frozen,136,1.0,0,0.2,44,0
+Frozen,137,1.0,0,0.2,44,0
+Frozen,138,1.0,0,0.2,44,0
+Frozen,139,1.0,0,0.2,44,0
+Frozen,140,1.0,0,0.2,44,0
+Frozen,141,1.0,0,0.2,44,0
+Frozen,142,1.0,0,0.2,44,0
+Frozen,143,1.0,0,0.2,44,0
+Frozen,144,1.0,0,0.2,44,0
+Frozen,145,0.0,0,0.2,44,0
+Frozen,146,1.0,0,0.2,44,0
+Frozen,147,1.0,0,0.2,44,0
+Frozen,148,1.0,0,0.2,44,0
+Frozen,149,0.0,0,0.2,44,0
+Event-Driven,99,1.0,0,0.2,44,0
+Event-Driven,100,1.0,0,0.2,44,0
+Event-Driven,101,1.0,0,0.2,44,0
+Event-Driven,102,1.0,0,0.2,44,0
+Event-Driven,103,1.0,0,0.2,44,0
+Event-Driven,104,1.0,0,0.2,44,0
+Event-Driven,105,1.0,0,0.2,44,0
+Event-Driven,106,1.0,0,0.2,44,0
+Event-Driven,107,1.0,0,0.2,44,0
+Event-Driven,108,1.0,0,0.2,44,0
+Event-Driven,109,1.0,0,0.2,44,0
+Event-Driven,110,1.0,0,0.2,44,0
+Event-Driven,111,1.0,0,0.2,44,0
+Event-Driven,112,1.0,0,0.2,44,0
+Event-Driven,113,1.0,0,0.2,44,0
+Event-Driven,114,1.0,0,0.2,44,0
+Event-Driven,115,1.0,0,0.2,44,0
+Event-Driven,116,1.0,0,0.2,44,0
+Event-Driven,117,1.0,0,0.2,44,0
+Event-Driven,118,1.0,0,0.2,44,0
+Event-Driven,119,1.0,0,0.2,44,0
+Event-Driven,120,1.0,0,0.2,44,0
+Event-Driven,121,1.0,0,0.2,44,0
+Event-Driven,122,1.0,0,0.2,44,0
+Event-Driven,123,1.0,0,0.2,44,0
+Event-Driven,124,1.0,0,0.2,44,0
+Event-Driven,125,1.0,0,0.2,44,0
+Event-Driven,126,1.0,0,0.2,44,0
+Event-Driven,127,1.0,0,0.2,44,0
+Event-Driven,128,1.0,0,0.2,44,0
+Event-Driven,129,1.0,0,0.2,44,0
+Event-Driven,130,1.0,0,0.2,44,0
+Event-Driven,131,1.0,0,0.2,44,0
+Event-Driven,132,1.0,0,0.2,44,0
+Event-Driven,133,1.0,0,0.2,44,0
+Event-Driven,134,1.0,0,0.2,44,0
+Event-Driven,135,1.0,0,0.2,44,0
+Event-Driven,136,1.0,0,0.2,44,0
+Event-Driven,137,1.0,0,0.2,44,0
+Event-Driven,138,1.0,0,0.2,44,0
+Event-Driven,139,1.0,0,0.2,44,0
+Event-Driven,140,1.0,0,0.2,44,0
+Event-Driven,141,1.0,0,0.2,44,0
+Event-Driven,142,1.0,0,0.2,44,0
+Event-Driven,143,1.0,0,0.2,44,0
+Event-Driven,144,1.0,0,0.2,44,0
+Event-Driven,145,0.0,0,0.2,44,0
+Event-Driven,146,1.0,0,0.2,44,0
+Event-Driven,147,1.0,0,0.2,44,0
+Event-Driven,148,1.0,0,0.2,44,0
+Event-Driven,149,0.0,0,0.2,44,0
+Full Retraining,99,1.0,0,0.2,44,0
+Full Retraining,100,1.0,0,0.2,44,0
+Full Retraining,101,1.0,0,0.2,44,0
+Full Retraining,102,1.0,0,0.2,44,0
+Full Retraining,103,1.0,0,0.2,44,0
+Full Retraining,104,1.0,0,0.2,44,0
+Full Retraining,105,1.0,0,0.2,44,0
+Full Retraining,106,1.0,0,0.2,44,0
+Full Retraining,107,1.0,0,0.2,44,0
+Full Retraining,108,1.0,0,0.2,44,0
+Full Retraining,109,1.0,0,0.2,44,0
+Full Retraining,110,1.0,0,0.2,44,0
+Full Retraining,111,1.0,0,0.2,44,0
+Full Retraining,112,1.0,0,0.2,44,0
+Full Retraining,113,1.0,0,0.2,44,0
+Full Retraining,114,1.0,0,0.2,44,0
+Full Retraining,115,1.0,0,0.2,44,0
+Full Retraining,116,1.0,0,0.2,44,0
+Full Retraining,117,1.0,0,0.2,44,0
+Full Retraining,118,1.0,0,0.2,44,0
+Full Retraining,119,1.0,0,0.2,44,0
+Full Retraining,120,1.0,0,0.2,44,0
+Full Retraining,121,1.0,0,0.2,44,0
+Full Retraining,122,1.0,0,0.2,44,0
+Full Retraining,123,1.0,0,0.2,44,0
+Full Retraining,124,1.0,0,0.2,44,0
+Full Retraining,125,1.0,0,0.2,44,0
+Full Retraining,126,1.0,0,0.2,44,0
+Full Retraining,127,1.0,0,0.2,44,0
+Full Retraining,128,1.0,0,0.2,44,0
+Full Retraining,129,1.0,0,0.2,44,0
+Full Retraining,130,1.0,0,0.2,44,0
+Full Retraining,131,1.0,0,0.2,44,0
+Full Retraining,132,1.0,0,0.2,44,0
+Full Retraining,133,1.0,0,0.2,44,0
+Full Retraining,134,1.0,0,0.2,44,0
+Full Retraining,135,1.0,0,0.2,44,0
+Full Retraining,136,1.0,0,0.2,44,0
+Full Retraining,137,1.0,0,0.2,44,0
+Full Retraining,138,1.0,0,0.2,44,0
+Full Retraining,139,1.0,0,0.2,44,0
+Full Retraining,140,1.0,0,0.2,44,0
+Full Retraining,141,1.0,0,0.2,44,0
+Full Retraining,142,1.0,0,0.2,44,0
+Full Retraining,143,1.0,0,0.2,44,0
+Full Retraining,144,1.0,0,0.2,44,0
+Full Retraining,145,0.0,0,0.2,44,0
+Full Retraining,146,1.0,0,0.2,44,0
+Full Retraining,147,1.0,0,0.2,44,0
+Full Retraining,148,1.0,0,0.2,44,0
+Full Retraining,149,0.0,0,0.2,44,0
+RAPT,99,1.0,0,0.2,44,0
+RAPT,100,1.0,0,0.2,44,0
+RAPT,101,1.0,0,0.2,44,0
+RAPT,102,1.0,0,0.2,44,0
+RAPT,103,1.0,0,0.2,44,0
+RAPT,104,1.0,0,0.2,44,0
+RAPT,105,1.0,0,0.2,44,0
+RAPT,106,1.0,0,0.2,44,0
+RAPT,107,1.0,0,0.2,44,0
+RAPT,108,1.0,0,0.2,44,0
+RAPT,109,1.0,0,0.2,44,0
+RAPT,110,1.0,0,0.2,44,0
+RAPT,111,1.0,0,0.2,44,0
+RAPT,112,1.0,0,0.2,44,0
+RAPT,113,1.0,0,0.2,44,0
+RAPT,114,1.0,0,0.2,44,0
+RAPT,115,1.0,0,0.2,44,0
+RAPT,116,1.0,0,0.2,44,0
+RAPT,117,1.0,0,0.2,44,0
+RAPT,118,1.0,0,0.2,44,0
+RAPT,119,1.0,0,0.2,44,0
+RAPT,120,1.0,0,0.2,44,0
+RAPT,121,1.0,0,0.2,44,0
+RAPT,122,1.0,0,0.2,44,0
+RAPT,123,1.0,0,0.2,44,0
+RAPT,124,1.0,0,0.2,44,0
+RAPT,125,1.0,0,0.2,44,0
+RAPT,126,1.0,0,0.2,44,0
+RAPT,127,1.0,0,0.2,44,0
+RAPT,128,1.0,0,0.2,44,0
+RAPT,129,1.0,0,0.2,44,0
+RAPT,130,1.0,0,0.2,44,0
+RAPT,131,1.0,0,0.2,44,0
+RAPT,132,1.0,0,0.2,44,0
+RAPT,133,1.0,0,0.2,44,0
+RAPT,134,1.0,0,0.2,44,0
+RAPT,135,1.0,0,0.2,44,0
+RAPT,136,1.0,0,0.2,44,0
+RAPT,137,1.0,0,0.2,44,0
+RAPT,138,1.0,0,0.2,44,0
+RAPT,139,1.0,0,0.2,44,0
+RAPT,140,1.0,0,0.2,44,0
+RAPT,141,1.0,0,0.2,44,0
+RAPT,142,1.0,0,0.2,44,0
+RAPT,143,1.0,0,0.2,44,0
+RAPT,144,1.0,0,0.2,44,0
+RAPT,145,0.0,0,0.2,44,0
+RAPT,146,1.0,0,0.2,44,0
+RAPT,147,1.0,0,0.2,44,0
+RAPT,148,1.0,0,0.2,44,0
+RAPT,149,0.0,0,0.2,44,0
+Frozen,99,1.0,0,0.2,44,1
+Frozen,100,1.0,0,0.2,44,1
+Frozen,101,1.0,0,0.2,44,1
+Frozen,102,1.0,0,0.2,44,1
+Frozen,103,1.0,0,0.2,44,1
+Frozen,104,1.0,0,0.2,44,1
+Frozen,105,1.0,0,0.2,44,1
+Frozen,106,1.0,0,0.2,44,1
+Frozen,107,1.0,0,0.2,44,1
+Frozen,108,1.0,0,0.2,44,1
+Frozen,109,1.0,0,0.2,44,1
+Frozen,110,1.0,0,0.2,44,1
+Frozen,111,1.0,0,0.2,44,1
+Frozen,112,1.0,0,0.2,44,1
+Frozen,113,1.0,0,0.2,44,1
+Frozen,114,1.0,0,0.2,44,1
+Frozen,115,1.0,0,0.2,44,1
+Frozen,116,1.0,0,0.2,44,1
+Frozen,117,1.0,0,0.2,44,1
+Frozen,118,1.0,0,0.2,44,1
+Frozen,119,1.0,0,0.2,44,1
+Frozen,120,1.0,0,0.2,44,1
+Frozen,121,1.0,0,0.2,44,1
+Frozen,122,1.0,0,0.2,44,1
+Frozen,123,1.0,0,0.2,44,1
+Frozen,124,1.0,0,0.2,44,1
+Frozen,125,1.0,0,0.2,44,1
+Frozen,126,1.0,0,0.2,44,1
+Frozen,127,1.0,0,0.2,44,1
+Frozen,128,1.0,0,0.2,44,1
+Frozen,129,1.0,0,0.2,44,1
+Frozen,130,1.0,0,0.2,44,1
+Frozen,131,1.0,0,0.2,44,1
+Frozen,132,1.0,0,0.2,44,1
+Frozen,133,1.0,0,0.2,44,1
+Frozen,134,1.0,0,0.2,44,1
+Frozen,135,1.0,0,0.2,44,1
+Frozen,136,1.0,0,0.2,44,1
+Frozen,137,1.0,0,0.2,44,1
+Frozen,138,1.0,0,0.2,44,1
+Frozen,139,1.0,0,0.2,44,1
+Frozen,140,1.0,0,0.2,44,1
+Frozen,141,1.0,0,0.2,44,1
+Frozen,142,1.0,0,0.2,44,1
+Frozen,143,1.0,0,0.2,44,1
+Frozen,144,1.0,0,0.2,44,1
+Frozen,145,0.0,0,0.2,44,1
+Frozen,146,1.0,0,0.2,44,1
+Frozen,147,1.0,0,0.2,44,1
+Frozen,148,1.0,0,0.2,44,1
+Frozen,149,0.0,0,0.2,44,1
+Event-Driven,99,1.0,0,0.2,44,1
+Event-Driven,100,1.0,0,0.2,44,1
+Event-Driven,101,1.0,0,0.2,44,1
+Event-Driven,102,1.0,0,0.2,44,1
+Event-Driven,103,1.0,0,0.2,44,1
+Event-Driven,104,1.0,0,0.2,44,1
+Event-Driven,105,1.0,0,0.2,44,1
+Event-Driven,106,1.0,0,0.2,44,1
+Event-Driven,107,1.0,0,0.2,44,1
+Event-Driven,108,1.0,0,0.2,44,1
+Event-Driven,109,1.0,0,0.2,44,1
+Event-Driven,110,1.0,0,0.2,44,1
+Event-Driven,111,1.0,0,0.2,44,1
+Event-Driven,112,1.0,0,0.2,44,1
+Event-Driven,113,1.0,0,0.2,44,1
+Event-Driven,114,1.0,0,0.2,44,1
+Event-Driven,115,1.0,0,0.2,44,1
+Event-Driven,116,1.0,0,0.2,44,1
+Event-Driven,117,1.0,0,0.2,44,1
+Event-Driven,118,1.0,0,0.2,44,1
+Event-Driven,119,1.0,0,0.2,44,1
+Event-Driven,120,1.0,0,0.2,44,1
+Event-Driven,121,1.0,0,0.2,44,1
+Event-Driven,122,1.0,0,0.2,44,1
+Event-Driven,123,1.0,0,0.2,44,1
+Event-Driven,124,1.0,0,0.2,44,1
+Event-Driven,125,1.0,0,0.2,44,1
+Event-Driven,126,1.0,0,0.2,44,1
+Event-Driven,127,1.0,0,0.2,44,1
+Event-Driven,128,1.0,0,0.2,44,1
+Event-Driven,129,1.0,0,0.2,44,1
+Event-Driven,130,1.0,0,0.2,44,1
+Event-Driven,131,1.0,0,0.2,44,1
+Event-Driven,132,1.0,0,0.2,44,1
+Event-Driven,133,1.0,0,0.2,44,1
+Event-Driven,134,1.0,0,0.2,44,1
+Event-Driven,135,1.0,0,0.2,44,1
+Event-Driven,136,1.0,0,0.2,44,1
+Event-Driven,137,1.0,0,0.2,44,1
+Event-Driven,138,1.0,0,0.2,44,1
+Event-Driven,139,1.0,0,0.2,44,1
+Event-Driven,140,1.0,0,0.2,44,1
+Event-Driven,141,1.0,0,0.2,44,1
+Event-Driven,142,1.0,0,0.2,44,1
+Event-Driven,143,1.0,0,0.2,44,1
+Event-Driven,144,1.0,0,0.2,44,1
+Event-Driven,145,0.0,0,0.2,44,1
+Event-Driven,146,1.0,0,0.2,44,1
+Event-Driven,147,1.0,0,0.2,44,1
+Event-Driven,148,1.0,0,0.2,44,1
+Event-Driven,149,0.0,0,0.2,44,1
+Full Retraining,99,1.0,0,0.2,44,1
+Full Retraining,100,1.0,0,0.2,44,1
+Full Retraining,101,1.0,0,0.2,44,1
+Full Retraining,102,1.0,0,0.2,44,1
+Full Retraining,103,1.0,0,0.2,44,1
+Full Retraining,104,1.0,0,0.2,44,1
+Full Retraining,105,1.0,0,0.2,44,1
+Full Retraining,106,1.0,0,0.2,44,1
+Full Retraining,107,1.0,0,0.2,44,1
+Full Retraining,108,1.0,0,0.2,44,1
+Full Retraining,109,1.0,0,0.2,44,1
+Full Retraining,110,1.0,0,0.2,44,1
+Full Retraining,111,1.0,0,0.2,44,1
+Full Retraining,112,1.0,0,0.2,44,1
+Full Retraining,113,1.0,0,0.2,44,1
+Full Retraining,114,1.0,0,0.2,44,1
+Full Retraining,115,1.0,0,0.2,44,1
+Full Retraining,116,1.0,0,0.2,44,1
+Full Retraining,117,1.0,0,0.2,44,1
+Full Retraining,118,1.0,0,0.2,44,1
+Full Retraining,119,1.0,0,0.2,44,1
+Full Retraining,120,1.0,0,0.2,44,1
+Full Retraining,121,1.0,0,0.2,44,1
+Full Retraining,122,1.0,0,0.2,44,1
+Full Retraining,123,1.0,0,0.2,44,1
+Full Retraining,124,1.0,0,0.2,44,1
+Full Retraining,125,1.0,0,0.2,44,1
+Full Retraining,126,1.0,0,0.2,44,1
+Full Retraining,127,1.0,0,0.2,44,1
+Full Retraining,128,1.0,0,0.2,44,1
+Full Retraining,129,1.0,0,0.2,44,1
+Full Retraining,130,1.0,0,0.2,44,1
+Full Retraining,131,1.0,0,0.2,44,1
+Full Retraining,132,1.0,0,0.2,44,1
+Full Retraining,133,1.0,0,0.2,44,1
+Full Retraining,134,1.0,0,0.2,44,1
+Full Retraining,135,1.0,0,0.2,44,1
+Full Retraining,136,1.0,0,0.2,44,1
+Full Retraining,137,1.0,0,0.2,44,1
+Full Retraining,138,1.0,0,0.2,44,1
+Full Retraining,139,1.0,0,0.2,44,1
+Full Retraining,140,1.0,0,0.2,44,1
+Full Retraining,141,1.0,0,0.2,44,1
+Full Retraining,142,1.0,0,0.2,44,1
+Full Retraining,143,1.0,0,0.2,44,1
+Full Retraining,144,1.0,0,0.2,44,1
+Full Retraining,145,0.0,0,0.2,44,1
+Full Retraining,146,1.0,0,0.2,44,1
+Full Retraining,147,1.0,0,0.2,44,1
+Full Retraining,148,1.0,0,0.2,44,1
+Full Retraining,149,0.0,0,0.2,44,1
+RAPT,99,1.0,0,0.2,44,1
+RAPT,100,1.0,0,0.2,44,1
+RAPT,101,1.0,0,0.2,44,1
+RAPT,102,1.0,0,0.2,44,1
+RAPT,103,1.0,0,0.2,44,1
+RAPT,104,1.0,0,0.2,44,1
+RAPT,105,1.0,0,0.2,44,1
+RAPT,106,1.0,0,0.2,44,1
+RAPT,107,1.0,0,0.2,44,1
+RAPT,108,1.0,0,0.2,44,1
+RAPT,109,1.0,0,0.2,44,1
+RAPT,110,1.0,0,0.2,44,1
+RAPT,111,1.0,0,0.2,44,1
+RAPT,112,1.0,0,0.2,44,1
+RAPT,113,1.0,0,0.2,44,1
+RAPT,114,1.0,0,0.2,44,1
+RAPT,115,1.0,0,0.2,44,1
+RAPT,116,1.0,0,0.2,44,1
+RAPT,117,1.0,0,0.2,44,1
+RAPT,118,1.0,0,0.2,44,1
+RAPT,119,1.0,0,0.2,44,1
+RAPT,120,1.0,0,0.2,44,1
+RAPT,121,1.0,0,0.2,44,1
+RAPT,122,1.0,0,0.2,44,1
+RAPT,123,1.0,0,0.2,44,1
+RAPT,124,1.0,0,0.2,44,1
+RAPT,125,1.0,0,0.2,44,1
+RAPT,126,1.0,0,0.2,44,1
+RAPT,127,1.0,0,0.2,44,1
+RAPT,128,1.0,0,0.2,44,1
+RAPT,129,1.0,0,0.2,44,1
+RAPT,130,1.0,0,0.2,44,1
+RAPT,131,1.0,0,0.2,44,1
+RAPT,132,1.0,0,0.2,44,1
+RAPT,133,1.0,0,0.2,44,1
+RAPT,134,1.0,0,0.2,44,1
+RAPT,135,1.0,0,0.2,44,1
+RAPT,136,1.0,0,0.2,44,1
+RAPT,137,1.0,0,0.2,44,1
+RAPT,138,1.0,0,0.2,44,1
+RAPT,139,1.0,0,0.2,44,1
+RAPT,140,1.0,0,0.2,44,1
+RAPT,141,1.0,0,0.2,44,1
+RAPT,142,1.0,0,0.2,44,1
+RAPT,143,1.0,0,0.2,44,1
+RAPT,144,1.0,0,0.2,44,1
+RAPT,145,0.0,0,0.2,44,1
+RAPT,146,1.0,0,0.2,44,1
+RAPT,147,1.0,0,0.2,44,1
+RAPT,148,1.0,0,0.2,44,1
+RAPT,149,0.0,0,0.2,44,1
+Frozen,99,1.0,0,0.2,45,0
+Frozen,100,1.0,0,0.2,45,0
+Frozen,101,1.0,0,0.2,45,0
+Frozen,102,1.0,0,0.2,45,0
+Frozen,103,1.0,0,0.2,45,0
+Frozen,104,1.0,0,0.2,45,0
+Frozen,105,1.0,0,0.2,45,0
+Frozen,106,1.0,0,0.2,45,0
+Frozen,107,1.0,0,0.2,45,0
+Frozen,108,1.0,0,0.2,45,0
+Frozen,109,1.0,0,0.2,45,0
+Frozen,110,1.0,0,0.2,45,0
+Frozen,111,1.0,0,0.2,45,0
+Frozen,112,1.0,0,0.2,45,0
+Frozen,113,1.0,0,0.2,45,0
+Frozen,114,1.0,0,0.2,45,0
+Frozen,115,1.0,0,0.2,45,0
+Frozen,116,1.0,0,0.2,45,0
+Frozen,117,1.0,0,0.2,45,0
+Frozen,118,1.0,0,0.2,45,0
+Frozen,119,1.0,0,0.2,45,0
+Frozen,120,1.0,0,0.2,45,0
+Frozen,121,1.0,0,0.2,45,0
+Frozen,122,1.0,0,0.2,45,0
+Frozen,123,1.0,0,0.2,45,0
+Frozen,124,1.0,0,0.2,45,0
+Frozen,125,1.0,0,0.2,45,0
+Frozen,126,1.0,0,0.2,45,0
+Frozen,127,1.0,0,0.2,45,0
+Frozen,128,1.0,0,0.2,45,0
+Frozen,129,1.0,0,0.2,45,0
+Frozen,130,1.0,0,0.2,45,0
+Frozen,131,1.0,0,0.2,45,0
+Frozen,132,1.0,0,0.2,45,0
+Frozen,133,1.0,0,0.2,45,0
+Frozen,134,1.0,0,0.2,45,0
+Frozen,135,1.0,0,0.2,45,0
+Frozen,136,1.0,0,0.2,45,0
+Frozen,137,1.0,0,0.2,45,0
+Frozen,138,1.0,0,0.2,45,0
+Frozen,139,1.0,0,0.2,45,0
+Frozen,140,1.0,0,0.2,45,0
+Frozen,141,1.0,0,0.2,45,0
+Frozen,142,1.0,0,0.2,45,0
+Frozen,143,1.0,0,0.2,45,0
+Frozen,144,1.0,0,0.2,45,0
+Frozen,145,0.0,0,0.2,45,0
+Frozen,146,1.0,0,0.2,45,0
+Frozen,147,1.0,0,0.2,45,0
+Frozen,148,1.0,0,0.2,45,0
+Frozen,149,0.0,0,0.2,45,0
+Event-Driven,99,1.0,0,0.2,45,0
+Event-Driven,100,1.0,0,0.2,45,0
+Event-Driven,101,1.0,0,0.2,45,0
+Event-Driven,102,1.0,0,0.2,45,0
+Event-Driven,103,1.0,0,0.2,45,0
+Event-Driven,104,1.0,0,0.2,45,0
+Event-Driven,105,1.0,0,0.2,45,0
+Event-Driven,106,1.0,0,0.2,45,0
+Event-Driven,107,1.0,0,0.2,45,0
+Event-Driven,108,1.0,0,0.2,45,0
+Event-Driven,109,1.0,0,0.2,45,0
+Event-Driven,110,1.0,0,0.2,45,0
+Event-Driven,111,1.0,0,0.2,45,0
+Event-Driven,112,1.0,0,0.2,45,0
+Event-Driven,113,1.0,0,0.2,45,0
+Event-Driven,114,1.0,0,0.2,45,0
+Event-Driven,115,1.0,0,0.2,45,0
+Event-Driven,116,1.0,0,0.2,45,0
+Event-Driven,117,1.0,0,0.2,45,0
+Event-Driven,118,1.0,0,0.2,45,0
+Event-Driven,119,1.0,0,0.2,45,0
+Event-Driven,120,1.0,0,0.2,45,0
+Event-Driven,121,1.0,0,0.2,45,0
+Event-Driven,122,1.0,0,0.2,45,0
+Event-Driven,123,1.0,0,0.2,45,0
+Event-Driven,124,1.0,0,0.2,45,0
+Event-Driven,125,1.0,0,0.2,45,0
+Event-Driven,126,1.0,0,0.2,45,0
+Event-Driven,127,1.0,0,0.2,45,0
+Event-Driven,128,1.0,0,0.2,45,0
+Event-Driven,129,1.0,0,0.2,45,0
+Event-Driven,130,1.0,0,0.2,45,0
+Event-Driven,131,1.0,0,0.2,45,0
+Event-Driven,132,1.0,0,0.2,45,0
+Event-Driven,133,1.0,0,0.2,45,0
+Event-Driven,134,1.0,0,0.2,45,0
+Event-Driven,135,1.0,0,0.2,45,0
+Event-Driven,136,1.0,0,0.2,45,0
+Event-Driven,137,1.0,0,0.2,45,0
+Event-Driven,138,1.0,0,0.2,45,0
+Event-Driven,139,1.0,0,0.2,45,0
+Event-Driven,140,1.0,0,0.2,45,0
+Event-Driven,141,1.0,0,0.2,45,0
+Event-Driven,142,1.0,0,0.2,45,0
+Event-Driven,143,1.0,0,0.2,45,0
+Event-Driven,144,1.0,0,0.2,45,0
+Event-Driven,145,0.0,0,0.2,45,0
+Event-Driven,146,1.0,0,0.2,45,0
+Event-Driven,147,1.0,0,0.2,45,0
+Event-Driven,148,1.0,0,0.2,45,0
+Event-Driven,149,0.0,0,0.2,45,0
+Full Retraining,99,1.0,0,0.2,45,0
+Full Retraining,100,1.0,0,0.2,45,0
+Full Retraining,101,1.0,0,0.2,45,0
+Full Retraining,102,1.0,0,0.2,45,0
+Full Retraining,103,1.0,0,0.2,45,0
+Full Retraining,104,1.0,0,0.2,45,0
+Full Retraining,105,1.0,0,0.2,45,0
+Full Retraining,106,1.0,0,0.2,45,0
+Full Retraining,107,1.0,0,0.2,45,0
+Full Retraining,108,1.0,0,0.2,45,0
+Full Retraining,109,1.0,0,0.2,45,0
+Full Retraining,110,1.0,0,0.2,45,0
+Full Retraining,111,1.0,0,0.2,45,0
+Full Retraining,112,1.0,0,0.2,45,0
+Full Retraining,113,1.0,0,0.2,45,0
+Full Retraining,114,1.0,0,0.2,45,0
+Full Retraining,115,1.0,0,0.2,45,0
+Full Retraining,116,1.0,0,0.2,45,0
+Full Retraining,117,1.0,0,0.2,45,0
+Full Retraining,118,1.0,0,0.2,45,0
+Full Retraining,119,1.0,0,0.2,45,0
+Full Retraining,120,1.0,0,0.2,45,0
+Full Retraining,121,1.0,0,0.2,45,0
+Full Retraining,122,1.0,0,0.2,45,0
+Full Retraining,123,1.0,0,0.2,45,0
+Full Retraining,124,1.0,0,0.2,45,0
+Full Retraining,125,1.0,0,0.2,45,0
+Full Retraining,126,1.0,0,0.2,45,0
+Full Retraining,127,1.0,0,0.2,45,0
+Full Retraining,128,1.0,0,0.2,45,0
+Full Retraining,129,1.0,0,0.2,45,0
+Full Retraining,130,1.0,0,0.2,45,0
+Full Retraining,131,1.0,0,0.2,45,0
+Full Retraining,132,1.0,0,0.2,45,0
+Full Retraining,133,1.0,0,0.2,45,0
+Full Retraining,134,1.0,0,0.2,45,0
+Full Retraining,135,1.0,0,0.2,45,0
+Full Retraining,136,1.0,0,0.2,45,0
+Full Retraining,137,1.0,0,0.2,45,0
+Full Retraining,138,1.0,0,0.2,45,0
+Full Retraining,139,1.0,0,0.2,45,0
+Full Retraining,140,1.0,0,0.2,45,0
+Full Retraining,141,1.0,0,0.2,45,0
+Full Retraining,142,1.0,0,0.2,45,0
+Full Retraining,143,1.0,0,0.2,45,0
+Full Retraining,144,1.0,0,0.2,45,0
+Full Retraining,145,0.0,0,0.2,45,0
+Full Retraining,146,1.0,0,0.2,45,0
+Full Retraining,147,1.0,0,0.2,45,0
+Full Retraining,148,1.0,0,0.2,45,0
+Full Retraining,149,0.0,0,0.2,45,0
+RAPT,99,1.0,0,0.2,45,0
+RAPT,100,1.0,0,0.2,45,0
+RAPT,101,1.0,0,0.2,45,0
+RAPT,102,1.0,0,0.2,45,0
+RAPT,103,1.0,0,0.2,45,0
+RAPT,104,1.0,0,0.2,45,0
+RAPT,105,1.0,0,0.2,45,0
+RAPT,106,1.0,0,0.2,45,0
+RAPT,107,1.0,0,0.2,45,0
+RAPT,108,1.0,0,0.2,45,0
+RAPT,109,1.0,0,0.2,45,0
+RAPT,110,1.0,0,0.2,45,0
+RAPT,111,1.0,0,0.2,45,0
+RAPT,112,1.0,0,0.2,45,0
+RAPT,113,1.0,0,0.2,45,0
+RAPT,114,1.0,0,0.2,45,0
+RAPT,115,1.0,0,0.2,45,0
+RAPT,116,1.0,0,0.2,45,0
+RAPT,117,1.0,0,0.2,45,0
+RAPT,118,1.0,0,0.2,45,0
+RAPT,119,1.0,0,0.2,45,0
+RAPT,120,1.0,0,0.2,45,0
+RAPT,121,1.0,0,0.2,45,0
+RAPT,122,1.0,0,0.2,45,0
+RAPT,123,1.0,0,0.2,45,0
+RAPT,124,1.0,0,0.2,45,0
+RAPT,125,1.0,0,0.2,45,0
+RAPT,126,1.0,0,0.2,45,0
+RAPT,127,1.0,0,0.2,45,0
+RAPT,128,1.0,0,0.2,45,0
+RAPT,129,1.0,0,0.2,45,0
+RAPT,130,1.0,0,0.2,45,0
+RAPT,131,1.0,0,0.2,45,0
+RAPT,132,1.0,0,0.2,45,0
+RAPT,133,1.0,0,0.2,45,0
+RAPT,134,1.0,0,0.2,45,0
+RAPT,135,1.0,0,0.2,45,0
+RAPT,136,1.0,0,0.2,45,0
+RAPT,137,1.0,0,0.2,45,0
+RAPT,138,1.0,0,0.2,45,0
+RAPT,139,1.0,0,0.2,45,0
+RAPT,140,1.0,0,0.2,45,0
+RAPT,141,1.0,0,0.2,45,0
+RAPT,142,1.0,0,0.2,45,0
+RAPT,143,1.0,0,0.2,45,0
+RAPT,144,1.0,0,0.2,45,0
+RAPT,145,0.0,0,0.2,45,0
+RAPT,146,1.0,0,0.2,45,0
+RAPT,147,1.0,0,0.2,45,0
+RAPT,148,1.0,0,0.2,45,0
+RAPT,149,0.0,0,0.2,45,0
+Frozen,99,1.0,0,0.2,45,1
+Frozen,100,1.0,0,0.2,45,1
+Frozen,101,1.0,0,0.2,45,1
+Frozen,102,1.0,0,0.2,45,1
+Frozen,103,1.0,0,0.2,45,1
+Frozen,104,1.0,0,0.2,45,1
+Frozen,105,1.0,0,0.2,45,1
+Frozen,106,1.0,0,0.2,45,1
+Frozen,107,1.0,0,0.2,45,1
+Frozen,108,1.0,0,0.2,45,1
+Frozen,109,1.0,0,0.2,45,1
+Frozen,110,1.0,0,0.2,45,1
+Frozen,111,1.0,0,0.2,45,1
+Frozen,112,1.0,0,0.2,45,1
+Frozen,113,1.0,0,0.2,45,1
+Frozen,114,1.0,0,0.2,45,1
+Frozen,115,1.0,0,0.2,45,1
+Frozen,116,1.0,0,0.2,45,1
+Frozen,117,1.0,0,0.2,45,1
+Frozen,118,1.0,0,0.2,45,1
+Frozen,119,1.0,0,0.2,45,1
+Frozen,120,1.0,0,0.2,45,1
+Frozen,121,1.0,0,0.2,45,1
+Frozen,122,1.0,0,0.2,45,1
+Frozen,123,1.0,0,0.2,45,1
+Frozen,124,1.0,0,0.2,45,1
+Frozen,125,1.0,0,0.2,45,1
+Frozen,126,1.0,0,0.2,45,1
+Frozen,127,1.0,0,0.2,45,1
+Frozen,128,1.0,0,0.2,45,1
+Frozen,129,1.0,0,0.2,45,1
+Frozen,130,1.0,0,0.2,45,1
+Frozen,131,1.0,0,0.2,45,1
+Frozen,132,1.0,0,0.2,45,1
+Frozen,133,1.0,0,0.2,45,1
+Frozen,134,1.0,0,0.2,45,1
+Frozen,135,1.0,0,0.2,45,1
+Frozen,136,1.0,0,0.2,45,1
+Frozen,137,1.0,0,0.2,45,1
+Frozen,138,1.0,0,0.2,45,1
+Frozen,139,1.0,0,0.2,45,1
+Frozen,140,1.0,0,0.2,45,1
+Frozen,141,1.0,0,0.2,45,1
+Frozen,142,1.0,0,0.2,45,1
+Frozen,143,1.0,0,0.2,45,1
+Frozen,144,1.0,0,0.2,45,1
+Frozen,145,0.0,0,0.2,45,1
+Frozen,146,1.0,0,0.2,45,1
+Frozen,147,1.0,0,0.2,45,1
+Frozen,148,1.0,0,0.2,45,1
+Frozen,149,0.0,0,0.2,45,1
+Event-Driven,99,1.0,0,0.2,45,1
+Event-Driven,100,1.0,0,0.2,45,1
+Event-Driven,101,1.0,0,0.2,45,1
+Event-Driven,102,1.0,0,0.2,45,1
+Event-Driven,103,1.0,0,0.2,45,1
+Event-Driven,104,1.0,0,0.2,45,1
+Event-Driven,105,1.0,0,0.2,45,1
+Event-Driven,106,1.0,0,0.2,45,1
+Event-Driven,107,1.0,0,0.2,45,1
+Event-Driven,108,1.0,0,0.2,45,1
+Event-Driven,109,1.0,0,0.2,45,1
+Event-Driven,110,1.0,0,0.2,45,1
+Event-Driven,111,1.0,0,0.2,45,1
+Event-Driven,112,1.0,0,0.2,45,1
+Event-Driven,113,1.0,0,0.2,45,1
+Event-Driven,114,1.0,0,0.2,45,1
+Event-Driven,115,1.0,0,0.2,45,1
+Event-Driven,116,1.0,0,0.2,45,1
+Event-Driven,117,1.0,0,0.2,45,1
+Event-Driven,118,1.0,0,0.2,45,1
+Event-Driven,119,1.0,0,0.2,45,1
+Event-Driven,120,1.0,0,0.2,45,1
+Event-Driven,121,1.0,0,0.2,45,1
+Event-Driven,122,1.0,0,0.2,45,1
+Event-Driven,123,1.0,0,0.2,45,1
+Event-Driven,124,1.0,0,0.2,45,1
+Event-Driven,125,1.0,0,0.2,45,1
+Event-Driven,126,1.0,0,0.2,45,1
+Event-Driven,127,1.0,0,0.2,45,1
+Event-Driven,128,1.0,0,0.2,45,1
+Event-Driven,129,1.0,0,0.2,45,1
+Event-Driven,130,1.0,0,0.2,45,1
+Event-Driven,131,1.0,0,0.2,45,1
+Event-Driven,132,1.0,0,0.2,45,1
+Event-Driven,133,1.0,0,0.2,45,1
+Event-Driven,134,1.0,0,0.2,45,1
+Event-Driven,135,1.0,0,0.2,45,1
+Event-Driven,136,1.0,0,0.2,45,1
+Event-Driven,137,1.0,0,0.2,45,1
+Event-Driven,138,1.0,0,0.2,45,1
+Event-Driven,139,1.0,0,0.2,45,1
+Event-Driven,140,1.0,0,0.2,45,1
+Event-Driven,141,1.0,0,0.2,45,1
+Event-Driven,142,1.0,0,0.2,45,1
+Event-Driven,143,1.0,0,0.2,45,1
+Event-Driven,144,1.0,0,0.2,45,1
+Event-Driven,145,0.0,0,0.2,45,1
+Event-Driven,146,1.0,0,0.2,45,1
+Event-Driven,147,1.0,0,0.2,45,1
+Event-Driven,148,1.0,0,0.2,45,1
+Event-Driven,149,0.0,0,0.2,45,1
+Full Retraining,99,1.0,0,0.2,45,1
+Full Retraining,100,1.0,0,0.2,45,1
+Full Retraining,101,1.0,0,0.2,45,1
+Full Retraining,102,1.0,0,0.2,45,1
+Full Retraining,103,1.0,0,0.2,45,1
+Full Retraining,104,1.0,0,0.2,45,1
+Full Retraining,105,1.0,0,0.2,45,1
+Full Retraining,106,1.0,0,0.2,45,1
+Full Retraining,107,1.0,0,0.2,45,1
+Full Retraining,108,1.0,0,0.2,45,1
+Full Retraining,109,1.0,0,0.2,45,1
+Full Retraining,110,1.0,0,0.2,45,1
+Full Retraining,111,1.0,0,0.2,45,1
+Full Retraining,112,1.0,0,0.2,45,1
+Full Retraining,113,1.0,0,0.2,45,1
+Full Retraining,114,1.0,0,0.2,45,1
+Full Retraining,115,1.0,0,0.2,45,1
+Full Retraining,116,1.0,0,0.2,45,1
+Full Retraining,117,1.0,0,0.2,45,1
+Full Retraining,118,1.0,0,0.2,45,1
+Full Retraining,119,1.0,0,0.2,45,1
+Full Retraining,120,1.0,0,0.2,45,1
+Full Retraining,121,1.0,0,0.2,45,1
+Full Retraining,122,1.0,0,0.2,45,1
+Full Retraining,123,1.0,0,0.2,45,1
+Full Retraining,124,1.0,0,0.2,45,1
+Full Retraining,125,1.0,0,0.2,45,1
+Full Retraining,126,1.0,0,0.2,45,1
+Full Retraining,127,1.0,0,0.2,45,1
+Full Retraining,128,1.0,0,0.2,45,1
+Full Retraining,129,1.0,0,0.2,45,1
+Full Retraining,130,1.0,0,0.2,45,1
+Full Retraining,131,1.0,0,0.2,45,1
+Full Retraining,132,1.0,0,0.2,45,1
+Full Retraining,133,1.0,0,0.2,45,1
+Full Retraining,134,1.0,0,0.2,45,1
+Full Retraining,135,1.0,0,0.2,45,1
+Full Retraining,136,1.0,0,0.2,45,1
+Full Retraining,137,1.0,0,0.2,45,1
+Full Retraining,138,1.0,0,0.2,45,1
+Full Retraining,139,1.0,0,0.2,45,1
+Full Retraining,140,1.0,0,0.2,45,1
+Full Retraining,141,1.0,0,0.2,45,1
+Full Retraining,142,1.0,0,0.2,45,1
+Full Retraining,143,1.0,0,0.2,45,1
+Full Retraining,144,1.0,0,0.2,45,1
+Full Retraining,145,0.0,0,0.2,45,1
+Full Retraining,146,1.0,0,0.2,45,1
+Full Retraining,147,1.0,0,0.2,45,1
+Full Retraining,148,1.0,0,0.2,45,1
+Full Retraining,149,0.0,0,0.2,45,1
+RAPT,99,1.0,0,0.2,45,1
+RAPT,100,1.0,0,0.2,45,1
+RAPT,101,1.0,0,0.2,45,1
+RAPT,102,1.0,0,0.2,45,1
+RAPT,103,1.0,0,0.2,45,1
+RAPT,104,1.0,0,0.2,45,1
+RAPT,105,1.0,0,0.2,45,1
+RAPT,106,1.0,0,0.2,45,1
+RAPT,107,1.0,0,0.2,45,1
+RAPT,108,1.0,0,0.2,45,1
+RAPT,109,1.0,0,0.2,45,1
+RAPT,110,1.0,0,0.2,45,1
+RAPT,111,1.0,0,0.2,45,1
+RAPT,112,1.0,0,0.2,45,1
+RAPT,113,1.0,0,0.2,45,1
+RAPT,114,1.0,0,0.2,45,1
+RAPT,115,1.0,0,0.2,45,1
+RAPT,116,1.0,0,0.2,45,1
+RAPT,117,1.0,0,0.2,45,1
+RAPT,118,1.0,0,0.2,45,1
+RAPT,119,1.0,0,0.2,45,1
+RAPT,120,1.0,0,0.2,45,1
+RAPT,121,1.0,0,0.2,45,1
+RAPT,122,1.0,0,0.2,45,1
+RAPT,123,1.0,0,0.2,45,1
+RAPT,124,1.0,0,0.2,45,1
+RAPT,125,1.0,0,0.2,45,1
+RAPT,126,1.0,0,0.2,45,1
+RAPT,127,1.0,0,0.2,45,1
+RAPT,128,1.0,0,0.2,45,1
+RAPT,129,1.0,0,0.2,45,1
+RAPT,130,1.0,0,0.2,45,1
+RAPT,131,1.0,0,0.2,45,1
+RAPT,132,1.0,0,0.2,45,1
+RAPT,133,1.0,0,0.2,45,1
+RAPT,134,1.0,0,0.2,45,1
+RAPT,135,1.0,0,0.2,45,1
+RAPT,136,1.0,0,0.2,45,1
+RAPT,137,1.0,0,0.2,45,1
+RAPT,138,1.0,0,0.2,45,1
+RAPT,139,1.0,0,0.2,45,1
+RAPT,140,1.0,0,0.2,45,1
+RAPT,141,1.0,0,0.2,45,1
+RAPT,142,1.0,0,0.2,45,1
+RAPT,143,1.0,0,0.2,45,1
+RAPT,144,1.0,0,0.2,45,1
+RAPT,145,0.0,0,0.2,45,1
+RAPT,146,1.0,0,0.2,45,1
+RAPT,147,1.0,0,0.2,45,1
+RAPT,148,1.0,0,0.2,45,1
+RAPT,149,0.0,0,0.2,45,1
+Frozen,99,1.0,0,0.2,46,0
+Frozen,100,1.0,0,0.2,46,0
+Frozen,101,1.0,0,0.2,46,0
+Frozen,102,1.0,0,0.2,46,0
+Frozen,103,1.0,0,0.2,46,0
+Frozen,104,1.0,0,0.2,46,0
+Frozen,105,1.0,0,0.2,46,0
+Frozen,106,1.0,0,0.2,46,0
+Frozen,107,1.0,0,0.2,46,0
+Frozen,108,1.0,0,0.2,46,0
+Frozen,109,1.0,0,0.2,46,0
+Frozen,110,1.0,0,0.2,46,0
+Frozen,111,1.0,0,0.2,46,0
+Frozen,112,1.0,0,0.2,46,0
+Frozen,113,1.0,0,0.2,46,0
+Frozen,114,1.0,0,0.2,46,0
+Frozen,115,1.0,0,0.2,46,0
+Frozen,116,1.0,0,0.2,46,0
+Frozen,117,1.0,0,0.2,46,0
+Frozen,118,1.0,0,0.2,46,0
+Frozen,119,1.0,0,0.2,46,0
+Frozen,120,1.0,0,0.2,46,0
+Frozen,121,1.0,0,0.2,46,0
+Frozen,122,1.0,0,0.2,46,0
+Frozen,123,1.0,0,0.2,46,0
+Frozen,124,1.0,0,0.2,46,0
+Frozen,125,1.0,0,0.2,46,0
+Frozen,126,1.0,0,0.2,46,0
+Frozen,127,1.0,0,0.2,46,0
+Frozen,128,1.0,0,0.2,46,0
+Frozen,129,1.0,0,0.2,46,0
+Frozen,130,1.0,0,0.2,46,0
+Frozen,131,1.0,0,0.2,46,0
+Frozen,132,1.0,0,0.2,46,0
+Frozen,133,1.0,0,0.2,46,0
+Frozen,134,1.0,0,0.2,46,0
+Frozen,135,1.0,0,0.2,46,0
+Frozen,136,1.0,0,0.2,46,0
+Frozen,137,1.0,0,0.2,46,0
+Frozen,138,1.0,0,0.2,46,0
+Frozen,139,1.0,0,0.2,46,0
+Frozen,140,1.0,0,0.2,46,0
+Frozen,141,1.0,0,0.2,46,0
+Frozen,142,1.0,0,0.2,46,0
+Frozen,143,1.0,0,0.2,46,0
+Frozen,144,1.0,0,0.2,46,0
+Frozen,145,0.0,0,0.2,46,0
+Frozen,146,1.0,0,0.2,46,0
+Frozen,147,1.0,0,0.2,46,0
+Frozen,148,1.0,0,0.2,46,0
+Frozen,149,0.0,0,0.2,46,0
+Event-Driven,99,1.0,0,0.2,46,0
+Event-Driven,100,1.0,0,0.2,46,0
+Event-Driven,101,1.0,0,0.2,46,0
+Event-Driven,102,1.0,0,0.2,46,0
+Event-Driven,103,1.0,0,0.2,46,0
+Event-Driven,104,1.0,0,0.2,46,0
+Event-Driven,105,1.0,0,0.2,46,0
+Event-Driven,106,1.0,0,0.2,46,0
+Event-Driven,107,1.0,0,0.2,46,0
+Event-Driven,108,1.0,0,0.2,46,0
+Event-Driven,109,1.0,0,0.2,46,0
+Event-Driven,110,1.0,0,0.2,46,0
+Event-Driven,111,1.0,0,0.2,46,0
+Event-Driven,112,1.0,0,0.2,46,0
+Event-Driven,113,1.0,0,0.2,46,0
+Event-Driven,114,1.0,0,0.2,46,0
+Event-Driven,115,1.0,0,0.2,46,0
+Event-Driven,116,1.0,0,0.2,46,0
+Event-Driven,117,1.0,0,0.2,46,0
+Event-Driven,118,1.0,0,0.2,46,0
+Event-Driven,119,1.0,0,0.2,46,0
+Event-Driven,120,1.0,0,0.2,46,0
+Event-Driven,121,1.0,0,0.2,46,0
+Event-Driven,122,1.0,0,0.2,46,0
+Event-Driven,123,1.0,0,0.2,46,0
+Event-Driven,124,1.0,0,0.2,46,0
+Event-Driven,125,1.0,0,0.2,46,0
+Event-Driven,126,1.0,0,0.2,46,0
+Event-Driven,127,1.0,0,0.2,46,0
+Event-Driven,128,1.0,0,0.2,46,0
+Event-Driven,129,1.0,0,0.2,46,0
+Event-Driven,130,1.0,0,0.2,46,0
+Event-Driven,131,1.0,0,0.2,46,0
+Event-Driven,132,1.0,0,0.2,46,0
+Event-Driven,133,1.0,0,0.2,46,0
+Event-Driven,134,1.0,0,0.2,46,0
+Event-Driven,135,1.0,0,0.2,46,0
+Event-Driven,136,1.0,0,0.2,46,0
+Event-Driven,137,1.0,0,0.2,46,0
+Event-Driven,138,1.0,0,0.2,46,0
+Event-Driven,139,1.0,0,0.2,46,0
+Event-Driven,140,1.0,0,0.2,46,0
+Event-Driven,141,1.0,0,0.2,46,0
+Event-Driven,142,1.0,0,0.2,46,0
+Event-Driven,143,1.0,0,0.2,46,0
+Event-Driven,144,1.0,0,0.2,46,0
+Event-Driven,145,0.0,0,0.2,46,0
+Event-Driven,146,1.0,0,0.2,46,0
+Event-Driven,147,1.0,0,0.2,46,0
+Event-Driven,148,1.0,0,0.2,46,0
+Event-Driven,149,0.0,0,0.2,46,0
+Full Retraining,99,1.0,0,0.2,46,0
+Full Retraining,100,1.0,0,0.2,46,0
+Full Retraining,101,1.0,0,0.2,46,0
+Full Retraining,102,1.0,0,0.2,46,0
+Full Retraining,103,1.0,0,0.2,46,0
+Full Retraining,104,1.0,0,0.2,46,0
+Full Retraining,105,1.0,0,0.2,46,0
+Full Retraining,106,1.0,0,0.2,46,0
+Full Retraining,107,1.0,0,0.2,46,0
+Full Retraining,108,1.0,0,0.2,46,0
+Full Retraining,109,1.0,0,0.2,46,0
+Full Retraining,110,1.0,0,0.2,46,0
+Full Retraining,111,1.0,0,0.2,46,0
+Full Retraining,112,1.0,0,0.2,46,0
+Full Retraining,113,1.0,0,0.2,46,0
+Full Retraining,114,1.0,0,0.2,46,0
+Full Retraining,115,1.0,0,0.2,46,0
+Full Retraining,116,1.0,0,0.2,46,0
+Full Retraining,117,1.0,0,0.2,46,0
+Full Retraining,118,1.0,0,0.2,46,0
+Full Retraining,119,1.0,0,0.2,46,0
+Full Retraining,120,1.0,0,0.2,46,0
+Full Retraining,121,1.0,0,0.2,46,0
+Full Retraining,122,1.0,0,0.2,46,0
+Full Retraining,123,1.0,0,0.2,46,0
+Full Retraining,124,1.0,0,0.2,46,0
+Full Retraining,125,1.0,0,0.2,46,0
+Full Retraining,126,1.0,0,0.2,46,0
+Full Retraining,127,1.0,0,0.2,46,0
+Full Retraining,128,1.0,0,0.2,46,0
+Full Retraining,129,1.0,0,0.2,46,0
+Full Retraining,130,1.0,0,0.2,46,0
+Full Retraining,131,1.0,0,0.2,46,0
+Full Retraining,132,1.0,0,0.2,46,0
+Full Retraining,133,1.0,0,0.2,46,0
+Full Retraining,134,1.0,0,0.2,46,0
+Full Retraining,135,1.0,0,0.2,46,0
+Full Retraining,136,1.0,0,0.2,46,0
+Full Retraining,137,1.0,0,0.2,46,0
+Full Retraining,138,1.0,0,0.2,46,0
+Full Retraining,139,1.0,0,0.2,46,0
+Full Retraining,140,1.0,0,0.2,46,0
+Full Retraining,141,1.0,0,0.2,46,0
+Full Retraining,142,1.0,0,0.2,46,0
+Full Retraining,143,1.0,0,0.2,46,0
+Full Retraining,144,1.0,0,0.2,46,0
+Full Retraining,145,0.0,0,0.2,46,0
+Full Retraining,146,1.0,0,0.2,46,0
+Full Retraining,147,1.0,0,0.2,46,0
+Full Retraining,148,1.0,0,0.2,46,0
+Full Retraining,149,0.0,0,0.2,46,0
+RAPT,99,1.0,0,0.2,46,0
+RAPT,100,1.0,0,0.2,46,0
+RAPT,101,1.0,0,0.2,46,0
+RAPT,102,1.0,0,0.2,46,0
+RAPT,103,1.0,0,0.2,46,0
+RAPT,104,1.0,0,0.2,46,0
+RAPT,105,1.0,0,0.2,46,0
+RAPT,106,1.0,0,0.2,46,0
+RAPT,107,1.0,0,0.2,46,0
+RAPT,108,1.0,0,0.2,46,0
+RAPT,109,1.0,0,0.2,46,0
+RAPT,110,1.0,0,0.2,46,0
+RAPT,111,1.0,0,0.2,46,0
+RAPT,112,1.0,0,0.2,46,0
+RAPT,113,1.0,0,0.2,46,0
+RAPT,114,1.0,0,0.2,46,0
+RAPT,115,1.0,0,0.2,46,0
+RAPT,116,1.0,0,0.2,46,0
+RAPT,117,1.0,0,0.2,46,0
+RAPT,118,1.0,0,0.2,46,0
+RAPT,119,1.0,0,0.2,46,0
+RAPT,120,1.0,0,0.2,46,0
+RAPT,121,1.0,0,0.2,46,0
+RAPT,122,1.0,0,0.2,46,0
+RAPT,123,1.0,0,0.2,46,0
+RAPT,124,1.0,0,0.2,46,0
+RAPT,125,1.0,0,0.2,46,0
+RAPT,126,1.0,0,0.2,46,0
+RAPT,127,1.0,0,0.2,46,0
+RAPT,128,1.0,0,0.2,46,0
+RAPT,129,1.0,0,0.2,46,0
+RAPT,130,1.0,0,0.2,46,0
+RAPT,131,1.0,0,0.2,46,0
+RAPT,132,1.0,0,0.2,46,0
+RAPT,133,1.0,0,0.2,46,0
+RAPT,134,1.0,0,0.2,46,0
+RAPT,135,1.0,0,0.2,46,0
+RAPT,136,1.0,0,0.2,46,0
+RAPT,137,1.0,0,0.2,46,0
+RAPT,138,1.0,0,0.2,46,0
+RAPT,139,1.0,0,0.2,46,0
+RAPT,140,1.0,0,0.2,46,0
+RAPT,141,1.0,0,0.2,46,0
+RAPT,142,1.0,0,0.2,46,0
+RAPT,143,1.0,0,0.2,46,0
+RAPT,144,1.0,0,0.2,46,0
+RAPT,145,0.0,0,0.2,46,0
+RAPT,146,1.0,0,0.2,46,0
+RAPT,147,1.0,0,0.2,46,0
+RAPT,148,1.0,0,0.2,46,0
+RAPT,149,0.0,0,0.2,46,0
+Frozen,99,1.0,0,0.2,46,1
+Frozen,100,1.0,0,0.2,46,1
+Frozen,101,1.0,0,0.2,46,1
+Frozen,102,1.0,0,0.2,46,1
+Frozen,103,1.0,0,0.2,46,1
+Frozen,104,1.0,0,0.2,46,1
+Frozen,105,1.0,0,0.2,46,1
+Frozen,106,1.0,0,0.2,46,1
+Frozen,107,1.0,0,0.2,46,1
+Frozen,108,1.0,0,0.2,46,1
+Frozen,109,1.0,0,0.2,46,1
+Frozen,110,1.0,0,0.2,46,1
+Frozen,111,1.0,0,0.2,46,1
+Frozen,112,1.0,0,0.2,46,1
+Frozen,113,1.0,0,0.2,46,1
+Frozen,114,1.0,0,0.2,46,1
+Frozen,115,1.0,0,0.2,46,1
+Frozen,116,1.0,0,0.2,46,1
+Frozen,117,1.0,0,0.2,46,1
+Frozen,118,1.0,0,0.2,46,1
+Frozen,119,1.0,0,0.2,46,1
+Frozen,120,1.0,0,0.2,46,1
+Frozen,121,1.0,0,0.2,46,1
+Frozen,122,1.0,0,0.2,46,1
+Frozen,123,1.0,0,0.2,46,1
+Frozen,124,1.0,0,0.2,46,1
+Frozen,125,1.0,0,0.2,46,1
+Frozen,126,1.0,0,0.2,46,1
+Frozen,127,1.0,0,0.2,46,1
+Frozen,128,1.0,0,0.2,46,1
+Frozen,129,1.0,0,0.2,46,1
+Frozen,130,1.0,0,0.2,46,1
+Frozen,131,1.0,0,0.2,46,1
+Frozen,132,1.0,0,0.2,46,1
+Frozen,133,1.0,0,0.2,46,1
+Frozen,134,1.0,0,0.2,46,1
+Frozen,135,1.0,0,0.2,46,1
+Frozen,136,1.0,0,0.2,46,1
+Frozen,137,1.0,0,0.2,46,1
+Frozen,138,1.0,0,0.2,46,1
+Frozen,139,1.0,0,0.2,46,1
+Frozen,140,1.0,0,0.2,46,1
+Frozen,141,1.0,0,0.2,46,1
+Frozen,142,1.0,0,0.2,46,1
+Frozen,143,1.0,0,0.2,46,1
+Frozen,144,1.0,0,0.2,46,1
+Frozen,145,0.0,0,0.2,46,1
+Frozen,146,1.0,0,0.2,46,1
+Frozen,147,1.0,0,0.2,46,1
+Frozen,148,1.0,0,0.2,46,1
+Frozen,149,0.0,0,0.2,46,1
+Event-Driven,99,1.0,0,0.2,46,1
+Event-Driven,100,1.0,0,0.2,46,1
+Event-Driven,101,1.0,0,0.2,46,1
+Event-Driven,102,1.0,0,0.2,46,1
+Event-Driven,103,1.0,0,0.2,46,1
+Event-Driven,104,1.0,0,0.2,46,1
+Event-Driven,105,1.0,0,0.2,46,1
+Event-Driven,106,1.0,0,0.2,46,1
+Event-Driven,107,1.0,0,0.2,46,1
+Event-Driven,108,1.0,0,0.2,46,1
+Event-Driven,109,1.0,0,0.2,46,1
+Event-Driven,110,1.0,0,0.2,46,1
+Event-Driven,111,1.0,0,0.2,46,1
+Event-Driven,112,1.0,0,0.2,46,1
+Event-Driven,113,1.0,0,0.2,46,1
+Event-Driven,114,1.0,0,0.2,46,1
+Event-Driven,115,1.0,0,0.2,46,1
+Event-Driven,116,1.0,0,0.2,46,1
+Event-Driven,117,1.0,0,0.2,46,1
+Event-Driven,118,1.0,0,0.2,46,1
+Event-Driven,119,1.0,0,0.2,46,1
+Event-Driven,120,1.0,0,0.2,46,1
+Event-Driven,121,1.0,0,0.2,46,1
+Event-Driven,122,1.0,0,0.2,46,1
+Event-Driven,123,1.0,0,0.2,46,1
+Event-Driven,124,1.0,0,0.2,46,1
+Event-Driven,125,1.0,0,0.2,46,1
+Event-Driven,126,1.0,0,0.2,46,1
+Event-Driven,127,1.0,0,0.2,46,1
+Event-Driven,128,1.0,0,0.2,46,1
+Event-Driven,129,1.0,0,0.2,46,1
+Event-Driven,130,1.0,0,0.2,46,1
+Event-Driven,131,1.0,0,0.2,46,1
+Event-Driven,132,1.0,0,0.2,46,1
+Event-Driven,133,1.0,0,0.2,46,1
+Event-Driven,134,1.0,0,0.2,46,1
+Event-Driven,135,1.0,0,0.2,46,1
+Event-Driven,136,1.0,0,0.2,46,1
+Event-Driven,137,1.0,0,0.2,46,1
+Event-Driven,138,1.0,0,0.2,46,1
+Event-Driven,139,1.0,0,0.2,46,1
+Event-Driven,140,1.0,0,0.2,46,1
+Event-Driven,141,1.0,0,0.2,46,1
+Event-Driven,142,1.0,0,0.2,46,1
+Event-Driven,143,1.0,0,0.2,46,1
+Event-Driven,144,1.0,0,0.2,46,1
+Event-Driven,145,0.0,0,0.2,46,1
+Event-Driven,146,1.0,0,0.2,46,1
+Event-Driven,147,1.0,0,0.2,46,1
+Event-Driven,148,1.0,0,0.2,46,1
+Event-Driven,149,0.0,0,0.2,46,1
+Full Retraining,99,1.0,0,0.2,46,1
+Full Retraining,100,1.0,0,0.2,46,1
+Full Retraining,101,1.0,0,0.2,46,1
+Full Retraining,102,1.0,0,0.2,46,1
+Full Retraining,103,1.0,0,0.2,46,1
+Full Retraining,104,1.0,0,0.2,46,1
+Full Retraining,105,1.0,0,0.2,46,1
+Full Retraining,106,1.0,0,0.2,46,1
+Full Retraining,107,1.0,0,0.2,46,1
+Full Retraining,108,1.0,0,0.2,46,1
+Full Retraining,109,1.0,0,0.2,46,1
+Full Retraining,110,1.0,0,0.2,46,1
+Full Retraining,111,1.0,0,0.2,46,1
+Full Retraining,112,1.0,0,0.2,46,1
+Full Retraining,113,1.0,0,0.2,46,1
+Full Retraining,114,1.0,0,0.2,46,1
+Full Retraining,115,1.0,0,0.2,46,1
+Full Retraining,116,1.0,0,0.2,46,1
+Full Retraining,117,1.0,0,0.2,46,1
+Full Retraining,118,1.0,0,0.2,46,1
+Full Retraining,119,1.0,0,0.2,46,1
+Full Retraining,120,1.0,0,0.2,46,1
+Full Retraining,121,1.0,0,0.2,46,1
+Full Retraining,122,1.0,0,0.2,46,1
+Full Retraining,123,1.0,0,0.2,46,1
+Full Retraining,124,1.0,0,0.2,46,1
+Full Retraining,125,1.0,0,0.2,46,1
+Full Retraining,126,1.0,0,0.2,46,1
+Full Retraining,127,1.0,0,0.2,46,1
+Full Retraining,128,1.0,0,0.2,46,1
+Full Retraining,129,1.0,0,0.2,46,1
+Full Retraining,130,1.0,0,0.2,46,1
+Full Retraining,131,1.0,0,0.2,46,1
+Full Retraining,132,1.0,0,0.2,46,1
+Full Retraining,133,1.0,0,0.2,46,1
+Full Retraining,134,1.0,0,0.2,46,1
+Full Retraining,135,1.0,0,0.2,46,1
+Full Retraining,136,1.0,0,0.2,46,1
+Full Retraining,137,1.0,0,0.2,46,1
+Full Retraining,138,1.0,0,0.2,46,1
+Full Retraining,139,1.0,0,0.2,46,1
+Full Retraining,140,1.0,0,0.2,46,1
+Full Retraining,141,1.0,0,0.2,46,1
+Full Retraining,142,1.0,0,0.2,46,1
+Full Retraining,143,1.0,0,0.2,46,1
+Full Retraining,144,1.0,0,0.2,46,1
+Full Retraining,145,0.0,0,0.2,46,1
+Full Retraining,146,1.0,0,0.2,46,1
+Full Retraining,147,1.0,0,0.2,46,1
+Full Retraining,148,1.0,0,0.2,46,1
+Full Retraining,149,0.0,0,0.2,46,1
+RAPT,99,1.0,0,0.2,46,1
+RAPT,100,1.0,0,0.2,46,1
+RAPT,101,1.0,0,0.2,46,1
+RAPT,102,1.0,0,0.2,46,1
+RAPT,103,1.0,0,0.2,46,1
+RAPT,104,1.0,0,0.2,46,1
+RAPT,105,1.0,0,0.2,46,1
+RAPT,106,1.0,0,0.2,46,1
+RAPT,107,1.0,0,0.2,46,1
+RAPT,108,1.0,0,0.2,46,1
+RAPT,109,1.0,0,0.2,46,1
+RAPT,110,1.0,0,0.2,46,1
+RAPT,111,1.0,0,0.2,46,1
+RAPT,112,1.0,0,0.2,46,1
+RAPT,113,1.0,0,0.2,46,1
+RAPT,114,1.0,0,0.2,46,1
+RAPT,115,1.0,0,0.2,46,1
+RAPT,116,1.0,0,0.2,46,1
+RAPT,117,1.0,0,0.2,46,1
+RAPT,118,1.0,0,0.2,46,1
+RAPT,119,1.0,0,0.2,46,1
+RAPT,120,1.0,0,0.2,46,1
+RAPT,121,1.0,0,0.2,46,1
+RAPT,122,1.0,0,0.2,46,1
+RAPT,123,1.0,0,0.2,46,1
+RAPT,124,1.0,0,0.2,46,1
+RAPT,125,1.0,0,0.2,46,1
+RAPT,126,1.0,0,0.2,46,1
+RAPT,127,1.0,0,0.2,46,1
+RAPT,128,1.0,0,0.2,46,1
+RAPT,129,1.0,0,0.2,46,1
+RAPT,130,1.0,0,0.2,46,1
+RAPT,131,1.0,0,0.2,46,1
+RAPT,132,1.0,0,0.2,46,1
+RAPT,133,1.0,0,0.2,46,1
+RAPT,134,1.0,0,0.2,46,1
+RAPT,135,1.0,0,0.2,46,1
+RAPT,136,1.0,0,0.2,46,1
+RAPT,137,1.0,0,0.2,46,1
+RAPT,138,1.0,0,0.2,46,1
+RAPT,139,1.0,0,0.2,46,1
+RAPT,140,1.0,0,0.2,46,1
+RAPT,141,1.0,0,0.2,46,1
+RAPT,142,1.0,0,0.2,46,1
+RAPT,143,1.0,0,0.2,46,1
+RAPT,144,1.0,0,0.2,46,1
+RAPT,145,0.0,0,0.2,46,1
+RAPT,146,1.0,0,0.2,46,1
+RAPT,147,1.0,0,0.2,46,1
+RAPT,148,1.0,0,0.2,46,1
+RAPT,149,0.0,0,0.2,46,1
+Frozen,99,1.0,0,0.5,42,0
+Frozen,100,1.0,0,0.5,42,0
+Frozen,101,1.0,0,0.5,42,0
+Frozen,102,1.0,0,0.5,42,0
+Frozen,103,1.0,0,0.5,42,0
+Frozen,104,1.0,0,0.5,42,0
+Frozen,105,1.0,0,0.5,42,0
+Frozen,106,1.0,0,0.5,42,0
+Frozen,107,1.0,0,0.5,42,0
+Frozen,108,1.0,0,0.5,42,0
+Frozen,109,1.0,0,0.5,42,0
+Frozen,110,1.0,0,0.5,42,0
+Frozen,111,1.0,0,0.5,42,0
+Frozen,112,1.0,0,0.5,42,0
+Frozen,113,1.0,0,0.5,42,0
+Frozen,114,1.0,0,0.5,42,0
+Frozen,115,1.0,0,0.5,42,0
+Frozen,116,1.0,0,0.5,42,0
+Frozen,117,1.0,0,0.5,42,0
+Frozen,118,1.0,0,0.5,42,0
+Frozen,119,1.0,0,0.5,42,0
+Frozen,120,1.0,0,0.5,42,0
+Frozen,121,1.0,0,0.5,42,0
+Frozen,122,1.0,0,0.5,42,0
+Frozen,123,1.0,0,0.5,42,0
+Frozen,124,1.0,0,0.5,42,0
+Frozen,125,1.0,0,0.5,42,0
+Frozen,126,1.0,0,0.5,42,0
+Frozen,127,1.0,0,0.5,42,0
+Frozen,128,1.0,0,0.5,42,0
+Frozen,129,1.0,0,0.5,42,0
+Frozen,130,1.0,0,0.5,42,0
+Frozen,131,1.0,0,0.5,42,0
+Frozen,132,0.0,0,0.5,42,0
+Frozen,133,1.0,0,0.5,42,0
+Frozen,134,1.0,0,0.5,42,0
+Frozen,135,1.0,0,0.5,42,0
+Frozen,136,1.0,0,0.5,42,0
+Frozen,137,1.0,0,0.5,42,0
+Frozen,138,1.0,0,0.5,42,0
+Frozen,139,1.0,0,0.5,42,0
+Frozen,140,1.0,0,0.5,42,0
+Frozen,141,1.0,0,0.5,42,0
+Frozen,142,1.0,0,0.5,42,0
+Frozen,143,0.0,0,0.5,42,0
+Frozen,144,0.0,0,0.5,42,0
+Frozen,145,0.0,0,0.5,42,0
+Frozen,146,0.0,0,0.5,42,0
+Frozen,147,1.0,0,0.5,42,0
+Frozen,148,1.0,0,0.5,42,0
+Frozen,149,0.0,0,0.5,42,0
+Event-Driven,99,1.0,0,0.5,42,0
+Event-Driven,100,1.0,0,0.5,42,0
+Event-Driven,101,1.0,0,0.5,42,0
+Event-Driven,102,1.0,0,0.5,42,0
+Event-Driven,103,1.0,0,0.5,42,0
+Event-Driven,104,1.0,0,0.5,42,0
+Event-Driven,105,1.0,0,0.5,42,0
+Event-Driven,106,1.0,0,0.5,42,0
+Event-Driven,107,1.0,0,0.5,42,0
+Event-Driven,108,1.0,0,0.5,42,0
+Event-Driven,109,1.0,0,0.5,42,0
+Event-Driven,110,1.0,0,0.5,42,0
+Event-Driven,111,1.0,0,0.5,42,0
+Event-Driven,112,1.0,0,0.5,42,0
+Event-Driven,113,1.0,0,0.5,42,0
+Event-Driven,114,1.0,0,0.5,42,0
+Event-Driven,115,1.0,0,0.5,42,0
+Event-Driven,116,1.0,0,0.5,42,0
+Event-Driven,117,1.0,0,0.5,42,0
+Event-Driven,118,1.0,0,0.5,42,0
+Event-Driven,119,1.0,0,0.5,42,0
+Event-Driven,120,1.0,0,0.5,42,0
+Event-Driven,121,1.0,0,0.5,42,0
+Event-Driven,122,1.0,0,0.5,42,0
+Event-Driven,123,1.0,0,0.5,42,0
+Event-Driven,124,1.0,0,0.5,42,0
+Event-Driven,125,1.0,0,0.5,42,0
+Event-Driven,126,1.0,0,0.5,42,0
+Event-Driven,127,1.0,0,0.5,42,0
+Event-Driven,128,1.0,0,0.5,42,0
+Event-Driven,129,1.0,0,0.5,42,0
+Event-Driven,130,1.0,0,0.5,42,0
+Event-Driven,131,1.0,0,0.5,42,0
+Event-Driven,132,0.0,0,0.5,42,0
+Event-Driven,133,1.0,0,0.5,42,0
+Event-Driven,134,1.0,0,0.5,42,0
+Event-Driven,135,1.0,0,0.5,42,0
+Event-Driven,136,1.0,0,0.5,42,0
+Event-Driven,137,1.0,0,0.5,42,0
+Event-Driven,138,1.0,0,0.5,42,0
+Event-Driven,139,1.0,0,0.5,42,0
+Event-Driven,140,1.0,0,0.5,42,0
+Event-Driven,141,1.0,0,0.5,42,0
+Event-Driven,142,1.0,0,0.5,42,0
+Event-Driven,143,0.0,0,0.5,42,0
+Event-Driven,144,0.0,0,0.5,42,0
+Event-Driven,145,0.0,0,0.5,42,0
+Event-Driven,146,0.0,0,0.5,42,0
+Event-Driven,147,1.0,0,0.5,42,0
+Event-Driven,148,1.0,0,0.5,42,0
+Event-Driven,149,0.0,0,0.5,42,0
+Full Retraining,99,1.0,0,0.5,42,0
+Full Retraining,100,1.0,0,0.5,42,0
+Full Retraining,101,1.0,0,0.5,42,0
+Full Retraining,102,1.0,0,0.5,42,0
+Full Retraining,103,1.0,0,0.5,42,0
+Full Retraining,104,1.0,0,0.5,42,0
+Full Retraining,105,1.0,0,0.5,42,0
+Full Retraining,106,1.0,0,0.5,42,0
+Full Retraining,107,1.0,0,0.5,42,0
+Full Retraining,108,1.0,0,0.5,42,0
+Full Retraining,109,1.0,0,0.5,42,0
+Full Retraining,110,1.0,0,0.5,42,0
+Full Retraining,111,1.0,0,0.5,42,0
+Full Retraining,112,1.0,0,0.5,42,0
+Full Retraining,113,1.0,0,0.5,42,0
+Full Retraining,114,1.0,0,0.5,42,0
+Full Retraining,115,1.0,0,0.5,42,0
+Full Retraining,116,1.0,0,0.5,42,0
+Full Retraining,117,1.0,0,0.5,42,0
+Full Retraining,118,1.0,0,0.5,42,0
+Full Retraining,119,1.0,0,0.5,42,0
+Full Retraining,120,1.0,0,0.5,42,0
+Full Retraining,121,1.0,0,0.5,42,0
+Full Retraining,122,1.0,0,0.5,42,0
+Full Retraining,123,1.0,0,0.5,42,0
+Full Retraining,124,1.0,0,0.5,42,0
+Full Retraining,125,1.0,0,0.5,42,0
+Full Retraining,126,1.0,0,0.5,42,0
+Full Retraining,127,1.0,0,0.5,42,0
+Full Retraining,128,1.0,0,0.5,42,0
+Full Retraining,129,1.0,0,0.5,42,0
+Full Retraining,130,1.0,0,0.5,42,0
+Full Retraining,131,1.0,0,0.5,42,0
+Full Retraining,132,0.0,0,0.5,42,0
+Full Retraining,133,1.0,0,0.5,42,0
+Full Retraining,134,1.0,0,0.5,42,0
+Full Retraining,135,1.0,0,0.5,42,0
+Full Retraining,136,1.0,0,0.5,42,0
+Full Retraining,137,1.0,0,0.5,42,0
+Full Retraining,138,1.0,0,0.5,42,0
+Full Retraining,139,1.0,0,0.5,42,0
+Full Retraining,140,1.0,0,0.5,42,0
+Full Retraining,141,1.0,0,0.5,42,0
+Full Retraining,142,1.0,0,0.5,42,0
+Full Retraining,143,0.0,0,0.5,42,0
+Full Retraining,144,0.0,0,0.5,42,0
+Full Retraining,145,0.0,0,0.5,42,0
+Full Retraining,146,0.0,0,0.5,42,0
+Full Retraining,147,1.0,0,0.5,42,0
+Full Retraining,148,1.0,0,0.5,42,0
+Full Retraining,149,0.0,0,0.5,42,0
+RAPT,99,1.0,0,0.5,42,0
+RAPT,100,1.0,0,0.5,42,0
+RAPT,101,1.0,0,0.5,42,0
+RAPT,102,1.0,0,0.5,42,0
+RAPT,103,1.0,0,0.5,42,0
+RAPT,104,1.0,0,0.5,42,0
+RAPT,105,1.0,0,0.5,42,0
+RAPT,106,1.0,0,0.5,42,0
+RAPT,107,1.0,0,0.5,42,0
+RAPT,108,1.0,0,0.5,42,0
+RAPT,109,1.0,0,0.5,42,0
+RAPT,110,1.0,0,0.5,42,0
+RAPT,111,1.0,0,0.5,42,0
+RAPT,112,1.0,0,0.5,42,0
+RAPT,113,1.0,0,0.5,42,0
+RAPT,114,1.0,0,0.5,42,0
+RAPT,115,1.0,0,0.5,42,0
+RAPT,116,1.0,0,0.5,42,0
+RAPT,117,1.0,0,0.5,42,0
+RAPT,118,1.0,0,0.5,42,0
+RAPT,119,1.0,0,0.5,42,0
+RAPT,120,1.0,0,0.5,42,0
+RAPT,121,1.0,0,0.5,42,0
+RAPT,122,1.0,0,0.5,42,0
+RAPT,123,1.0,0,0.5,42,0
+RAPT,124,1.0,0,0.5,42,0
+RAPT,125,1.0,0,0.5,42,0
+RAPT,126,1.0,0,0.5,42,0
+RAPT,127,1.0,0,0.5,42,0
+RAPT,128,1.0,0,0.5,42,0
+RAPT,129,1.0,0,0.5,42,0
+RAPT,130,1.0,0,0.5,42,0
+RAPT,131,1.0,0,0.5,42,0
+RAPT,132,0.0,0,0.5,42,0
+RAPT,133,1.0,0,0.5,42,0
+RAPT,134,1.0,0,0.5,42,0
+RAPT,135,1.0,0,0.5,42,0
+RAPT,136,1.0,0,0.5,42,0
+RAPT,137,1.0,0,0.5,42,0
+RAPT,138,1.0,0,0.5,42,0
+RAPT,139,1.0,0,0.5,42,0
+RAPT,140,1.0,0,0.5,42,0
+RAPT,141,1.0,0,0.5,42,0
+RAPT,142,1.0,0,0.5,42,0
+RAPT,143,0.0,0,0.5,42,0
+RAPT,144,0.0,0,0.5,42,0
+RAPT,145,0.0,0,0.5,42,0
+RAPT,146,0.0,0,0.5,42,0
+RAPT,147,1.0,0,0.5,42,0
+RAPT,148,1.0,0,0.5,42,0
+RAPT,149,0.0,0,0.5,42,0
+Frozen,99,1.0,0,0.5,42,1
+Frozen,100,1.0,0,0.5,42,1
+Frozen,101,1.0,0,0.5,42,1
+Frozen,102,1.0,0,0.5,42,1
+Frozen,103,1.0,0,0.5,42,1
+Frozen,104,1.0,0,0.5,42,1
+Frozen,105,1.0,0,0.5,42,1
+Frozen,106,1.0,0,0.5,42,1
+Frozen,107,1.0,0,0.5,42,1
+Frozen,108,1.0,0,0.5,42,1
+Frozen,109,1.0,0,0.5,42,1
+Frozen,110,1.0,0,0.5,42,1
+Frozen,111,1.0,0,0.5,42,1
+Frozen,112,1.0,0,0.5,42,1
+Frozen,113,1.0,0,0.5,42,1
+Frozen,114,1.0,0,0.5,42,1
+Frozen,115,1.0,0,0.5,42,1
+Frozen,116,1.0,0,0.5,42,1
+Frozen,117,1.0,0,0.5,42,1
+Frozen,118,1.0,0,0.5,42,1
+Frozen,119,1.0,0,0.5,42,1
+Frozen,120,1.0,0,0.5,42,1
+Frozen,121,1.0,0,0.5,42,1
+Frozen,122,1.0,0,0.5,42,1
+Frozen,123,1.0,0,0.5,42,1
+Frozen,124,1.0,0,0.5,42,1
+Frozen,125,1.0,0,0.5,42,1
+Frozen,126,1.0,0,0.5,42,1
+Frozen,127,1.0,0,0.5,42,1
+Frozen,128,1.0,0,0.5,42,1
+Frozen,129,1.0,0,0.5,42,1
+Frozen,130,1.0,0,0.5,42,1
+Frozen,131,1.0,0,0.5,42,1
+Frozen,132,0.0,0,0.5,42,1
+Frozen,133,1.0,0,0.5,42,1
+Frozen,134,1.0,0,0.5,42,1
+Frozen,135,1.0,0,0.5,42,1
+Frozen,136,1.0,0,0.5,42,1
+Frozen,137,1.0,0,0.5,42,1
+Frozen,138,1.0,0,0.5,42,1
+Frozen,139,1.0,0,0.5,42,1
+Frozen,140,1.0,0,0.5,42,1
+Frozen,141,1.0,0,0.5,42,1
+Frozen,142,1.0,0,0.5,42,1
+Frozen,143,0.0,0,0.5,42,1
+Frozen,144,0.0,1,0.5,42,1
+Frozen,145,0.0,0,0.5,42,1
+Frozen,146,0.0,0,0.5,42,1
+Frozen,147,1.0,1,0.5,42,1
+Frozen,148,1.0,0,0.5,42,1
+Frozen,149,0.0,0,0.5,42,1
+Event-Driven,99,1.0,0,0.5,42,1
+Event-Driven,100,1.0,0,0.5,42,1
+Event-Driven,101,1.0,0,0.5,42,1
+Event-Driven,102,1.0,0,0.5,42,1
+Event-Driven,103,1.0,0,0.5,42,1
+Event-Driven,104,1.0,0,0.5,42,1
+Event-Driven,105,1.0,0,0.5,42,1
+Event-Driven,106,1.0,0,0.5,42,1
+Event-Driven,107,1.0,0,0.5,42,1
+Event-Driven,108,1.0,0,0.5,42,1
+Event-Driven,109,1.0,0,0.5,42,1
+Event-Driven,110,1.0,0,0.5,42,1
+Event-Driven,111,1.0,0,0.5,42,1
+Event-Driven,112,1.0,0,0.5,42,1
+Event-Driven,113,1.0,0,0.5,42,1
+Event-Driven,114,1.0,0,0.5,42,1
+Event-Driven,115,1.0,0,0.5,42,1
+Event-Driven,116,1.0,0,0.5,42,1
+Event-Driven,117,1.0,0,0.5,42,1
+Event-Driven,118,1.0,0,0.5,42,1
+Event-Driven,119,1.0,0,0.5,42,1
+Event-Driven,120,1.0,0,0.5,42,1
+Event-Driven,121,1.0,0,0.5,42,1
+Event-Driven,122,1.0,0,0.5,42,1
+Event-Driven,123,1.0,0,0.5,42,1
+Event-Driven,124,1.0,0,0.5,42,1
+Event-Driven,125,1.0,0,0.5,42,1
+Event-Driven,126,1.0,0,0.5,42,1
+Event-Driven,127,1.0,0,0.5,42,1
+Event-Driven,128,1.0,0,0.5,42,1
+Event-Driven,129,1.0,0,0.5,42,1
+Event-Driven,130,1.0,0,0.5,42,1
+Event-Driven,131,1.0,0,0.5,42,1
+Event-Driven,132,0.0,0,0.5,42,1
+Event-Driven,133,1.0,0,0.5,42,1
+Event-Driven,134,1.0,0,0.5,42,1
+Event-Driven,135,1.0,0,0.5,42,1
+Event-Driven,136,1.0,0,0.5,42,1
+Event-Driven,137,1.0,0,0.5,42,1
+Event-Driven,138,1.0,0,0.5,42,1
+Event-Driven,139,1.0,0,0.5,42,1
+Event-Driven,140,1.0,0,0.5,42,1
+Event-Driven,141,1.0,0,0.5,42,1
+Event-Driven,142,1.0,0,0.5,42,1
+Event-Driven,143,0.0,0,0.5,42,1
+Event-Driven,144,0.0,1,0.5,42,1
+Event-Driven,145,0.0,0,0.5,42,1
+Event-Driven,146,0.0,0,0.5,42,1
+Event-Driven,147,1.0,1,0.5,42,1
+Event-Driven,148,1.0,0,0.5,42,1
+Event-Driven,149,0.0,0,0.5,42,1
+Full Retraining,99,1.0,0,0.5,42,1
+Full Retraining,100,1.0,0,0.5,42,1
+Full Retraining,101,1.0,0,0.5,42,1
+Full Retraining,102,1.0,0,0.5,42,1
+Full Retraining,103,1.0,0,0.5,42,1
+Full Retraining,104,1.0,0,0.5,42,1
+Full Retraining,105,1.0,0,0.5,42,1
+Full Retraining,106,1.0,0,0.5,42,1
+Full Retraining,107,1.0,0,0.5,42,1
+Full Retraining,108,1.0,0,0.5,42,1
+Full Retraining,109,1.0,0,0.5,42,1
+Full Retraining,110,1.0,0,0.5,42,1
+Full Retraining,111,1.0,0,0.5,42,1
+Full Retraining,112,1.0,0,0.5,42,1
+Full Retraining,113,1.0,0,0.5,42,1
+Full Retraining,114,1.0,0,0.5,42,1
+Full Retraining,115,1.0,0,0.5,42,1
+Full Retraining,116,1.0,0,0.5,42,1
+Full Retraining,117,1.0,0,0.5,42,1
+Full Retraining,118,1.0,0,0.5,42,1
+Full Retraining,119,1.0,0,0.5,42,1
+Full Retraining,120,1.0,0,0.5,42,1
+Full Retraining,121,1.0,0,0.5,42,1
+Full Retraining,122,1.0,0,0.5,42,1
+Full Retraining,123,1.0,0,0.5,42,1
+Full Retraining,124,1.0,0,0.5,42,1
+Full Retraining,125,1.0,0,0.5,42,1
+Full Retraining,126,1.0,0,0.5,42,1
+Full Retraining,127,1.0,0,0.5,42,1
+Full Retraining,128,1.0,0,0.5,42,1
+Full Retraining,129,1.0,0,0.5,42,1
+Full Retraining,130,1.0,0,0.5,42,1
+Full Retraining,131,1.0,0,0.5,42,1
+Full Retraining,132,0.0,0,0.5,42,1
+Full Retraining,133,1.0,0,0.5,42,1
+Full Retraining,134,1.0,0,0.5,42,1
+Full Retraining,135,1.0,0,0.5,42,1
+Full Retraining,136,1.0,0,0.5,42,1
+Full Retraining,137,1.0,0,0.5,42,1
+Full Retraining,138,1.0,0,0.5,42,1
+Full Retraining,139,1.0,0,0.5,42,1
+Full Retraining,140,1.0,0,0.5,42,1
+Full Retraining,141,1.0,0,0.5,42,1
+Full Retraining,142,1.0,0,0.5,42,1
+Full Retraining,143,0.0,0,0.5,42,1
+Full Retraining,144,0.0,1,0.5,42,1
+Full Retraining,145,0.0,0,0.5,42,1
+Full Retraining,146,0.0,0,0.5,42,1
+Full Retraining,147,1.0,1,0.5,42,1
+Full Retraining,148,1.0,0,0.5,42,1
+Full Retraining,149,0.0,0,0.5,42,1
+RAPT,99,1.0,0,0.5,42,1
+RAPT,100,1.0,0,0.5,42,1
+RAPT,101,1.0,0,0.5,42,1
+RAPT,102,1.0,0,0.5,42,1
+RAPT,103,1.0,0,0.5,42,1
+RAPT,104,1.0,0,0.5,42,1
+RAPT,105,1.0,0,0.5,42,1
+RAPT,106,1.0,0,0.5,42,1
+RAPT,107,1.0,0,0.5,42,1
+RAPT,108,1.0,0,0.5,42,1
+RAPT,109,1.0,0,0.5,42,1
+RAPT,110,1.0,0,0.5,42,1
+RAPT,111,1.0,0,0.5,42,1
+RAPT,112,1.0,0,0.5,42,1
+RAPT,113,1.0,0,0.5,42,1
+RAPT,114,1.0,0,0.5,42,1
+RAPT,115,1.0,0,0.5,42,1
+RAPT,116,1.0,0,0.5,42,1
+RAPT,117,1.0,0,0.5,42,1
+RAPT,118,1.0,0,0.5,42,1
+RAPT,119,1.0,0,0.5,42,1
+RAPT,120,1.0,0,0.5,42,1
+RAPT,121,1.0,0,0.5,42,1
+RAPT,122,1.0,0,0.5,42,1
+RAPT,123,1.0,0,0.5,42,1
+RAPT,124,1.0,0,0.5,42,1
+RAPT,125,1.0,0,0.5,42,1
+RAPT,126,1.0,0,0.5,42,1
+RAPT,127,1.0,0,0.5,42,1
+RAPT,128,1.0,0,0.5,42,1
+RAPT,129,1.0,0,0.5,42,1
+RAPT,130,1.0,0,0.5,42,1
+RAPT,131,1.0,0,0.5,42,1
+RAPT,132,0.0,0,0.5,42,1
+RAPT,133,1.0,0,0.5,42,1
+RAPT,134,1.0,0,0.5,42,1
+RAPT,135,1.0,0,0.5,42,1
+RAPT,136,1.0,0,0.5,42,1
+RAPT,137,1.0,0,0.5,42,1
+RAPT,138,1.0,0,0.5,42,1
+RAPT,139,1.0,0,0.5,42,1
+RAPT,140,1.0,0,0.5,42,1
+RAPT,141,1.0,0,0.5,42,1
+RAPT,142,1.0,0,0.5,42,1
+RAPT,143,0.0,0,0.5,42,1
+RAPT,144,0.0,1,0.5,42,1
+RAPT,145,0.0,0,0.5,42,1
+RAPT,146,1.0,0,0.5,42,1
+RAPT,147,1.0,0,0.5,42,1
+RAPT,148,1.0,0,0.5,42,1
+RAPT,149,0.0,0,0.5,42,1
+Frozen,99,1.0,0,0.5,43,0
+Frozen,100,1.0,0,0.5,43,0
+Frozen,101,1.0,0,0.5,43,0
+Frozen,102,1.0,0,0.5,43,0
+Frozen,103,1.0,0,0.5,43,0
+Frozen,104,1.0,0,0.5,43,0
+Frozen,105,1.0,0,0.5,43,0
+Frozen,106,1.0,0,0.5,43,0
+Frozen,107,1.0,0,0.5,43,0
+Frozen,108,1.0,0,0.5,43,0
+Frozen,109,1.0,0,0.5,43,0
+Frozen,110,1.0,0,0.5,43,0
+Frozen,111,1.0,0,0.5,43,0
+Frozen,112,1.0,0,0.5,43,0
+Frozen,113,1.0,0,0.5,43,0
+Frozen,114,1.0,0,0.5,43,0
+Frozen,115,1.0,0,0.5,43,0
+Frozen,116,1.0,0,0.5,43,0
+Frozen,117,1.0,0,0.5,43,0
+Frozen,118,1.0,0,0.5,43,0
+Frozen,119,1.0,0,0.5,43,0
+Frozen,120,1.0,0,0.5,43,0
+Frozen,121,1.0,0,0.5,43,0
+Frozen,122,1.0,0,0.5,43,0
+Frozen,123,1.0,0,0.5,43,0
+Frozen,124,1.0,0,0.5,43,0
+Frozen,125,1.0,0,0.5,43,0
+Frozen,126,1.0,0,0.5,43,0
+Frozen,127,1.0,0,0.5,43,0
+Frozen,128,1.0,0,0.5,43,0
+Frozen,129,1.0,0,0.5,43,0
+Frozen,130,1.0,0,0.5,43,0
+Frozen,131,1.0,0,0.5,43,0
+Frozen,132,0.0,0,0.5,43,0
+Frozen,133,1.0,0,0.5,43,0
+Frozen,134,1.0,0,0.5,43,0
+Frozen,135,1.0,0,0.5,43,0
+Frozen,136,1.0,0,0.5,43,0
+Frozen,137,1.0,0,0.5,43,0
+Frozen,138,1.0,0,0.5,43,0
+Frozen,139,1.0,0,0.5,43,0
+Frozen,140,1.0,0,0.5,43,0
+Frozen,141,1.0,0,0.5,43,0
+Frozen,142,1.0,0,0.5,43,0
+Frozen,143,1.0,0,0.5,43,0
+Frozen,144,0.0,0,0.5,43,0
+Frozen,145,0.0,0,0.5,43,0
+Frozen,146,0.0,0,0.5,43,0
+Frozen,147,1.0,0,0.5,43,0
+Frozen,148,1.0,0,0.5,43,0
+Frozen,149,0.0,0,0.5,43,0
+Event-Driven,99,1.0,0,0.5,43,0
+Event-Driven,100,1.0,0,0.5,43,0
+Event-Driven,101,1.0,0,0.5,43,0
+Event-Driven,102,1.0,0,0.5,43,0
+Event-Driven,103,1.0,0,0.5,43,0
+Event-Driven,104,1.0,0,0.5,43,0
+Event-Driven,105,1.0,0,0.5,43,0
+Event-Driven,106,1.0,0,0.5,43,0
+Event-Driven,107,1.0,0,0.5,43,0
+Event-Driven,108,1.0,0,0.5,43,0
+Event-Driven,109,1.0,0,0.5,43,0
+Event-Driven,110,1.0,0,0.5,43,0
+Event-Driven,111,1.0,0,0.5,43,0
+Event-Driven,112,1.0,0,0.5,43,0
+Event-Driven,113,1.0,0,0.5,43,0
+Event-Driven,114,1.0,0,0.5,43,0
+Event-Driven,115,1.0,0,0.5,43,0
+Event-Driven,116,1.0,0,0.5,43,0
+Event-Driven,117,1.0,0,0.5,43,0
+Event-Driven,118,1.0,0,0.5,43,0
+Event-Driven,119,1.0,0,0.5,43,0
+Event-Driven,120,1.0,0,0.5,43,0
+Event-Driven,121,1.0,0,0.5,43,0
+Event-Driven,122,1.0,0,0.5,43,0
+Event-Driven,123,1.0,0,0.5,43,0
+Event-Driven,124,1.0,0,0.5,43,0
+Event-Driven,125,1.0,0,0.5,43,0
+Event-Driven,126,1.0,0,0.5,43,0
+Event-Driven,127,1.0,0,0.5,43,0
+Event-Driven,128,1.0,0,0.5,43,0
+Event-Driven,129,1.0,0,0.5,43,0
+Event-Driven,130,1.0,0,0.5,43,0
+Event-Driven,131,1.0,0,0.5,43,0
+Event-Driven,132,0.0,0,0.5,43,0
+Event-Driven,133,1.0,0,0.5,43,0
+Event-Driven,134,1.0,0,0.5,43,0
+Event-Driven,135,1.0,0,0.5,43,0
+Event-Driven,136,1.0,0,0.5,43,0
+Event-Driven,137,1.0,0,0.5,43,0
+Event-Driven,138,1.0,0,0.5,43,0
+Event-Driven,139,1.0,0,0.5,43,0
+Event-Driven,140,1.0,0,0.5,43,0
+Event-Driven,141,1.0,0,0.5,43,0
+Event-Driven,142,1.0,0,0.5,43,0
+Event-Driven,143,1.0,0,0.5,43,0
+Event-Driven,144,0.0,0,0.5,43,0
+Event-Driven,145,0.0,0,0.5,43,0
+Event-Driven,146,0.0,0,0.5,43,0
+Event-Driven,147,1.0,0,0.5,43,0
+Event-Driven,148,1.0,0,0.5,43,0
+Event-Driven,149,0.0,0,0.5,43,0
+Full Retraining,99,1.0,0,0.5,43,0
+Full Retraining,100,1.0,0,0.5,43,0
+Full Retraining,101,1.0,0,0.5,43,0
+Full Retraining,102,1.0,0,0.5,43,0
+Full Retraining,103,1.0,0,0.5,43,0
+Full Retraining,104,1.0,0,0.5,43,0
+Full Retraining,105,1.0,0,0.5,43,0
+Full Retraining,106,1.0,0,0.5,43,0
+Full Retraining,107,1.0,0,0.5,43,0
+Full Retraining,108,1.0,0,0.5,43,0
+Full Retraining,109,1.0,0,0.5,43,0
+Full Retraining,110,1.0,0,0.5,43,0
+Full Retraining,111,1.0,0,0.5,43,0
+Full Retraining,112,1.0,0,0.5,43,0
+Full Retraining,113,1.0,0,0.5,43,0
+Full Retraining,114,1.0,0,0.5,43,0
+Full Retraining,115,1.0,0,0.5,43,0
+Full Retraining,116,1.0,0,0.5,43,0
+Full Retraining,117,1.0,0,0.5,43,0
+Full Retraining,118,1.0,0,0.5,43,0
+Full Retraining,119,1.0,0,0.5,43,0
+Full Retraining,120,1.0,0,0.5,43,0
+Full Retraining,121,1.0,0,0.5,43,0
+Full Retraining,122,1.0,0,0.5,43,0
+Full Retraining,123,1.0,0,0.5,43,0
+Full Retraining,124,1.0,0,0.5,43,0
+Full Retraining,125,1.0,0,0.5,43,0
+Full Retraining,126,1.0,0,0.5,43,0
+Full Retraining,127,1.0,0,0.5,43,0
+Full Retraining,128,1.0,0,0.5,43,0
+Full Retraining,129,1.0,0,0.5,43,0
+Full Retraining,130,1.0,0,0.5,43,0
+Full Retraining,131,1.0,0,0.5,43,0
+Full Retraining,132,0.0,0,0.5,43,0
+Full Retraining,133,1.0,0,0.5,43,0
+Full Retraining,134,1.0,0,0.5,43,0
+Full Retraining,135,1.0,0,0.5,43,0
+Full Retraining,136,1.0,0,0.5,43,0
+Full Retraining,137,1.0,0,0.5,43,0
+Full Retraining,138,1.0,0,0.5,43,0
+Full Retraining,139,1.0,0,0.5,43,0
+Full Retraining,140,1.0,0,0.5,43,0
+Full Retraining,141,1.0,0,0.5,43,0
+Full Retraining,142,1.0,0,0.5,43,0
+Full Retraining,143,1.0,0,0.5,43,0
+Full Retraining,144,0.0,0,0.5,43,0
+Full Retraining,145,0.0,0,0.5,43,0
+Full Retraining,146,0.0,0,0.5,43,0
+Full Retraining,147,1.0,0,0.5,43,0
+Full Retraining,148,1.0,0,0.5,43,0
+Full Retraining,149,0.0,0,0.5,43,0
+RAPT,99,1.0,0,0.5,43,0
+RAPT,100,1.0,0,0.5,43,0
+RAPT,101,1.0,0,0.5,43,0
+RAPT,102,1.0,0,0.5,43,0
+RAPT,103,1.0,0,0.5,43,0
+RAPT,104,1.0,0,0.5,43,0
+RAPT,105,1.0,0,0.5,43,0
+RAPT,106,1.0,0,0.5,43,0
+RAPT,107,1.0,0,0.5,43,0
+RAPT,108,1.0,0,0.5,43,0
+RAPT,109,1.0,0,0.5,43,0
+RAPT,110,1.0,0,0.5,43,0
+RAPT,111,1.0,0,0.5,43,0
+RAPT,112,1.0,0,0.5,43,0
+RAPT,113,1.0,0,0.5,43,0
+RAPT,114,1.0,0,0.5,43,0
+RAPT,115,1.0,0,0.5,43,0
+RAPT,116,1.0,0,0.5,43,0
+RAPT,117,1.0,0,0.5,43,0
+RAPT,118,1.0,0,0.5,43,0
+RAPT,119,1.0,0,0.5,43,0
+RAPT,120,1.0,0,0.5,43,0
+RAPT,121,1.0,0,0.5,43,0
+RAPT,122,1.0,0,0.5,43,0
+RAPT,123,1.0,0,0.5,43,0
+RAPT,124,1.0,0,0.5,43,0
+RAPT,125,1.0,0,0.5,43,0
+RAPT,126,1.0,0,0.5,43,0
+RAPT,127,1.0,0,0.5,43,0
+RAPT,128,1.0,0,0.5,43,0
+RAPT,129,1.0,0,0.5,43,0
+RAPT,130,1.0,0,0.5,43,0
+RAPT,131,1.0,0,0.5,43,0
+RAPT,132,0.0,0,0.5,43,0
+RAPT,133,1.0,0,0.5,43,0
+RAPT,134,1.0,0,0.5,43,0
+RAPT,135,1.0,0,0.5,43,0
+RAPT,136,1.0,0,0.5,43,0
+RAPT,137,1.0,0,0.5,43,0
+RAPT,138,1.0,0,0.5,43,0
+RAPT,139,1.0,0,0.5,43,0
+RAPT,140,1.0,0,0.5,43,0
+RAPT,141,1.0,0,0.5,43,0
+RAPT,142,1.0,0,0.5,43,0
+RAPT,143,1.0,0,0.5,43,0
+RAPT,144,0.0,0,0.5,43,0
+RAPT,145,0.0,0,0.5,43,0
+RAPT,146,0.0,0,0.5,43,0
+RAPT,147,1.0,0,0.5,43,0
+RAPT,148,1.0,0,0.5,43,0
+RAPT,149,0.0,0,0.5,43,0
+Frozen,99,1.0,0,0.5,43,1
+Frozen,100,1.0,0,0.5,43,1
+Frozen,101,1.0,0,0.5,43,1
+Frozen,102,1.0,0,0.5,43,1
+Frozen,103,1.0,0,0.5,43,1
+Frozen,104,1.0,0,0.5,43,1
+Frozen,105,1.0,0,0.5,43,1
+Frozen,106,1.0,0,0.5,43,1
+Frozen,107,1.0,0,0.5,43,1
+Frozen,108,1.0,0,0.5,43,1
+Frozen,109,1.0,0,0.5,43,1
+Frozen,110,1.0,0,0.5,43,1
+Frozen,111,1.0,0,0.5,43,1
+Frozen,112,1.0,0,0.5,43,1
+Frozen,113,1.0,0,0.5,43,1
+Frozen,114,1.0,0,0.5,43,1
+Frozen,115,1.0,0,0.5,43,1
+Frozen,116,1.0,0,0.5,43,1
+Frozen,117,1.0,0,0.5,43,1
+Frozen,118,1.0,0,0.5,43,1
+Frozen,119,1.0,0,0.5,43,1
+Frozen,120,1.0,0,0.5,43,1
+Frozen,121,1.0,0,0.5,43,1
+Frozen,122,1.0,0,0.5,43,1
+Frozen,123,1.0,0,0.5,43,1
+Frozen,124,1.0,0,0.5,43,1
+Frozen,125,1.0,0,0.5,43,1
+Frozen,126,1.0,0,0.5,43,1
+Frozen,127,1.0,0,0.5,43,1
+Frozen,128,1.0,0,0.5,43,1
+Frozen,129,1.0,0,0.5,43,1
+Frozen,130,1.0,0,0.5,43,1
+Frozen,131,1.0,0,0.5,43,1
+Frozen,132,0.0,0,0.5,43,1
+Frozen,133,1.0,0,0.5,43,1
+Frozen,134,1.0,0,0.5,43,1
+Frozen,135,1.0,0,0.5,43,1
+Frozen,136,1.0,0,0.5,43,1
+Frozen,137,1.0,0,0.5,43,1
+Frozen,138,1.0,0,0.5,43,1
+Frozen,139,1.0,0,0.5,43,1
+Frozen,140,1.0,0,0.5,43,1
+Frozen,141,1.0,0,0.5,43,1
+Frozen,142,1.0,0,0.5,43,1
+Frozen,143,1.0,0,0.5,43,1
+Frozen,144,0.0,0,0.5,43,1
+Frozen,145,0.0,1,0.5,43,1
+Frozen,146,1.0,0,0.5,43,1
+Frozen,147,1.0,0,0.5,43,1
+Frozen,148,1.0,0,0.5,43,1
+Frozen,149,0.0,0,0.5,43,1
+Event-Driven,99,1.0,0,0.5,43,1
+Event-Driven,100,1.0,0,0.5,43,1
+Event-Driven,101,1.0,0,0.5,43,1
+Event-Driven,102,1.0,0,0.5,43,1
+Event-Driven,103,1.0,0,0.5,43,1
+Event-Driven,104,1.0,0,0.5,43,1
+Event-Driven,105,1.0,0,0.5,43,1
+Event-Driven,106,1.0,0,0.5,43,1
+Event-Driven,107,1.0,0,0.5,43,1
+Event-Driven,108,1.0,0,0.5,43,1
+Event-Driven,109,1.0,0,0.5,43,1
+Event-Driven,110,1.0,0,0.5,43,1
+Event-Driven,111,1.0,0,0.5,43,1
+Event-Driven,112,1.0,0,0.5,43,1
+Event-Driven,113,1.0,0,0.5,43,1
+Event-Driven,114,1.0,0,0.5,43,1
+Event-Driven,115,1.0,0,0.5,43,1
+Event-Driven,116,1.0,0,0.5,43,1
+Event-Driven,117,1.0,0,0.5,43,1
+Event-Driven,118,1.0,0,0.5,43,1
+Event-Driven,119,1.0,0,0.5,43,1
+Event-Driven,120,1.0,0,0.5,43,1
+Event-Driven,121,1.0,0,0.5,43,1
+Event-Driven,122,1.0,0,0.5,43,1
+Event-Driven,123,1.0,0,0.5,43,1
+Event-Driven,124,1.0,0,0.5,43,1
+Event-Driven,125,1.0,0,0.5,43,1
+Event-Driven,126,1.0,0,0.5,43,1
+Event-Driven,127,1.0,0,0.5,43,1
+Event-Driven,128,1.0,0,0.5,43,1
+Event-Driven,129,1.0,0,0.5,43,1
+Event-Driven,130,1.0,0,0.5,43,1
+Event-Driven,131,1.0,0,0.5,43,1
+Event-Driven,132,0.0,0,0.5,43,1
+Event-Driven,133,1.0,0,0.5,43,1
+Event-Driven,134,1.0,0,0.5,43,1
+Event-Driven,135,1.0,0,0.5,43,1
+Event-Driven,136,1.0,0,0.5,43,1
+Event-Driven,137,1.0,0,0.5,43,1
+Event-Driven,138,1.0,0,0.5,43,1
+Event-Driven,139,1.0,0,0.5,43,1
+Event-Driven,140,1.0,0,0.5,43,1
+Event-Driven,141,1.0,0,0.5,43,1
+Event-Driven,142,1.0,0,0.5,43,1
+Event-Driven,143,1.0,0,0.5,43,1
+Event-Driven,144,0.0,0,0.5,43,1
+Event-Driven,145,0.0,1,0.5,43,1
+Event-Driven,146,1.0,0,0.5,43,1
+Event-Driven,147,1.0,0,0.5,43,1
+Event-Driven,148,1.0,0,0.5,43,1
+Event-Driven,149,0.0,0,0.5,43,1
+Full Retraining,99,1.0,0,0.5,43,1
+Full Retraining,100,1.0,0,0.5,43,1
+Full Retraining,101,1.0,0,0.5,43,1
+Full Retraining,102,1.0,0,0.5,43,1
+Full Retraining,103,1.0,0,0.5,43,1
+Full Retraining,104,1.0,0,0.5,43,1
+Full Retraining,105,1.0,0,0.5,43,1
+Full Retraining,106,1.0,0,0.5,43,1
+Full Retraining,107,1.0,0,0.5,43,1
+Full Retraining,108,1.0,0,0.5,43,1
+Full Retraining,109,1.0,0,0.5,43,1
+Full Retraining,110,1.0,0,0.5,43,1
+Full Retraining,111,1.0,0,0.5,43,1
+Full Retraining,112,1.0,0,0.5,43,1
+Full Retraining,113,1.0,0,0.5,43,1
+Full Retraining,114,1.0,0,0.5,43,1
+Full Retraining,115,1.0,0,0.5,43,1
+Full Retraining,116,1.0,0,0.5,43,1
+Full Retraining,117,1.0,0,0.5,43,1
+Full Retraining,118,1.0,0,0.5,43,1
+Full Retraining,119,1.0,0,0.5,43,1
+Full Retraining,120,1.0,0,0.5,43,1
+Full Retraining,121,1.0,0,0.5,43,1
+Full Retraining,122,1.0,0,0.5,43,1
+Full Retraining,123,1.0,0,0.5,43,1
+Full Retraining,124,1.0,0,0.5,43,1
+Full Retraining,125,1.0,0,0.5,43,1
+Full Retraining,126,1.0,0,0.5,43,1
+Full Retraining,127,1.0,0,0.5,43,1
+Full Retraining,128,1.0,0,0.5,43,1
+Full Retraining,129,1.0,0,0.5,43,1
+Full Retraining,130,1.0,0,0.5,43,1
+Full Retraining,131,1.0,0,0.5,43,1
+Full Retraining,132,0.0,0,0.5,43,1
+Full Retraining,133,1.0,0,0.5,43,1
+Full Retraining,134,1.0,0,0.5,43,1
+Full Retraining,135,1.0,0,0.5,43,1
+Full Retraining,136,1.0,0,0.5,43,1
+Full Retraining,137,1.0,0,0.5,43,1
+Full Retraining,138,1.0,0,0.5,43,1
+Full Retraining,139,1.0,0,0.5,43,1
+Full Retraining,140,1.0,0,0.5,43,1
+Full Retraining,141,1.0,0,0.5,43,1
+Full Retraining,142,1.0,0,0.5,43,1
+Full Retraining,143,1.0,0,0.5,43,1
+Full Retraining,144,0.0,0,0.5,43,1
+Full Retraining,145,0.0,1,0.5,43,1
+Full Retraining,146,1.0,0,0.5,43,1
+Full Retraining,147,1.0,0,0.5,43,1
+Full Retraining,148,1.0,0,0.5,43,1
+Full Retraining,149,0.0,0,0.5,43,1
+RAPT,99,1.0,0,0.5,43,1
+RAPT,100,1.0,0,0.5,43,1
+RAPT,101,1.0,0,0.5,43,1
+RAPT,102,1.0,0,0.5,43,1
+RAPT,103,1.0,0,0.5,43,1
+RAPT,104,1.0,0,0.5,43,1
+RAPT,105,1.0,0,0.5,43,1
+RAPT,106,1.0,0,0.5,43,1
+RAPT,107,1.0,0,0.5,43,1
+RAPT,108,1.0,0,0.5,43,1
+RAPT,109,1.0,0,0.5,43,1
+RAPT,110,1.0,0,0.5,43,1
+RAPT,111,1.0,0,0.5,43,1
+RAPT,112,1.0,0,0.5,43,1
+RAPT,113,1.0,0,0.5,43,1
+RAPT,114,1.0,0,0.5,43,1
+RAPT,115,1.0,0,0.5,43,1
+RAPT,116,1.0,0,0.5,43,1
+RAPT,117,1.0,0,0.5,43,1
+RAPT,118,1.0,0,0.5,43,1
+RAPT,119,1.0,0,0.5,43,1
+RAPT,120,1.0,0,0.5,43,1
+RAPT,121,1.0,0,0.5,43,1
+RAPT,122,1.0,0,0.5,43,1
+RAPT,123,1.0,0,0.5,43,1
+RAPT,124,1.0,0,0.5,43,1
+RAPT,125,1.0,0,0.5,43,1
+RAPT,126,1.0,0,0.5,43,1
+RAPT,127,1.0,0,0.5,43,1
+RAPT,128,1.0,0,0.5,43,1
+RAPT,129,1.0,0,0.5,43,1
+RAPT,130,1.0,0,0.5,43,1
+RAPT,131,1.0,0,0.5,43,1
+RAPT,132,0.0,0,0.5,43,1
+RAPT,133,1.0,0,0.5,43,1
+RAPT,134,1.0,0,0.5,43,1
+RAPT,135,1.0,0,0.5,43,1
+RAPT,136,1.0,0,0.5,43,1
+RAPT,137,1.0,0,0.5,43,1
+RAPT,138,1.0,0,0.5,43,1
+RAPT,139,1.0,0,0.5,43,1
+RAPT,140,1.0,0,0.5,43,1
+RAPT,141,1.0,0,0.5,43,1
+RAPT,142,1.0,0,0.5,43,1
+RAPT,143,1.0,0,0.5,43,1
+RAPT,144,0.0,0,0.5,43,1
+RAPT,145,0.0,1,0.5,43,1
+RAPT,146,0.0,0,0.5,43,1
+RAPT,147,1.0,0,0.5,43,1
+RAPT,148,1.0,0,0.5,43,1
+RAPT,149,0.0,0,0.5,43,1
+Frozen,99,1.0,0,0.5,44,0
+Frozen,100,1.0,0,0.5,44,0
+Frozen,101,1.0,0,0.5,44,0
+Frozen,102,1.0,0,0.5,44,0
+Frozen,103,1.0,0,0.5,44,0
+Frozen,104,1.0,0,0.5,44,0
+Frozen,105,1.0,0,0.5,44,0
+Frozen,106,1.0,0,0.5,44,0
+Frozen,107,1.0,0,0.5,44,0
+Frozen,108,1.0,0,0.5,44,0
+Frozen,109,1.0,0,0.5,44,0
+Frozen,110,1.0,0,0.5,44,0
+Frozen,111,1.0,0,0.5,44,0
+Frozen,112,1.0,0,0.5,44,0
+Frozen,113,1.0,0,0.5,44,0
+Frozen,114,1.0,0,0.5,44,0
+Frozen,115,1.0,0,0.5,44,0
+Frozen,116,1.0,0,0.5,44,0
+Frozen,117,1.0,0,0.5,44,0
+Frozen,118,1.0,0,0.5,44,0
+Frozen,119,1.0,0,0.5,44,0
+Frozen,120,1.0,0,0.5,44,0
+Frozen,121,1.0,0,0.5,44,0
+Frozen,122,1.0,0,0.5,44,0
+Frozen,123,1.0,0,0.5,44,0
+Frozen,124,1.0,0,0.5,44,0
+Frozen,125,1.0,0,0.5,44,0
+Frozen,126,1.0,0,0.5,44,0
+Frozen,127,1.0,0,0.5,44,0
+Frozen,128,1.0,0,0.5,44,0
+Frozen,129,1.0,0,0.5,44,0
+Frozen,130,1.0,0,0.5,44,0
+Frozen,131,1.0,0,0.5,44,0
+Frozen,132,0.0,0,0.5,44,0
+Frozen,133,1.0,0,0.5,44,0
+Frozen,134,1.0,0,0.5,44,0
+Frozen,135,1.0,0,0.5,44,0
+Frozen,136,1.0,0,0.5,44,0
+Frozen,137,1.0,0,0.5,44,0
+Frozen,138,1.0,0,0.5,44,0
+Frozen,139,1.0,0,0.5,44,0
+Frozen,140,1.0,0,0.5,44,0
+Frozen,141,1.0,0,0.5,44,0
+Frozen,142,1.0,0,0.5,44,0
+Frozen,143,0.0,0,0.5,44,0
+Frozen,144,0.0,0,0.5,44,0
+Frozen,145,0.0,0,0.5,44,0
+Frozen,146,0.0,0,0.5,44,0
+Frozen,147,1.0,0,0.5,44,0
+Frozen,148,1.0,0,0.5,44,0
+Frozen,149,0.0,0,0.5,44,0
+Event-Driven,99,1.0,0,0.5,44,0
+Event-Driven,100,1.0,0,0.5,44,0
+Event-Driven,101,1.0,0,0.5,44,0
+Event-Driven,102,1.0,0,0.5,44,0
+Event-Driven,103,1.0,0,0.5,44,0
+Event-Driven,104,1.0,0,0.5,44,0
+Event-Driven,105,1.0,0,0.5,44,0
+Event-Driven,106,1.0,0,0.5,44,0
+Event-Driven,107,1.0,0,0.5,44,0
+Event-Driven,108,1.0,0,0.5,44,0
+Event-Driven,109,1.0,0,0.5,44,0
+Event-Driven,110,1.0,0,0.5,44,0
+Event-Driven,111,1.0,0,0.5,44,0
+Event-Driven,112,1.0,0,0.5,44,0
+Event-Driven,113,1.0,0,0.5,44,0
+Event-Driven,114,1.0,0,0.5,44,0
+Event-Driven,115,1.0,0,0.5,44,0
+Event-Driven,116,1.0,0,0.5,44,0
+Event-Driven,117,1.0,0,0.5,44,0
+Event-Driven,118,1.0,0,0.5,44,0
+Event-Driven,119,1.0,0,0.5,44,0
+Event-Driven,120,1.0,0,0.5,44,0
+Event-Driven,121,1.0,0,0.5,44,0
+Event-Driven,122,1.0,0,0.5,44,0
+Event-Driven,123,1.0,0,0.5,44,0
+Event-Driven,124,1.0,0,0.5,44,0
+Event-Driven,125,1.0,0,0.5,44,0
+Event-Driven,126,1.0,0,0.5,44,0
+Event-Driven,127,1.0,0,0.5,44,0
+Event-Driven,128,1.0,0,0.5,44,0
+Event-Driven,129,1.0,0,0.5,44,0
+Event-Driven,130,1.0,0,0.5,44,0
+Event-Driven,131,1.0,0,0.5,44,0
+Event-Driven,132,0.0,0,0.5,44,0
+Event-Driven,133,1.0,0,0.5,44,0
+Event-Driven,134,1.0,0,0.5,44,0
+Event-Driven,135,1.0,0,0.5,44,0
+Event-Driven,136,1.0,0,0.5,44,0
+Event-Driven,137,1.0,0,0.5,44,0
+Event-Driven,138,1.0,0,0.5,44,0
+Event-Driven,139,1.0,0,0.5,44,0
+Event-Driven,140,1.0,0,0.5,44,0
+Event-Driven,141,1.0,0,0.5,44,0
+Event-Driven,142,1.0,0,0.5,44,0
+Event-Driven,143,0.0,0,0.5,44,0
+Event-Driven,144,0.0,0,0.5,44,0
+Event-Driven,145,0.0,0,0.5,44,0
+Event-Driven,146,0.0,0,0.5,44,0
+Event-Driven,147,1.0,0,0.5,44,0
+Event-Driven,148,1.0,0,0.5,44,0
+Event-Driven,149,0.0,0,0.5,44,0
+Full Retraining,99,1.0,0,0.5,44,0
+Full Retraining,100,1.0,0,0.5,44,0
+Full Retraining,101,1.0,0,0.5,44,0
+Full Retraining,102,1.0,0,0.5,44,0
+Full Retraining,103,1.0,0,0.5,44,0
+Full Retraining,104,1.0,0,0.5,44,0
+Full Retraining,105,1.0,0,0.5,44,0
+Full Retraining,106,1.0,0,0.5,44,0
+Full Retraining,107,1.0,0,0.5,44,0
+Full Retraining,108,1.0,0,0.5,44,0
+Full Retraining,109,1.0,0,0.5,44,0
+Full Retraining,110,1.0,0,0.5,44,0
+Full Retraining,111,1.0,0,0.5,44,0
+Full Retraining,112,1.0,0,0.5,44,0
+Full Retraining,113,1.0,0,0.5,44,0
+Full Retraining,114,1.0,0,0.5,44,0
+Full Retraining,115,1.0,0,0.5,44,0
+Full Retraining,116,1.0,0,0.5,44,0
+Full Retraining,117,1.0,0,0.5,44,0
+Full Retraining,118,1.0,0,0.5,44,0
+Full Retraining,119,1.0,0,0.5,44,0
+Full Retraining,120,1.0,0,0.5,44,0
+Full Retraining,121,1.0,0,0.5,44,0
+Full Retraining,122,1.0,0,0.5,44,0
+Full Retraining,123,1.0,0,0.5,44,0
+Full Retraining,124,1.0,0,0.5,44,0
+Full Retraining,125,1.0,0,0.5,44,0
+Full Retraining,126,1.0,0,0.5,44,0
+Full Retraining,127,1.0,0,0.5,44,0
+Full Retraining,128,1.0,0,0.5,44,0
+Full Retraining,129,1.0,0,0.5,44,0
+Full Retraining,130,1.0,0,0.5,44,0
+Full Retraining,131,1.0,0,0.5,44,0
+Full Retraining,132,0.0,0,0.5,44,0
+Full Retraining,133,1.0,0,0.5,44,0
+Full Retraining,134,1.0,0,0.5,44,0
+Full Retraining,135,1.0,0,0.5,44,0
+Full Retraining,136,1.0,0,0.5,44,0
+Full Retraining,137,1.0,0,0.5,44,0
+Full Retraining,138,1.0,0,0.5,44,0
+Full Retraining,139,1.0,0,0.5,44,0
+Full Retraining,140,1.0,0,0.5,44,0
+Full Retraining,141,1.0,0,0.5,44,0
+Full Retraining,142,1.0,0,0.5,44,0
+Full Retraining,143,0.0,0,0.5,44,0
+Full Retraining,144,0.0,0,0.5,44,0
+Full Retraining,145,0.0,0,0.5,44,0
+Full Retraining,146,0.0,0,0.5,44,0
+Full Retraining,147,1.0,0,0.5,44,0
+Full Retraining,148,1.0,0,0.5,44,0
+Full Retraining,149,0.0,0,0.5,44,0
+RAPT,99,1.0,0,0.5,44,0
+RAPT,100,1.0,0,0.5,44,0
+RAPT,101,1.0,0,0.5,44,0
+RAPT,102,1.0,0,0.5,44,0
+RAPT,103,1.0,0,0.5,44,0
+RAPT,104,1.0,0,0.5,44,0
+RAPT,105,1.0,0,0.5,44,0
+RAPT,106,1.0,0,0.5,44,0
+RAPT,107,1.0,0,0.5,44,0
+RAPT,108,1.0,0,0.5,44,0
+RAPT,109,1.0,0,0.5,44,0
+RAPT,110,1.0,0,0.5,44,0
+RAPT,111,1.0,0,0.5,44,0
+RAPT,112,1.0,0,0.5,44,0
+RAPT,113,1.0,0,0.5,44,0
+RAPT,114,1.0,0,0.5,44,0
+RAPT,115,1.0,0,0.5,44,0
+RAPT,116,1.0,0,0.5,44,0
+RAPT,117,1.0,0,0.5,44,0
+RAPT,118,1.0,0,0.5,44,0
+RAPT,119,1.0,0,0.5,44,0
+RAPT,120,1.0,0,0.5,44,0
+RAPT,121,1.0,0,0.5,44,0
+RAPT,122,1.0,0,0.5,44,0
+RAPT,123,1.0,0,0.5,44,0
+RAPT,124,1.0,0,0.5,44,0
+RAPT,125,1.0,0,0.5,44,0
+RAPT,126,1.0,0,0.5,44,0
+RAPT,127,1.0,0,0.5,44,0
+RAPT,128,1.0,0,0.5,44,0
+RAPT,129,1.0,0,0.5,44,0
+RAPT,130,1.0,0,0.5,44,0
+RAPT,131,1.0,0,0.5,44,0
+RAPT,132,0.0,0,0.5,44,0
+RAPT,133,1.0,0,0.5,44,0
+RAPT,134,1.0,0,0.5,44,0
+RAPT,135,1.0,0,0.5,44,0
+RAPT,136,1.0,0,0.5,44,0
+RAPT,137,1.0,0,0.5,44,0
+RAPT,138,1.0,0,0.5,44,0
+RAPT,139,1.0,0,0.5,44,0
+RAPT,140,1.0,0,0.5,44,0
+RAPT,141,1.0,0,0.5,44,0
+RAPT,142,1.0,0,0.5,44,0
+RAPT,143,0.0,0,0.5,44,0
+RAPT,144,0.0,0,0.5,44,0
+RAPT,145,0.0,0,0.5,44,0
+RAPT,146,0.0,0,0.5,44,0
+RAPT,147,1.0,0,0.5,44,0
+RAPT,148,1.0,0,0.5,44,0
+RAPT,149,0.0,0,0.5,44,0
+Frozen,99,1.0,0,0.5,44,1
+Frozen,100,1.0,0,0.5,44,1
+Frozen,101,1.0,0,0.5,44,1
+Frozen,102,1.0,0,0.5,44,1
+Frozen,103,1.0,0,0.5,44,1
+Frozen,104,1.0,0,0.5,44,1
+Frozen,105,1.0,0,0.5,44,1
+Frozen,106,1.0,0,0.5,44,1
+Frozen,107,1.0,0,0.5,44,1
+Frozen,108,1.0,0,0.5,44,1
+Frozen,109,1.0,0,0.5,44,1
+Frozen,110,1.0,0,0.5,44,1
+Frozen,111,1.0,0,0.5,44,1
+Frozen,112,1.0,0,0.5,44,1
+Frozen,113,1.0,0,0.5,44,1
+Frozen,114,1.0,0,0.5,44,1
+Frozen,115,1.0,0,0.5,44,1
+Frozen,116,1.0,0,0.5,44,1
+Frozen,117,1.0,0,0.5,44,1
+Frozen,118,1.0,0,0.5,44,1
+Frozen,119,1.0,0,0.5,44,1
+Frozen,120,1.0,0,0.5,44,1
+Frozen,121,1.0,0,0.5,44,1
+Frozen,122,1.0,0,0.5,44,1
+Frozen,123,1.0,0,0.5,44,1
+Frozen,124,1.0,0,0.5,44,1
+Frozen,125,1.0,0,0.5,44,1
+Frozen,126,1.0,0,0.5,44,1
+Frozen,127,1.0,0,0.5,44,1
+Frozen,128,1.0,0,0.5,44,1
+Frozen,129,1.0,0,0.5,44,1
+Frozen,130,1.0,0,0.5,44,1
+Frozen,131,1.0,0,0.5,44,1
+Frozen,132,0.0,0,0.5,44,1
+Frozen,133,1.0,0,0.5,44,1
+Frozen,134,1.0,0,0.5,44,1
+Frozen,135,1.0,0,0.5,44,1
+Frozen,136,1.0,0,0.5,44,1
+Frozen,137,1.0,0,0.5,44,1
+Frozen,138,1.0,0,0.5,44,1
+Frozen,139,1.0,0,0.5,44,1
+Frozen,140,1.0,0,0.5,44,1
+Frozen,141,1.0,0,0.5,44,1
+Frozen,142,1.0,0,0.5,44,1
+Frozen,143,0.0,0,0.5,44,1
+Frozen,144,0.0,1,0.5,44,1
+Frozen,145,0.0,0,0.5,44,1
+Frozen,146,1.0,0,0.5,44,1
+Frozen,147,1.0,0,0.5,44,1
+Frozen,148,1.0,0,0.5,44,1
+Frozen,149,0.0,0,0.5,44,1
+Event-Driven,99,1.0,0,0.5,44,1
+Event-Driven,100,1.0,0,0.5,44,1
+Event-Driven,101,1.0,0,0.5,44,1
+Event-Driven,102,1.0,0,0.5,44,1
+Event-Driven,103,1.0,0,0.5,44,1
+Event-Driven,104,1.0,0,0.5,44,1
+Event-Driven,105,1.0,0,0.5,44,1
+Event-Driven,106,1.0,0,0.5,44,1
+Event-Driven,107,1.0,0,0.5,44,1
+Event-Driven,108,1.0,0,0.5,44,1
+Event-Driven,109,1.0,0,0.5,44,1
+Event-Driven,110,1.0,0,0.5,44,1
+Event-Driven,111,1.0,0,0.5,44,1
+Event-Driven,112,1.0,0,0.5,44,1
+Event-Driven,113,1.0,0,0.5,44,1
+Event-Driven,114,1.0,0,0.5,44,1
+Event-Driven,115,1.0,0,0.5,44,1
+Event-Driven,116,1.0,0,0.5,44,1
+Event-Driven,117,1.0,0,0.5,44,1
+Event-Driven,118,1.0,0,0.5,44,1
+Event-Driven,119,1.0,0,0.5,44,1
+Event-Driven,120,1.0,0,0.5,44,1
+Event-Driven,121,1.0,0,0.5,44,1
+Event-Driven,122,1.0,0,0.5,44,1
+Event-Driven,123,1.0,0,0.5,44,1
+Event-Driven,124,1.0,0,0.5,44,1
+Event-Driven,125,1.0,0,0.5,44,1
+Event-Driven,126,1.0,0,0.5,44,1
+Event-Driven,127,1.0,0,0.5,44,1
+Event-Driven,128,1.0,0,0.5,44,1
+Event-Driven,129,1.0,0,0.5,44,1
+Event-Driven,130,1.0,0,0.5,44,1
+Event-Driven,131,1.0,0,0.5,44,1
+Event-Driven,132,0.0,0,0.5,44,1
+Event-Driven,133,1.0,0,0.5,44,1
+Event-Driven,134,1.0,0,0.5,44,1
+Event-Driven,135,1.0,0,0.5,44,1
+Event-Driven,136,1.0,0,0.5,44,1
+Event-Driven,137,1.0,0,0.5,44,1
+Event-Driven,138,1.0,0,0.5,44,1
+Event-Driven,139,1.0,0,0.5,44,1
+Event-Driven,140,1.0,0,0.5,44,1
+Event-Driven,141,1.0,0,0.5,44,1
+Event-Driven,142,1.0,0,0.5,44,1
+Event-Driven,143,0.0,0,0.5,44,1
+Event-Driven,144,0.0,1,0.5,44,1
+Event-Driven,145,0.0,0,0.5,44,1
+Event-Driven,146,1.0,0,0.5,44,1
+Event-Driven,147,1.0,0,0.5,44,1
+Event-Driven,148,1.0,0,0.5,44,1
+Event-Driven,149,0.0,0,0.5,44,1
+Full Retraining,99,1.0,0,0.5,44,1
+Full Retraining,100,1.0,0,0.5,44,1
+Full Retraining,101,1.0,0,0.5,44,1
+Full Retraining,102,1.0,0,0.5,44,1
+Full Retraining,103,1.0,0,0.5,44,1
+Full Retraining,104,1.0,0,0.5,44,1
+Full Retraining,105,1.0,0,0.5,44,1
+Full Retraining,106,1.0,0,0.5,44,1
+Full Retraining,107,1.0,0,0.5,44,1
+Full Retraining,108,1.0,0,0.5,44,1
+Full Retraining,109,1.0,0,0.5,44,1
+Full Retraining,110,1.0,0,0.5,44,1
+Full Retraining,111,1.0,0,0.5,44,1
+Full Retraining,112,1.0,0,0.5,44,1
+Full Retraining,113,1.0,0,0.5,44,1
+Full Retraining,114,1.0,0,0.5,44,1
+Full Retraining,115,1.0,0,0.5,44,1
+Full Retraining,116,1.0,0,0.5,44,1
+Full Retraining,117,1.0,0,0.5,44,1
+Full Retraining,118,1.0,0,0.5,44,1
+Full Retraining,119,1.0,0,0.5,44,1
+Full Retraining,120,1.0,0,0.5,44,1
+Full Retraining,121,1.0,0,0.5,44,1
+Full Retraining,122,1.0,0,0.5,44,1
+Full Retraining,123,1.0,0,0.5,44,1
+Full Retraining,124,1.0,0,0.5,44,1
+Full Retraining,125,1.0,0,0.5,44,1
+Full Retraining,126,1.0,0,0.5,44,1
+Full Retraining,127,1.0,0,0.5,44,1
+Full Retraining,128,1.0,0,0.5,44,1
+Full Retraining,129,1.0,0,0.5,44,1
+Full Retraining,130,1.0,0,0.5,44,1
+Full Retraining,131,1.0,0,0.5,44,1
+Full Retraining,132,0.0,0,0.5,44,1
+Full Retraining,133,1.0,0,0.5,44,1
+Full Retraining,134,1.0,0,0.5,44,1
+Full Retraining,135,1.0,0,0.5,44,1
+Full Retraining,136,1.0,0,0.5,44,1
+Full Retraining,137,1.0,0,0.5,44,1
+Full Retraining,138,1.0,0,0.5,44,1
+Full Retraining,139,1.0,0,0.5,44,1
+Full Retraining,140,1.0,0,0.5,44,1
+Full Retraining,141,1.0,0,0.5,44,1
+Full Retraining,142,1.0,0,0.5,44,1
+Full Retraining,143,0.0,0,0.5,44,1
+Full Retraining,144,0.0,1,0.5,44,1
+Full Retraining,145,0.0,0,0.5,44,1
+Full Retraining,146,1.0,0,0.5,44,1
+Full Retraining,147,1.0,0,0.5,44,1
+Full Retraining,148,1.0,0,0.5,44,1
+Full Retraining,149,0.0,0,0.5,44,1
+RAPT,99,1.0,0,0.5,44,1
+RAPT,100,1.0,0,0.5,44,1
+RAPT,101,1.0,0,0.5,44,1
+RAPT,102,1.0,0,0.5,44,1
+RAPT,103,1.0,0,0.5,44,1
+RAPT,104,1.0,0,0.5,44,1
+RAPT,105,1.0,0,0.5,44,1
+RAPT,106,1.0,0,0.5,44,1
+RAPT,107,1.0,0,0.5,44,1
+RAPT,108,1.0,0,0.5,44,1
+RAPT,109,1.0,0,0.5,44,1
+RAPT,110,1.0,0,0.5,44,1
+RAPT,111,1.0,0,0.5,44,1
+RAPT,112,1.0,0,0.5,44,1
+RAPT,113,1.0,0,0.5,44,1
+RAPT,114,1.0,0,0.5,44,1
+RAPT,115,1.0,0,0.5,44,1
+RAPT,116,1.0,0,0.5,44,1
+RAPT,117,1.0,0,0.5,44,1
+RAPT,118,1.0,0,0.5,44,1
+RAPT,119,1.0,0,0.5,44,1
+RAPT,120,1.0,0,0.5,44,1
+RAPT,121,1.0,0,0.5,44,1
+RAPT,122,1.0,0,0.5,44,1
+RAPT,123,1.0,0,0.5,44,1
+RAPT,124,1.0,0,0.5,44,1
+RAPT,125,1.0,0,0.5,44,1
+RAPT,126,1.0,0,0.5,44,1
+RAPT,127,1.0,0,0.5,44,1
+RAPT,128,1.0,0,0.5,44,1
+RAPT,129,1.0,0,0.5,44,1
+RAPT,130,1.0,0,0.5,44,1
+RAPT,131,1.0,0,0.5,44,1
+RAPT,132,0.0,0,0.5,44,1
+RAPT,133,1.0,0,0.5,44,1
+RAPT,134,1.0,0,0.5,44,1
+RAPT,135,1.0,0,0.5,44,1
+RAPT,136,1.0,0,0.5,44,1
+RAPT,137,1.0,0,0.5,44,1
+RAPT,138,1.0,0,0.5,44,1
+RAPT,139,1.0,0,0.5,44,1
+RAPT,140,1.0,0,0.5,44,1
+RAPT,141,1.0,0,0.5,44,1
+RAPT,142,1.0,0,0.5,44,1
+RAPT,143,0.0,0,0.5,44,1
+RAPT,144,0.0,1,0.5,44,1
+RAPT,145,0.0,0,0.5,44,1
+RAPT,146,1.0,0,0.5,44,1
+RAPT,147,1.0,0,0.5,44,1
+RAPT,148,1.0,0,0.5,44,1
+RAPT,149,0.0,0,0.5,44,1
+Frozen,99,1.0,0,0.5,45,0
+Frozen,100,1.0,0,0.5,45,0
+Frozen,101,1.0,0,0.5,45,0
+Frozen,102,1.0,0,0.5,45,0
+Frozen,103,1.0,0,0.5,45,0
+Frozen,104,1.0,0,0.5,45,0
+Frozen,105,1.0,0,0.5,45,0
+Frozen,106,1.0,0,0.5,45,0
+Frozen,107,1.0,0,0.5,45,0
+Frozen,108,1.0,0,0.5,45,0
+Frozen,109,1.0,0,0.5,45,0
+Frozen,110,1.0,0,0.5,45,0
+Frozen,111,1.0,0,0.5,45,0
+Frozen,112,1.0,0,0.5,45,0
+Frozen,113,1.0,0,0.5,45,0
+Frozen,114,1.0,0,0.5,45,0
+Frozen,115,1.0,0,0.5,45,0
+Frozen,116,1.0,0,0.5,45,0
+Frozen,117,1.0,0,0.5,45,0
+Frozen,118,1.0,0,0.5,45,0
+Frozen,119,1.0,0,0.5,45,0
+Frozen,120,1.0,0,0.5,45,0
+Frozen,121,1.0,0,0.5,45,0
+Frozen,122,1.0,0,0.5,45,0
+Frozen,123,1.0,0,0.5,45,0
+Frozen,124,1.0,0,0.5,45,0
+Frozen,125,1.0,0,0.5,45,0
+Frozen,126,1.0,0,0.5,45,0
+Frozen,127,1.0,0,0.5,45,0
+Frozen,128,1.0,0,0.5,45,0
+Frozen,129,1.0,0,0.5,45,0
+Frozen,130,1.0,0,0.5,45,0
+Frozen,131,1.0,0,0.5,45,0
+Frozen,132,1.0,0,0.5,45,0
+Frozen,133,1.0,0,0.5,45,0
+Frozen,134,1.0,0,0.5,45,0
+Frozen,135,1.0,0,0.5,45,0
+Frozen,136,1.0,0,0.5,45,0
+Frozen,137,1.0,0,0.5,45,0
+Frozen,138,1.0,0,0.5,45,0
+Frozen,139,1.0,0,0.5,45,0
+Frozen,140,1.0,0,0.5,45,0
+Frozen,141,1.0,0,0.5,45,0
+Frozen,142,1.0,0,0.5,45,0
+Frozen,143,0.0,0,0.5,45,0
+Frozen,144,0.0,0,0.5,45,0
+Frozen,145,0.0,0,0.5,45,0
+Frozen,146,1.0,0,0.5,45,0
+Frozen,147,1.0,0,0.5,45,0
+Frozen,148,1.0,0,0.5,45,0
+Frozen,149,0.0,0,0.5,45,0
+Event-Driven,99,1.0,0,0.5,45,0
+Event-Driven,100,1.0,0,0.5,45,0
+Event-Driven,101,1.0,0,0.5,45,0
+Event-Driven,102,1.0,0,0.5,45,0
+Event-Driven,103,1.0,0,0.5,45,0
+Event-Driven,104,1.0,0,0.5,45,0
+Event-Driven,105,1.0,0,0.5,45,0
+Event-Driven,106,1.0,0,0.5,45,0
+Event-Driven,107,1.0,0,0.5,45,0
+Event-Driven,108,1.0,0,0.5,45,0
+Event-Driven,109,1.0,0,0.5,45,0
+Event-Driven,110,1.0,0,0.5,45,0
+Event-Driven,111,1.0,0,0.5,45,0
+Event-Driven,112,1.0,0,0.5,45,0
+Event-Driven,113,1.0,0,0.5,45,0
+Event-Driven,114,1.0,0,0.5,45,0
+Event-Driven,115,1.0,0,0.5,45,0
+Event-Driven,116,1.0,0,0.5,45,0
+Event-Driven,117,1.0,0,0.5,45,0
+Event-Driven,118,1.0,0,0.5,45,0
+Event-Driven,119,1.0,0,0.5,45,0
+Event-Driven,120,1.0,0,0.5,45,0
+Event-Driven,121,1.0,0,0.5,45,0
+Event-Driven,122,1.0,0,0.5,45,0
+Event-Driven,123,1.0,0,0.5,45,0
+Event-Driven,124,1.0,0,0.5,45,0
+Event-Driven,125,1.0,0,0.5,45,0
+Event-Driven,126,1.0,0,0.5,45,0
+Event-Driven,127,1.0,0,0.5,45,0
+Event-Driven,128,1.0,0,0.5,45,0
+Event-Driven,129,1.0,0,0.5,45,0
+Event-Driven,130,1.0,0,0.5,45,0
+Event-Driven,131,1.0,0,0.5,45,0
+Event-Driven,132,1.0,0,0.5,45,0
+Event-Driven,133,1.0,0,0.5,45,0
+Event-Driven,134,1.0,0,0.5,45,0
+Event-Driven,135,1.0,0,0.5,45,0
+Event-Driven,136,1.0,0,0.5,45,0
+Event-Driven,137,1.0,0,0.5,45,0
+Event-Driven,138,1.0,0,0.5,45,0
+Event-Driven,139,1.0,0,0.5,45,0
+Event-Driven,140,1.0,0,0.5,45,0
+Event-Driven,141,1.0,0,0.5,45,0
+Event-Driven,142,1.0,0,0.5,45,0
+Event-Driven,143,0.0,0,0.5,45,0
+Event-Driven,144,0.0,0,0.5,45,0
+Event-Driven,145,0.0,0,0.5,45,0
+Event-Driven,146,1.0,0,0.5,45,0
+Event-Driven,147,1.0,0,0.5,45,0
+Event-Driven,148,1.0,0,0.5,45,0
+Event-Driven,149,0.0,0,0.5,45,0
+Full Retraining,99,1.0,0,0.5,45,0
+Full Retraining,100,1.0,0,0.5,45,0
+Full Retraining,101,1.0,0,0.5,45,0
+Full Retraining,102,1.0,0,0.5,45,0
+Full Retraining,103,1.0,0,0.5,45,0
+Full Retraining,104,1.0,0,0.5,45,0
+Full Retraining,105,1.0,0,0.5,45,0
+Full Retraining,106,1.0,0,0.5,45,0
+Full Retraining,107,1.0,0,0.5,45,0
+Full Retraining,108,1.0,0,0.5,45,0
+Full Retraining,109,1.0,0,0.5,45,0
+Full Retraining,110,1.0,0,0.5,45,0
+Full Retraining,111,1.0,0,0.5,45,0
+Full Retraining,112,1.0,0,0.5,45,0
+Full Retraining,113,1.0,0,0.5,45,0
+Full Retraining,114,1.0,0,0.5,45,0
+Full Retraining,115,1.0,0,0.5,45,0
+Full Retraining,116,1.0,0,0.5,45,0
+Full Retraining,117,1.0,0,0.5,45,0
+Full Retraining,118,1.0,0,0.5,45,0
+Full Retraining,119,1.0,0,0.5,45,0
+Full Retraining,120,1.0,0,0.5,45,0
+Full Retraining,121,1.0,0,0.5,45,0
+Full Retraining,122,1.0,0,0.5,45,0
+Full Retraining,123,1.0,0,0.5,45,0
+Full Retraining,124,1.0,0,0.5,45,0
+Full Retraining,125,1.0,0,0.5,45,0
+Full Retraining,126,1.0,0,0.5,45,0
+Full Retraining,127,1.0,0,0.5,45,0
+Full Retraining,128,1.0,0,0.5,45,0
+Full Retraining,129,1.0,0,0.5,45,0
+Full Retraining,130,1.0,0,0.5,45,0
+Full Retraining,131,1.0,0,0.5,45,0
+Full Retraining,132,1.0,0,0.5,45,0
+Full Retraining,133,1.0,0,0.5,45,0
+Full Retraining,134,1.0,0,0.5,45,0
+Full Retraining,135,1.0,0,0.5,45,0
+Full Retraining,136,1.0,0,0.5,45,0
+Full Retraining,137,1.0,0,0.5,45,0
+Full Retraining,138,1.0,0,0.5,45,0
+Full Retraining,139,1.0,0,0.5,45,0
+Full Retraining,140,1.0,0,0.5,45,0
+Full Retraining,141,1.0,0,0.5,45,0
+Full Retraining,142,1.0,0,0.5,45,0
+Full Retraining,143,0.0,0,0.5,45,0
+Full Retraining,144,0.0,0,0.5,45,0
+Full Retraining,145,0.0,0,0.5,45,0
+Full Retraining,146,1.0,0,0.5,45,0
+Full Retraining,147,1.0,0,0.5,45,0
+Full Retraining,148,1.0,0,0.5,45,0
+Full Retraining,149,0.0,0,0.5,45,0
+RAPT,99,1.0,0,0.5,45,0
+RAPT,100,1.0,0,0.5,45,0
+RAPT,101,1.0,0,0.5,45,0
+RAPT,102,1.0,0,0.5,45,0
+RAPT,103,1.0,0,0.5,45,0
+RAPT,104,1.0,0,0.5,45,0
+RAPT,105,1.0,0,0.5,45,0
+RAPT,106,1.0,0,0.5,45,0
+RAPT,107,1.0,0,0.5,45,0
+RAPT,108,1.0,0,0.5,45,0
+RAPT,109,1.0,0,0.5,45,0
+RAPT,110,1.0,0,0.5,45,0
+RAPT,111,1.0,0,0.5,45,0
+RAPT,112,1.0,0,0.5,45,0
+RAPT,113,1.0,0,0.5,45,0
+RAPT,114,1.0,0,0.5,45,0
+RAPT,115,1.0,0,0.5,45,0
+RAPT,116,1.0,0,0.5,45,0
+RAPT,117,1.0,0,0.5,45,0
+RAPT,118,1.0,0,0.5,45,0
+RAPT,119,1.0,0,0.5,45,0
+RAPT,120,1.0,0,0.5,45,0
+RAPT,121,1.0,0,0.5,45,0
+RAPT,122,1.0,0,0.5,45,0
+RAPT,123,1.0,0,0.5,45,0
+RAPT,124,1.0,0,0.5,45,0
+RAPT,125,1.0,0,0.5,45,0
+RAPT,126,1.0,0,0.5,45,0
+RAPT,127,1.0,0,0.5,45,0
+RAPT,128,1.0,0,0.5,45,0
+RAPT,129,1.0,0,0.5,45,0
+RAPT,130,1.0,0,0.5,45,0
+RAPT,131,1.0,0,0.5,45,0
+RAPT,132,1.0,0,0.5,45,0
+RAPT,133,1.0,0,0.5,45,0
+RAPT,134,1.0,0,0.5,45,0
+RAPT,135,1.0,0,0.5,45,0
+RAPT,136,1.0,0,0.5,45,0
+RAPT,137,1.0,0,0.5,45,0
+RAPT,138,1.0,0,0.5,45,0
+RAPT,139,1.0,0,0.5,45,0
+RAPT,140,1.0,0,0.5,45,0
+RAPT,141,1.0,0,0.5,45,0
+RAPT,142,1.0,0,0.5,45,0
+RAPT,143,0.0,0,0.5,45,0
+RAPT,144,0.0,0,0.5,45,0
+RAPT,145,0.0,0,0.5,45,0
+RAPT,146,1.0,0,0.5,45,0
+RAPT,147,1.0,0,0.5,45,0
+RAPT,148,1.0,0,0.5,45,0
+RAPT,149,0.0,0,0.5,45,0
+Frozen,99,1.0,0,0.5,45,1
+Frozen,100,1.0,0,0.5,45,1
+Frozen,101,1.0,0,0.5,45,1
+Frozen,102,1.0,0,0.5,45,1
+Frozen,103,1.0,0,0.5,45,1
+Frozen,104,1.0,0,0.5,45,1
+Frozen,105,1.0,0,0.5,45,1
+Frozen,106,1.0,0,0.5,45,1
+Frozen,107,1.0,0,0.5,45,1
+Frozen,108,1.0,0,0.5,45,1
+Frozen,109,1.0,0,0.5,45,1
+Frozen,110,1.0,0,0.5,45,1
+Frozen,111,1.0,0,0.5,45,1
+Frozen,112,1.0,0,0.5,45,1
+Frozen,113,1.0,0,0.5,45,1
+Frozen,114,1.0,0,0.5,45,1
+Frozen,115,1.0,0,0.5,45,1
+Frozen,116,1.0,0,0.5,45,1
+Frozen,117,1.0,0,0.5,45,1
+Frozen,118,1.0,0,0.5,45,1
+Frozen,119,1.0,0,0.5,45,1
+Frozen,120,1.0,0,0.5,45,1
+Frozen,121,1.0,0,0.5,45,1
+Frozen,122,1.0,0,0.5,45,1
+Frozen,123,1.0,0,0.5,45,1
+Frozen,124,1.0,0,0.5,45,1
+Frozen,125,1.0,0,0.5,45,1
+Frozen,126,1.0,0,0.5,45,1
+Frozen,127,1.0,0,0.5,45,1
+Frozen,128,1.0,0,0.5,45,1
+Frozen,129,1.0,0,0.5,45,1
+Frozen,130,1.0,0,0.5,45,1
+Frozen,131,1.0,0,0.5,45,1
+Frozen,132,1.0,0,0.5,45,1
+Frozen,133,1.0,0,0.5,45,1
+Frozen,134,1.0,0,0.5,45,1
+Frozen,135,1.0,0,0.5,45,1
+Frozen,136,1.0,0,0.5,45,1
+Frozen,137,1.0,0,0.5,45,1
+Frozen,138,1.0,0,0.5,45,1
+Frozen,139,1.0,0,0.5,45,1
+Frozen,140,1.0,0,0.5,45,1
+Frozen,141,1.0,0,0.5,45,1
+Frozen,142,1.0,0,0.5,45,1
+Frozen,143,0.0,0,0.5,45,1
+Frozen,144,0.0,1,0.5,45,1
+Frozen,145,0.0,0,0.5,45,1
+Frozen,146,0.0,0,0.5,45,1
+Frozen,147,1.0,1,0.5,45,1
+Frozen,148,1.0,0,0.5,45,1
+Frozen,149,0.0,0,0.5,45,1
+Event-Driven,99,1.0,0,0.5,45,1
+Event-Driven,100,1.0,0,0.5,45,1
+Event-Driven,101,1.0,0,0.5,45,1
+Event-Driven,102,1.0,0,0.5,45,1
+Event-Driven,103,1.0,0,0.5,45,1
+Event-Driven,104,1.0,0,0.5,45,1
+Event-Driven,105,1.0,0,0.5,45,1
+Event-Driven,106,1.0,0,0.5,45,1
+Event-Driven,107,1.0,0,0.5,45,1
+Event-Driven,108,1.0,0,0.5,45,1
+Event-Driven,109,1.0,0,0.5,45,1
+Event-Driven,110,1.0,0,0.5,45,1
+Event-Driven,111,1.0,0,0.5,45,1
+Event-Driven,112,1.0,0,0.5,45,1
+Event-Driven,113,1.0,0,0.5,45,1
+Event-Driven,114,1.0,0,0.5,45,1
+Event-Driven,115,1.0,0,0.5,45,1
+Event-Driven,116,1.0,0,0.5,45,1
+Event-Driven,117,1.0,0,0.5,45,1
+Event-Driven,118,1.0,0,0.5,45,1
+Event-Driven,119,1.0,0,0.5,45,1
+Event-Driven,120,1.0,0,0.5,45,1
+Event-Driven,121,1.0,0,0.5,45,1
+Event-Driven,122,1.0,0,0.5,45,1
+Event-Driven,123,1.0,0,0.5,45,1
+Event-Driven,124,1.0,0,0.5,45,1
+Event-Driven,125,1.0,0,0.5,45,1
+Event-Driven,126,1.0,0,0.5,45,1
+Event-Driven,127,1.0,0,0.5,45,1
+Event-Driven,128,1.0,0,0.5,45,1
+Event-Driven,129,1.0,0,0.5,45,1
+Event-Driven,130,1.0,0,0.5,45,1
+Event-Driven,131,1.0,0,0.5,45,1
+Event-Driven,132,1.0,0,0.5,45,1
+Event-Driven,133,1.0,0,0.5,45,1
+Event-Driven,134,1.0,0,0.5,45,1
+Event-Driven,135,1.0,0,0.5,45,1
+Event-Driven,136,1.0,0,0.5,45,1
+Event-Driven,137,1.0,0,0.5,45,1
+Event-Driven,138,1.0,0,0.5,45,1
+Event-Driven,139,1.0,0,0.5,45,1
+Event-Driven,140,1.0,0,0.5,45,1
+Event-Driven,141,1.0,0,0.5,45,1
+Event-Driven,142,1.0,0,0.5,45,1
+Event-Driven,143,0.0,0,0.5,45,1
+Event-Driven,144,0.0,1,0.5,45,1
+Event-Driven,145,0.0,0,0.5,45,1
+Event-Driven,146,0.0,0,0.5,45,1
+Event-Driven,147,1.0,1,0.5,45,1
+Event-Driven,148,1.0,0,0.5,45,1
+Event-Driven,149,0.0,0,0.5,45,1
+Full Retraining,99,1.0,0,0.5,45,1
+Full Retraining,100,1.0,0,0.5,45,1
+Full Retraining,101,1.0,0,0.5,45,1
+Full Retraining,102,1.0,0,0.5,45,1
+Full Retraining,103,1.0,0,0.5,45,1
+Full Retraining,104,1.0,0,0.5,45,1
+Full Retraining,105,1.0,0,0.5,45,1
+Full Retraining,106,1.0,0,0.5,45,1
+Full Retraining,107,1.0,0,0.5,45,1
+Full Retraining,108,1.0,0,0.5,45,1
+Full Retraining,109,1.0,0,0.5,45,1
+Full Retraining,110,1.0,0,0.5,45,1
+Full Retraining,111,1.0,0,0.5,45,1
+Full Retraining,112,1.0,0,0.5,45,1
+Full Retraining,113,1.0,0,0.5,45,1
+Full Retraining,114,1.0,0,0.5,45,1
+Full Retraining,115,1.0,0,0.5,45,1
+Full Retraining,116,1.0,0,0.5,45,1
+Full Retraining,117,1.0,0,0.5,45,1
+Full Retraining,118,1.0,0,0.5,45,1
+Full Retraining,119,1.0,0,0.5,45,1
+Full Retraining,120,1.0,0,0.5,45,1
+Full Retraining,121,1.0,0,0.5,45,1
+Full Retraining,122,1.0,0,0.5,45,1
+Full Retraining,123,1.0,0,0.5,45,1
+Full Retraining,124,1.0,0,0.5,45,1
+Full Retraining,125,1.0,0,0.5,45,1
+Full Retraining,126,1.0,0,0.5,45,1
+Full Retraining,127,1.0,0,0.5,45,1
+Full Retraining,128,1.0,0,0.5,45,1
+Full Retraining,129,1.0,0,0.5,45,1
+Full Retraining,130,1.0,0,0.5,45,1
+Full Retraining,131,1.0,0,0.5,45,1
+Full Retraining,132,1.0,0,0.5,45,1
+Full Retraining,133,1.0,0,0.5,45,1
+Full Retraining,134,1.0,0,0.5,45,1
+Full Retraining,135,1.0,0,0.5,45,1
+Full Retraining,136,1.0,0,0.5,45,1
+Full Retraining,137,1.0,0,0.5,45,1
+Full Retraining,138,1.0,0,0.5,45,1
+Full Retraining,139,1.0,0,0.5,45,1
+Full Retraining,140,1.0,0,0.5,45,1
+Full Retraining,141,1.0,0,0.5,45,1
+Full Retraining,142,1.0,0,0.5,45,1
+Full Retraining,143,0.0,0,0.5,45,1
+Full Retraining,144,0.0,1,0.5,45,1
+Full Retraining,145,0.0,0,0.5,45,1
+Full Retraining,146,0.0,0,0.5,45,1
+Full Retraining,147,1.0,1,0.5,45,1
+Full Retraining,148,1.0,0,0.5,45,1
+Full Retraining,149,0.0,0,0.5,45,1
+RAPT,99,1.0,0,0.5,45,1
+RAPT,100,1.0,0,0.5,45,1
+RAPT,101,1.0,0,0.5,45,1
+RAPT,102,1.0,0,0.5,45,1
+RAPT,103,1.0,0,0.5,45,1
+RAPT,104,1.0,0,0.5,45,1
+RAPT,105,1.0,0,0.5,45,1
+RAPT,106,1.0,0,0.5,45,1
+RAPT,107,1.0,0,0.5,45,1
+RAPT,108,1.0,0,0.5,45,1
+RAPT,109,1.0,0,0.5,45,1
+RAPT,110,1.0,0,0.5,45,1
+RAPT,111,1.0,0,0.5,45,1
+RAPT,112,1.0,0,0.5,45,1
+RAPT,113,1.0,0,0.5,45,1
+RAPT,114,1.0,0,0.5,45,1
+RAPT,115,1.0,0,0.5,45,1
+RAPT,116,1.0,0,0.5,45,1
+RAPT,117,1.0,0,0.5,45,1
+RAPT,118,1.0,0,0.5,45,1
+RAPT,119,1.0,0,0.5,45,1
+RAPT,120,1.0,0,0.5,45,1
+RAPT,121,1.0,0,0.5,45,1
+RAPT,122,1.0,0,0.5,45,1
+RAPT,123,1.0,0,0.5,45,1
+RAPT,124,1.0,0,0.5,45,1
+RAPT,125,1.0,0,0.5,45,1
+RAPT,126,1.0,0,0.5,45,1
+RAPT,127,1.0,0,0.5,45,1
+RAPT,128,1.0,0,0.5,45,1
+RAPT,129,1.0,0,0.5,45,1
+RAPT,130,1.0,0,0.5,45,1
+RAPT,131,1.0,0,0.5,45,1
+RAPT,132,1.0,0,0.5,45,1
+RAPT,133,1.0,0,0.5,45,1
+RAPT,134,1.0,0,0.5,45,1
+RAPT,135,1.0,0,0.5,45,1
+RAPT,136,1.0,0,0.5,45,1
+RAPT,137,1.0,0,0.5,45,1
+RAPT,138,1.0,0,0.5,45,1
+RAPT,139,1.0,0,0.5,45,1
+RAPT,140,1.0,0,0.5,45,1
+RAPT,141,1.0,0,0.5,45,1
+RAPT,142,1.0,0,0.5,45,1
+RAPT,143,0.0,0,0.5,45,1
+RAPT,144,0.0,1,0.5,45,1
+RAPT,145,0.0,0,0.5,45,1
+RAPT,146,0.0,0,0.5,45,1
+RAPT,147,1.0,1,0.5,45,1
+RAPT,148,1.0,0,0.5,45,1
+RAPT,149,0.0,0,0.5,45,1
+Frozen,99,1.0,0,0.5,46,0
+Frozen,100,1.0,0,0.5,46,0
+Frozen,101,1.0,0,0.5,46,0
+Frozen,102,1.0,0,0.5,46,0
+Frozen,103,1.0,0,0.5,46,0
+Frozen,104,1.0,0,0.5,46,0
+Frozen,105,1.0,0,0.5,46,0
+Frozen,106,1.0,0,0.5,46,0
+Frozen,107,1.0,0,0.5,46,0
+Frozen,108,1.0,0,0.5,46,0
+Frozen,109,1.0,0,0.5,46,0
+Frozen,110,1.0,0,0.5,46,0
+Frozen,111,1.0,0,0.5,46,0
+Frozen,112,1.0,0,0.5,46,0
+Frozen,113,1.0,0,0.5,46,0
+Frozen,114,1.0,0,0.5,46,0
+Frozen,115,1.0,0,0.5,46,0
+Frozen,116,1.0,0,0.5,46,0
+Frozen,117,1.0,0,0.5,46,0
+Frozen,118,1.0,0,0.5,46,0
+Frozen,119,1.0,0,0.5,46,0
+Frozen,120,1.0,0,0.5,46,0
+Frozen,121,1.0,0,0.5,46,0
+Frozen,122,1.0,0,0.5,46,0
+Frozen,123,1.0,0,0.5,46,0
+Frozen,124,1.0,0,0.5,46,0
+Frozen,125,1.0,0,0.5,46,0
+Frozen,126,1.0,0,0.5,46,0
+Frozen,127,1.0,0,0.5,46,0
+Frozen,128,1.0,0,0.5,46,0
+Frozen,129,1.0,0,0.5,46,0
+Frozen,130,0.0,0,0.5,46,0
+Frozen,131,1.0,0,0.5,46,0
+Frozen,132,0.0,0,0.5,46,0
+Frozen,133,1.0,0,0.5,46,0
+Frozen,134,1.0,0,0.5,46,0
+Frozen,135,1.0,0,0.5,46,0
+Frozen,136,1.0,0,0.5,46,0
+Frozen,137,1.0,0,0.5,46,0
+Frozen,138,1.0,0,0.5,46,0
+Frozen,139,1.0,0,0.5,46,0
+Frozen,140,1.0,0,0.5,46,0
+Frozen,141,1.0,0,0.5,46,0
+Frozen,142,1.0,0,0.5,46,0
+Frozen,143,0.0,0,0.5,46,0
+Frozen,144,0.0,0,0.5,46,0
+Frozen,145,0.0,0,0.5,46,0
+Frozen,146,0.0,0,0.5,46,0
+Frozen,147,1.0,0,0.5,46,0
+Frozen,148,1.0,0,0.5,46,0
+Frozen,149,0.0,0,0.5,46,0
+Event-Driven,99,1.0,0,0.5,46,0
+Event-Driven,100,1.0,0,0.5,46,0
+Event-Driven,101,1.0,0,0.5,46,0
+Event-Driven,102,1.0,0,0.5,46,0
+Event-Driven,103,1.0,0,0.5,46,0
+Event-Driven,104,1.0,0,0.5,46,0
+Event-Driven,105,1.0,0,0.5,46,0
+Event-Driven,106,1.0,0,0.5,46,0
+Event-Driven,107,1.0,0,0.5,46,0
+Event-Driven,108,1.0,0,0.5,46,0
+Event-Driven,109,1.0,0,0.5,46,0
+Event-Driven,110,1.0,0,0.5,46,0
+Event-Driven,111,1.0,0,0.5,46,0
+Event-Driven,112,1.0,0,0.5,46,0
+Event-Driven,113,1.0,0,0.5,46,0
+Event-Driven,114,1.0,0,0.5,46,0
+Event-Driven,115,1.0,0,0.5,46,0
+Event-Driven,116,1.0,0,0.5,46,0
+Event-Driven,117,1.0,0,0.5,46,0
+Event-Driven,118,1.0,0,0.5,46,0
+Event-Driven,119,1.0,0,0.5,46,0
+Event-Driven,120,1.0,0,0.5,46,0
+Event-Driven,121,1.0,0,0.5,46,0
+Event-Driven,122,1.0,0,0.5,46,0
+Event-Driven,123,1.0,0,0.5,46,0
+Event-Driven,124,1.0,0,0.5,46,0
+Event-Driven,125,1.0,0,0.5,46,0
+Event-Driven,126,1.0,0,0.5,46,0
+Event-Driven,127,1.0,0,0.5,46,0
+Event-Driven,128,1.0,0,0.5,46,0
+Event-Driven,129,1.0,0,0.5,46,0
+Event-Driven,130,0.0,0,0.5,46,0
+Event-Driven,131,1.0,0,0.5,46,0
+Event-Driven,132,0.0,0,0.5,46,0
+Event-Driven,133,1.0,0,0.5,46,0
+Event-Driven,134,1.0,0,0.5,46,0
+Event-Driven,135,1.0,0,0.5,46,0
+Event-Driven,136,1.0,0,0.5,46,0
+Event-Driven,137,1.0,0,0.5,46,0
+Event-Driven,138,1.0,0,0.5,46,0
+Event-Driven,139,1.0,0,0.5,46,0
+Event-Driven,140,1.0,0,0.5,46,0
+Event-Driven,141,1.0,0,0.5,46,0
+Event-Driven,142,1.0,0,0.5,46,0
+Event-Driven,143,0.0,0,0.5,46,0
+Event-Driven,144,0.0,0,0.5,46,0
+Event-Driven,145,0.0,0,0.5,46,0
+Event-Driven,146,0.0,0,0.5,46,0
+Event-Driven,147,1.0,0,0.5,46,0
+Event-Driven,148,1.0,0,0.5,46,0
+Event-Driven,149,0.0,0,0.5,46,0
+Full Retraining,99,1.0,0,0.5,46,0
+Full Retraining,100,1.0,0,0.5,46,0
+Full Retraining,101,1.0,0,0.5,46,0
+Full Retraining,102,1.0,0,0.5,46,0
+Full Retraining,103,1.0,0,0.5,46,0
+Full Retraining,104,1.0,0,0.5,46,0
+Full Retraining,105,1.0,0,0.5,46,0
+Full Retraining,106,1.0,0,0.5,46,0
+Full Retraining,107,1.0,0,0.5,46,0
+Full Retraining,108,1.0,0,0.5,46,0
+Full Retraining,109,1.0,0,0.5,46,0
+Full Retraining,110,1.0,0,0.5,46,0
+Full Retraining,111,1.0,0,0.5,46,0
+Full Retraining,112,1.0,0,0.5,46,0
+Full Retraining,113,1.0,0,0.5,46,0
+Full Retraining,114,1.0,0,0.5,46,0
+Full Retraining,115,1.0,0,0.5,46,0
+Full Retraining,116,1.0,0,0.5,46,0
+Full Retraining,117,1.0,0,0.5,46,0
+Full Retraining,118,1.0,0,0.5,46,0
+Full Retraining,119,1.0,0,0.5,46,0
+Full Retraining,120,1.0,0,0.5,46,0
+Full Retraining,121,1.0,0,0.5,46,0
+Full Retraining,122,1.0,0,0.5,46,0
+Full Retraining,123,1.0,0,0.5,46,0
+Full Retraining,124,1.0,0,0.5,46,0
+Full Retraining,125,1.0,0,0.5,46,0
+Full Retraining,126,1.0,0,0.5,46,0
+Full Retraining,127,1.0,0,0.5,46,0
+Full Retraining,128,1.0,0,0.5,46,0
+Full Retraining,129,1.0,0,0.5,46,0
+Full Retraining,130,0.0,0,0.5,46,0
+Full Retraining,131,1.0,0,0.5,46,0
+Full Retraining,132,0.0,0,0.5,46,0
+Full Retraining,133,1.0,0,0.5,46,0
+Full Retraining,134,1.0,0,0.5,46,0
+Full Retraining,135,1.0,0,0.5,46,0
+Full Retraining,136,1.0,0,0.5,46,0
+Full Retraining,137,1.0,0,0.5,46,0
+Full Retraining,138,1.0,0,0.5,46,0
+Full Retraining,139,1.0,0,0.5,46,0
+Full Retraining,140,1.0,0,0.5,46,0
+Full Retraining,141,1.0,0,0.5,46,0
+Full Retraining,142,1.0,0,0.5,46,0
+Full Retraining,143,0.0,0,0.5,46,0
+Full Retraining,144,0.0,0,0.5,46,0
+Full Retraining,145,0.0,0,0.5,46,0
+Full Retraining,146,0.0,0,0.5,46,0
+Full Retraining,147,1.0,0,0.5,46,0
+Full Retraining,148,1.0,0,0.5,46,0
+Full Retraining,149,0.0,0,0.5,46,0
+RAPT,99,1.0,0,0.5,46,0
+RAPT,100,1.0,0,0.5,46,0
+RAPT,101,1.0,0,0.5,46,0
+RAPT,102,1.0,0,0.5,46,0
+RAPT,103,1.0,0,0.5,46,0
+RAPT,104,1.0,0,0.5,46,0
+RAPT,105,1.0,0,0.5,46,0
+RAPT,106,1.0,0,0.5,46,0
+RAPT,107,1.0,0,0.5,46,0
+RAPT,108,1.0,0,0.5,46,0
+RAPT,109,1.0,0,0.5,46,0
+RAPT,110,1.0,0,0.5,46,0
+RAPT,111,1.0,0,0.5,46,0
+RAPT,112,1.0,0,0.5,46,0
+RAPT,113,1.0,0,0.5,46,0
+RAPT,114,1.0,0,0.5,46,0
+RAPT,115,1.0,0,0.5,46,0
+RAPT,116,1.0,0,0.5,46,0
+RAPT,117,1.0,0,0.5,46,0
+RAPT,118,1.0,0,0.5,46,0
+RAPT,119,1.0,0,0.5,46,0
+RAPT,120,1.0,0,0.5,46,0
+RAPT,121,1.0,0,0.5,46,0
+RAPT,122,1.0,0,0.5,46,0
+RAPT,123,1.0,0,0.5,46,0
+RAPT,124,1.0,0,0.5,46,0
+RAPT,125,1.0,0,0.5,46,0
+RAPT,126,1.0,0,0.5,46,0
+RAPT,127,1.0,0,0.5,46,0
+RAPT,128,1.0,0,0.5,46,0
+RAPT,129,1.0,0,0.5,46,0
+RAPT,130,0.0,0,0.5,46,0
+RAPT,131,1.0,0,0.5,46,0
+RAPT,132,0.0,0,0.5,46,0
+RAPT,133,1.0,0,0.5,46,0
+RAPT,134,1.0,0,0.5,46,0
+RAPT,135,1.0,0,0.5,46,0
+RAPT,136,1.0,0,0.5,46,0
+RAPT,137,1.0,0,0.5,46,0
+RAPT,138,1.0,0,0.5,46,0
+RAPT,139,1.0,0,0.5,46,0
+RAPT,140,1.0,0,0.5,46,0
+RAPT,141,1.0,0,0.5,46,0
+RAPT,142,1.0,0,0.5,46,0
+RAPT,143,0.0,0,0.5,46,0
+RAPT,144,0.0,0,0.5,46,0
+RAPT,145,0.0,0,0.5,46,0
+RAPT,146,0.0,0,0.5,46,0
+RAPT,147,1.0,0,0.5,46,0
+RAPT,148,1.0,0,0.5,46,0
+RAPT,149,0.0,0,0.5,46,0
+Frozen,99,1.0,0,0.5,46,1
+Frozen,100,1.0,0,0.5,46,1
+Frozen,101,1.0,0,0.5,46,1
+Frozen,102,1.0,0,0.5,46,1
+Frozen,103,1.0,0,0.5,46,1
+Frozen,104,1.0,0,0.5,46,1
+Frozen,105,1.0,0,0.5,46,1
+Frozen,106,1.0,0,0.5,46,1
+Frozen,107,1.0,0,0.5,46,1
+Frozen,108,1.0,0,0.5,46,1
+Frozen,109,1.0,0,0.5,46,1
+Frozen,110,1.0,0,0.5,46,1
+Frozen,111,1.0,0,0.5,46,1
+Frozen,112,1.0,0,0.5,46,1
+Frozen,113,1.0,0,0.5,46,1
+Frozen,114,1.0,0,0.5,46,1
+Frozen,115,1.0,0,0.5,46,1
+Frozen,116,1.0,0,0.5,46,1
+Frozen,117,1.0,0,0.5,46,1
+Frozen,118,1.0,0,0.5,46,1
+Frozen,119,1.0,0,0.5,46,1
+Frozen,120,1.0,0,0.5,46,1
+Frozen,121,1.0,0,0.5,46,1
+Frozen,122,1.0,0,0.5,46,1
+Frozen,123,1.0,0,0.5,46,1
+Frozen,124,1.0,0,0.5,46,1
+Frozen,125,1.0,0,0.5,46,1
+Frozen,126,1.0,0,0.5,46,1
+Frozen,127,1.0,0,0.5,46,1
+Frozen,128,1.0,0,0.5,46,1
+Frozen,129,1.0,0,0.5,46,1
+Frozen,130,0.0,0,0.5,46,1
+Frozen,131,1.0,0,0.5,46,1
+Frozen,132,0.0,1,0.5,46,1
+Frozen,133,1.0,0,0.5,46,1
+Frozen,134,1.0,0,0.5,46,1
+Frozen,135,1.0,0,0.5,46,1
+Frozen,136,1.0,0,0.5,46,1
+Frozen,137,1.0,0,0.5,46,1
+Frozen,138,1.0,0,0.5,46,1
+Frozen,139,1.0,0,0.5,46,1
+Frozen,140,1.0,0,0.5,46,1
+Frozen,141,1.0,0,0.5,46,1
+Frozen,142,1.0,0,0.5,46,1
+Frozen,143,0.0,0,0.5,46,1
+Frozen,144,0.0,1,0.5,46,1
+Frozen,145,0.0,0,0.5,46,1
+Frozen,146,0.0,0,0.5,46,1
+Frozen,147,1.0,1,0.5,46,1
+Frozen,148,1.0,0,0.5,46,1
+Frozen,149,0.0,0,0.5,46,1
+Event-Driven,99,1.0,0,0.5,46,1
+Event-Driven,100,1.0,0,0.5,46,1
+Event-Driven,101,1.0,0,0.5,46,1
+Event-Driven,102,1.0,0,0.5,46,1
+Event-Driven,103,1.0,0,0.5,46,1
+Event-Driven,104,1.0,0,0.5,46,1
+Event-Driven,105,1.0,0,0.5,46,1
+Event-Driven,106,1.0,0,0.5,46,1
+Event-Driven,107,1.0,0,0.5,46,1
+Event-Driven,108,1.0,0,0.5,46,1
+Event-Driven,109,1.0,0,0.5,46,1
+Event-Driven,110,1.0,0,0.5,46,1
+Event-Driven,111,1.0,0,0.5,46,1
+Event-Driven,112,1.0,0,0.5,46,1
+Event-Driven,113,1.0,0,0.5,46,1
+Event-Driven,114,1.0,0,0.5,46,1
+Event-Driven,115,1.0,0,0.5,46,1
+Event-Driven,116,1.0,0,0.5,46,1
+Event-Driven,117,1.0,0,0.5,46,1
+Event-Driven,118,1.0,0,0.5,46,1
+Event-Driven,119,1.0,0,0.5,46,1
+Event-Driven,120,1.0,0,0.5,46,1
+Event-Driven,121,1.0,0,0.5,46,1
+Event-Driven,122,1.0,0,0.5,46,1
+Event-Driven,123,1.0,0,0.5,46,1
+Event-Driven,124,1.0,0,0.5,46,1
+Event-Driven,125,1.0,0,0.5,46,1
+Event-Driven,126,1.0,0,0.5,46,1
+Event-Driven,127,1.0,0,0.5,46,1
+Event-Driven,128,1.0,0,0.5,46,1
+Event-Driven,129,1.0,0,0.5,46,1
+Event-Driven,130,0.0,0,0.5,46,1
+Event-Driven,131,1.0,0,0.5,46,1
+Event-Driven,132,0.0,1,0.5,46,1
+Event-Driven,133,1.0,0,0.5,46,1
+Event-Driven,134,1.0,0,0.5,46,1
+Event-Driven,135,1.0,0,0.5,46,1
+Event-Driven,136,1.0,0,0.5,46,1
+Event-Driven,137,1.0,0,0.5,46,1
+Event-Driven,138,1.0,0,0.5,46,1
+Event-Driven,139,1.0,0,0.5,46,1
+Event-Driven,140,1.0,0,0.5,46,1
+Event-Driven,141,1.0,0,0.5,46,1
+Event-Driven,142,1.0,0,0.5,46,1
+Event-Driven,143,0.0,0,0.5,46,1
+Event-Driven,144,0.0,1,0.5,46,1
+Event-Driven,145,0.0,0,0.5,46,1
+Event-Driven,146,0.0,0,0.5,46,1
+Event-Driven,147,1.0,1,0.5,46,1
+Event-Driven,148,1.0,0,0.5,46,1
+Event-Driven,149,0.0,0,0.5,46,1
+Full Retraining,99,1.0,0,0.5,46,1
+Full Retraining,100,1.0,0,0.5,46,1
+Full Retraining,101,1.0,0,0.5,46,1
+Full Retraining,102,1.0,0,0.5,46,1
+Full Retraining,103,1.0,0,0.5,46,1
+Full Retraining,104,1.0,0,0.5,46,1
+Full Retraining,105,1.0,0,0.5,46,1
+Full Retraining,106,1.0,0,0.5,46,1
+Full Retraining,107,1.0,0,0.5,46,1
+Full Retraining,108,1.0,0,0.5,46,1
+Full Retraining,109,1.0,0,0.5,46,1
+Full Retraining,110,1.0,0,0.5,46,1
+Full Retraining,111,1.0,0,0.5,46,1
+Full Retraining,112,1.0,0,0.5,46,1
+Full Retraining,113,1.0,0,0.5,46,1
+Full Retraining,114,1.0,0,0.5,46,1
+Full Retraining,115,1.0,0,0.5,46,1
+Full Retraining,116,1.0,0,0.5,46,1
+Full Retraining,117,1.0,0,0.5,46,1
+Full Retraining,118,1.0,0,0.5,46,1
+Full Retraining,119,1.0,0,0.5,46,1
+Full Retraining,120,1.0,0,0.5,46,1
+Full Retraining,121,1.0,0,0.5,46,1
+Full Retraining,122,1.0,0,0.5,46,1
+Full Retraining,123,1.0,0,0.5,46,1
+Full Retraining,124,1.0,0,0.5,46,1
+Full Retraining,125,1.0,0,0.5,46,1
+Full Retraining,126,1.0,0,0.5,46,1
+Full Retraining,127,1.0,0,0.5,46,1
+Full Retraining,128,1.0,0,0.5,46,1
+Full Retraining,129,1.0,0,0.5,46,1
+Full Retraining,130,0.0,0,0.5,46,1
+Full Retraining,131,1.0,0,0.5,46,1
+Full Retraining,132,0.0,1,0.5,46,1
+Full Retraining,133,1.0,0,0.5,46,1
+Full Retraining,134,1.0,0,0.5,46,1
+Full Retraining,135,1.0,0,0.5,46,1
+Full Retraining,136,1.0,0,0.5,46,1
+Full Retraining,137,1.0,0,0.5,46,1
+Full Retraining,138,1.0,0,0.5,46,1
+Full Retraining,139,1.0,0,0.5,46,1
+Full Retraining,140,1.0,0,0.5,46,1
+Full Retraining,141,1.0,0,0.5,46,1
+Full Retraining,142,1.0,0,0.5,46,1
+Full Retraining,143,0.0,0,0.5,46,1
+Full Retraining,144,0.0,1,0.5,46,1
+Full Retraining,145,0.0,0,0.5,46,1
+Full Retraining,146,0.0,0,0.5,46,1
+Full Retraining,147,1.0,1,0.5,46,1
+Full Retraining,148,1.0,0,0.5,46,1
+Full Retraining,149,0.0,0,0.5,46,1
+RAPT,99,1.0,0,0.5,46,1
+RAPT,100,1.0,0,0.5,46,1
+RAPT,101,1.0,0,0.5,46,1
+RAPT,102,1.0,0,0.5,46,1
+RAPT,103,1.0,0,0.5,46,1
+RAPT,104,1.0,0,0.5,46,1
+RAPT,105,1.0,0,0.5,46,1
+RAPT,106,1.0,0,0.5,46,1
+RAPT,107,1.0,0,0.5,46,1
+RAPT,108,1.0,0,0.5,46,1
+RAPT,109,1.0,0,0.5,46,1
+RAPT,110,1.0,0,0.5,46,1
+RAPT,111,1.0,0,0.5,46,1
+RAPT,112,1.0,0,0.5,46,1
+RAPT,113,1.0,0,0.5,46,1
+RAPT,114,1.0,0,0.5,46,1
+RAPT,115,1.0,0,0.5,46,1
+RAPT,116,1.0,0,0.5,46,1
+RAPT,117,1.0,0,0.5,46,1
+RAPT,118,1.0,0,0.5,46,1
+RAPT,119,1.0,0,0.5,46,1
+RAPT,120,1.0,0,0.5,46,1
+RAPT,121,1.0,0,0.5,46,1
+RAPT,122,1.0,0,0.5,46,1
+RAPT,123,1.0,0,0.5,46,1
+RAPT,124,1.0,0,0.5,46,1
+RAPT,125,1.0,0,0.5,46,1
+RAPT,126,1.0,0,0.5,46,1
+RAPT,127,1.0,0,0.5,46,1
+RAPT,128,1.0,0,0.5,46,1
+RAPT,129,1.0,0,0.5,46,1
+RAPT,130,0.0,0,0.5,46,1
+RAPT,131,1.0,0,0.5,46,1
+RAPT,132,0.0,1,0.5,46,1
+RAPT,133,1.0,0,0.5,46,1
+RAPT,134,1.0,0,0.5,46,1
+RAPT,135,1.0,0,0.5,46,1
+RAPT,136,1.0,0,0.5,46,1
+RAPT,137,0.0,0,0.5,46,1
+RAPT,138,1.0,0,0.5,46,1
+RAPT,139,1.0,0,0.5,46,1
+RAPT,140,1.0,0,0.5,46,1
+RAPT,141,1.0,0,0.5,46,1
+RAPT,142,1.0,0,0.5,46,1
+RAPT,143,1.0,0,0.5,46,1
+RAPT,144,0.0,0,0.5,46,1
+RAPT,145,0.0,1,0.5,46,1
+RAPT,146,0.0,0,0.5,46,1
+RAPT,147,1.0,0,0.5,46,1
+RAPT,148,1.0,0,0.5,46,1
+RAPT,149,0.0,0,0.5,46,1
+Frozen,99,1.0,0,1.0,42,0
+Frozen,100,1.0,0,1.0,42,0
+Frozen,101,1.0,0,1.0,42,0
+Frozen,102,1.0,0,1.0,42,0
+Frozen,103,1.0,0,1.0,42,0
+Frozen,104,1.0,0,1.0,42,0
+Frozen,105,1.0,0,1.0,42,0
+Frozen,106,1.0,0,1.0,42,0
+Frozen,107,1.0,0,1.0,42,0
+Frozen,108,1.0,0,1.0,42,0
+Frozen,109,1.0,0,1.0,42,0
+Frozen,110,1.0,0,1.0,42,0
+Frozen,111,1.0,0,1.0,42,0
+Frozen,112,1.0,0,1.0,42,0
+Frozen,113,1.0,0,1.0,42,0
+Frozen,114,1.0,0,1.0,42,0
+Frozen,115,1.0,0,1.0,42,0
+Frozen,116,1.0,0,1.0,42,0
+Frozen,117,1.0,0,1.0,42,0
+Frozen,118,1.0,0,1.0,42,0
+Frozen,119,1.0,0,1.0,42,0
+Frozen,120,1.0,0,1.0,42,0
+Frozen,121,1.0,0,1.0,42,0
+Frozen,122,1.0,0,1.0,42,0
+Frozen,123,1.0,0,1.0,42,0
+Frozen,124,1.0,0,1.0,42,0
+Frozen,125,1.0,0,1.0,42,0
+Frozen,126,1.0,0,1.0,42,0
+Frozen,127,1.0,0,1.0,42,0
+Frozen,128,1.0,0,1.0,42,0
+Frozen,129,1.0,0,1.0,42,0
+Frozen,130,1.0,0,1.0,42,0
+Frozen,131,1.0,0,1.0,42,0
+Frozen,132,0.0,0,1.0,42,0
+Frozen,133,1.0,0,1.0,42,0
+Frozen,134,1.0,0,1.0,42,0
+Frozen,135,1.0,0,1.0,42,0
+Frozen,136,1.0,0,1.0,42,0
+Frozen,137,0.0,0,1.0,42,0
+Frozen,138,1.0,0,1.0,42,0
+Frozen,139,1.0,0,1.0,42,0
+Frozen,140,1.0,0,1.0,42,0
+Frozen,141,1.0,0,1.0,42,0
+Frozen,142,1.0,0,1.0,42,0
+Frozen,143,0.0,0,1.0,42,0
+Frozen,144,0.0,0,1.0,42,0
+Frozen,145,0.0,0,1.0,42,0
+Frozen,146,0.0,0,1.0,42,0
+Frozen,147,1.0,0,1.0,42,0
+Frozen,148,1.0,0,1.0,42,0
+Frozen,149,0.0,0,1.0,42,0
+Event-Driven,99,1.0,0,1.0,42,0
+Event-Driven,100,1.0,0,1.0,42,0
+Event-Driven,101,1.0,0,1.0,42,0
+Event-Driven,102,1.0,0,1.0,42,0
+Event-Driven,103,1.0,0,1.0,42,0
+Event-Driven,104,1.0,0,1.0,42,0
+Event-Driven,105,1.0,0,1.0,42,0
+Event-Driven,106,1.0,0,1.0,42,0
+Event-Driven,107,1.0,0,1.0,42,0
+Event-Driven,108,1.0,0,1.0,42,0
+Event-Driven,109,1.0,0,1.0,42,0
+Event-Driven,110,1.0,0,1.0,42,0
+Event-Driven,111,1.0,0,1.0,42,0
+Event-Driven,112,1.0,0,1.0,42,0
+Event-Driven,113,1.0,0,1.0,42,0
+Event-Driven,114,1.0,0,1.0,42,0
+Event-Driven,115,1.0,0,1.0,42,0
+Event-Driven,116,1.0,0,1.0,42,0
+Event-Driven,117,1.0,0,1.0,42,0
+Event-Driven,118,1.0,0,1.0,42,0
+Event-Driven,119,1.0,0,1.0,42,0
+Event-Driven,120,1.0,0,1.0,42,0
+Event-Driven,121,1.0,0,1.0,42,0
+Event-Driven,122,1.0,0,1.0,42,0
+Event-Driven,123,1.0,0,1.0,42,0
+Event-Driven,124,1.0,0,1.0,42,0
+Event-Driven,125,1.0,0,1.0,42,0
+Event-Driven,126,1.0,0,1.0,42,0
+Event-Driven,127,1.0,0,1.0,42,0
+Event-Driven,128,1.0,0,1.0,42,0
+Event-Driven,129,1.0,0,1.0,42,0
+Event-Driven,130,1.0,0,1.0,42,0
+Event-Driven,131,1.0,0,1.0,42,0
+Event-Driven,132,0.0,0,1.0,42,0
+Event-Driven,133,1.0,0,1.0,42,0
+Event-Driven,134,1.0,0,1.0,42,0
+Event-Driven,135,1.0,0,1.0,42,0
+Event-Driven,136,1.0,0,1.0,42,0
+Event-Driven,137,0.0,0,1.0,42,0
+Event-Driven,138,1.0,0,1.0,42,0
+Event-Driven,139,1.0,0,1.0,42,0
+Event-Driven,140,1.0,0,1.0,42,0
+Event-Driven,141,1.0,0,1.0,42,0
+Event-Driven,142,1.0,0,1.0,42,0
+Event-Driven,143,0.0,0,1.0,42,0
+Event-Driven,144,0.0,0,1.0,42,0
+Event-Driven,145,0.0,0,1.0,42,0
+Event-Driven,146,0.0,0,1.0,42,0
+Event-Driven,147,1.0,0,1.0,42,0
+Event-Driven,148,1.0,0,1.0,42,0
+Event-Driven,149,0.0,0,1.0,42,0
+Full Retraining,99,1.0,0,1.0,42,0
+Full Retraining,100,1.0,0,1.0,42,0
+Full Retraining,101,1.0,0,1.0,42,0
+Full Retraining,102,1.0,0,1.0,42,0
+Full Retraining,103,1.0,0,1.0,42,0
+Full Retraining,104,1.0,0,1.0,42,0
+Full Retraining,105,1.0,0,1.0,42,0
+Full Retraining,106,1.0,0,1.0,42,0
+Full Retraining,107,1.0,0,1.0,42,0
+Full Retraining,108,1.0,0,1.0,42,0
+Full Retraining,109,1.0,0,1.0,42,0
+Full Retraining,110,1.0,0,1.0,42,0
+Full Retraining,111,1.0,0,1.0,42,0
+Full Retraining,112,1.0,0,1.0,42,0
+Full Retraining,113,1.0,0,1.0,42,0
+Full Retraining,114,1.0,0,1.0,42,0
+Full Retraining,115,1.0,0,1.0,42,0
+Full Retraining,116,1.0,0,1.0,42,0
+Full Retraining,117,1.0,0,1.0,42,0
+Full Retraining,118,1.0,0,1.0,42,0
+Full Retraining,119,1.0,0,1.0,42,0
+Full Retraining,120,1.0,0,1.0,42,0
+Full Retraining,121,1.0,0,1.0,42,0
+Full Retraining,122,1.0,0,1.0,42,0
+Full Retraining,123,1.0,0,1.0,42,0
+Full Retraining,124,1.0,0,1.0,42,0
+Full Retraining,125,1.0,0,1.0,42,0
+Full Retraining,126,1.0,0,1.0,42,0
+Full Retraining,127,1.0,0,1.0,42,0
+Full Retraining,128,1.0,0,1.0,42,0
+Full Retraining,129,1.0,0,1.0,42,0
+Full Retraining,130,1.0,0,1.0,42,0
+Full Retraining,131,1.0,0,1.0,42,0
+Full Retraining,132,0.0,0,1.0,42,0
+Full Retraining,133,1.0,0,1.0,42,0
+Full Retraining,134,1.0,0,1.0,42,0
+Full Retraining,135,1.0,0,1.0,42,0
+Full Retraining,136,1.0,0,1.0,42,0
+Full Retraining,137,0.0,0,1.0,42,0
+Full Retraining,138,1.0,0,1.0,42,0
+Full Retraining,139,1.0,0,1.0,42,0
+Full Retraining,140,1.0,0,1.0,42,0
+Full Retraining,141,1.0,0,1.0,42,0
+Full Retraining,142,1.0,0,1.0,42,0
+Full Retraining,143,0.0,0,1.0,42,0
+Full Retraining,144,0.0,0,1.0,42,0
+Full Retraining,145,0.0,0,1.0,42,0
+Full Retraining,146,0.0,0,1.0,42,0
+Full Retraining,147,1.0,0,1.0,42,0
+Full Retraining,148,1.0,0,1.0,42,0
+Full Retraining,149,0.0,0,1.0,42,0
+RAPT,99,1.0,0,1.0,42,0
+RAPT,100,1.0,0,1.0,42,0
+RAPT,101,1.0,0,1.0,42,0
+RAPT,102,1.0,0,1.0,42,0
+RAPT,103,1.0,0,1.0,42,0
+RAPT,104,1.0,0,1.0,42,0
+RAPT,105,1.0,0,1.0,42,0
+RAPT,106,1.0,0,1.0,42,0
+RAPT,107,1.0,0,1.0,42,0
+RAPT,108,1.0,0,1.0,42,0
+RAPT,109,1.0,0,1.0,42,0
+RAPT,110,1.0,0,1.0,42,0
+RAPT,111,1.0,0,1.0,42,0
+RAPT,112,1.0,0,1.0,42,0
+RAPT,113,1.0,0,1.0,42,0
+RAPT,114,1.0,0,1.0,42,0
+RAPT,115,1.0,0,1.0,42,0
+RAPT,116,1.0,0,1.0,42,0
+RAPT,117,1.0,0,1.0,42,0
+RAPT,118,1.0,0,1.0,42,0
+RAPT,119,1.0,0,1.0,42,0
+RAPT,120,1.0,0,1.0,42,0
+RAPT,121,1.0,0,1.0,42,0
+RAPT,122,1.0,0,1.0,42,0
+RAPT,123,1.0,0,1.0,42,0
+RAPT,124,1.0,0,1.0,42,0
+RAPT,125,1.0,0,1.0,42,0
+RAPT,126,1.0,0,1.0,42,0
+RAPT,127,1.0,0,1.0,42,0
+RAPT,128,1.0,0,1.0,42,0
+RAPT,129,1.0,0,1.0,42,0
+RAPT,130,1.0,0,1.0,42,0
+RAPT,131,1.0,0,1.0,42,0
+RAPT,132,0.0,0,1.0,42,0
+RAPT,133,1.0,0,1.0,42,0
+RAPT,134,1.0,0,1.0,42,0
+RAPT,135,1.0,0,1.0,42,0
+RAPT,136,1.0,0,1.0,42,0
+RAPT,137,0.0,0,1.0,42,0
+RAPT,138,1.0,0,1.0,42,0
+RAPT,139,1.0,0,1.0,42,0
+RAPT,140,1.0,0,1.0,42,0
+RAPT,141,1.0,0,1.0,42,0
+RAPT,142,1.0,0,1.0,42,0
+RAPT,143,0.0,0,1.0,42,0
+RAPT,144,0.0,0,1.0,42,0
+RAPT,145,0.0,0,1.0,42,0
+RAPT,146,0.0,0,1.0,42,0
+RAPT,147,1.0,0,1.0,42,0
+RAPT,148,1.0,0,1.0,42,0
+RAPT,149,0.0,0,1.0,42,0
+Frozen,99,1.0,0,1.0,42,1
+Frozen,100,1.0,0,1.0,42,1
+Frozen,101,1.0,0,1.0,42,1
+Frozen,102,1.0,0,1.0,42,1
+Frozen,103,1.0,0,1.0,42,1
+Frozen,104,1.0,0,1.0,42,1
+Frozen,105,1.0,0,1.0,42,1
+Frozen,106,1.0,0,1.0,42,1
+Frozen,107,1.0,0,1.0,42,1
+Frozen,108,1.0,0,1.0,42,1
+Frozen,109,1.0,0,1.0,42,1
+Frozen,110,1.0,0,1.0,42,1
+Frozen,111,1.0,0,1.0,42,1
+Frozen,112,1.0,0,1.0,42,1
+Frozen,113,1.0,0,1.0,42,1
+Frozen,114,1.0,0,1.0,42,1
+Frozen,115,1.0,0,1.0,42,1
+Frozen,116,1.0,0,1.0,42,1
+Frozen,117,1.0,0,1.0,42,1
+Frozen,118,1.0,0,1.0,42,1
+Frozen,119,1.0,0,1.0,42,1
+Frozen,120,1.0,0,1.0,42,1
+Frozen,121,1.0,0,1.0,42,1
+Frozen,122,1.0,0,1.0,42,1
+Frozen,123,1.0,0,1.0,42,1
+Frozen,124,1.0,0,1.0,42,1
+Frozen,125,1.0,0,1.0,42,1
+Frozen,126,1.0,0,1.0,42,1
+Frozen,127,1.0,0,1.0,42,1
+Frozen,128,1.0,0,1.0,42,1
+Frozen,129,1.0,0,1.0,42,1
+Frozen,130,1.0,0,1.0,42,1
+Frozen,131,1.0,0,1.0,42,1
+Frozen,132,0.0,0,1.0,42,1
+Frozen,133,1.0,0,1.0,42,1
+Frozen,134,1.0,0,1.0,42,1
+Frozen,135,1.0,0,1.0,42,1
+Frozen,136,1.0,0,1.0,42,1
+Frozen,137,0.0,0,1.0,42,1
+Frozen,138,1.0,0,1.0,42,1
+Frozen,139,1.0,0,1.0,42,1
+Frozen,140,1.0,0,1.0,42,1
+Frozen,141,1.0,0,1.0,42,1
+Frozen,142,1.0,0,1.0,42,1
+Frozen,143,0.0,0,1.0,42,1
+Frozen,144,0.0,1,1.0,42,1
+Frozen,145,0.0,0,1.0,42,1
+Frozen,146,0.0,0,1.0,42,1
+Frozen,147,1.0,1,1.0,42,1
+Frozen,148,1.0,0,1.0,42,1
+Frozen,149,0.0,0,1.0,42,1
+Event-Driven,99,1.0,0,1.0,42,1
+Event-Driven,100,1.0,0,1.0,42,1
+Event-Driven,101,1.0,0,1.0,42,1
+Event-Driven,102,1.0,0,1.0,42,1
+Event-Driven,103,1.0,0,1.0,42,1
+Event-Driven,104,1.0,0,1.0,42,1
+Event-Driven,105,1.0,0,1.0,42,1
+Event-Driven,106,1.0,0,1.0,42,1
+Event-Driven,107,1.0,0,1.0,42,1
+Event-Driven,108,1.0,0,1.0,42,1
+Event-Driven,109,1.0,0,1.0,42,1
+Event-Driven,110,1.0,0,1.0,42,1
+Event-Driven,111,1.0,0,1.0,42,1
+Event-Driven,112,1.0,0,1.0,42,1
+Event-Driven,113,1.0,0,1.0,42,1
+Event-Driven,114,1.0,0,1.0,42,1
+Event-Driven,115,1.0,0,1.0,42,1
+Event-Driven,116,1.0,0,1.0,42,1
+Event-Driven,117,1.0,0,1.0,42,1
+Event-Driven,118,1.0,0,1.0,42,1
+Event-Driven,119,1.0,0,1.0,42,1
+Event-Driven,120,1.0,0,1.0,42,1
+Event-Driven,121,1.0,0,1.0,42,1
+Event-Driven,122,1.0,0,1.0,42,1
+Event-Driven,123,1.0,0,1.0,42,1
+Event-Driven,124,1.0,0,1.0,42,1
+Event-Driven,125,1.0,0,1.0,42,1
+Event-Driven,126,1.0,0,1.0,42,1
+Event-Driven,127,1.0,0,1.0,42,1
+Event-Driven,128,1.0,0,1.0,42,1
+Event-Driven,129,1.0,0,1.0,42,1
+Event-Driven,130,1.0,0,1.0,42,1
+Event-Driven,131,1.0,0,1.0,42,1
+Event-Driven,132,0.0,0,1.0,42,1
+Event-Driven,133,1.0,0,1.0,42,1
+Event-Driven,134,1.0,0,1.0,42,1
+Event-Driven,135,1.0,0,1.0,42,1
+Event-Driven,136,1.0,0,1.0,42,1
+Event-Driven,137,0.0,0,1.0,42,1
+Event-Driven,138,1.0,0,1.0,42,1
+Event-Driven,139,1.0,0,1.0,42,1
+Event-Driven,140,1.0,0,1.0,42,1
+Event-Driven,141,1.0,0,1.0,42,1
+Event-Driven,142,1.0,0,1.0,42,1
+Event-Driven,143,0.0,0,1.0,42,1
+Event-Driven,144,0.0,1,1.0,42,1
+Event-Driven,145,0.0,0,1.0,42,1
+Event-Driven,146,0.0,0,1.0,42,1
+Event-Driven,147,1.0,1,1.0,42,1
+Event-Driven,148,1.0,0,1.0,42,1
+Event-Driven,149,0.0,0,1.0,42,1
+Full Retraining,99,1.0,0,1.0,42,1
+Full Retraining,100,1.0,0,1.0,42,1
+Full Retraining,101,1.0,0,1.0,42,1
+Full Retraining,102,1.0,0,1.0,42,1
+Full Retraining,103,1.0,0,1.0,42,1
+Full Retraining,104,1.0,0,1.0,42,1
+Full Retraining,105,1.0,0,1.0,42,1
+Full Retraining,106,1.0,0,1.0,42,1
+Full Retraining,107,1.0,0,1.0,42,1
+Full Retraining,108,1.0,0,1.0,42,1
+Full Retraining,109,1.0,0,1.0,42,1
+Full Retraining,110,1.0,0,1.0,42,1
+Full Retraining,111,1.0,0,1.0,42,1
+Full Retraining,112,1.0,0,1.0,42,1
+Full Retraining,113,1.0,0,1.0,42,1
+Full Retraining,114,1.0,0,1.0,42,1
+Full Retraining,115,1.0,0,1.0,42,1
+Full Retraining,116,1.0,0,1.0,42,1
+Full Retraining,117,1.0,0,1.0,42,1
+Full Retraining,118,1.0,0,1.0,42,1
+Full Retraining,119,1.0,0,1.0,42,1
+Full Retraining,120,1.0,0,1.0,42,1
+Full Retraining,121,1.0,0,1.0,42,1
+Full Retraining,122,1.0,0,1.0,42,1
+Full Retraining,123,1.0,0,1.0,42,1
+Full Retraining,124,1.0,0,1.0,42,1
+Full Retraining,125,1.0,0,1.0,42,1
+Full Retraining,126,1.0,0,1.0,42,1
+Full Retraining,127,1.0,0,1.0,42,1
+Full Retraining,128,1.0,0,1.0,42,1
+Full Retraining,129,1.0,0,1.0,42,1
+Full Retraining,130,1.0,0,1.0,42,1
+Full Retraining,131,1.0,0,1.0,42,1
+Full Retraining,132,0.0,0,1.0,42,1
+Full Retraining,133,1.0,0,1.0,42,1
+Full Retraining,134,1.0,0,1.0,42,1
+Full Retraining,135,1.0,0,1.0,42,1
+Full Retraining,136,1.0,0,1.0,42,1
+Full Retraining,137,0.0,0,1.0,42,1
+Full Retraining,138,1.0,0,1.0,42,1
+Full Retraining,139,1.0,0,1.0,42,1
+Full Retraining,140,1.0,0,1.0,42,1
+Full Retraining,141,1.0,0,1.0,42,1
+Full Retraining,142,1.0,0,1.0,42,1
+Full Retraining,143,0.0,0,1.0,42,1
+Full Retraining,144,0.0,1,1.0,42,1
+Full Retraining,145,0.0,0,1.0,42,1
+Full Retraining,146,0.0,0,1.0,42,1
+Full Retraining,147,1.0,1,1.0,42,1
+Full Retraining,148,1.0,0,1.0,42,1
+Full Retraining,149,0.0,0,1.0,42,1
+RAPT,99,1.0,0,1.0,42,1
+RAPT,100,1.0,0,1.0,42,1
+RAPT,101,1.0,0,1.0,42,1
+RAPT,102,1.0,0,1.0,42,1
+RAPT,103,1.0,0,1.0,42,1
+RAPT,104,1.0,0,1.0,42,1
+RAPT,105,1.0,0,1.0,42,1
+RAPT,106,1.0,0,1.0,42,1
+RAPT,107,1.0,0,1.0,42,1
+RAPT,108,1.0,0,1.0,42,1
+RAPT,109,1.0,0,1.0,42,1
+RAPT,110,1.0,0,1.0,42,1
+RAPT,111,1.0,0,1.0,42,1
+RAPT,112,1.0,0,1.0,42,1
+RAPT,113,1.0,0,1.0,42,1
+RAPT,114,1.0,0,1.0,42,1
+RAPT,115,1.0,0,1.0,42,1
+RAPT,116,1.0,0,1.0,42,1
+RAPT,117,1.0,0,1.0,42,1
+RAPT,118,1.0,0,1.0,42,1
+RAPT,119,1.0,0,1.0,42,1
+RAPT,120,1.0,0,1.0,42,1
+RAPT,121,1.0,0,1.0,42,1
+RAPT,122,1.0,0,1.0,42,1
+RAPT,123,1.0,0,1.0,42,1
+RAPT,124,1.0,0,1.0,42,1
+RAPT,125,1.0,0,1.0,42,1
+RAPT,126,1.0,0,1.0,42,1
+RAPT,127,1.0,0,1.0,42,1
+RAPT,128,1.0,0,1.0,42,1
+RAPT,129,1.0,0,1.0,42,1
+RAPT,130,1.0,0,1.0,42,1
+RAPT,131,1.0,0,1.0,42,1
+RAPT,132,0.0,0,1.0,42,1
+RAPT,133,1.0,0,1.0,42,1
+RAPT,134,1.0,0,1.0,42,1
+RAPT,135,1.0,0,1.0,42,1
+RAPT,136,1.0,0,1.0,42,1
+RAPT,137,0.0,0,1.0,42,1
+RAPT,138,1.0,0,1.0,42,1
+RAPT,139,1.0,0,1.0,42,1
+RAPT,140,1.0,0,1.0,42,1
+RAPT,141,1.0,0,1.0,42,1
+RAPT,142,1.0,0,1.0,42,1
+RAPT,143,0.0,0,1.0,42,1
+RAPT,144,0.0,1,1.0,42,1
+RAPT,145,0.0,0,1.0,42,1
+RAPT,146,0.0,0,1.0,42,1
+RAPT,147,1.0,1,1.0,42,1
+RAPT,148,1.0,0,1.0,42,1
+RAPT,149,0.0,0,1.0,42,1
+Frozen,99,1.0,0,1.0,43,0
+Frozen,100,1.0,0,1.0,43,0
+Frozen,101,1.0,0,1.0,43,0
+Frozen,102,1.0,0,1.0,43,0
+Frozen,103,1.0,0,1.0,43,0
+Frozen,104,1.0,0,1.0,43,0
+Frozen,105,1.0,0,1.0,43,0
+Frozen,106,1.0,0,1.0,43,0
+Frozen,107,1.0,0,1.0,43,0
+Frozen,108,1.0,0,1.0,43,0
+Frozen,109,1.0,0,1.0,43,0
+Frozen,110,1.0,0,1.0,43,0
+Frozen,111,1.0,0,1.0,43,0
+Frozen,112,1.0,0,1.0,43,0
+Frozen,113,1.0,0,1.0,43,0
+Frozen,114,1.0,0,1.0,43,0
+Frozen,115,1.0,0,1.0,43,0
+Frozen,116,1.0,0,1.0,43,0
+Frozen,117,1.0,0,1.0,43,0
+Frozen,118,1.0,0,1.0,43,0
+Frozen,119,1.0,0,1.0,43,0
+Frozen,120,1.0,0,1.0,43,0
+Frozen,121,1.0,0,1.0,43,0
+Frozen,122,1.0,0,1.0,43,0
+Frozen,123,1.0,0,1.0,43,0
+Frozen,124,1.0,0,1.0,43,0
+Frozen,125,1.0,0,1.0,43,0
+Frozen,126,1.0,0,1.0,43,0
+Frozen,127,1.0,0,1.0,43,0
+Frozen,128,1.0,0,1.0,43,0
+Frozen,129,1.0,0,1.0,43,0
+Frozen,130,1.0,0,1.0,43,0
+Frozen,131,1.0,0,1.0,43,0
+Frozen,132,0.0,0,1.0,43,0
+Frozen,133,1.0,0,1.0,43,0
+Frozen,134,1.0,0,1.0,43,0
+Frozen,135,1.0,0,1.0,43,0
+Frozen,136,1.0,0,1.0,43,0
+Frozen,137,0.0,0,1.0,43,0
+Frozen,138,1.0,0,1.0,43,0
+Frozen,139,1.0,0,1.0,43,0
+Frozen,140,1.0,0,1.0,43,0
+Frozen,141,1.0,0,1.0,43,0
+Frozen,142,1.0,0,1.0,43,0
+Frozen,143,0.0,0,1.0,43,0
+Frozen,144,0.0,0,1.0,43,0
+Frozen,145,0.0,0,1.0,43,0
+Frozen,146,0.0,0,1.0,43,0
+Frozen,147,1.0,0,1.0,43,0
+Frozen,148,1.0,0,1.0,43,0
+Frozen,149,0.0,0,1.0,43,0
+Event-Driven,99,1.0,0,1.0,43,0
+Event-Driven,100,1.0,0,1.0,43,0
+Event-Driven,101,1.0,0,1.0,43,0
+Event-Driven,102,1.0,0,1.0,43,0
+Event-Driven,103,1.0,0,1.0,43,0
+Event-Driven,104,1.0,0,1.0,43,0
+Event-Driven,105,1.0,0,1.0,43,0
+Event-Driven,106,1.0,0,1.0,43,0
+Event-Driven,107,1.0,0,1.0,43,0
+Event-Driven,108,1.0,0,1.0,43,0
+Event-Driven,109,1.0,0,1.0,43,0
+Event-Driven,110,1.0,0,1.0,43,0
+Event-Driven,111,1.0,0,1.0,43,0
+Event-Driven,112,1.0,0,1.0,43,0
+Event-Driven,113,1.0,0,1.0,43,0
+Event-Driven,114,1.0,0,1.0,43,0
+Event-Driven,115,1.0,0,1.0,43,0
+Event-Driven,116,1.0,0,1.0,43,0
+Event-Driven,117,1.0,0,1.0,43,0
+Event-Driven,118,1.0,0,1.0,43,0
+Event-Driven,119,1.0,0,1.0,43,0
+Event-Driven,120,1.0,0,1.0,43,0
+Event-Driven,121,1.0,0,1.0,43,0
+Event-Driven,122,1.0,0,1.0,43,0
+Event-Driven,123,1.0,0,1.0,43,0
+Event-Driven,124,1.0,0,1.0,43,0
+Event-Driven,125,1.0,0,1.0,43,0
+Event-Driven,126,1.0,0,1.0,43,0
+Event-Driven,127,1.0,0,1.0,43,0
+Event-Driven,128,1.0,0,1.0,43,0
+Event-Driven,129,1.0,0,1.0,43,0
+Event-Driven,130,1.0,0,1.0,43,0
+Event-Driven,131,1.0,0,1.0,43,0
+Event-Driven,132,0.0,0,1.0,43,0
+Event-Driven,133,1.0,0,1.0,43,0
+Event-Driven,134,1.0,0,1.0,43,0
+Event-Driven,135,1.0,0,1.0,43,0
+Event-Driven,136,1.0,0,1.0,43,0
+Event-Driven,137,0.0,0,1.0,43,0
+Event-Driven,138,1.0,0,1.0,43,0
+Event-Driven,139,1.0,0,1.0,43,0
+Event-Driven,140,1.0,0,1.0,43,0
+Event-Driven,141,1.0,0,1.0,43,0
+Event-Driven,142,1.0,0,1.0,43,0
+Event-Driven,143,0.0,0,1.0,43,0
+Event-Driven,144,0.0,0,1.0,43,0
+Event-Driven,145,0.0,0,1.0,43,0
+Event-Driven,146,0.0,0,1.0,43,0
+Event-Driven,147,1.0,0,1.0,43,0
+Event-Driven,148,1.0,0,1.0,43,0
+Event-Driven,149,0.0,0,1.0,43,0
+Full Retraining,99,1.0,0,1.0,43,0
+Full Retraining,100,1.0,0,1.0,43,0
+Full Retraining,101,1.0,0,1.0,43,0
+Full Retraining,102,1.0,0,1.0,43,0
+Full Retraining,103,1.0,0,1.0,43,0
+Full Retraining,104,1.0,0,1.0,43,0
+Full Retraining,105,1.0,0,1.0,43,0
+Full Retraining,106,1.0,0,1.0,43,0
+Full Retraining,107,1.0,0,1.0,43,0
+Full Retraining,108,1.0,0,1.0,43,0
+Full Retraining,109,1.0,0,1.0,43,0
+Full Retraining,110,1.0,0,1.0,43,0
+Full Retraining,111,1.0,0,1.0,43,0
+Full Retraining,112,1.0,0,1.0,43,0
+Full Retraining,113,1.0,0,1.0,43,0
+Full Retraining,114,1.0,0,1.0,43,0
+Full Retraining,115,1.0,0,1.0,43,0
+Full Retraining,116,1.0,0,1.0,43,0
+Full Retraining,117,1.0,0,1.0,43,0
+Full Retraining,118,1.0,0,1.0,43,0
+Full Retraining,119,1.0,0,1.0,43,0
+Full Retraining,120,1.0,0,1.0,43,0
+Full Retraining,121,1.0,0,1.0,43,0
+Full Retraining,122,1.0,0,1.0,43,0
+Full Retraining,123,1.0,0,1.0,43,0
+Full Retraining,124,1.0,0,1.0,43,0
+Full Retraining,125,1.0,0,1.0,43,0
+Full Retraining,126,1.0,0,1.0,43,0
+Full Retraining,127,1.0,0,1.0,43,0
+Full Retraining,128,1.0,0,1.0,43,0
+Full Retraining,129,1.0,0,1.0,43,0
+Full Retraining,130,1.0,0,1.0,43,0
+Full Retraining,131,1.0,0,1.0,43,0
+Full Retraining,132,0.0,0,1.0,43,0
+Full Retraining,133,1.0,0,1.0,43,0
+Full Retraining,134,1.0,0,1.0,43,0
+Full Retraining,135,1.0,0,1.0,43,0
+Full Retraining,136,1.0,0,1.0,43,0
+Full Retraining,137,0.0,0,1.0,43,0
+Full Retraining,138,1.0,0,1.0,43,0
+Full Retraining,139,1.0,0,1.0,43,0
+Full Retraining,140,1.0,0,1.0,43,0
+Full Retraining,141,1.0,0,1.0,43,0
+Full Retraining,142,1.0,0,1.0,43,0
+Full Retraining,143,0.0,0,1.0,43,0
+Full Retraining,144,0.0,0,1.0,43,0
+Full Retraining,145,0.0,0,1.0,43,0
+Full Retraining,146,0.0,0,1.0,43,0
+Full Retraining,147,1.0,0,1.0,43,0
+Full Retraining,148,1.0,0,1.0,43,0
+Full Retraining,149,0.0,0,1.0,43,0
+RAPT,99,1.0,0,1.0,43,0
+RAPT,100,1.0,0,1.0,43,0
+RAPT,101,1.0,0,1.0,43,0
+RAPT,102,1.0,0,1.0,43,0
+RAPT,103,1.0,0,1.0,43,0
+RAPT,104,1.0,0,1.0,43,0
+RAPT,105,1.0,0,1.0,43,0
+RAPT,106,1.0,0,1.0,43,0
+RAPT,107,1.0,0,1.0,43,0
+RAPT,108,1.0,0,1.0,43,0
+RAPT,109,1.0,0,1.0,43,0
+RAPT,110,1.0,0,1.0,43,0
+RAPT,111,1.0,0,1.0,43,0
+RAPT,112,1.0,0,1.0,43,0
+RAPT,113,1.0,0,1.0,43,0
+RAPT,114,1.0,0,1.0,43,0
+RAPT,115,1.0,0,1.0,43,0
+RAPT,116,1.0,0,1.0,43,0
+RAPT,117,1.0,0,1.0,43,0
+RAPT,118,1.0,0,1.0,43,0
+RAPT,119,1.0,0,1.0,43,0
+RAPT,120,1.0,0,1.0,43,0
+RAPT,121,1.0,0,1.0,43,0
+RAPT,122,1.0,0,1.0,43,0
+RAPT,123,1.0,0,1.0,43,0
+RAPT,124,1.0,0,1.0,43,0
+RAPT,125,1.0,0,1.0,43,0
+RAPT,126,1.0,0,1.0,43,0
+RAPT,127,1.0,0,1.0,43,0
+RAPT,128,1.0,0,1.0,43,0
+RAPT,129,1.0,0,1.0,43,0
+RAPT,130,1.0,0,1.0,43,0
+RAPT,131,1.0,0,1.0,43,0
+RAPT,132,0.0,0,1.0,43,0
+RAPT,133,1.0,0,1.0,43,0
+RAPT,134,1.0,0,1.0,43,0
+RAPT,135,1.0,0,1.0,43,0
+RAPT,136,1.0,0,1.0,43,0
+RAPT,137,0.0,0,1.0,43,0
+RAPT,138,1.0,0,1.0,43,0
+RAPT,139,1.0,0,1.0,43,0
+RAPT,140,1.0,0,1.0,43,0
+RAPT,141,1.0,0,1.0,43,0
+RAPT,142,1.0,0,1.0,43,0
+RAPT,143,0.0,0,1.0,43,0
+RAPT,144,0.0,0,1.0,43,0
+RAPT,145,0.0,0,1.0,43,0
+RAPT,146,0.0,0,1.0,43,0
+RAPT,147,1.0,0,1.0,43,0
+RAPT,148,1.0,0,1.0,43,0
+RAPT,149,0.0,0,1.0,43,0
+Frozen,99,1.0,0,1.0,43,1
+Frozen,100,1.0,0,1.0,43,1
+Frozen,101,1.0,0,1.0,43,1
+Frozen,102,1.0,0,1.0,43,1
+Frozen,103,1.0,0,1.0,43,1
+Frozen,104,1.0,0,1.0,43,1
+Frozen,105,1.0,0,1.0,43,1
+Frozen,106,1.0,0,1.0,43,1
+Frozen,107,1.0,0,1.0,43,1
+Frozen,108,1.0,0,1.0,43,1
+Frozen,109,1.0,0,1.0,43,1
+Frozen,110,1.0,0,1.0,43,1
+Frozen,111,1.0,0,1.0,43,1
+Frozen,112,1.0,0,1.0,43,1
+Frozen,113,1.0,0,1.0,43,1
+Frozen,114,1.0,0,1.0,43,1
+Frozen,115,1.0,0,1.0,43,1
+Frozen,116,1.0,0,1.0,43,1
+Frozen,117,1.0,0,1.0,43,1
+Frozen,118,1.0,0,1.0,43,1
+Frozen,119,1.0,0,1.0,43,1
+Frozen,120,1.0,0,1.0,43,1
+Frozen,121,1.0,0,1.0,43,1
+Frozen,122,1.0,0,1.0,43,1
+Frozen,123,1.0,0,1.0,43,1
+Frozen,124,1.0,0,1.0,43,1
+Frozen,125,1.0,0,1.0,43,1
+Frozen,126,1.0,0,1.0,43,1
+Frozen,127,1.0,0,1.0,43,1
+Frozen,128,1.0,0,1.0,43,1
+Frozen,129,1.0,0,1.0,43,1
+Frozen,130,1.0,0,1.0,43,1
+Frozen,131,1.0,0,1.0,43,1
+Frozen,132,0.0,0,1.0,43,1
+Frozen,133,1.0,0,1.0,43,1
+Frozen,134,1.0,0,1.0,43,1
+Frozen,135,1.0,0,1.0,43,1
+Frozen,136,1.0,0,1.0,43,1
+Frozen,137,0.0,0,1.0,43,1
+Frozen,138,1.0,0,1.0,43,1
+Frozen,139,1.0,0,1.0,43,1
+Frozen,140,1.0,0,1.0,43,1
+Frozen,141,1.0,0,1.0,43,1
+Frozen,142,1.0,0,1.0,43,1
+Frozen,143,0.0,0,1.0,43,1
+Frozen,144,0.0,1,1.0,43,1
+Frozen,145,0.0,0,1.0,43,1
+Frozen,146,0.0,0,1.0,43,1
+Frozen,147,1.0,1,1.0,43,1
+Frozen,148,1.0,0,1.0,43,1
+Frozen,149,0.0,0,1.0,43,1
+Event-Driven,99,1.0,0,1.0,43,1
+Event-Driven,100,1.0,0,1.0,43,1
+Event-Driven,101,1.0,0,1.0,43,1
+Event-Driven,102,1.0,0,1.0,43,1
+Event-Driven,103,1.0,0,1.0,43,1
+Event-Driven,104,1.0,0,1.0,43,1
+Event-Driven,105,1.0,0,1.0,43,1
+Event-Driven,106,1.0,0,1.0,43,1
+Event-Driven,107,1.0,0,1.0,43,1
+Event-Driven,108,1.0,0,1.0,43,1
+Event-Driven,109,1.0,0,1.0,43,1
+Event-Driven,110,1.0,0,1.0,43,1
+Event-Driven,111,1.0,0,1.0,43,1
+Event-Driven,112,1.0,0,1.0,43,1
+Event-Driven,113,1.0,0,1.0,43,1
+Event-Driven,114,1.0,0,1.0,43,1
+Event-Driven,115,1.0,0,1.0,43,1
+Event-Driven,116,1.0,0,1.0,43,1
+Event-Driven,117,1.0,0,1.0,43,1
+Event-Driven,118,1.0,0,1.0,43,1
+Event-Driven,119,1.0,0,1.0,43,1
+Event-Driven,120,1.0,0,1.0,43,1
+Event-Driven,121,1.0,0,1.0,43,1
+Event-Driven,122,1.0,0,1.0,43,1
+Event-Driven,123,1.0,0,1.0,43,1
+Event-Driven,124,1.0,0,1.0,43,1
+Event-Driven,125,1.0,0,1.0,43,1
+Event-Driven,126,1.0,0,1.0,43,1
+Event-Driven,127,1.0,0,1.0,43,1
+Event-Driven,128,1.0,0,1.0,43,1
+Event-Driven,129,1.0,0,1.0,43,1
+Event-Driven,130,1.0,0,1.0,43,1
+Event-Driven,131,1.0,0,1.0,43,1
+Event-Driven,132,0.0,0,1.0,43,1
+Event-Driven,133,1.0,0,1.0,43,1
+Event-Driven,134,1.0,0,1.0,43,1
+Event-Driven,135,1.0,0,1.0,43,1
+Event-Driven,136,1.0,0,1.0,43,1
+Event-Driven,137,0.0,0,1.0,43,1
+Event-Driven,138,1.0,0,1.0,43,1
+Event-Driven,139,1.0,0,1.0,43,1
+Event-Driven,140,1.0,0,1.0,43,1
+Event-Driven,141,1.0,0,1.0,43,1
+Event-Driven,142,1.0,0,1.0,43,1
+Event-Driven,143,0.0,0,1.0,43,1
+Event-Driven,144,0.0,1,1.0,43,1
+Event-Driven,145,0.0,0,1.0,43,1
+Event-Driven,146,0.0,0,1.0,43,1
+Event-Driven,147,1.0,1,1.0,43,1
+Event-Driven,148,1.0,0,1.0,43,1
+Event-Driven,149,0.0,0,1.0,43,1
+Full Retraining,99,1.0,0,1.0,43,1
+Full Retraining,100,1.0,0,1.0,43,1
+Full Retraining,101,1.0,0,1.0,43,1
+Full Retraining,102,1.0,0,1.0,43,1
+Full Retraining,103,1.0,0,1.0,43,1
+Full Retraining,104,1.0,0,1.0,43,1
+Full Retraining,105,1.0,0,1.0,43,1
+Full Retraining,106,1.0,0,1.0,43,1
+Full Retraining,107,1.0,0,1.0,43,1
+Full Retraining,108,1.0,0,1.0,43,1
+Full Retraining,109,1.0,0,1.0,43,1
+Full Retraining,110,1.0,0,1.0,43,1
+Full Retraining,111,1.0,0,1.0,43,1
+Full Retraining,112,1.0,0,1.0,43,1
+Full Retraining,113,1.0,0,1.0,43,1
+Full Retraining,114,1.0,0,1.0,43,1
+Full Retraining,115,1.0,0,1.0,43,1
+Full Retraining,116,1.0,0,1.0,43,1
+Full Retraining,117,1.0,0,1.0,43,1
+Full Retraining,118,1.0,0,1.0,43,1
+Full Retraining,119,1.0,0,1.0,43,1
+Full Retraining,120,1.0,0,1.0,43,1
+Full Retraining,121,1.0,0,1.0,43,1
+Full Retraining,122,1.0,0,1.0,43,1
+Full Retraining,123,1.0,0,1.0,43,1
+Full Retraining,124,1.0,0,1.0,43,1
+Full Retraining,125,1.0,0,1.0,43,1
+Full Retraining,126,1.0,0,1.0,43,1
+Full Retraining,127,1.0,0,1.0,43,1
+Full Retraining,128,1.0,0,1.0,43,1
+Full Retraining,129,1.0,0,1.0,43,1
+Full Retraining,130,1.0,0,1.0,43,1
+Full Retraining,131,1.0,0,1.0,43,1
+Full Retraining,132,0.0,0,1.0,43,1
+Full Retraining,133,1.0,0,1.0,43,1
+Full Retraining,134,1.0,0,1.0,43,1
+Full Retraining,135,1.0,0,1.0,43,1
+Full Retraining,136,1.0,0,1.0,43,1
+Full Retraining,137,0.0,0,1.0,43,1
+Full Retraining,138,1.0,0,1.0,43,1
+Full Retraining,139,1.0,0,1.0,43,1
+Full Retraining,140,1.0,0,1.0,43,1
+Full Retraining,141,1.0,0,1.0,43,1
+Full Retraining,142,1.0,0,1.0,43,1
+Full Retraining,143,0.0,0,1.0,43,1
+Full Retraining,144,0.0,1,1.0,43,1
+Full Retraining,145,0.0,0,1.0,43,1
+Full Retraining,146,0.0,0,1.0,43,1
+Full Retraining,147,1.0,1,1.0,43,1
+Full Retraining,148,1.0,0,1.0,43,1
+Full Retraining,149,0.0,0,1.0,43,1
+RAPT,99,1.0,0,1.0,43,1
+RAPT,100,1.0,0,1.0,43,1
+RAPT,101,1.0,0,1.0,43,1
+RAPT,102,1.0,0,1.0,43,1
+RAPT,103,1.0,0,1.0,43,1
+RAPT,104,1.0,0,1.0,43,1
+RAPT,105,1.0,0,1.0,43,1
+RAPT,106,1.0,0,1.0,43,1
+RAPT,107,1.0,0,1.0,43,1
+RAPT,108,1.0,0,1.0,43,1
+RAPT,109,1.0,0,1.0,43,1
+RAPT,110,1.0,0,1.0,43,1
+RAPT,111,1.0,0,1.0,43,1
+RAPT,112,1.0,0,1.0,43,1
+RAPT,113,1.0,0,1.0,43,1
+RAPT,114,1.0,0,1.0,43,1
+RAPT,115,1.0,0,1.0,43,1
+RAPT,116,1.0,0,1.0,43,1
+RAPT,117,1.0,0,1.0,43,1
+RAPT,118,1.0,0,1.0,43,1
+RAPT,119,1.0,0,1.0,43,1
+RAPT,120,1.0,0,1.0,43,1
+RAPT,121,1.0,0,1.0,43,1
+RAPT,122,1.0,0,1.0,43,1
+RAPT,123,1.0,0,1.0,43,1
+RAPT,124,1.0,0,1.0,43,1
+RAPT,125,1.0,0,1.0,43,1
+RAPT,126,1.0,0,1.0,43,1
+RAPT,127,1.0,0,1.0,43,1
+RAPT,128,1.0,0,1.0,43,1
+RAPT,129,1.0,0,1.0,43,1
+RAPT,130,1.0,0,1.0,43,1
+RAPT,131,1.0,0,1.0,43,1
+RAPT,132,0.0,0,1.0,43,1
+RAPT,133,1.0,0,1.0,43,1
+RAPT,134,1.0,0,1.0,43,1
+RAPT,135,1.0,0,1.0,43,1
+RAPT,136,1.0,0,1.0,43,1
+RAPT,137,0.0,0,1.0,43,1
+RAPT,138,1.0,0,1.0,43,1
+RAPT,139,1.0,0,1.0,43,1
+RAPT,140,1.0,0,1.0,43,1
+RAPT,141,1.0,0,1.0,43,1
+RAPT,142,1.0,0,1.0,43,1
+RAPT,143,0.0,0,1.0,43,1
+RAPT,144,0.0,1,1.0,43,1
+RAPT,145,0.0,0,1.0,43,1
+RAPT,146,0.0,0,1.0,43,1
+RAPT,147,1.0,1,1.0,43,1
+RAPT,148,1.0,0,1.0,43,1
+RAPT,149,0.0,0,1.0,43,1
+Frozen,99,1.0,0,1.0,44,0
+Frozen,100,1.0,0,1.0,44,0
+Frozen,101,1.0,0,1.0,44,0
+Frozen,102,1.0,0,1.0,44,0
+Frozen,103,1.0,0,1.0,44,0
+Frozen,104,1.0,0,1.0,44,0
+Frozen,105,1.0,0,1.0,44,0
+Frozen,106,1.0,0,1.0,44,0
+Frozen,107,1.0,0,1.0,44,0
+Frozen,108,1.0,0,1.0,44,0
+Frozen,109,1.0,0,1.0,44,0
+Frozen,110,1.0,0,1.0,44,0
+Frozen,111,1.0,0,1.0,44,0
+Frozen,112,1.0,0,1.0,44,0
+Frozen,113,1.0,0,1.0,44,0
+Frozen,114,1.0,0,1.0,44,0
+Frozen,115,1.0,0,1.0,44,0
+Frozen,116,1.0,0,1.0,44,0
+Frozen,117,1.0,0,1.0,44,0
+Frozen,118,1.0,0,1.0,44,0
+Frozen,119,1.0,0,1.0,44,0
+Frozen,120,1.0,0,1.0,44,0
+Frozen,121,1.0,0,1.0,44,0
+Frozen,122,1.0,0,1.0,44,0
+Frozen,123,1.0,0,1.0,44,0
+Frozen,124,1.0,0,1.0,44,0
+Frozen,125,1.0,0,1.0,44,0
+Frozen,126,1.0,0,1.0,44,0
+Frozen,127,1.0,0,1.0,44,0
+Frozen,128,1.0,0,1.0,44,0
+Frozen,129,1.0,0,1.0,44,0
+Frozen,130,1.0,0,1.0,44,0
+Frozen,131,1.0,0,1.0,44,0
+Frozen,132,0.0,0,1.0,44,0
+Frozen,133,1.0,0,1.0,44,0
+Frozen,134,1.0,0,1.0,44,0
+Frozen,135,1.0,0,1.0,44,0
+Frozen,136,1.0,0,1.0,44,0
+Frozen,137,0.0,0,1.0,44,0
+Frozen,138,1.0,0,1.0,44,0
+Frozen,139,1.0,0,1.0,44,0
+Frozen,140,1.0,0,1.0,44,0
+Frozen,141,1.0,0,1.0,44,0
+Frozen,142,1.0,0,1.0,44,0
+Frozen,143,0.0,0,1.0,44,0
+Frozen,144,0.0,0,1.0,44,0
+Frozen,145,0.0,0,1.0,44,0
+Frozen,146,0.0,0,1.0,44,0
+Frozen,147,1.0,0,1.0,44,0
+Frozen,148,1.0,0,1.0,44,0
+Frozen,149,0.0,0,1.0,44,0
+Event-Driven,99,1.0,0,1.0,44,0
+Event-Driven,100,1.0,0,1.0,44,0
+Event-Driven,101,1.0,0,1.0,44,0
+Event-Driven,102,1.0,0,1.0,44,0
+Event-Driven,103,1.0,0,1.0,44,0
+Event-Driven,104,1.0,0,1.0,44,0
+Event-Driven,105,1.0,0,1.0,44,0
+Event-Driven,106,1.0,0,1.0,44,0
+Event-Driven,107,1.0,0,1.0,44,0
+Event-Driven,108,1.0,0,1.0,44,0
+Event-Driven,109,1.0,0,1.0,44,0
+Event-Driven,110,1.0,0,1.0,44,0
+Event-Driven,111,1.0,0,1.0,44,0
+Event-Driven,112,1.0,0,1.0,44,0
+Event-Driven,113,1.0,0,1.0,44,0
+Event-Driven,114,1.0,0,1.0,44,0
+Event-Driven,115,1.0,0,1.0,44,0
+Event-Driven,116,1.0,0,1.0,44,0
+Event-Driven,117,1.0,0,1.0,44,0
+Event-Driven,118,1.0,0,1.0,44,0
+Event-Driven,119,1.0,0,1.0,44,0
+Event-Driven,120,1.0,0,1.0,44,0
+Event-Driven,121,1.0,0,1.0,44,0
+Event-Driven,122,1.0,0,1.0,44,0
+Event-Driven,123,1.0,0,1.0,44,0
+Event-Driven,124,1.0,0,1.0,44,0
+Event-Driven,125,1.0,0,1.0,44,0
+Event-Driven,126,1.0,0,1.0,44,0
+Event-Driven,127,1.0,0,1.0,44,0
+Event-Driven,128,1.0,0,1.0,44,0
+Event-Driven,129,1.0,0,1.0,44,0
+Event-Driven,130,1.0,0,1.0,44,0
+Event-Driven,131,1.0,0,1.0,44,0
+Event-Driven,132,0.0,0,1.0,44,0
+Event-Driven,133,1.0,0,1.0,44,0
+Event-Driven,134,1.0,0,1.0,44,0
+Event-Driven,135,1.0,0,1.0,44,0
+Event-Driven,136,1.0,0,1.0,44,0
+Event-Driven,137,0.0,0,1.0,44,0
+Event-Driven,138,1.0,0,1.0,44,0
+Event-Driven,139,1.0,0,1.0,44,0
+Event-Driven,140,1.0,0,1.0,44,0
+Event-Driven,141,1.0,0,1.0,44,0
+Event-Driven,142,1.0,0,1.0,44,0
+Event-Driven,143,0.0,0,1.0,44,0
+Event-Driven,144,0.0,0,1.0,44,0
+Event-Driven,145,0.0,0,1.0,44,0
+Event-Driven,146,0.0,0,1.0,44,0
+Event-Driven,147,1.0,0,1.0,44,0
+Event-Driven,148,1.0,0,1.0,44,0
+Event-Driven,149,0.0,0,1.0,44,0
+Full Retraining,99,1.0,0,1.0,44,0
+Full Retraining,100,1.0,0,1.0,44,0
+Full Retraining,101,1.0,0,1.0,44,0
+Full Retraining,102,1.0,0,1.0,44,0
+Full Retraining,103,1.0,0,1.0,44,0
+Full Retraining,104,1.0,0,1.0,44,0
+Full Retraining,105,1.0,0,1.0,44,0
+Full Retraining,106,1.0,0,1.0,44,0
+Full Retraining,107,1.0,0,1.0,44,0
+Full Retraining,108,1.0,0,1.0,44,0
+Full Retraining,109,1.0,0,1.0,44,0
+Full Retraining,110,1.0,0,1.0,44,0
+Full Retraining,111,1.0,0,1.0,44,0
+Full Retraining,112,1.0,0,1.0,44,0
+Full Retraining,113,1.0,0,1.0,44,0
+Full Retraining,114,1.0,0,1.0,44,0
+Full Retraining,115,1.0,0,1.0,44,0
+Full Retraining,116,1.0,0,1.0,44,0
+Full Retraining,117,1.0,0,1.0,44,0
+Full Retraining,118,1.0,0,1.0,44,0
+Full Retraining,119,1.0,0,1.0,44,0
+Full Retraining,120,1.0,0,1.0,44,0
+Full Retraining,121,1.0,0,1.0,44,0
+Full Retraining,122,1.0,0,1.0,44,0
+Full Retraining,123,1.0,0,1.0,44,0
+Full Retraining,124,1.0,0,1.0,44,0
+Full Retraining,125,1.0,0,1.0,44,0
+Full Retraining,126,1.0,0,1.0,44,0
+Full Retraining,127,1.0,0,1.0,44,0
+Full Retraining,128,1.0,0,1.0,44,0
+Full Retraining,129,1.0,0,1.0,44,0
+Full Retraining,130,1.0,0,1.0,44,0
+Full Retraining,131,1.0,0,1.0,44,0
+Full Retraining,132,0.0,0,1.0,44,0
+Full Retraining,133,1.0,0,1.0,44,0
+Full Retraining,134,1.0,0,1.0,44,0
+Full Retraining,135,1.0,0,1.0,44,0
+Full Retraining,136,1.0,0,1.0,44,0
+Full Retraining,137,0.0,0,1.0,44,0
+Full Retraining,138,1.0,0,1.0,44,0
+Full Retraining,139,1.0,0,1.0,44,0
+Full Retraining,140,1.0,0,1.0,44,0
+Full Retraining,141,1.0,0,1.0,44,0
+Full Retraining,142,1.0,0,1.0,44,0
+Full Retraining,143,0.0,0,1.0,44,0
+Full Retraining,144,0.0,0,1.0,44,0
+Full Retraining,145,0.0,0,1.0,44,0
+Full Retraining,146,0.0,0,1.0,44,0
+Full Retraining,147,1.0,0,1.0,44,0
+Full Retraining,148,1.0,0,1.0,44,0
+Full Retraining,149,0.0,0,1.0,44,0
+RAPT,99,1.0,0,1.0,44,0
+RAPT,100,1.0,0,1.0,44,0
+RAPT,101,1.0,0,1.0,44,0
+RAPT,102,1.0,0,1.0,44,0
+RAPT,103,1.0,0,1.0,44,0
+RAPT,104,1.0,0,1.0,44,0
+RAPT,105,1.0,0,1.0,44,0
+RAPT,106,1.0,0,1.0,44,0
+RAPT,107,1.0,0,1.0,44,0
+RAPT,108,1.0,0,1.0,44,0
+RAPT,109,1.0,0,1.0,44,0
+RAPT,110,1.0,0,1.0,44,0
+RAPT,111,1.0,0,1.0,44,0
+RAPT,112,1.0,0,1.0,44,0
+RAPT,113,1.0,0,1.0,44,0
+RAPT,114,1.0,0,1.0,44,0
+RAPT,115,1.0,0,1.0,44,0
+RAPT,116,1.0,0,1.0,44,0
+RAPT,117,1.0,0,1.0,44,0
+RAPT,118,1.0,0,1.0,44,0
+RAPT,119,1.0,0,1.0,44,0
+RAPT,120,1.0,0,1.0,44,0
+RAPT,121,1.0,0,1.0,44,0
+RAPT,122,1.0,0,1.0,44,0
+RAPT,123,1.0,0,1.0,44,0
+RAPT,124,1.0,0,1.0,44,0
+RAPT,125,1.0,0,1.0,44,0
+RAPT,126,1.0,0,1.0,44,0
+RAPT,127,1.0,0,1.0,44,0
+RAPT,128,1.0,0,1.0,44,0
+RAPT,129,1.0,0,1.0,44,0
+RAPT,130,1.0,0,1.0,44,0
+RAPT,131,1.0,0,1.0,44,0
+RAPT,132,0.0,0,1.0,44,0
+RAPT,133,1.0,0,1.0,44,0
+RAPT,134,1.0,0,1.0,44,0
+RAPT,135,1.0,0,1.0,44,0
+RAPT,136,1.0,0,1.0,44,0
+RAPT,137,0.0,0,1.0,44,0
+RAPT,138,1.0,0,1.0,44,0
+RAPT,139,1.0,0,1.0,44,0
+RAPT,140,1.0,0,1.0,44,0
+RAPT,141,1.0,0,1.0,44,0
+RAPT,142,1.0,0,1.0,44,0
+RAPT,143,0.0,0,1.0,44,0
+RAPT,144,0.0,0,1.0,44,0
+RAPT,145,0.0,0,1.0,44,0
+RAPT,146,0.0,0,1.0,44,0
+RAPT,147,1.0,0,1.0,44,0
+RAPT,148,1.0,0,1.0,44,0
+RAPT,149,0.0,0,1.0,44,0
+Frozen,99,1.0,0,1.0,44,1
+Frozen,100,1.0,0,1.0,44,1
+Frozen,101,1.0,0,1.0,44,1
+Frozen,102,1.0,0,1.0,44,1
+Frozen,103,1.0,0,1.0,44,1
+Frozen,104,1.0,0,1.0,44,1
+Frozen,105,1.0,0,1.0,44,1
+Frozen,106,1.0,0,1.0,44,1
+Frozen,107,1.0,0,1.0,44,1
+Frozen,108,1.0,0,1.0,44,1
+Frozen,109,1.0,0,1.0,44,1
+Frozen,110,1.0,0,1.0,44,1
+Frozen,111,1.0,0,1.0,44,1
+Frozen,112,1.0,0,1.0,44,1
+Frozen,113,1.0,0,1.0,44,1
+Frozen,114,1.0,0,1.0,44,1
+Frozen,115,1.0,0,1.0,44,1
+Frozen,116,1.0,0,1.0,44,1
+Frozen,117,1.0,0,1.0,44,1
+Frozen,118,1.0,0,1.0,44,1
+Frozen,119,1.0,0,1.0,44,1
+Frozen,120,1.0,0,1.0,44,1
+Frozen,121,1.0,0,1.0,44,1
+Frozen,122,1.0,0,1.0,44,1
+Frozen,123,1.0,0,1.0,44,1
+Frozen,124,1.0,0,1.0,44,1
+Frozen,125,1.0,0,1.0,44,1
+Frozen,126,1.0,0,1.0,44,1
+Frozen,127,1.0,0,1.0,44,1
+Frozen,128,1.0,0,1.0,44,1
+Frozen,129,1.0,0,1.0,44,1
+Frozen,130,1.0,0,1.0,44,1
+Frozen,131,1.0,0,1.0,44,1
+Frozen,132,0.0,0,1.0,44,1
+Frozen,133,1.0,0,1.0,44,1
+Frozen,134,1.0,0,1.0,44,1
+Frozen,135,1.0,0,1.0,44,1
+Frozen,136,1.0,0,1.0,44,1
+Frozen,137,0.0,0,1.0,44,1
+Frozen,138,1.0,0,1.0,44,1
+Frozen,139,1.0,0,1.0,44,1
+Frozen,140,1.0,0,1.0,44,1
+Frozen,141,1.0,0,1.0,44,1
+Frozen,142,1.0,0,1.0,44,1
+Frozen,143,0.0,0,1.0,44,1
+Frozen,144,0.0,1,1.0,44,1
+Frozen,145,0.0,0,1.0,44,1
+Frozen,146,0.0,0,1.0,44,1
+Frozen,147,1.0,1,1.0,44,1
+Frozen,148,1.0,0,1.0,44,1
+Frozen,149,0.0,0,1.0,44,1
+Event-Driven,99,1.0,0,1.0,44,1
+Event-Driven,100,1.0,0,1.0,44,1
+Event-Driven,101,1.0,0,1.0,44,1
+Event-Driven,102,1.0,0,1.0,44,1
+Event-Driven,103,1.0,0,1.0,44,1
+Event-Driven,104,1.0,0,1.0,44,1
+Event-Driven,105,1.0,0,1.0,44,1
+Event-Driven,106,1.0,0,1.0,44,1
+Event-Driven,107,1.0,0,1.0,44,1
+Event-Driven,108,1.0,0,1.0,44,1
+Event-Driven,109,1.0,0,1.0,44,1
+Event-Driven,110,1.0,0,1.0,44,1
+Event-Driven,111,1.0,0,1.0,44,1
+Event-Driven,112,1.0,0,1.0,44,1
+Event-Driven,113,1.0,0,1.0,44,1
+Event-Driven,114,1.0,0,1.0,44,1
+Event-Driven,115,1.0,0,1.0,44,1
+Event-Driven,116,1.0,0,1.0,44,1
+Event-Driven,117,1.0,0,1.0,44,1
+Event-Driven,118,1.0,0,1.0,44,1
+Event-Driven,119,1.0,0,1.0,44,1
+Event-Driven,120,1.0,0,1.0,44,1
+Event-Driven,121,1.0,0,1.0,44,1
+Event-Driven,122,1.0,0,1.0,44,1
+Event-Driven,123,1.0,0,1.0,44,1
+Event-Driven,124,1.0,0,1.0,44,1
+Event-Driven,125,1.0,0,1.0,44,1
+Event-Driven,126,1.0,0,1.0,44,1
+Event-Driven,127,1.0,0,1.0,44,1
+Event-Driven,128,1.0,0,1.0,44,1
+Event-Driven,129,1.0,0,1.0,44,1
+Event-Driven,130,1.0,0,1.0,44,1
+Event-Driven,131,1.0,0,1.0,44,1
+Event-Driven,132,0.0,0,1.0,44,1
+Event-Driven,133,1.0,0,1.0,44,1
+Event-Driven,134,1.0,0,1.0,44,1
+Event-Driven,135,1.0,0,1.0,44,1
+Event-Driven,136,1.0,0,1.0,44,1
+Event-Driven,137,0.0,0,1.0,44,1
+Event-Driven,138,1.0,0,1.0,44,1
+Event-Driven,139,1.0,0,1.0,44,1
+Event-Driven,140,1.0,0,1.0,44,1
+Event-Driven,141,1.0,0,1.0,44,1
+Event-Driven,142,1.0,0,1.0,44,1
+Event-Driven,143,0.0,0,1.0,44,1
+Event-Driven,144,0.0,1,1.0,44,1
+Event-Driven,145,0.0,0,1.0,44,1
+Event-Driven,146,0.0,0,1.0,44,1
+Event-Driven,147,1.0,1,1.0,44,1
+Event-Driven,148,1.0,0,1.0,44,1
+Event-Driven,149,0.0,0,1.0,44,1
+Full Retraining,99,1.0,0,1.0,44,1
+Full Retraining,100,1.0,0,1.0,44,1
+Full Retraining,101,1.0,0,1.0,44,1
+Full Retraining,102,1.0,0,1.0,44,1
+Full Retraining,103,1.0,0,1.0,44,1
+Full Retraining,104,1.0,0,1.0,44,1
+Full Retraining,105,1.0,0,1.0,44,1
+Full Retraining,106,1.0,0,1.0,44,1
+Full Retraining,107,1.0,0,1.0,44,1
+Full Retraining,108,1.0,0,1.0,44,1
+Full Retraining,109,1.0,0,1.0,44,1
+Full Retraining,110,1.0,0,1.0,44,1
+Full Retraining,111,1.0,0,1.0,44,1
+Full Retraining,112,1.0,0,1.0,44,1
+Full Retraining,113,1.0,0,1.0,44,1
+Full Retraining,114,1.0,0,1.0,44,1
+Full Retraining,115,1.0,0,1.0,44,1
+Full Retraining,116,1.0,0,1.0,44,1
+Full Retraining,117,1.0,0,1.0,44,1
+Full Retraining,118,1.0,0,1.0,44,1
+Full Retraining,119,1.0,0,1.0,44,1
+Full Retraining,120,1.0,0,1.0,44,1
+Full Retraining,121,1.0,0,1.0,44,1
+Full Retraining,122,1.0,0,1.0,44,1
+Full Retraining,123,1.0,0,1.0,44,1
+Full Retraining,124,1.0,0,1.0,44,1
+Full Retraining,125,1.0,0,1.0,44,1
+Full Retraining,126,1.0,0,1.0,44,1
+Full Retraining,127,1.0,0,1.0,44,1
+Full Retraining,128,1.0,0,1.0,44,1
+Full Retraining,129,1.0,0,1.0,44,1
+Full Retraining,130,1.0,0,1.0,44,1
+Full Retraining,131,1.0,0,1.0,44,1
+Full Retraining,132,0.0,0,1.0,44,1
+Full Retraining,133,1.0,0,1.0,44,1
+Full Retraining,134,1.0,0,1.0,44,1
+Full Retraining,135,1.0,0,1.0,44,1
+Full Retraining,136,1.0,0,1.0,44,1
+Full Retraining,137,0.0,0,1.0,44,1
+Full Retraining,138,1.0,0,1.0,44,1
+Full Retraining,139,1.0,0,1.0,44,1
+Full Retraining,140,1.0,0,1.0,44,1
+Full Retraining,141,1.0,0,1.0,44,1
+Full Retraining,142,1.0,0,1.0,44,1
+Full Retraining,143,0.0,0,1.0,44,1
+Full Retraining,144,0.0,1,1.0,44,1
+Full Retraining,145,0.0,0,1.0,44,1
+Full Retraining,146,0.0,0,1.0,44,1
+Full Retraining,147,1.0,1,1.0,44,1
+Full Retraining,148,1.0,0,1.0,44,1
+Full Retraining,149,0.0,0,1.0,44,1
+RAPT,99,1.0,0,1.0,44,1
+RAPT,100,1.0,0,1.0,44,1
+RAPT,101,1.0,0,1.0,44,1
+RAPT,102,1.0,0,1.0,44,1
+RAPT,103,1.0,0,1.0,44,1
+RAPT,104,1.0,0,1.0,44,1
+RAPT,105,1.0,0,1.0,44,1
+RAPT,106,1.0,0,1.0,44,1
+RAPT,107,1.0,0,1.0,44,1
+RAPT,108,1.0,0,1.0,44,1
+RAPT,109,1.0,0,1.0,44,1
+RAPT,110,1.0,0,1.0,44,1
+RAPT,111,1.0,0,1.0,44,1
+RAPT,112,1.0,0,1.0,44,1
+RAPT,113,1.0,0,1.0,44,1
+RAPT,114,1.0,0,1.0,44,1
+RAPT,115,1.0,0,1.0,44,1
+RAPT,116,1.0,0,1.0,44,1
+RAPT,117,1.0,0,1.0,44,1
+RAPT,118,1.0,0,1.0,44,1
+RAPT,119,1.0,0,1.0,44,1
+RAPT,120,1.0,0,1.0,44,1
+RAPT,121,1.0,0,1.0,44,1
+RAPT,122,1.0,0,1.0,44,1
+RAPT,123,1.0,0,1.0,44,1
+RAPT,124,1.0,0,1.0,44,1
+RAPT,125,1.0,0,1.0,44,1
+RAPT,126,1.0,0,1.0,44,1
+RAPT,127,1.0,0,1.0,44,1
+RAPT,128,1.0,0,1.0,44,1
+RAPT,129,1.0,0,1.0,44,1
+RAPT,130,1.0,0,1.0,44,1
+RAPT,131,1.0,0,1.0,44,1
+RAPT,132,0.0,0,1.0,44,1
+RAPT,133,1.0,0,1.0,44,1
+RAPT,134,1.0,0,1.0,44,1
+RAPT,135,1.0,0,1.0,44,1
+RAPT,136,1.0,0,1.0,44,1
+RAPT,137,0.0,0,1.0,44,1
+RAPT,138,1.0,0,1.0,44,1
+RAPT,139,1.0,0,1.0,44,1
+RAPT,140,1.0,0,1.0,44,1
+RAPT,141,1.0,0,1.0,44,1
+RAPT,142,1.0,0,1.0,44,1
+RAPT,143,0.0,0,1.0,44,1
+RAPT,144,0.0,1,1.0,44,1
+RAPT,145,0.0,0,1.0,44,1
+RAPT,146,0.0,0,1.0,44,1
+RAPT,147,1.0,1,1.0,44,1
+RAPT,148,1.0,0,1.0,44,1
+RAPT,149,0.0,0,1.0,44,1
+Frozen,99,1.0,0,1.0,45,0
+Frozen,100,1.0,0,1.0,45,0
+Frozen,101,1.0,0,1.0,45,0
+Frozen,102,1.0,0,1.0,45,0
+Frozen,103,1.0,0,1.0,45,0
+Frozen,104,1.0,0,1.0,45,0
+Frozen,105,1.0,0,1.0,45,0
+Frozen,106,1.0,0,1.0,45,0
+Frozen,107,1.0,0,1.0,45,0
+Frozen,108,1.0,0,1.0,45,0
+Frozen,109,1.0,0,1.0,45,0
+Frozen,110,1.0,0,1.0,45,0
+Frozen,111,1.0,0,1.0,45,0
+Frozen,112,1.0,0,1.0,45,0
+Frozen,113,1.0,0,1.0,45,0
+Frozen,114,1.0,0,1.0,45,0
+Frozen,115,1.0,0,1.0,45,0
+Frozen,116,1.0,0,1.0,45,0
+Frozen,117,1.0,0,1.0,45,0
+Frozen,118,1.0,0,1.0,45,0
+Frozen,119,1.0,0,1.0,45,0
+Frozen,120,1.0,0,1.0,45,0
+Frozen,121,1.0,0,1.0,45,0
+Frozen,122,1.0,0,1.0,45,0
+Frozen,123,1.0,0,1.0,45,0
+Frozen,124,1.0,0,1.0,45,0
+Frozen,125,1.0,0,1.0,45,0
+Frozen,126,1.0,0,1.0,45,0
+Frozen,127,1.0,0,1.0,45,0
+Frozen,128,1.0,0,1.0,45,0
+Frozen,129,1.0,0,1.0,45,0
+Frozen,130,1.0,0,1.0,45,0
+Frozen,131,1.0,0,1.0,45,0
+Frozen,132,0.0,0,1.0,45,0
+Frozen,133,1.0,0,1.0,45,0
+Frozen,134,1.0,0,1.0,45,0
+Frozen,135,1.0,0,1.0,45,0
+Frozen,136,1.0,0,1.0,45,0
+Frozen,137,0.0,0,1.0,45,0
+Frozen,138,1.0,0,1.0,45,0
+Frozen,139,1.0,0,1.0,45,0
+Frozen,140,1.0,0,1.0,45,0
+Frozen,141,1.0,0,1.0,45,0
+Frozen,142,1.0,0,1.0,45,0
+Frozen,143,0.0,0,1.0,45,0
+Frozen,144,0.0,0,1.0,45,0
+Frozen,145,0.0,0,1.0,45,0
+Frozen,146,0.0,0,1.0,45,0
+Frozen,147,1.0,0,1.0,45,0
+Frozen,148,1.0,0,1.0,45,0
+Frozen,149,0.0,0,1.0,45,0
+Event-Driven,99,1.0,0,1.0,45,0
+Event-Driven,100,1.0,0,1.0,45,0
+Event-Driven,101,1.0,0,1.0,45,0
+Event-Driven,102,1.0,0,1.0,45,0
+Event-Driven,103,1.0,0,1.0,45,0
+Event-Driven,104,1.0,0,1.0,45,0
+Event-Driven,105,1.0,0,1.0,45,0
+Event-Driven,106,1.0,0,1.0,45,0
+Event-Driven,107,1.0,0,1.0,45,0
+Event-Driven,108,1.0,0,1.0,45,0
+Event-Driven,109,1.0,0,1.0,45,0
+Event-Driven,110,1.0,0,1.0,45,0
+Event-Driven,111,1.0,0,1.0,45,0
+Event-Driven,112,1.0,0,1.0,45,0
+Event-Driven,113,1.0,0,1.0,45,0
+Event-Driven,114,1.0,0,1.0,45,0
+Event-Driven,115,1.0,0,1.0,45,0
+Event-Driven,116,1.0,0,1.0,45,0
+Event-Driven,117,1.0,0,1.0,45,0
+Event-Driven,118,1.0,0,1.0,45,0
+Event-Driven,119,1.0,0,1.0,45,0
+Event-Driven,120,1.0,0,1.0,45,0
+Event-Driven,121,1.0,0,1.0,45,0
+Event-Driven,122,1.0,0,1.0,45,0
+Event-Driven,123,1.0,0,1.0,45,0
+Event-Driven,124,1.0,0,1.0,45,0
+Event-Driven,125,1.0,0,1.0,45,0
+Event-Driven,126,1.0,0,1.0,45,0
+Event-Driven,127,1.0,0,1.0,45,0
+Event-Driven,128,1.0,0,1.0,45,0
+Event-Driven,129,1.0,0,1.0,45,0
+Event-Driven,130,1.0,0,1.0,45,0
+Event-Driven,131,1.0,0,1.0,45,0
+Event-Driven,132,0.0,0,1.0,45,0
+Event-Driven,133,1.0,0,1.0,45,0
+Event-Driven,134,1.0,0,1.0,45,0
+Event-Driven,135,1.0,0,1.0,45,0
+Event-Driven,136,1.0,0,1.0,45,0
+Event-Driven,137,0.0,0,1.0,45,0
+Event-Driven,138,1.0,0,1.0,45,0
+Event-Driven,139,1.0,0,1.0,45,0
+Event-Driven,140,1.0,0,1.0,45,0
+Event-Driven,141,1.0,0,1.0,45,0
+Event-Driven,142,1.0,0,1.0,45,0
+Event-Driven,143,0.0,0,1.0,45,0
+Event-Driven,144,0.0,0,1.0,45,0
+Event-Driven,145,0.0,0,1.0,45,0
+Event-Driven,146,0.0,0,1.0,45,0
+Event-Driven,147,1.0,0,1.0,45,0
+Event-Driven,148,1.0,0,1.0,45,0
+Event-Driven,149,0.0,0,1.0,45,0
+Full Retraining,99,1.0,0,1.0,45,0
+Full Retraining,100,1.0,0,1.0,45,0
+Full Retraining,101,1.0,0,1.0,45,0
+Full Retraining,102,1.0,0,1.0,45,0
+Full Retraining,103,1.0,0,1.0,45,0
+Full Retraining,104,1.0,0,1.0,45,0
+Full Retraining,105,1.0,0,1.0,45,0
+Full Retraining,106,1.0,0,1.0,45,0
+Full Retraining,107,1.0,0,1.0,45,0
+Full Retraining,108,1.0,0,1.0,45,0
+Full Retraining,109,1.0,0,1.0,45,0
+Full Retraining,110,1.0,0,1.0,45,0
+Full Retraining,111,1.0,0,1.0,45,0
+Full Retraining,112,1.0,0,1.0,45,0
+Full Retraining,113,1.0,0,1.0,45,0
+Full Retraining,114,1.0,0,1.0,45,0
+Full Retraining,115,1.0,0,1.0,45,0
+Full Retraining,116,1.0,0,1.0,45,0
+Full Retraining,117,1.0,0,1.0,45,0
+Full Retraining,118,1.0,0,1.0,45,0
+Full Retraining,119,1.0,0,1.0,45,0
+Full Retraining,120,1.0,0,1.0,45,0
+Full Retraining,121,1.0,0,1.0,45,0
+Full Retraining,122,1.0,0,1.0,45,0
+Full Retraining,123,1.0,0,1.0,45,0
+Full Retraining,124,1.0,0,1.0,45,0
+Full Retraining,125,1.0,0,1.0,45,0
+Full Retraining,126,1.0,0,1.0,45,0
+Full Retraining,127,1.0,0,1.0,45,0
+Full Retraining,128,1.0,0,1.0,45,0
+Full Retraining,129,1.0,0,1.0,45,0
+Full Retraining,130,1.0,0,1.0,45,0
+Full Retraining,131,1.0,0,1.0,45,0
+Full Retraining,132,0.0,0,1.0,45,0
+Full Retraining,133,1.0,0,1.0,45,0
+Full Retraining,134,1.0,0,1.0,45,0
+Full Retraining,135,1.0,0,1.0,45,0
+Full Retraining,136,1.0,0,1.0,45,0
+Full Retraining,137,0.0,0,1.0,45,0
+Full Retraining,138,1.0,0,1.0,45,0
+Full Retraining,139,1.0,0,1.0,45,0
+Full Retraining,140,1.0,0,1.0,45,0
+Full Retraining,141,1.0,0,1.0,45,0
+Full Retraining,142,1.0,0,1.0,45,0
+Full Retraining,143,0.0,0,1.0,45,0
+Full Retraining,144,0.0,0,1.0,45,0
+Full Retraining,145,0.0,0,1.0,45,0
+Full Retraining,146,0.0,0,1.0,45,0
+Full Retraining,147,1.0,0,1.0,45,0
+Full Retraining,148,1.0,0,1.0,45,0
+Full Retraining,149,0.0,0,1.0,45,0
+RAPT,99,1.0,0,1.0,45,0
+RAPT,100,1.0,0,1.0,45,0
+RAPT,101,1.0,0,1.0,45,0
+RAPT,102,1.0,0,1.0,45,0
+RAPT,103,1.0,0,1.0,45,0
+RAPT,104,1.0,0,1.0,45,0
+RAPT,105,1.0,0,1.0,45,0
+RAPT,106,1.0,0,1.0,45,0
+RAPT,107,1.0,0,1.0,45,0
+RAPT,108,1.0,0,1.0,45,0
+RAPT,109,1.0,0,1.0,45,0
+RAPT,110,1.0,0,1.0,45,0
+RAPT,111,1.0,0,1.0,45,0
+RAPT,112,1.0,0,1.0,45,0
+RAPT,113,1.0,0,1.0,45,0
+RAPT,114,1.0,0,1.0,45,0
+RAPT,115,1.0,0,1.0,45,0
+RAPT,116,1.0,0,1.0,45,0
+RAPT,117,1.0,0,1.0,45,0
+RAPT,118,1.0,0,1.0,45,0
+RAPT,119,1.0,0,1.0,45,0
+RAPT,120,1.0,0,1.0,45,0
+RAPT,121,1.0,0,1.0,45,0
+RAPT,122,1.0,0,1.0,45,0
+RAPT,123,1.0,0,1.0,45,0
+RAPT,124,1.0,0,1.0,45,0
+RAPT,125,1.0,0,1.0,45,0
+RAPT,126,1.0,0,1.0,45,0
+RAPT,127,1.0,0,1.0,45,0
+RAPT,128,1.0,0,1.0,45,0
+RAPT,129,1.0,0,1.0,45,0
+RAPT,130,1.0,0,1.0,45,0
+RAPT,131,1.0,0,1.0,45,0
+RAPT,132,0.0,0,1.0,45,0
+RAPT,133,1.0,0,1.0,45,0
+RAPT,134,1.0,0,1.0,45,0
+RAPT,135,1.0,0,1.0,45,0
+RAPT,136,1.0,0,1.0,45,0
+RAPT,137,0.0,0,1.0,45,0
+RAPT,138,1.0,0,1.0,45,0
+RAPT,139,1.0,0,1.0,45,0
+RAPT,140,1.0,0,1.0,45,0
+RAPT,141,1.0,0,1.0,45,0
+RAPT,142,1.0,0,1.0,45,0
+RAPT,143,0.0,0,1.0,45,0
+RAPT,144,0.0,0,1.0,45,0
+RAPT,145,0.0,0,1.0,45,0
+RAPT,146,0.0,0,1.0,45,0
+RAPT,147,1.0,0,1.0,45,0
+RAPT,148,1.0,0,1.0,45,0
+RAPT,149,0.0,0,1.0,45,0
+Frozen,99,1.0,0,1.0,45,1
+Frozen,100,1.0,0,1.0,45,1
+Frozen,101,1.0,0,1.0,45,1
+Frozen,102,1.0,0,1.0,45,1
+Frozen,103,1.0,0,1.0,45,1
+Frozen,104,1.0,0,1.0,45,1
+Frozen,105,1.0,0,1.0,45,1
+Frozen,106,1.0,0,1.0,45,1
+Frozen,107,1.0,0,1.0,45,1
+Frozen,108,1.0,0,1.0,45,1
+Frozen,109,1.0,0,1.0,45,1
+Frozen,110,1.0,0,1.0,45,1
+Frozen,111,1.0,0,1.0,45,1
+Frozen,112,1.0,0,1.0,45,1
+Frozen,113,1.0,0,1.0,45,1
+Frozen,114,1.0,0,1.0,45,1
+Frozen,115,1.0,0,1.0,45,1
+Frozen,116,1.0,0,1.0,45,1
+Frozen,117,1.0,0,1.0,45,1
+Frozen,118,1.0,0,1.0,45,1
+Frozen,119,1.0,0,1.0,45,1
+Frozen,120,1.0,0,1.0,45,1
+Frozen,121,1.0,0,1.0,45,1
+Frozen,122,1.0,0,1.0,45,1
+Frozen,123,1.0,0,1.0,45,1
+Frozen,124,1.0,0,1.0,45,1
+Frozen,125,1.0,0,1.0,45,1
+Frozen,126,1.0,0,1.0,45,1
+Frozen,127,1.0,0,1.0,45,1
+Frozen,128,1.0,0,1.0,45,1
+Frozen,129,1.0,0,1.0,45,1
+Frozen,130,1.0,0,1.0,45,1
+Frozen,131,1.0,0,1.0,45,1
+Frozen,132,0.0,0,1.0,45,1
+Frozen,133,1.0,0,1.0,45,1
+Frozen,134,1.0,0,1.0,45,1
+Frozen,135,1.0,0,1.0,45,1
+Frozen,136,1.0,0,1.0,45,1
+Frozen,137,0.0,0,1.0,45,1
+Frozen,138,1.0,0,1.0,45,1
+Frozen,139,1.0,0,1.0,45,1
+Frozen,140,1.0,0,1.0,45,1
+Frozen,141,1.0,0,1.0,45,1
+Frozen,142,1.0,0,1.0,45,1
+Frozen,143,0.0,0,1.0,45,1
+Frozen,144,0.0,1,1.0,45,1
+Frozen,145,0.0,0,1.0,45,1
+Frozen,146,0.0,0,1.0,45,1
+Frozen,147,1.0,1,1.0,45,1
+Frozen,148,1.0,0,1.0,45,1
+Frozen,149,0.0,0,1.0,45,1
+Event-Driven,99,1.0,0,1.0,45,1
+Event-Driven,100,1.0,0,1.0,45,1
+Event-Driven,101,1.0,0,1.0,45,1
+Event-Driven,102,1.0,0,1.0,45,1
+Event-Driven,103,1.0,0,1.0,45,1
+Event-Driven,104,1.0,0,1.0,45,1
+Event-Driven,105,1.0,0,1.0,45,1
+Event-Driven,106,1.0,0,1.0,45,1
+Event-Driven,107,1.0,0,1.0,45,1
+Event-Driven,108,1.0,0,1.0,45,1
+Event-Driven,109,1.0,0,1.0,45,1
+Event-Driven,110,1.0,0,1.0,45,1
+Event-Driven,111,1.0,0,1.0,45,1
+Event-Driven,112,1.0,0,1.0,45,1
+Event-Driven,113,1.0,0,1.0,45,1
+Event-Driven,114,1.0,0,1.0,45,1
+Event-Driven,115,1.0,0,1.0,45,1
+Event-Driven,116,1.0,0,1.0,45,1
+Event-Driven,117,1.0,0,1.0,45,1
+Event-Driven,118,1.0,0,1.0,45,1
+Event-Driven,119,1.0,0,1.0,45,1
+Event-Driven,120,1.0,0,1.0,45,1
+Event-Driven,121,1.0,0,1.0,45,1
+Event-Driven,122,1.0,0,1.0,45,1
+Event-Driven,123,1.0,0,1.0,45,1
+Event-Driven,124,1.0,0,1.0,45,1
+Event-Driven,125,1.0,0,1.0,45,1
+Event-Driven,126,1.0,0,1.0,45,1
+Event-Driven,127,1.0,0,1.0,45,1
+Event-Driven,128,1.0,0,1.0,45,1
+Event-Driven,129,1.0,0,1.0,45,1
+Event-Driven,130,1.0,0,1.0,45,1
+Event-Driven,131,1.0,0,1.0,45,1
+Event-Driven,132,0.0,0,1.0,45,1
+Event-Driven,133,1.0,0,1.0,45,1
+Event-Driven,134,1.0,0,1.0,45,1
+Event-Driven,135,1.0,0,1.0,45,1
+Event-Driven,136,1.0,0,1.0,45,1
+Event-Driven,137,0.0,0,1.0,45,1
+Event-Driven,138,1.0,0,1.0,45,1
+Event-Driven,139,1.0,0,1.0,45,1
+Event-Driven,140,1.0,0,1.0,45,1
+Event-Driven,141,1.0,0,1.0,45,1
+Event-Driven,142,1.0,0,1.0,45,1
+Event-Driven,143,0.0,0,1.0,45,1
+Event-Driven,144,0.0,1,1.0,45,1
+Event-Driven,145,0.0,0,1.0,45,1
+Event-Driven,146,0.0,0,1.0,45,1
+Event-Driven,147,1.0,1,1.0,45,1
+Event-Driven,148,1.0,0,1.0,45,1
+Event-Driven,149,0.0,0,1.0,45,1
+Full Retraining,99,1.0,0,1.0,45,1
+Full Retraining,100,1.0,0,1.0,45,1
+Full Retraining,101,1.0,0,1.0,45,1
+Full Retraining,102,1.0,0,1.0,45,1
+Full Retraining,103,1.0,0,1.0,45,1
+Full Retraining,104,1.0,0,1.0,45,1
+Full Retraining,105,1.0,0,1.0,45,1
+Full Retraining,106,1.0,0,1.0,45,1
+Full Retraining,107,1.0,0,1.0,45,1
+Full Retraining,108,1.0,0,1.0,45,1
+Full Retraining,109,1.0,0,1.0,45,1
+Full Retraining,110,1.0,0,1.0,45,1
+Full Retraining,111,1.0,0,1.0,45,1
+Full Retraining,112,1.0,0,1.0,45,1
+Full Retraining,113,1.0,0,1.0,45,1
+Full Retraining,114,1.0,0,1.0,45,1
+Full Retraining,115,1.0,0,1.0,45,1
+Full Retraining,116,1.0,0,1.0,45,1
+Full Retraining,117,1.0,0,1.0,45,1
+Full Retraining,118,1.0,0,1.0,45,1
+Full Retraining,119,1.0,0,1.0,45,1
+Full Retraining,120,1.0,0,1.0,45,1
+Full Retraining,121,1.0,0,1.0,45,1
+Full Retraining,122,1.0,0,1.0,45,1
+Full Retraining,123,1.0,0,1.0,45,1
+Full Retraining,124,1.0,0,1.0,45,1
+Full Retraining,125,1.0,0,1.0,45,1
+Full Retraining,126,1.0,0,1.0,45,1
+Full Retraining,127,1.0,0,1.0,45,1
+Full Retraining,128,1.0,0,1.0,45,1
+Full Retraining,129,1.0,0,1.0,45,1
+Full Retraining,130,1.0,0,1.0,45,1
+Full Retraining,131,1.0,0,1.0,45,1
+Full Retraining,132,0.0,0,1.0,45,1
+Full Retraining,133,1.0,0,1.0,45,1
+Full Retraining,134,1.0,0,1.0,45,1
+Full Retraining,135,1.0,0,1.0,45,1
+Full Retraining,136,1.0,0,1.0,45,1
+Full Retraining,137,0.0,0,1.0,45,1
+Full Retraining,138,1.0,0,1.0,45,1
+Full Retraining,139,1.0,0,1.0,45,1
+Full Retraining,140,1.0,0,1.0,45,1
+Full Retraining,141,1.0,0,1.0,45,1
+Full Retraining,142,1.0,0,1.0,45,1
+Full Retraining,143,0.0,0,1.0,45,1
+Full Retraining,144,0.0,1,1.0,45,1
+Full Retraining,145,0.0,0,1.0,45,1
+Full Retraining,146,0.0,0,1.0,45,1
+Full Retraining,147,1.0,1,1.0,45,1
+Full Retraining,148,1.0,0,1.0,45,1
+Full Retraining,149,0.0,0,1.0,45,1
+RAPT,99,1.0,0,1.0,45,1
+RAPT,100,1.0,0,1.0,45,1
+RAPT,101,1.0,0,1.0,45,1
+RAPT,102,1.0,0,1.0,45,1
+RAPT,103,1.0,0,1.0,45,1
+RAPT,104,1.0,0,1.0,45,1
+RAPT,105,1.0,0,1.0,45,1
+RAPT,106,1.0,0,1.0,45,1
+RAPT,107,1.0,0,1.0,45,1
+RAPT,108,1.0,0,1.0,45,1
+RAPT,109,1.0,0,1.0,45,1
+RAPT,110,1.0,0,1.0,45,1
+RAPT,111,1.0,0,1.0,45,1
+RAPT,112,1.0,0,1.0,45,1
+RAPT,113,1.0,0,1.0,45,1
+RAPT,114,1.0,0,1.0,45,1
+RAPT,115,1.0,0,1.0,45,1
+RAPT,116,1.0,0,1.0,45,1
+RAPT,117,1.0,0,1.0,45,1
+RAPT,118,1.0,0,1.0,45,1
+RAPT,119,1.0,0,1.0,45,1
+RAPT,120,1.0,0,1.0,45,1
+RAPT,121,1.0,0,1.0,45,1
+RAPT,122,1.0,0,1.0,45,1
+RAPT,123,1.0,0,1.0,45,1
+RAPT,124,1.0,0,1.0,45,1
+RAPT,125,1.0,0,1.0,45,1
+RAPT,126,1.0,0,1.0,45,1
+RAPT,127,1.0,0,1.0,45,1
+RAPT,128,1.0,0,1.0,45,1
+RAPT,129,1.0,0,1.0,45,1
+RAPT,130,1.0,0,1.0,45,1
+RAPT,131,1.0,0,1.0,45,1
+RAPT,132,0.0,0,1.0,45,1
+RAPT,133,1.0,0,1.0,45,1
+RAPT,134,1.0,0,1.0,45,1
+RAPT,135,1.0,0,1.0,45,1
+RAPT,136,1.0,0,1.0,45,1
+RAPT,137,0.0,0,1.0,45,1
+RAPT,138,1.0,0,1.0,45,1
+RAPT,139,1.0,0,1.0,45,1
+RAPT,140,1.0,0,1.0,45,1
+RAPT,141,1.0,0,1.0,45,1
+RAPT,142,1.0,0,1.0,45,1
+RAPT,143,0.0,0,1.0,45,1
+RAPT,144,0.0,1,1.0,45,1
+RAPT,145,0.0,0,1.0,45,1
+RAPT,146,0.0,0,1.0,45,1
+RAPT,147,1.0,1,1.0,45,1
+RAPT,148,1.0,0,1.0,45,1
+RAPT,149,0.0,0,1.0,45,1
+Frozen,99,1.0,0,1.0,46,0
+Frozen,100,1.0,0,1.0,46,0
+Frozen,101,1.0,0,1.0,46,0
+Frozen,102,1.0,0,1.0,46,0
+Frozen,103,1.0,0,1.0,46,0
+Frozen,104,1.0,0,1.0,46,0
+Frozen,105,1.0,0,1.0,46,0
+Frozen,106,1.0,0,1.0,46,0
+Frozen,107,1.0,0,1.0,46,0
+Frozen,108,1.0,0,1.0,46,0
+Frozen,109,1.0,0,1.0,46,0
+Frozen,110,1.0,0,1.0,46,0
+Frozen,111,1.0,0,1.0,46,0
+Frozen,112,1.0,0,1.0,46,0
+Frozen,113,1.0,0,1.0,46,0
+Frozen,114,1.0,0,1.0,46,0
+Frozen,115,1.0,0,1.0,46,0
+Frozen,116,1.0,0,1.0,46,0
+Frozen,117,1.0,0,1.0,46,0
+Frozen,118,1.0,0,1.0,46,0
+Frozen,119,1.0,0,1.0,46,0
+Frozen,120,1.0,0,1.0,46,0
+Frozen,121,1.0,0,1.0,46,0
+Frozen,122,1.0,0,1.0,46,0
+Frozen,123,1.0,0,1.0,46,0
+Frozen,124,1.0,0,1.0,46,0
+Frozen,125,1.0,0,1.0,46,0
+Frozen,126,1.0,0,1.0,46,0
+Frozen,127,1.0,0,1.0,46,0
+Frozen,128,1.0,0,1.0,46,0
+Frozen,129,1.0,0,1.0,46,0
+Frozen,130,1.0,0,1.0,46,0
+Frozen,131,1.0,0,1.0,46,0
+Frozen,132,0.0,0,1.0,46,0
+Frozen,133,1.0,0,1.0,46,0
+Frozen,134,1.0,0,1.0,46,0
+Frozen,135,1.0,0,1.0,46,0
+Frozen,136,1.0,0,1.0,46,0
+Frozen,137,0.0,0,1.0,46,0
+Frozen,138,1.0,0,1.0,46,0
+Frozen,139,1.0,0,1.0,46,0
+Frozen,140,1.0,0,1.0,46,0
+Frozen,141,1.0,0,1.0,46,0
+Frozen,142,1.0,0,1.0,46,0
+Frozen,143,0.0,0,1.0,46,0
+Frozen,144,0.0,0,1.0,46,0
+Frozen,145,0.0,0,1.0,46,0
+Frozen,146,0.0,0,1.0,46,0
+Frozen,147,1.0,0,1.0,46,0
+Frozen,148,1.0,0,1.0,46,0
+Frozen,149,0.0,0,1.0,46,0
+Event-Driven,99,1.0,0,1.0,46,0
+Event-Driven,100,1.0,0,1.0,46,0
+Event-Driven,101,1.0,0,1.0,46,0
+Event-Driven,102,1.0,0,1.0,46,0
+Event-Driven,103,1.0,0,1.0,46,0
+Event-Driven,104,1.0,0,1.0,46,0
+Event-Driven,105,1.0,0,1.0,46,0
+Event-Driven,106,1.0,0,1.0,46,0
+Event-Driven,107,1.0,0,1.0,46,0
+Event-Driven,108,1.0,0,1.0,46,0
+Event-Driven,109,1.0,0,1.0,46,0
+Event-Driven,110,1.0,0,1.0,46,0
+Event-Driven,111,1.0,0,1.0,46,0
+Event-Driven,112,1.0,0,1.0,46,0
+Event-Driven,113,1.0,0,1.0,46,0
+Event-Driven,114,1.0,0,1.0,46,0
+Event-Driven,115,1.0,0,1.0,46,0
+Event-Driven,116,1.0,0,1.0,46,0
+Event-Driven,117,1.0,0,1.0,46,0
+Event-Driven,118,1.0,0,1.0,46,0
+Event-Driven,119,1.0,0,1.0,46,0
+Event-Driven,120,1.0,0,1.0,46,0
+Event-Driven,121,1.0,0,1.0,46,0
+Event-Driven,122,1.0,0,1.0,46,0
+Event-Driven,123,1.0,0,1.0,46,0
+Event-Driven,124,1.0,0,1.0,46,0
+Event-Driven,125,1.0,0,1.0,46,0
+Event-Driven,126,1.0,0,1.0,46,0
+Event-Driven,127,1.0,0,1.0,46,0
+Event-Driven,128,1.0,0,1.0,46,0
+Event-Driven,129,1.0,0,1.0,46,0
+Event-Driven,130,1.0,0,1.0,46,0
+Event-Driven,131,1.0,0,1.0,46,0
+Event-Driven,132,0.0,0,1.0,46,0
+Event-Driven,133,1.0,0,1.0,46,0
+Event-Driven,134,1.0,0,1.0,46,0
+Event-Driven,135,1.0,0,1.0,46,0
+Event-Driven,136,1.0,0,1.0,46,0
+Event-Driven,137,0.0,0,1.0,46,0
+Event-Driven,138,1.0,0,1.0,46,0
+Event-Driven,139,1.0,0,1.0,46,0
+Event-Driven,140,1.0,0,1.0,46,0
+Event-Driven,141,1.0,0,1.0,46,0
+Event-Driven,142,1.0,0,1.0,46,0
+Event-Driven,143,0.0,0,1.0,46,0
+Event-Driven,144,0.0,0,1.0,46,0
+Event-Driven,145,0.0,0,1.0,46,0
+Event-Driven,146,0.0,0,1.0,46,0
+Event-Driven,147,1.0,0,1.0,46,0
+Event-Driven,148,1.0,0,1.0,46,0
+Event-Driven,149,0.0,0,1.0,46,0
+Full Retraining,99,1.0,0,1.0,46,0
+Full Retraining,100,1.0,0,1.0,46,0
+Full Retraining,101,1.0,0,1.0,46,0
+Full Retraining,102,1.0,0,1.0,46,0
+Full Retraining,103,1.0,0,1.0,46,0
+Full Retraining,104,1.0,0,1.0,46,0
+Full Retraining,105,1.0,0,1.0,46,0
+Full Retraining,106,1.0,0,1.0,46,0
+Full Retraining,107,1.0,0,1.0,46,0
+Full Retraining,108,1.0,0,1.0,46,0
+Full Retraining,109,1.0,0,1.0,46,0
+Full Retraining,110,1.0,0,1.0,46,0
+Full Retraining,111,1.0,0,1.0,46,0
+Full Retraining,112,1.0,0,1.0,46,0
+Full Retraining,113,1.0,0,1.0,46,0
+Full Retraining,114,1.0,0,1.0,46,0
+Full Retraining,115,1.0,0,1.0,46,0
+Full Retraining,116,1.0,0,1.0,46,0
+Full Retraining,117,1.0,0,1.0,46,0
+Full Retraining,118,1.0,0,1.0,46,0
+Full Retraining,119,1.0,0,1.0,46,0
+Full Retraining,120,1.0,0,1.0,46,0
+Full Retraining,121,1.0,0,1.0,46,0
+Full Retraining,122,1.0,0,1.0,46,0
+Full Retraining,123,1.0,0,1.0,46,0
+Full Retraining,124,1.0,0,1.0,46,0
+Full Retraining,125,1.0,0,1.0,46,0
+Full Retraining,126,1.0,0,1.0,46,0
+Full Retraining,127,1.0,0,1.0,46,0
+Full Retraining,128,1.0,0,1.0,46,0
+Full Retraining,129,1.0,0,1.0,46,0
+Full Retraining,130,1.0,0,1.0,46,0
+Full Retraining,131,1.0,0,1.0,46,0
+Full Retraining,132,0.0,0,1.0,46,0
+Full Retraining,133,1.0,0,1.0,46,0
+Full Retraining,134,1.0,0,1.0,46,0
+Full Retraining,135,1.0,0,1.0,46,0
+Full Retraining,136,1.0,0,1.0,46,0
+Full Retraining,137,0.0,0,1.0,46,0
+Full Retraining,138,1.0,0,1.0,46,0
+Full Retraining,139,1.0,0,1.0,46,0
+Full Retraining,140,1.0,0,1.0,46,0
+Full Retraining,141,1.0,0,1.0,46,0
+Full Retraining,142,1.0,0,1.0,46,0
+Full Retraining,143,0.0,0,1.0,46,0
+Full Retraining,144,0.0,0,1.0,46,0
+Full Retraining,145,0.0,0,1.0,46,0
+Full Retraining,146,0.0,0,1.0,46,0
+Full Retraining,147,1.0,0,1.0,46,0
+Full Retraining,148,1.0,0,1.0,46,0
+Full Retraining,149,0.0,0,1.0,46,0
+RAPT,99,1.0,0,1.0,46,0
+RAPT,100,1.0,0,1.0,46,0
+RAPT,101,1.0,0,1.0,46,0
+RAPT,102,1.0,0,1.0,46,0
+RAPT,103,1.0,0,1.0,46,0
+RAPT,104,1.0,0,1.0,46,0
+RAPT,105,1.0,0,1.0,46,0
+RAPT,106,1.0,0,1.0,46,0
+RAPT,107,1.0,0,1.0,46,0
+RAPT,108,1.0,0,1.0,46,0
+RAPT,109,1.0,0,1.0,46,0
+RAPT,110,1.0,0,1.0,46,0
+RAPT,111,1.0,0,1.0,46,0
+RAPT,112,1.0,0,1.0,46,0
+RAPT,113,1.0,0,1.0,46,0
+RAPT,114,1.0,0,1.0,46,0
+RAPT,115,1.0,0,1.0,46,0
+RAPT,116,1.0,0,1.0,46,0
+RAPT,117,1.0,0,1.0,46,0
+RAPT,118,1.0,0,1.0,46,0
+RAPT,119,1.0,0,1.0,46,0
+RAPT,120,1.0,0,1.0,46,0
+RAPT,121,1.0,0,1.0,46,0
+RAPT,122,1.0,0,1.0,46,0
+RAPT,123,1.0,0,1.0,46,0
+RAPT,124,1.0,0,1.0,46,0
+RAPT,125,1.0,0,1.0,46,0
+RAPT,126,1.0,0,1.0,46,0
+RAPT,127,1.0,0,1.0,46,0
+RAPT,128,1.0,0,1.0,46,0
+RAPT,129,1.0,0,1.0,46,0
+RAPT,130,1.0,0,1.0,46,0
+RAPT,131,1.0,0,1.0,46,0
+RAPT,132,0.0,0,1.0,46,0
+RAPT,133,1.0,0,1.0,46,0
+RAPT,134,1.0,0,1.0,46,0
+RAPT,135,1.0,0,1.0,46,0
+RAPT,136,1.0,0,1.0,46,0
+RAPT,137,0.0,0,1.0,46,0
+RAPT,138,1.0,0,1.0,46,0
+RAPT,139,1.0,0,1.0,46,0
+RAPT,140,1.0,0,1.0,46,0
+RAPT,141,1.0,0,1.0,46,0
+RAPT,142,1.0,0,1.0,46,0
+RAPT,143,0.0,0,1.0,46,0
+RAPT,144,0.0,0,1.0,46,0
+RAPT,145,0.0,0,1.0,46,0
+RAPT,146,0.0,0,1.0,46,0
+RAPT,147,1.0,0,1.0,46,0
+RAPT,148,1.0,0,1.0,46,0
+RAPT,149,0.0,0,1.0,46,0
+Frozen,99,1.0,0,1.0,46,1
+Frozen,100,1.0,0,1.0,46,1
+Frozen,101,1.0,0,1.0,46,1
+Frozen,102,1.0,0,1.0,46,1
+Frozen,103,1.0,0,1.0,46,1
+Frozen,104,1.0,0,1.0,46,1
+Frozen,105,1.0,0,1.0,46,1
+Frozen,106,1.0,0,1.0,46,1
+Frozen,107,1.0,0,1.0,46,1
+Frozen,108,1.0,0,1.0,46,1
+Frozen,109,1.0,0,1.0,46,1
+Frozen,110,1.0,0,1.0,46,1
+Frozen,111,1.0,0,1.0,46,1
+Frozen,112,1.0,0,1.0,46,1
+Frozen,113,1.0,0,1.0,46,1
+Frozen,114,1.0,0,1.0,46,1
+Frozen,115,1.0,0,1.0,46,1
+Frozen,116,1.0,0,1.0,46,1
+Frozen,117,1.0,0,1.0,46,1
+Frozen,118,1.0,0,1.0,46,1
+Frozen,119,1.0,0,1.0,46,1
+Frozen,120,1.0,0,1.0,46,1
+Frozen,121,1.0,0,1.0,46,1
+Frozen,122,1.0,0,1.0,46,1
+Frozen,123,1.0,0,1.0,46,1
+Frozen,124,1.0,0,1.0,46,1
+Frozen,125,1.0,0,1.0,46,1
+Frozen,126,1.0,0,1.0,46,1
+Frozen,127,1.0,0,1.0,46,1
+Frozen,128,1.0,0,1.0,46,1
+Frozen,129,1.0,0,1.0,46,1
+Frozen,130,1.0,0,1.0,46,1
+Frozen,131,1.0,0,1.0,46,1
+Frozen,132,0.0,0,1.0,46,1
+Frozen,133,1.0,0,1.0,46,1
+Frozen,134,1.0,0,1.0,46,1
+Frozen,135,1.0,0,1.0,46,1
+Frozen,136,1.0,0,1.0,46,1
+Frozen,137,0.0,0,1.0,46,1
+Frozen,138,1.0,0,1.0,46,1
+Frozen,139,1.0,0,1.0,46,1
+Frozen,140,1.0,0,1.0,46,1
+Frozen,141,1.0,0,1.0,46,1
+Frozen,142,1.0,0,1.0,46,1
+Frozen,143,0.0,0,1.0,46,1
+Frozen,144,0.0,1,1.0,46,1
+Frozen,145,0.0,0,1.0,46,1
+Frozen,146,0.0,0,1.0,46,1
+Frozen,147,1.0,1,1.0,46,1
+Frozen,148,1.0,0,1.0,46,1
+Frozen,149,0.0,0,1.0,46,1
+Event-Driven,99,1.0,0,1.0,46,1
+Event-Driven,100,1.0,0,1.0,46,1
+Event-Driven,101,1.0,0,1.0,46,1
+Event-Driven,102,1.0,0,1.0,46,1
+Event-Driven,103,1.0,0,1.0,46,1
+Event-Driven,104,1.0,0,1.0,46,1
+Event-Driven,105,1.0,0,1.0,46,1
+Event-Driven,106,1.0,0,1.0,46,1
+Event-Driven,107,1.0,0,1.0,46,1
+Event-Driven,108,1.0,0,1.0,46,1
+Event-Driven,109,1.0,0,1.0,46,1
+Event-Driven,110,1.0,0,1.0,46,1
+Event-Driven,111,1.0,0,1.0,46,1
+Event-Driven,112,1.0,0,1.0,46,1
+Event-Driven,113,1.0,0,1.0,46,1
+Event-Driven,114,1.0,0,1.0,46,1
+Event-Driven,115,1.0,0,1.0,46,1
+Event-Driven,116,1.0,0,1.0,46,1
+Event-Driven,117,1.0,0,1.0,46,1
+Event-Driven,118,1.0,0,1.0,46,1
+Event-Driven,119,1.0,0,1.0,46,1
+Event-Driven,120,1.0,0,1.0,46,1
+Event-Driven,121,1.0,0,1.0,46,1
+Event-Driven,122,1.0,0,1.0,46,1
+Event-Driven,123,1.0,0,1.0,46,1
+Event-Driven,124,1.0,0,1.0,46,1
+Event-Driven,125,1.0,0,1.0,46,1
+Event-Driven,126,1.0,0,1.0,46,1
+Event-Driven,127,1.0,0,1.0,46,1
+Event-Driven,128,1.0,0,1.0,46,1
+Event-Driven,129,1.0,0,1.0,46,1
+Event-Driven,130,1.0,0,1.0,46,1
+Event-Driven,131,1.0,0,1.0,46,1
+Event-Driven,132,0.0,0,1.0,46,1
+Event-Driven,133,1.0,0,1.0,46,1
+Event-Driven,134,1.0,0,1.0,46,1
+Event-Driven,135,1.0,0,1.0,46,1
+Event-Driven,136,1.0,0,1.0,46,1
+Event-Driven,137,0.0,0,1.0,46,1
+Event-Driven,138,1.0,0,1.0,46,1
+Event-Driven,139,1.0,0,1.0,46,1
+Event-Driven,140,1.0,0,1.0,46,1
+Event-Driven,141,1.0,0,1.0,46,1
+Event-Driven,142,1.0,0,1.0,46,1
+Event-Driven,143,0.0,0,1.0,46,1
+Event-Driven,144,0.0,1,1.0,46,1
+Event-Driven,145,0.0,0,1.0,46,1
+Event-Driven,146,0.0,0,1.0,46,1
+Event-Driven,147,1.0,1,1.0,46,1
+Event-Driven,148,1.0,0,1.0,46,1
+Event-Driven,149,0.0,0,1.0,46,1
+Full Retraining,99,1.0,0,1.0,46,1
+Full Retraining,100,1.0,0,1.0,46,1
+Full Retraining,101,1.0,0,1.0,46,1
+Full Retraining,102,1.0,0,1.0,46,1
+Full Retraining,103,1.0,0,1.0,46,1
+Full Retraining,104,1.0,0,1.0,46,1
+Full Retraining,105,1.0,0,1.0,46,1
+Full Retraining,106,1.0,0,1.0,46,1
+Full Retraining,107,1.0,0,1.0,46,1
+Full Retraining,108,1.0,0,1.0,46,1
+Full Retraining,109,1.0,0,1.0,46,1
+Full Retraining,110,1.0,0,1.0,46,1
+Full Retraining,111,1.0,0,1.0,46,1
+Full Retraining,112,1.0,0,1.0,46,1
+Full Retraining,113,1.0,0,1.0,46,1
+Full Retraining,114,1.0,0,1.0,46,1
+Full Retraining,115,1.0,0,1.0,46,1
+Full Retraining,116,1.0,0,1.0,46,1
+Full Retraining,117,1.0,0,1.0,46,1
+Full Retraining,118,1.0,0,1.0,46,1
+Full Retraining,119,1.0,0,1.0,46,1
+Full Retraining,120,1.0,0,1.0,46,1
+Full Retraining,121,1.0,0,1.0,46,1
+Full Retraining,122,1.0,0,1.0,46,1
+Full Retraining,123,1.0,0,1.0,46,1
+Full Retraining,124,1.0,0,1.0,46,1
+Full Retraining,125,1.0,0,1.0,46,1
+Full Retraining,126,1.0,0,1.0,46,1
+Full Retraining,127,1.0,0,1.0,46,1
+Full Retraining,128,1.0,0,1.0,46,1
+Full Retraining,129,1.0,0,1.0,46,1
+Full Retraining,130,1.0,0,1.0,46,1
+Full Retraining,131,1.0,0,1.0,46,1
+Full Retraining,132,0.0,0,1.0,46,1
+Full Retraining,133,1.0,0,1.0,46,1
+Full Retraining,134,1.0,0,1.0,46,1
+Full Retraining,135,1.0,0,1.0,46,1
+Full Retraining,136,1.0,0,1.0,46,1
+Full Retraining,137,0.0,0,1.0,46,1
+Full Retraining,138,1.0,0,1.0,46,1
+Full Retraining,139,1.0,0,1.0,46,1
+Full Retraining,140,1.0,0,1.0,46,1
+Full Retraining,141,1.0,0,1.0,46,1
+Full Retraining,142,1.0,0,1.0,46,1
+Full Retraining,143,0.0,0,1.0,46,1
+Full Retraining,144,0.0,1,1.0,46,1
+Full Retraining,145,0.0,0,1.0,46,1
+Full Retraining,146,0.0,0,1.0,46,1
+Full Retraining,147,1.0,1,1.0,46,1
+Full Retraining,148,1.0,0,1.0,46,1
+Full Retraining,149,0.0,0,1.0,46,1
+RAPT,99,1.0,0,1.0,46,1
+RAPT,100,1.0,0,1.0,46,1
+RAPT,101,1.0,0,1.0,46,1
+RAPT,102,1.0,0,1.0,46,1
+RAPT,103,1.0,0,1.0,46,1
+RAPT,104,1.0,0,1.0,46,1
+RAPT,105,1.0,0,1.0,46,1
+RAPT,106,1.0,0,1.0,46,1
+RAPT,107,1.0,0,1.0,46,1
+RAPT,108,1.0,0,1.0,46,1
+RAPT,109,1.0,0,1.0,46,1
+RAPT,110,1.0,0,1.0,46,1
+RAPT,111,1.0,0,1.0,46,1
+RAPT,112,1.0,0,1.0,46,1
+RAPT,113,1.0,0,1.0,46,1
+RAPT,114,1.0,0,1.0,46,1
+RAPT,115,1.0,0,1.0,46,1
+RAPT,116,1.0,0,1.0,46,1
+RAPT,117,1.0,0,1.0,46,1
+RAPT,118,1.0,0,1.0,46,1
+RAPT,119,1.0,0,1.0,46,1
+RAPT,120,1.0,0,1.0,46,1
+RAPT,121,1.0,0,1.0,46,1
+RAPT,122,1.0,0,1.0,46,1
+RAPT,123,1.0,0,1.0,46,1
+RAPT,124,1.0,0,1.0,46,1
+RAPT,125,1.0,0,1.0,46,1
+RAPT,126,1.0,0,1.0,46,1
+RAPT,127,1.0,0,1.0,46,1
+RAPT,128,1.0,0,1.0,46,1
+RAPT,129,1.0,0,1.0,46,1
+RAPT,130,1.0,0,1.0,46,1
+RAPT,131,1.0,0,1.0,46,1
+RAPT,132,0.0,0,1.0,46,1
+RAPT,133,1.0,0,1.0,46,1
+RAPT,134,1.0,0,1.0,46,1
+RAPT,135,1.0,0,1.0,46,1
+RAPT,136,1.0,0,1.0,46,1
+RAPT,137,0.0,0,1.0,46,1
+RAPT,138,1.0,0,1.0,46,1
+RAPT,139,1.0,0,1.0,46,1
+RAPT,140,1.0,0,1.0,46,1
+RAPT,141,1.0,0,1.0,46,1
+RAPT,142,1.0,0,1.0,46,1
+RAPT,143,0.0,0,1.0,46,1
+RAPT,144,0.0,1,1.0,46,1
+RAPT,145,0.0,0,1.0,46,1
+RAPT,146,0.0,0,1.0,46,1
+RAPT,147,1.0,1,1.0,46,1
+RAPT,148,1.0,0,1.0,46,1
+RAPT,149,0.0,0,1.0,46,1

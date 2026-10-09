@@ -1,0 +1,6 @@
+check,value,detail
+class_balance_full,0.14835164835164835,"minority class share: 0=0.489, 1=0.363, 2=0.148"
+class_balance_prefix,0.19444444444444445,"0=0.500, 1=0.306, 2=0.194"
+max_abs_feature_target_corr,0.3050721481718657,"velocity_abs=0.305, velocity_long=0.305, elevation=0.231, operator=0.222"
+frozen_macro_f1_class_weight=None,0.27110271839127115,"3 seeds, Frozen on NordicDat"
+frozen_macro_f1_class_weight=balanced,0.25693325607343365,"3 seeds, Frozen on NordicDat"

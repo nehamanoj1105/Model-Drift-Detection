@@ -1,0 +1,7 @@
+severity,floor,macro_f1,refits,gate_cadence
+0.2,0,0.9607843137254902,0,boundary-only (short)
+0.2,1,0.9607843137254902,0,every-window (long)
+0.5,0,0.8901960784313725,0,boundary-only (short)
+0.5,1,0.8941176470588236,7,every-window (long)
+1.0,0,0.8627450980392157,0,boundary-only (short)
+1.0,1,0.8627450980392157,10,every-window (long)
