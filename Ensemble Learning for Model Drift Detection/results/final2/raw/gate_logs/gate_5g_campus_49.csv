@@ -1,0 +1,14 @@
+window_id,regime,stored_acc,prefix_acc,decision,win_stored,win_prefix,bad_allow,bad_block,dataset,seed
+52,C,1.0,1.0,block,1.0,1.0,0,0,5G Campus QoS,49
+60,B,0.98,0.98,block,1.0,1.0,0,0,5G Campus QoS,49
+68,A,0.98,0.98,block,1.0,1.0,0,0,5G Campus QoS,49
+76,C,0.98,0.98,block,1.0,1.0,0,0,5G Campus QoS,49
+84,B,0.98,0.96,block,1.0,1.0,0,0,5G Campus QoS,49
+92,C,0.98,0.98,block,1.0,1.0,0,0,5G Campus QoS,49
+100,A,0.96,0.96,block,1.0,1.0,0,0,5G Campus QoS,49
+110,A,0.98,0.98,block,0.8,0.8,0,0,5G Campus QoS,49
+116,B,1.0,0.96,block,1.0,1.0,0,0,5G Campus QoS,49
+128,A,1.0,1.0,block,1.0,1.0,0,0,5G Campus QoS,49
+144,C,0.98,0.98,block,1.0,1.0,0,0,5G Campus QoS,49
+152,B,1.0,0.98,block,1.0,1.0,0,0,5G Campus QoS,49
+168,A,1.0,1.0,block,1.0,1.0,0,0,5G Campus QoS,49

@@ -7,3 +7,6 @@ data/ton_iot/Train_Test_datasets.zip
 # Experiment 9A third-party datasets (see experiments/exp9a/data/DATASETS.md)
 **/exp9a/data/ugr16/*.mat
 **/exp9a/data/nordicdat/*.csv
+
+# final2 staged dataset (third-party, re-fetch with fetch_kpiops.py)
+**/final2/data/**

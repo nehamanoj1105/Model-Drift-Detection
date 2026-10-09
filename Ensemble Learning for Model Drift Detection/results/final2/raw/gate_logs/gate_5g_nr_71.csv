@@ -1,0 +1,13 @@
+window_id,regime,stored_acc,prefix_acc,decision,win_stored,win_prefix,bad_allow,bad_block,dataset,seed
+155,regime_D,1.0,1.0,block,0.0,0.0,0,0,5G NR Latency,71
+166,regime_D,0.98,0.98,block,0.0,0.0,0,0,5G NR Latency,71
+250,regime_C,1.0,1.0,block,1.0,1.0,0,0,5G NR Latency,71
+300,regime_B,1.0,1.0,block,1.0,1.0,0,0,5G NR Latency,71
+332,regime_B,0.86,0.9,block,0.0,1.0,0,0,5G NR Latency,71
+350,regime_D,0.84,0.9,block,1.0,1.0,0,0,5G NR Latency,71
+355,regime_D,0.94,0.94,block,0.0,0.0,0,0,5G NR Latency,71
+366,regime_D,0.96,0.98,block,0.0,0.0,0,0,5G NR Latency,71
+372,regime_D,0.96,0.92,block,0.0,0.0,0,0,5G NR Latency,71
+394,regime_D,0.86,0.78,allow,0.0,0.0,0,0,5G NR Latency,71
+400,regime_A,0.9,0.72,allow,1.0,1.0,0,0,5G NR Latency,71
+450,regime_B,1.0,1.0,block,1.0,1.0,0,0,5G NR Latency,71

@@ -1,0 +1,6121 @@
+method,window_id,seed,macro_f1,is_retrain,severity
+Frozen,99,42,1.0,0,0.2
+Frozen,100,42,1.0,0,0.2
+Frozen,101,42,1.0,0,0.2
+Frozen,102,42,1.0,0,0.2
+Frozen,103,42,1.0,0,0.2
+Frozen,104,42,1.0,0,0.2
+Frozen,105,42,1.0,0,0.2
+Frozen,106,42,1.0,0,0.2
+Frozen,107,42,1.0,0,0.2
+Frozen,108,42,1.0,0,0.2
+Frozen,109,42,1.0,0,0.2
+Frozen,110,42,1.0,0,0.2
+Frozen,111,42,1.0,0,0.2
+Frozen,112,42,1.0,0,0.2
+Frozen,113,42,1.0,0,0.2
+Frozen,114,42,1.0,0,0.2
+Frozen,115,42,1.0,0,0.2
+Frozen,116,42,1.0,0,0.2
+Frozen,117,42,1.0,0,0.2
+Frozen,118,42,1.0,0,0.2
+Frozen,119,42,1.0,0,0.2
+Frozen,120,42,1.0,0,0.2
+Frozen,121,42,1.0,0,0.2
+Frozen,122,42,1.0,0,0.2
+Frozen,123,42,1.0,0,0.2
+Frozen,124,42,1.0,0,0.2
+Frozen,125,42,1.0,0,0.2
+Frozen,126,42,1.0,0,0.2
+Frozen,127,42,1.0,0,0.2
+Frozen,128,42,1.0,0,0.2
+Frozen,129,42,1.0,0,0.2
+Frozen,130,42,1.0,0,0.2
+Frozen,131,42,1.0,0,0.2
+Frozen,132,42,1.0,0,0.2
+Frozen,133,42,1.0,0,0.2
+Frozen,134,42,1.0,0,0.2
+Frozen,135,42,1.0,0,0.2
+Frozen,136,42,1.0,0,0.2
+Frozen,137,42,1.0,0,0.2
+Frozen,138,42,1.0,0,0.2
+Frozen,139,42,1.0,0,0.2
+Frozen,140,42,1.0,0,0.2
+Frozen,141,42,1.0,0,0.2
+Frozen,142,42,1.0,0,0.2
+Frozen,143,42,1.0,0,0.2
+Frozen,144,42,1.0,0,0.2
+Frozen,145,42,0.0,0,0.2
+Frozen,146,42,1.0,0,0.2
+Frozen,147,42,1.0,0,0.2
+Frozen,148,42,1.0,0,0.2
+Frozen,149,42,0.0,0,0.2
+Event-Driven,99,42,1.0,0,0.2
+Event-Driven,100,42,1.0,0,0.2
+Event-Driven,101,42,1.0,0,0.2
+Event-Driven,102,42,1.0,0,0.2
+Event-Driven,103,42,1.0,0,0.2
+Event-Driven,104,42,1.0,0,0.2
+Event-Driven,105,42,1.0,0,0.2
+Event-Driven,106,42,1.0,0,0.2
+Event-Driven,107,42,1.0,0,0.2
+Event-Driven,108,42,1.0,0,0.2
+Event-Driven,109,42,1.0,0,0.2
+Event-Driven,110,42,1.0,0,0.2
+Event-Driven,111,42,1.0,0,0.2
+Event-Driven,112,42,1.0,0,0.2
+Event-Driven,113,42,1.0,0,0.2
+Event-Driven,114,42,1.0,0,0.2
+Event-Driven,115,42,1.0,0,0.2
+Event-Driven,116,42,1.0,0,0.2
+Event-Driven,117,42,1.0,0,0.2
+Event-Driven,118,42,1.0,0,0.2
+Event-Driven,119,42,1.0,0,0.2
+Event-Driven,120,42,1.0,0,0.2
+Event-Driven,121,42,1.0,0,0.2
+Event-Driven,122,42,1.0,0,0.2
+Event-Driven,123,42,1.0,0,0.2
+Event-Driven,124,42,1.0,0,0.2
+Event-Driven,125,42,1.0,0,0.2
+Event-Driven,126,42,1.0,0,0.2
+Event-Driven,127,42,1.0,0,0.2
+Event-Driven,128,42,1.0,0,0.2
+Event-Driven,129,42,1.0,0,0.2
+Event-Driven,130,42,1.0,0,0.2
+Event-Driven,131,42,1.0,0,0.2
+Event-Driven,132,42,1.0,0,0.2
+Event-Driven,133,42,1.0,0,0.2
+Event-Driven,134,42,1.0,0,0.2
+Event-Driven,135,42,1.0,0,0.2
+Event-Driven,136,42,1.0,0,0.2
+Event-Driven,137,42,1.0,0,0.2
+Event-Driven,138,42,1.0,0,0.2
+Event-Driven,139,42,1.0,0,0.2
+Event-Driven,140,42,1.0,0,0.2
+Event-Driven,141,42,1.0,0,0.2
+Event-Driven,142,42,1.0,0,0.2
+Event-Driven,143,42,1.0,0,0.2
+Event-Driven,144,42,1.0,0,0.2
+Event-Driven,145,42,0.0,0,0.2
+Event-Driven,146,42,1.0,0,0.2
+Event-Driven,147,42,1.0,0,0.2
+Event-Driven,148,42,1.0,0,0.2
+Event-Driven,149,42,0.0,0,0.2
+Full Retraining,99,42,1.0,0,0.2
+Full Retraining,100,42,1.0,0,0.2
+Full Retraining,101,42,1.0,0,0.2
+Full Retraining,102,42,1.0,0,0.2
+Full Retraining,103,42,1.0,0,0.2
+Full Retraining,104,42,1.0,0,0.2
+Full Retraining,105,42,1.0,0,0.2
+Full Retraining,106,42,1.0,0,0.2
+Full Retraining,107,42,1.0,0,0.2
+Full Retraining,108,42,1.0,0,0.2
+Full Retraining,109,42,1.0,0,0.2
+Full Retraining,110,42,1.0,0,0.2
+Full Retraining,111,42,1.0,0,0.2
+Full Retraining,112,42,1.0,0,0.2
+Full Retraining,113,42,1.0,0,0.2
+Full Retraining,114,42,1.0,0,0.2
+Full Retraining,115,42,1.0,0,0.2
+Full Retraining,116,42,1.0,0,0.2
+Full Retraining,117,42,1.0,0,0.2
+Full Retraining,118,42,1.0,0,0.2
+Full Retraining,119,42,1.0,0,0.2
+Full Retraining,120,42,1.0,0,0.2
+Full Retraining,121,42,1.0,0,0.2
+Full Retraining,122,42,1.0,0,0.2
+Full Retraining,123,42,1.0,0,0.2
+Full Retraining,124,42,1.0,0,0.2
+Full Retraining,125,42,1.0,0,0.2
+Full Retraining,126,42,1.0,0,0.2
+Full Retraining,127,42,1.0,0,0.2
+Full Retraining,128,42,1.0,0,0.2
+Full Retraining,129,42,1.0,0,0.2
+Full Retraining,130,42,1.0,0,0.2
+Full Retraining,131,42,1.0,0,0.2
+Full Retraining,132,42,1.0,0,0.2
+Full Retraining,133,42,1.0,0,0.2
+Full Retraining,134,42,1.0,0,0.2
+Full Retraining,135,42,1.0,0,0.2
+Full Retraining,136,42,1.0,0,0.2
+Full Retraining,137,42,1.0,0,0.2
+Full Retraining,138,42,1.0,0,0.2
+Full Retraining,139,42,1.0,0,0.2
+Full Retraining,140,42,1.0,0,0.2
+Full Retraining,141,42,1.0,0,0.2
+Full Retraining,142,42,1.0,0,0.2
+Full Retraining,143,42,1.0,0,0.2
+Full Retraining,144,42,1.0,0,0.2
+Full Retraining,145,42,0.0,0,0.2
+Full Retraining,146,42,1.0,0,0.2
+Full Retraining,147,42,1.0,0,0.2
+Full Retraining,148,42,1.0,0,0.2
+Full Retraining,149,42,0.0,0,0.2
+ADWIN,99,42,1.0,0,0.2
+ADWIN,100,42,1.0,0,0.2
+ADWIN,101,42,1.0,0,0.2
+ADWIN,102,42,1.0,0,0.2
+ADWIN,103,42,1.0,0,0.2
+ADWIN,104,42,1.0,0,0.2
+ADWIN,105,42,1.0,0,0.2
+ADWIN,106,42,1.0,0,0.2
+ADWIN,107,42,1.0,0,0.2
+ADWIN,108,42,1.0,0,0.2
+ADWIN,109,42,1.0,0,0.2
+ADWIN,110,42,1.0,0,0.2
+ADWIN,111,42,1.0,0,0.2
+ADWIN,112,42,1.0,0,0.2
+ADWIN,113,42,1.0,0,0.2
+ADWIN,114,42,1.0,0,0.2
+ADWIN,115,42,1.0,0,0.2
+ADWIN,116,42,1.0,0,0.2
+ADWIN,117,42,1.0,0,0.2
+ADWIN,118,42,1.0,0,0.2
+ADWIN,119,42,1.0,0,0.2
+ADWIN,120,42,1.0,0,0.2
+ADWIN,121,42,1.0,0,0.2
+ADWIN,122,42,1.0,0,0.2
+ADWIN,123,42,1.0,0,0.2
+ADWIN,124,42,1.0,0,0.2
+ADWIN,125,42,1.0,0,0.2
+ADWIN,126,42,1.0,0,0.2
+ADWIN,127,42,1.0,0,0.2
+ADWIN,128,42,1.0,0,0.2
+ADWIN,129,42,1.0,0,0.2
+ADWIN,130,42,1.0,0,0.2
+ADWIN,131,42,1.0,0,0.2
+ADWIN,132,42,1.0,0,0.2
+ADWIN,133,42,1.0,0,0.2
+ADWIN,134,42,1.0,0,0.2
+ADWIN,135,42,1.0,0,0.2
+ADWIN,136,42,1.0,0,0.2
+ADWIN,137,42,1.0,0,0.2
+ADWIN,138,42,1.0,0,0.2
+ADWIN,139,42,1.0,0,0.2
+ADWIN,140,42,1.0,0,0.2
+ADWIN,141,42,1.0,0,0.2
+ADWIN,142,42,1.0,0,0.2
+ADWIN,143,42,1.0,0,0.2
+ADWIN,144,42,1.0,0,0.2
+ADWIN,145,42,0.0,0,0.2
+ADWIN,146,42,1.0,0,0.2
+ADWIN,147,42,1.0,0,0.2
+ADWIN,148,42,1.0,0,0.2
+ADWIN,149,42,0.0,0,0.2
+Page-Hinkley,99,42,1.0,0,0.2
+Page-Hinkley,100,42,1.0,0,0.2
+Page-Hinkley,101,42,1.0,0,0.2
+Page-Hinkley,102,42,1.0,0,0.2
+Page-Hinkley,103,42,1.0,0,0.2
+Page-Hinkley,104,42,1.0,0,0.2
+Page-Hinkley,105,42,1.0,0,0.2
+Page-Hinkley,106,42,1.0,0,0.2
+Page-Hinkley,107,42,1.0,0,0.2
+Page-Hinkley,108,42,1.0,0,0.2
+Page-Hinkley,109,42,1.0,0,0.2
+Page-Hinkley,110,42,1.0,0,0.2
+Page-Hinkley,111,42,1.0,0,0.2
+Page-Hinkley,112,42,1.0,0,0.2
+Page-Hinkley,113,42,1.0,0,0.2
+Page-Hinkley,114,42,1.0,0,0.2
+Page-Hinkley,115,42,1.0,0,0.2
+Page-Hinkley,116,42,1.0,0,0.2
+Page-Hinkley,117,42,1.0,0,0.2
+Page-Hinkley,118,42,1.0,0,0.2
+Page-Hinkley,119,42,1.0,0,0.2
+Page-Hinkley,120,42,1.0,0,0.2
+Page-Hinkley,121,42,1.0,0,0.2
+Page-Hinkley,122,42,1.0,0,0.2
+Page-Hinkley,123,42,1.0,0,0.2
+Page-Hinkley,124,42,1.0,0,0.2
+Page-Hinkley,125,42,1.0,0,0.2
+Page-Hinkley,126,42,1.0,0,0.2
+Page-Hinkley,127,42,1.0,0,0.2
+Page-Hinkley,128,42,1.0,0,0.2
+Page-Hinkley,129,42,1.0,0,0.2
+Page-Hinkley,130,42,1.0,0,0.2
+Page-Hinkley,131,42,1.0,0,0.2
+Page-Hinkley,132,42,1.0,0,0.2
+Page-Hinkley,133,42,1.0,0,0.2
+Page-Hinkley,134,42,1.0,0,0.2
+Page-Hinkley,135,42,1.0,0,0.2
+Page-Hinkley,136,42,1.0,0,0.2
+Page-Hinkley,137,42,1.0,0,0.2
+Page-Hinkley,138,42,1.0,0,0.2
+Page-Hinkley,139,42,1.0,0,0.2
+Page-Hinkley,140,42,1.0,0,0.2
+Page-Hinkley,141,42,1.0,0,0.2
+Page-Hinkley,142,42,1.0,0,0.2
+Page-Hinkley,143,42,1.0,0,0.2
+Page-Hinkley,144,42,1.0,0,0.2
+Page-Hinkley,145,42,0.0,0,0.2
+Page-Hinkley,146,42,1.0,0,0.2
+Page-Hinkley,147,42,1.0,0,0.2
+Page-Hinkley,148,42,1.0,0,0.2
+Page-Hinkley,149,42,0.0,0,0.2
+RAPT,99,42,1.0,0,0.2
+RAPT,100,42,1.0,0,0.2
+RAPT,101,42,1.0,0,0.2
+RAPT,102,42,1.0,0,0.2
+RAPT,103,42,1.0,0,0.2
+RAPT,104,42,1.0,0,0.2
+RAPT,105,42,1.0,0,0.2
+RAPT,106,42,1.0,0,0.2
+RAPT,107,42,1.0,0,0.2
+RAPT,108,42,1.0,0,0.2
+RAPT,109,42,1.0,0,0.2
+RAPT,110,42,1.0,0,0.2
+RAPT,111,42,1.0,0,0.2
+RAPT,112,42,1.0,0,0.2
+RAPT,113,42,1.0,0,0.2
+RAPT,114,42,1.0,0,0.2
+RAPT,115,42,1.0,0,0.2
+RAPT,116,42,1.0,0,0.2
+RAPT,117,42,1.0,0,0.2
+RAPT,118,42,1.0,0,0.2
+RAPT,119,42,1.0,0,0.2
+RAPT,120,42,1.0,0,0.2
+RAPT,121,42,1.0,0,0.2
+RAPT,122,42,1.0,0,0.2
+RAPT,123,42,1.0,0,0.2
+RAPT,124,42,1.0,0,0.2
+RAPT,125,42,1.0,0,0.2
+RAPT,126,42,1.0,0,0.2
+RAPT,127,42,1.0,0,0.2
+RAPT,128,42,1.0,0,0.2
+RAPT,129,42,1.0,0,0.2
+RAPT,130,42,1.0,0,0.2
+RAPT,131,42,1.0,0,0.2
+RAPT,132,42,1.0,0,0.2
+RAPT,133,42,1.0,0,0.2
+RAPT,134,42,1.0,0,0.2
+RAPT,135,42,1.0,0,0.2
+RAPT,136,42,1.0,0,0.2
+RAPT,137,42,1.0,0,0.2
+RAPT,138,42,1.0,0,0.2
+RAPT,139,42,1.0,0,0.2
+RAPT,140,42,1.0,0,0.2
+RAPT,141,42,1.0,0,0.2
+RAPT,142,42,1.0,0,0.2
+RAPT,143,42,1.0,0,0.2
+RAPT,144,42,1.0,0,0.2
+RAPT,145,42,0.0,0,0.2
+RAPT,146,42,1.0,0,0.2
+RAPT,147,42,1.0,0,0.2
+RAPT,148,42,1.0,0,0.2
+RAPT,149,42,0.0,0,0.2
+RAPT-Guard,99,42,1.0,0,0.2
+RAPT-Guard,100,42,1.0,0,0.2
+RAPT-Guard,101,42,1.0,0,0.2
+RAPT-Guard,102,42,1.0,0,0.2
+RAPT-Guard,103,42,1.0,0,0.2
+RAPT-Guard,104,42,1.0,0,0.2
+RAPT-Guard,105,42,1.0,0,0.2
+RAPT-Guard,106,42,1.0,0,0.2
+RAPT-Guard,107,42,1.0,0,0.2
+RAPT-Guard,108,42,1.0,0,0.2
+RAPT-Guard,109,42,1.0,0,0.2
+RAPT-Guard,110,42,1.0,0,0.2
+RAPT-Guard,111,42,1.0,0,0.2
+RAPT-Guard,112,42,1.0,0,0.2
+RAPT-Guard,113,42,1.0,0,0.2
+RAPT-Guard,114,42,1.0,0,0.2
+RAPT-Guard,115,42,1.0,0,0.2
+RAPT-Guard,116,42,1.0,0,0.2
+RAPT-Guard,117,42,1.0,0,0.2
+RAPT-Guard,118,42,1.0,0,0.2
+RAPT-Guard,119,42,1.0,0,0.2
+RAPT-Guard,120,42,1.0,0,0.2
+RAPT-Guard,121,42,1.0,0,0.2
+RAPT-Guard,122,42,1.0,0,0.2
+RAPT-Guard,123,42,1.0,0,0.2
+RAPT-Guard,124,42,1.0,0,0.2
+RAPT-Guard,125,42,1.0,0,0.2
+RAPT-Guard,126,42,1.0,0,0.2
+RAPT-Guard,127,42,1.0,0,0.2
+RAPT-Guard,128,42,1.0,0,0.2
+RAPT-Guard,129,42,1.0,0,0.2
+RAPT-Guard,130,42,1.0,0,0.2
+RAPT-Guard,131,42,1.0,0,0.2
+RAPT-Guard,132,42,1.0,0,0.2
+RAPT-Guard,133,42,1.0,0,0.2
+RAPT-Guard,134,42,1.0,0,0.2
+RAPT-Guard,135,42,1.0,0,0.2
+RAPT-Guard,136,42,1.0,0,0.2
+RAPT-Guard,137,42,1.0,0,0.2
+RAPT-Guard,138,42,1.0,0,0.2
+RAPT-Guard,139,42,1.0,0,0.2
+RAPT-Guard,140,42,1.0,0,0.2
+RAPT-Guard,141,42,1.0,0,0.2
+RAPT-Guard,142,42,1.0,0,0.2
+RAPT-Guard,143,42,1.0,0,0.2
+RAPT-Guard,144,42,1.0,0,0.2
+RAPT-Guard,145,42,0.0,0,0.2
+RAPT-Guard,146,42,1.0,0,0.2
+RAPT-Guard,147,42,1.0,0,0.2
+RAPT-Guard,148,42,1.0,0,0.2
+RAPT-Guard,149,42,0.0,0,0.2
+RAPT-ED-Guard,99,42,1.0,0,0.2
+RAPT-ED-Guard,100,42,1.0,0,0.2
+RAPT-ED-Guard,101,42,1.0,0,0.2
+RAPT-ED-Guard,102,42,1.0,0,0.2
+RAPT-ED-Guard,103,42,1.0,0,0.2
+RAPT-ED-Guard,104,42,1.0,0,0.2
+RAPT-ED-Guard,105,42,1.0,0,0.2
+RAPT-ED-Guard,106,42,1.0,0,0.2
+RAPT-ED-Guard,107,42,1.0,0,0.2
+RAPT-ED-Guard,108,42,1.0,0,0.2
+RAPT-ED-Guard,109,42,1.0,0,0.2
+RAPT-ED-Guard,110,42,1.0,0,0.2
+RAPT-ED-Guard,111,42,1.0,0,0.2
+RAPT-ED-Guard,112,42,1.0,0,0.2
+RAPT-ED-Guard,113,42,1.0,0,0.2
+RAPT-ED-Guard,114,42,1.0,0,0.2
+RAPT-ED-Guard,115,42,1.0,0,0.2
+RAPT-ED-Guard,116,42,1.0,0,0.2
+RAPT-ED-Guard,117,42,1.0,0,0.2
+RAPT-ED-Guard,118,42,1.0,0,0.2
+RAPT-ED-Guard,119,42,1.0,0,0.2
+RAPT-ED-Guard,120,42,1.0,0,0.2
+RAPT-ED-Guard,121,42,1.0,0,0.2
+RAPT-ED-Guard,122,42,1.0,0,0.2
+RAPT-ED-Guard,123,42,1.0,0,0.2
+RAPT-ED-Guard,124,42,1.0,0,0.2
+RAPT-ED-Guard,125,42,1.0,0,0.2
+RAPT-ED-Guard,126,42,1.0,0,0.2
+RAPT-ED-Guard,127,42,1.0,0,0.2
+RAPT-ED-Guard,128,42,1.0,0,0.2
+RAPT-ED-Guard,129,42,1.0,0,0.2
+RAPT-ED-Guard,130,42,1.0,0,0.2
+RAPT-ED-Guard,131,42,1.0,0,0.2
+RAPT-ED-Guard,132,42,1.0,0,0.2
+RAPT-ED-Guard,133,42,1.0,0,0.2
+RAPT-ED-Guard,134,42,1.0,0,0.2
+RAPT-ED-Guard,135,42,1.0,0,0.2
+RAPT-ED-Guard,136,42,1.0,0,0.2
+RAPT-ED-Guard,137,42,1.0,0,0.2
+RAPT-ED-Guard,138,42,1.0,0,0.2
+RAPT-ED-Guard,139,42,1.0,0,0.2
+RAPT-ED-Guard,140,42,1.0,0,0.2
+RAPT-ED-Guard,141,42,1.0,0,0.2
+RAPT-ED-Guard,142,42,1.0,0,0.2
+RAPT-ED-Guard,143,42,1.0,0,0.2
+RAPT-ED-Guard,144,42,1.0,0,0.2
+RAPT-ED-Guard,145,42,0.0,1,0.2
+RAPT-ED-Guard,146,42,1.0,0,0.2
+RAPT-ED-Guard,147,42,1.0,0,0.2
+RAPT-ED-Guard,148,42,1.0,0,0.2
+RAPT-ED-Guard,149,42,0.0,0,0.2
+Frozen,99,43,1.0,0,0.2
+Frozen,100,43,1.0,0,0.2
+Frozen,101,43,1.0,0,0.2
+Frozen,102,43,1.0,0,0.2
+Frozen,103,43,1.0,0,0.2
+Frozen,104,43,1.0,0,0.2
+Frozen,105,43,1.0,0,0.2
+Frozen,106,43,1.0,0,0.2
+Frozen,107,43,1.0,0,0.2
+Frozen,108,43,1.0,0,0.2
+Frozen,109,43,1.0,0,0.2
+Frozen,110,43,1.0,0,0.2
+Frozen,111,43,1.0,0,0.2
+Frozen,112,43,1.0,0,0.2
+Frozen,113,43,1.0,0,0.2
+Frozen,114,43,1.0,0,0.2
+Frozen,115,43,1.0,0,0.2
+Frozen,116,43,1.0,0,0.2
+Frozen,117,43,1.0,0,0.2
+Frozen,118,43,1.0,0,0.2
+Frozen,119,43,1.0,0,0.2
+Frozen,120,43,1.0,0,0.2
+Frozen,121,43,1.0,0,0.2
+Frozen,122,43,1.0,0,0.2
+Frozen,123,43,1.0,0,0.2
+Frozen,124,43,1.0,0,0.2
+Frozen,125,43,1.0,0,0.2
+Frozen,126,43,1.0,0,0.2
+Frozen,127,43,1.0,0,0.2
+Frozen,128,43,1.0,0,0.2
+Frozen,129,43,1.0,0,0.2
+Frozen,130,43,1.0,0,0.2
+Frozen,131,43,1.0,0,0.2
+Frozen,132,43,1.0,0,0.2
+Frozen,133,43,1.0,0,0.2
+Frozen,134,43,1.0,0,0.2
+Frozen,135,43,1.0,0,0.2
+Frozen,136,43,1.0,0,0.2
+Frozen,137,43,1.0,0,0.2
+Frozen,138,43,1.0,0,0.2
+Frozen,139,43,1.0,0,0.2
+Frozen,140,43,1.0,0,0.2
+Frozen,141,43,1.0,0,0.2
+Frozen,142,43,1.0,0,0.2
+Frozen,143,43,1.0,0,0.2
+Frozen,144,43,1.0,0,0.2
+Frozen,145,43,0.0,0,0.2
+Frozen,146,43,1.0,0,0.2
+Frozen,147,43,1.0,0,0.2
+Frozen,148,43,1.0,0,0.2
+Frozen,149,43,0.0,0,0.2
+Event-Driven,99,43,1.0,0,0.2
+Event-Driven,100,43,1.0,0,0.2
+Event-Driven,101,43,1.0,0,0.2
+Event-Driven,102,43,1.0,0,0.2
+Event-Driven,103,43,1.0,0,0.2
+Event-Driven,104,43,1.0,0,0.2
+Event-Driven,105,43,1.0,0,0.2
+Event-Driven,106,43,1.0,0,0.2
+Event-Driven,107,43,1.0,0,0.2
+Event-Driven,108,43,1.0,0,0.2
+Event-Driven,109,43,1.0,0,0.2
+Event-Driven,110,43,1.0,0,0.2
+Event-Driven,111,43,1.0,0,0.2
+Event-Driven,112,43,1.0,0,0.2
+Event-Driven,113,43,1.0,0,0.2
+Event-Driven,114,43,1.0,0,0.2
+Event-Driven,115,43,1.0,0,0.2
+Event-Driven,116,43,1.0,0,0.2
+Event-Driven,117,43,1.0,0,0.2
+Event-Driven,118,43,1.0,0,0.2
+Event-Driven,119,43,1.0,0,0.2
+Event-Driven,120,43,1.0,0,0.2
+Event-Driven,121,43,1.0,0,0.2
+Event-Driven,122,43,1.0,0,0.2
+Event-Driven,123,43,1.0,0,0.2
+Event-Driven,124,43,1.0,0,0.2
+Event-Driven,125,43,1.0,0,0.2
+Event-Driven,126,43,1.0,0,0.2
+Event-Driven,127,43,1.0,0,0.2
+Event-Driven,128,43,1.0,0,0.2
+Event-Driven,129,43,1.0,0,0.2
+Event-Driven,130,43,1.0,0,0.2
+Event-Driven,131,43,1.0,0,0.2
+Event-Driven,132,43,1.0,0,0.2
+Event-Driven,133,43,1.0,0,0.2
+Event-Driven,134,43,1.0,0,0.2
+Event-Driven,135,43,1.0,0,0.2
+Event-Driven,136,43,1.0,0,0.2
+Event-Driven,137,43,1.0,0,0.2
+Event-Driven,138,43,1.0,0,0.2
+Event-Driven,139,43,1.0,0,0.2
+Event-Driven,140,43,1.0,0,0.2
+Event-Driven,141,43,1.0,0,0.2
+Event-Driven,142,43,1.0,0,0.2
+Event-Driven,143,43,1.0,0,0.2
+Event-Driven,144,43,1.0,0,0.2
+Event-Driven,145,43,0.0,0,0.2
+Event-Driven,146,43,1.0,0,0.2
+Event-Driven,147,43,1.0,0,0.2
+Event-Driven,148,43,1.0,0,0.2
+Event-Driven,149,43,0.0,0,0.2
+Full Retraining,99,43,1.0,0,0.2
+Full Retraining,100,43,1.0,0,0.2
+Full Retraining,101,43,1.0,0,0.2
+Full Retraining,102,43,1.0,0,0.2
+Full Retraining,103,43,1.0,0,0.2
+Full Retraining,104,43,1.0,0,0.2
+Full Retraining,105,43,1.0,0,0.2
+Full Retraining,106,43,1.0,0,0.2
+Full Retraining,107,43,1.0,0,0.2
+Full Retraining,108,43,1.0,0,0.2
+Full Retraining,109,43,1.0,0,0.2
+Full Retraining,110,43,1.0,0,0.2
+Full Retraining,111,43,1.0,0,0.2
+Full Retraining,112,43,1.0,0,0.2
+Full Retraining,113,43,1.0,0,0.2
+Full Retraining,114,43,1.0,0,0.2
+Full Retraining,115,43,1.0,0,0.2
+Full Retraining,116,43,1.0,0,0.2
+Full Retraining,117,43,1.0,0,0.2
+Full Retraining,118,43,1.0,0,0.2
+Full Retraining,119,43,1.0,0,0.2
+Full Retraining,120,43,1.0,0,0.2
+Full Retraining,121,43,1.0,0,0.2
+Full Retraining,122,43,1.0,0,0.2
+Full Retraining,123,43,1.0,0,0.2
+Full Retraining,124,43,1.0,0,0.2
+Full Retraining,125,43,1.0,0,0.2
+Full Retraining,126,43,1.0,0,0.2
+Full Retraining,127,43,1.0,0,0.2
+Full Retraining,128,43,1.0,0,0.2
+Full Retraining,129,43,1.0,0,0.2
+Full Retraining,130,43,1.0,0,0.2
+Full Retraining,131,43,1.0,0,0.2
+Full Retraining,132,43,1.0,0,0.2
+Full Retraining,133,43,1.0,0,0.2
+Full Retraining,134,43,1.0,0,0.2
+Full Retraining,135,43,1.0,0,0.2
+Full Retraining,136,43,1.0,0,0.2
+Full Retraining,137,43,1.0,0,0.2
+Full Retraining,138,43,1.0,0,0.2
+Full Retraining,139,43,1.0,0,0.2
+Full Retraining,140,43,1.0,0,0.2
+Full Retraining,141,43,1.0,0,0.2
+Full Retraining,142,43,1.0,0,0.2
+Full Retraining,143,43,1.0,0,0.2
+Full Retraining,144,43,1.0,0,0.2
+Full Retraining,145,43,0.0,0,0.2
+Full Retraining,146,43,1.0,0,0.2
+Full Retraining,147,43,1.0,0,0.2
+Full Retraining,148,43,1.0,0,0.2
+Full Retraining,149,43,0.0,0,0.2
+ADWIN,99,43,1.0,0,0.2
+ADWIN,100,43,1.0,0,0.2
+ADWIN,101,43,1.0,0,0.2
+ADWIN,102,43,1.0,0,0.2
+ADWIN,103,43,1.0,0,0.2
+ADWIN,104,43,1.0,0,0.2
+ADWIN,105,43,1.0,0,0.2
+ADWIN,106,43,1.0,0,0.2
+ADWIN,107,43,1.0,0,0.2
+ADWIN,108,43,1.0,0,0.2
+ADWIN,109,43,1.0,0,0.2
+ADWIN,110,43,1.0,0,0.2
+ADWIN,111,43,1.0,0,0.2
+ADWIN,112,43,1.0,0,0.2
+ADWIN,113,43,1.0,0,0.2
+ADWIN,114,43,1.0,0,0.2
+ADWIN,115,43,1.0,0,0.2
+ADWIN,116,43,1.0,0,0.2
+ADWIN,117,43,1.0,0,0.2
+ADWIN,118,43,1.0,0,0.2
+ADWIN,119,43,1.0,0,0.2
+ADWIN,120,43,1.0,0,0.2
+ADWIN,121,43,1.0,0,0.2
+ADWIN,122,43,1.0,0,0.2
+ADWIN,123,43,1.0,0,0.2
+ADWIN,124,43,1.0,0,0.2
+ADWIN,125,43,1.0,0,0.2
+ADWIN,126,43,1.0,0,0.2
+ADWIN,127,43,1.0,0,0.2
+ADWIN,128,43,1.0,0,0.2
+ADWIN,129,43,1.0,0,0.2
+ADWIN,130,43,1.0,0,0.2
+ADWIN,131,43,1.0,0,0.2
+ADWIN,132,43,1.0,0,0.2
+ADWIN,133,43,1.0,0,0.2
+ADWIN,134,43,1.0,0,0.2
+ADWIN,135,43,1.0,0,0.2
+ADWIN,136,43,1.0,0,0.2
+ADWIN,137,43,1.0,0,0.2
+ADWIN,138,43,1.0,0,0.2
+ADWIN,139,43,1.0,0,0.2
+ADWIN,140,43,1.0,0,0.2
+ADWIN,141,43,1.0,0,0.2
+ADWIN,142,43,1.0,0,0.2
+ADWIN,143,43,1.0,0,0.2
+ADWIN,144,43,1.0,0,0.2
+ADWIN,145,43,0.0,0,0.2
+ADWIN,146,43,1.0,0,0.2
+ADWIN,147,43,1.0,0,0.2
+ADWIN,148,43,1.0,0,0.2
+ADWIN,149,43,0.0,0,0.2
+Page-Hinkley,99,43,1.0,0,0.2
+Page-Hinkley,100,43,1.0,0,0.2
+Page-Hinkley,101,43,1.0,0,0.2
+Page-Hinkley,102,43,1.0,0,0.2
+Page-Hinkley,103,43,1.0,0,0.2
+Page-Hinkley,104,43,1.0,0,0.2
+Page-Hinkley,105,43,1.0,0,0.2
+Page-Hinkley,106,43,1.0,0,0.2
+Page-Hinkley,107,43,1.0,0,0.2
+Page-Hinkley,108,43,1.0,0,0.2
+Page-Hinkley,109,43,1.0,0,0.2
+Page-Hinkley,110,43,1.0,0,0.2
+Page-Hinkley,111,43,1.0,0,0.2
+Page-Hinkley,112,43,1.0,0,0.2
+Page-Hinkley,113,43,1.0,0,0.2
+Page-Hinkley,114,43,1.0,0,0.2
+Page-Hinkley,115,43,1.0,0,0.2
+Page-Hinkley,116,43,1.0,0,0.2
+Page-Hinkley,117,43,1.0,0,0.2
+Page-Hinkley,118,43,1.0,0,0.2
+Page-Hinkley,119,43,1.0,0,0.2
+Page-Hinkley,120,43,1.0,0,0.2
+Page-Hinkley,121,43,1.0,0,0.2
+Page-Hinkley,122,43,1.0,0,0.2
+Page-Hinkley,123,43,1.0,0,0.2
+Page-Hinkley,124,43,1.0,0,0.2
+Page-Hinkley,125,43,1.0,0,0.2
+Page-Hinkley,126,43,1.0,0,0.2
+Page-Hinkley,127,43,1.0,0,0.2
+Page-Hinkley,128,43,1.0,0,0.2
+Page-Hinkley,129,43,1.0,0,0.2
+Page-Hinkley,130,43,1.0,0,0.2
+Page-Hinkley,131,43,1.0,0,0.2
+Page-Hinkley,132,43,1.0,0,0.2
+Page-Hinkley,133,43,1.0,0,0.2
+Page-Hinkley,134,43,1.0,0,0.2
+Page-Hinkley,135,43,1.0,0,0.2
+Page-Hinkley,136,43,1.0,0,0.2
+Page-Hinkley,137,43,1.0,0,0.2
+Page-Hinkley,138,43,1.0,0,0.2
+Page-Hinkley,139,43,1.0,0,0.2
+Page-Hinkley,140,43,1.0,0,0.2
+Page-Hinkley,141,43,1.0,0,0.2
+Page-Hinkley,142,43,1.0,0,0.2
+Page-Hinkley,143,43,1.0,0,0.2
+Page-Hinkley,144,43,1.0,0,0.2
+Page-Hinkley,145,43,0.0,0,0.2
+Page-Hinkley,146,43,1.0,0,0.2
+Page-Hinkley,147,43,1.0,0,0.2
+Page-Hinkley,148,43,1.0,0,0.2
+Page-Hinkley,149,43,0.0,0,0.2
+RAPT,99,43,1.0,0,0.2
+RAPT,100,43,1.0,0,0.2
+RAPT,101,43,1.0,0,0.2
+RAPT,102,43,1.0,0,0.2
+RAPT,103,43,1.0,0,0.2
+RAPT,104,43,1.0,0,0.2
+RAPT,105,43,1.0,0,0.2
+RAPT,106,43,1.0,0,0.2
+RAPT,107,43,1.0,0,0.2
+RAPT,108,43,1.0,0,0.2
+RAPT,109,43,1.0,0,0.2
+RAPT,110,43,1.0,0,0.2
+RAPT,111,43,1.0,0,0.2
+RAPT,112,43,1.0,0,0.2
+RAPT,113,43,1.0,0,0.2
+RAPT,114,43,1.0,0,0.2
+RAPT,115,43,1.0,0,0.2
+RAPT,116,43,1.0,0,0.2
+RAPT,117,43,1.0,0,0.2
+RAPT,118,43,1.0,0,0.2
+RAPT,119,43,1.0,0,0.2
+RAPT,120,43,1.0,0,0.2
+RAPT,121,43,1.0,0,0.2
+RAPT,122,43,1.0,0,0.2
+RAPT,123,43,1.0,0,0.2
+RAPT,124,43,1.0,0,0.2
+RAPT,125,43,1.0,0,0.2
+RAPT,126,43,1.0,0,0.2
+RAPT,127,43,1.0,0,0.2
+RAPT,128,43,1.0,0,0.2
+RAPT,129,43,1.0,0,0.2
+RAPT,130,43,1.0,0,0.2
+RAPT,131,43,1.0,0,0.2
+RAPT,132,43,1.0,0,0.2
+RAPT,133,43,1.0,0,0.2
+RAPT,134,43,1.0,0,0.2
+RAPT,135,43,1.0,0,0.2
+RAPT,136,43,1.0,0,0.2
+RAPT,137,43,1.0,0,0.2
+RAPT,138,43,1.0,0,0.2
+RAPT,139,43,1.0,0,0.2
+RAPT,140,43,1.0,0,0.2
+RAPT,141,43,1.0,0,0.2
+RAPT,142,43,1.0,0,0.2
+RAPT,143,43,1.0,0,0.2
+RAPT,144,43,1.0,0,0.2
+RAPT,145,43,0.0,0,0.2
+RAPT,146,43,1.0,0,0.2
+RAPT,147,43,1.0,0,0.2
+RAPT,148,43,1.0,0,0.2
+RAPT,149,43,0.0,0,0.2
+RAPT-Guard,99,43,1.0,0,0.2
+RAPT-Guard,100,43,1.0,0,0.2
+RAPT-Guard,101,43,1.0,0,0.2
+RAPT-Guard,102,43,1.0,0,0.2
+RAPT-Guard,103,43,1.0,0,0.2
+RAPT-Guard,104,43,1.0,0,0.2
+RAPT-Guard,105,43,1.0,0,0.2
+RAPT-Guard,106,43,1.0,0,0.2
+RAPT-Guard,107,43,1.0,0,0.2
+RAPT-Guard,108,43,1.0,0,0.2
+RAPT-Guard,109,43,1.0,0,0.2
+RAPT-Guard,110,43,1.0,0,0.2
+RAPT-Guard,111,43,1.0,0,0.2
+RAPT-Guard,112,43,1.0,0,0.2
+RAPT-Guard,113,43,1.0,0,0.2
+RAPT-Guard,114,43,1.0,0,0.2
+RAPT-Guard,115,43,1.0,0,0.2
+RAPT-Guard,116,43,1.0,0,0.2
+RAPT-Guard,117,43,1.0,0,0.2
+RAPT-Guard,118,43,1.0,0,0.2
+RAPT-Guard,119,43,1.0,0,0.2
+RAPT-Guard,120,43,1.0,0,0.2
+RAPT-Guard,121,43,1.0,0,0.2
+RAPT-Guard,122,43,1.0,0,0.2
+RAPT-Guard,123,43,1.0,0,0.2
+RAPT-Guard,124,43,1.0,0,0.2
+RAPT-Guard,125,43,1.0,0,0.2
+RAPT-Guard,126,43,1.0,0,0.2
+RAPT-Guard,127,43,1.0,0,0.2
+RAPT-Guard,128,43,1.0,0,0.2
+RAPT-Guard,129,43,1.0,0,0.2
+RAPT-Guard,130,43,1.0,0,0.2
+RAPT-Guard,131,43,1.0,0,0.2
+RAPT-Guard,132,43,1.0,0,0.2
+RAPT-Guard,133,43,1.0,0,0.2
+RAPT-Guard,134,43,1.0,0,0.2
+RAPT-Guard,135,43,1.0,0,0.2
+RAPT-Guard,136,43,1.0,0,0.2
+RAPT-Guard,137,43,1.0,0,0.2
+RAPT-Guard,138,43,1.0,0,0.2
+RAPT-Guard,139,43,1.0,0,0.2
+RAPT-Guard,140,43,1.0,0,0.2
+RAPT-Guard,141,43,1.0,0,0.2
+RAPT-Guard,142,43,1.0,0,0.2
+RAPT-Guard,143,43,1.0,0,0.2
+RAPT-Guard,144,43,1.0,0,0.2
+RAPT-Guard,145,43,0.0,0,0.2
+RAPT-Guard,146,43,1.0,0,0.2
+RAPT-Guard,147,43,1.0,0,0.2
+RAPT-Guard,148,43,1.0,0,0.2
+RAPT-Guard,149,43,0.0,0,0.2
+RAPT-ED-Guard,99,43,1.0,0,0.2
+RAPT-ED-Guard,100,43,1.0,0,0.2
+RAPT-ED-Guard,101,43,1.0,0,0.2
+RAPT-ED-Guard,102,43,1.0,0,0.2
+RAPT-ED-Guard,103,43,1.0,0,0.2
+RAPT-ED-Guard,104,43,1.0,0,0.2
+RAPT-ED-Guard,105,43,1.0,0,0.2
+RAPT-ED-Guard,106,43,1.0,0,0.2
+RAPT-ED-Guard,107,43,1.0,0,0.2
+RAPT-ED-Guard,108,43,1.0,0,0.2
+RAPT-ED-Guard,109,43,1.0,0,0.2
+RAPT-ED-Guard,110,43,1.0,0,0.2
+RAPT-ED-Guard,111,43,1.0,0,0.2
+RAPT-ED-Guard,112,43,1.0,0,0.2
+RAPT-ED-Guard,113,43,1.0,0,0.2
+RAPT-ED-Guard,114,43,1.0,0,0.2
+RAPT-ED-Guard,115,43,1.0,0,0.2
+RAPT-ED-Guard,116,43,1.0,0,0.2
+RAPT-ED-Guard,117,43,1.0,0,0.2
+RAPT-ED-Guard,118,43,1.0,0,0.2
+RAPT-ED-Guard,119,43,1.0,0,0.2
+RAPT-ED-Guard,120,43,1.0,0,0.2
+RAPT-ED-Guard,121,43,1.0,0,0.2
+RAPT-ED-Guard,122,43,1.0,0,0.2
+RAPT-ED-Guard,123,43,1.0,0,0.2
+RAPT-ED-Guard,124,43,1.0,0,0.2
+RAPT-ED-Guard,125,43,1.0,0,0.2
+RAPT-ED-Guard,126,43,1.0,0,0.2
+RAPT-ED-Guard,127,43,1.0,0,0.2
+RAPT-ED-Guard,128,43,1.0,0,0.2
+RAPT-ED-Guard,129,43,1.0,0,0.2
+RAPT-ED-Guard,130,43,1.0,0,0.2
+RAPT-ED-Guard,131,43,1.0,0,0.2
+RAPT-ED-Guard,132,43,1.0,0,0.2
+RAPT-ED-Guard,133,43,1.0,0,0.2
+RAPT-ED-Guard,134,43,1.0,0,0.2
+RAPT-ED-Guard,135,43,1.0,0,0.2
+RAPT-ED-Guard,136,43,1.0,0,0.2
+RAPT-ED-Guard,137,43,1.0,0,0.2
+RAPT-ED-Guard,138,43,1.0,0,0.2
+RAPT-ED-Guard,139,43,1.0,0,0.2
+RAPT-ED-Guard,140,43,1.0,0,0.2
+RAPT-ED-Guard,141,43,1.0,0,0.2
+RAPT-ED-Guard,142,43,1.0,0,0.2
+RAPT-ED-Guard,143,43,1.0,0,0.2
+RAPT-ED-Guard,144,43,1.0,0,0.2
+RAPT-ED-Guard,145,43,0.0,1,0.2
+RAPT-ED-Guard,146,43,1.0,0,0.2
+RAPT-ED-Guard,147,43,1.0,0,0.2
+RAPT-ED-Guard,148,43,1.0,0,0.2
+RAPT-ED-Guard,149,43,0.0,0,0.2
+Frozen,99,44,1.0,0,0.2
+Frozen,100,44,1.0,0,0.2
+Frozen,101,44,1.0,0,0.2
+Frozen,102,44,1.0,0,0.2
+Frozen,103,44,1.0,0,0.2
+Frozen,104,44,1.0,0,0.2
+Frozen,105,44,1.0,0,0.2
+Frozen,106,44,1.0,0,0.2
+Frozen,107,44,1.0,0,0.2
+Frozen,108,44,1.0,0,0.2
+Frozen,109,44,1.0,0,0.2
+Frozen,110,44,1.0,0,0.2
+Frozen,111,44,1.0,0,0.2
+Frozen,112,44,1.0,0,0.2
+Frozen,113,44,1.0,0,0.2
+Frozen,114,44,1.0,0,0.2
+Frozen,115,44,1.0,0,0.2
+Frozen,116,44,1.0,0,0.2
+Frozen,117,44,1.0,0,0.2
+Frozen,118,44,1.0,0,0.2
+Frozen,119,44,1.0,0,0.2
+Frozen,120,44,1.0,0,0.2
+Frozen,121,44,1.0,0,0.2
+Frozen,122,44,1.0,0,0.2
+Frozen,123,44,1.0,0,0.2
+Frozen,124,44,1.0,0,0.2
+Frozen,125,44,1.0,0,0.2
+Frozen,126,44,1.0,0,0.2
+Frozen,127,44,1.0,0,0.2
+Frozen,128,44,1.0,0,0.2
+Frozen,129,44,1.0,0,0.2
+Frozen,130,44,1.0,0,0.2
+Frozen,131,44,1.0,0,0.2
+Frozen,132,44,1.0,0,0.2
+Frozen,133,44,1.0,0,0.2
+Frozen,134,44,1.0,0,0.2
+Frozen,135,44,1.0,0,0.2
+Frozen,136,44,1.0,0,0.2
+Frozen,137,44,1.0,0,0.2
+Frozen,138,44,1.0,0,0.2
+Frozen,139,44,1.0,0,0.2
+Frozen,140,44,1.0,0,0.2
+Frozen,141,44,1.0,0,0.2
+Frozen,142,44,1.0,0,0.2
+Frozen,143,44,1.0,0,0.2
+Frozen,144,44,1.0,0,0.2
+Frozen,145,44,0.0,0,0.2
+Frozen,146,44,1.0,0,0.2
+Frozen,147,44,1.0,0,0.2
+Frozen,148,44,1.0,0,0.2
+Frozen,149,44,0.0,0,0.2
+Event-Driven,99,44,1.0,0,0.2
+Event-Driven,100,44,1.0,0,0.2
+Event-Driven,101,44,1.0,0,0.2
+Event-Driven,102,44,1.0,0,0.2
+Event-Driven,103,44,1.0,0,0.2
+Event-Driven,104,44,1.0,0,0.2
+Event-Driven,105,44,1.0,0,0.2
+Event-Driven,106,44,1.0,0,0.2
+Event-Driven,107,44,1.0,0,0.2
+Event-Driven,108,44,1.0,0,0.2
+Event-Driven,109,44,1.0,0,0.2
+Event-Driven,110,44,1.0,0,0.2
+Event-Driven,111,44,1.0,0,0.2
+Event-Driven,112,44,1.0,0,0.2
+Event-Driven,113,44,1.0,0,0.2
+Event-Driven,114,44,1.0,0,0.2
+Event-Driven,115,44,1.0,0,0.2
+Event-Driven,116,44,1.0,0,0.2
+Event-Driven,117,44,1.0,0,0.2
+Event-Driven,118,44,1.0,0,0.2
+Event-Driven,119,44,1.0,0,0.2
+Event-Driven,120,44,1.0,0,0.2
+Event-Driven,121,44,1.0,0,0.2
+Event-Driven,122,44,1.0,0,0.2
+Event-Driven,123,44,1.0,0,0.2
+Event-Driven,124,44,1.0,0,0.2
+Event-Driven,125,44,1.0,0,0.2
+Event-Driven,126,44,1.0,0,0.2
+Event-Driven,127,44,1.0,0,0.2
+Event-Driven,128,44,1.0,0,0.2
+Event-Driven,129,44,1.0,0,0.2
+Event-Driven,130,44,1.0,0,0.2
+Event-Driven,131,44,1.0,0,0.2
+Event-Driven,132,44,1.0,0,0.2
+Event-Driven,133,44,1.0,0,0.2
+Event-Driven,134,44,1.0,0,0.2
+Event-Driven,135,44,1.0,0,0.2
+Event-Driven,136,44,1.0,0,0.2
+Event-Driven,137,44,1.0,0,0.2
+Event-Driven,138,44,1.0,0,0.2
+Event-Driven,139,44,1.0,0,0.2
+Event-Driven,140,44,1.0,0,0.2
+Event-Driven,141,44,1.0,0,0.2
+Event-Driven,142,44,1.0,0,0.2
+Event-Driven,143,44,1.0,0,0.2
+Event-Driven,144,44,1.0,0,0.2
+Event-Driven,145,44,0.0,0,0.2
+Event-Driven,146,44,1.0,0,0.2
+Event-Driven,147,44,1.0,0,0.2
+Event-Driven,148,44,1.0,0,0.2
+Event-Driven,149,44,0.0,0,0.2
+Full Retraining,99,44,1.0,0,0.2
+Full Retraining,100,44,1.0,0,0.2
+Full Retraining,101,44,1.0,0,0.2
+Full Retraining,102,44,1.0,0,0.2
+Full Retraining,103,44,1.0,0,0.2
+Full Retraining,104,44,1.0,0,0.2
+Full Retraining,105,44,1.0,0,0.2
+Full Retraining,106,44,1.0,0,0.2
+Full Retraining,107,44,1.0,0,0.2
+Full Retraining,108,44,1.0,0,0.2
+Full Retraining,109,44,1.0,0,0.2
+Full Retraining,110,44,1.0,0,0.2
+Full Retraining,111,44,1.0,0,0.2
+Full Retraining,112,44,1.0,0,0.2
+Full Retraining,113,44,1.0,0,0.2
+Full Retraining,114,44,1.0,0,0.2
+Full Retraining,115,44,1.0,0,0.2
+Full Retraining,116,44,1.0,0,0.2
+Full Retraining,117,44,1.0,0,0.2
+Full Retraining,118,44,1.0,0,0.2
+Full Retraining,119,44,1.0,0,0.2
+Full Retraining,120,44,1.0,0,0.2
+Full Retraining,121,44,1.0,0,0.2
+Full Retraining,122,44,1.0,0,0.2
+Full Retraining,123,44,1.0,0,0.2
+Full Retraining,124,44,1.0,0,0.2
+Full Retraining,125,44,1.0,0,0.2
+Full Retraining,126,44,1.0,0,0.2
+Full Retraining,127,44,1.0,0,0.2
+Full Retraining,128,44,1.0,0,0.2
+Full Retraining,129,44,1.0,0,0.2
+Full Retraining,130,44,1.0,0,0.2
+Full Retraining,131,44,1.0,0,0.2
+Full Retraining,132,44,1.0,0,0.2
+Full Retraining,133,44,1.0,0,0.2
+Full Retraining,134,44,1.0,0,0.2
+Full Retraining,135,44,1.0,0,0.2
+Full Retraining,136,44,1.0,0,0.2
+Full Retraining,137,44,1.0,0,0.2
+Full Retraining,138,44,1.0,0,0.2
+Full Retraining,139,44,1.0,0,0.2
+Full Retraining,140,44,1.0,0,0.2
+Full Retraining,141,44,1.0,0,0.2
+Full Retraining,142,44,1.0,0,0.2
+Full Retraining,143,44,1.0,0,0.2
+Full Retraining,144,44,1.0,0,0.2
+Full Retraining,145,44,0.0,0,0.2
+Full Retraining,146,44,1.0,0,0.2
+Full Retraining,147,44,1.0,0,0.2
+Full Retraining,148,44,1.0,0,0.2
+Full Retraining,149,44,0.0,0,0.2
+ADWIN,99,44,1.0,0,0.2
+ADWIN,100,44,1.0,0,0.2
+ADWIN,101,44,1.0,0,0.2
+ADWIN,102,44,1.0,0,0.2
+ADWIN,103,44,1.0,0,0.2
+ADWIN,104,44,1.0,0,0.2
+ADWIN,105,44,1.0,0,0.2
+ADWIN,106,44,1.0,0,0.2
+ADWIN,107,44,1.0,0,0.2
+ADWIN,108,44,1.0,0,0.2
+ADWIN,109,44,1.0,0,0.2
+ADWIN,110,44,1.0,0,0.2
+ADWIN,111,44,1.0,0,0.2
+ADWIN,112,44,1.0,0,0.2
+ADWIN,113,44,1.0,0,0.2
+ADWIN,114,44,1.0,0,0.2
+ADWIN,115,44,1.0,0,0.2
+ADWIN,116,44,1.0,0,0.2
+ADWIN,117,44,1.0,0,0.2
+ADWIN,118,44,1.0,0,0.2
+ADWIN,119,44,1.0,0,0.2
+ADWIN,120,44,1.0,0,0.2
+ADWIN,121,44,1.0,0,0.2
+ADWIN,122,44,1.0,0,0.2
+ADWIN,123,44,1.0,0,0.2
+ADWIN,124,44,1.0,0,0.2
+ADWIN,125,44,1.0,0,0.2
+ADWIN,126,44,1.0,0,0.2
+ADWIN,127,44,1.0,0,0.2
+ADWIN,128,44,1.0,0,0.2
+ADWIN,129,44,1.0,0,0.2
+ADWIN,130,44,1.0,0,0.2
+ADWIN,131,44,1.0,0,0.2
+ADWIN,132,44,1.0,0,0.2
+ADWIN,133,44,1.0,0,0.2
+ADWIN,134,44,1.0,0,0.2
+ADWIN,135,44,1.0,0,0.2
+ADWIN,136,44,1.0,0,0.2
+ADWIN,137,44,1.0,0,0.2
+ADWIN,138,44,1.0,0,0.2
+ADWIN,139,44,1.0,0,0.2
+ADWIN,140,44,1.0,0,0.2
+ADWIN,141,44,1.0,0,0.2
+ADWIN,142,44,1.0,0,0.2
+ADWIN,143,44,1.0,0,0.2
+ADWIN,144,44,1.0,0,0.2
+ADWIN,145,44,0.0,0,0.2
+ADWIN,146,44,1.0,0,0.2
+ADWIN,147,44,1.0,0,0.2
+ADWIN,148,44,1.0,0,0.2
+ADWIN,149,44,0.0,0,0.2
+Page-Hinkley,99,44,1.0,0,0.2
+Page-Hinkley,100,44,1.0,0,0.2
+Page-Hinkley,101,44,1.0,0,0.2
+Page-Hinkley,102,44,1.0,0,0.2
+Page-Hinkley,103,44,1.0,0,0.2
+Page-Hinkley,104,44,1.0,0,0.2
+Page-Hinkley,105,44,1.0,0,0.2
+Page-Hinkley,106,44,1.0,0,0.2
+Page-Hinkley,107,44,1.0,0,0.2
+Page-Hinkley,108,44,1.0,0,0.2
+Page-Hinkley,109,44,1.0,0,0.2
+Page-Hinkley,110,44,1.0,0,0.2
+Page-Hinkley,111,44,1.0,0,0.2
+Page-Hinkley,112,44,1.0,0,0.2
+Page-Hinkley,113,44,1.0,0,0.2
+Page-Hinkley,114,44,1.0,0,0.2
+Page-Hinkley,115,44,1.0,0,0.2
+Page-Hinkley,116,44,1.0,0,0.2
+Page-Hinkley,117,44,1.0,0,0.2
+Page-Hinkley,118,44,1.0,0,0.2
+Page-Hinkley,119,44,1.0,0,0.2
+Page-Hinkley,120,44,1.0,0,0.2
+Page-Hinkley,121,44,1.0,0,0.2
+Page-Hinkley,122,44,1.0,0,0.2
+Page-Hinkley,123,44,1.0,0,0.2
+Page-Hinkley,124,44,1.0,0,0.2
+Page-Hinkley,125,44,1.0,0,0.2
+Page-Hinkley,126,44,1.0,0,0.2
+Page-Hinkley,127,44,1.0,0,0.2
+Page-Hinkley,128,44,1.0,0,0.2
+Page-Hinkley,129,44,1.0,0,0.2
+Page-Hinkley,130,44,1.0,0,0.2
+Page-Hinkley,131,44,1.0,0,0.2
+Page-Hinkley,132,44,1.0,0,0.2
+Page-Hinkley,133,44,1.0,0,0.2
+Page-Hinkley,134,44,1.0,0,0.2
+Page-Hinkley,135,44,1.0,0,0.2
+Page-Hinkley,136,44,1.0,0,0.2
+Page-Hinkley,137,44,1.0,0,0.2
+Page-Hinkley,138,44,1.0,0,0.2
+Page-Hinkley,139,44,1.0,0,0.2
+Page-Hinkley,140,44,1.0,0,0.2
+Page-Hinkley,141,44,1.0,0,0.2
+Page-Hinkley,142,44,1.0,0,0.2
+Page-Hinkley,143,44,1.0,0,0.2
+Page-Hinkley,144,44,1.0,0,0.2
+Page-Hinkley,145,44,0.0,0,0.2
+Page-Hinkley,146,44,1.0,0,0.2
+Page-Hinkley,147,44,1.0,0,0.2
+Page-Hinkley,148,44,1.0,0,0.2
+Page-Hinkley,149,44,0.0,0,0.2
+RAPT,99,44,1.0,0,0.2
+RAPT,100,44,1.0,0,0.2
+RAPT,101,44,1.0,0,0.2
+RAPT,102,44,1.0,0,0.2
+RAPT,103,44,1.0,0,0.2
+RAPT,104,44,1.0,0,0.2
+RAPT,105,44,1.0,0,0.2
+RAPT,106,44,1.0,0,0.2
+RAPT,107,44,1.0,0,0.2
+RAPT,108,44,1.0,0,0.2
+RAPT,109,44,1.0,0,0.2
+RAPT,110,44,1.0,0,0.2
+RAPT,111,44,1.0,0,0.2
+RAPT,112,44,1.0,0,0.2
+RAPT,113,44,1.0,0,0.2
+RAPT,114,44,1.0,0,0.2
+RAPT,115,44,1.0,0,0.2
+RAPT,116,44,1.0,0,0.2
+RAPT,117,44,1.0,0,0.2
+RAPT,118,44,1.0,0,0.2
+RAPT,119,44,1.0,0,0.2
+RAPT,120,44,1.0,0,0.2
+RAPT,121,44,1.0,0,0.2
+RAPT,122,44,1.0,0,0.2
+RAPT,123,44,1.0,0,0.2
+RAPT,124,44,1.0,0,0.2
+RAPT,125,44,1.0,0,0.2
+RAPT,126,44,1.0,0,0.2
+RAPT,127,44,1.0,0,0.2
+RAPT,128,44,1.0,0,0.2
+RAPT,129,44,1.0,0,0.2
+RAPT,130,44,1.0,0,0.2
+RAPT,131,44,1.0,0,0.2
+RAPT,132,44,1.0,0,0.2
+RAPT,133,44,1.0,0,0.2
+RAPT,134,44,1.0,0,0.2
+RAPT,135,44,1.0,0,0.2
+RAPT,136,44,1.0,0,0.2
+RAPT,137,44,1.0,0,0.2
+RAPT,138,44,1.0,0,0.2
+RAPT,139,44,1.0,0,0.2
+RAPT,140,44,1.0,0,0.2
+RAPT,141,44,1.0,0,0.2
+RAPT,142,44,1.0,0,0.2
+RAPT,143,44,1.0,0,0.2
+RAPT,144,44,1.0,0,0.2
+RAPT,145,44,0.0,0,0.2
+RAPT,146,44,1.0,0,0.2
+RAPT,147,44,1.0,0,0.2
+RAPT,148,44,1.0,0,0.2
+RAPT,149,44,0.0,0,0.2
+RAPT-Guard,99,44,1.0,0,0.2
+RAPT-Guard,100,44,1.0,0,0.2
+RAPT-Guard,101,44,1.0,0,0.2
+RAPT-Guard,102,44,1.0,0,0.2
+RAPT-Guard,103,44,1.0,0,0.2
+RAPT-Guard,104,44,1.0,0,0.2
+RAPT-Guard,105,44,1.0,0,0.2
+RAPT-Guard,106,44,1.0,0,0.2
+RAPT-Guard,107,44,1.0,0,0.2
+RAPT-Guard,108,44,1.0,0,0.2
+RAPT-Guard,109,44,1.0,0,0.2
+RAPT-Guard,110,44,1.0,0,0.2
+RAPT-Guard,111,44,1.0,0,0.2
+RAPT-Guard,112,44,1.0,0,0.2
+RAPT-Guard,113,44,1.0,0,0.2
+RAPT-Guard,114,44,1.0,0,0.2
+RAPT-Guard,115,44,1.0,0,0.2
+RAPT-Guard,116,44,1.0,0,0.2
+RAPT-Guard,117,44,1.0,0,0.2
+RAPT-Guard,118,44,1.0,0,0.2
+RAPT-Guard,119,44,1.0,0,0.2
+RAPT-Guard,120,44,1.0,0,0.2
+RAPT-Guard,121,44,1.0,0,0.2
+RAPT-Guard,122,44,1.0,0,0.2
+RAPT-Guard,123,44,1.0,0,0.2
+RAPT-Guard,124,44,1.0,0,0.2
+RAPT-Guard,125,44,1.0,0,0.2
+RAPT-Guard,126,44,1.0,0,0.2
+RAPT-Guard,127,44,1.0,0,0.2
+RAPT-Guard,128,44,1.0,0,0.2
+RAPT-Guard,129,44,1.0,0,0.2
+RAPT-Guard,130,44,1.0,0,0.2
+RAPT-Guard,131,44,1.0,0,0.2
+RAPT-Guard,132,44,1.0,0,0.2
+RAPT-Guard,133,44,1.0,0,0.2
+RAPT-Guard,134,44,1.0,0,0.2
+RAPT-Guard,135,44,1.0,0,0.2
+RAPT-Guard,136,44,1.0,0,0.2
+RAPT-Guard,137,44,1.0,0,0.2
+RAPT-Guard,138,44,1.0,0,0.2
+RAPT-Guard,139,44,1.0,0,0.2
+RAPT-Guard,140,44,1.0,0,0.2
+RAPT-Guard,141,44,1.0,0,0.2
+RAPT-Guard,142,44,1.0,0,0.2
+RAPT-Guard,143,44,1.0,0,0.2
+RAPT-Guard,144,44,1.0,0,0.2
+RAPT-Guard,145,44,0.0,0,0.2
+RAPT-Guard,146,44,1.0,0,0.2
+RAPT-Guard,147,44,1.0,0,0.2
+RAPT-Guard,148,44,1.0,0,0.2
+RAPT-Guard,149,44,0.0,0,0.2
+RAPT-ED-Guard,99,44,1.0,0,0.2
+RAPT-ED-Guard,100,44,1.0,0,0.2
+RAPT-ED-Guard,101,44,1.0,0,0.2
+RAPT-ED-Guard,102,44,1.0,0,0.2
+RAPT-ED-Guard,103,44,1.0,0,0.2
+RAPT-ED-Guard,104,44,1.0,0,0.2
+RAPT-ED-Guard,105,44,1.0,0,0.2
+RAPT-ED-Guard,106,44,1.0,0,0.2
+RAPT-ED-Guard,107,44,1.0,0,0.2
+RAPT-ED-Guard,108,44,1.0,0,0.2
+RAPT-ED-Guard,109,44,1.0,0,0.2
+RAPT-ED-Guard,110,44,1.0,0,0.2
+RAPT-ED-Guard,111,44,1.0,0,0.2
+RAPT-ED-Guard,112,44,1.0,0,0.2
+RAPT-ED-Guard,113,44,1.0,0,0.2
+RAPT-ED-Guard,114,44,1.0,0,0.2
+RAPT-ED-Guard,115,44,1.0,0,0.2
+RAPT-ED-Guard,116,44,1.0,0,0.2
+RAPT-ED-Guard,117,44,1.0,0,0.2
+RAPT-ED-Guard,118,44,1.0,0,0.2
+RAPT-ED-Guard,119,44,1.0,0,0.2
+RAPT-ED-Guard,120,44,1.0,0,0.2
+RAPT-ED-Guard,121,44,1.0,0,0.2
+RAPT-ED-Guard,122,44,1.0,0,0.2
+RAPT-ED-Guard,123,44,1.0,0,0.2
+RAPT-ED-Guard,124,44,1.0,0,0.2
+RAPT-ED-Guard,125,44,1.0,0,0.2
+RAPT-ED-Guard,126,44,1.0,0,0.2
+RAPT-ED-Guard,127,44,1.0,0,0.2
+RAPT-ED-Guard,128,44,1.0,0,0.2
+RAPT-ED-Guard,129,44,1.0,0,0.2
+RAPT-ED-Guard,130,44,1.0,0,0.2
+RAPT-ED-Guard,131,44,1.0,0,0.2
+RAPT-ED-Guard,132,44,1.0,0,0.2
+RAPT-ED-Guard,133,44,1.0,0,0.2
+RAPT-ED-Guard,134,44,1.0,0,0.2
+RAPT-ED-Guard,135,44,1.0,0,0.2
+RAPT-ED-Guard,136,44,1.0,0,0.2
+RAPT-ED-Guard,137,44,1.0,0,0.2
+RAPT-ED-Guard,138,44,1.0,0,0.2
+RAPT-ED-Guard,139,44,1.0,0,0.2
+RAPT-ED-Guard,140,44,1.0,0,0.2
+RAPT-ED-Guard,141,44,1.0,0,0.2
+RAPT-ED-Guard,142,44,1.0,0,0.2
+RAPT-ED-Guard,143,44,1.0,0,0.2
+RAPT-ED-Guard,144,44,1.0,0,0.2
+RAPT-ED-Guard,145,44,0.0,1,0.2
+RAPT-ED-Guard,146,44,1.0,0,0.2
+RAPT-ED-Guard,147,44,1.0,0,0.2
+RAPT-ED-Guard,148,44,1.0,0,0.2
+RAPT-ED-Guard,149,44,1.0,0,0.2
+Frozen,99,45,1.0,0,0.2
+Frozen,100,45,1.0,0,0.2
+Frozen,101,45,1.0,0,0.2
+Frozen,102,45,1.0,0,0.2
+Frozen,103,45,1.0,0,0.2
+Frozen,104,45,1.0,0,0.2
+Frozen,105,45,1.0,0,0.2
+Frozen,106,45,1.0,0,0.2
+Frozen,107,45,1.0,0,0.2
+Frozen,108,45,1.0,0,0.2
+Frozen,109,45,1.0,0,0.2
+Frozen,110,45,1.0,0,0.2
+Frozen,111,45,1.0,0,0.2
+Frozen,112,45,1.0,0,0.2
+Frozen,113,45,1.0,0,0.2
+Frozen,114,45,1.0,0,0.2
+Frozen,115,45,1.0,0,0.2
+Frozen,116,45,1.0,0,0.2
+Frozen,117,45,1.0,0,0.2
+Frozen,118,45,1.0,0,0.2
+Frozen,119,45,1.0,0,0.2
+Frozen,120,45,1.0,0,0.2
+Frozen,121,45,1.0,0,0.2
+Frozen,122,45,1.0,0,0.2
+Frozen,123,45,1.0,0,0.2
+Frozen,124,45,1.0,0,0.2
+Frozen,125,45,1.0,0,0.2
+Frozen,126,45,1.0,0,0.2
+Frozen,127,45,1.0,0,0.2
+Frozen,128,45,1.0,0,0.2
+Frozen,129,45,1.0,0,0.2
+Frozen,130,45,1.0,0,0.2
+Frozen,131,45,1.0,0,0.2
+Frozen,132,45,1.0,0,0.2
+Frozen,133,45,1.0,0,0.2
+Frozen,134,45,1.0,0,0.2
+Frozen,135,45,1.0,0,0.2
+Frozen,136,45,1.0,0,0.2
+Frozen,137,45,1.0,0,0.2
+Frozen,138,45,1.0,0,0.2
+Frozen,139,45,1.0,0,0.2
+Frozen,140,45,1.0,0,0.2
+Frozen,141,45,1.0,0,0.2
+Frozen,142,45,1.0,0,0.2
+Frozen,143,45,1.0,0,0.2
+Frozen,144,45,1.0,0,0.2
+Frozen,145,45,0.0,0,0.2
+Frozen,146,45,1.0,0,0.2
+Frozen,147,45,1.0,0,0.2
+Frozen,148,45,1.0,0,0.2
+Frozen,149,45,0.0,0,0.2
+Event-Driven,99,45,1.0,0,0.2
+Event-Driven,100,45,1.0,0,0.2
+Event-Driven,101,45,1.0,0,0.2
+Event-Driven,102,45,1.0,0,0.2
+Event-Driven,103,45,1.0,0,0.2
+Event-Driven,104,45,1.0,0,0.2
+Event-Driven,105,45,1.0,0,0.2
+Event-Driven,106,45,1.0,0,0.2
+Event-Driven,107,45,1.0,0,0.2
+Event-Driven,108,45,1.0,0,0.2
+Event-Driven,109,45,1.0,0,0.2
+Event-Driven,110,45,1.0,0,0.2
+Event-Driven,111,45,1.0,0,0.2
+Event-Driven,112,45,1.0,0,0.2
+Event-Driven,113,45,1.0,0,0.2
+Event-Driven,114,45,1.0,0,0.2
+Event-Driven,115,45,1.0,0,0.2
+Event-Driven,116,45,1.0,0,0.2
+Event-Driven,117,45,1.0,0,0.2
+Event-Driven,118,45,1.0,0,0.2
+Event-Driven,119,45,1.0,0,0.2
+Event-Driven,120,45,1.0,0,0.2
+Event-Driven,121,45,1.0,0,0.2
+Event-Driven,122,45,1.0,0,0.2
+Event-Driven,123,45,1.0,0,0.2
+Event-Driven,124,45,1.0,0,0.2
+Event-Driven,125,45,1.0,0,0.2
+Event-Driven,126,45,1.0,0,0.2
+Event-Driven,127,45,1.0,0,0.2
+Event-Driven,128,45,1.0,0,0.2
+Event-Driven,129,45,1.0,0,0.2
+Event-Driven,130,45,1.0,0,0.2
+Event-Driven,131,45,1.0,0,0.2
+Event-Driven,132,45,1.0,0,0.2
+Event-Driven,133,45,1.0,0,0.2
+Event-Driven,134,45,1.0,0,0.2
+Event-Driven,135,45,1.0,0,0.2
+Event-Driven,136,45,1.0,0,0.2
+Event-Driven,137,45,1.0,0,0.2
+Event-Driven,138,45,1.0,0,0.2
+Event-Driven,139,45,1.0,0,0.2
+Event-Driven,140,45,1.0,0,0.2
+Event-Driven,141,45,1.0,0,0.2
+Event-Driven,142,45,1.0,0,0.2
+Event-Driven,143,45,1.0,0,0.2
+Event-Driven,144,45,1.0,0,0.2
+Event-Driven,145,45,0.0,0,0.2
+Event-Driven,146,45,1.0,0,0.2
+Event-Driven,147,45,1.0,0,0.2
+Event-Driven,148,45,1.0,0,0.2
+Event-Driven,149,45,0.0,0,0.2
+Full Retraining,99,45,1.0,0,0.2
+Full Retraining,100,45,1.0,0,0.2
+Full Retraining,101,45,1.0,0,0.2
+Full Retraining,102,45,1.0,0,0.2
+Full Retraining,103,45,1.0,0,0.2
+Full Retraining,104,45,1.0,0,0.2
+Full Retraining,105,45,1.0,0,0.2
+Full Retraining,106,45,1.0,0,0.2
+Full Retraining,107,45,1.0,0,0.2
+Full Retraining,108,45,1.0,0,0.2
+Full Retraining,109,45,1.0,0,0.2
+Full Retraining,110,45,1.0,0,0.2
+Full Retraining,111,45,1.0,0,0.2
+Full Retraining,112,45,1.0,0,0.2
+Full Retraining,113,45,1.0,0,0.2
+Full Retraining,114,45,1.0,0,0.2
+Full Retraining,115,45,1.0,0,0.2
+Full Retraining,116,45,1.0,0,0.2
+Full Retraining,117,45,1.0,0,0.2
+Full Retraining,118,45,1.0,0,0.2
+Full Retraining,119,45,1.0,0,0.2
+Full Retraining,120,45,1.0,0,0.2
+Full Retraining,121,45,1.0,0,0.2
+Full Retraining,122,45,1.0,0,0.2
+Full Retraining,123,45,1.0,0,0.2
+Full Retraining,124,45,1.0,0,0.2
+Full Retraining,125,45,1.0,0,0.2
+Full Retraining,126,45,1.0,0,0.2
+Full Retraining,127,45,1.0,0,0.2
+Full Retraining,128,45,1.0,0,0.2
+Full Retraining,129,45,1.0,0,0.2
+Full Retraining,130,45,1.0,0,0.2
+Full Retraining,131,45,1.0,0,0.2
+Full Retraining,132,45,1.0,0,0.2
+Full Retraining,133,45,1.0,0,0.2
+Full Retraining,134,45,1.0,0,0.2
+Full Retraining,135,45,1.0,0,0.2
+Full Retraining,136,45,1.0,0,0.2
+Full Retraining,137,45,1.0,0,0.2
+Full Retraining,138,45,1.0,0,0.2
+Full Retraining,139,45,1.0,0,0.2
+Full Retraining,140,45,1.0,0,0.2
+Full Retraining,141,45,1.0,0,0.2
+Full Retraining,142,45,1.0,0,0.2
+Full Retraining,143,45,1.0,0,0.2
+Full Retraining,144,45,1.0,0,0.2
+Full Retraining,145,45,0.0,0,0.2
+Full Retraining,146,45,1.0,0,0.2
+Full Retraining,147,45,1.0,0,0.2
+Full Retraining,148,45,1.0,0,0.2
+Full Retraining,149,45,0.0,0,0.2
+ADWIN,99,45,1.0,0,0.2
+ADWIN,100,45,1.0,0,0.2
+ADWIN,101,45,1.0,0,0.2
+ADWIN,102,45,1.0,0,0.2
+ADWIN,103,45,1.0,0,0.2
+ADWIN,104,45,1.0,0,0.2
+ADWIN,105,45,1.0,0,0.2
+ADWIN,106,45,1.0,0,0.2
+ADWIN,107,45,1.0,0,0.2
+ADWIN,108,45,1.0,0,0.2
+ADWIN,109,45,1.0,0,0.2
+ADWIN,110,45,1.0,0,0.2
+ADWIN,111,45,1.0,0,0.2
+ADWIN,112,45,1.0,0,0.2
+ADWIN,113,45,1.0,0,0.2
+ADWIN,114,45,1.0,0,0.2
+ADWIN,115,45,1.0,0,0.2
+ADWIN,116,45,1.0,0,0.2
+ADWIN,117,45,1.0,0,0.2
+ADWIN,118,45,1.0,0,0.2
+ADWIN,119,45,1.0,0,0.2
+ADWIN,120,45,1.0,0,0.2
+ADWIN,121,45,1.0,0,0.2
+ADWIN,122,45,1.0,0,0.2
+ADWIN,123,45,1.0,0,0.2
+ADWIN,124,45,1.0,0,0.2
+ADWIN,125,45,1.0,0,0.2
+ADWIN,126,45,1.0,0,0.2
+ADWIN,127,45,1.0,0,0.2
+ADWIN,128,45,1.0,0,0.2
+ADWIN,129,45,1.0,0,0.2
+ADWIN,130,45,1.0,0,0.2
+ADWIN,131,45,1.0,0,0.2
+ADWIN,132,45,1.0,0,0.2
+ADWIN,133,45,1.0,0,0.2
+ADWIN,134,45,1.0,0,0.2
+ADWIN,135,45,1.0,0,0.2
+ADWIN,136,45,1.0,0,0.2
+ADWIN,137,45,1.0,0,0.2
+ADWIN,138,45,1.0,0,0.2
+ADWIN,139,45,1.0,0,0.2
+ADWIN,140,45,1.0,0,0.2
+ADWIN,141,45,1.0,0,0.2
+ADWIN,142,45,1.0,0,0.2
+ADWIN,143,45,1.0,0,0.2
+ADWIN,144,45,1.0,0,0.2
+ADWIN,145,45,0.0,0,0.2
+ADWIN,146,45,1.0,0,0.2
+ADWIN,147,45,1.0,0,0.2
+ADWIN,148,45,1.0,0,0.2
+ADWIN,149,45,0.0,0,0.2
+Page-Hinkley,99,45,1.0,0,0.2
+Page-Hinkley,100,45,1.0,0,0.2
+Page-Hinkley,101,45,1.0,0,0.2
+Page-Hinkley,102,45,1.0,0,0.2
+Page-Hinkley,103,45,1.0,0,0.2
+Page-Hinkley,104,45,1.0,0,0.2
+Page-Hinkley,105,45,1.0,0,0.2
+Page-Hinkley,106,45,1.0,0,0.2
+Page-Hinkley,107,45,1.0,0,0.2
+Page-Hinkley,108,45,1.0,0,0.2
+Page-Hinkley,109,45,1.0,0,0.2
+Page-Hinkley,110,45,1.0,0,0.2
+Page-Hinkley,111,45,1.0,0,0.2
+Page-Hinkley,112,45,1.0,0,0.2
+Page-Hinkley,113,45,1.0,0,0.2
+Page-Hinkley,114,45,1.0,0,0.2
+Page-Hinkley,115,45,1.0,0,0.2
+Page-Hinkley,116,45,1.0,0,0.2
+Page-Hinkley,117,45,1.0,0,0.2
+Page-Hinkley,118,45,1.0,0,0.2
+Page-Hinkley,119,45,1.0,0,0.2
+Page-Hinkley,120,45,1.0,0,0.2
+Page-Hinkley,121,45,1.0,0,0.2
+Page-Hinkley,122,45,1.0,0,0.2
+Page-Hinkley,123,45,1.0,0,0.2
+Page-Hinkley,124,45,1.0,0,0.2
+Page-Hinkley,125,45,1.0,0,0.2
+Page-Hinkley,126,45,1.0,0,0.2
+Page-Hinkley,127,45,1.0,0,0.2
+Page-Hinkley,128,45,1.0,0,0.2
+Page-Hinkley,129,45,1.0,0,0.2
+Page-Hinkley,130,45,1.0,0,0.2
+Page-Hinkley,131,45,1.0,0,0.2
+Page-Hinkley,132,45,1.0,0,0.2
+Page-Hinkley,133,45,1.0,0,0.2
+Page-Hinkley,134,45,1.0,0,0.2
+Page-Hinkley,135,45,1.0,0,0.2
+Page-Hinkley,136,45,1.0,0,0.2
+Page-Hinkley,137,45,1.0,0,0.2
+Page-Hinkley,138,45,1.0,0,0.2
+Page-Hinkley,139,45,1.0,0,0.2
+Page-Hinkley,140,45,1.0,0,0.2
+Page-Hinkley,141,45,1.0,0,0.2
+Page-Hinkley,142,45,1.0,0,0.2
+Page-Hinkley,143,45,1.0,0,0.2
+Page-Hinkley,144,45,1.0,0,0.2
+Page-Hinkley,145,45,0.0,0,0.2
+Page-Hinkley,146,45,1.0,0,0.2
+Page-Hinkley,147,45,1.0,0,0.2
+Page-Hinkley,148,45,1.0,0,0.2
+Page-Hinkley,149,45,0.0,0,0.2
+RAPT,99,45,1.0,0,0.2
+RAPT,100,45,1.0,0,0.2
+RAPT,101,45,1.0,0,0.2
+RAPT,102,45,1.0,0,0.2
+RAPT,103,45,1.0,0,0.2
+RAPT,104,45,1.0,0,0.2
+RAPT,105,45,1.0,0,0.2
+RAPT,106,45,1.0,0,0.2
+RAPT,107,45,1.0,0,0.2
+RAPT,108,45,1.0,0,0.2
+RAPT,109,45,1.0,0,0.2
+RAPT,110,45,1.0,0,0.2
+RAPT,111,45,1.0,0,0.2
+RAPT,112,45,1.0,0,0.2
+RAPT,113,45,1.0,0,0.2
+RAPT,114,45,1.0,0,0.2
+RAPT,115,45,1.0,0,0.2
+RAPT,116,45,1.0,0,0.2
+RAPT,117,45,1.0,0,0.2
+RAPT,118,45,1.0,0,0.2
+RAPT,119,45,1.0,0,0.2
+RAPT,120,45,1.0,0,0.2
+RAPT,121,45,1.0,0,0.2
+RAPT,122,45,1.0,0,0.2
+RAPT,123,45,1.0,0,0.2
+RAPT,124,45,1.0,0,0.2
+RAPT,125,45,1.0,0,0.2
+RAPT,126,45,1.0,0,0.2
+RAPT,127,45,1.0,0,0.2
+RAPT,128,45,1.0,0,0.2
+RAPT,129,45,1.0,0,0.2
+RAPT,130,45,1.0,0,0.2
+RAPT,131,45,1.0,0,0.2
+RAPT,132,45,1.0,0,0.2
+RAPT,133,45,1.0,0,0.2
+RAPT,134,45,1.0,0,0.2
+RAPT,135,45,1.0,0,0.2
+RAPT,136,45,1.0,0,0.2
+RAPT,137,45,1.0,0,0.2
+RAPT,138,45,1.0,0,0.2
+RAPT,139,45,1.0,0,0.2
+RAPT,140,45,1.0,0,0.2
+RAPT,141,45,1.0,0,0.2
+RAPT,142,45,1.0,0,0.2
+RAPT,143,45,1.0,0,0.2
+RAPT,144,45,1.0,0,0.2
+RAPT,145,45,0.0,0,0.2
+RAPT,146,45,1.0,0,0.2
+RAPT,147,45,1.0,0,0.2
+RAPT,148,45,1.0,0,0.2
+RAPT,149,45,0.0,0,0.2
+RAPT-Guard,99,45,1.0,0,0.2
+RAPT-Guard,100,45,1.0,0,0.2
+RAPT-Guard,101,45,1.0,0,0.2
+RAPT-Guard,102,45,1.0,0,0.2
+RAPT-Guard,103,45,1.0,0,0.2
+RAPT-Guard,104,45,1.0,0,0.2
+RAPT-Guard,105,45,1.0,0,0.2
+RAPT-Guard,106,45,1.0,0,0.2
+RAPT-Guard,107,45,1.0,0,0.2
+RAPT-Guard,108,45,1.0,0,0.2
+RAPT-Guard,109,45,1.0,0,0.2
+RAPT-Guard,110,45,1.0,0,0.2
+RAPT-Guard,111,45,1.0,0,0.2
+RAPT-Guard,112,45,1.0,0,0.2
+RAPT-Guard,113,45,1.0,0,0.2
+RAPT-Guard,114,45,1.0,0,0.2
+RAPT-Guard,115,45,1.0,0,0.2
+RAPT-Guard,116,45,1.0,0,0.2
+RAPT-Guard,117,45,1.0,0,0.2
+RAPT-Guard,118,45,1.0,0,0.2
+RAPT-Guard,119,45,1.0,0,0.2
+RAPT-Guard,120,45,1.0,0,0.2
+RAPT-Guard,121,45,1.0,0,0.2
+RAPT-Guard,122,45,1.0,0,0.2
+RAPT-Guard,123,45,1.0,0,0.2
+RAPT-Guard,124,45,1.0,0,0.2
+RAPT-Guard,125,45,1.0,0,0.2
+RAPT-Guard,126,45,1.0,0,0.2
+RAPT-Guard,127,45,1.0,0,0.2
+RAPT-Guard,128,45,1.0,0,0.2
+RAPT-Guard,129,45,1.0,0,0.2
+RAPT-Guard,130,45,1.0,0,0.2
+RAPT-Guard,131,45,1.0,0,0.2
+RAPT-Guard,132,45,1.0,0,0.2
+RAPT-Guard,133,45,1.0,0,0.2
+RAPT-Guard,134,45,1.0,0,0.2
+RAPT-Guard,135,45,1.0,0,0.2
+RAPT-Guard,136,45,1.0,0,0.2
+RAPT-Guard,137,45,1.0,0,0.2
+RAPT-Guard,138,45,1.0,0,0.2
+RAPT-Guard,139,45,1.0,0,0.2
+RAPT-Guard,140,45,1.0,0,0.2
+RAPT-Guard,141,45,1.0,0,0.2
+RAPT-Guard,142,45,1.0,0,0.2
+RAPT-Guard,143,45,1.0,0,0.2
+RAPT-Guard,144,45,1.0,0,0.2
+RAPT-Guard,145,45,0.0,0,0.2
+RAPT-Guard,146,45,1.0,0,0.2
+RAPT-Guard,147,45,1.0,0,0.2
+RAPT-Guard,148,45,1.0,0,0.2
+RAPT-Guard,149,45,0.0,0,0.2
+RAPT-ED-Guard,99,45,1.0,0,0.2
+RAPT-ED-Guard,100,45,1.0,0,0.2
+RAPT-ED-Guard,101,45,1.0,0,0.2
+RAPT-ED-Guard,102,45,1.0,0,0.2
+RAPT-ED-Guard,103,45,1.0,0,0.2
+RAPT-ED-Guard,104,45,1.0,0,0.2
+RAPT-ED-Guard,105,45,1.0,0,0.2
+RAPT-ED-Guard,106,45,1.0,0,0.2
+RAPT-ED-Guard,107,45,1.0,0,0.2
+RAPT-ED-Guard,108,45,1.0,0,0.2
+RAPT-ED-Guard,109,45,1.0,0,0.2
+RAPT-ED-Guard,110,45,1.0,0,0.2
+RAPT-ED-Guard,111,45,1.0,0,0.2
+RAPT-ED-Guard,112,45,1.0,0,0.2
+RAPT-ED-Guard,113,45,1.0,0,0.2
+RAPT-ED-Guard,114,45,1.0,0,0.2
+RAPT-ED-Guard,115,45,1.0,0,0.2
+RAPT-ED-Guard,116,45,1.0,0,0.2
+RAPT-ED-Guard,117,45,1.0,0,0.2
+RAPT-ED-Guard,118,45,1.0,0,0.2
+RAPT-ED-Guard,119,45,1.0,0,0.2
+RAPT-ED-Guard,120,45,1.0,0,0.2
+RAPT-ED-Guard,121,45,1.0,0,0.2
+RAPT-ED-Guard,122,45,1.0,0,0.2
+RAPT-ED-Guard,123,45,1.0,0,0.2
+RAPT-ED-Guard,124,45,1.0,0,0.2
+RAPT-ED-Guard,125,45,1.0,0,0.2
+RAPT-ED-Guard,126,45,1.0,0,0.2
+RAPT-ED-Guard,127,45,1.0,0,0.2
+RAPT-ED-Guard,128,45,1.0,0,0.2
+RAPT-ED-Guard,129,45,1.0,0,0.2
+RAPT-ED-Guard,130,45,1.0,0,0.2
+RAPT-ED-Guard,131,45,1.0,0,0.2
+RAPT-ED-Guard,132,45,1.0,0,0.2
+RAPT-ED-Guard,133,45,1.0,0,0.2
+RAPT-ED-Guard,134,45,1.0,0,0.2
+RAPT-ED-Guard,135,45,1.0,0,0.2
+RAPT-ED-Guard,136,45,1.0,0,0.2
+RAPT-ED-Guard,137,45,1.0,0,0.2
+RAPT-ED-Guard,138,45,1.0,0,0.2
+RAPT-ED-Guard,139,45,1.0,0,0.2
+RAPT-ED-Guard,140,45,1.0,0,0.2
+RAPT-ED-Guard,141,45,1.0,0,0.2
+RAPT-ED-Guard,142,45,1.0,0,0.2
+RAPT-ED-Guard,143,45,1.0,0,0.2
+RAPT-ED-Guard,144,45,1.0,0,0.2
+RAPT-ED-Guard,145,45,0.0,1,0.2
+RAPT-ED-Guard,146,45,1.0,0,0.2
+RAPT-ED-Guard,147,45,1.0,0,0.2
+RAPT-ED-Guard,148,45,1.0,0,0.2
+RAPT-ED-Guard,149,45,0.0,0,0.2
+Frozen,99,46,1.0,0,0.2
+Frozen,100,46,1.0,0,0.2
+Frozen,101,46,1.0,0,0.2
+Frozen,102,46,1.0,0,0.2
+Frozen,103,46,1.0,0,0.2
+Frozen,104,46,1.0,0,0.2
+Frozen,105,46,1.0,0,0.2
+Frozen,106,46,1.0,0,0.2
+Frozen,107,46,1.0,0,0.2
+Frozen,108,46,1.0,0,0.2
+Frozen,109,46,1.0,0,0.2
+Frozen,110,46,1.0,0,0.2
+Frozen,111,46,1.0,0,0.2
+Frozen,112,46,1.0,0,0.2
+Frozen,113,46,1.0,0,0.2
+Frozen,114,46,1.0,0,0.2
+Frozen,115,46,1.0,0,0.2
+Frozen,116,46,1.0,0,0.2
+Frozen,117,46,1.0,0,0.2
+Frozen,118,46,1.0,0,0.2
+Frozen,119,46,1.0,0,0.2
+Frozen,120,46,1.0,0,0.2
+Frozen,121,46,1.0,0,0.2
+Frozen,122,46,1.0,0,0.2
+Frozen,123,46,1.0,0,0.2
+Frozen,124,46,1.0,0,0.2
+Frozen,125,46,1.0,0,0.2
+Frozen,126,46,1.0,0,0.2
+Frozen,127,46,1.0,0,0.2
+Frozen,128,46,1.0,0,0.2
+Frozen,129,46,1.0,0,0.2
+Frozen,130,46,1.0,0,0.2
+Frozen,131,46,1.0,0,0.2
+Frozen,132,46,1.0,0,0.2
+Frozen,133,46,1.0,0,0.2
+Frozen,134,46,1.0,0,0.2
+Frozen,135,46,1.0,0,0.2
+Frozen,136,46,1.0,0,0.2
+Frozen,137,46,1.0,0,0.2
+Frozen,138,46,1.0,0,0.2
+Frozen,139,46,1.0,0,0.2
+Frozen,140,46,1.0,0,0.2
+Frozen,141,46,1.0,0,0.2
+Frozen,142,46,1.0,0,0.2
+Frozen,143,46,1.0,0,0.2
+Frozen,144,46,1.0,0,0.2
+Frozen,145,46,0.0,0,0.2
+Frozen,146,46,1.0,0,0.2
+Frozen,147,46,1.0,0,0.2
+Frozen,148,46,1.0,0,0.2
+Frozen,149,46,0.0,0,0.2
+Event-Driven,99,46,1.0,0,0.2
+Event-Driven,100,46,1.0,0,0.2
+Event-Driven,101,46,1.0,0,0.2
+Event-Driven,102,46,1.0,0,0.2
+Event-Driven,103,46,1.0,0,0.2
+Event-Driven,104,46,1.0,0,0.2
+Event-Driven,105,46,1.0,0,0.2
+Event-Driven,106,46,1.0,0,0.2
+Event-Driven,107,46,1.0,0,0.2
+Event-Driven,108,46,1.0,0,0.2
+Event-Driven,109,46,1.0,0,0.2
+Event-Driven,110,46,1.0,0,0.2
+Event-Driven,111,46,1.0,0,0.2
+Event-Driven,112,46,1.0,0,0.2
+Event-Driven,113,46,1.0,0,0.2
+Event-Driven,114,46,1.0,0,0.2
+Event-Driven,115,46,1.0,0,0.2
+Event-Driven,116,46,1.0,0,0.2
+Event-Driven,117,46,1.0,0,0.2
+Event-Driven,118,46,1.0,0,0.2
+Event-Driven,119,46,1.0,0,0.2
+Event-Driven,120,46,1.0,0,0.2
+Event-Driven,121,46,1.0,0,0.2
+Event-Driven,122,46,1.0,0,0.2
+Event-Driven,123,46,1.0,0,0.2
+Event-Driven,124,46,1.0,0,0.2
+Event-Driven,125,46,1.0,0,0.2
+Event-Driven,126,46,1.0,0,0.2
+Event-Driven,127,46,1.0,0,0.2
+Event-Driven,128,46,1.0,0,0.2
+Event-Driven,129,46,1.0,0,0.2
+Event-Driven,130,46,1.0,0,0.2
+Event-Driven,131,46,1.0,0,0.2
+Event-Driven,132,46,1.0,0,0.2
+Event-Driven,133,46,1.0,0,0.2
+Event-Driven,134,46,1.0,0,0.2
+Event-Driven,135,46,1.0,0,0.2
+Event-Driven,136,46,1.0,0,0.2
+Event-Driven,137,46,1.0,0,0.2
+Event-Driven,138,46,1.0,0,0.2
+Event-Driven,139,46,1.0,0,0.2
+Event-Driven,140,46,1.0,0,0.2
+Event-Driven,141,46,1.0,0,0.2
+Event-Driven,142,46,1.0,0,0.2
+Event-Driven,143,46,1.0,0,0.2
+Event-Driven,144,46,1.0,0,0.2
+Event-Driven,145,46,0.0,0,0.2
+Event-Driven,146,46,1.0,0,0.2
+Event-Driven,147,46,1.0,0,0.2
+Event-Driven,148,46,1.0,0,0.2
+Event-Driven,149,46,0.0,0,0.2
+Full Retraining,99,46,1.0,0,0.2
+Full Retraining,100,46,1.0,0,0.2
+Full Retraining,101,46,1.0,0,0.2
+Full Retraining,102,46,1.0,0,0.2
+Full Retraining,103,46,1.0,0,0.2
+Full Retraining,104,46,1.0,0,0.2
+Full Retraining,105,46,1.0,0,0.2
+Full Retraining,106,46,1.0,0,0.2
+Full Retraining,107,46,1.0,0,0.2
+Full Retraining,108,46,1.0,0,0.2
+Full Retraining,109,46,1.0,0,0.2
+Full Retraining,110,46,1.0,0,0.2
+Full Retraining,111,46,1.0,0,0.2
+Full Retraining,112,46,1.0,0,0.2
+Full Retraining,113,46,1.0,0,0.2
+Full Retraining,114,46,1.0,0,0.2
+Full Retraining,115,46,1.0,0,0.2
+Full Retraining,116,46,1.0,0,0.2
+Full Retraining,117,46,1.0,0,0.2
+Full Retraining,118,46,1.0,0,0.2
+Full Retraining,119,46,1.0,0,0.2
+Full Retraining,120,46,1.0,0,0.2
+Full Retraining,121,46,1.0,0,0.2
+Full Retraining,122,46,1.0,0,0.2
+Full Retraining,123,46,1.0,0,0.2
+Full Retraining,124,46,1.0,0,0.2
+Full Retraining,125,46,1.0,0,0.2
+Full Retraining,126,46,1.0,0,0.2
+Full Retraining,127,46,1.0,0,0.2
+Full Retraining,128,46,1.0,0,0.2
+Full Retraining,129,46,1.0,0,0.2
+Full Retraining,130,46,1.0,0,0.2
+Full Retraining,131,46,1.0,0,0.2
+Full Retraining,132,46,1.0,0,0.2
+Full Retraining,133,46,1.0,0,0.2
+Full Retraining,134,46,1.0,0,0.2
+Full Retraining,135,46,1.0,0,0.2
+Full Retraining,136,46,1.0,0,0.2
+Full Retraining,137,46,1.0,0,0.2
+Full Retraining,138,46,1.0,0,0.2
+Full Retraining,139,46,1.0,0,0.2
+Full Retraining,140,46,1.0,0,0.2
+Full Retraining,141,46,1.0,0,0.2
+Full Retraining,142,46,1.0,0,0.2
+Full Retraining,143,46,1.0,0,0.2
+Full Retraining,144,46,1.0,0,0.2
+Full Retraining,145,46,0.0,0,0.2
+Full Retraining,146,46,1.0,0,0.2
+Full Retraining,147,46,1.0,0,0.2
+Full Retraining,148,46,1.0,0,0.2
+Full Retraining,149,46,0.0,0,0.2
+ADWIN,99,46,1.0,0,0.2
+ADWIN,100,46,1.0,0,0.2
+ADWIN,101,46,1.0,0,0.2
+ADWIN,102,46,1.0,0,0.2
+ADWIN,103,46,1.0,0,0.2
+ADWIN,104,46,1.0,0,0.2
+ADWIN,105,46,1.0,0,0.2
+ADWIN,106,46,1.0,0,0.2
+ADWIN,107,46,1.0,0,0.2
+ADWIN,108,46,1.0,0,0.2
+ADWIN,109,46,1.0,0,0.2
+ADWIN,110,46,1.0,0,0.2
+ADWIN,111,46,1.0,0,0.2
+ADWIN,112,46,1.0,0,0.2
+ADWIN,113,46,1.0,0,0.2
+ADWIN,114,46,1.0,0,0.2
+ADWIN,115,46,1.0,0,0.2
+ADWIN,116,46,1.0,0,0.2
+ADWIN,117,46,1.0,0,0.2
+ADWIN,118,46,1.0,0,0.2
+ADWIN,119,46,1.0,0,0.2
+ADWIN,120,46,1.0,0,0.2
+ADWIN,121,46,1.0,0,0.2
+ADWIN,122,46,1.0,0,0.2
+ADWIN,123,46,1.0,0,0.2
+ADWIN,124,46,1.0,0,0.2
+ADWIN,125,46,1.0,0,0.2
+ADWIN,126,46,1.0,0,0.2
+ADWIN,127,46,1.0,0,0.2
+ADWIN,128,46,1.0,0,0.2
+ADWIN,129,46,1.0,0,0.2
+ADWIN,130,46,1.0,0,0.2
+ADWIN,131,46,1.0,0,0.2
+ADWIN,132,46,1.0,0,0.2
+ADWIN,133,46,1.0,0,0.2
+ADWIN,134,46,1.0,0,0.2
+ADWIN,135,46,1.0,0,0.2
+ADWIN,136,46,1.0,0,0.2
+ADWIN,137,46,1.0,0,0.2
+ADWIN,138,46,1.0,0,0.2
+ADWIN,139,46,1.0,0,0.2
+ADWIN,140,46,1.0,0,0.2
+ADWIN,141,46,1.0,0,0.2
+ADWIN,142,46,1.0,0,0.2
+ADWIN,143,46,1.0,0,0.2
+ADWIN,144,46,1.0,0,0.2
+ADWIN,145,46,0.0,0,0.2
+ADWIN,146,46,1.0,0,0.2
+ADWIN,147,46,1.0,0,0.2
+ADWIN,148,46,1.0,0,0.2
+ADWIN,149,46,0.0,0,0.2
+Page-Hinkley,99,46,1.0,0,0.2
+Page-Hinkley,100,46,1.0,0,0.2
+Page-Hinkley,101,46,1.0,0,0.2
+Page-Hinkley,102,46,1.0,0,0.2
+Page-Hinkley,103,46,1.0,0,0.2
+Page-Hinkley,104,46,1.0,0,0.2
+Page-Hinkley,105,46,1.0,0,0.2
+Page-Hinkley,106,46,1.0,0,0.2
+Page-Hinkley,107,46,1.0,0,0.2
+Page-Hinkley,108,46,1.0,0,0.2
+Page-Hinkley,109,46,1.0,0,0.2
+Page-Hinkley,110,46,1.0,0,0.2
+Page-Hinkley,111,46,1.0,0,0.2
+Page-Hinkley,112,46,1.0,0,0.2
+Page-Hinkley,113,46,1.0,0,0.2
+Page-Hinkley,114,46,1.0,0,0.2
+Page-Hinkley,115,46,1.0,0,0.2
+Page-Hinkley,116,46,1.0,0,0.2
+Page-Hinkley,117,46,1.0,0,0.2
+Page-Hinkley,118,46,1.0,0,0.2
+Page-Hinkley,119,46,1.0,0,0.2
+Page-Hinkley,120,46,1.0,0,0.2
+Page-Hinkley,121,46,1.0,0,0.2
+Page-Hinkley,122,46,1.0,0,0.2
+Page-Hinkley,123,46,1.0,0,0.2
+Page-Hinkley,124,46,1.0,0,0.2
+Page-Hinkley,125,46,1.0,0,0.2
+Page-Hinkley,126,46,1.0,0,0.2
+Page-Hinkley,127,46,1.0,0,0.2
+Page-Hinkley,128,46,1.0,0,0.2
+Page-Hinkley,129,46,1.0,0,0.2
+Page-Hinkley,130,46,1.0,0,0.2
+Page-Hinkley,131,46,1.0,0,0.2
+Page-Hinkley,132,46,1.0,0,0.2
+Page-Hinkley,133,46,1.0,0,0.2
+Page-Hinkley,134,46,1.0,0,0.2
+Page-Hinkley,135,46,1.0,0,0.2
+Page-Hinkley,136,46,1.0,0,0.2
+Page-Hinkley,137,46,1.0,0,0.2
+Page-Hinkley,138,46,1.0,0,0.2
+Page-Hinkley,139,46,1.0,0,0.2
+Page-Hinkley,140,46,1.0,0,0.2
+Page-Hinkley,141,46,1.0,0,0.2
+Page-Hinkley,142,46,1.0,0,0.2
+Page-Hinkley,143,46,1.0,0,0.2
+Page-Hinkley,144,46,1.0,0,0.2
+Page-Hinkley,145,46,0.0,0,0.2
+Page-Hinkley,146,46,1.0,0,0.2
+Page-Hinkley,147,46,1.0,0,0.2
+Page-Hinkley,148,46,1.0,0,0.2
+Page-Hinkley,149,46,0.0,0,0.2
+RAPT,99,46,1.0,0,0.2
+RAPT,100,46,1.0,0,0.2
+RAPT,101,46,1.0,0,0.2
+RAPT,102,46,1.0,0,0.2
+RAPT,103,46,1.0,0,0.2
+RAPT,104,46,1.0,0,0.2
+RAPT,105,46,1.0,0,0.2
+RAPT,106,46,1.0,0,0.2
+RAPT,107,46,1.0,0,0.2
+RAPT,108,46,1.0,0,0.2
+RAPT,109,46,1.0,0,0.2
+RAPT,110,46,1.0,0,0.2
+RAPT,111,46,1.0,0,0.2
+RAPT,112,46,1.0,0,0.2
+RAPT,113,46,1.0,0,0.2
+RAPT,114,46,1.0,0,0.2
+RAPT,115,46,1.0,0,0.2
+RAPT,116,46,1.0,0,0.2
+RAPT,117,46,1.0,0,0.2
+RAPT,118,46,1.0,0,0.2
+RAPT,119,46,1.0,0,0.2
+RAPT,120,46,1.0,0,0.2
+RAPT,121,46,1.0,0,0.2
+RAPT,122,46,1.0,0,0.2
+RAPT,123,46,1.0,0,0.2
+RAPT,124,46,1.0,0,0.2
+RAPT,125,46,1.0,0,0.2
+RAPT,126,46,1.0,0,0.2
+RAPT,127,46,1.0,0,0.2
+RAPT,128,46,1.0,0,0.2
+RAPT,129,46,1.0,0,0.2
+RAPT,130,46,1.0,0,0.2
+RAPT,131,46,1.0,0,0.2
+RAPT,132,46,1.0,0,0.2
+RAPT,133,46,1.0,0,0.2
+RAPT,134,46,1.0,0,0.2
+RAPT,135,46,1.0,0,0.2
+RAPT,136,46,1.0,0,0.2
+RAPT,137,46,1.0,0,0.2
+RAPT,138,46,1.0,0,0.2
+RAPT,139,46,1.0,0,0.2
+RAPT,140,46,1.0,0,0.2
+RAPT,141,46,1.0,0,0.2
+RAPT,142,46,1.0,0,0.2
+RAPT,143,46,1.0,0,0.2
+RAPT,144,46,1.0,0,0.2
+RAPT,145,46,0.0,0,0.2
+RAPT,146,46,1.0,0,0.2
+RAPT,147,46,1.0,0,0.2
+RAPT,148,46,1.0,0,0.2
+RAPT,149,46,0.0,0,0.2
+RAPT-Guard,99,46,1.0,0,0.2
+RAPT-Guard,100,46,1.0,0,0.2
+RAPT-Guard,101,46,1.0,0,0.2
+RAPT-Guard,102,46,1.0,0,0.2
+RAPT-Guard,103,46,1.0,0,0.2
+RAPT-Guard,104,46,1.0,0,0.2
+RAPT-Guard,105,46,1.0,0,0.2
+RAPT-Guard,106,46,1.0,0,0.2
+RAPT-Guard,107,46,1.0,0,0.2
+RAPT-Guard,108,46,1.0,0,0.2
+RAPT-Guard,109,46,1.0,0,0.2
+RAPT-Guard,110,46,1.0,0,0.2
+RAPT-Guard,111,46,1.0,0,0.2
+RAPT-Guard,112,46,1.0,0,0.2
+RAPT-Guard,113,46,1.0,0,0.2
+RAPT-Guard,114,46,1.0,0,0.2
+RAPT-Guard,115,46,1.0,0,0.2
+RAPT-Guard,116,46,1.0,0,0.2
+RAPT-Guard,117,46,1.0,0,0.2
+RAPT-Guard,118,46,1.0,0,0.2
+RAPT-Guard,119,46,1.0,0,0.2
+RAPT-Guard,120,46,1.0,0,0.2
+RAPT-Guard,121,46,1.0,0,0.2
+RAPT-Guard,122,46,1.0,0,0.2
+RAPT-Guard,123,46,1.0,0,0.2
+RAPT-Guard,124,46,1.0,0,0.2
+RAPT-Guard,125,46,1.0,0,0.2
+RAPT-Guard,126,46,1.0,0,0.2
+RAPT-Guard,127,46,1.0,0,0.2
+RAPT-Guard,128,46,1.0,0,0.2
+RAPT-Guard,129,46,1.0,0,0.2
+RAPT-Guard,130,46,1.0,0,0.2
+RAPT-Guard,131,46,1.0,0,0.2
+RAPT-Guard,132,46,1.0,0,0.2
+RAPT-Guard,133,46,1.0,0,0.2
+RAPT-Guard,134,46,1.0,0,0.2
+RAPT-Guard,135,46,1.0,0,0.2
+RAPT-Guard,136,46,1.0,0,0.2
+RAPT-Guard,137,46,1.0,0,0.2
+RAPT-Guard,138,46,1.0,0,0.2
+RAPT-Guard,139,46,1.0,0,0.2
+RAPT-Guard,140,46,1.0,0,0.2
+RAPT-Guard,141,46,1.0,0,0.2
+RAPT-Guard,142,46,1.0,0,0.2
+RAPT-Guard,143,46,1.0,0,0.2
+RAPT-Guard,144,46,1.0,0,0.2
+RAPT-Guard,145,46,0.0,0,0.2
+RAPT-Guard,146,46,1.0,0,0.2
+RAPT-Guard,147,46,1.0,0,0.2
+RAPT-Guard,148,46,1.0,0,0.2
+RAPT-Guard,149,46,0.0,0,0.2
+RAPT-ED-Guard,99,46,1.0,0,0.2
+RAPT-ED-Guard,100,46,1.0,0,0.2
+RAPT-ED-Guard,101,46,1.0,0,0.2
+RAPT-ED-Guard,102,46,1.0,0,0.2
+RAPT-ED-Guard,103,46,1.0,0,0.2
+RAPT-ED-Guard,104,46,1.0,0,0.2
+RAPT-ED-Guard,105,46,1.0,0,0.2
+RAPT-ED-Guard,106,46,1.0,0,0.2
+RAPT-ED-Guard,107,46,1.0,0,0.2
+RAPT-ED-Guard,108,46,1.0,0,0.2
+RAPT-ED-Guard,109,46,1.0,0,0.2
+RAPT-ED-Guard,110,46,1.0,0,0.2
+RAPT-ED-Guard,111,46,1.0,0,0.2
+RAPT-ED-Guard,112,46,1.0,0,0.2
+RAPT-ED-Guard,113,46,1.0,0,0.2
+RAPT-ED-Guard,114,46,1.0,0,0.2
+RAPT-ED-Guard,115,46,1.0,0,0.2
+RAPT-ED-Guard,116,46,1.0,0,0.2
+RAPT-ED-Guard,117,46,1.0,0,0.2
+RAPT-ED-Guard,118,46,1.0,0,0.2
+RAPT-ED-Guard,119,46,1.0,0,0.2
+RAPT-ED-Guard,120,46,1.0,0,0.2
+RAPT-ED-Guard,121,46,1.0,0,0.2
+RAPT-ED-Guard,122,46,1.0,0,0.2
+RAPT-ED-Guard,123,46,1.0,0,0.2
+RAPT-ED-Guard,124,46,1.0,0,0.2
+RAPT-ED-Guard,125,46,1.0,0,0.2
+RAPT-ED-Guard,126,46,1.0,0,0.2
+RAPT-ED-Guard,127,46,1.0,0,0.2
+RAPT-ED-Guard,128,46,1.0,0,0.2
+RAPT-ED-Guard,129,46,1.0,0,0.2
+RAPT-ED-Guard,130,46,1.0,0,0.2
+RAPT-ED-Guard,131,46,1.0,0,0.2
+RAPT-ED-Guard,132,46,1.0,0,0.2
+RAPT-ED-Guard,133,46,1.0,0,0.2
+RAPT-ED-Guard,134,46,1.0,0,0.2
+RAPT-ED-Guard,135,46,1.0,0,0.2
+RAPT-ED-Guard,136,46,1.0,0,0.2
+RAPT-ED-Guard,137,46,1.0,0,0.2
+RAPT-ED-Guard,138,46,1.0,0,0.2
+RAPT-ED-Guard,139,46,1.0,0,0.2
+RAPT-ED-Guard,140,46,1.0,0,0.2
+RAPT-ED-Guard,141,46,1.0,0,0.2
+RAPT-ED-Guard,142,46,1.0,0,0.2
+RAPT-ED-Guard,143,46,1.0,0,0.2
+RAPT-ED-Guard,144,46,1.0,0,0.2
+RAPT-ED-Guard,145,46,0.0,1,0.2
+RAPT-ED-Guard,146,46,1.0,0,0.2
+RAPT-ED-Guard,147,46,1.0,0,0.2
+RAPT-ED-Guard,148,46,1.0,0,0.2
+RAPT-ED-Guard,149,46,1.0,0,0.2
+Frozen,99,42,1.0,0,0.5
+Frozen,100,42,1.0,0,0.5
+Frozen,101,42,1.0,0,0.5
+Frozen,102,42,1.0,0,0.5
+Frozen,103,42,1.0,0,0.5
+Frozen,104,42,1.0,0,0.5
+Frozen,105,42,1.0,0,0.5
+Frozen,106,42,1.0,0,0.5
+Frozen,107,42,1.0,0,0.5
+Frozen,108,42,1.0,0,0.5
+Frozen,109,42,1.0,0,0.5
+Frozen,110,42,1.0,0,0.5
+Frozen,111,42,1.0,0,0.5
+Frozen,112,42,1.0,0,0.5
+Frozen,113,42,1.0,0,0.5
+Frozen,114,42,1.0,0,0.5
+Frozen,115,42,1.0,0,0.5
+Frozen,116,42,1.0,0,0.5
+Frozen,117,42,1.0,0,0.5
+Frozen,118,42,1.0,0,0.5
+Frozen,119,42,1.0,0,0.5
+Frozen,120,42,1.0,0,0.5
+Frozen,121,42,1.0,0,0.5
+Frozen,122,42,1.0,0,0.5
+Frozen,123,42,1.0,0,0.5
+Frozen,124,42,1.0,0,0.5
+Frozen,125,42,1.0,0,0.5
+Frozen,126,42,1.0,0,0.5
+Frozen,127,42,1.0,0,0.5
+Frozen,128,42,1.0,0,0.5
+Frozen,129,42,1.0,0,0.5
+Frozen,130,42,1.0,0,0.5
+Frozen,131,42,1.0,0,0.5
+Frozen,132,42,0.0,0,0.5
+Frozen,133,42,1.0,0,0.5
+Frozen,134,42,1.0,0,0.5
+Frozen,135,42,1.0,0,0.5
+Frozen,136,42,1.0,0,0.5
+Frozen,137,42,1.0,0,0.5
+Frozen,138,42,1.0,0,0.5
+Frozen,139,42,1.0,0,0.5
+Frozen,140,42,1.0,0,0.5
+Frozen,141,42,1.0,0,0.5
+Frozen,142,42,1.0,0,0.5
+Frozen,143,42,0.0,0,0.5
+Frozen,144,42,0.0,1,0.5
+Frozen,145,42,0.0,0,0.5
+Frozen,146,42,0.0,0,0.5
+Frozen,147,42,1.0,1,0.5
+Frozen,148,42,1.0,0,0.5
+Frozen,149,42,0.0,0,0.5
+Event-Driven,99,42,1.0,0,0.5
+Event-Driven,100,42,1.0,0,0.5
+Event-Driven,101,42,1.0,0,0.5
+Event-Driven,102,42,1.0,0,0.5
+Event-Driven,103,42,1.0,0,0.5
+Event-Driven,104,42,1.0,0,0.5
+Event-Driven,105,42,1.0,0,0.5
+Event-Driven,106,42,1.0,0,0.5
+Event-Driven,107,42,1.0,0,0.5
+Event-Driven,108,42,1.0,0,0.5
+Event-Driven,109,42,1.0,0,0.5
+Event-Driven,110,42,1.0,0,0.5
+Event-Driven,111,42,1.0,0,0.5
+Event-Driven,112,42,1.0,0,0.5
+Event-Driven,113,42,1.0,0,0.5
+Event-Driven,114,42,1.0,0,0.5
+Event-Driven,115,42,1.0,0,0.5
+Event-Driven,116,42,1.0,0,0.5
+Event-Driven,117,42,1.0,0,0.5
+Event-Driven,118,42,1.0,0,0.5
+Event-Driven,119,42,1.0,0,0.5
+Event-Driven,120,42,1.0,0,0.5
+Event-Driven,121,42,1.0,0,0.5
+Event-Driven,122,42,1.0,0,0.5
+Event-Driven,123,42,1.0,0,0.5
+Event-Driven,124,42,1.0,0,0.5
+Event-Driven,125,42,1.0,0,0.5
+Event-Driven,126,42,1.0,0,0.5
+Event-Driven,127,42,1.0,0,0.5
+Event-Driven,128,42,1.0,0,0.5
+Event-Driven,129,42,1.0,0,0.5
+Event-Driven,130,42,1.0,0,0.5
+Event-Driven,131,42,1.0,0,0.5
+Event-Driven,132,42,0.0,0,0.5
+Event-Driven,133,42,1.0,0,0.5
+Event-Driven,134,42,1.0,0,0.5
+Event-Driven,135,42,1.0,0,0.5
+Event-Driven,136,42,1.0,0,0.5
+Event-Driven,137,42,1.0,0,0.5
+Event-Driven,138,42,1.0,0,0.5
+Event-Driven,139,42,1.0,0,0.5
+Event-Driven,140,42,1.0,0,0.5
+Event-Driven,141,42,1.0,0,0.5
+Event-Driven,142,42,1.0,0,0.5
+Event-Driven,143,42,0.0,0,0.5
+Event-Driven,144,42,0.0,1,0.5
+Event-Driven,145,42,0.0,0,0.5
+Event-Driven,146,42,0.0,0,0.5
+Event-Driven,147,42,1.0,1,0.5
+Event-Driven,148,42,1.0,0,0.5
+Event-Driven,149,42,0.0,0,0.5
+Full Retraining,99,42,1.0,0,0.5
+Full Retraining,100,42,1.0,0,0.5
+Full Retraining,101,42,1.0,0,0.5
+Full Retraining,102,42,1.0,0,0.5
+Full Retraining,103,42,1.0,0,0.5
+Full Retraining,104,42,1.0,0,0.5
+Full Retraining,105,42,1.0,0,0.5
+Full Retraining,106,42,1.0,0,0.5
+Full Retraining,107,42,1.0,0,0.5
+Full Retraining,108,42,1.0,0,0.5
+Full Retraining,109,42,1.0,0,0.5
+Full Retraining,110,42,1.0,0,0.5
+Full Retraining,111,42,1.0,0,0.5
+Full Retraining,112,42,1.0,0,0.5
+Full Retraining,113,42,1.0,0,0.5
+Full Retraining,114,42,1.0,0,0.5
+Full Retraining,115,42,1.0,0,0.5
+Full Retraining,116,42,1.0,0,0.5
+Full Retraining,117,42,1.0,0,0.5
+Full Retraining,118,42,1.0,0,0.5
+Full Retraining,119,42,1.0,0,0.5
+Full Retraining,120,42,1.0,0,0.5
+Full Retraining,121,42,1.0,0,0.5
+Full Retraining,122,42,1.0,0,0.5
+Full Retraining,123,42,1.0,0,0.5
+Full Retraining,124,42,1.0,0,0.5
+Full Retraining,125,42,1.0,0,0.5
+Full Retraining,126,42,1.0,0,0.5
+Full Retraining,127,42,1.0,0,0.5
+Full Retraining,128,42,1.0,0,0.5
+Full Retraining,129,42,1.0,0,0.5
+Full Retraining,130,42,1.0,0,0.5
+Full Retraining,131,42,1.0,0,0.5
+Full Retraining,132,42,0.0,0,0.5
+Full Retraining,133,42,1.0,0,0.5
+Full Retraining,134,42,1.0,0,0.5
+Full Retraining,135,42,1.0,0,0.5
+Full Retraining,136,42,1.0,0,0.5
+Full Retraining,137,42,1.0,0,0.5
+Full Retraining,138,42,1.0,0,0.5
+Full Retraining,139,42,1.0,0,0.5
+Full Retraining,140,42,1.0,0,0.5
+Full Retraining,141,42,1.0,0,0.5
+Full Retraining,142,42,1.0,0,0.5
+Full Retraining,143,42,0.0,0,0.5
+Full Retraining,144,42,0.0,1,0.5
+Full Retraining,145,42,0.0,0,0.5
+Full Retraining,146,42,0.0,0,0.5
+Full Retraining,147,42,1.0,1,0.5
+Full Retraining,148,42,1.0,0,0.5
+Full Retraining,149,42,0.0,0,0.5
+ADWIN,99,42,1.0,0,0.5
+ADWIN,100,42,1.0,0,0.5
+ADWIN,101,42,1.0,0,0.5
+ADWIN,102,42,1.0,0,0.5
+ADWIN,103,42,1.0,0,0.5
+ADWIN,104,42,1.0,0,0.5
+ADWIN,105,42,1.0,0,0.5
+ADWIN,106,42,1.0,0,0.5
+ADWIN,107,42,1.0,0,0.5
+ADWIN,108,42,1.0,0,0.5
+ADWIN,109,42,1.0,0,0.5
+ADWIN,110,42,1.0,0,0.5
+ADWIN,111,42,1.0,0,0.5
+ADWIN,112,42,1.0,0,0.5
+ADWIN,113,42,1.0,0,0.5
+ADWIN,114,42,1.0,0,0.5
+ADWIN,115,42,1.0,0,0.5
+ADWIN,116,42,1.0,0,0.5
+ADWIN,117,42,1.0,0,0.5
+ADWIN,118,42,1.0,0,0.5
+ADWIN,119,42,1.0,0,0.5
+ADWIN,120,42,1.0,0,0.5
+ADWIN,121,42,1.0,0,0.5
+ADWIN,122,42,1.0,0,0.5
+ADWIN,123,42,1.0,0,0.5
+ADWIN,124,42,1.0,0,0.5
+ADWIN,125,42,1.0,0,0.5
+ADWIN,126,42,1.0,0,0.5
+ADWIN,127,42,1.0,0,0.5
+ADWIN,128,42,1.0,0,0.5
+ADWIN,129,42,1.0,0,0.5
+ADWIN,130,42,1.0,0,0.5
+ADWIN,131,42,1.0,0,0.5
+ADWIN,132,42,0.0,0,0.5
+ADWIN,133,42,1.0,0,0.5
+ADWIN,134,42,1.0,0,0.5
+ADWIN,135,42,1.0,0,0.5
+ADWIN,136,42,1.0,0,0.5
+ADWIN,137,42,1.0,0,0.5
+ADWIN,138,42,1.0,0,0.5
+ADWIN,139,42,1.0,0,0.5
+ADWIN,140,42,1.0,0,0.5
+ADWIN,141,42,1.0,0,0.5
+ADWIN,142,42,1.0,0,0.5
+ADWIN,143,42,0.0,0,0.5
+ADWIN,144,42,0.0,0,0.5
+ADWIN,145,42,0.0,0,0.5
+ADWIN,146,42,0.0,0,0.5
+ADWIN,147,42,1.0,0,0.5
+ADWIN,148,42,1.0,0,0.5
+ADWIN,149,42,0.0,0,0.5
+Page-Hinkley,99,42,1.0,0,0.5
+Page-Hinkley,100,42,1.0,0,0.5
+Page-Hinkley,101,42,1.0,0,0.5
+Page-Hinkley,102,42,1.0,0,0.5
+Page-Hinkley,103,42,1.0,0,0.5
+Page-Hinkley,104,42,1.0,0,0.5
+Page-Hinkley,105,42,1.0,0,0.5
+Page-Hinkley,106,42,1.0,0,0.5
+Page-Hinkley,107,42,1.0,0,0.5
+Page-Hinkley,108,42,1.0,0,0.5
+Page-Hinkley,109,42,1.0,0,0.5
+Page-Hinkley,110,42,1.0,0,0.5
+Page-Hinkley,111,42,1.0,0,0.5
+Page-Hinkley,112,42,1.0,0,0.5
+Page-Hinkley,113,42,1.0,0,0.5
+Page-Hinkley,114,42,1.0,0,0.5
+Page-Hinkley,115,42,1.0,0,0.5
+Page-Hinkley,116,42,1.0,0,0.5
+Page-Hinkley,117,42,1.0,0,0.5
+Page-Hinkley,118,42,1.0,0,0.5
+Page-Hinkley,119,42,1.0,0,0.5
+Page-Hinkley,120,42,1.0,0,0.5
+Page-Hinkley,121,42,1.0,0,0.5
+Page-Hinkley,122,42,1.0,0,0.5
+Page-Hinkley,123,42,1.0,0,0.5
+Page-Hinkley,124,42,1.0,0,0.5
+Page-Hinkley,125,42,1.0,0,0.5
+Page-Hinkley,126,42,1.0,0,0.5
+Page-Hinkley,127,42,1.0,0,0.5
+Page-Hinkley,128,42,1.0,0,0.5
+Page-Hinkley,129,42,1.0,0,0.5
+Page-Hinkley,130,42,1.0,0,0.5
+Page-Hinkley,131,42,1.0,0,0.5
+Page-Hinkley,132,42,0.0,0,0.5
+Page-Hinkley,133,42,1.0,0,0.5
+Page-Hinkley,134,42,1.0,0,0.5
+Page-Hinkley,135,42,1.0,0,0.5
+Page-Hinkley,136,42,1.0,0,0.5
+Page-Hinkley,137,42,1.0,0,0.5
+Page-Hinkley,138,42,1.0,0,0.5
+Page-Hinkley,139,42,1.0,0,0.5
+Page-Hinkley,140,42,1.0,0,0.5
+Page-Hinkley,141,42,1.0,0,0.5
+Page-Hinkley,142,42,1.0,0,0.5
+Page-Hinkley,143,42,0.0,0,0.5
+Page-Hinkley,144,42,0.0,0,0.5
+Page-Hinkley,145,42,0.0,0,0.5
+Page-Hinkley,146,42,0.0,0,0.5
+Page-Hinkley,147,42,1.0,0,0.5
+Page-Hinkley,148,42,1.0,0,0.5
+Page-Hinkley,149,42,0.0,0,0.5
+RAPT,99,42,1.0,0,0.5
+RAPT,100,42,1.0,0,0.5
+RAPT,101,42,1.0,0,0.5
+RAPT,102,42,1.0,0,0.5
+RAPT,103,42,1.0,0,0.5
+RAPT,104,42,1.0,0,0.5
+RAPT,105,42,1.0,0,0.5
+RAPT,106,42,1.0,0,0.5
+RAPT,107,42,1.0,0,0.5
+RAPT,108,42,1.0,0,0.5
+RAPT,109,42,1.0,0,0.5
+RAPT,110,42,1.0,0,0.5
+RAPT,111,42,1.0,0,0.5
+RAPT,112,42,1.0,0,0.5
+RAPT,113,42,1.0,0,0.5
+RAPT,114,42,1.0,0,0.5
+RAPT,115,42,1.0,0,0.5
+RAPT,116,42,1.0,0,0.5
+RAPT,117,42,1.0,0,0.5
+RAPT,118,42,1.0,0,0.5
+RAPT,119,42,1.0,0,0.5
+RAPT,120,42,1.0,0,0.5
+RAPT,121,42,1.0,0,0.5
+RAPT,122,42,1.0,0,0.5
+RAPT,123,42,1.0,0,0.5
+RAPT,124,42,1.0,0,0.5
+RAPT,125,42,1.0,0,0.5
+RAPT,126,42,1.0,0,0.5
+RAPT,127,42,1.0,0,0.5
+RAPT,128,42,1.0,0,0.5
+RAPT,129,42,1.0,0,0.5
+RAPT,130,42,1.0,0,0.5
+RAPT,131,42,1.0,0,0.5
+RAPT,132,42,0.0,0,0.5
+RAPT,133,42,1.0,0,0.5
+RAPT,134,42,1.0,0,0.5
+RAPT,135,42,1.0,0,0.5
+RAPT,136,42,1.0,0,0.5
+RAPT,137,42,1.0,0,0.5
+RAPT,138,42,1.0,0,0.5
+RAPT,139,42,1.0,0,0.5
+RAPT,140,42,1.0,0,0.5
+RAPT,141,42,1.0,0,0.5
+RAPT,142,42,1.0,0,0.5
+RAPT,143,42,0.0,0,0.5
+RAPT,144,42,0.0,1,0.5
+RAPT,145,42,0.0,0,0.5
+RAPT,146,42,1.0,0,0.5
+RAPT,147,42,1.0,0,0.5
+RAPT,148,42,1.0,0,0.5
+RAPT,149,42,0.0,0,0.5
+RAPT-Guard,99,42,1.0,0,0.5
+RAPT-Guard,100,42,1.0,0,0.5
+RAPT-Guard,101,42,1.0,0,0.5
+RAPT-Guard,102,42,1.0,0,0.5
+RAPT-Guard,103,42,1.0,0,0.5
+RAPT-Guard,104,42,1.0,0,0.5
+RAPT-Guard,105,42,1.0,0,0.5
+RAPT-Guard,106,42,1.0,0,0.5
+RAPT-Guard,107,42,1.0,0,0.5
+RAPT-Guard,108,42,1.0,0,0.5
+RAPT-Guard,109,42,1.0,0,0.5
+RAPT-Guard,110,42,1.0,0,0.5
+RAPT-Guard,111,42,1.0,0,0.5
+RAPT-Guard,112,42,1.0,0,0.5
+RAPT-Guard,113,42,1.0,0,0.5
+RAPT-Guard,114,42,1.0,0,0.5
+RAPT-Guard,115,42,1.0,0,0.5
+RAPT-Guard,116,42,1.0,0,0.5
+RAPT-Guard,117,42,1.0,0,0.5
+RAPT-Guard,118,42,1.0,0,0.5
+RAPT-Guard,119,42,1.0,0,0.5
+RAPT-Guard,120,42,1.0,0,0.5
+RAPT-Guard,121,42,1.0,0,0.5
+RAPT-Guard,122,42,1.0,0,0.5
+RAPT-Guard,123,42,1.0,0,0.5
+RAPT-Guard,124,42,1.0,0,0.5
+RAPT-Guard,125,42,1.0,0,0.5
+RAPT-Guard,126,42,1.0,0,0.5
+RAPT-Guard,127,42,1.0,0,0.5
+RAPT-Guard,128,42,1.0,0,0.5
+RAPT-Guard,129,42,1.0,0,0.5
+RAPT-Guard,130,42,1.0,0,0.5
+RAPT-Guard,131,42,1.0,0,0.5
+RAPT-Guard,132,42,0.0,0,0.5
+RAPT-Guard,133,42,1.0,0,0.5
+RAPT-Guard,134,42,1.0,0,0.5
+RAPT-Guard,135,42,1.0,0,0.5
+RAPT-Guard,136,42,1.0,0,0.5
+RAPT-Guard,137,42,1.0,0,0.5
+RAPT-Guard,138,42,1.0,0,0.5
+RAPT-Guard,139,42,1.0,0,0.5
+RAPT-Guard,140,42,1.0,0,0.5
+RAPT-Guard,141,42,1.0,0,0.5
+RAPT-Guard,142,42,1.0,0,0.5
+RAPT-Guard,143,42,0.0,0,0.5
+RAPT-Guard,144,42,0.0,0,0.5
+RAPT-Guard,145,42,0.0,0,0.5
+RAPT-Guard,146,42,0.0,0,0.5
+RAPT-Guard,147,42,1.0,0,0.5
+RAPT-Guard,148,42,1.0,0,0.5
+RAPT-Guard,149,42,0.0,0,0.5
+RAPT-ED-Guard,99,42,1.0,0,0.5
+RAPT-ED-Guard,100,42,1.0,0,0.5
+RAPT-ED-Guard,101,42,1.0,0,0.5
+RAPT-ED-Guard,102,42,1.0,0,0.5
+RAPT-ED-Guard,103,42,1.0,0,0.5
+RAPT-ED-Guard,104,42,1.0,0,0.5
+RAPT-ED-Guard,105,42,1.0,0,0.5
+RAPT-ED-Guard,106,42,1.0,0,0.5
+RAPT-ED-Guard,107,42,1.0,0,0.5
+RAPT-ED-Guard,108,42,1.0,0,0.5
+RAPT-ED-Guard,109,42,1.0,0,0.5
+RAPT-ED-Guard,110,42,1.0,0,0.5
+RAPT-ED-Guard,111,42,1.0,0,0.5
+RAPT-ED-Guard,112,42,1.0,0,0.5
+RAPT-ED-Guard,113,42,1.0,0,0.5
+RAPT-ED-Guard,114,42,1.0,0,0.5
+RAPT-ED-Guard,115,42,1.0,0,0.5
+RAPT-ED-Guard,116,42,1.0,0,0.5
+RAPT-ED-Guard,117,42,1.0,0,0.5
+RAPT-ED-Guard,118,42,1.0,0,0.5
+RAPT-ED-Guard,119,42,1.0,0,0.5
+RAPT-ED-Guard,120,42,1.0,0,0.5
+RAPT-ED-Guard,121,42,1.0,0,0.5
+RAPT-ED-Guard,122,42,1.0,0,0.5
+RAPT-ED-Guard,123,42,1.0,0,0.5
+RAPT-ED-Guard,124,42,1.0,0,0.5
+RAPT-ED-Guard,125,42,1.0,0,0.5
+RAPT-ED-Guard,126,42,1.0,0,0.5
+RAPT-ED-Guard,127,42,1.0,0,0.5
+RAPT-ED-Guard,128,42,1.0,0,0.5
+RAPT-ED-Guard,129,42,1.0,0,0.5
+RAPT-ED-Guard,130,42,1.0,0,0.5
+RAPT-ED-Guard,131,42,1.0,0,0.5
+RAPT-ED-Guard,132,42,0.0,1,0.5
+RAPT-ED-Guard,133,42,1.0,0,0.5
+RAPT-ED-Guard,134,42,1.0,0,0.5
+RAPT-ED-Guard,135,42,1.0,0,0.5
+RAPT-ED-Guard,136,42,1.0,0,0.5
+RAPT-ED-Guard,137,42,1.0,0,0.5
+RAPT-ED-Guard,138,42,1.0,0,0.5
+RAPT-ED-Guard,139,42,1.0,0,0.5
+RAPT-ED-Guard,140,42,1.0,0,0.5
+RAPT-ED-Guard,141,42,1.0,0,0.5
+RAPT-ED-Guard,142,42,1.0,0,0.5
+RAPT-ED-Guard,143,42,1.0,0,0.5
+RAPT-ED-Guard,144,42,0.0,1,0.5
+RAPT-ED-Guard,145,42,0.0,0,0.5
+RAPT-ED-Guard,146,42,0.0,0,0.5
+RAPT-ED-Guard,147,42,1.0,0,0.5
+RAPT-ED-Guard,148,42,1.0,0,0.5
+RAPT-ED-Guard,149,42,0.0,0,0.5
+Frozen,99,43,1.0,0,0.5
+Frozen,100,43,1.0,0,0.5
+Frozen,101,43,1.0,0,0.5
+Frozen,102,43,1.0,0,0.5
+Frozen,103,43,1.0,0,0.5
+Frozen,104,43,1.0,0,0.5
+Frozen,105,43,1.0,0,0.5
+Frozen,106,43,1.0,0,0.5
+Frozen,107,43,1.0,0,0.5
+Frozen,108,43,1.0,0,0.5
+Frozen,109,43,1.0,0,0.5
+Frozen,110,43,1.0,0,0.5
+Frozen,111,43,1.0,0,0.5
+Frozen,112,43,1.0,0,0.5
+Frozen,113,43,1.0,0,0.5
+Frozen,114,43,1.0,0,0.5
+Frozen,115,43,1.0,0,0.5
+Frozen,116,43,1.0,0,0.5
+Frozen,117,43,1.0,0,0.5
+Frozen,118,43,1.0,0,0.5
+Frozen,119,43,1.0,0,0.5
+Frozen,120,43,1.0,0,0.5
+Frozen,121,43,1.0,0,0.5
+Frozen,122,43,1.0,0,0.5
+Frozen,123,43,1.0,0,0.5
+Frozen,124,43,1.0,0,0.5
+Frozen,125,43,1.0,0,0.5
+Frozen,126,43,1.0,0,0.5
+Frozen,127,43,1.0,0,0.5
+Frozen,128,43,1.0,0,0.5
+Frozen,129,43,1.0,0,0.5
+Frozen,130,43,1.0,0,0.5
+Frozen,131,43,1.0,0,0.5
+Frozen,132,43,0.0,0,0.5
+Frozen,133,43,1.0,0,0.5
+Frozen,134,43,1.0,0,0.5
+Frozen,135,43,1.0,0,0.5
+Frozen,136,43,1.0,0,0.5
+Frozen,137,43,1.0,0,0.5
+Frozen,138,43,1.0,0,0.5
+Frozen,139,43,1.0,0,0.5
+Frozen,140,43,1.0,0,0.5
+Frozen,141,43,1.0,0,0.5
+Frozen,142,43,1.0,0,0.5
+Frozen,143,43,1.0,0,0.5
+Frozen,144,43,0.0,0,0.5
+Frozen,145,43,0.0,1,0.5
+Frozen,146,43,1.0,0,0.5
+Frozen,147,43,1.0,0,0.5
+Frozen,148,43,1.0,0,0.5
+Frozen,149,43,0.0,0,0.5
+Event-Driven,99,43,1.0,0,0.5
+Event-Driven,100,43,1.0,0,0.5
+Event-Driven,101,43,1.0,0,0.5
+Event-Driven,102,43,1.0,0,0.5
+Event-Driven,103,43,1.0,0,0.5
+Event-Driven,104,43,1.0,0,0.5
+Event-Driven,105,43,1.0,0,0.5
+Event-Driven,106,43,1.0,0,0.5
+Event-Driven,107,43,1.0,0,0.5
+Event-Driven,108,43,1.0,0,0.5
+Event-Driven,109,43,1.0,0,0.5
+Event-Driven,110,43,1.0,0,0.5
+Event-Driven,111,43,1.0,0,0.5
+Event-Driven,112,43,1.0,0,0.5
+Event-Driven,113,43,1.0,0,0.5
+Event-Driven,114,43,1.0,0,0.5
+Event-Driven,115,43,1.0,0,0.5
+Event-Driven,116,43,1.0,0,0.5
+Event-Driven,117,43,1.0,0,0.5
+Event-Driven,118,43,1.0,0,0.5
+Event-Driven,119,43,1.0,0,0.5
+Event-Driven,120,43,1.0,0,0.5
+Event-Driven,121,43,1.0,0,0.5
+Event-Driven,122,43,1.0,0,0.5
+Event-Driven,123,43,1.0,0,0.5
+Event-Driven,124,43,1.0,0,0.5
+Event-Driven,125,43,1.0,0,0.5
+Event-Driven,126,43,1.0,0,0.5
+Event-Driven,127,43,1.0,0,0.5
+Event-Driven,128,43,1.0,0,0.5
+Event-Driven,129,43,1.0,0,0.5
+Event-Driven,130,43,1.0,0,0.5
+Event-Driven,131,43,1.0,0,0.5
+Event-Driven,132,43,0.0,0,0.5
+Event-Driven,133,43,1.0,0,0.5
+Event-Driven,134,43,1.0,0,0.5
+Event-Driven,135,43,1.0,0,0.5
+Event-Driven,136,43,1.0,0,0.5
+Event-Driven,137,43,1.0,0,0.5
+Event-Driven,138,43,1.0,0,0.5
+Event-Driven,139,43,1.0,0,0.5
+Event-Driven,140,43,1.0,0,0.5
+Event-Driven,141,43,1.0,0,0.5
+Event-Driven,142,43,1.0,0,0.5
+Event-Driven,143,43,1.0,0,0.5
+Event-Driven,144,43,0.0,0,0.5
+Event-Driven,145,43,0.0,1,0.5
+Event-Driven,146,43,1.0,0,0.5
+Event-Driven,147,43,1.0,0,0.5
+Event-Driven,148,43,1.0,0,0.5
+Event-Driven,149,43,0.0,0,0.5
+Full Retraining,99,43,1.0,0,0.5
+Full Retraining,100,43,1.0,0,0.5
+Full Retraining,101,43,1.0,0,0.5
+Full Retraining,102,43,1.0,0,0.5
+Full Retraining,103,43,1.0,0,0.5
+Full Retraining,104,43,1.0,0,0.5
+Full Retraining,105,43,1.0,0,0.5
+Full Retraining,106,43,1.0,0,0.5
+Full Retraining,107,43,1.0,0,0.5
+Full Retraining,108,43,1.0,0,0.5
+Full Retraining,109,43,1.0,0,0.5
+Full Retraining,110,43,1.0,0,0.5
+Full Retraining,111,43,1.0,0,0.5
+Full Retraining,112,43,1.0,0,0.5
+Full Retraining,113,43,1.0,0,0.5
+Full Retraining,114,43,1.0,0,0.5
+Full Retraining,115,43,1.0,0,0.5
+Full Retraining,116,43,1.0,0,0.5
+Full Retraining,117,43,1.0,0,0.5
+Full Retraining,118,43,1.0,0,0.5
+Full Retraining,119,43,1.0,0,0.5
+Full Retraining,120,43,1.0,0,0.5
+Full Retraining,121,43,1.0,0,0.5
+Full Retraining,122,43,1.0,0,0.5
+Full Retraining,123,43,1.0,0,0.5
+Full Retraining,124,43,1.0,0,0.5
+Full Retraining,125,43,1.0,0,0.5
+Full Retraining,126,43,1.0,0,0.5
+Full Retraining,127,43,1.0,0,0.5
+Full Retraining,128,43,1.0,0,0.5
+Full Retraining,129,43,1.0,0,0.5
+Full Retraining,130,43,1.0,0,0.5
+Full Retraining,131,43,1.0,0,0.5
+Full Retraining,132,43,0.0,0,0.5
+Full Retraining,133,43,1.0,0,0.5
+Full Retraining,134,43,1.0,0,0.5
+Full Retraining,135,43,1.0,0,0.5
+Full Retraining,136,43,1.0,0,0.5
+Full Retraining,137,43,1.0,0,0.5
+Full Retraining,138,43,1.0,0,0.5
+Full Retraining,139,43,1.0,0,0.5
+Full Retraining,140,43,1.0,0,0.5
+Full Retraining,141,43,1.0,0,0.5
+Full Retraining,142,43,1.0,0,0.5
+Full Retraining,143,43,1.0,0,0.5
+Full Retraining,144,43,0.0,0,0.5
+Full Retraining,145,43,0.0,1,0.5
+Full Retraining,146,43,1.0,0,0.5
+Full Retraining,147,43,1.0,0,0.5
+Full Retraining,148,43,1.0,0,0.5
+Full Retraining,149,43,0.0,0,0.5
+ADWIN,99,43,1.0,0,0.5
+ADWIN,100,43,1.0,0,0.5
+ADWIN,101,43,1.0,0,0.5
+ADWIN,102,43,1.0,0,0.5
+ADWIN,103,43,1.0,0,0.5
+ADWIN,104,43,1.0,0,0.5
+ADWIN,105,43,1.0,0,0.5
+ADWIN,106,43,1.0,0,0.5
+ADWIN,107,43,1.0,0,0.5
+ADWIN,108,43,1.0,0,0.5
+ADWIN,109,43,1.0,0,0.5
+ADWIN,110,43,1.0,0,0.5
+ADWIN,111,43,1.0,0,0.5
+ADWIN,112,43,1.0,0,0.5
+ADWIN,113,43,1.0,0,0.5
+ADWIN,114,43,1.0,0,0.5
+ADWIN,115,43,1.0,0,0.5
+ADWIN,116,43,1.0,0,0.5
+ADWIN,117,43,1.0,0,0.5
+ADWIN,118,43,1.0,0,0.5
+ADWIN,119,43,1.0,0,0.5
+ADWIN,120,43,1.0,0,0.5
+ADWIN,121,43,1.0,0,0.5
+ADWIN,122,43,1.0,0,0.5
+ADWIN,123,43,1.0,0,0.5
+ADWIN,124,43,1.0,0,0.5
+ADWIN,125,43,1.0,0,0.5
+ADWIN,126,43,1.0,0,0.5
+ADWIN,127,43,1.0,0,0.5
+ADWIN,128,43,1.0,0,0.5
+ADWIN,129,43,1.0,0,0.5
+ADWIN,130,43,1.0,0,0.5
+ADWIN,131,43,1.0,0,0.5
+ADWIN,132,43,0.0,0,0.5
+ADWIN,133,43,1.0,0,0.5
+ADWIN,134,43,1.0,0,0.5
+ADWIN,135,43,1.0,0,0.5
+ADWIN,136,43,1.0,0,0.5
+ADWIN,137,43,1.0,0,0.5
+ADWIN,138,43,1.0,0,0.5
+ADWIN,139,43,1.0,0,0.5
+ADWIN,140,43,1.0,0,0.5
+ADWIN,141,43,1.0,0,0.5
+ADWIN,142,43,1.0,0,0.5
+ADWIN,143,43,1.0,0,0.5
+ADWIN,144,43,0.0,0,0.5
+ADWIN,145,43,0.0,0,0.5
+ADWIN,146,43,0.0,0,0.5
+ADWIN,147,43,1.0,0,0.5
+ADWIN,148,43,1.0,0,0.5
+ADWIN,149,43,0.0,0,0.5
+Page-Hinkley,99,43,1.0,0,0.5
+Page-Hinkley,100,43,1.0,0,0.5
+Page-Hinkley,101,43,1.0,0,0.5
+Page-Hinkley,102,43,1.0,0,0.5
+Page-Hinkley,103,43,1.0,0,0.5
+Page-Hinkley,104,43,1.0,0,0.5
+Page-Hinkley,105,43,1.0,0,0.5
+Page-Hinkley,106,43,1.0,0,0.5
+Page-Hinkley,107,43,1.0,0,0.5
+Page-Hinkley,108,43,1.0,0,0.5
+Page-Hinkley,109,43,1.0,0,0.5
+Page-Hinkley,110,43,1.0,0,0.5
+Page-Hinkley,111,43,1.0,0,0.5
+Page-Hinkley,112,43,1.0,0,0.5
+Page-Hinkley,113,43,1.0,0,0.5
+Page-Hinkley,114,43,1.0,0,0.5
+Page-Hinkley,115,43,1.0,0,0.5
+Page-Hinkley,116,43,1.0,0,0.5
+Page-Hinkley,117,43,1.0,0,0.5
+Page-Hinkley,118,43,1.0,0,0.5
+Page-Hinkley,119,43,1.0,0,0.5
+Page-Hinkley,120,43,1.0,0,0.5
+Page-Hinkley,121,43,1.0,0,0.5
+Page-Hinkley,122,43,1.0,0,0.5
+Page-Hinkley,123,43,1.0,0,0.5
+Page-Hinkley,124,43,1.0,0,0.5
+Page-Hinkley,125,43,1.0,0,0.5
+Page-Hinkley,126,43,1.0,0,0.5
+Page-Hinkley,127,43,1.0,0,0.5
+Page-Hinkley,128,43,1.0,0,0.5
+Page-Hinkley,129,43,1.0,0,0.5
+Page-Hinkley,130,43,1.0,0,0.5
+Page-Hinkley,131,43,1.0,0,0.5
+Page-Hinkley,132,43,0.0,0,0.5
+Page-Hinkley,133,43,1.0,0,0.5
+Page-Hinkley,134,43,1.0,0,0.5
+Page-Hinkley,135,43,1.0,0,0.5
+Page-Hinkley,136,43,1.0,0,0.5
+Page-Hinkley,137,43,1.0,0,0.5
+Page-Hinkley,138,43,1.0,0,0.5
+Page-Hinkley,139,43,1.0,0,0.5
+Page-Hinkley,140,43,1.0,0,0.5
+Page-Hinkley,141,43,1.0,0,0.5
+Page-Hinkley,142,43,1.0,0,0.5
+Page-Hinkley,143,43,1.0,0,0.5
+Page-Hinkley,144,43,0.0,0,0.5
+Page-Hinkley,145,43,0.0,0,0.5
+Page-Hinkley,146,43,0.0,0,0.5
+Page-Hinkley,147,43,1.0,0,0.5
+Page-Hinkley,148,43,1.0,0,0.5
+Page-Hinkley,149,43,0.0,0,0.5
+RAPT,99,43,1.0,0,0.5
+RAPT,100,43,1.0,0,0.5
+RAPT,101,43,1.0,0,0.5
+RAPT,102,43,1.0,0,0.5
+RAPT,103,43,1.0,0,0.5
+RAPT,104,43,1.0,0,0.5
+RAPT,105,43,1.0,0,0.5
+RAPT,106,43,1.0,0,0.5
+RAPT,107,43,1.0,0,0.5
+RAPT,108,43,1.0,0,0.5
+RAPT,109,43,1.0,0,0.5
+RAPT,110,43,1.0,0,0.5
+RAPT,111,43,1.0,0,0.5
+RAPT,112,43,1.0,0,0.5
+RAPT,113,43,1.0,0,0.5
+RAPT,114,43,1.0,0,0.5
+RAPT,115,43,1.0,0,0.5
+RAPT,116,43,1.0,0,0.5
+RAPT,117,43,1.0,0,0.5
+RAPT,118,43,1.0,0,0.5
+RAPT,119,43,1.0,0,0.5
+RAPT,120,43,1.0,0,0.5
+RAPT,121,43,1.0,0,0.5
+RAPT,122,43,1.0,0,0.5
+RAPT,123,43,1.0,0,0.5
+RAPT,124,43,1.0,0,0.5
+RAPT,125,43,1.0,0,0.5
+RAPT,126,43,1.0,0,0.5
+RAPT,127,43,1.0,0,0.5
+RAPT,128,43,1.0,0,0.5
+RAPT,129,43,1.0,0,0.5
+RAPT,130,43,1.0,0,0.5
+RAPT,131,43,1.0,0,0.5
+RAPT,132,43,0.0,0,0.5
+RAPT,133,43,1.0,0,0.5
+RAPT,134,43,1.0,0,0.5
+RAPT,135,43,1.0,0,0.5
+RAPT,136,43,1.0,0,0.5
+RAPT,137,43,1.0,0,0.5
+RAPT,138,43,1.0,0,0.5
+RAPT,139,43,1.0,0,0.5
+RAPT,140,43,1.0,0,0.5
+RAPT,141,43,1.0,0,0.5
+RAPT,142,43,1.0,0,0.5
+RAPT,143,43,1.0,0,0.5
+RAPT,144,43,0.0,0,0.5
+RAPT,145,43,0.0,1,0.5
+RAPT,146,43,0.0,0,0.5
+RAPT,147,43,1.0,0,0.5
+RAPT,148,43,1.0,0,0.5
+RAPT,149,43,0.0,0,0.5
+RAPT-Guard,99,43,1.0,0,0.5
+RAPT-Guard,100,43,1.0,0,0.5
+RAPT-Guard,101,43,1.0,0,0.5
+RAPT-Guard,102,43,1.0,0,0.5
+RAPT-Guard,103,43,1.0,0,0.5
+RAPT-Guard,104,43,1.0,0,0.5
+RAPT-Guard,105,43,1.0,0,0.5
+RAPT-Guard,106,43,1.0,0,0.5
+RAPT-Guard,107,43,1.0,0,0.5
+RAPT-Guard,108,43,1.0,0,0.5
+RAPT-Guard,109,43,1.0,0,0.5
+RAPT-Guard,110,43,1.0,0,0.5
+RAPT-Guard,111,43,1.0,0,0.5
+RAPT-Guard,112,43,1.0,0,0.5
+RAPT-Guard,113,43,1.0,0,0.5
+RAPT-Guard,114,43,1.0,0,0.5
+RAPT-Guard,115,43,1.0,0,0.5
+RAPT-Guard,116,43,1.0,0,0.5
+RAPT-Guard,117,43,1.0,0,0.5
+RAPT-Guard,118,43,1.0,0,0.5
+RAPT-Guard,119,43,1.0,0,0.5
+RAPT-Guard,120,43,1.0,0,0.5
+RAPT-Guard,121,43,1.0,0,0.5
+RAPT-Guard,122,43,1.0,0,0.5
+RAPT-Guard,123,43,1.0,0,0.5
+RAPT-Guard,124,43,1.0,0,0.5
+RAPT-Guard,125,43,1.0,0,0.5
+RAPT-Guard,126,43,1.0,0,0.5
+RAPT-Guard,127,43,1.0,0,0.5
+RAPT-Guard,128,43,1.0,0,0.5
+RAPT-Guard,129,43,1.0,0,0.5
+RAPT-Guard,130,43,1.0,0,0.5
+RAPT-Guard,131,43,1.0,0,0.5
+RAPT-Guard,132,43,0.0,0,0.5
+RAPT-Guard,133,43,1.0,0,0.5
+RAPT-Guard,134,43,1.0,0,0.5
+RAPT-Guard,135,43,1.0,0,0.5
+RAPT-Guard,136,43,1.0,0,0.5
+RAPT-Guard,137,43,1.0,0,0.5
+RAPT-Guard,138,43,1.0,0,0.5
+RAPT-Guard,139,43,1.0,0,0.5
+RAPT-Guard,140,43,1.0,0,0.5
+RAPT-Guard,141,43,1.0,0,0.5
+RAPT-Guard,142,43,1.0,0,0.5
+RAPT-Guard,143,43,1.0,0,0.5
+RAPT-Guard,144,43,0.0,0,0.5
+RAPT-Guard,145,43,0.0,0,0.5
+RAPT-Guard,146,43,0.0,0,0.5
+RAPT-Guard,147,43,1.0,0,0.5
+RAPT-Guard,148,43,1.0,0,0.5
+RAPT-Guard,149,43,0.0,0,0.5
+RAPT-ED-Guard,99,43,1.0,0,0.5
+RAPT-ED-Guard,100,43,1.0,0,0.5
+RAPT-ED-Guard,101,43,1.0,0,0.5
+RAPT-ED-Guard,102,43,1.0,0,0.5
+RAPT-ED-Guard,103,43,1.0,0,0.5
+RAPT-ED-Guard,104,43,1.0,0,0.5
+RAPT-ED-Guard,105,43,1.0,0,0.5
+RAPT-ED-Guard,106,43,1.0,0,0.5
+RAPT-ED-Guard,107,43,1.0,0,0.5
+RAPT-ED-Guard,108,43,1.0,0,0.5
+RAPT-ED-Guard,109,43,1.0,0,0.5
+RAPT-ED-Guard,110,43,1.0,0,0.5
+RAPT-ED-Guard,111,43,1.0,0,0.5
+RAPT-ED-Guard,112,43,1.0,0,0.5
+RAPT-ED-Guard,113,43,1.0,0,0.5
+RAPT-ED-Guard,114,43,1.0,0,0.5
+RAPT-ED-Guard,115,43,1.0,0,0.5
+RAPT-ED-Guard,116,43,1.0,0,0.5
+RAPT-ED-Guard,117,43,1.0,0,0.5
+RAPT-ED-Guard,118,43,1.0,0,0.5
+RAPT-ED-Guard,119,43,1.0,0,0.5
+RAPT-ED-Guard,120,43,1.0,0,0.5
+RAPT-ED-Guard,121,43,1.0,0,0.5
+RAPT-ED-Guard,122,43,1.0,0,0.5
+RAPT-ED-Guard,123,43,1.0,0,0.5
+RAPT-ED-Guard,124,43,1.0,0,0.5
+RAPT-ED-Guard,125,43,1.0,0,0.5
+RAPT-ED-Guard,126,43,1.0,0,0.5
+RAPT-ED-Guard,127,43,1.0,0,0.5
+RAPT-ED-Guard,128,43,1.0,0,0.5
+RAPT-ED-Guard,129,43,1.0,0,0.5
+RAPT-ED-Guard,130,43,1.0,0,0.5
+RAPT-ED-Guard,131,43,1.0,0,0.5
+RAPT-ED-Guard,132,43,0.0,1,0.5
+RAPT-ED-Guard,133,43,1.0,0,0.5
+RAPT-ED-Guard,134,43,1.0,0,0.5
+RAPT-ED-Guard,135,43,1.0,0,0.5
+RAPT-ED-Guard,136,43,1.0,0,0.5
+RAPT-ED-Guard,137,43,1.0,0,0.5
+RAPT-ED-Guard,138,43,1.0,0,0.5
+RAPT-ED-Guard,139,43,1.0,0,0.5
+RAPT-ED-Guard,140,43,1.0,0,0.5
+RAPT-ED-Guard,141,43,1.0,0,0.5
+RAPT-ED-Guard,142,43,1.0,0,0.5
+RAPT-ED-Guard,143,43,1.0,0,0.5
+RAPT-ED-Guard,144,43,0.0,1,0.5
+RAPT-ED-Guard,145,43,0.0,0,0.5
+RAPT-ED-Guard,146,43,0.0,0,0.5
+RAPT-ED-Guard,147,43,1.0,0,0.5
+RAPT-ED-Guard,148,43,1.0,0,0.5
+RAPT-ED-Guard,149,43,0.0,0,0.5
+Frozen,99,44,1.0,0,0.5
+Frozen,100,44,1.0,0,0.5
+Frozen,101,44,1.0,0,0.5
+Frozen,102,44,1.0,0,0.5
+Frozen,103,44,1.0,0,0.5
+Frozen,104,44,1.0,0,0.5
+Frozen,105,44,1.0,0,0.5
+Frozen,106,44,1.0,0,0.5
+Frozen,107,44,1.0,0,0.5
+Frozen,108,44,1.0,0,0.5
+Frozen,109,44,1.0,0,0.5
+Frozen,110,44,1.0,0,0.5
+Frozen,111,44,1.0,0,0.5
+Frozen,112,44,1.0,0,0.5
+Frozen,113,44,1.0,0,0.5
+Frozen,114,44,1.0,0,0.5
+Frozen,115,44,1.0,0,0.5
+Frozen,116,44,1.0,0,0.5
+Frozen,117,44,1.0,0,0.5
+Frozen,118,44,1.0,0,0.5
+Frozen,119,44,1.0,0,0.5
+Frozen,120,44,1.0,0,0.5
+Frozen,121,44,1.0,0,0.5
+Frozen,122,44,1.0,0,0.5
+Frozen,123,44,1.0,0,0.5
+Frozen,124,44,1.0,0,0.5
+Frozen,125,44,1.0,0,0.5
+Frozen,126,44,1.0,0,0.5
+Frozen,127,44,1.0,0,0.5
+Frozen,128,44,1.0,0,0.5
+Frozen,129,44,1.0,0,0.5
+Frozen,130,44,1.0,0,0.5
+Frozen,131,44,1.0,0,0.5
+Frozen,132,44,0.0,0,0.5
+Frozen,133,44,1.0,0,0.5
+Frozen,134,44,1.0,0,0.5
+Frozen,135,44,1.0,0,0.5
+Frozen,136,44,1.0,0,0.5
+Frozen,137,44,1.0,0,0.5
+Frozen,138,44,1.0,0,0.5
+Frozen,139,44,1.0,0,0.5
+Frozen,140,44,1.0,0,0.5
+Frozen,141,44,1.0,0,0.5
+Frozen,142,44,1.0,0,0.5
+Frozen,143,44,0.0,0,0.5
+Frozen,144,44,0.0,1,0.5
+Frozen,145,44,0.0,0,0.5
+Frozen,146,44,1.0,0,0.5
+Frozen,147,44,1.0,0,0.5
+Frozen,148,44,1.0,0,0.5
+Frozen,149,44,0.0,0,0.5
+Event-Driven,99,44,1.0,0,0.5
+Event-Driven,100,44,1.0,0,0.5
+Event-Driven,101,44,1.0,0,0.5
+Event-Driven,102,44,1.0,0,0.5
+Event-Driven,103,44,1.0,0,0.5
+Event-Driven,104,44,1.0,0,0.5
+Event-Driven,105,44,1.0,0,0.5
+Event-Driven,106,44,1.0,0,0.5
+Event-Driven,107,44,1.0,0,0.5
+Event-Driven,108,44,1.0,0,0.5
+Event-Driven,109,44,1.0,0,0.5
+Event-Driven,110,44,1.0,0,0.5
+Event-Driven,111,44,1.0,0,0.5
+Event-Driven,112,44,1.0,0,0.5
+Event-Driven,113,44,1.0,0,0.5
+Event-Driven,114,44,1.0,0,0.5
+Event-Driven,115,44,1.0,0,0.5
+Event-Driven,116,44,1.0,0,0.5
+Event-Driven,117,44,1.0,0,0.5
+Event-Driven,118,44,1.0,0,0.5
+Event-Driven,119,44,1.0,0,0.5
+Event-Driven,120,44,1.0,0,0.5
+Event-Driven,121,44,1.0,0,0.5
+Event-Driven,122,44,1.0,0,0.5
+Event-Driven,123,44,1.0,0,0.5
+Event-Driven,124,44,1.0,0,0.5
+Event-Driven,125,44,1.0,0,0.5
+Event-Driven,126,44,1.0,0,0.5
+Event-Driven,127,44,1.0,0,0.5
+Event-Driven,128,44,1.0,0,0.5
+Event-Driven,129,44,1.0,0,0.5
+Event-Driven,130,44,1.0,0,0.5
+Event-Driven,131,44,1.0,0,0.5
+Event-Driven,132,44,0.0,0,0.5
+Event-Driven,133,44,1.0,0,0.5
+Event-Driven,134,44,1.0,0,0.5
+Event-Driven,135,44,1.0,0,0.5
+Event-Driven,136,44,1.0,0,0.5
+Event-Driven,137,44,1.0,0,0.5
+Event-Driven,138,44,1.0,0,0.5
+Event-Driven,139,44,1.0,0,0.5
+Event-Driven,140,44,1.0,0,0.5
+Event-Driven,141,44,1.0,0,0.5
+Event-Driven,142,44,1.0,0,0.5
+Event-Driven,143,44,0.0,0,0.5
+Event-Driven,144,44,0.0,1,0.5
+Event-Driven,145,44,0.0,0,0.5
+Event-Driven,146,44,1.0,0,0.5
+Event-Driven,147,44,1.0,0,0.5
+Event-Driven,148,44,1.0,0,0.5
+Event-Driven,149,44,0.0,0,0.5
+Full Retraining,99,44,1.0,0,0.5
+Full Retraining,100,44,1.0,0,0.5
+Full Retraining,101,44,1.0,0,0.5
+Full Retraining,102,44,1.0,0,0.5
+Full Retraining,103,44,1.0,0,0.5
+Full Retraining,104,44,1.0,0,0.5
+Full Retraining,105,44,1.0,0,0.5
+Full Retraining,106,44,1.0,0,0.5
+Full Retraining,107,44,1.0,0,0.5
+Full Retraining,108,44,1.0,0,0.5
+Full Retraining,109,44,1.0,0,0.5
+Full Retraining,110,44,1.0,0,0.5
+Full Retraining,111,44,1.0,0,0.5
+Full Retraining,112,44,1.0,0,0.5
+Full Retraining,113,44,1.0,0,0.5
+Full Retraining,114,44,1.0,0,0.5
+Full Retraining,115,44,1.0,0,0.5
+Full Retraining,116,44,1.0,0,0.5
+Full Retraining,117,44,1.0,0,0.5
+Full Retraining,118,44,1.0,0,0.5
+Full Retraining,119,44,1.0,0,0.5
+Full Retraining,120,44,1.0,0,0.5
+Full Retraining,121,44,1.0,0,0.5
+Full Retraining,122,44,1.0,0,0.5
+Full Retraining,123,44,1.0,0,0.5
+Full Retraining,124,44,1.0,0,0.5
+Full Retraining,125,44,1.0,0,0.5
+Full Retraining,126,44,1.0,0,0.5
+Full Retraining,127,44,1.0,0,0.5
+Full Retraining,128,44,1.0,0,0.5
+Full Retraining,129,44,1.0,0,0.5
+Full Retraining,130,44,1.0,0,0.5
+Full Retraining,131,44,1.0,0,0.5
+Full Retraining,132,44,0.0,0,0.5
+Full Retraining,133,44,1.0,0,0.5
+Full Retraining,134,44,1.0,0,0.5
+Full Retraining,135,44,1.0,0,0.5
+Full Retraining,136,44,1.0,0,0.5
+Full Retraining,137,44,1.0,0,0.5
+Full Retraining,138,44,1.0,0,0.5
+Full Retraining,139,44,1.0,0,0.5
+Full Retraining,140,44,1.0,0,0.5
+Full Retraining,141,44,1.0,0,0.5
+Full Retraining,142,44,1.0,0,0.5
+Full Retraining,143,44,0.0,0,0.5
+Full Retraining,144,44,0.0,1,0.5
+Full Retraining,145,44,0.0,0,0.5
+Full Retraining,146,44,1.0,0,0.5
+Full Retraining,147,44,1.0,0,0.5
+Full Retraining,148,44,1.0,0,0.5
+Full Retraining,149,44,0.0,0,0.5
+ADWIN,99,44,1.0,0,0.5
+ADWIN,100,44,1.0,0,0.5
+ADWIN,101,44,1.0,0,0.5
+ADWIN,102,44,1.0,0,0.5
+ADWIN,103,44,1.0,0,0.5
+ADWIN,104,44,1.0,0,0.5
+ADWIN,105,44,1.0,0,0.5
+ADWIN,106,44,1.0,0,0.5
+ADWIN,107,44,1.0,0,0.5
+ADWIN,108,44,1.0,0,0.5
+ADWIN,109,44,1.0,0,0.5
+ADWIN,110,44,1.0,0,0.5
+ADWIN,111,44,1.0,0,0.5
+ADWIN,112,44,1.0,0,0.5
+ADWIN,113,44,1.0,0,0.5
+ADWIN,114,44,1.0,0,0.5
+ADWIN,115,44,1.0,0,0.5
+ADWIN,116,44,1.0,0,0.5
+ADWIN,117,44,1.0,0,0.5
+ADWIN,118,44,1.0,0,0.5
+ADWIN,119,44,1.0,0,0.5
+ADWIN,120,44,1.0,0,0.5
+ADWIN,121,44,1.0,0,0.5
+ADWIN,122,44,1.0,0,0.5
+ADWIN,123,44,1.0,0,0.5
+ADWIN,124,44,1.0,0,0.5
+ADWIN,125,44,1.0,0,0.5
+ADWIN,126,44,1.0,0,0.5
+ADWIN,127,44,1.0,0,0.5
+ADWIN,128,44,1.0,0,0.5
+ADWIN,129,44,1.0,0,0.5
+ADWIN,130,44,1.0,0,0.5
+ADWIN,131,44,1.0,0,0.5
+ADWIN,132,44,0.0,0,0.5
+ADWIN,133,44,1.0,0,0.5
+ADWIN,134,44,1.0,0,0.5
+ADWIN,135,44,1.0,0,0.5
+ADWIN,136,44,1.0,0,0.5
+ADWIN,137,44,1.0,0,0.5
+ADWIN,138,44,1.0,0,0.5
+ADWIN,139,44,1.0,0,0.5
+ADWIN,140,44,1.0,0,0.5
+ADWIN,141,44,1.0,0,0.5
+ADWIN,142,44,1.0,0,0.5
+ADWIN,143,44,0.0,0,0.5
+ADWIN,144,44,0.0,0,0.5
+ADWIN,145,44,0.0,0,0.5
+ADWIN,146,44,0.0,0,0.5
+ADWIN,147,44,1.0,0,0.5
+ADWIN,148,44,1.0,0,0.5
+ADWIN,149,44,0.0,0,0.5
+Page-Hinkley,99,44,1.0,0,0.5
+Page-Hinkley,100,44,1.0,0,0.5
+Page-Hinkley,101,44,1.0,0,0.5
+Page-Hinkley,102,44,1.0,0,0.5
+Page-Hinkley,103,44,1.0,0,0.5
+Page-Hinkley,104,44,1.0,0,0.5
+Page-Hinkley,105,44,1.0,0,0.5
+Page-Hinkley,106,44,1.0,0,0.5
+Page-Hinkley,107,44,1.0,0,0.5
+Page-Hinkley,108,44,1.0,0,0.5
+Page-Hinkley,109,44,1.0,0,0.5
+Page-Hinkley,110,44,1.0,0,0.5
+Page-Hinkley,111,44,1.0,0,0.5
+Page-Hinkley,112,44,1.0,0,0.5
+Page-Hinkley,113,44,1.0,0,0.5
+Page-Hinkley,114,44,1.0,0,0.5
+Page-Hinkley,115,44,1.0,0,0.5
+Page-Hinkley,116,44,1.0,0,0.5
+Page-Hinkley,117,44,1.0,0,0.5
+Page-Hinkley,118,44,1.0,0,0.5
+Page-Hinkley,119,44,1.0,0,0.5
+Page-Hinkley,120,44,1.0,0,0.5
+Page-Hinkley,121,44,1.0,0,0.5
+Page-Hinkley,122,44,1.0,0,0.5
+Page-Hinkley,123,44,1.0,0,0.5
+Page-Hinkley,124,44,1.0,0,0.5
+Page-Hinkley,125,44,1.0,0,0.5
+Page-Hinkley,126,44,1.0,0,0.5
+Page-Hinkley,127,44,1.0,0,0.5
+Page-Hinkley,128,44,1.0,0,0.5
+Page-Hinkley,129,44,1.0,0,0.5
+Page-Hinkley,130,44,1.0,0,0.5
+Page-Hinkley,131,44,1.0,0,0.5
+Page-Hinkley,132,44,0.0,0,0.5
+Page-Hinkley,133,44,1.0,0,0.5
+Page-Hinkley,134,44,1.0,0,0.5
+Page-Hinkley,135,44,1.0,0,0.5
+Page-Hinkley,136,44,1.0,0,0.5
+Page-Hinkley,137,44,1.0,0,0.5
+Page-Hinkley,138,44,1.0,0,0.5
+Page-Hinkley,139,44,1.0,0,0.5
+Page-Hinkley,140,44,1.0,0,0.5
+Page-Hinkley,141,44,1.0,0,0.5
+Page-Hinkley,142,44,1.0,0,0.5
+Page-Hinkley,143,44,0.0,0,0.5
+Page-Hinkley,144,44,0.0,0,0.5
+Page-Hinkley,145,44,0.0,0,0.5
+Page-Hinkley,146,44,0.0,0,0.5
+Page-Hinkley,147,44,1.0,0,0.5
+Page-Hinkley,148,44,1.0,0,0.5
+Page-Hinkley,149,44,0.0,0,0.5
+RAPT,99,44,1.0,0,0.5
+RAPT,100,44,1.0,0,0.5
+RAPT,101,44,1.0,0,0.5
+RAPT,102,44,1.0,0,0.5
+RAPT,103,44,1.0,0,0.5
+RAPT,104,44,1.0,0,0.5
+RAPT,105,44,1.0,0,0.5
+RAPT,106,44,1.0,0,0.5
+RAPT,107,44,1.0,0,0.5
+RAPT,108,44,1.0,0,0.5
+RAPT,109,44,1.0,0,0.5
+RAPT,110,44,1.0,0,0.5
+RAPT,111,44,1.0,0,0.5
+RAPT,112,44,1.0,0,0.5
+RAPT,113,44,1.0,0,0.5
+RAPT,114,44,1.0,0,0.5
+RAPT,115,44,1.0,0,0.5
+RAPT,116,44,1.0,0,0.5
+RAPT,117,44,1.0,0,0.5
+RAPT,118,44,1.0,0,0.5
+RAPT,119,44,1.0,0,0.5
+RAPT,120,44,1.0,0,0.5
+RAPT,121,44,1.0,0,0.5
+RAPT,122,44,1.0,0,0.5
+RAPT,123,44,1.0,0,0.5
+RAPT,124,44,1.0,0,0.5
+RAPT,125,44,1.0,0,0.5
+RAPT,126,44,1.0,0,0.5
+RAPT,127,44,1.0,0,0.5
+RAPT,128,44,1.0,0,0.5
+RAPT,129,44,1.0,0,0.5
+RAPT,130,44,1.0,0,0.5
+RAPT,131,44,1.0,0,0.5
+RAPT,132,44,0.0,0,0.5
+RAPT,133,44,1.0,0,0.5
+RAPT,134,44,1.0,0,0.5
+RAPT,135,44,1.0,0,0.5
+RAPT,136,44,1.0,0,0.5
+RAPT,137,44,1.0,0,0.5
+RAPT,138,44,1.0,0,0.5
+RAPT,139,44,1.0,0,0.5
+RAPT,140,44,1.0,0,0.5
+RAPT,141,44,1.0,0,0.5
+RAPT,142,44,1.0,0,0.5
+RAPT,143,44,0.0,0,0.5
+RAPT,144,44,0.0,1,0.5
+RAPT,145,44,0.0,0,0.5
+RAPT,146,44,1.0,0,0.5
+RAPT,147,44,1.0,0,0.5
+RAPT,148,44,1.0,0,0.5
+RAPT,149,44,0.0,0,0.5
+RAPT-Guard,99,44,1.0,0,0.5
+RAPT-Guard,100,44,1.0,0,0.5
+RAPT-Guard,101,44,1.0,0,0.5
+RAPT-Guard,102,44,1.0,0,0.5
+RAPT-Guard,103,44,1.0,0,0.5
+RAPT-Guard,104,44,1.0,0,0.5
+RAPT-Guard,105,44,1.0,0,0.5
+RAPT-Guard,106,44,1.0,0,0.5
+RAPT-Guard,107,44,1.0,0,0.5
+RAPT-Guard,108,44,1.0,0,0.5
+RAPT-Guard,109,44,1.0,0,0.5
+RAPT-Guard,110,44,1.0,0,0.5
+RAPT-Guard,111,44,1.0,0,0.5
+RAPT-Guard,112,44,1.0,0,0.5
+RAPT-Guard,113,44,1.0,0,0.5
+RAPT-Guard,114,44,1.0,0,0.5
+RAPT-Guard,115,44,1.0,0,0.5
+RAPT-Guard,116,44,1.0,0,0.5
+RAPT-Guard,117,44,1.0,0,0.5
+RAPT-Guard,118,44,1.0,0,0.5
+RAPT-Guard,119,44,1.0,0,0.5
+RAPT-Guard,120,44,1.0,0,0.5
+RAPT-Guard,121,44,1.0,0,0.5
+RAPT-Guard,122,44,1.0,0,0.5
+RAPT-Guard,123,44,1.0,0,0.5
+RAPT-Guard,124,44,1.0,0,0.5
+RAPT-Guard,125,44,1.0,0,0.5
+RAPT-Guard,126,44,1.0,0,0.5
+RAPT-Guard,127,44,1.0,0,0.5
+RAPT-Guard,128,44,1.0,0,0.5
+RAPT-Guard,129,44,1.0,0,0.5
+RAPT-Guard,130,44,1.0,0,0.5
+RAPT-Guard,131,44,1.0,0,0.5
+RAPT-Guard,132,44,0.0,0,0.5
+RAPT-Guard,133,44,1.0,0,0.5
+RAPT-Guard,134,44,1.0,0,0.5
+RAPT-Guard,135,44,1.0,0,0.5
+RAPT-Guard,136,44,1.0,0,0.5
+RAPT-Guard,137,44,1.0,0,0.5
+RAPT-Guard,138,44,1.0,0,0.5
+RAPT-Guard,139,44,1.0,0,0.5
+RAPT-Guard,140,44,1.0,0,0.5
+RAPT-Guard,141,44,1.0,0,0.5
+RAPT-Guard,142,44,1.0,0,0.5
+RAPT-Guard,143,44,0.0,0,0.5
+RAPT-Guard,144,44,0.0,0,0.5
+RAPT-Guard,145,44,0.0,0,0.5
+RAPT-Guard,146,44,0.0,0,0.5
+RAPT-Guard,147,44,1.0,0,0.5
+RAPT-Guard,148,44,1.0,0,0.5
+RAPT-Guard,149,44,0.0,0,0.5
+RAPT-ED-Guard,99,44,1.0,0,0.5
+RAPT-ED-Guard,100,44,1.0,0,0.5
+RAPT-ED-Guard,101,44,1.0,0,0.5
+RAPT-ED-Guard,102,44,1.0,0,0.5
+RAPT-ED-Guard,103,44,1.0,0,0.5
+RAPT-ED-Guard,104,44,1.0,0,0.5
+RAPT-ED-Guard,105,44,1.0,0,0.5
+RAPT-ED-Guard,106,44,1.0,0,0.5
+RAPT-ED-Guard,107,44,1.0,0,0.5
+RAPT-ED-Guard,108,44,1.0,0,0.5
+RAPT-ED-Guard,109,44,1.0,0,0.5
+RAPT-ED-Guard,110,44,1.0,0,0.5
+RAPT-ED-Guard,111,44,1.0,0,0.5
+RAPT-ED-Guard,112,44,1.0,0,0.5
+RAPT-ED-Guard,113,44,1.0,0,0.5
+RAPT-ED-Guard,114,44,1.0,0,0.5
+RAPT-ED-Guard,115,44,1.0,0,0.5
+RAPT-ED-Guard,116,44,1.0,0,0.5
+RAPT-ED-Guard,117,44,1.0,0,0.5
+RAPT-ED-Guard,118,44,1.0,0,0.5
+RAPT-ED-Guard,119,44,1.0,0,0.5
+RAPT-ED-Guard,120,44,1.0,0,0.5
+RAPT-ED-Guard,121,44,1.0,0,0.5
+RAPT-ED-Guard,122,44,1.0,0,0.5
+RAPT-ED-Guard,123,44,1.0,0,0.5
+RAPT-ED-Guard,124,44,1.0,0,0.5
+RAPT-ED-Guard,125,44,1.0,0,0.5
+RAPT-ED-Guard,126,44,1.0,0,0.5
+RAPT-ED-Guard,127,44,1.0,0,0.5
+RAPT-ED-Guard,128,44,1.0,0,0.5
+RAPT-ED-Guard,129,44,1.0,0,0.5
+RAPT-ED-Guard,130,44,1.0,0,0.5
+RAPT-ED-Guard,131,44,1.0,0,0.5
+RAPT-ED-Guard,132,44,0.0,1,0.5
+RAPT-ED-Guard,133,44,1.0,0,0.5
+RAPT-ED-Guard,134,44,1.0,0,0.5
+RAPT-ED-Guard,135,44,1.0,0,0.5
+RAPT-ED-Guard,136,44,1.0,0,0.5
+RAPT-ED-Guard,137,44,1.0,0,0.5
+RAPT-ED-Guard,138,44,1.0,0,0.5
+RAPT-ED-Guard,139,44,1.0,0,0.5
+RAPT-ED-Guard,140,44,1.0,0,0.5
+RAPT-ED-Guard,141,44,1.0,0,0.5
+RAPT-ED-Guard,142,44,1.0,0,0.5
+RAPT-ED-Guard,143,44,1.0,0,0.5
+RAPT-ED-Guard,144,44,0.0,1,0.5
+RAPT-ED-Guard,145,44,0.0,0,0.5
+RAPT-ED-Guard,146,44,0.0,0,0.5
+RAPT-ED-Guard,147,44,1.0,0,0.5
+RAPT-ED-Guard,148,44,1.0,0,0.5
+RAPT-ED-Guard,149,44,0.0,0,0.5
+Frozen,99,45,1.0,0,0.5
+Frozen,100,45,1.0,0,0.5
+Frozen,101,45,1.0,0,0.5
+Frozen,102,45,1.0,0,0.5
+Frozen,103,45,1.0,0,0.5
+Frozen,104,45,1.0,0,0.5
+Frozen,105,45,1.0,0,0.5
+Frozen,106,45,1.0,0,0.5
+Frozen,107,45,1.0,0,0.5
+Frozen,108,45,1.0,0,0.5
+Frozen,109,45,1.0,0,0.5
+Frozen,110,45,1.0,0,0.5
+Frozen,111,45,1.0,0,0.5
+Frozen,112,45,1.0,0,0.5
+Frozen,113,45,1.0,0,0.5
+Frozen,114,45,1.0,0,0.5
+Frozen,115,45,1.0,0,0.5
+Frozen,116,45,1.0,0,0.5
+Frozen,117,45,1.0,0,0.5
+Frozen,118,45,1.0,0,0.5
+Frozen,119,45,1.0,0,0.5
+Frozen,120,45,1.0,0,0.5
+Frozen,121,45,1.0,0,0.5
+Frozen,122,45,1.0,0,0.5
+Frozen,123,45,1.0,0,0.5
+Frozen,124,45,1.0,0,0.5
+Frozen,125,45,1.0,0,0.5
+Frozen,126,45,1.0,0,0.5
+Frozen,127,45,1.0,0,0.5
+Frozen,128,45,1.0,0,0.5
+Frozen,129,45,1.0,0,0.5
+Frozen,130,45,1.0,0,0.5
+Frozen,131,45,1.0,0,0.5
+Frozen,132,45,1.0,0,0.5
+Frozen,133,45,1.0,0,0.5
+Frozen,134,45,1.0,0,0.5
+Frozen,135,45,1.0,0,0.5
+Frozen,136,45,1.0,0,0.5
+Frozen,137,45,1.0,0,0.5
+Frozen,138,45,1.0,0,0.5
+Frozen,139,45,1.0,0,0.5
+Frozen,140,45,1.0,0,0.5
+Frozen,141,45,1.0,0,0.5
+Frozen,142,45,1.0,0,0.5
+Frozen,143,45,0.0,0,0.5
+Frozen,144,45,0.0,1,0.5
+Frozen,145,45,0.0,0,0.5
+Frozen,146,45,0.0,0,0.5
+Frozen,147,45,1.0,1,0.5
+Frozen,148,45,1.0,0,0.5
+Frozen,149,45,0.0,0,0.5
+Event-Driven,99,45,1.0,0,0.5
+Event-Driven,100,45,1.0,0,0.5
+Event-Driven,101,45,1.0,0,0.5
+Event-Driven,102,45,1.0,0,0.5
+Event-Driven,103,45,1.0,0,0.5
+Event-Driven,104,45,1.0,0,0.5
+Event-Driven,105,45,1.0,0,0.5
+Event-Driven,106,45,1.0,0,0.5
+Event-Driven,107,45,1.0,0,0.5
+Event-Driven,108,45,1.0,0,0.5
+Event-Driven,109,45,1.0,0,0.5
+Event-Driven,110,45,1.0,0,0.5
+Event-Driven,111,45,1.0,0,0.5
+Event-Driven,112,45,1.0,0,0.5
+Event-Driven,113,45,1.0,0,0.5
+Event-Driven,114,45,1.0,0,0.5
+Event-Driven,115,45,1.0,0,0.5
+Event-Driven,116,45,1.0,0,0.5
+Event-Driven,117,45,1.0,0,0.5
+Event-Driven,118,45,1.0,0,0.5
+Event-Driven,119,45,1.0,0,0.5
+Event-Driven,120,45,1.0,0,0.5
+Event-Driven,121,45,1.0,0,0.5
+Event-Driven,122,45,1.0,0,0.5
+Event-Driven,123,45,1.0,0,0.5
+Event-Driven,124,45,1.0,0,0.5
+Event-Driven,125,45,1.0,0,0.5
+Event-Driven,126,45,1.0,0,0.5
+Event-Driven,127,45,1.0,0,0.5
+Event-Driven,128,45,1.0,0,0.5
+Event-Driven,129,45,1.0,0,0.5
+Event-Driven,130,45,1.0,0,0.5
+Event-Driven,131,45,1.0,0,0.5
+Event-Driven,132,45,1.0,0,0.5
+Event-Driven,133,45,1.0,0,0.5
+Event-Driven,134,45,1.0,0,0.5
+Event-Driven,135,45,1.0,0,0.5
+Event-Driven,136,45,1.0,0,0.5
+Event-Driven,137,45,1.0,0,0.5
+Event-Driven,138,45,1.0,0,0.5
+Event-Driven,139,45,1.0,0,0.5
+Event-Driven,140,45,1.0,0,0.5
+Event-Driven,141,45,1.0,0,0.5
+Event-Driven,142,45,1.0,0,0.5
+Event-Driven,143,45,0.0,0,0.5
+Event-Driven,144,45,0.0,1,0.5
+Event-Driven,145,45,0.0,0,0.5
+Event-Driven,146,45,0.0,0,0.5
+Event-Driven,147,45,1.0,1,0.5
+Event-Driven,148,45,1.0,0,0.5
+Event-Driven,149,45,0.0,0,0.5
+Full Retraining,99,45,1.0,0,0.5
+Full Retraining,100,45,1.0,0,0.5
+Full Retraining,101,45,1.0,0,0.5
+Full Retraining,102,45,1.0,0,0.5
+Full Retraining,103,45,1.0,0,0.5
+Full Retraining,104,45,1.0,0,0.5
+Full Retraining,105,45,1.0,0,0.5
+Full Retraining,106,45,1.0,0,0.5
+Full Retraining,107,45,1.0,0,0.5
+Full Retraining,108,45,1.0,0,0.5
+Full Retraining,109,45,1.0,0,0.5
+Full Retraining,110,45,1.0,0,0.5
+Full Retraining,111,45,1.0,0,0.5
+Full Retraining,112,45,1.0,0,0.5
+Full Retraining,113,45,1.0,0,0.5
+Full Retraining,114,45,1.0,0,0.5
+Full Retraining,115,45,1.0,0,0.5
+Full Retraining,116,45,1.0,0,0.5
+Full Retraining,117,45,1.0,0,0.5
+Full Retraining,118,45,1.0,0,0.5
+Full Retraining,119,45,1.0,0,0.5
+Full Retraining,120,45,1.0,0,0.5
+Full Retraining,121,45,1.0,0,0.5
+Full Retraining,122,45,1.0,0,0.5
+Full Retraining,123,45,1.0,0,0.5
+Full Retraining,124,45,1.0,0,0.5
+Full Retraining,125,45,1.0,0,0.5
+Full Retraining,126,45,1.0,0,0.5
+Full Retraining,127,45,1.0,0,0.5
+Full Retraining,128,45,1.0,0,0.5
+Full Retraining,129,45,1.0,0,0.5
+Full Retraining,130,45,1.0,0,0.5
+Full Retraining,131,45,1.0,0,0.5
+Full Retraining,132,45,1.0,0,0.5
+Full Retraining,133,45,1.0,0,0.5
+Full Retraining,134,45,1.0,0,0.5
+Full Retraining,135,45,1.0,0,0.5
+Full Retraining,136,45,1.0,0,0.5
+Full Retraining,137,45,1.0,0,0.5
+Full Retraining,138,45,1.0,0,0.5
+Full Retraining,139,45,1.0,0,0.5
+Full Retraining,140,45,1.0,0,0.5
+Full Retraining,141,45,1.0,0,0.5
+Full Retraining,142,45,1.0,0,0.5
+Full Retraining,143,45,0.0,0,0.5
+Full Retraining,144,45,0.0,1,0.5
+Full Retraining,145,45,0.0,0,0.5
+Full Retraining,146,45,0.0,0,0.5
+Full Retraining,147,45,1.0,1,0.5
+Full Retraining,148,45,1.0,0,0.5
+Full Retraining,149,45,0.0,0,0.5
+ADWIN,99,45,1.0,0,0.5
+ADWIN,100,45,1.0,0,0.5
+ADWIN,101,45,1.0,0,0.5
+ADWIN,102,45,1.0,0,0.5
+ADWIN,103,45,1.0,0,0.5
+ADWIN,104,45,1.0,0,0.5
+ADWIN,105,45,1.0,0,0.5
+ADWIN,106,45,1.0,0,0.5
+ADWIN,107,45,1.0,0,0.5
+ADWIN,108,45,1.0,0,0.5
+ADWIN,109,45,1.0,0,0.5
+ADWIN,110,45,1.0,0,0.5
+ADWIN,111,45,1.0,0,0.5
+ADWIN,112,45,1.0,0,0.5
+ADWIN,113,45,1.0,0,0.5
+ADWIN,114,45,1.0,0,0.5
+ADWIN,115,45,1.0,0,0.5
+ADWIN,116,45,1.0,0,0.5
+ADWIN,117,45,1.0,0,0.5
+ADWIN,118,45,1.0,0,0.5
+ADWIN,119,45,1.0,0,0.5
+ADWIN,120,45,1.0,0,0.5
+ADWIN,121,45,1.0,0,0.5
+ADWIN,122,45,1.0,0,0.5
+ADWIN,123,45,1.0,0,0.5
+ADWIN,124,45,1.0,0,0.5
+ADWIN,125,45,1.0,0,0.5
+ADWIN,126,45,1.0,0,0.5
+ADWIN,127,45,1.0,0,0.5
+ADWIN,128,45,1.0,0,0.5
+ADWIN,129,45,1.0,0,0.5
+ADWIN,130,45,1.0,0,0.5
+ADWIN,131,45,1.0,0,0.5
+ADWIN,132,45,1.0,0,0.5
+ADWIN,133,45,1.0,0,0.5
+ADWIN,134,45,1.0,0,0.5
+ADWIN,135,45,1.0,0,0.5
+ADWIN,136,45,1.0,0,0.5
+ADWIN,137,45,1.0,0,0.5
+ADWIN,138,45,1.0,0,0.5
+ADWIN,139,45,1.0,0,0.5
+ADWIN,140,45,1.0,0,0.5
+ADWIN,141,45,1.0,0,0.5
+ADWIN,142,45,1.0,0,0.5
+ADWIN,143,45,0.0,0,0.5
+ADWIN,144,45,0.0,0,0.5
+ADWIN,145,45,0.0,0,0.5
+ADWIN,146,45,1.0,0,0.5
+ADWIN,147,45,1.0,0,0.5
+ADWIN,148,45,1.0,0,0.5
+ADWIN,149,45,0.0,0,0.5
+Page-Hinkley,99,45,1.0,0,0.5
+Page-Hinkley,100,45,1.0,0,0.5
+Page-Hinkley,101,45,1.0,0,0.5
+Page-Hinkley,102,45,1.0,0,0.5
+Page-Hinkley,103,45,1.0,0,0.5
+Page-Hinkley,104,45,1.0,0,0.5
+Page-Hinkley,105,45,1.0,0,0.5
+Page-Hinkley,106,45,1.0,0,0.5
+Page-Hinkley,107,45,1.0,0,0.5
+Page-Hinkley,108,45,1.0,0,0.5
+Page-Hinkley,109,45,1.0,0,0.5
+Page-Hinkley,110,45,1.0,0,0.5
+Page-Hinkley,111,45,1.0,0,0.5
+Page-Hinkley,112,45,1.0,0,0.5
+Page-Hinkley,113,45,1.0,0,0.5
+Page-Hinkley,114,45,1.0,0,0.5
+Page-Hinkley,115,45,1.0,0,0.5
+Page-Hinkley,116,45,1.0,0,0.5
+Page-Hinkley,117,45,1.0,0,0.5
+Page-Hinkley,118,45,1.0,0,0.5
+Page-Hinkley,119,45,1.0,0,0.5
+Page-Hinkley,120,45,1.0,0,0.5
+Page-Hinkley,121,45,1.0,0,0.5
+Page-Hinkley,122,45,1.0,0,0.5
+Page-Hinkley,123,45,1.0,0,0.5
+Page-Hinkley,124,45,1.0,0,0.5
+Page-Hinkley,125,45,1.0,0,0.5
+Page-Hinkley,126,45,1.0,0,0.5
+Page-Hinkley,127,45,1.0,0,0.5
+Page-Hinkley,128,45,1.0,0,0.5
+Page-Hinkley,129,45,1.0,0,0.5
+Page-Hinkley,130,45,1.0,0,0.5
+Page-Hinkley,131,45,1.0,0,0.5
+Page-Hinkley,132,45,1.0,0,0.5
+Page-Hinkley,133,45,1.0,0,0.5
+Page-Hinkley,134,45,1.0,0,0.5
+Page-Hinkley,135,45,1.0,0,0.5
+Page-Hinkley,136,45,1.0,0,0.5
+Page-Hinkley,137,45,1.0,0,0.5
+Page-Hinkley,138,45,1.0,0,0.5
+Page-Hinkley,139,45,1.0,0,0.5
+Page-Hinkley,140,45,1.0,0,0.5
+Page-Hinkley,141,45,1.0,0,0.5
+Page-Hinkley,142,45,1.0,0,0.5
+Page-Hinkley,143,45,0.0,0,0.5
+Page-Hinkley,144,45,0.0,0,0.5
+Page-Hinkley,145,45,0.0,0,0.5
+Page-Hinkley,146,45,1.0,0,0.5
+Page-Hinkley,147,45,1.0,0,0.5
+Page-Hinkley,148,45,1.0,0,0.5
+Page-Hinkley,149,45,0.0,0,0.5
+RAPT,99,45,1.0,0,0.5
+RAPT,100,45,1.0,0,0.5
+RAPT,101,45,1.0,0,0.5
+RAPT,102,45,1.0,0,0.5
+RAPT,103,45,1.0,0,0.5
+RAPT,104,45,1.0,0,0.5
+RAPT,105,45,1.0,0,0.5
+RAPT,106,45,1.0,0,0.5
+RAPT,107,45,1.0,0,0.5
+RAPT,108,45,1.0,0,0.5
+RAPT,109,45,1.0,0,0.5
+RAPT,110,45,1.0,0,0.5
+RAPT,111,45,1.0,0,0.5
+RAPT,112,45,1.0,0,0.5
+RAPT,113,45,1.0,0,0.5
+RAPT,114,45,1.0,0,0.5
+RAPT,115,45,1.0,0,0.5
+RAPT,116,45,1.0,0,0.5
+RAPT,117,45,1.0,0,0.5
+RAPT,118,45,1.0,0,0.5
+RAPT,119,45,1.0,0,0.5
+RAPT,120,45,1.0,0,0.5
+RAPT,121,45,1.0,0,0.5
+RAPT,122,45,1.0,0,0.5
+RAPT,123,45,1.0,0,0.5
+RAPT,124,45,1.0,0,0.5
+RAPT,125,45,1.0,0,0.5
+RAPT,126,45,1.0,0,0.5
+RAPT,127,45,1.0,0,0.5
+RAPT,128,45,1.0,0,0.5
+RAPT,129,45,1.0,0,0.5
+RAPT,130,45,1.0,0,0.5
+RAPT,131,45,1.0,0,0.5
+RAPT,132,45,1.0,0,0.5
+RAPT,133,45,1.0,0,0.5
+RAPT,134,45,1.0,0,0.5
+RAPT,135,45,1.0,0,0.5
+RAPT,136,45,1.0,0,0.5
+RAPT,137,45,1.0,0,0.5
+RAPT,138,45,1.0,0,0.5
+RAPT,139,45,1.0,0,0.5
+RAPT,140,45,1.0,0,0.5
+RAPT,141,45,1.0,0,0.5
+RAPT,142,45,1.0,0,0.5
+RAPT,143,45,0.0,0,0.5
+RAPT,144,45,0.0,1,0.5
+RAPT,145,45,0.0,0,0.5
+RAPT,146,45,0.0,0,0.5
+RAPT,147,45,1.0,1,0.5
+RAPT,148,45,1.0,0,0.5
+RAPT,149,45,0.0,0,0.5
+RAPT-Guard,99,45,1.0,0,0.5
+RAPT-Guard,100,45,1.0,0,0.5
+RAPT-Guard,101,45,1.0,0,0.5
+RAPT-Guard,102,45,1.0,0,0.5
+RAPT-Guard,103,45,1.0,0,0.5
+RAPT-Guard,104,45,1.0,0,0.5
+RAPT-Guard,105,45,1.0,0,0.5
+RAPT-Guard,106,45,1.0,0,0.5
+RAPT-Guard,107,45,1.0,0,0.5
+RAPT-Guard,108,45,1.0,0,0.5
+RAPT-Guard,109,45,1.0,0,0.5
+RAPT-Guard,110,45,1.0,0,0.5
+RAPT-Guard,111,45,1.0,0,0.5
+RAPT-Guard,112,45,1.0,0,0.5
+RAPT-Guard,113,45,1.0,0,0.5
+RAPT-Guard,114,45,1.0,0,0.5
+RAPT-Guard,115,45,1.0,0,0.5
+RAPT-Guard,116,45,1.0,0,0.5
+RAPT-Guard,117,45,1.0,0,0.5
+RAPT-Guard,118,45,1.0,0,0.5
+RAPT-Guard,119,45,1.0,0,0.5
+RAPT-Guard,120,45,1.0,0,0.5
+RAPT-Guard,121,45,1.0,0,0.5
+RAPT-Guard,122,45,1.0,0,0.5
+RAPT-Guard,123,45,1.0,0,0.5
+RAPT-Guard,124,45,1.0,0,0.5
+RAPT-Guard,125,45,1.0,0,0.5
+RAPT-Guard,126,45,1.0,0,0.5
+RAPT-Guard,127,45,1.0,0,0.5
+RAPT-Guard,128,45,1.0,0,0.5
+RAPT-Guard,129,45,1.0,0,0.5
+RAPT-Guard,130,45,1.0,0,0.5
+RAPT-Guard,131,45,1.0,0,0.5
+RAPT-Guard,132,45,1.0,0,0.5
+RAPT-Guard,133,45,1.0,0,0.5
+RAPT-Guard,134,45,1.0,0,0.5
+RAPT-Guard,135,45,1.0,0,0.5
+RAPT-Guard,136,45,1.0,0,0.5
+RAPT-Guard,137,45,1.0,0,0.5
+RAPT-Guard,138,45,1.0,0,0.5
+RAPT-Guard,139,45,1.0,0,0.5
+RAPT-Guard,140,45,1.0,0,0.5
+RAPT-Guard,141,45,1.0,0,0.5
+RAPT-Guard,142,45,1.0,0,0.5
+RAPT-Guard,143,45,0.0,0,0.5
+RAPT-Guard,144,45,0.0,0,0.5
+RAPT-Guard,145,45,0.0,0,0.5
+RAPT-Guard,146,45,1.0,0,0.5
+RAPT-Guard,147,45,1.0,0,0.5
+RAPT-Guard,148,45,1.0,0,0.5
+RAPT-Guard,149,45,0.0,0,0.5
+RAPT-ED-Guard,99,45,1.0,0,0.5
+RAPT-ED-Guard,100,45,1.0,0,0.5
+RAPT-ED-Guard,101,45,1.0,0,0.5
+RAPT-ED-Guard,102,45,1.0,0,0.5
+RAPT-ED-Guard,103,45,1.0,0,0.5
+RAPT-ED-Guard,104,45,1.0,0,0.5
+RAPT-ED-Guard,105,45,1.0,0,0.5
+RAPT-ED-Guard,106,45,1.0,0,0.5
+RAPT-ED-Guard,107,45,1.0,0,0.5
+RAPT-ED-Guard,108,45,1.0,0,0.5
+RAPT-ED-Guard,109,45,1.0,0,0.5
+RAPT-ED-Guard,110,45,1.0,0,0.5
+RAPT-ED-Guard,111,45,1.0,0,0.5
+RAPT-ED-Guard,112,45,1.0,0,0.5
+RAPT-ED-Guard,113,45,1.0,0,0.5
+RAPT-ED-Guard,114,45,1.0,0,0.5
+RAPT-ED-Guard,115,45,1.0,0,0.5
+RAPT-ED-Guard,116,45,1.0,0,0.5
+RAPT-ED-Guard,117,45,1.0,0,0.5
+RAPT-ED-Guard,118,45,1.0,0,0.5
+RAPT-ED-Guard,119,45,1.0,0,0.5
+RAPT-ED-Guard,120,45,1.0,0,0.5
+RAPT-ED-Guard,121,45,1.0,0,0.5
+RAPT-ED-Guard,122,45,1.0,0,0.5
+RAPT-ED-Guard,123,45,1.0,0,0.5
+RAPT-ED-Guard,124,45,1.0,0,0.5
+RAPT-ED-Guard,125,45,1.0,0,0.5
+RAPT-ED-Guard,126,45,1.0,0,0.5
+RAPT-ED-Guard,127,45,1.0,0,0.5
+RAPT-ED-Guard,128,45,1.0,0,0.5
+RAPT-ED-Guard,129,45,1.0,0,0.5
+RAPT-ED-Guard,130,45,1.0,0,0.5
+RAPT-ED-Guard,131,45,1.0,0,0.5
+RAPT-ED-Guard,132,45,1.0,0,0.5
+RAPT-ED-Guard,133,45,1.0,0,0.5
+RAPT-ED-Guard,134,45,1.0,0,0.5
+RAPT-ED-Guard,135,45,1.0,0,0.5
+RAPT-ED-Guard,136,45,1.0,0,0.5
+RAPT-ED-Guard,137,45,1.0,0,0.5
+RAPT-ED-Guard,138,45,1.0,0,0.5
+RAPT-ED-Guard,139,45,1.0,0,0.5
+RAPT-ED-Guard,140,45,1.0,0,0.5
+RAPT-ED-Guard,141,45,1.0,0,0.5
+RAPT-ED-Guard,142,45,1.0,0,0.5
+RAPT-ED-Guard,143,45,0.0,1,0.5
+RAPT-ED-Guard,144,45,0.0,0,0.5
+RAPT-ED-Guard,145,45,0.0,0,0.5
+RAPT-ED-Guard,146,45,0.0,0,0.5
+RAPT-ED-Guard,147,45,1.0,0,0.5
+RAPT-ED-Guard,148,45,1.0,0,0.5
+RAPT-ED-Guard,149,45,0.0,0,0.5
+Frozen,99,46,1.0,0,0.5
+Frozen,100,46,1.0,0,0.5
+Frozen,101,46,1.0,0,0.5
+Frozen,102,46,1.0,0,0.5
+Frozen,103,46,1.0,0,0.5
+Frozen,104,46,1.0,0,0.5
+Frozen,105,46,1.0,0,0.5
+Frozen,106,46,1.0,0,0.5
+Frozen,107,46,1.0,0,0.5
+Frozen,108,46,1.0,0,0.5
+Frozen,109,46,1.0,0,0.5
+Frozen,110,46,1.0,0,0.5
+Frozen,111,46,1.0,0,0.5
+Frozen,112,46,1.0,0,0.5
+Frozen,113,46,1.0,0,0.5
+Frozen,114,46,1.0,0,0.5
+Frozen,115,46,1.0,0,0.5
+Frozen,116,46,1.0,0,0.5
+Frozen,117,46,1.0,0,0.5
+Frozen,118,46,1.0,0,0.5
+Frozen,119,46,1.0,0,0.5
+Frozen,120,46,1.0,0,0.5
+Frozen,121,46,1.0,0,0.5
+Frozen,122,46,1.0,0,0.5
+Frozen,123,46,1.0,0,0.5
+Frozen,124,46,1.0,0,0.5
+Frozen,125,46,1.0,0,0.5
+Frozen,126,46,1.0,0,0.5
+Frozen,127,46,1.0,0,0.5
+Frozen,128,46,1.0,0,0.5
+Frozen,129,46,1.0,0,0.5
+Frozen,130,46,0.0,0,0.5
+Frozen,131,46,1.0,0,0.5
+Frozen,132,46,0.0,1,0.5
+Frozen,133,46,1.0,0,0.5
+Frozen,134,46,1.0,0,0.5
+Frozen,135,46,1.0,0,0.5
+Frozen,136,46,1.0,0,0.5
+Frozen,137,46,1.0,0,0.5
+Frozen,138,46,1.0,0,0.5
+Frozen,139,46,1.0,0,0.5
+Frozen,140,46,1.0,0,0.5
+Frozen,141,46,1.0,0,0.5
+Frozen,142,46,1.0,0,0.5
+Frozen,143,46,0.0,0,0.5
+Frozen,144,46,0.0,1,0.5
+Frozen,145,46,0.0,0,0.5
+Frozen,146,46,0.0,0,0.5
+Frozen,147,46,1.0,1,0.5
+Frozen,148,46,1.0,0,0.5
+Frozen,149,46,0.0,0,0.5
+Event-Driven,99,46,1.0,0,0.5
+Event-Driven,100,46,1.0,0,0.5
+Event-Driven,101,46,1.0,0,0.5
+Event-Driven,102,46,1.0,0,0.5
+Event-Driven,103,46,1.0,0,0.5
+Event-Driven,104,46,1.0,0,0.5
+Event-Driven,105,46,1.0,0,0.5
+Event-Driven,106,46,1.0,0,0.5
+Event-Driven,107,46,1.0,0,0.5
+Event-Driven,108,46,1.0,0,0.5
+Event-Driven,109,46,1.0,0,0.5
+Event-Driven,110,46,1.0,0,0.5
+Event-Driven,111,46,1.0,0,0.5
+Event-Driven,112,46,1.0,0,0.5
+Event-Driven,113,46,1.0,0,0.5
+Event-Driven,114,46,1.0,0,0.5
+Event-Driven,115,46,1.0,0,0.5
+Event-Driven,116,46,1.0,0,0.5
+Event-Driven,117,46,1.0,0,0.5
+Event-Driven,118,46,1.0,0,0.5
+Event-Driven,119,46,1.0,0,0.5
+Event-Driven,120,46,1.0,0,0.5
+Event-Driven,121,46,1.0,0,0.5
+Event-Driven,122,46,1.0,0,0.5
+Event-Driven,123,46,1.0,0,0.5
+Event-Driven,124,46,1.0,0,0.5
+Event-Driven,125,46,1.0,0,0.5
+Event-Driven,126,46,1.0,0,0.5
+Event-Driven,127,46,1.0,0,0.5
+Event-Driven,128,46,1.0,0,0.5
+Event-Driven,129,46,1.0,0,0.5
+Event-Driven,130,46,0.0,0,0.5
+Event-Driven,131,46,1.0,0,0.5
+Event-Driven,132,46,0.0,1,0.5
+Event-Driven,133,46,1.0,0,0.5
+Event-Driven,134,46,1.0,0,0.5
+Event-Driven,135,46,1.0,0,0.5
+Event-Driven,136,46,1.0,0,0.5
+Event-Driven,137,46,1.0,0,0.5
+Event-Driven,138,46,1.0,0,0.5
+Event-Driven,139,46,1.0,0,0.5
+Event-Driven,140,46,1.0,0,0.5
+Event-Driven,141,46,1.0,0,0.5
+Event-Driven,142,46,1.0,0,0.5
+Event-Driven,143,46,0.0,0,0.5
+Event-Driven,144,46,0.0,1,0.5
+Event-Driven,145,46,0.0,0,0.5
+Event-Driven,146,46,0.0,0,0.5
+Event-Driven,147,46,1.0,1,0.5
+Event-Driven,148,46,1.0,0,0.5
+Event-Driven,149,46,0.0,0,0.5
+Full Retraining,99,46,1.0,0,0.5
+Full Retraining,100,46,1.0,0,0.5
+Full Retraining,101,46,1.0,0,0.5
+Full Retraining,102,46,1.0,0,0.5
+Full Retraining,103,46,1.0,0,0.5
+Full Retraining,104,46,1.0,0,0.5
+Full Retraining,105,46,1.0,0,0.5
+Full Retraining,106,46,1.0,0,0.5
+Full Retraining,107,46,1.0,0,0.5
+Full Retraining,108,46,1.0,0,0.5
+Full Retraining,109,46,1.0,0,0.5
+Full Retraining,110,46,1.0,0,0.5
+Full Retraining,111,46,1.0,0,0.5
+Full Retraining,112,46,1.0,0,0.5
+Full Retraining,113,46,1.0,0,0.5
+Full Retraining,114,46,1.0,0,0.5
+Full Retraining,115,46,1.0,0,0.5
+Full Retraining,116,46,1.0,0,0.5
+Full Retraining,117,46,1.0,0,0.5
+Full Retraining,118,46,1.0,0,0.5
+Full Retraining,119,46,1.0,0,0.5
+Full Retraining,120,46,1.0,0,0.5
+Full Retraining,121,46,1.0,0,0.5
+Full Retraining,122,46,1.0,0,0.5
+Full Retraining,123,46,1.0,0,0.5
+Full Retraining,124,46,1.0,0,0.5
+Full Retraining,125,46,1.0,0,0.5
+Full Retraining,126,46,1.0,0,0.5
+Full Retraining,127,46,1.0,0,0.5
+Full Retraining,128,46,1.0,0,0.5
+Full Retraining,129,46,1.0,0,0.5
+Full Retraining,130,46,0.0,0,0.5
+Full Retraining,131,46,1.0,0,0.5
+Full Retraining,132,46,0.0,1,0.5
+Full Retraining,133,46,1.0,0,0.5
+Full Retraining,134,46,1.0,0,0.5
+Full Retraining,135,46,1.0,0,0.5
+Full Retraining,136,46,1.0,0,0.5
+Full Retraining,137,46,1.0,0,0.5
+Full Retraining,138,46,1.0,0,0.5
+Full Retraining,139,46,1.0,0,0.5
+Full Retraining,140,46,1.0,0,0.5
+Full Retraining,141,46,1.0,0,0.5
+Full Retraining,142,46,1.0,0,0.5
+Full Retraining,143,46,0.0,0,0.5
+Full Retraining,144,46,0.0,1,0.5
+Full Retraining,145,46,0.0,0,0.5
+Full Retraining,146,46,0.0,0,0.5
+Full Retraining,147,46,1.0,1,0.5
+Full Retraining,148,46,1.0,0,0.5
+Full Retraining,149,46,0.0,0,0.5
+ADWIN,99,46,1.0,0,0.5
+ADWIN,100,46,1.0,0,0.5
+ADWIN,101,46,1.0,0,0.5
+ADWIN,102,46,1.0,0,0.5
+ADWIN,103,46,1.0,0,0.5
+ADWIN,104,46,1.0,0,0.5
+ADWIN,105,46,1.0,0,0.5
+ADWIN,106,46,1.0,0,0.5
+ADWIN,107,46,1.0,0,0.5
+ADWIN,108,46,1.0,0,0.5
+ADWIN,109,46,1.0,0,0.5
+ADWIN,110,46,1.0,0,0.5
+ADWIN,111,46,1.0,0,0.5
+ADWIN,112,46,1.0,0,0.5
+ADWIN,113,46,1.0,0,0.5
+ADWIN,114,46,1.0,0,0.5
+ADWIN,115,46,1.0,0,0.5
+ADWIN,116,46,1.0,0,0.5
+ADWIN,117,46,1.0,0,0.5
+ADWIN,118,46,1.0,0,0.5
+ADWIN,119,46,1.0,0,0.5
+ADWIN,120,46,1.0,0,0.5
+ADWIN,121,46,1.0,0,0.5
+ADWIN,122,46,1.0,0,0.5
+ADWIN,123,46,1.0,0,0.5
+ADWIN,124,46,1.0,0,0.5
+ADWIN,125,46,1.0,0,0.5
+ADWIN,126,46,1.0,0,0.5
+ADWIN,127,46,1.0,0,0.5
+ADWIN,128,46,1.0,0,0.5
+ADWIN,129,46,1.0,0,0.5
+ADWIN,130,46,0.0,0,0.5
+ADWIN,131,46,1.0,0,0.5
+ADWIN,132,46,0.0,0,0.5
+ADWIN,133,46,1.0,0,0.5
+ADWIN,134,46,1.0,0,0.5
+ADWIN,135,46,1.0,0,0.5
+ADWIN,136,46,1.0,0,0.5
+ADWIN,137,46,1.0,0,0.5
+ADWIN,138,46,1.0,0,0.5
+ADWIN,139,46,1.0,0,0.5
+ADWIN,140,46,1.0,0,0.5
+ADWIN,141,46,1.0,0,0.5
+ADWIN,142,46,1.0,0,0.5
+ADWIN,143,46,0.0,0,0.5
+ADWIN,144,46,0.0,0,0.5
+ADWIN,145,46,0.0,0,0.5
+ADWIN,146,46,0.0,0,0.5
+ADWIN,147,46,1.0,0,0.5
+ADWIN,148,46,1.0,0,0.5
+ADWIN,149,46,0.0,0,0.5
+Page-Hinkley,99,46,1.0,0,0.5
+Page-Hinkley,100,46,1.0,0,0.5
+Page-Hinkley,101,46,1.0,0,0.5
+Page-Hinkley,102,46,1.0,0,0.5
+Page-Hinkley,103,46,1.0,0,0.5
+Page-Hinkley,104,46,1.0,0,0.5
+Page-Hinkley,105,46,1.0,0,0.5
+Page-Hinkley,106,46,1.0,0,0.5
+Page-Hinkley,107,46,1.0,0,0.5
+Page-Hinkley,108,46,1.0,0,0.5
+Page-Hinkley,109,46,1.0,0,0.5
+Page-Hinkley,110,46,1.0,0,0.5
+Page-Hinkley,111,46,1.0,0,0.5
+Page-Hinkley,112,46,1.0,0,0.5
+Page-Hinkley,113,46,1.0,0,0.5
+Page-Hinkley,114,46,1.0,0,0.5
+Page-Hinkley,115,46,1.0,0,0.5
+Page-Hinkley,116,46,1.0,0,0.5
+Page-Hinkley,117,46,1.0,0,0.5
+Page-Hinkley,118,46,1.0,0,0.5
+Page-Hinkley,119,46,1.0,0,0.5
+Page-Hinkley,120,46,1.0,0,0.5
+Page-Hinkley,121,46,1.0,0,0.5
+Page-Hinkley,122,46,1.0,0,0.5
+Page-Hinkley,123,46,1.0,0,0.5
+Page-Hinkley,124,46,1.0,0,0.5
+Page-Hinkley,125,46,1.0,0,0.5
+Page-Hinkley,126,46,1.0,0,0.5
+Page-Hinkley,127,46,1.0,0,0.5
+Page-Hinkley,128,46,1.0,0,0.5
+Page-Hinkley,129,46,1.0,0,0.5
+Page-Hinkley,130,46,0.0,0,0.5
+Page-Hinkley,131,46,1.0,0,0.5
+Page-Hinkley,132,46,0.0,0,0.5
+Page-Hinkley,133,46,1.0,0,0.5
+Page-Hinkley,134,46,1.0,0,0.5
+Page-Hinkley,135,46,1.0,0,0.5
+Page-Hinkley,136,46,1.0,0,0.5
+Page-Hinkley,137,46,1.0,0,0.5
+Page-Hinkley,138,46,1.0,0,0.5
+Page-Hinkley,139,46,1.0,0,0.5
+Page-Hinkley,140,46,1.0,0,0.5
+Page-Hinkley,141,46,1.0,0,0.5
+Page-Hinkley,142,46,1.0,0,0.5
+Page-Hinkley,143,46,0.0,0,0.5
+Page-Hinkley,144,46,0.0,0,0.5
+Page-Hinkley,145,46,0.0,0,0.5
+Page-Hinkley,146,46,0.0,0,0.5
+Page-Hinkley,147,46,1.0,0,0.5
+Page-Hinkley,148,46,1.0,0,0.5
+Page-Hinkley,149,46,0.0,0,0.5
+RAPT,99,46,1.0,0,0.5
+RAPT,100,46,1.0,0,0.5
+RAPT,101,46,1.0,0,0.5
+RAPT,102,46,1.0,0,0.5
+RAPT,103,46,1.0,0,0.5
+RAPT,104,46,1.0,0,0.5
+RAPT,105,46,1.0,0,0.5
+RAPT,106,46,1.0,0,0.5
+RAPT,107,46,1.0,0,0.5
+RAPT,108,46,1.0,0,0.5
+RAPT,109,46,1.0,0,0.5
+RAPT,110,46,1.0,0,0.5
+RAPT,111,46,1.0,0,0.5
+RAPT,112,46,1.0,0,0.5
+RAPT,113,46,1.0,0,0.5
+RAPT,114,46,1.0,0,0.5
+RAPT,115,46,1.0,0,0.5
+RAPT,116,46,1.0,0,0.5
+RAPT,117,46,1.0,0,0.5
+RAPT,118,46,1.0,0,0.5
+RAPT,119,46,1.0,0,0.5
+RAPT,120,46,1.0,0,0.5
+RAPT,121,46,1.0,0,0.5
+RAPT,122,46,1.0,0,0.5
+RAPT,123,46,1.0,0,0.5
+RAPT,124,46,1.0,0,0.5
+RAPT,125,46,1.0,0,0.5
+RAPT,126,46,1.0,0,0.5
+RAPT,127,46,1.0,0,0.5
+RAPT,128,46,1.0,0,0.5
+RAPT,129,46,1.0,0,0.5
+RAPT,130,46,0.0,0,0.5
+RAPT,131,46,1.0,0,0.5
+RAPT,132,46,0.0,1,0.5
+RAPT,133,46,1.0,0,0.5
+RAPT,134,46,1.0,0,0.5
+RAPT,135,46,1.0,0,0.5
+RAPT,136,46,1.0,0,0.5
+RAPT,137,46,0.0,0,0.5
+RAPT,138,46,1.0,0,0.5
+RAPT,139,46,1.0,0,0.5
+RAPT,140,46,1.0,0,0.5
+RAPT,141,46,1.0,0,0.5
+RAPT,142,46,1.0,0,0.5
+RAPT,143,46,1.0,0,0.5
+RAPT,144,46,0.0,0,0.5
+RAPT,145,46,0.0,1,0.5
+RAPT,146,46,0.0,0,0.5
+RAPT,147,46,1.0,0,0.5
+RAPT,148,46,1.0,0,0.5
+RAPT,149,46,0.0,0,0.5
+RAPT-Guard,99,46,1.0,0,0.5
+RAPT-Guard,100,46,1.0,0,0.5
+RAPT-Guard,101,46,1.0,0,0.5
+RAPT-Guard,102,46,1.0,0,0.5
+RAPT-Guard,103,46,1.0,0,0.5
+RAPT-Guard,104,46,1.0,0,0.5
+RAPT-Guard,105,46,1.0,0,0.5
+RAPT-Guard,106,46,1.0,0,0.5
+RAPT-Guard,107,46,1.0,0,0.5
+RAPT-Guard,108,46,1.0,0,0.5
+RAPT-Guard,109,46,1.0,0,0.5
+RAPT-Guard,110,46,1.0,0,0.5
+RAPT-Guard,111,46,1.0,0,0.5
+RAPT-Guard,112,46,1.0,0,0.5
+RAPT-Guard,113,46,1.0,0,0.5
+RAPT-Guard,114,46,1.0,0,0.5
+RAPT-Guard,115,46,1.0,0,0.5
+RAPT-Guard,116,46,1.0,0,0.5
+RAPT-Guard,117,46,1.0,0,0.5
+RAPT-Guard,118,46,1.0,0,0.5
+RAPT-Guard,119,46,1.0,0,0.5
+RAPT-Guard,120,46,1.0,0,0.5
+RAPT-Guard,121,46,1.0,0,0.5
+RAPT-Guard,122,46,1.0,0,0.5
+RAPT-Guard,123,46,1.0,0,0.5
+RAPT-Guard,124,46,1.0,0,0.5
+RAPT-Guard,125,46,1.0,0,0.5
+RAPT-Guard,126,46,1.0,0,0.5
+RAPT-Guard,127,46,1.0,0,0.5
+RAPT-Guard,128,46,1.0,0,0.5
+RAPT-Guard,129,46,1.0,0,0.5
+RAPT-Guard,130,46,0.0,0,0.5
+RAPT-Guard,131,46,1.0,0,0.5
+RAPT-Guard,132,46,0.0,0,0.5
+RAPT-Guard,133,46,1.0,0,0.5
+RAPT-Guard,134,46,1.0,0,0.5
+RAPT-Guard,135,46,1.0,0,0.5
+RAPT-Guard,136,46,1.0,0,0.5
+RAPT-Guard,137,46,1.0,0,0.5
+RAPT-Guard,138,46,1.0,0,0.5
+RAPT-Guard,139,46,1.0,0,0.5
+RAPT-Guard,140,46,1.0,0,0.5
+RAPT-Guard,141,46,1.0,0,0.5
+RAPT-Guard,142,46,1.0,0,0.5
+RAPT-Guard,143,46,0.0,0,0.5
+RAPT-Guard,144,46,0.0,0,0.5
+RAPT-Guard,145,46,0.0,0,0.5
+RAPT-Guard,146,46,0.0,0,0.5
+RAPT-Guard,147,46,1.0,0,0.5
+RAPT-Guard,148,46,1.0,0,0.5
+RAPT-Guard,149,46,0.0,0,0.5
+RAPT-ED-Guard,99,46,1.0,0,0.5
+RAPT-ED-Guard,100,46,1.0,0,0.5
+RAPT-ED-Guard,101,46,1.0,0,0.5
+RAPT-ED-Guard,102,46,1.0,0,0.5
+RAPT-ED-Guard,103,46,1.0,0,0.5
+RAPT-ED-Guard,104,46,1.0,0,0.5
+RAPT-ED-Guard,105,46,1.0,0,0.5
+RAPT-ED-Guard,106,46,1.0,0,0.5
+RAPT-ED-Guard,107,46,1.0,0,0.5
+RAPT-ED-Guard,108,46,1.0,0,0.5
+RAPT-ED-Guard,109,46,1.0,0,0.5
+RAPT-ED-Guard,110,46,1.0,0,0.5
+RAPT-ED-Guard,111,46,1.0,0,0.5
+RAPT-ED-Guard,112,46,1.0,0,0.5
+RAPT-ED-Guard,113,46,1.0,0,0.5
+RAPT-ED-Guard,114,46,1.0,0,0.5
+RAPT-ED-Guard,115,46,1.0,0,0.5
+RAPT-ED-Guard,116,46,1.0,0,0.5
+RAPT-ED-Guard,117,46,1.0,0,0.5
+RAPT-ED-Guard,118,46,1.0,0,0.5
+RAPT-ED-Guard,119,46,1.0,0,0.5
+RAPT-ED-Guard,120,46,1.0,0,0.5
+RAPT-ED-Guard,121,46,1.0,0,0.5
+RAPT-ED-Guard,122,46,1.0,0,0.5
+RAPT-ED-Guard,123,46,1.0,0,0.5
+RAPT-ED-Guard,124,46,1.0,0,0.5
+RAPT-ED-Guard,125,46,1.0,0,0.5
+RAPT-ED-Guard,126,46,1.0,0,0.5
+RAPT-ED-Guard,127,46,1.0,0,0.5
+RAPT-ED-Guard,128,46,1.0,0,0.5
+RAPT-ED-Guard,129,46,1.0,0,0.5
+RAPT-ED-Guard,130,46,0.0,1,0.5
+RAPT-ED-Guard,131,46,1.0,0,0.5
+RAPT-ED-Guard,132,46,0.0,0,0.5
+RAPT-ED-Guard,133,46,1.0,0,0.5
+RAPT-ED-Guard,134,46,1.0,0,0.5
+RAPT-ED-Guard,135,46,1.0,0,0.5
+RAPT-ED-Guard,136,46,1.0,0,0.5
+RAPT-ED-Guard,137,46,1.0,0,0.5
+RAPT-ED-Guard,138,46,1.0,0,0.5
+RAPT-ED-Guard,139,46,1.0,0,0.5
+RAPT-ED-Guard,140,46,1.0,0,0.5
+RAPT-ED-Guard,141,46,1.0,0,0.5
+RAPT-ED-Guard,142,46,1.0,0,0.5
+RAPT-ED-Guard,143,46,1.0,0,0.5
+RAPT-ED-Guard,144,46,0.0,1,0.5
+RAPT-ED-Guard,145,46,0.0,0,0.5
+RAPT-ED-Guard,146,46,1.0,0,0.5
+RAPT-ED-Guard,147,46,1.0,0,0.5
+RAPT-ED-Guard,148,46,1.0,0,0.5
+RAPT-ED-Guard,149,46,0.0,0,0.5
+Frozen,99,42,1.0,0,1.0
+Frozen,100,42,1.0,0,1.0
+Frozen,101,42,1.0,0,1.0
+Frozen,102,42,1.0,0,1.0
+Frozen,103,42,1.0,0,1.0
+Frozen,104,42,1.0,0,1.0
+Frozen,105,42,1.0,0,1.0
+Frozen,106,42,1.0,0,1.0
+Frozen,107,42,1.0,0,1.0
+Frozen,108,42,1.0,0,1.0
+Frozen,109,42,1.0,0,1.0
+Frozen,110,42,1.0,0,1.0
+Frozen,111,42,1.0,0,1.0
+Frozen,112,42,1.0,0,1.0
+Frozen,113,42,1.0,0,1.0
+Frozen,114,42,1.0,0,1.0
+Frozen,115,42,1.0,0,1.0
+Frozen,116,42,1.0,0,1.0
+Frozen,117,42,1.0,0,1.0
+Frozen,118,42,1.0,0,1.0
+Frozen,119,42,1.0,0,1.0
+Frozen,120,42,1.0,0,1.0
+Frozen,121,42,1.0,0,1.0
+Frozen,122,42,1.0,0,1.0
+Frozen,123,42,1.0,0,1.0
+Frozen,124,42,1.0,0,1.0
+Frozen,125,42,1.0,0,1.0
+Frozen,126,42,1.0,0,1.0
+Frozen,127,42,1.0,0,1.0
+Frozen,128,42,1.0,0,1.0
+Frozen,129,42,1.0,0,1.0
+Frozen,130,42,1.0,0,1.0
+Frozen,131,42,1.0,0,1.0
+Frozen,132,42,0.0,0,1.0
+Frozen,133,42,1.0,0,1.0
+Frozen,134,42,1.0,0,1.0
+Frozen,135,42,1.0,0,1.0
+Frozen,136,42,1.0,0,1.0
+Frozen,137,42,0.0,0,1.0
+Frozen,138,42,1.0,0,1.0
+Frozen,139,42,1.0,0,1.0
+Frozen,140,42,1.0,0,1.0
+Frozen,141,42,1.0,0,1.0
+Frozen,142,42,1.0,0,1.0
+Frozen,143,42,0.0,0,1.0
+Frozen,144,42,0.0,1,1.0
+Frozen,145,42,0.0,0,1.0
+Frozen,146,42,0.0,0,1.0
+Frozen,147,42,1.0,1,1.0
+Frozen,148,42,1.0,0,1.0
+Frozen,149,42,0.0,0,1.0
+Event-Driven,99,42,1.0,0,1.0
+Event-Driven,100,42,1.0,0,1.0
+Event-Driven,101,42,1.0,0,1.0
+Event-Driven,102,42,1.0,0,1.0
+Event-Driven,103,42,1.0,0,1.0
+Event-Driven,104,42,1.0,0,1.0
+Event-Driven,105,42,1.0,0,1.0
+Event-Driven,106,42,1.0,0,1.0
+Event-Driven,107,42,1.0,0,1.0
+Event-Driven,108,42,1.0,0,1.0
+Event-Driven,109,42,1.0,0,1.0
+Event-Driven,110,42,1.0,0,1.0
+Event-Driven,111,42,1.0,0,1.0
+Event-Driven,112,42,1.0,0,1.0
+Event-Driven,113,42,1.0,0,1.0
+Event-Driven,114,42,1.0,0,1.0
+Event-Driven,115,42,1.0,0,1.0
+Event-Driven,116,42,1.0,0,1.0
+Event-Driven,117,42,1.0,0,1.0
+Event-Driven,118,42,1.0,0,1.0
+Event-Driven,119,42,1.0,0,1.0
+Event-Driven,120,42,1.0,0,1.0
+Event-Driven,121,42,1.0,0,1.0
+Event-Driven,122,42,1.0,0,1.0
+Event-Driven,123,42,1.0,0,1.0
+Event-Driven,124,42,1.0,0,1.0
+Event-Driven,125,42,1.0,0,1.0
+Event-Driven,126,42,1.0,0,1.0
+Event-Driven,127,42,1.0,0,1.0
+Event-Driven,128,42,1.0,0,1.0
+Event-Driven,129,42,1.0,0,1.0
+Event-Driven,130,42,1.0,0,1.0
+Event-Driven,131,42,1.0,0,1.0
+Event-Driven,132,42,0.0,0,1.0
+Event-Driven,133,42,1.0,0,1.0
+Event-Driven,134,42,1.0,0,1.0
+Event-Driven,135,42,1.0,0,1.0
+Event-Driven,136,42,1.0,0,1.0
+Event-Driven,137,42,0.0,0,1.0
+Event-Driven,138,42,1.0,0,1.0
+Event-Driven,139,42,1.0,0,1.0
+Event-Driven,140,42,1.0,0,1.0
+Event-Driven,141,42,1.0,0,1.0
+Event-Driven,142,42,1.0,0,1.0
+Event-Driven,143,42,0.0,0,1.0
+Event-Driven,144,42,0.0,1,1.0
+Event-Driven,145,42,0.0,0,1.0
+Event-Driven,146,42,0.0,0,1.0
+Event-Driven,147,42,1.0,1,1.0
+Event-Driven,148,42,1.0,0,1.0
+Event-Driven,149,42,0.0,0,1.0
+Full Retraining,99,42,1.0,0,1.0
+Full Retraining,100,42,1.0,0,1.0
+Full Retraining,101,42,1.0,0,1.0
+Full Retraining,102,42,1.0,0,1.0
+Full Retraining,103,42,1.0,0,1.0
+Full Retraining,104,42,1.0,0,1.0
+Full Retraining,105,42,1.0,0,1.0
+Full Retraining,106,42,1.0,0,1.0
+Full Retraining,107,42,1.0,0,1.0
+Full Retraining,108,42,1.0,0,1.0
+Full Retraining,109,42,1.0,0,1.0
+Full Retraining,110,42,1.0,0,1.0
+Full Retraining,111,42,1.0,0,1.0
+Full Retraining,112,42,1.0,0,1.0
+Full Retraining,113,42,1.0,0,1.0
+Full Retraining,114,42,1.0,0,1.0
+Full Retraining,115,42,1.0,0,1.0
+Full Retraining,116,42,1.0,0,1.0
+Full Retraining,117,42,1.0,0,1.0
+Full Retraining,118,42,1.0,0,1.0
+Full Retraining,119,42,1.0,0,1.0
+Full Retraining,120,42,1.0,0,1.0
+Full Retraining,121,42,1.0,0,1.0
+Full Retraining,122,42,1.0,0,1.0
+Full Retraining,123,42,1.0,0,1.0
+Full Retraining,124,42,1.0,0,1.0
+Full Retraining,125,42,1.0,0,1.0
+Full Retraining,126,42,1.0,0,1.0
+Full Retraining,127,42,1.0,0,1.0
+Full Retraining,128,42,1.0,0,1.0
+Full Retraining,129,42,1.0,0,1.0
+Full Retraining,130,42,1.0,0,1.0
+Full Retraining,131,42,1.0,0,1.0
+Full Retraining,132,42,0.0,0,1.0
+Full Retraining,133,42,1.0,0,1.0
+Full Retraining,134,42,1.0,0,1.0
+Full Retraining,135,42,1.0,0,1.0
+Full Retraining,136,42,1.0,0,1.0
+Full Retraining,137,42,0.0,0,1.0
+Full Retraining,138,42,1.0,0,1.0
+Full Retraining,139,42,1.0,0,1.0
+Full Retraining,140,42,1.0,0,1.0
+Full Retraining,141,42,1.0,0,1.0
+Full Retraining,142,42,1.0,0,1.0
+Full Retraining,143,42,0.0,0,1.0
+Full Retraining,144,42,0.0,1,1.0
+Full Retraining,145,42,0.0,0,1.0
+Full Retraining,146,42,0.0,0,1.0
+Full Retraining,147,42,1.0,1,1.0
+Full Retraining,148,42,1.0,0,1.0
+Full Retraining,149,42,0.0,0,1.0
+ADWIN,99,42,1.0,0,1.0
+ADWIN,100,42,1.0,0,1.0
+ADWIN,101,42,1.0,0,1.0
+ADWIN,102,42,1.0,0,1.0
+ADWIN,103,42,1.0,0,1.0
+ADWIN,104,42,1.0,0,1.0
+ADWIN,105,42,1.0,0,1.0
+ADWIN,106,42,1.0,0,1.0
+ADWIN,107,42,1.0,0,1.0
+ADWIN,108,42,1.0,0,1.0
+ADWIN,109,42,1.0,0,1.0
+ADWIN,110,42,1.0,0,1.0
+ADWIN,111,42,1.0,0,1.0
+ADWIN,112,42,1.0,0,1.0
+ADWIN,113,42,1.0,0,1.0
+ADWIN,114,42,1.0,0,1.0
+ADWIN,115,42,1.0,0,1.0
+ADWIN,116,42,1.0,0,1.0
+ADWIN,117,42,1.0,0,1.0
+ADWIN,118,42,1.0,0,1.0
+ADWIN,119,42,1.0,0,1.0
+ADWIN,120,42,1.0,0,1.0
+ADWIN,121,42,1.0,0,1.0
+ADWIN,122,42,1.0,0,1.0
+ADWIN,123,42,1.0,0,1.0
+ADWIN,124,42,1.0,0,1.0
+ADWIN,125,42,1.0,0,1.0
+ADWIN,126,42,1.0,0,1.0
+ADWIN,127,42,1.0,0,1.0
+ADWIN,128,42,1.0,0,1.0
+ADWIN,129,42,1.0,0,1.0
+ADWIN,130,42,1.0,0,1.0
+ADWIN,131,42,1.0,0,1.0
+ADWIN,132,42,0.0,0,1.0
+ADWIN,133,42,1.0,0,1.0
+ADWIN,134,42,1.0,0,1.0
+ADWIN,135,42,1.0,0,1.0
+ADWIN,136,42,1.0,0,1.0
+ADWIN,137,42,0.0,0,1.0
+ADWIN,138,42,1.0,0,1.0
+ADWIN,139,42,1.0,0,1.0
+ADWIN,140,42,1.0,0,1.0
+ADWIN,141,42,1.0,0,1.0
+ADWIN,142,42,1.0,0,1.0
+ADWIN,143,42,0.0,0,1.0
+ADWIN,144,42,0.0,0,1.0
+ADWIN,145,42,0.0,0,1.0
+ADWIN,146,42,0.0,0,1.0
+ADWIN,147,42,1.0,0,1.0
+ADWIN,148,42,1.0,0,1.0
+ADWIN,149,42,0.0,0,1.0
+Page-Hinkley,99,42,1.0,0,1.0
+Page-Hinkley,100,42,1.0,0,1.0
+Page-Hinkley,101,42,1.0,0,1.0
+Page-Hinkley,102,42,1.0,0,1.0
+Page-Hinkley,103,42,1.0,0,1.0
+Page-Hinkley,104,42,1.0,0,1.0
+Page-Hinkley,105,42,1.0,0,1.0
+Page-Hinkley,106,42,1.0,0,1.0
+Page-Hinkley,107,42,1.0,0,1.0
+Page-Hinkley,108,42,1.0,0,1.0
+Page-Hinkley,109,42,1.0,0,1.0
+Page-Hinkley,110,42,1.0,0,1.0
+Page-Hinkley,111,42,1.0,0,1.0
+Page-Hinkley,112,42,1.0,0,1.0
+Page-Hinkley,113,42,1.0,0,1.0
+Page-Hinkley,114,42,1.0,0,1.0
+Page-Hinkley,115,42,1.0,0,1.0
+Page-Hinkley,116,42,1.0,0,1.0
+Page-Hinkley,117,42,1.0,0,1.0
+Page-Hinkley,118,42,1.0,0,1.0
+Page-Hinkley,119,42,1.0,0,1.0
+Page-Hinkley,120,42,1.0,0,1.0
+Page-Hinkley,121,42,1.0,0,1.0
+Page-Hinkley,122,42,1.0,0,1.0
+Page-Hinkley,123,42,1.0,0,1.0
+Page-Hinkley,124,42,1.0,0,1.0
+Page-Hinkley,125,42,1.0,0,1.0
+Page-Hinkley,126,42,1.0,0,1.0
+Page-Hinkley,127,42,1.0,0,1.0
+Page-Hinkley,128,42,1.0,0,1.0
+Page-Hinkley,129,42,1.0,0,1.0
+Page-Hinkley,130,42,1.0,0,1.0
+Page-Hinkley,131,42,1.0,0,1.0
+Page-Hinkley,132,42,0.0,0,1.0
+Page-Hinkley,133,42,1.0,0,1.0
+Page-Hinkley,134,42,1.0,0,1.0
+Page-Hinkley,135,42,1.0,0,1.0
+Page-Hinkley,136,42,1.0,0,1.0
+Page-Hinkley,137,42,0.0,0,1.0
+Page-Hinkley,138,42,1.0,0,1.0
+Page-Hinkley,139,42,1.0,0,1.0
+Page-Hinkley,140,42,1.0,0,1.0
+Page-Hinkley,141,42,1.0,0,1.0
+Page-Hinkley,142,42,1.0,0,1.0
+Page-Hinkley,143,42,0.0,0,1.0
+Page-Hinkley,144,42,0.0,0,1.0
+Page-Hinkley,145,42,0.0,0,1.0
+Page-Hinkley,146,42,0.0,0,1.0
+Page-Hinkley,147,42,1.0,0,1.0
+Page-Hinkley,148,42,1.0,0,1.0
+Page-Hinkley,149,42,0.0,0,1.0
+RAPT,99,42,1.0,0,1.0
+RAPT,100,42,1.0,0,1.0
+RAPT,101,42,1.0,0,1.0
+RAPT,102,42,1.0,0,1.0
+RAPT,103,42,1.0,0,1.0
+RAPT,104,42,1.0,0,1.0
+RAPT,105,42,1.0,0,1.0
+RAPT,106,42,1.0,0,1.0
+RAPT,107,42,1.0,0,1.0
+RAPT,108,42,1.0,0,1.0
+RAPT,109,42,1.0,0,1.0
+RAPT,110,42,1.0,0,1.0
+RAPT,111,42,1.0,0,1.0
+RAPT,112,42,1.0,0,1.0
+RAPT,113,42,1.0,0,1.0
+RAPT,114,42,1.0,0,1.0
+RAPT,115,42,1.0,0,1.0
+RAPT,116,42,1.0,0,1.0
+RAPT,117,42,1.0,0,1.0
+RAPT,118,42,1.0,0,1.0
+RAPT,119,42,1.0,0,1.0
+RAPT,120,42,1.0,0,1.0
+RAPT,121,42,1.0,0,1.0
+RAPT,122,42,1.0,0,1.0
+RAPT,123,42,1.0,0,1.0
+RAPT,124,42,1.0,0,1.0
+RAPT,125,42,1.0,0,1.0
+RAPT,126,42,1.0,0,1.0
+RAPT,127,42,1.0,0,1.0
+RAPT,128,42,1.0,0,1.0
+RAPT,129,42,1.0,0,1.0
+RAPT,130,42,1.0,0,1.0
+RAPT,131,42,1.0,0,1.0
+RAPT,132,42,0.0,0,1.0
+RAPT,133,42,1.0,0,1.0
+RAPT,134,42,1.0,0,1.0
+RAPT,135,42,1.0,0,1.0
+RAPT,136,42,1.0,0,1.0
+RAPT,137,42,0.0,0,1.0
+RAPT,138,42,1.0,0,1.0
+RAPT,139,42,1.0,0,1.0
+RAPT,140,42,1.0,0,1.0
+RAPT,141,42,1.0,0,1.0
+RAPT,142,42,1.0,0,1.0
+RAPT,143,42,0.0,0,1.0
+RAPT,144,42,0.0,1,1.0
+RAPT,145,42,0.0,0,1.0
+RAPT,146,42,0.0,0,1.0
+RAPT,147,42,1.0,1,1.0
+RAPT,148,42,1.0,0,1.0
+RAPT,149,42,0.0,0,1.0
+RAPT-Guard,99,42,1.0,0,1.0
+RAPT-Guard,100,42,1.0,0,1.0
+RAPT-Guard,101,42,1.0,0,1.0
+RAPT-Guard,102,42,1.0,0,1.0
+RAPT-Guard,103,42,1.0,0,1.0
+RAPT-Guard,104,42,1.0,0,1.0
+RAPT-Guard,105,42,1.0,0,1.0
+RAPT-Guard,106,42,1.0,0,1.0
+RAPT-Guard,107,42,1.0,0,1.0
+RAPT-Guard,108,42,1.0,0,1.0
+RAPT-Guard,109,42,1.0,0,1.0
+RAPT-Guard,110,42,1.0,0,1.0
+RAPT-Guard,111,42,1.0,0,1.0
+RAPT-Guard,112,42,1.0,0,1.0
+RAPT-Guard,113,42,1.0,0,1.0
+RAPT-Guard,114,42,1.0,0,1.0
+RAPT-Guard,115,42,1.0,0,1.0
+RAPT-Guard,116,42,1.0,0,1.0
+RAPT-Guard,117,42,1.0,0,1.0
+RAPT-Guard,118,42,1.0,0,1.0
+RAPT-Guard,119,42,1.0,0,1.0
+RAPT-Guard,120,42,1.0,0,1.0
+RAPT-Guard,121,42,1.0,0,1.0
+RAPT-Guard,122,42,1.0,0,1.0
+RAPT-Guard,123,42,1.0,0,1.0
+RAPT-Guard,124,42,1.0,0,1.0
+RAPT-Guard,125,42,1.0,0,1.0
+RAPT-Guard,126,42,1.0,0,1.0
+RAPT-Guard,127,42,1.0,0,1.0
+RAPT-Guard,128,42,1.0,0,1.0
+RAPT-Guard,129,42,1.0,0,1.0
+RAPT-Guard,130,42,1.0,0,1.0
+RAPT-Guard,131,42,1.0,0,1.0
+RAPT-Guard,132,42,0.0,0,1.0
+RAPT-Guard,133,42,1.0,0,1.0
+RAPT-Guard,134,42,1.0,0,1.0
+RAPT-Guard,135,42,1.0,0,1.0
+RAPT-Guard,136,42,1.0,0,1.0
+RAPT-Guard,137,42,0.0,0,1.0
+RAPT-Guard,138,42,1.0,0,1.0
+RAPT-Guard,139,42,1.0,0,1.0
+RAPT-Guard,140,42,1.0,0,1.0
+RAPT-Guard,141,42,1.0,0,1.0
+RAPT-Guard,142,42,1.0,0,1.0
+RAPT-Guard,143,42,0.0,0,1.0
+RAPT-Guard,144,42,0.0,0,1.0
+RAPT-Guard,145,42,0.0,0,1.0
+RAPT-Guard,146,42,0.0,0,1.0
+RAPT-Guard,147,42,1.0,0,1.0
+RAPT-Guard,148,42,1.0,0,1.0
+RAPT-Guard,149,42,0.0,0,1.0
+RAPT-ED-Guard,99,42,1.0,0,1.0
+RAPT-ED-Guard,100,42,1.0,0,1.0
+RAPT-ED-Guard,101,42,1.0,0,1.0
+RAPT-ED-Guard,102,42,1.0,0,1.0
+RAPT-ED-Guard,103,42,1.0,0,1.0
+RAPT-ED-Guard,104,42,1.0,0,1.0
+RAPT-ED-Guard,105,42,1.0,0,1.0
+RAPT-ED-Guard,106,42,1.0,0,1.0
+RAPT-ED-Guard,107,42,1.0,0,1.0
+RAPT-ED-Guard,108,42,1.0,0,1.0
+RAPT-ED-Guard,109,42,1.0,0,1.0
+RAPT-ED-Guard,110,42,1.0,0,1.0
+RAPT-ED-Guard,111,42,1.0,0,1.0
+RAPT-ED-Guard,112,42,1.0,0,1.0
+RAPT-ED-Guard,113,42,1.0,0,1.0
+RAPT-ED-Guard,114,42,1.0,0,1.0
+RAPT-ED-Guard,115,42,1.0,0,1.0
+RAPT-ED-Guard,116,42,1.0,0,1.0
+RAPT-ED-Guard,117,42,1.0,0,1.0
+RAPT-ED-Guard,118,42,1.0,0,1.0
+RAPT-ED-Guard,119,42,1.0,0,1.0
+RAPT-ED-Guard,120,42,1.0,0,1.0
+RAPT-ED-Guard,121,42,1.0,0,1.0
+RAPT-ED-Guard,122,42,1.0,0,1.0
+RAPT-ED-Guard,123,42,1.0,0,1.0
+RAPT-ED-Guard,124,42,1.0,0,1.0
+RAPT-ED-Guard,125,42,1.0,0,1.0
+RAPT-ED-Guard,126,42,1.0,0,1.0
+RAPT-ED-Guard,127,42,1.0,0,1.0
+RAPT-ED-Guard,128,42,1.0,0,1.0
+RAPT-ED-Guard,129,42,1.0,0,1.0
+RAPT-ED-Guard,130,42,1.0,0,1.0
+RAPT-ED-Guard,131,42,1.0,0,1.0
+RAPT-ED-Guard,132,42,0.0,1,1.0
+RAPT-ED-Guard,133,42,1.0,0,1.0
+RAPT-ED-Guard,134,42,1.0,0,1.0
+RAPT-ED-Guard,135,42,1.0,0,1.0
+RAPT-ED-Guard,136,42,1.0,0,1.0
+RAPT-ED-Guard,137,42,0.0,0,1.0
+RAPT-ED-Guard,138,42,1.0,0,1.0
+RAPT-ED-Guard,139,42,1.0,0,1.0
+RAPT-ED-Guard,140,42,1.0,0,1.0
+RAPT-ED-Guard,141,42,1.0,0,1.0
+RAPT-ED-Guard,142,42,1.0,0,1.0
+RAPT-ED-Guard,143,42,0.0,1,1.0
+RAPT-ED-Guard,144,42,0.0,0,1.0
+RAPT-ED-Guard,145,42,0.0,0,1.0
+RAPT-ED-Guard,146,42,0.0,0,1.0
+RAPT-ED-Guard,147,42,1.0,0,1.0
+RAPT-ED-Guard,148,42,1.0,0,1.0
+RAPT-ED-Guard,149,42,0.0,0,1.0
+Frozen,99,43,1.0,0,1.0
+Frozen,100,43,1.0,0,1.0
+Frozen,101,43,1.0,0,1.0
+Frozen,102,43,1.0,0,1.0
+Frozen,103,43,1.0,0,1.0
+Frozen,104,43,1.0,0,1.0
+Frozen,105,43,1.0,0,1.0
+Frozen,106,43,1.0,0,1.0
+Frozen,107,43,1.0,0,1.0
+Frozen,108,43,1.0,0,1.0
+Frozen,109,43,1.0,0,1.0
+Frozen,110,43,1.0,0,1.0
+Frozen,111,43,1.0,0,1.0
+Frozen,112,43,1.0,0,1.0
+Frozen,113,43,1.0,0,1.0
+Frozen,114,43,1.0,0,1.0
+Frozen,115,43,1.0,0,1.0
+Frozen,116,43,1.0,0,1.0
+Frozen,117,43,1.0,0,1.0
+Frozen,118,43,1.0,0,1.0
+Frozen,119,43,1.0,0,1.0
+Frozen,120,43,1.0,0,1.0
+Frozen,121,43,1.0,0,1.0
+Frozen,122,43,1.0,0,1.0
+Frozen,123,43,1.0,0,1.0
+Frozen,124,43,1.0,0,1.0
+Frozen,125,43,1.0,0,1.0
+Frozen,126,43,1.0,0,1.0
+Frozen,127,43,1.0,0,1.0
+Frozen,128,43,1.0,0,1.0
+Frozen,129,43,1.0,0,1.0
+Frozen,130,43,1.0,0,1.0
+Frozen,131,43,1.0,0,1.0
+Frozen,132,43,0.0,0,1.0
+Frozen,133,43,1.0,0,1.0
+Frozen,134,43,1.0,0,1.0
+Frozen,135,43,1.0,0,1.0
+Frozen,136,43,1.0,0,1.0
+Frozen,137,43,0.0,0,1.0
+Frozen,138,43,1.0,0,1.0
+Frozen,139,43,1.0,0,1.0
+Frozen,140,43,1.0,0,1.0
+Frozen,141,43,1.0,0,1.0
+Frozen,142,43,1.0,0,1.0
+Frozen,143,43,0.0,0,1.0
+Frozen,144,43,0.0,1,1.0
+Frozen,145,43,0.0,0,1.0
+Frozen,146,43,0.0,0,1.0
+Frozen,147,43,1.0,1,1.0
+Frozen,148,43,1.0,0,1.0
+Frozen,149,43,0.0,0,1.0
+Event-Driven,99,43,1.0,0,1.0
+Event-Driven,100,43,1.0,0,1.0
+Event-Driven,101,43,1.0,0,1.0
+Event-Driven,102,43,1.0,0,1.0
+Event-Driven,103,43,1.0,0,1.0
+Event-Driven,104,43,1.0,0,1.0
+Event-Driven,105,43,1.0,0,1.0
+Event-Driven,106,43,1.0,0,1.0
+Event-Driven,107,43,1.0,0,1.0
+Event-Driven,108,43,1.0,0,1.0
+Event-Driven,109,43,1.0,0,1.0
+Event-Driven,110,43,1.0,0,1.0
+Event-Driven,111,43,1.0,0,1.0
+Event-Driven,112,43,1.0,0,1.0
+Event-Driven,113,43,1.0,0,1.0
+Event-Driven,114,43,1.0,0,1.0
+Event-Driven,115,43,1.0,0,1.0
+Event-Driven,116,43,1.0,0,1.0
+Event-Driven,117,43,1.0,0,1.0
+Event-Driven,118,43,1.0,0,1.0
+Event-Driven,119,43,1.0,0,1.0
+Event-Driven,120,43,1.0,0,1.0
+Event-Driven,121,43,1.0,0,1.0
+Event-Driven,122,43,1.0,0,1.0
+Event-Driven,123,43,1.0,0,1.0
+Event-Driven,124,43,1.0,0,1.0
+Event-Driven,125,43,1.0,0,1.0
+Event-Driven,126,43,1.0,0,1.0
+Event-Driven,127,43,1.0,0,1.0
+Event-Driven,128,43,1.0,0,1.0
+Event-Driven,129,43,1.0,0,1.0
+Event-Driven,130,43,1.0,0,1.0
+Event-Driven,131,43,1.0,0,1.0
+Event-Driven,132,43,0.0,0,1.0
+Event-Driven,133,43,1.0,0,1.0
+Event-Driven,134,43,1.0,0,1.0
+Event-Driven,135,43,1.0,0,1.0
+Event-Driven,136,43,1.0,0,1.0
+Event-Driven,137,43,0.0,0,1.0
+Event-Driven,138,43,1.0,0,1.0
+Event-Driven,139,43,1.0,0,1.0
+Event-Driven,140,43,1.0,0,1.0
+Event-Driven,141,43,1.0,0,1.0
+Event-Driven,142,43,1.0,0,1.0
+Event-Driven,143,43,0.0,0,1.0
+Event-Driven,144,43,0.0,1,1.0
+Event-Driven,145,43,0.0,0,1.0
+Event-Driven,146,43,0.0,0,1.0
+Event-Driven,147,43,1.0,1,1.0
+Event-Driven,148,43,1.0,0,1.0
+Event-Driven,149,43,0.0,0,1.0
+Full Retraining,99,43,1.0,0,1.0
+Full Retraining,100,43,1.0,0,1.0
+Full Retraining,101,43,1.0,0,1.0
+Full Retraining,102,43,1.0,0,1.0
+Full Retraining,103,43,1.0,0,1.0
+Full Retraining,104,43,1.0,0,1.0
+Full Retraining,105,43,1.0,0,1.0
+Full Retraining,106,43,1.0,0,1.0
+Full Retraining,107,43,1.0,0,1.0
+Full Retraining,108,43,1.0,0,1.0
+Full Retraining,109,43,1.0,0,1.0
+Full Retraining,110,43,1.0,0,1.0
+Full Retraining,111,43,1.0,0,1.0
+Full Retraining,112,43,1.0,0,1.0
+Full Retraining,113,43,1.0,0,1.0
+Full Retraining,114,43,1.0,0,1.0
+Full Retraining,115,43,1.0,0,1.0
+Full Retraining,116,43,1.0,0,1.0
+Full Retraining,117,43,1.0,0,1.0
+Full Retraining,118,43,1.0,0,1.0
+Full Retraining,119,43,1.0,0,1.0
+Full Retraining,120,43,1.0,0,1.0
+Full Retraining,121,43,1.0,0,1.0
+Full Retraining,122,43,1.0,0,1.0
+Full Retraining,123,43,1.0,0,1.0
+Full Retraining,124,43,1.0,0,1.0
+Full Retraining,125,43,1.0,0,1.0
+Full Retraining,126,43,1.0,0,1.0
+Full Retraining,127,43,1.0,0,1.0
+Full Retraining,128,43,1.0,0,1.0
+Full Retraining,129,43,1.0,0,1.0
+Full Retraining,130,43,1.0,0,1.0
+Full Retraining,131,43,1.0,0,1.0
+Full Retraining,132,43,0.0,0,1.0
+Full Retraining,133,43,1.0,0,1.0
+Full Retraining,134,43,1.0,0,1.0
+Full Retraining,135,43,1.0,0,1.0
+Full Retraining,136,43,1.0,0,1.0
+Full Retraining,137,43,0.0,0,1.0
+Full Retraining,138,43,1.0,0,1.0
+Full Retraining,139,43,1.0,0,1.0
+Full Retraining,140,43,1.0,0,1.0
+Full Retraining,141,43,1.0,0,1.0
+Full Retraining,142,43,1.0,0,1.0
+Full Retraining,143,43,0.0,0,1.0
+Full Retraining,144,43,0.0,1,1.0
+Full Retraining,145,43,0.0,0,1.0
+Full Retraining,146,43,0.0,0,1.0
+Full Retraining,147,43,1.0,1,1.0
+Full Retraining,148,43,1.0,0,1.0
+Full Retraining,149,43,0.0,0,1.0
+ADWIN,99,43,1.0,0,1.0
+ADWIN,100,43,1.0,0,1.0
+ADWIN,101,43,1.0,0,1.0
+ADWIN,102,43,1.0,0,1.0
+ADWIN,103,43,1.0,0,1.0
+ADWIN,104,43,1.0,0,1.0
+ADWIN,105,43,1.0,0,1.0
+ADWIN,106,43,1.0,0,1.0
+ADWIN,107,43,1.0,0,1.0
+ADWIN,108,43,1.0,0,1.0
+ADWIN,109,43,1.0,0,1.0
+ADWIN,110,43,1.0,0,1.0
+ADWIN,111,43,1.0,0,1.0
+ADWIN,112,43,1.0,0,1.0
+ADWIN,113,43,1.0,0,1.0
+ADWIN,114,43,1.0,0,1.0
+ADWIN,115,43,1.0,0,1.0
+ADWIN,116,43,1.0,0,1.0
+ADWIN,117,43,1.0,0,1.0
+ADWIN,118,43,1.0,0,1.0
+ADWIN,119,43,1.0,0,1.0
+ADWIN,120,43,1.0,0,1.0
+ADWIN,121,43,1.0,0,1.0
+ADWIN,122,43,1.0,0,1.0
+ADWIN,123,43,1.0,0,1.0
+ADWIN,124,43,1.0,0,1.0
+ADWIN,125,43,1.0,0,1.0
+ADWIN,126,43,1.0,0,1.0
+ADWIN,127,43,1.0,0,1.0
+ADWIN,128,43,1.0,0,1.0
+ADWIN,129,43,1.0,0,1.0
+ADWIN,130,43,1.0,0,1.0
+ADWIN,131,43,1.0,0,1.0
+ADWIN,132,43,0.0,0,1.0
+ADWIN,133,43,1.0,0,1.0
+ADWIN,134,43,1.0,0,1.0
+ADWIN,135,43,1.0,0,1.0
+ADWIN,136,43,1.0,0,1.0
+ADWIN,137,43,0.0,0,1.0
+ADWIN,138,43,1.0,0,1.0
+ADWIN,139,43,1.0,0,1.0
+ADWIN,140,43,1.0,0,1.0
+ADWIN,141,43,1.0,0,1.0
+ADWIN,142,43,1.0,0,1.0
+ADWIN,143,43,0.0,0,1.0
+ADWIN,144,43,0.0,0,1.0
+ADWIN,145,43,0.0,0,1.0
+ADWIN,146,43,0.0,0,1.0
+ADWIN,147,43,1.0,0,1.0
+ADWIN,148,43,1.0,0,1.0
+ADWIN,149,43,0.0,0,1.0
+Page-Hinkley,99,43,1.0,0,1.0
+Page-Hinkley,100,43,1.0,0,1.0
+Page-Hinkley,101,43,1.0,0,1.0
+Page-Hinkley,102,43,1.0,0,1.0
+Page-Hinkley,103,43,1.0,0,1.0
+Page-Hinkley,104,43,1.0,0,1.0
+Page-Hinkley,105,43,1.0,0,1.0
+Page-Hinkley,106,43,1.0,0,1.0
+Page-Hinkley,107,43,1.0,0,1.0
+Page-Hinkley,108,43,1.0,0,1.0
+Page-Hinkley,109,43,1.0,0,1.0
+Page-Hinkley,110,43,1.0,0,1.0
+Page-Hinkley,111,43,1.0,0,1.0
+Page-Hinkley,112,43,1.0,0,1.0
+Page-Hinkley,113,43,1.0,0,1.0
+Page-Hinkley,114,43,1.0,0,1.0
+Page-Hinkley,115,43,1.0,0,1.0
+Page-Hinkley,116,43,1.0,0,1.0
+Page-Hinkley,117,43,1.0,0,1.0
+Page-Hinkley,118,43,1.0,0,1.0
+Page-Hinkley,119,43,1.0,0,1.0
+Page-Hinkley,120,43,1.0,0,1.0
+Page-Hinkley,121,43,1.0,0,1.0
+Page-Hinkley,122,43,1.0,0,1.0
+Page-Hinkley,123,43,1.0,0,1.0
+Page-Hinkley,124,43,1.0,0,1.0
+Page-Hinkley,125,43,1.0,0,1.0
+Page-Hinkley,126,43,1.0,0,1.0
+Page-Hinkley,127,43,1.0,0,1.0
+Page-Hinkley,128,43,1.0,0,1.0
+Page-Hinkley,129,43,1.0,0,1.0
+Page-Hinkley,130,43,1.0,0,1.0
+Page-Hinkley,131,43,1.0,0,1.0
+Page-Hinkley,132,43,0.0,0,1.0
+Page-Hinkley,133,43,1.0,0,1.0
+Page-Hinkley,134,43,1.0,0,1.0
+Page-Hinkley,135,43,1.0,0,1.0
+Page-Hinkley,136,43,1.0,0,1.0
+Page-Hinkley,137,43,0.0,0,1.0
+Page-Hinkley,138,43,1.0,0,1.0
+Page-Hinkley,139,43,1.0,0,1.0
+Page-Hinkley,140,43,1.0,0,1.0
+Page-Hinkley,141,43,1.0,0,1.0
+Page-Hinkley,142,43,1.0,0,1.0
+Page-Hinkley,143,43,0.0,0,1.0
+Page-Hinkley,144,43,0.0,0,1.0
+Page-Hinkley,145,43,0.0,0,1.0
+Page-Hinkley,146,43,0.0,0,1.0
+Page-Hinkley,147,43,1.0,0,1.0
+Page-Hinkley,148,43,1.0,0,1.0
+Page-Hinkley,149,43,0.0,0,1.0
+RAPT,99,43,1.0,0,1.0
+RAPT,100,43,1.0,0,1.0
+RAPT,101,43,1.0,0,1.0
+RAPT,102,43,1.0,0,1.0
+RAPT,103,43,1.0,0,1.0
+RAPT,104,43,1.0,0,1.0
+RAPT,105,43,1.0,0,1.0
+RAPT,106,43,1.0,0,1.0
+RAPT,107,43,1.0,0,1.0
+RAPT,108,43,1.0,0,1.0
+RAPT,109,43,1.0,0,1.0
+RAPT,110,43,1.0,0,1.0
+RAPT,111,43,1.0,0,1.0
+RAPT,112,43,1.0,0,1.0
+RAPT,113,43,1.0,0,1.0
+RAPT,114,43,1.0,0,1.0
+RAPT,115,43,1.0,0,1.0
+RAPT,116,43,1.0,0,1.0
+RAPT,117,43,1.0,0,1.0
+RAPT,118,43,1.0,0,1.0
+RAPT,119,43,1.0,0,1.0
+RAPT,120,43,1.0,0,1.0
+RAPT,121,43,1.0,0,1.0
+RAPT,122,43,1.0,0,1.0
+RAPT,123,43,1.0,0,1.0
+RAPT,124,43,1.0,0,1.0
+RAPT,125,43,1.0,0,1.0
+RAPT,126,43,1.0,0,1.0
+RAPT,127,43,1.0,0,1.0
+RAPT,128,43,1.0,0,1.0
+RAPT,129,43,1.0,0,1.0
+RAPT,130,43,1.0,0,1.0
+RAPT,131,43,1.0,0,1.0
+RAPT,132,43,0.0,0,1.0
+RAPT,133,43,1.0,0,1.0
+RAPT,134,43,1.0,0,1.0
+RAPT,135,43,1.0,0,1.0
+RAPT,136,43,1.0,0,1.0
+RAPT,137,43,0.0,0,1.0
+RAPT,138,43,1.0,0,1.0
+RAPT,139,43,1.0,0,1.0
+RAPT,140,43,1.0,0,1.0
+RAPT,141,43,1.0,0,1.0
+RAPT,142,43,1.0,0,1.0
+RAPT,143,43,0.0,0,1.0
+RAPT,144,43,0.0,1,1.0
+RAPT,145,43,0.0,0,1.0
+RAPT,146,43,0.0,0,1.0
+RAPT,147,43,1.0,1,1.0
+RAPT,148,43,1.0,0,1.0
+RAPT,149,43,0.0,0,1.0
+RAPT-Guard,99,43,1.0,0,1.0
+RAPT-Guard,100,43,1.0,0,1.0
+RAPT-Guard,101,43,1.0,0,1.0
+RAPT-Guard,102,43,1.0,0,1.0
+RAPT-Guard,103,43,1.0,0,1.0
+RAPT-Guard,104,43,1.0,0,1.0
+RAPT-Guard,105,43,1.0,0,1.0
+RAPT-Guard,106,43,1.0,0,1.0
+RAPT-Guard,107,43,1.0,0,1.0
+RAPT-Guard,108,43,1.0,0,1.0
+RAPT-Guard,109,43,1.0,0,1.0
+RAPT-Guard,110,43,1.0,0,1.0
+RAPT-Guard,111,43,1.0,0,1.0
+RAPT-Guard,112,43,1.0,0,1.0
+RAPT-Guard,113,43,1.0,0,1.0
+RAPT-Guard,114,43,1.0,0,1.0
+RAPT-Guard,115,43,1.0,0,1.0
+RAPT-Guard,116,43,1.0,0,1.0
+RAPT-Guard,117,43,1.0,0,1.0
+RAPT-Guard,118,43,1.0,0,1.0
+RAPT-Guard,119,43,1.0,0,1.0
+RAPT-Guard,120,43,1.0,0,1.0
+RAPT-Guard,121,43,1.0,0,1.0
+RAPT-Guard,122,43,1.0,0,1.0
+RAPT-Guard,123,43,1.0,0,1.0
+RAPT-Guard,124,43,1.0,0,1.0
+RAPT-Guard,125,43,1.0,0,1.0
+RAPT-Guard,126,43,1.0,0,1.0
+RAPT-Guard,127,43,1.0,0,1.0
+RAPT-Guard,128,43,1.0,0,1.0
+RAPT-Guard,129,43,1.0,0,1.0
+RAPT-Guard,130,43,1.0,0,1.0
+RAPT-Guard,131,43,1.0,0,1.0
+RAPT-Guard,132,43,0.0,0,1.0
+RAPT-Guard,133,43,1.0,0,1.0
+RAPT-Guard,134,43,1.0,0,1.0
+RAPT-Guard,135,43,1.0,0,1.0
+RAPT-Guard,136,43,1.0,0,1.0
+RAPT-Guard,137,43,0.0,0,1.0
+RAPT-Guard,138,43,1.0,0,1.0
+RAPT-Guard,139,43,1.0,0,1.0
+RAPT-Guard,140,43,1.0,0,1.0
+RAPT-Guard,141,43,1.0,0,1.0
+RAPT-Guard,142,43,1.0,0,1.0
+RAPT-Guard,143,43,0.0,0,1.0
+RAPT-Guard,144,43,0.0,0,1.0
+RAPT-Guard,145,43,0.0,0,1.0
+RAPT-Guard,146,43,0.0,0,1.0
+RAPT-Guard,147,43,1.0,0,1.0
+RAPT-Guard,148,43,1.0,0,1.0
+RAPT-Guard,149,43,0.0,0,1.0
+RAPT-ED-Guard,99,43,1.0,0,1.0
+RAPT-ED-Guard,100,43,1.0,0,1.0
+RAPT-ED-Guard,101,43,1.0,0,1.0
+RAPT-ED-Guard,102,43,1.0,0,1.0
+RAPT-ED-Guard,103,43,1.0,0,1.0
+RAPT-ED-Guard,104,43,1.0,0,1.0
+RAPT-ED-Guard,105,43,1.0,0,1.0
+RAPT-ED-Guard,106,43,1.0,0,1.0
+RAPT-ED-Guard,107,43,1.0,0,1.0
+RAPT-ED-Guard,108,43,1.0,0,1.0
+RAPT-ED-Guard,109,43,1.0,0,1.0
+RAPT-ED-Guard,110,43,1.0,0,1.0
+RAPT-ED-Guard,111,43,1.0,0,1.0
+RAPT-ED-Guard,112,43,1.0,0,1.0
+RAPT-ED-Guard,113,43,1.0,0,1.0
+RAPT-ED-Guard,114,43,1.0,0,1.0
+RAPT-ED-Guard,115,43,1.0,0,1.0
+RAPT-ED-Guard,116,43,1.0,0,1.0
+RAPT-ED-Guard,117,43,1.0,0,1.0
+RAPT-ED-Guard,118,43,1.0,0,1.0
+RAPT-ED-Guard,119,43,1.0,0,1.0
+RAPT-ED-Guard,120,43,1.0,0,1.0
+RAPT-ED-Guard,121,43,1.0,0,1.0
+RAPT-ED-Guard,122,43,1.0,0,1.0
+RAPT-ED-Guard,123,43,1.0,0,1.0
+RAPT-ED-Guard,124,43,1.0,0,1.0
+RAPT-ED-Guard,125,43,1.0,0,1.0
+RAPT-ED-Guard,126,43,1.0,0,1.0
+RAPT-ED-Guard,127,43,1.0,0,1.0
+RAPT-ED-Guard,128,43,1.0,0,1.0
+RAPT-ED-Guard,129,43,1.0,0,1.0
+RAPT-ED-Guard,130,43,1.0,0,1.0
+RAPT-ED-Guard,131,43,1.0,0,1.0
+RAPT-ED-Guard,132,43,0.0,1,1.0
+RAPT-ED-Guard,133,43,1.0,0,1.0
+RAPT-ED-Guard,134,43,1.0,0,1.0
+RAPT-ED-Guard,135,43,1.0,0,1.0
+RAPT-ED-Guard,136,43,1.0,0,1.0
+RAPT-ED-Guard,137,43,0.0,0,1.0
+RAPT-ED-Guard,138,43,1.0,0,1.0
+RAPT-ED-Guard,139,43,1.0,0,1.0
+RAPT-ED-Guard,140,43,1.0,0,1.0
+RAPT-ED-Guard,141,43,1.0,0,1.0
+RAPT-ED-Guard,142,43,1.0,0,1.0
+RAPT-ED-Guard,143,43,0.0,1,1.0
+RAPT-ED-Guard,144,43,0.0,0,1.0
+RAPT-ED-Guard,145,43,0.0,0,1.0
+RAPT-ED-Guard,146,43,0.0,0,1.0
+RAPT-ED-Guard,147,43,1.0,0,1.0
+RAPT-ED-Guard,148,43,1.0,0,1.0
+RAPT-ED-Guard,149,43,0.0,0,1.0
+Frozen,99,44,1.0,0,1.0
+Frozen,100,44,1.0,0,1.0
+Frozen,101,44,1.0,0,1.0
+Frozen,102,44,1.0,0,1.0
+Frozen,103,44,1.0,0,1.0
+Frozen,104,44,1.0,0,1.0
+Frozen,105,44,1.0,0,1.0
+Frozen,106,44,1.0,0,1.0
+Frozen,107,44,1.0,0,1.0
+Frozen,108,44,1.0,0,1.0
+Frozen,109,44,1.0,0,1.0
+Frozen,110,44,1.0,0,1.0
+Frozen,111,44,1.0,0,1.0
+Frozen,112,44,1.0,0,1.0
+Frozen,113,44,1.0,0,1.0
+Frozen,114,44,1.0,0,1.0
+Frozen,115,44,1.0,0,1.0
+Frozen,116,44,1.0,0,1.0
+Frozen,117,44,1.0,0,1.0
+Frozen,118,44,1.0,0,1.0
+Frozen,119,44,1.0,0,1.0
+Frozen,120,44,1.0,0,1.0
+Frozen,121,44,1.0,0,1.0
+Frozen,122,44,1.0,0,1.0
+Frozen,123,44,1.0,0,1.0
+Frozen,124,44,1.0,0,1.0
+Frozen,125,44,1.0,0,1.0
+Frozen,126,44,1.0,0,1.0
+Frozen,127,44,1.0,0,1.0
+Frozen,128,44,1.0,0,1.0
+Frozen,129,44,1.0,0,1.0
+Frozen,130,44,1.0,0,1.0
+Frozen,131,44,1.0,0,1.0
+Frozen,132,44,0.0,0,1.0
+Frozen,133,44,1.0,0,1.0
+Frozen,134,44,1.0,0,1.0
+Frozen,135,44,1.0,0,1.0
+Frozen,136,44,1.0,0,1.0
+Frozen,137,44,0.0,0,1.0
+Frozen,138,44,1.0,0,1.0
+Frozen,139,44,1.0,0,1.0
+Frozen,140,44,1.0,0,1.0
+Frozen,141,44,1.0,0,1.0
+Frozen,142,44,1.0,0,1.0
+Frozen,143,44,0.0,0,1.0
+Frozen,144,44,0.0,1,1.0
+Frozen,145,44,0.0,0,1.0
+Frozen,146,44,0.0,0,1.0
+Frozen,147,44,1.0,1,1.0
+Frozen,148,44,1.0,0,1.0
+Frozen,149,44,0.0,0,1.0
+Event-Driven,99,44,1.0,0,1.0
+Event-Driven,100,44,1.0,0,1.0
+Event-Driven,101,44,1.0,0,1.0
+Event-Driven,102,44,1.0,0,1.0
+Event-Driven,103,44,1.0,0,1.0
+Event-Driven,104,44,1.0,0,1.0
+Event-Driven,105,44,1.0,0,1.0
+Event-Driven,106,44,1.0,0,1.0
+Event-Driven,107,44,1.0,0,1.0
+Event-Driven,108,44,1.0,0,1.0
+Event-Driven,109,44,1.0,0,1.0
+Event-Driven,110,44,1.0,0,1.0
+Event-Driven,111,44,1.0,0,1.0
+Event-Driven,112,44,1.0,0,1.0
+Event-Driven,113,44,1.0,0,1.0
+Event-Driven,114,44,1.0,0,1.0
+Event-Driven,115,44,1.0,0,1.0
+Event-Driven,116,44,1.0,0,1.0
+Event-Driven,117,44,1.0,0,1.0
+Event-Driven,118,44,1.0,0,1.0
+Event-Driven,119,44,1.0,0,1.0
+Event-Driven,120,44,1.0,0,1.0
+Event-Driven,121,44,1.0,0,1.0
+Event-Driven,122,44,1.0,0,1.0
+Event-Driven,123,44,1.0,0,1.0
+Event-Driven,124,44,1.0,0,1.0
+Event-Driven,125,44,1.0,0,1.0
+Event-Driven,126,44,1.0,0,1.0
+Event-Driven,127,44,1.0,0,1.0
+Event-Driven,128,44,1.0,0,1.0
+Event-Driven,129,44,1.0,0,1.0
+Event-Driven,130,44,1.0,0,1.0
+Event-Driven,131,44,1.0,0,1.0
+Event-Driven,132,44,0.0,0,1.0
+Event-Driven,133,44,1.0,0,1.0
+Event-Driven,134,44,1.0,0,1.0
+Event-Driven,135,44,1.0,0,1.0
+Event-Driven,136,44,1.0,0,1.0
+Event-Driven,137,44,0.0,0,1.0
+Event-Driven,138,44,1.0,0,1.0
+Event-Driven,139,44,1.0,0,1.0
+Event-Driven,140,44,1.0,0,1.0
+Event-Driven,141,44,1.0,0,1.0
+Event-Driven,142,44,1.0,0,1.0
+Event-Driven,143,44,0.0,0,1.0
+Event-Driven,144,44,0.0,1,1.0
+Event-Driven,145,44,0.0,0,1.0
+Event-Driven,146,44,0.0,0,1.0
+Event-Driven,147,44,1.0,1,1.0
+Event-Driven,148,44,1.0,0,1.0
+Event-Driven,149,44,0.0,0,1.0
+Full Retraining,99,44,1.0,0,1.0
+Full Retraining,100,44,1.0,0,1.0
+Full Retraining,101,44,1.0,0,1.0
+Full Retraining,102,44,1.0,0,1.0
+Full Retraining,103,44,1.0,0,1.0
+Full Retraining,104,44,1.0,0,1.0
+Full Retraining,105,44,1.0,0,1.0
+Full Retraining,106,44,1.0,0,1.0
+Full Retraining,107,44,1.0,0,1.0
+Full Retraining,108,44,1.0,0,1.0
+Full Retraining,109,44,1.0,0,1.0
+Full Retraining,110,44,1.0,0,1.0
+Full Retraining,111,44,1.0,0,1.0
+Full Retraining,112,44,1.0,0,1.0
+Full Retraining,113,44,1.0,0,1.0
+Full Retraining,114,44,1.0,0,1.0
+Full Retraining,115,44,1.0,0,1.0
+Full Retraining,116,44,1.0,0,1.0
+Full Retraining,117,44,1.0,0,1.0
+Full Retraining,118,44,1.0,0,1.0
+Full Retraining,119,44,1.0,0,1.0
+Full Retraining,120,44,1.0,0,1.0
+Full Retraining,121,44,1.0,0,1.0
+Full Retraining,122,44,1.0,0,1.0
+Full Retraining,123,44,1.0,0,1.0
+Full Retraining,124,44,1.0,0,1.0
+Full Retraining,125,44,1.0,0,1.0
+Full Retraining,126,44,1.0,0,1.0
+Full Retraining,127,44,1.0,0,1.0
+Full Retraining,128,44,1.0,0,1.0
+Full Retraining,129,44,1.0,0,1.0
+Full Retraining,130,44,1.0,0,1.0
+Full Retraining,131,44,1.0,0,1.0
+Full Retraining,132,44,0.0,0,1.0
+Full Retraining,133,44,1.0,0,1.0
+Full Retraining,134,44,1.0,0,1.0
+Full Retraining,135,44,1.0,0,1.0
+Full Retraining,136,44,1.0,0,1.0
+Full Retraining,137,44,0.0,0,1.0
+Full Retraining,138,44,1.0,0,1.0
+Full Retraining,139,44,1.0,0,1.0
+Full Retraining,140,44,1.0,0,1.0
+Full Retraining,141,44,1.0,0,1.0
+Full Retraining,142,44,1.0,0,1.0
+Full Retraining,143,44,0.0,0,1.0
+Full Retraining,144,44,0.0,1,1.0
+Full Retraining,145,44,0.0,0,1.0
+Full Retraining,146,44,0.0,0,1.0
+Full Retraining,147,44,1.0,1,1.0
+Full Retraining,148,44,1.0,0,1.0
+Full Retraining,149,44,0.0,0,1.0
+ADWIN,99,44,1.0,0,1.0
+ADWIN,100,44,1.0,0,1.0
+ADWIN,101,44,1.0,0,1.0
+ADWIN,102,44,1.0,0,1.0
+ADWIN,103,44,1.0,0,1.0
+ADWIN,104,44,1.0,0,1.0
+ADWIN,105,44,1.0,0,1.0
+ADWIN,106,44,1.0,0,1.0
+ADWIN,107,44,1.0,0,1.0
+ADWIN,108,44,1.0,0,1.0
+ADWIN,109,44,1.0,0,1.0
+ADWIN,110,44,1.0,0,1.0
+ADWIN,111,44,1.0,0,1.0
+ADWIN,112,44,1.0,0,1.0
+ADWIN,113,44,1.0,0,1.0
+ADWIN,114,44,1.0,0,1.0
+ADWIN,115,44,1.0,0,1.0
+ADWIN,116,44,1.0,0,1.0
+ADWIN,117,44,1.0,0,1.0
+ADWIN,118,44,1.0,0,1.0
+ADWIN,119,44,1.0,0,1.0
+ADWIN,120,44,1.0,0,1.0
+ADWIN,121,44,1.0,0,1.0
+ADWIN,122,44,1.0,0,1.0
+ADWIN,123,44,1.0,0,1.0
+ADWIN,124,44,1.0,0,1.0
+ADWIN,125,44,1.0,0,1.0
+ADWIN,126,44,1.0,0,1.0
+ADWIN,127,44,1.0,0,1.0
+ADWIN,128,44,1.0,0,1.0
+ADWIN,129,44,1.0,0,1.0
+ADWIN,130,44,1.0,0,1.0
+ADWIN,131,44,1.0,0,1.0
+ADWIN,132,44,0.0,0,1.0
+ADWIN,133,44,1.0,0,1.0
+ADWIN,134,44,1.0,0,1.0
+ADWIN,135,44,1.0,0,1.0
+ADWIN,136,44,1.0,0,1.0
+ADWIN,137,44,0.0,0,1.0
+ADWIN,138,44,1.0,0,1.0
+ADWIN,139,44,1.0,0,1.0
+ADWIN,140,44,1.0,0,1.0
+ADWIN,141,44,1.0,0,1.0
+ADWIN,142,44,1.0,0,1.0
+ADWIN,143,44,0.0,0,1.0
+ADWIN,144,44,0.0,0,1.0
+ADWIN,145,44,0.0,0,1.0
+ADWIN,146,44,0.0,0,1.0
+ADWIN,147,44,1.0,0,1.0
+ADWIN,148,44,1.0,0,1.0
+ADWIN,149,44,0.0,0,1.0
+Page-Hinkley,99,44,1.0,0,1.0
+Page-Hinkley,100,44,1.0,0,1.0
+Page-Hinkley,101,44,1.0,0,1.0
+Page-Hinkley,102,44,1.0,0,1.0
+Page-Hinkley,103,44,1.0,0,1.0
+Page-Hinkley,104,44,1.0,0,1.0
+Page-Hinkley,105,44,1.0,0,1.0
+Page-Hinkley,106,44,1.0,0,1.0
+Page-Hinkley,107,44,1.0,0,1.0
+Page-Hinkley,108,44,1.0,0,1.0
+Page-Hinkley,109,44,1.0,0,1.0
+Page-Hinkley,110,44,1.0,0,1.0
+Page-Hinkley,111,44,1.0,0,1.0
+Page-Hinkley,112,44,1.0,0,1.0
+Page-Hinkley,113,44,1.0,0,1.0
+Page-Hinkley,114,44,1.0,0,1.0
+Page-Hinkley,115,44,1.0,0,1.0
+Page-Hinkley,116,44,1.0,0,1.0
+Page-Hinkley,117,44,1.0,0,1.0
+Page-Hinkley,118,44,1.0,0,1.0
+Page-Hinkley,119,44,1.0,0,1.0
+Page-Hinkley,120,44,1.0,0,1.0
+Page-Hinkley,121,44,1.0,0,1.0
+Page-Hinkley,122,44,1.0,0,1.0
+Page-Hinkley,123,44,1.0,0,1.0
+Page-Hinkley,124,44,1.0,0,1.0
+Page-Hinkley,125,44,1.0,0,1.0
+Page-Hinkley,126,44,1.0,0,1.0
+Page-Hinkley,127,44,1.0,0,1.0
+Page-Hinkley,128,44,1.0,0,1.0
+Page-Hinkley,129,44,1.0,0,1.0
+Page-Hinkley,130,44,1.0,0,1.0
+Page-Hinkley,131,44,1.0,0,1.0
+Page-Hinkley,132,44,0.0,0,1.0
+Page-Hinkley,133,44,1.0,0,1.0
+Page-Hinkley,134,44,1.0,0,1.0
+Page-Hinkley,135,44,1.0,0,1.0
+Page-Hinkley,136,44,1.0,0,1.0
+Page-Hinkley,137,44,0.0,0,1.0
+Page-Hinkley,138,44,1.0,0,1.0
+Page-Hinkley,139,44,1.0,0,1.0
+Page-Hinkley,140,44,1.0,0,1.0
+Page-Hinkley,141,44,1.0,0,1.0
+Page-Hinkley,142,44,1.0,0,1.0
+Page-Hinkley,143,44,0.0,0,1.0
+Page-Hinkley,144,44,0.0,0,1.0
+Page-Hinkley,145,44,0.0,0,1.0
+Page-Hinkley,146,44,0.0,0,1.0
+Page-Hinkley,147,44,1.0,0,1.0
+Page-Hinkley,148,44,1.0,0,1.0
+Page-Hinkley,149,44,0.0,0,1.0
+RAPT,99,44,1.0,0,1.0
+RAPT,100,44,1.0,0,1.0
+RAPT,101,44,1.0,0,1.0
+RAPT,102,44,1.0,0,1.0
+RAPT,103,44,1.0,0,1.0
+RAPT,104,44,1.0,0,1.0
+RAPT,105,44,1.0,0,1.0
+RAPT,106,44,1.0,0,1.0
+RAPT,107,44,1.0,0,1.0
+RAPT,108,44,1.0,0,1.0
+RAPT,109,44,1.0,0,1.0
+RAPT,110,44,1.0,0,1.0
+RAPT,111,44,1.0,0,1.0
+RAPT,112,44,1.0,0,1.0
+RAPT,113,44,1.0,0,1.0
+RAPT,114,44,1.0,0,1.0
+RAPT,115,44,1.0,0,1.0
+RAPT,116,44,1.0,0,1.0
+RAPT,117,44,1.0,0,1.0
+RAPT,118,44,1.0,0,1.0
+RAPT,119,44,1.0,0,1.0
+RAPT,120,44,1.0,0,1.0
+RAPT,121,44,1.0,0,1.0
+RAPT,122,44,1.0,0,1.0
+RAPT,123,44,1.0,0,1.0
+RAPT,124,44,1.0,0,1.0
+RAPT,125,44,1.0,0,1.0
+RAPT,126,44,1.0,0,1.0
+RAPT,127,44,1.0,0,1.0
+RAPT,128,44,1.0,0,1.0
+RAPT,129,44,1.0,0,1.0
+RAPT,130,44,1.0,0,1.0
+RAPT,131,44,1.0,0,1.0
+RAPT,132,44,0.0,0,1.0
+RAPT,133,44,1.0,0,1.0
+RAPT,134,44,1.0,0,1.0
+RAPT,135,44,1.0,0,1.0
+RAPT,136,44,1.0,0,1.0
+RAPT,137,44,0.0,0,1.0
+RAPT,138,44,1.0,0,1.0
+RAPT,139,44,1.0,0,1.0
+RAPT,140,44,1.0,0,1.0
+RAPT,141,44,1.0,0,1.0
+RAPT,142,44,1.0,0,1.0
+RAPT,143,44,0.0,0,1.0
+RAPT,144,44,0.0,1,1.0
+RAPT,145,44,0.0,0,1.0
+RAPT,146,44,0.0,0,1.0
+RAPT,147,44,1.0,1,1.0
+RAPT,148,44,1.0,0,1.0
+RAPT,149,44,0.0,0,1.0
+RAPT-Guard,99,44,1.0,0,1.0
+RAPT-Guard,100,44,1.0,0,1.0
+RAPT-Guard,101,44,1.0,0,1.0
+RAPT-Guard,102,44,1.0,0,1.0
+RAPT-Guard,103,44,1.0,0,1.0
+RAPT-Guard,104,44,1.0,0,1.0
+RAPT-Guard,105,44,1.0,0,1.0
+RAPT-Guard,106,44,1.0,0,1.0
+RAPT-Guard,107,44,1.0,0,1.0
+RAPT-Guard,108,44,1.0,0,1.0
+RAPT-Guard,109,44,1.0,0,1.0
+RAPT-Guard,110,44,1.0,0,1.0
+RAPT-Guard,111,44,1.0,0,1.0
+RAPT-Guard,112,44,1.0,0,1.0
+RAPT-Guard,113,44,1.0,0,1.0
+RAPT-Guard,114,44,1.0,0,1.0
+RAPT-Guard,115,44,1.0,0,1.0
+RAPT-Guard,116,44,1.0,0,1.0
+RAPT-Guard,117,44,1.0,0,1.0
+RAPT-Guard,118,44,1.0,0,1.0
+RAPT-Guard,119,44,1.0,0,1.0
+RAPT-Guard,120,44,1.0,0,1.0
+RAPT-Guard,121,44,1.0,0,1.0
+RAPT-Guard,122,44,1.0,0,1.0
+RAPT-Guard,123,44,1.0,0,1.0
+RAPT-Guard,124,44,1.0,0,1.0
+RAPT-Guard,125,44,1.0,0,1.0
+RAPT-Guard,126,44,1.0,0,1.0
+RAPT-Guard,127,44,1.0,0,1.0
+RAPT-Guard,128,44,1.0,0,1.0
+RAPT-Guard,129,44,1.0,0,1.0
+RAPT-Guard,130,44,1.0,0,1.0
+RAPT-Guard,131,44,1.0,0,1.0
+RAPT-Guard,132,44,0.0,0,1.0
+RAPT-Guard,133,44,1.0,0,1.0
+RAPT-Guard,134,44,1.0,0,1.0
+RAPT-Guard,135,44,1.0,0,1.0
+RAPT-Guard,136,44,1.0,0,1.0
+RAPT-Guard,137,44,0.0,0,1.0
+RAPT-Guard,138,44,1.0,0,1.0
+RAPT-Guard,139,44,1.0,0,1.0
+RAPT-Guard,140,44,1.0,0,1.0
+RAPT-Guard,141,44,1.0,0,1.0
+RAPT-Guard,142,44,1.0,0,1.0
+RAPT-Guard,143,44,0.0,0,1.0
+RAPT-Guard,144,44,0.0,0,1.0
+RAPT-Guard,145,44,0.0,0,1.0
+RAPT-Guard,146,44,0.0,0,1.0
+RAPT-Guard,147,44,1.0,0,1.0
+RAPT-Guard,148,44,1.0,0,1.0
+RAPT-Guard,149,44,0.0,0,1.0
+RAPT-ED-Guard,99,44,1.0,0,1.0
+RAPT-ED-Guard,100,44,1.0,0,1.0
+RAPT-ED-Guard,101,44,1.0,0,1.0
+RAPT-ED-Guard,102,44,1.0,0,1.0
+RAPT-ED-Guard,103,44,1.0,0,1.0
+RAPT-ED-Guard,104,44,1.0,0,1.0
+RAPT-ED-Guard,105,44,1.0,0,1.0
+RAPT-ED-Guard,106,44,1.0,0,1.0
+RAPT-ED-Guard,107,44,1.0,0,1.0
+RAPT-ED-Guard,108,44,1.0,0,1.0
+RAPT-ED-Guard,109,44,1.0,0,1.0
+RAPT-ED-Guard,110,44,1.0,0,1.0
+RAPT-ED-Guard,111,44,1.0,0,1.0
+RAPT-ED-Guard,112,44,1.0,0,1.0
+RAPT-ED-Guard,113,44,1.0,0,1.0
+RAPT-ED-Guard,114,44,1.0,0,1.0
+RAPT-ED-Guard,115,44,1.0,0,1.0
+RAPT-ED-Guard,116,44,1.0,0,1.0
+RAPT-ED-Guard,117,44,1.0,0,1.0
+RAPT-ED-Guard,118,44,1.0,0,1.0
+RAPT-ED-Guard,119,44,1.0,0,1.0
+RAPT-ED-Guard,120,44,1.0,0,1.0
+RAPT-ED-Guard,121,44,1.0,0,1.0
+RAPT-ED-Guard,122,44,1.0,0,1.0
+RAPT-ED-Guard,123,44,1.0,0,1.0
+RAPT-ED-Guard,124,44,1.0,0,1.0
+RAPT-ED-Guard,125,44,1.0,0,1.0
+RAPT-ED-Guard,126,44,1.0,0,1.0
+RAPT-ED-Guard,127,44,1.0,0,1.0
+RAPT-ED-Guard,128,44,1.0,0,1.0
+RAPT-ED-Guard,129,44,1.0,0,1.0
+RAPT-ED-Guard,130,44,1.0,0,1.0
+RAPT-ED-Guard,131,44,1.0,0,1.0
+RAPT-ED-Guard,132,44,0.0,1,1.0
+RAPT-ED-Guard,133,44,1.0,0,1.0
+RAPT-ED-Guard,134,44,1.0,0,1.0
+RAPT-ED-Guard,135,44,1.0,0,1.0
+RAPT-ED-Guard,136,44,1.0,0,1.0
+RAPT-ED-Guard,137,44,0.0,0,1.0
+RAPT-ED-Guard,138,44,1.0,0,1.0
+RAPT-ED-Guard,139,44,1.0,0,1.0
+RAPT-ED-Guard,140,44,1.0,0,1.0
+RAPT-ED-Guard,141,44,1.0,0,1.0
+RAPT-ED-Guard,142,44,1.0,0,1.0
+RAPT-ED-Guard,143,44,0.0,1,1.0
+RAPT-ED-Guard,144,44,0.0,0,1.0
+RAPT-ED-Guard,145,44,0.0,0,1.0
+RAPT-ED-Guard,146,44,0.0,0,1.0
+RAPT-ED-Guard,147,44,1.0,0,1.0
+RAPT-ED-Guard,148,44,1.0,0,1.0
+RAPT-ED-Guard,149,44,0.0,0,1.0
+Frozen,99,45,1.0,0,1.0
+Frozen,100,45,1.0,0,1.0
+Frozen,101,45,1.0,0,1.0
+Frozen,102,45,1.0,0,1.0
+Frozen,103,45,1.0,0,1.0
+Frozen,104,45,1.0,0,1.0
+Frozen,105,45,1.0,0,1.0
+Frozen,106,45,1.0,0,1.0
+Frozen,107,45,1.0,0,1.0
+Frozen,108,45,1.0,0,1.0
+Frozen,109,45,1.0,0,1.0
+Frozen,110,45,1.0,0,1.0
+Frozen,111,45,1.0,0,1.0
+Frozen,112,45,1.0,0,1.0
+Frozen,113,45,1.0,0,1.0
+Frozen,114,45,1.0,0,1.0
+Frozen,115,45,1.0,0,1.0
+Frozen,116,45,1.0,0,1.0
+Frozen,117,45,1.0,0,1.0
+Frozen,118,45,1.0,0,1.0
+Frozen,119,45,1.0,0,1.0
+Frozen,120,45,1.0,0,1.0
+Frozen,121,45,1.0,0,1.0
+Frozen,122,45,1.0,0,1.0
+Frozen,123,45,1.0,0,1.0
+Frozen,124,45,1.0,0,1.0
+Frozen,125,45,1.0,0,1.0
+Frozen,126,45,1.0,0,1.0
+Frozen,127,45,1.0,0,1.0
+Frozen,128,45,1.0,0,1.0
+Frozen,129,45,1.0,0,1.0
+Frozen,130,45,1.0,0,1.0
+Frozen,131,45,1.0,0,1.0
+Frozen,132,45,0.0,0,1.0
+Frozen,133,45,1.0,0,1.0
+Frozen,134,45,1.0,0,1.0
+Frozen,135,45,1.0,0,1.0
+Frozen,136,45,1.0,0,1.0
+Frozen,137,45,0.0,0,1.0
+Frozen,138,45,1.0,0,1.0
+Frozen,139,45,1.0,0,1.0
+Frozen,140,45,1.0,0,1.0
+Frozen,141,45,1.0,0,1.0
+Frozen,142,45,1.0,0,1.0
+Frozen,143,45,0.0,0,1.0
+Frozen,144,45,0.0,1,1.0
+Frozen,145,45,0.0,0,1.0
+Frozen,146,45,0.0,0,1.0
+Frozen,147,45,1.0,1,1.0
+Frozen,148,45,1.0,0,1.0
+Frozen,149,45,0.0,0,1.0
+Event-Driven,99,45,1.0,0,1.0
+Event-Driven,100,45,1.0,0,1.0
+Event-Driven,101,45,1.0,0,1.0
+Event-Driven,102,45,1.0,0,1.0
+Event-Driven,103,45,1.0,0,1.0
+Event-Driven,104,45,1.0,0,1.0
+Event-Driven,105,45,1.0,0,1.0
+Event-Driven,106,45,1.0,0,1.0
+Event-Driven,107,45,1.0,0,1.0
+Event-Driven,108,45,1.0,0,1.0
+Event-Driven,109,45,1.0,0,1.0
+Event-Driven,110,45,1.0,0,1.0
+Event-Driven,111,45,1.0,0,1.0
+Event-Driven,112,45,1.0,0,1.0
+Event-Driven,113,45,1.0,0,1.0
+Event-Driven,114,45,1.0,0,1.0
+Event-Driven,115,45,1.0,0,1.0
+Event-Driven,116,45,1.0,0,1.0
+Event-Driven,117,45,1.0,0,1.0
+Event-Driven,118,45,1.0,0,1.0
+Event-Driven,119,45,1.0,0,1.0
+Event-Driven,120,45,1.0,0,1.0
+Event-Driven,121,45,1.0,0,1.0
+Event-Driven,122,45,1.0,0,1.0
+Event-Driven,123,45,1.0,0,1.0
+Event-Driven,124,45,1.0,0,1.0
+Event-Driven,125,45,1.0,0,1.0
+Event-Driven,126,45,1.0,0,1.0
+Event-Driven,127,45,1.0,0,1.0
+Event-Driven,128,45,1.0,0,1.0
+Event-Driven,129,45,1.0,0,1.0
+Event-Driven,130,45,1.0,0,1.0
+Event-Driven,131,45,1.0,0,1.0
+Event-Driven,132,45,0.0,0,1.0
+Event-Driven,133,45,1.0,0,1.0
+Event-Driven,134,45,1.0,0,1.0
+Event-Driven,135,45,1.0,0,1.0
+Event-Driven,136,45,1.0,0,1.0
+Event-Driven,137,45,0.0,0,1.0
+Event-Driven,138,45,1.0,0,1.0
+Event-Driven,139,45,1.0,0,1.0
+Event-Driven,140,45,1.0,0,1.0
+Event-Driven,141,45,1.0,0,1.0
+Event-Driven,142,45,1.0,0,1.0
+Event-Driven,143,45,0.0,0,1.0
+Event-Driven,144,45,0.0,1,1.0
+Event-Driven,145,45,0.0,0,1.0
+Event-Driven,146,45,0.0,0,1.0
+Event-Driven,147,45,1.0,1,1.0
+Event-Driven,148,45,1.0,0,1.0
+Event-Driven,149,45,0.0,0,1.0
+Full Retraining,99,45,1.0,0,1.0
+Full Retraining,100,45,1.0,0,1.0
+Full Retraining,101,45,1.0,0,1.0
+Full Retraining,102,45,1.0,0,1.0
+Full Retraining,103,45,1.0,0,1.0
+Full Retraining,104,45,1.0,0,1.0
+Full Retraining,105,45,1.0,0,1.0
+Full Retraining,106,45,1.0,0,1.0
+Full Retraining,107,45,1.0,0,1.0
+Full Retraining,108,45,1.0,0,1.0
+Full Retraining,109,45,1.0,0,1.0
+Full Retraining,110,45,1.0,0,1.0
+Full Retraining,111,45,1.0,0,1.0
+Full Retraining,112,45,1.0,0,1.0
+Full Retraining,113,45,1.0,0,1.0
+Full Retraining,114,45,1.0,0,1.0
+Full Retraining,115,45,1.0,0,1.0
+Full Retraining,116,45,1.0,0,1.0
+Full Retraining,117,45,1.0,0,1.0
+Full Retraining,118,45,1.0,0,1.0
+Full Retraining,119,45,1.0,0,1.0
+Full Retraining,120,45,1.0,0,1.0
+Full Retraining,121,45,1.0,0,1.0
+Full Retraining,122,45,1.0,0,1.0
+Full Retraining,123,45,1.0,0,1.0
+Full Retraining,124,45,1.0,0,1.0
+Full Retraining,125,45,1.0,0,1.0
+Full Retraining,126,45,1.0,0,1.0
+Full Retraining,127,45,1.0,0,1.0
+Full Retraining,128,45,1.0,0,1.0
+Full Retraining,129,45,1.0,0,1.0
+Full Retraining,130,45,1.0,0,1.0
+Full Retraining,131,45,1.0,0,1.0
+Full Retraining,132,45,0.0,0,1.0
+Full Retraining,133,45,1.0,0,1.0
+Full Retraining,134,45,1.0,0,1.0
+Full Retraining,135,45,1.0,0,1.0
+Full Retraining,136,45,1.0,0,1.0
+Full Retraining,137,45,0.0,0,1.0
+Full Retraining,138,45,1.0,0,1.0
+Full Retraining,139,45,1.0,0,1.0
+Full Retraining,140,45,1.0,0,1.0
+Full Retraining,141,45,1.0,0,1.0
+Full Retraining,142,45,1.0,0,1.0
+Full Retraining,143,45,0.0,0,1.0
+Full Retraining,144,45,0.0,1,1.0
+Full Retraining,145,45,0.0,0,1.0
+Full Retraining,146,45,0.0,0,1.0
+Full Retraining,147,45,1.0,1,1.0
+Full Retraining,148,45,1.0,0,1.0
+Full Retraining,149,45,0.0,0,1.0
+ADWIN,99,45,1.0,0,1.0
+ADWIN,100,45,1.0,0,1.0
+ADWIN,101,45,1.0,0,1.0
+ADWIN,102,45,1.0,0,1.0
+ADWIN,103,45,1.0,0,1.0
+ADWIN,104,45,1.0,0,1.0
+ADWIN,105,45,1.0,0,1.0
+ADWIN,106,45,1.0,0,1.0
+ADWIN,107,45,1.0,0,1.0
+ADWIN,108,45,1.0,0,1.0
+ADWIN,109,45,1.0,0,1.0
+ADWIN,110,45,1.0,0,1.0
+ADWIN,111,45,1.0,0,1.0
+ADWIN,112,45,1.0,0,1.0
+ADWIN,113,45,1.0,0,1.0
+ADWIN,114,45,1.0,0,1.0
+ADWIN,115,45,1.0,0,1.0
+ADWIN,116,45,1.0,0,1.0
+ADWIN,117,45,1.0,0,1.0
+ADWIN,118,45,1.0,0,1.0
+ADWIN,119,45,1.0,0,1.0
+ADWIN,120,45,1.0,0,1.0
+ADWIN,121,45,1.0,0,1.0
+ADWIN,122,45,1.0,0,1.0
+ADWIN,123,45,1.0,0,1.0
+ADWIN,124,45,1.0,0,1.0
+ADWIN,125,45,1.0,0,1.0
+ADWIN,126,45,1.0,0,1.0
+ADWIN,127,45,1.0,0,1.0
+ADWIN,128,45,1.0,0,1.0
+ADWIN,129,45,1.0,0,1.0
+ADWIN,130,45,1.0,0,1.0
+ADWIN,131,45,1.0,0,1.0
+ADWIN,132,45,0.0,0,1.0
+ADWIN,133,45,1.0,0,1.0
+ADWIN,134,45,1.0,0,1.0
+ADWIN,135,45,1.0,0,1.0
+ADWIN,136,45,1.0,0,1.0
+ADWIN,137,45,0.0,0,1.0
+ADWIN,138,45,1.0,0,1.0
+ADWIN,139,45,1.0,0,1.0
+ADWIN,140,45,1.0,0,1.0
+ADWIN,141,45,1.0,0,1.0
+ADWIN,142,45,1.0,0,1.0
+ADWIN,143,45,0.0,0,1.0
+ADWIN,144,45,0.0,0,1.0
+ADWIN,145,45,0.0,0,1.0
+ADWIN,146,45,0.0,0,1.0
+ADWIN,147,45,1.0,0,1.0
+ADWIN,148,45,1.0,0,1.0
+ADWIN,149,45,0.0,0,1.0
+Page-Hinkley,99,45,1.0,0,1.0
+Page-Hinkley,100,45,1.0,0,1.0
+Page-Hinkley,101,45,1.0,0,1.0
+Page-Hinkley,102,45,1.0,0,1.0
+Page-Hinkley,103,45,1.0,0,1.0
+Page-Hinkley,104,45,1.0,0,1.0
+Page-Hinkley,105,45,1.0,0,1.0
+Page-Hinkley,106,45,1.0,0,1.0
+Page-Hinkley,107,45,1.0,0,1.0
+Page-Hinkley,108,45,1.0,0,1.0
+Page-Hinkley,109,45,1.0,0,1.0
+Page-Hinkley,110,45,1.0,0,1.0
+Page-Hinkley,111,45,1.0,0,1.0
+Page-Hinkley,112,45,1.0,0,1.0
+Page-Hinkley,113,45,1.0,0,1.0
+Page-Hinkley,114,45,1.0,0,1.0
+Page-Hinkley,115,45,1.0,0,1.0
+Page-Hinkley,116,45,1.0,0,1.0
+Page-Hinkley,117,45,1.0,0,1.0
+Page-Hinkley,118,45,1.0,0,1.0
+Page-Hinkley,119,45,1.0,0,1.0
+Page-Hinkley,120,45,1.0,0,1.0
+Page-Hinkley,121,45,1.0,0,1.0
+Page-Hinkley,122,45,1.0,0,1.0
+Page-Hinkley,123,45,1.0,0,1.0
+Page-Hinkley,124,45,1.0,0,1.0
+Page-Hinkley,125,45,1.0,0,1.0
+Page-Hinkley,126,45,1.0,0,1.0
+Page-Hinkley,127,45,1.0,0,1.0
+Page-Hinkley,128,45,1.0,0,1.0
+Page-Hinkley,129,45,1.0,0,1.0
+Page-Hinkley,130,45,1.0,0,1.0
+Page-Hinkley,131,45,1.0,0,1.0
+Page-Hinkley,132,45,0.0,0,1.0
+Page-Hinkley,133,45,1.0,0,1.0
+Page-Hinkley,134,45,1.0,0,1.0
+Page-Hinkley,135,45,1.0,0,1.0
+Page-Hinkley,136,45,1.0,0,1.0
+Page-Hinkley,137,45,0.0,0,1.0
+Page-Hinkley,138,45,1.0,0,1.0
+Page-Hinkley,139,45,1.0,0,1.0
+Page-Hinkley,140,45,1.0,0,1.0
+Page-Hinkley,141,45,1.0,0,1.0
+Page-Hinkley,142,45,1.0,0,1.0
+Page-Hinkley,143,45,0.0,0,1.0
+Page-Hinkley,144,45,0.0,0,1.0
+Page-Hinkley,145,45,0.0,0,1.0
+Page-Hinkley,146,45,0.0,0,1.0
+Page-Hinkley,147,45,1.0,0,1.0
+Page-Hinkley,148,45,1.0,0,1.0
+Page-Hinkley,149,45,0.0,0,1.0
+RAPT,99,45,1.0,0,1.0
+RAPT,100,45,1.0,0,1.0
+RAPT,101,45,1.0,0,1.0
+RAPT,102,45,1.0,0,1.0
+RAPT,103,45,1.0,0,1.0
+RAPT,104,45,1.0,0,1.0
+RAPT,105,45,1.0,0,1.0
+RAPT,106,45,1.0,0,1.0
+RAPT,107,45,1.0,0,1.0
+RAPT,108,45,1.0,0,1.0
+RAPT,109,45,1.0,0,1.0
+RAPT,110,45,1.0,0,1.0
+RAPT,111,45,1.0,0,1.0
+RAPT,112,45,1.0,0,1.0
+RAPT,113,45,1.0,0,1.0
+RAPT,114,45,1.0,0,1.0
+RAPT,115,45,1.0,0,1.0
+RAPT,116,45,1.0,0,1.0
+RAPT,117,45,1.0,0,1.0
+RAPT,118,45,1.0,0,1.0
+RAPT,119,45,1.0,0,1.0
+RAPT,120,45,1.0,0,1.0
+RAPT,121,45,1.0,0,1.0
+RAPT,122,45,1.0,0,1.0
+RAPT,123,45,1.0,0,1.0
+RAPT,124,45,1.0,0,1.0
+RAPT,125,45,1.0,0,1.0
+RAPT,126,45,1.0,0,1.0
+RAPT,127,45,1.0,0,1.0
+RAPT,128,45,1.0,0,1.0
+RAPT,129,45,1.0,0,1.0
+RAPT,130,45,1.0,0,1.0
+RAPT,131,45,1.0,0,1.0
+RAPT,132,45,0.0,0,1.0
+RAPT,133,45,1.0,0,1.0
+RAPT,134,45,1.0,0,1.0
+RAPT,135,45,1.0,0,1.0
+RAPT,136,45,1.0,0,1.0
+RAPT,137,45,0.0,0,1.0
+RAPT,138,45,1.0,0,1.0
+RAPT,139,45,1.0,0,1.0
+RAPT,140,45,1.0,0,1.0
+RAPT,141,45,1.0,0,1.0
+RAPT,142,45,1.0,0,1.0
+RAPT,143,45,0.0,0,1.0
+RAPT,144,45,0.0,1,1.0
+RAPT,145,45,0.0,0,1.0
+RAPT,146,45,0.0,0,1.0
+RAPT,147,45,1.0,1,1.0
+RAPT,148,45,1.0,0,1.0
+RAPT,149,45,0.0,0,1.0
+RAPT-Guard,99,45,1.0,0,1.0
+RAPT-Guard,100,45,1.0,0,1.0
+RAPT-Guard,101,45,1.0,0,1.0
+RAPT-Guard,102,45,1.0,0,1.0
+RAPT-Guard,103,45,1.0,0,1.0
+RAPT-Guard,104,45,1.0,0,1.0
+RAPT-Guard,105,45,1.0,0,1.0
+RAPT-Guard,106,45,1.0,0,1.0
+RAPT-Guard,107,45,1.0,0,1.0
+RAPT-Guard,108,45,1.0,0,1.0
+RAPT-Guard,109,45,1.0,0,1.0
+RAPT-Guard,110,45,1.0,0,1.0
+RAPT-Guard,111,45,1.0,0,1.0
+RAPT-Guard,112,45,1.0,0,1.0
+RAPT-Guard,113,45,1.0,0,1.0
+RAPT-Guard,114,45,1.0,0,1.0
+RAPT-Guard,115,45,1.0,0,1.0
+RAPT-Guard,116,45,1.0,0,1.0
+RAPT-Guard,117,45,1.0,0,1.0
+RAPT-Guard,118,45,1.0,0,1.0
+RAPT-Guard,119,45,1.0,0,1.0
+RAPT-Guard,120,45,1.0,0,1.0
+RAPT-Guard,121,45,1.0,0,1.0
+RAPT-Guard,122,45,1.0,0,1.0
+RAPT-Guard,123,45,1.0,0,1.0
+RAPT-Guard,124,45,1.0,0,1.0
+RAPT-Guard,125,45,1.0,0,1.0
+RAPT-Guard,126,45,1.0,0,1.0
+RAPT-Guard,127,45,1.0,0,1.0
+RAPT-Guard,128,45,1.0,0,1.0
+RAPT-Guard,129,45,1.0,0,1.0
+RAPT-Guard,130,45,1.0,0,1.0
+RAPT-Guard,131,45,1.0,0,1.0
+RAPT-Guard,132,45,0.0,0,1.0
+RAPT-Guard,133,45,1.0,0,1.0
+RAPT-Guard,134,45,1.0,0,1.0
+RAPT-Guard,135,45,1.0,0,1.0
+RAPT-Guard,136,45,1.0,0,1.0
+RAPT-Guard,137,45,0.0,0,1.0
+RAPT-Guard,138,45,1.0,0,1.0
+RAPT-Guard,139,45,1.0,0,1.0
+RAPT-Guard,140,45,1.0,0,1.0
+RAPT-Guard,141,45,1.0,0,1.0
+RAPT-Guard,142,45,1.0,0,1.0
+RAPT-Guard,143,45,0.0,0,1.0
+RAPT-Guard,144,45,0.0,0,1.0
+RAPT-Guard,145,45,0.0,0,1.0
+RAPT-Guard,146,45,0.0,0,1.0
+RAPT-Guard,147,45,1.0,0,1.0
+RAPT-Guard,148,45,1.0,0,1.0
+RAPT-Guard,149,45,0.0,0,1.0
+RAPT-ED-Guard,99,45,1.0,0,1.0
+RAPT-ED-Guard,100,45,1.0,0,1.0
+RAPT-ED-Guard,101,45,1.0,0,1.0
+RAPT-ED-Guard,102,45,1.0,0,1.0
+RAPT-ED-Guard,103,45,1.0,0,1.0
+RAPT-ED-Guard,104,45,1.0,0,1.0
+RAPT-ED-Guard,105,45,1.0,0,1.0
+RAPT-ED-Guard,106,45,1.0,0,1.0
+RAPT-ED-Guard,107,45,1.0,0,1.0
+RAPT-ED-Guard,108,45,1.0,0,1.0
+RAPT-ED-Guard,109,45,1.0,0,1.0
+RAPT-ED-Guard,110,45,1.0,0,1.0
+RAPT-ED-Guard,111,45,1.0,0,1.0
+RAPT-ED-Guard,112,45,1.0,0,1.0
+RAPT-ED-Guard,113,45,1.0,0,1.0
+RAPT-ED-Guard,114,45,1.0,0,1.0
+RAPT-ED-Guard,115,45,1.0,0,1.0
+RAPT-ED-Guard,116,45,1.0,0,1.0
+RAPT-ED-Guard,117,45,1.0,0,1.0
+RAPT-ED-Guard,118,45,1.0,0,1.0
+RAPT-ED-Guard,119,45,1.0,0,1.0
+RAPT-ED-Guard,120,45,1.0,0,1.0
+RAPT-ED-Guard,121,45,1.0,0,1.0
+RAPT-ED-Guard,122,45,1.0,0,1.0
+RAPT-ED-Guard,123,45,1.0,0,1.0
+RAPT-ED-Guard,124,45,1.0,0,1.0
+RAPT-ED-Guard,125,45,1.0,0,1.0
+RAPT-ED-Guard,126,45,1.0,0,1.0
+RAPT-ED-Guard,127,45,1.0,0,1.0
+RAPT-ED-Guard,128,45,1.0,0,1.0
+RAPT-ED-Guard,129,45,1.0,0,1.0
+RAPT-ED-Guard,130,45,1.0,0,1.0
+RAPT-ED-Guard,131,45,1.0,0,1.0
+RAPT-ED-Guard,132,45,0.0,1,1.0
+RAPT-ED-Guard,133,45,1.0,0,1.0
+RAPT-ED-Guard,134,45,1.0,0,1.0
+RAPT-ED-Guard,135,45,1.0,0,1.0
+RAPT-ED-Guard,136,45,1.0,0,1.0
+RAPT-ED-Guard,137,45,0.0,0,1.0
+RAPT-ED-Guard,138,45,1.0,0,1.0
+RAPT-ED-Guard,139,45,1.0,0,1.0
+RAPT-ED-Guard,140,45,1.0,0,1.0
+RAPT-ED-Guard,141,45,1.0,0,1.0
+RAPT-ED-Guard,142,45,1.0,0,1.0
+RAPT-ED-Guard,143,45,0.0,1,1.0
+RAPT-ED-Guard,144,45,0.0,0,1.0
+RAPT-ED-Guard,145,45,0.0,0,1.0
+RAPT-ED-Guard,146,45,0.0,0,1.0
+RAPT-ED-Guard,147,45,1.0,0,1.0
+RAPT-ED-Guard,148,45,1.0,0,1.0
+RAPT-ED-Guard,149,45,0.0,0,1.0
+Frozen,99,46,1.0,0,1.0
+Frozen,100,46,1.0,0,1.0
+Frozen,101,46,1.0,0,1.0
+Frozen,102,46,1.0,0,1.0
+Frozen,103,46,1.0,0,1.0
+Frozen,104,46,1.0,0,1.0
+Frozen,105,46,1.0,0,1.0
+Frozen,106,46,1.0,0,1.0
+Frozen,107,46,1.0,0,1.0
+Frozen,108,46,1.0,0,1.0
+Frozen,109,46,1.0,0,1.0
+Frozen,110,46,1.0,0,1.0
+Frozen,111,46,1.0,0,1.0
+Frozen,112,46,1.0,0,1.0
+Frozen,113,46,1.0,0,1.0
+Frozen,114,46,1.0,0,1.0
+Frozen,115,46,1.0,0,1.0
+Frozen,116,46,1.0,0,1.0
+Frozen,117,46,1.0,0,1.0
+Frozen,118,46,1.0,0,1.0
+Frozen,119,46,1.0,0,1.0
+Frozen,120,46,1.0,0,1.0
+Frozen,121,46,1.0,0,1.0
+Frozen,122,46,1.0,0,1.0
+Frozen,123,46,1.0,0,1.0
+Frozen,124,46,1.0,0,1.0
+Frozen,125,46,1.0,0,1.0
+Frozen,126,46,1.0,0,1.0
+Frozen,127,46,1.0,0,1.0
+Frozen,128,46,1.0,0,1.0
+Frozen,129,46,1.0,0,1.0
+Frozen,130,46,1.0,0,1.0
+Frozen,131,46,1.0,0,1.0
+Frozen,132,46,0.0,0,1.0
+Frozen,133,46,1.0,0,1.0
+Frozen,134,46,1.0,0,1.0
+Frozen,135,46,1.0,0,1.0
+Frozen,136,46,1.0,0,1.0
+Frozen,137,46,0.0,0,1.0
+Frozen,138,46,1.0,0,1.0
+Frozen,139,46,1.0,0,1.0
+Frozen,140,46,1.0,0,1.0
+Frozen,141,46,1.0,0,1.0
+Frozen,142,46,1.0,0,1.0
+Frozen,143,46,0.0,0,1.0
+Frozen,144,46,0.0,1,1.0
+Frozen,145,46,0.0,0,1.0
+Frozen,146,46,0.0,0,1.0
+Frozen,147,46,1.0,1,1.0
+Frozen,148,46,1.0,0,1.0
+Frozen,149,46,0.0,0,1.0
+Event-Driven,99,46,1.0,0,1.0
+Event-Driven,100,46,1.0,0,1.0
+Event-Driven,101,46,1.0,0,1.0
+Event-Driven,102,46,1.0,0,1.0
+Event-Driven,103,46,1.0,0,1.0
+Event-Driven,104,46,1.0,0,1.0
+Event-Driven,105,46,1.0,0,1.0
+Event-Driven,106,46,1.0,0,1.0
+Event-Driven,107,46,1.0,0,1.0
+Event-Driven,108,46,1.0,0,1.0
+Event-Driven,109,46,1.0,0,1.0
+Event-Driven,110,46,1.0,0,1.0
+Event-Driven,111,46,1.0,0,1.0
+Event-Driven,112,46,1.0,0,1.0
+Event-Driven,113,46,1.0,0,1.0
+Event-Driven,114,46,1.0,0,1.0
+Event-Driven,115,46,1.0,0,1.0
+Event-Driven,116,46,1.0,0,1.0
+Event-Driven,117,46,1.0,0,1.0
+Event-Driven,118,46,1.0,0,1.0
+Event-Driven,119,46,1.0,0,1.0
+Event-Driven,120,46,1.0,0,1.0
+Event-Driven,121,46,1.0,0,1.0
+Event-Driven,122,46,1.0,0,1.0
+Event-Driven,123,46,1.0,0,1.0
+Event-Driven,124,46,1.0,0,1.0
+Event-Driven,125,46,1.0,0,1.0
+Event-Driven,126,46,1.0,0,1.0
+Event-Driven,127,46,1.0,0,1.0
+Event-Driven,128,46,1.0,0,1.0
+Event-Driven,129,46,1.0,0,1.0
+Event-Driven,130,46,1.0,0,1.0
+Event-Driven,131,46,1.0,0,1.0
+Event-Driven,132,46,0.0,0,1.0
+Event-Driven,133,46,1.0,0,1.0
+Event-Driven,134,46,1.0,0,1.0
+Event-Driven,135,46,1.0,0,1.0
+Event-Driven,136,46,1.0,0,1.0
+Event-Driven,137,46,0.0,0,1.0
+Event-Driven,138,46,1.0,0,1.0
+Event-Driven,139,46,1.0,0,1.0
+Event-Driven,140,46,1.0,0,1.0
+Event-Driven,141,46,1.0,0,1.0
+Event-Driven,142,46,1.0,0,1.0
+Event-Driven,143,46,0.0,0,1.0
+Event-Driven,144,46,0.0,1,1.0
+Event-Driven,145,46,0.0,0,1.0
+Event-Driven,146,46,0.0,0,1.0
+Event-Driven,147,46,1.0,1,1.0
+Event-Driven,148,46,1.0,0,1.0
+Event-Driven,149,46,0.0,0,1.0
+Full Retraining,99,46,1.0,0,1.0
+Full Retraining,100,46,1.0,0,1.0
+Full Retraining,101,46,1.0,0,1.0
+Full Retraining,102,46,1.0,0,1.0
+Full Retraining,103,46,1.0,0,1.0
+Full Retraining,104,46,1.0,0,1.0
+Full Retraining,105,46,1.0,0,1.0
+Full Retraining,106,46,1.0,0,1.0
+Full Retraining,107,46,1.0,0,1.0
+Full Retraining,108,46,1.0,0,1.0
+Full Retraining,109,46,1.0,0,1.0
+Full Retraining,110,46,1.0,0,1.0
+Full Retraining,111,46,1.0,0,1.0
+Full Retraining,112,46,1.0,0,1.0
+Full Retraining,113,46,1.0,0,1.0
+Full Retraining,114,46,1.0,0,1.0
+Full Retraining,115,46,1.0,0,1.0
+Full Retraining,116,46,1.0,0,1.0
+Full Retraining,117,46,1.0,0,1.0
+Full Retraining,118,46,1.0,0,1.0
+Full Retraining,119,46,1.0,0,1.0
+Full Retraining,120,46,1.0,0,1.0
+Full Retraining,121,46,1.0,0,1.0
+Full Retraining,122,46,1.0,0,1.0
+Full Retraining,123,46,1.0,0,1.0
+Full Retraining,124,46,1.0,0,1.0
+Full Retraining,125,46,1.0,0,1.0
+Full Retraining,126,46,1.0,0,1.0
+Full Retraining,127,46,1.0,0,1.0
+Full Retraining,128,46,1.0,0,1.0
+Full Retraining,129,46,1.0,0,1.0
+Full Retraining,130,46,1.0,0,1.0
+Full Retraining,131,46,1.0,0,1.0
+Full Retraining,132,46,0.0,0,1.0
+Full Retraining,133,46,1.0,0,1.0
+Full Retraining,134,46,1.0,0,1.0
+Full Retraining,135,46,1.0,0,1.0
+Full Retraining,136,46,1.0,0,1.0
+Full Retraining,137,46,0.0,0,1.0
+Full Retraining,138,46,1.0,0,1.0
+Full Retraining,139,46,1.0,0,1.0
+Full Retraining,140,46,1.0,0,1.0
+Full Retraining,141,46,1.0,0,1.0
+Full Retraining,142,46,1.0,0,1.0
+Full Retraining,143,46,0.0,0,1.0
+Full Retraining,144,46,0.0,1,1.0
+Full Retraining,145,46,0.0,0,1.0
+Full Retraining,146,46,0.0,0,1.0
+Full Retraining,147,46,1.0,1,1.0
+Full Retraining,148,46,1.0,0,1.0
+Full Retraining,149,46,0.0,0,1.0
+ADWIN,99,46,1.0,0,1.0
+ADWIN,100,46,1.0,0,1.0
+ADWIN,101,46,1.0,0,1.0
+ADWIN,102,46,1.0,0,1.0
+ADWIN,103,46,1.0,0,1.0
+ADWIN,104,46,1.0,0,1.0
+ADWIN,105,46,1.0,0,1.0
+ADWIN,106,46,1.0,0,1.0
+ADWIN,107,46,1.0,0,1.0
+ADWIN,108,46,1.0,0,1.0
+ADWIN,109,46,1.0,0,1.0
+ADWIN,110,46,1.0,0,1.0
+ADWIN,111,46,1.0,0,1.0
+ADWIN,112,46,1.0,0,1.0
+ADWIN,113,46,1.0,0,1.0
+ADWIN,114,46,1.0,0,1.0
+ADWIN,115,46,1.0,0,1.0
+ADWIN,116,46,1.0,0,1.0
+ADWIN,117,46,1.0,0,1.0
+ADWIN,118,46,1.0,0,1.0
+ADWIN,119,46,1.0,0,1.0
+ADWIN,120,46,1.0,0,1.0
+ADWIN,121,46,1.0,0,1.0
+ADWIN,122,46,1.0,0,1.0
+ADWIN,123,46,1.0,0,1.0
+ADWIN,124,46,1.0,0,1.0
+ADWIN,125,46,1.0,0,1.0
+ADWIN,126,46,1.0,0,1.0
+ADWIN,127,46,1.0,0,1.0
+ADWIN,128,46,1.0,0,1.0
+ADWIN,129,46,1.0,0,1.0
+ADWIN,130,46,1.0,0,1.0
+ADWIN,131,46,1.0,0,1.0
+ADWIN,132,46,0.0,0,1.0
+ADWIN,133,46,1.0,0,1.0
+ADWIN,134,46,1.0,0,1.0
+ADWIN,135,46,1.0,0,1.0
+ADWIN,136,46,1.0,0,1.0
+ADWIN,137,46,0.0,0,1.0
+ADWIN,138,46,1.0,0,1.0
+ADWIN,139,46,1.0,0,1.0
+ADWIN,140,46,1.0,0,1.0
+ADWIN,141,46,1.0,0,1.0
+ADWIN,142,46,1.0,0,1.0
+ADWIN,143,46,0.0,0,1.0
+ADWIN,144,46,0.0,0,1.0
+ADWIN,145,46,0.0,0,1.0
+ADWIN,146,46,0.0,0,1.0
+ADWIN,147,46,1.0,0,1.0
+ADWIN,148,46,1.0,0,1.0
+ADWIN,149,46,0.0,0,1.0
+Page-Hinkley,99,46,1.0,0,1.0
+Page-Hinkley,100,46,1.0,0,1.0
+Page-Hinkley,101,46,1.0,0,1.0
+Page-Hinkley,102,46,1.0,0,1.0
+Page-Hinkley,103,46,1.0,0,1.0
+Page-Hinkley,104,46,1.0,0,1.0
+Page-Hinkley,105,46,1.0,0,1.0
+Page-Hinkley,106,46,1.0,0,1.0
+Page-Hinkley,107,46,1.0,0,1.0
+Page-Hinkley,108,46,1.0,0,1.0
+Page-Hinkley,109,46,1.0,0,1.0
+Page-Hinkley,110,46,1.0,0,1.0
+Page-Hinkley,111,46,1.0,0,1.0
+Page-Hinkley,112,46,1.0,0,1.0
+Page-Hinkley,113,46,1.0,0,1.0
+Page-Hinkley,114,46,1.0,0,1.0
+Page-Hinkley,115,46,1.0,0,1.0
+Page-Hinkley,116,46,1.0,0,1.0
+Page-Hinkley,117,46,1.0,0,1.0
+Page-Hinkley,118,46,1.0,0,1.0
+Page-Hinkley,119,46,1.0,0,1.0
+Page-Hinkley,120,46,1.0,0,1.0
+Page-Hinkley,121,46,1.0,0,1.0
+Page-Hinkley,122,46,1.0,0,1.0
+Page-Hinkley,123,46,1.0,0,1.0
+Page-Hinkley,124,46,1.0,0,1.0
+Page-Hinkley,125,46,1.0,0,1.0
+Page-Hinkley,126,46,1.0,0,1.0
+Page-Hinkley,127,46,1.0,0,1.0
+Page-Hinkley,128,46,1.0,0,1.0
+Page-Hinkley,129,46,1.0,0,1.0
+Page-Hinkley,130,46,1.0,0,1.0
+Page-Hinkley,131,46,1.0,0,1.0
+Page-Hinkley,132,46,0.0,0,1.0
+Page-Hinkley,133,46,1.0,0,1.0
+Page-Hinkley,134,46,1.0,0,1.0
+Page-Hinkley,135,46,1.0,0,1.0
+Page-Hinkley,136,46,1.0,0,1.0
+Page-Hinkley,137,46,0.0,0,1.0
+Page-Hinkley,138,46,1.0,0,1.0
+Page-Hinkley,139,46,1.0,0,1.0
+Page-Hinkley,140,46,1.0,0,1.0
+Page-Hinkley,141,46,1.0,0,1.0
+Page-Hinkley,142,46,1.0,0,1.0
+Page-Hinkley,143,46,0.0,0,1.0
+Page-Hinkley,144,46,0.0,0,1.0
+Page-Hinkley,145,46,0.0,0,1.0
+Page-Hinkley,146,46,0.0,0,1.0
+Page-Hinkley,147,46,1.0,0,1.0
+Page-Hinkley,148,46,1.0,0,1.0
+Page-Hinkley,149,46,0.0,0,1.0
+RAPT,99,46,1.0,0,1.0
+RAPT,100,46,1.0,0,1.0
+RAPT,101,46,1.0,0,1.0
+RAPT,102,46,1.0,0,1.0
+RAPT,103,46,1.0,0,1.0
+RAPT,104,46,1.0,0,1.0
+RAPT,105,46,1.0,0,1.0
+RAPT,106,46,1.0,0,1.0
+RAPT,107,46,1.0,0,1.0
+RAPT,108,46,1.0,0,1.0
+RAPT,109,46,1.0,0,1.0
+RAPT,110,46,1.0,0,1.0
+RAPT,111,46,1.0,0,1.0
+RAPT,112,46,1.0,0,1.0
+RAPT,113,46,1.0,0,1.0
+RAPT,114,46,1.0,0,1.0
+RAPT,115,46,1.0,0,1.0
+RAPT,116,46,1.0,0,1.0
+RAPT,117,46,1.0,0,1.0
+RAPT,118,46,1.0,0,1.0
+RAPT,119,46,1.0,0,1.0
+RAPT,120,46,1.0,0,1.0
+RAPT,121,46,1.0,0,1.0
+RAPT,122,46,1.0,0,1.0
+RAPT,123,46,1.0,0,1.0
+RAPT,124,46,1.0,0,1.0
+RAPT,125,46,1.0,0,1.0
+RAPT,126,46,1.0,0,1.0
+RAPT,127,46,1.0,0,1.0
+RAPT,128,46,1.0,0,1.0
+RAPT,129,46,1.0,0,1.0
+RAPT,130,46,1.0,0,1.0
+RAPT,131,46,1.0,0,1.0
+RAPT,132,46,0.0,0,1.0
+RAPT,133,46,1.0,0,1.0
+RAPT,134,46,1.0,0,1.0
+RAPT,135,46,1.0,0,1.0
+RAPT,136,46,1.0,0,1.0
+RAPT,137,46,0.0,0,1.0
+RAPT,138,46,1.0,0,1.0
+RAPT,139,46,1.0,0,1.0
+RAPT,140,46,1.0,0,1.0
+RAPT,141,46,1.0,0,1.0
+RAPT,142,46,1.0,0,1.0
+RAPT,143,46,0.0,0,1.0
+RAPT,144,46,0.0,1,1.0
+RAPT,145,46,0.0,0,1.0
+RAPT,146,46,0.0,0,1.0
+RAPT,147,46,1.0,1,1.0
+RAPT,148,46,1.0,0,1.0
+RAPT,149,46,0.0,0,1.0
+RAPT-Guard,99,46,1.0,0,1.0
+RAPT-Guard,100,46,1.0,0,1.0
+RAPT-Guard,101,46,1.0,0,1.0
+RAPT-Guard,102,46,1.0,0,1.0
+RAPT-Guard,103,46,1.0,0,1.0
+RAPT-Guard,104,46,1.0,0,1.0
+RAPT-Guard,105,46,1.0,0,1.0
+RAPT-Guard,106,46,1.0,0,1.0
+RAPT-Guard,107,46,1.0,0,1.0
+RAPT-Guard,108,46,1.0,0,1.0
+RAPT-Guard,109,46,1.0,0,1.0
+RAPT-Guard,110,46,1.0,0,1.0
+RAPT-Guard,111,46,1.0,0,1.0
+RAPT-Guard,112,46,1.0,0,1.0
+RAPT-Guard,113,46,1.0,0,1.0
+RAPT-Guard,114,46,1.0,0,1.0
+RAPT-Guard,115,46,1.0,0,1.0
+RAPT-Guard,116,46,1.0,0,1.0
+RAPT-Guard,117,46,1.0,0,1.0
+RAPT-Guard,118,46,1.0,0,1.0
+RAPT-Guard,119,46,1.0,0,1.0
+RAPT-Guard,120,46,1.0,0,1.0
+RAPT-Guard,121,46,1.0,0,1.0
+RAPT-Guard,122,46,1.0,0,1.0
+RAPT-Guard,123,46,1.0,0,1.0
+RAPT-Guard,124,46,1.0,0,1.0
+RAPT-Guard,125,46,1.0,0,1.0
+RAPT-Guard,126,46,1.0,0,1.0
+RAPT-Guard,127,46,1.0,0,1.0
+RAPT-Guard,128,46,1.0,0,1.0
+RAPT-Guard,129,46,1.0,0,1.0
+RAPT-Guard,130,46,1.0,0,1.0
+RAPT-Guard,131,46,1.0,0,1.0
+RAPT-Guard,132,46,0.0,0,1.0
+RAPT-Guard,133,46,1.0,0,1.0
+RAPT-Guard,134,46,1.0,0,1.0
+RAPT-Guard,135,46,1.0,0,1.0
+RAPT-Guard,136,46,1.0,0,1.0
+RAPT-Guard,137,46,0.0,0,1.0
+RAPT-Guard,138,46,1.0,0,1.0
+RAPT-Guard,139,46,1.0,0,1.0
+RAPT-Guard,140,46,1.0,0,1.0
+RAPT-Guard,141,46,1.0,0,1.0
+RAPT-Guard,142,46,1.0,0,1.0
+RAPT-Guard,143,46,0.0,0,1.0
+RAPT-Guard,144,46,0.0,0,1.0
+RAPT-Guard,145,46,0.0,0,1.0
+RAPT-Guard,146,46,0.0,0,1.0
+RAPT-Guard,147,46,1.0,0,1.0
+RAPT-Guard,148,46,1.0,0,1.0
+RAPT-Guard,149,46,0.0,0,1.0
+RAPT-ED-Guard,99,46,1.0,0,1.0
+RAPT-ED-Guard,100,46,1.0,0,1.0
+RAPT-ED-Guard,101,46,1.0,0,1.0
+RAPT-ED-Guard,102,46,1.0,0,1.0
+RAPT-ED-Guard,103,46,1.0,0,1.0
+RAPT-ED-Guard,104,46,1.0,0,1.0
+RAPT-ED-Guard,105,46,1.0,0,1.0
+RAPT-ED-Guard,106,46,1.0,0,1.0
+RAPT-ED-Guard,107,46,1.0,0,1.0
+RAPT-ED-Guard,108,46,1.0,0,1.0
+RAPT-ED-Guard,109,46,1.0,0,1.0
+RAPT-ED-Guard,110,46,1.0,0,1.0
+RAPT-ED-Guard,111,46,1.0,0,1.0
+RAPT-ED-Guard,112,46,1.0,0,1.0
+RAPT-ED-Guard,113,46,1.0,0,1.0
+RAPT-ED-Guard,114,46,1.0,0,1.0
+RAPT-ED-Guard,115,46,1.0,0,1.0
+RAPT-ED-Guard,116,46,1.0,0,1.0
+RAPT-ED-Guard,117,46,1.0,0,1.0
+RAPT-ED-Guard,118,46,1.0,0,1.0
+RAPT-ED-Guard,119,46,1.0,0,1.0
+RAPT-ED-Guard,120,46,1.0,0,1.0
+RAPT-ED-Guard,121,46,1.0,0,1.0
+RAPT-ED-Guard,122,46,1.0,0,1.0
+RAPT-ED-Guard,123,46,1.0,0,1.0
+RAPT-ED-Guard,124,46,1.0,0,1.0
+RAPT-ED-Guard,125,46,1.0,0,1.0
+RAPT-ED-Guard,126,46,1.0,0,1.0
+RAPT-ED-Guard,127,46,1.0,0,1.0
+RAPT-ED-Guard,128,46,1.0,0,1.0
+RAPT-ED-Guard,129,46,1.0,0,1.0
+RAPT-ED-Guard,130,46,1.0,0,1.0
+RAPT-ED-Guard,131,46,1.0,0,1.0
+RAPT-ED-Guard,132,46,0.0,1,1.0
+RAPT-ED-Guard,133,46,1.0,0,1.0
+RAPT-ED-Guard,134,46,1.0,0,1.0
+RAPT-ED-Guard,135,46,1.0,0,1.0
+RAPT-ED-Guard,136,46,1.0,0,1.0
+RAPT-ED-Guard,137,46,0.0,0,1.0
+RAPT-ED-Guard,138,46,1.0,0,1.0
+RAPT-ED-Guard,139,46,1.0,0,1.0
+RAPT-ED-Guard,140,46,1.0,0,1.0
+RAPT-ED-Guard,141,46,1.0,0,1.0
+RAPT-ED-Guard,142,46,1.0,0,1.0
+RAPT-ED-Guard,143,46,0.0,1,1.0
+RAPT-ED-Guard,144,46,0.0,0,1.0
+RAPT-ED-Guard,145,46,0.0,0,1.0
+RAPT-ED-Guard,146,46,0.0,0,1.0
+RAPT-ED-Guard,147,46,1.0,0,1.0
+RAPT-ED-Guard,148,46,1.0,0,1.0
+RAPT-ED-Guard,149,46,0.0,0,1.0

@@ -1,0 +1,11 @@
+stream,policy,macro_f1,refits
+5g_nr,long/every-window (RAPT-ED-Guard),0.894560669456067,38
+5g_nr,short/boundary (RAPT),0.9087866108786612,15
+campus,long/every-window (RAPT-ED-Guard),0.9727823855730833,54
+campus,short/boundary (RAPT),0.9277024739846038,10
+concept_drift,long/every-window (RAPT-ED-Guard),0.8980392156862745,8
+concept_drift,short/boundary (RAPT),0.8901960784313726,0
+kpiops,long/every-window (RAPT-ED-Guard),0.7068560067181379,337
+kpiops,short/boundary (RAPT),0.5088751979065117,25
+ugr16,long/every-window (RAPT-ED-Guard),0.9358410901299365,421
+ugr16,short/boundary (RAPT),0.9227469701278748,55
