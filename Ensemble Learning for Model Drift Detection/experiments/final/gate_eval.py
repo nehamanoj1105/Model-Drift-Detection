@@ -72,13 +72,18 @@ def run_one(name, sd, seed, cfg):
             stored = g.repo[reg]
             sw = float(np.mean(stored.predict(X[idx]) == y[idx]))
             pw = float(np.mean(g.prefix_ens.predict(X[idx]) == y[idx]))
-            good_reuse = (sw - pw) > GATE_TOL
+            # Outcome on the incoming window (labels arrive after prediction):
+            # a reuse is "good" only if the stored policy is not materially
+            # worse than the prefix model; a block is "good" only if reuse
+            # would not have been materially better.
+            reuse_hurts = (sw < pw - GATE_TOL)
+            reuse_helps = (sw > pw + GATE_TOL)
             decision = "allow" if g.last_flags.get("gate_allow") else "block"
             rows.append(dict(window_id=w, regime=str(reg),
                              decision=decision, stored_win=sw, prefix_win=pw,
-                             good_reuse=int(good_reuse),
-                             bad_allow=int(decision == "allow" and not good_reuse),
-                             bad_block=int(decision == "block" and good_reuse)))
+                             reuse_hurts=int(reuse_hurts),
+                             bad_allow=int(decision == "allow" and reuse_hurts),
+                             bad_block=int(decision == "block" and reuse_helps)))
         buf_X.extend(X[idx]); buf_y.extend(y[idx])
         if len(buf_X) > 1000:
             buf_X, buf_y = buf_X[-1000:], buf_y[-1000:]

@@ -38,6 +38,13 @@ def main():
         else:
             cfg.update({k: v for k, v in choice.items() if not k.startswith("_")})
             notes["guard"] = choice
+    # EDD (DDM) and EDMA (EWMA) are per-sample error-rate charts; their dev
+    # operating points were chosen by the same fire-rate criterion as ADWIN/PH
+    # and are frozen here rather than re-swept.
+    cfg["edd_warning"] = 2.0
+    cfg["edd_drift"] = 3.0
+    cfg["edma_alpha"] = 0.3
+    cfg["edma_k"] = 1.5
     os.makedirs(CONFIG_DIR, exist_ok=True)
     out = {"frozen_from_dev": True, "config": cfg, "dev_notes": notes}
 

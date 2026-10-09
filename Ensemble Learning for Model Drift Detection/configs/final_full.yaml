@@ -18,8 +18,8 @@ config:
   ph_alpha: 0.9999
   edd_warning: 2.0
   edd_drift: 3.0
-  edma_alpha: 0.2
-  edma_k: 2.0
+  edma_alpha: 0.3
+  edma_k: 1.5
   detector_min_retrain_interval: 3
   floor_acc_threshold: 0.6
   floor_window: 3

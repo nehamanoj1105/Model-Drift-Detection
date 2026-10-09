@@ -7,8 +7,8 @@ detector_min_retrain_interval: 3
 ed_refit_interval: 3
 edd_drift: 3
 edd_warning: 2
-edma_alpha: 0.2
-edma_k: 2
+edma_alpha: 0.3
+edma_k: 1.5
 enable_floor: false
 floor_acc_threshold: 0.6
 floor_min_interval: 2

@@ -116,10 +116,11 @@ def seed_stat(df, m1, m2):
     se = stats.sem(d)
     tcrit = stats.t.ppf(0.975, n - 1)
     ci = (float(np.mean(d) - tcrit * se), float(np.mean(d) + tcrit * se))
-    # TOST: reject if CI within (-margin, +margin) => equivalence
-    lo = stats.t.cdf((np.mean(d) + TOST_MARGIN) / se, n - 1)
-    hi = 1 - stats.t.cdf((np.mean(d) - TOST_MARGIN) / se, n - 1)
-    tost_p = float(max(lo, hi))
+    # TOST: H0_lower: d <= -margin, H0_upper: d >= margin. Equivalence is
+    # declared when the larger one-sided p is below alpha.
+    p_lower = 1 - stats.t.cdf((np.mean(d) + TOST_MARGIN) / se, n - 1)
+    p_upper = stats.t.cdf((np.mean(d) - TOST_MARGIN) / se, n - 1)
+    tost_p = float(max(p_lower, p_upper))
     return dict(n=n, mean=float(np.mean(d)), dz=dz, t_p=float(tp),
                 tost_p=tost_p, ci_lo=ci[0], ci_hi=ci[1])
 

@@ -1,0 +1,5 @@
+dataset,raw_samples,usable_samples,features,classes,windows,window_size,regimes,initial_train_windows
+5G Campus,1799,1790,19,3,179,10,3,36
+UGR'16,43200,43200,134,2,180,240,12,36
+NordicDat,91455,91000,16,3,182,500,3,36
+5G NR Lat.,499,499,12,3,499,1,4,100

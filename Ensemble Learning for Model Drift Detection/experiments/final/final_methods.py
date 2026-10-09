@@ -377,44 +377,53 @@ class RAPTAnchor(_RAPTBase):
 # Historical detectors (trigger-only; shared buffer/model)
 # ---------------------------------------------------------------------------
 class _EDD:
+    """Drift Detection Method (Gama et al. 2004): a binomial error-rate chart.
+
+    One error *rate* per window is added; the drift signal is
+    p + drift*sqrt(p(1-p)/n) exceeding the corresponding value at the point of
+    minimum p."""
+
     def __init__(self, warning=2.0, drift=3.0, min_instances=30):
         self.warning, self.drift, self.min_instances = warning, drift, min_instances
         self.reset()
 
     def reset(self):
-        self.n = 0; self.last = None; self.mean = 0.0; self.var = 0.0
-        self.pmin = None; self.smin = None
+        self.n = 0; self.p = 0.0; self.pmin = float("inf"); self.smin = 0.0
+        self.drift_detected = False
 
     def update(self, e):
+        self.drift_detected = False
         self.n += 1
-        if self.last is not None:
-            d = float(e != self.last)
-            self.mean += (d - self.mean) / self.n
-            self.var += (d - self.mean) ** 2
-            s = np.sqrt(self.var / self.n) if self.n > 1 else 0.0
-            p = self.mean
-            if self.pmin is None or (p + self.warning * s) <= (self.pmin + self.warning * self.smin):
-                self.pmin, self.smin = p, s
-            if (p + self.drift * s) > (self.pmin + self.drift * self.smin) and self.n >= self.min_instances:
-                self.last = e; return True
-        self.last = e
-        return False
+        self.p += (float(e) - self.p) / self.n
+        s = np.sqrt(self.p * (1 - self.p) / self.n) if self.n > 0 else 0.0
+        if self.n < self.min_instances:
+            return
+        if self.p + s < self.pmin + self.smin:
+            self.pmin, self.smin = self.p, s
+        if self.p + self.drift * s > self.pmin + self.drift * self.smin:
+            self.reset()
+            self.drift_detected = True
+        elif self.p + self.warning * s > self.pmin + self.warning * self.smin:
+            self.drift_detected = False
 
 
 class _EDMA:
     def __init__(self, alpha=0.2, k=2.0, min_instances=30):
         self.alpha, self.k, self.min_instances = alpha, k, min_instances
         self.n = 0; self.ewma = None; self.ewvar = 0.0
+        self.drift_detected = False
 
     def update(self, e):
+        self.drift_detected = False
         self.n += 1
         if self.ewma is None:
-            self.ewma = float(e); return False
+            self.ewma = float(e); return
         dev = e - self.ewma
         self.ewma += self.alpha * dev
         self.ewvar = (1 - self.alpha) * (self.ewvar + self.alpha * dev * dev)
         sd = np.sqrt(self.ewvar) if self.ewvar > 0 else 0.0
-        return self.n >= self.min_instances and e > self.ewma + self.k * max(sd, 0.02)
+        self.drift_detected = bool(self.n >= self.min_instances
+                                   and e > self.ewma + self.k * max(sd, 0.02))
 
 
 class DetectorModel(_Base):
@@ -443,10 +452,12 @@ class DetectorModel(_Base):
         self._push(X_win, y_win)
         if err is None:
             err = 0.0
+        err = np.atleast_1d(err)
         fired = False
-        # ADWIN / Page-Hinkley operate on the per-sample 0/1 error stream, which
-        # is the granularity they are designed for.
-        for e in np.atleast_1d(err):
+        # every detector consumes the per-sample 0/1 error stream, its canonical
+        # input; feeding one window-mean error made the charts blind at these
+        # window sizes.
+        for e in err:
             self.det.update(float(e))
             if getattr(self.det, "drift_detected", False):
                 fired = True
