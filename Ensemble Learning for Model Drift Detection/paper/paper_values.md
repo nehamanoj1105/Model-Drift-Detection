@@ -130,6 +130,20 @@ Seeds: 30 (42-71). TOST equivalence margin: +/-0.02 macro-F1.
 - RAPT-Cheap: F1=0.9851, adapt=0.8477s
 - RAPT-Incremental: F1=0.9549, adapt=0.5813s
 - Source: Final_Experiments/results/tables/table_final_main.csv (five-seed legacy 5G-Campus harness, not results/final).
+  Frozen vs Full Retraining: delta=-0.0462, CI=[-0.0508,-0.0416], d=-12.43, p=0.0625
+  Event-Driven vs Full Retraining: delta=-0.0190, CI=[-0.0219,-0.0161], d=-8.13, p=0.0625
+  RAPT_T2 vs Full Retraining: delta=-0.0448, CI=[-0.0494,-0.0401], d=-12.03, p=0.0625
+  RAPT_T1 vs Full Retraining: delta=-0.0425, CI=[-0.0463,-0.0388], d=-14.20, p=0.0625
+  RAPT_T1_REFIT vs Full Retraining: delta=-0.0425, CI=[-0.0463,-0.0388], d=-14.20, p=0.0625
+  RAPT_FULL vs Full Retraining: delta=-0.0242, CI=[-0.0271,-0.0212], d=-10.32, p=0.0625
+  RAPT_REL_REFIT vs Full Retraining: delta=-0.0242, CI=[-0.0271,-0.0212], d=-10.32, p=0.0625
+  RAPT_REFRESH_W5 vs Full Retraining: delta=+0.0018, CI=[-0.0002,+0.0038], d=+1.10, p=0.2500
+  RAPT_REFRESH_W10 vs Full Retraining: delta=-0.0055, CI=[-0.0084,-0.0025], d=-2.26, p=0.0625
+  RAPT_EVIDENCE vs Full Retraining: delta=-0.0242, CI=[-0.0271,-0.0212], d=-10.32, p=0.0625
+  RAPT_CHEAP vs Full Retraining: delta=+0.0022, CI=[-0.0036,+0.0080], d=+0.47, p=0.3125
+  RAPT_COMBO vs Full Retraining: delta=-0.0242, CI=[-0.0271,-0.0212], d=-10.32, p=0.0625
+  RAPT_FLOOR vs Full Retraining: delta=-0.0032, CI=[-0.0108,+0.0043], d=-0.53, p=0.3750
+  RAPT_INCR vs Full Retraining: delta=-0.0279, CI=[-0.0305,-0.0254], d=-13.51, p=0.0625
 
 ## Cross-stream controls (from Independent Re-validation)
 

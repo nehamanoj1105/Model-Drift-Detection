@@ -160,6 +160,15 @@ if os.path.exists(abl_path):
             w(f"- {lab}: F1={f1}, adapt={cpu}s")
     w("- Source: Final_Experiments/results/tables/table_final_main.csv "
       "(five-seed legacy 5G-Campus harness, not results/final).")
+    stats_path = os.path.join(ROOT, "Final_Experiments", "results", "tables",
+                              "table_final_stats.csv")
+    if os.path.exists(stats_path):
+        fs = pd.read_csv(stats_path)
+        fs = fs[fs["Comparison"].str.contains("vs Full Retraining")]
+        for _, r in fs.iterrows():
+            w(f"  {r['Model']} vs Full Retraining: delta={r['mean_delta']:+.4f}, "
+              f"CI=[{r['ci95_low']:+.4f},{r['ci95_high']:+.4f}], "
+              f"d={r['cohens_d']:+.2f}, p={r['wilcoxon_p']:.4f}")
 else:
     w("- MISSING: table_final_main.csv")
 w()
