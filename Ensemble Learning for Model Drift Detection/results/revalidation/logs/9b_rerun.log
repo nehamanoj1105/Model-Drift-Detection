@@ -1,0 +1,292 @@
+nohup: ignoring input
+EXPERIMENT 9B — DRIFT SEVERITY & CONCEPT-DRIFT EVALUATION
+seeds=[42, 43, 44, 45, 46]  levels=[0.1, 0.2, 0.3, 0.5, 1.0]  window_size=500
+==============================================================================
+9B-A  NATURAL RECURRING DRIFT (existing experiment, same protocol)
+==============================================================================
+    seed 42 ...
+    seed 43 ...
+    seed 44 ...
+    seed 45 ...
+    seed 46 ...
+  stream: 499 windows, initial_train=99, regime sequence=ABCDACBDAB
+  regime recurrences: {'regime_A': 3, 'regime_B': 3, 'regime_C': 2, 'regime_D': 2}
+         method  macro_f1_mean  accuracy_mean  adaptation_cpu_sec_mean  retrain_events_mean  reused_checkpoints_mean
+         Frozen       0.896124         0.9075                 0.000000                  0.0                      0.0
+   Event-Driven       0.890328         0.9055                 1.110726                 11.0                      0.0
+Full Retraining       0.902676         0.9145                 0.798636                  9.0                      0.0
+           RAPT       0.889447         0.9025                 0.405345                  3.0                      6.0
+  RAPT-Enhanced       0.891466         0.9055                 0.892821                  3.0                      6.0
+==============================================================================
+9B-B  CONTROLLED COVARIATE DRIFT SEVERITY
+==============================================================================
+  [level 10%] stream=299 windows, drift_points=[129, 279], 
+    seed 42 ...
+    seed 43 ...
+    seed 44 ...
+    seed 45 ...
+    seed 46 ...
+  [level 20%] stream=299 windows, drift_points=[129, 279], 
+    seed 42 ...
+    seed 43 ...
+    seed 44 ...
+    seed 45 ...
+    seed 46 ...
+  [level 30%] stream=299 windows, drift_points=[129, 279], 
+    seed 42 ...
+    seed 43 ...
+    seed 44 ...
+    seed 45 ...
+    seed 46 ...
+  [level 50%] stream=299 windows, drift_points=[129, 279], 
+    seed 42 ...
+    seed 43 ...
+    seed 44 ...
+    seed 45 ...
+    seed 46 ...
+  [level 100%] stream=299 windows, drift_points=[129, 279], 
+    seed 42 ...
+    seed 43 ...
+    seed 44 ...
+    seed 45 ...
+    seed 46 ...
+ drift_level          method  macro_f1_mean  macro_f1_std  adaptation_cpu_sec_mean  retrain_events_mean
+         0.1    Event-Driven       0.681855      0.010614                 0.239607                  2.0
+         0.1          Frozen       0.526525      0.000000                 0.000000                  0.0
+         0.1 Full Retraining       0.684971      0.017073                 0.251245                  3.0
+         0.1            RAPT       0.685388      0.030938                 0.338827                  3.0
+         0.1   RAPT-Enhanced       0.685388      0.030938                 0.349644                  3.0
+         0.2    Event-Driven       0.648928      0.017409                 0.158912                  1.0
+         0.2          Frozen       0.520059      0.000000                 0.000000                  0.0
+         0.2 Full Retraining       0.789397      0.006785                 0.250358                  3.0
+         0.2            RAPT       0.794373      0.011371                 0.343226                  3.0
+         0.2   RAPT-Enhanced       0.794373      0.011371                 0.347078                  3.0
+         0.3    Event-Driven       0.643821      0.007446                 0.168436                  1.0
+         0.3          Frozen       0.519216      0.000000                 0.000000                  0.0
+         0.3 Full Retraining       0.718886      0.010603                 0.256177                  3.0
+         0.3            RAPT       0.728535      0.017012                 0.343820                  3.0
+         0.3   RAPT-Enhanced       0.728535      0.017012                 0.352729                  3.0
+         0.5    Event-Driven       0.648906      0.017763                 0.159960                  1.0
+         0.5          Frozen       0.510196      0.000000                 0.000000                  0.0
+         0.5 Full Retraining       0.767086      0.017737                 0.261821                  3.0
+         0.5            RAPT       0.776663      0.015914                 0.352186                  3.0
+         0.5   RAPT-Enhanced       0.776663      0.015914                 0.348531                  3.0
+         1.0    Event-Driven       0.667161      0.008190                 0.161303                  1.0
+         1.0          Frozen       0.489266      0.000000                 0.000000                  0.0
+         1.0 Full Retraining       0.808008      0.001652                 0.254674                  3.0
+         1.0            RAPT       0.812157      0.003789                 0.358425                  3.0
+         1.0   RAPT-Enhanced       0.812157      0.003789                 0.341853                  3.0
+==============================================================================
+9B-C  CONTROLLED CONCEPT DRIFT SEVERITY
+==============================================================================
+  [level 10%] stream=150 windows, drift_points=[129], affected=['median_latency']
+    seed 42 ...
+    seed 43 ...
+    seed 44 ...
+    seed 45 ...
+    seed 46 ...
+  [level 20%] stream=150 windows, drift_points=[129], affected=['median_latency', 'p90_latency']
+    seed 42 ...
+    seed 43 ...
+    seed 44 ...
+    seed 45 ...
+    seed 46 ...
+  [level 30%] stream=150 windows, drift_points=[129], affected=['median_latency', 'p90_latency']
+    seed 42 ...
+    seed 43 ...
+    seed 44 ...
+    seed 45 ...
+    seed 46 ...
+  [level 50%] stream=150 windows, drift_points=[129], affected=['median_latency', 'p90_latency', 'p95_latency']
+    seed 42 ...
+    seed 43 ...
+    seed 44 ...
+    seed 45 ...
+    seed 46 ...
+  [level 100%] stream=150 windows, drift_points=[129], affected=['median_latency', 'p90_latency', 'p95_latency', 'mean_latency', 'std_latency']
+    seed 42 ...
+    seed 43 ...
+    seed 44 ...
+    seed 45 ...
+    seed 46 ...
+ drift_level          method  macro_f1_mean  macro_f1_std  accuracy_mean  retrain_events_mean
+         0.1    Event-Driven       0.924057      0.054969       0.980392                  1.0
+         0.1          Frozen       0.877681      0.008534       0.972549                  0.0
+         0.1 Full Retraining       0.877681      0.008534       0.972549                  0.0
+         0.1            RAPT       0.877681      0.008534       0.972549                  0.0
+         0.1   RAPT-Enhanced       0.877681      0.008534       0.972549                  0.0
+         0.2    Event-Driven       0.937896      0.063503       0.972549                  1.0
+         0.2          Frozen       0.868332      0.000000       0.960784                  0.0
+         0.2 Full Retraining       0.868332      0.000000       0.960784                  0.0
+         0.2            RAPT       0.868332      0.000000       0.960784                  0.0
+         0.2   RAPT-Enhanced       0.868332      0.000000       0.960784                  0.0
+         0.3    Event-Driven       0.937896      0.063503       0.972549                  1.0
+         0.3          Frozen       0.868332      0.000000       0.960784                  0.0
+         0.3 Full Retraining       0.868332      0.000000       0.960784                  0.0
+         0.3            RAPT       0.868332      0.000000       0.960784                  0.0
+         0.3   RAPT-Enhanced       0.868332      0.000000       0.960784                  0.0
+         0.5    Event-Driven       0.827447      0.024730       0.909804                  1.8
+         0.5          Frozen       0.811701      0.018709       0.890196                  0.0
+         0.5 Full Retraining       0.811701      0.018709       0.890196                  0.0
+         0.5            RAPT       0.811701      0.018709       0.890196                  0.0
+         0.5   RAPT-Enhanced       0.811701      0.018709       0.890196                  0.0
+         1.0    Event-Driven       0.791563      0.000000       0.862745                  2.0
+         1.0          Frozen       0.791563      0.000000       0.862745                  0.0
+         1.0 Full Retraining       0.791563      0.000000       0.862745                  0.0
+         1.0            RAPT       0.791563      0.000000       0.862745                  0.0
+         1.0   RAPT-Enhanced       0.791563      0.000000       0.862745                  0.0
+==============================================================================
+9B-D  RECURRING CONCEPT DRIFT (A -> B -> A')
+==============================================================================
+  [level 10%] stream=179 windows, drift_points=[159], affected=['median_latency']
+    seed 42 ...
+    seed 43 ...
+    seed 44 ...
+    seed 45 ...
+    seed 46 ...
+  [level 20%] stream=179 windows, drift_points=[159], affected=['median_latency', 'p90_latency']
+    seed 42 ...
+    seed 43 ...
+    seed 44 ...
+    seed 45 ...
+    seed 46 ...
+  [level 30%] stream=179 windows, drift_points=[159], affected=['median_latency', 'p90_latency']
+    seed 42 ...
+    seed 43 ...
+    seed 44 ...
+    seed 45 ...
+    seed 46 ...
+  [level 50%] stream=179 windows, drift_points=[159], affected=['median_latency', 'p90_latency', 'p95_latency']
+    seed 42 ...
+    seed 43 ...
+    seed 44 ...
+    seed 45 ...
+    seed 46 ...
+  [level 100%] stream=179 windows, drift_points=[159], affected=['median_latency', 'p90_latency', 'p95_latency', 'mean_latency', 'std_latency']
+    seed 42 ...
+    seed 43 ...
+    seed 44 ...
+    seed 45 ...
+    seed 46 ...
+ drift_level          method  macro_f1_mean  accuracy_mean  retrain_events_mean  reused_checkpoints_mean  trees_trained_mean  trees_reused_mean
+         0.1    Event-Driven       0.667428         0.6900                  1.0                      0.0               200.0                0.0
+         0.1          Frozen       0.563184         0.6525                  0.0                      0.0               100.0                0.0
+         0.1 Full Retraining       0.558414         0.6475                  2.0                      0.0               300.0                0.0
+         0.1            RAPT       0.563184         0.6525                  1.0                      1.0               200.0              100.0
+         0.1   RAPT-Enhanced       0.563184         0.6525                  1.0                      1.0               200.0              100.0
+         0.2    Event-Driven       0.651616         0.6750                  1.0                      0.0               200.0                0.0
+         0.2          Frozen       0.548870         0.6375                  0.0                      0.0               100.0                0.0
+         0.2 Full Retraining       0.541730         0.6300                  2.0                      0.0               300.0                0.0
+         0.2            RAPT       0.548870         0.6375                  1.0                      1.0               200.0              100.0
+         0.2   RAPT-Enhanced       0.548870         0.6375                  1.0                      1.0               200.0              100.0
+         0.3    Event-Driven       0.651616         0.6750                  1.0                      0.0               200.0                0.0
+         0.3          Frozen       0.548870         0.6375                  0.0                      0.0               100.0                0.0
+         0.3 Full Retraining       0.541730         0.6300                  2.0                      0.0               300.0                0.0
+         0.3            RAPT       0.548870         0.6375                  1.0                      1.0               200.0              100.0
+         0.3   RAPT-Enhanced       0.548870         0.6375                  1.0                      1.0               200.0              100.0
+         0.5    Event-Driven       0.632170         0.6550                  1.0                      0.0               200.0                0.0
+         0.5          Frozen       0.525114         0.6125                  0.0                      0.0               100.0                0.0
+         0.5 Full Retraining       0.525718         0.6125                  2.0                      0.0               300.0                0.0
+         0.5            RAPT       0.525114         0.6125                  1.0                      1.0               200.0              100.0
+         0.5   RAPT-Enhanced       0.527487         0.6150                  1.0                      1.0               300.0              100.0
+         1.0    Event-Driven       0.591907         0.6100                  1.0                      0.0               200.0                0.0
+         1.0          Frozen       0.489034         0.5675                  0.0                      0.0               100.0                0.0
+         1.0 Full Retraining       0.496794         0.5775                  2.0                      0.0               300.0                0.0
+         1.0            RAPT       0.489034         0.5675                  1.0                      1.0               200.0              100.0
+         1.0   RAPT-Enhanced       0.490868         0.5700                  1.0                      1.0               480.0              100.0
+Running scientific-integrity checks ...
+Experiment 9B — Scientific Integrity Checks
+initial_train_windows = 99
+
+[PASS] Same seeds across experiments — [42, 43, 44, 45, 46]
+[PASS] Same window size (500 packets) — 500
+[PASS] Same drift levels — [0.1, 0.2, 0.3, 0.5, 1.0]
+[PASS] covariate: chronological window ids
+[PASS] concept: chronological window ids
+[PASS] recurring: chronological window ids
+[PASS] Concept: initial training prefix untouched
+[PASS] Concept: pre-drift block unchanged
+[PASS] Concept: post-drift is a permutation of P(X) (marginals preserved) — affected=['median_latency', 'p90_latency', 'p95_latency', 'mean_latency', 'std_latency']
+[PASS] Covariate: labels unchanged from source regimes — match_rate=1.0000
+[PASS] Covariate uses mixed-provenance post block, concept uses permutation
+[PASS] Covariate: 2 drift points (2 transitions) — [129, 279]
+[PASS] Concept: 1 drift point — [129]
+[PASS] Raw covariate per-window saved for all seeds
+[PASS] Raw covariate per-window saved for all levels
+[PASS] RAPT algorithm unmodified (no variant symbols)
+
+Saved to results/experiment_9b/raw/scientific_checks.txt
+==============================================================================
+Generating figures and tables ...
+Generating Experiment 9B drift figures ...
+  saved results/experiment_9b/figures/fig9b_natural_drift_f1.png
+  saved results/experiment_9b/figures/fig9b_covariate_severity_f1.png
+  saved results/experiment_9b/figures/fig9b_covariate_severity_cpu.png
+  saved results/experiment_9b/figures/fig9b_covariate_severity_recovery.png
+  saved results/experiment_9b/figures/fig9b_concept_severity_f1.png
+  saved results/experiment_9b/figures/fig9b_concept_severity_accuracy.png
+  saved results/experiment_9b/figures/fig9b_concept_severity_recovery.png
+  saved results/experiment_9b/figures/fig9b_drift_type_comparison.png
+  saved results/experiment_9b/figures/fig9b_rapt_adaptation_timeline.png
+  saved results/experiment_9b/figures/fig9b_reuse_vs_retraining.png
+  saved results/experiment_9b/figures/fig9b_accuracy_cost_tradeoff.png
+  saved results/experiment_9b/figures/fig9b_covariate_f1_heatmap.png
+  saved results/experiment_9b/figures/fig9b_concept_f1_heatmap.png
+  saved results/experiment_9b/figures/fig9b_concept_cm_10.png
+  saved results/experiment_9b/figures/fig9b_concept_cm_20.png
+  saved results/experiment_9b/figures/fig9b_concept_cm_30.png
+  saved results/experiment_9b/figures/fig9b_concept_cm_50.png
+  saved results/experiment_9b/figures/fig9b_concept_cm_100.png
+  saved results/experiment_9b/figures/fig9b_regime_f1.png
+All figures generated.
+Generating Experiment 9B drift tables ...
+Traceback (most recent call last):
+  File "/home/openhands/.local/lib/python3.13/site-packages/pandas/compat/_optional.py", line 158, in import_optional_dependency
+    module = importlib.import_module(name)
+  File "/usr/local/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1395, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'jinja2'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9b/run_exp9b_drift.py", line 365, in <module>
+    main()
+    ~~~~^^
+  File "/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9b/run_exp9b_drift.py", line 353, in main
+    generate_tables(natural, cov_agg, con_agg, rec_agg, cov_rec, con_rec, rec_rec)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9b/exp9b_drift_tables.py", line 147, in generate_all
+    table_1_natural(natural)
+    ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9b/exp9b_drift_tables.py", line 51, in table_1_natural
+    _write(pd.DataFrame(rows), "table_9b1_natural_drift")
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/project/Model-Drift-Detection/Ensemble Learning for Model Drift Detection/experiments/exp9b/exp9b_drift_tables.py", line 23, in _write
+    f.write(df.to_latex(index=False, float_format="%.4f",
+            ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        caption=name.replace("_", " "),
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        label=f"tab:{name}"))
+                        ^^^^^^^^^^^^^^^^^^^^
+  File "/home/openhands/.local/lib/python3.13/site-packages/pandas/core/generic.py", line 3644, in to_latex
+    return self._to_latex_via_styler(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        buf,
+        ^^^^
+    ...<5 lines>...
+        render_kwargs=render_kwargs_,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/openhands/.local/lib/python3.13/site-packages/pandas/core/generic.py", line 3703, in _to_latex_via_styler
+    from pandas.io.formats.style import Styler
+  File "/home/openhands/.local/lib/python3.13/site-packages/pandas/io/formats/style.py", line 36, in <module>
+    jinja2 = import_optional_dependency("jinja2", extra="DataFrame.style requires jinja2.")
+  File "/home/openhands/.local/lib/python3.13/site-packages/pandas/compat/_optional.py", line 161, in import_optional_dependency
+    raise ImportError(msg) from err
+ImportError: `Import Jinja2` failed. DataFrame.style requires jinja2. Use pip or conda to install the Jinja2 package.

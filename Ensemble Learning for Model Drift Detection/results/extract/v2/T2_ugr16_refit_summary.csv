@@ -1,0 +1,3 @@
+method,refit_n,n_novelty_refits,buffer_rows_min,buffer_rows_max,recent_after_cap_min,recent_after_cap_max,anchor_rows,train_rows_min,train_rows_max,source_file
+RAPT,500,55,500,500,500,500,30,530,530,results/extract/v2/ugr16_refit_log.py (replicates experiments/exp9a/three_dataset_run.py:197-233)
+RAPT-Enhanced,1500,55,1000,1500,1000,1000,30,1030,1030,results/extract/v2/ugr16_refit_log.py (replicates experiments/exp9a/three_dataset_run.py:197-233)

@@ -1,0 +1,2 @@
+campus_ladder_configurations,definition,source_file,cross_check
+14,Table III rungs plus the Full Retraining reference counted in Final_Experiments/results/raw/summary_full.csv,Ensemble Learning for Model Drift Detection/Final_Experiments/results/raw/summary_full.csv [method column (14 distinct)],A5_component_matrix.csv lists 12 ladder variants + 2 Table II rows = 14

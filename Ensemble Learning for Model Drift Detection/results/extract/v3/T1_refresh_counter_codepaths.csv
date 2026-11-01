@@ -1,0 +1,8 @@
+item,value,code_path
+RAPT-Cheap counter variable,_windows_since_refresh (RAPTV2),results/revalidation/run_stream_v2.py:93 init 0; :301 +=1; :314 compare >= refresh_every; :326 reset 0
+RAPT-Cheap reset at regime transition,YES,results/revalidation/run_stream_v2.py:249 on_transition sets self._windows_since_refresh = 0
+Periodic-Cheap counter variable,_since (FRDriver),results/revalidation/run_stream_v2.py:357 init 0; :371 +=1; :372 compare >= every; :386 reset 0
+Periodic-Cheap reset at regime transition,NO explicit reset,results/revalidation/run_stream_v2.py:340-388 FRDriver.maybe_adapt has no transition reset; _since counts every window (:371-372) and only resets after a refresh (:386)
+UGR16 regime runs,all single-window,results/revalidation/raw/A1_per_window_all_streams.csv (every regime_id run length = 1)
+consequence for RAPT-Cheap on UGR16,"counter is reset to 0 every window, so refresh_every=5 is never reached; refresh_events=0","results/revalidation/A3_summary.csv [refresh_events=0 for ugr16 RAPT-Cheap, seeds 42-46]"
+consequence for Periodic-Cheap on UGR16,"FRDriver already does not reset on transition, so its periodic cadence is unaffected by single-window regimes","results/revalidation/A3_summary.csv [Periodic-Cheap-5 retrain_events=28, Periodic-Cheap-10 retrain_events=14]"

@@ -1,0 +1,6 @@
+item,value,detail
+script status,NEW (written for this extraction task),results/extract/v2/detector_sanity.py
+stream,"n=300, 0.05 for i<200 then 0.40, 20 Bernoulli repeats",synthetic_error() seeds 1000..1019
+wiring A (paper/Table II),experiments/exp9a/drift_detectors_9a.py:98-107 make_detector,"ADWIN(delta=0.002); PageHinkley(min_instances=30,delta=0.005,threshold=50,alpha=0.9999); _CustomEDD(); _CustomEDMA(); one update per window"
+wiring B (revalidation),results/revalidation/a6_detectors.py:29-43 make_det (default settings),identical classes/params at the default setting; A6 additionally sweeps params and a per-sample signal
+structural difference,none for default settings,both consume the boolean update() return; the river 'drift_detected attribute' pitfall is not present

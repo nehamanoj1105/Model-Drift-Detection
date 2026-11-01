@@ -1,0 +1,49 @@
+dataset,field,value
+5G Campus QoS,window_size,10.0
+5G Campus QoS,n_raw_samples,1799.0
+5G Campus QoS,n_usable_samples,1790.0
+5G Campus QoS,total_windows,179.0
+5G Campus QoS,initial_train_windows,36.0
+5G Campus QoS,eval_windows,143.0
+5G Campus QoS,n_classes,3.0
+5G Campus QoS,n_distinct_regimes,3.0
+5G Campus QoS,n_recurring_regime_ids,3.0
+5G Campus QoS,n_recurrence_events,14.0
+5G Campus QoS,n_windows_with_duplicate_rows,
+,attack_minutes_total,1364.0
+,attack_minutes_prefix,696.0
+,attack_minutes_eval,668.0
+UGR'16,window_size,240.0
+UGR'16,n_raw_samples,43200.0
+UGR'16,n_usable_samples,43200.0
+UGR'16,total_windows,180.0
+UGR'16,initial_train_windows,36.0
+UGR'16,eval_windows,144.0
+UGR'16,n_classes,2.0
+UGR'16,n_distinct_regimes,12.0
+UGR'16,n_recurring_regime_ids,12.0
+UGR'16,n_recurrence_events,168.0
+UGR'16,n_windows_with_duplicate_rows,
+NordicDat,window_size,500.0
+NordicDat,n_raw_samples,91455.0
+NordicDat,n_usable_samples,91000.0
+NordicDat,total_windows,182.0
+NordicDat,initial_train_windows,36.0
+NordicDat,eval_windows,146.0
+NordicDat,n_classes,3.0
+NordicDat,n_distinct_regimes,3.0
+NordicDat,n_recurring_regime_ids,3.0
+NordicDat,n_recurrence_events,17.0
+NordicDat,n_windows_with_duplicate_rows,
+5G NR,window_size,1.0
+5G NR,n_raw_samples,499.0
+5G NR,n_usable_samples,499.0
+5G NR,total_windows,499.0
+5G NR,initial_train_windows,99.0
+5G NR,eval_windows,400.0
+5G NR,n_classes,3.0
+5G NR,n_distinct_regimes,4.0
+5G NR,n_recurring_regime_ids,4.0
+5G NR,n_recurrence_events,6.0
+5G NR,n_windows_with_duplicate_rows,
+5G NR,prefix_round_499x0.2,100.0

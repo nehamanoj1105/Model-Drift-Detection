@@ -1,0 +1,4 @@
+dataset,method_1,method_2,metric,mean_diff,ci95_low,ci95_high,n_blocks_mean,bootstrap_type
+ugr16,RAPT-Enhanced,Frozen,macro_f1,-0.0413479067912171,-0.0661419348686684,-0.0191469363997525,144.0,regime-run (contiguous regime visits) [existing A7]
+ugr16,RAPT-Enhanced,Full Retraining,macro_f1,-0.0318768300280937,-0.057098322315535,-0.0082330236175959,144.0,regime-run (contiguous regime visits) [existing A7]
+ugr16,RAPT,Frozen,macro_f1,-0.1330259172848157,-0.1710697360353432,-0.0975022872240461,144.0,regime-run (contiguous regime visits) [existing A7]

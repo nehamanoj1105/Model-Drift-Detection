@@ -1,0 +1,5 @@
+harness,refit_slice,buffer_cap,rows_after_cap,anchor,train_rows,source
+Final_Experiments RAPT_CHEAP,X_buffer[-1500:],1000 (buffer_capacity),1000,30,1030,rapt_ladder.py:121-124
+run_stream_v2 RAPT-Cheap,X_buffer[-refit_n:] = X_buffer[-1000:],1000 (self.buffer),1000,30,1030,run_stream_v2.py:114-118
+run_stream_v2 RAPT (reference),X_buffer[-1000:],1000,1000,30,1030,run_stream_v2.py:114-118
+9A/9B RAPT (reference),X_buffer[-500:],1000,500,30,530,rapt_9a.py:138-145

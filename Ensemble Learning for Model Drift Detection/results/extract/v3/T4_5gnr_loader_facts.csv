@@ -1,0 +1,10 @@
+item,value,source
+one row of the 5G NR stream,one 500-packet telemetry window (12 QoS features); the window is the streaming step,Ensemble Learning for Model Drift Detection/experiments/exp9b/load_and_prepare_stream_9b.py:34-62 (WINDOW_SIZE=500)
+rows / windows,499,Ensemble Learning for Model Drift Detection/experiments/exp9b/results/stream_definition.json [total_windows]
+initial train prefix (windows),99,Ensemble Learning for Model Drift Detection/experiments/exp9b/results/stream_definition.json [initial_train_windows]
+prefix fraction,99 / 499 = 0.1984 (~20%),floor(499*0.2)=99; A10 reports round(499*0.2)=100
+label granularity,3-class QoS class (GOOD/DEGRADED/BAD) of the window's own p90 latency; thresholds frozen on the prefix,Ensemble Learning for Model Drift Detection/experiments/exp9b/load_and_prepare_stream_9b.py:189-197
+Table I 5G NR 'Samples' value,"249,500",Ensemble Learning for Model Drift Detection/paper/main.tex:333 (Table I row 'Samples')
+Table I 5G NR 'Windows' / 'Window size',499 / 500,Ensemble Learning for Model Drift Detection/paper/main.tex:336-337
+"does 249,500 count packets?",YES,"499 windows x 500 packets = 249,500; Table I defines the column as 'Samples' where one sample = one packet"
+raw packet count from the loader,MISSING (not persisted; only window-level aggregates are written),experiments/exp9b/load_and_prepare_stream_9b.py

@@ -1,0 +1,2 @@
+note,frozen_note,source_file
+"Repeated timing runs exist only for experiment5 stage3 (run1/run2). The RAPT 9A/9B/revalidation harnesses store a single run; their 'range' is the spread across SEEDS, not repeats.","Frozen's adaptation_cpu includes its initial fit in A1_summary (adaptation_cpu_sec == init_cpu_sec for Frozen, e.g. 0.0863 in A1_summary), whereas other models separate init_cpu_sec from adaptation_cpu_sec.",Ensemble Learning for Model Drift Detection/results/revalidation/A1_summary_all_streams.csv [init_cpu_sec;adaptation_cpu_sec]

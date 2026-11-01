@@ -1,0 +1,4 @@
+method_1,method_2,n_seeds,n_blocks_mean,obs_diff_mean,ci_low_mean,ci_high_mean,m1_ci_low_mean,m1_ci_high_mean,bootstrap_type,metric
+RAPT,Frozen,5,24.0,-0.15877192984647037,-0.24522825660079545,-0.10579814129221672,0.5891797908444054,0.7120186648946243,day-block (24 calendar days),pooled_macro_f1
+RAPT-Enhanced,Frozen,5,24.0,-0.020843853020845727,-0.07837664861786674,0.016793987412101297,0.7444506955763268,0.8411909844250955,day-block (24 calendar days),pooled_macro_f1
+RAPT-Enhanced,Full Retraining,5,24.0,0.04046714840567731,-0.04002459702183101,0.10129424694125513,0.7444506955763268,0.8411909844250955,day-block (24 calendar days),pooled_macro_f1

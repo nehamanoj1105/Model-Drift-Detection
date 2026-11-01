@@ -44,6 +44,15 @@ but is **not referenced** by `main.tex`. Left in place; noted for the author.
 
 `Paper_Final/make_ugr_rolling_figure.py` is the generator for
 `ugr_rolling_accuracy.png` (Fig. 2). Its vertical ticks come from
-`novelty_refit_windows()` — novelty refits, not parity refits. The caption says
-"parity refits"; see `PHASE2_FINDINGS.md` (a wording issue outside this audit's
-scope).
+`novelty_refit_windows()` — novelty refits, not parity refits. The caption in
+`paper/main.tex` was corrected to say "novelty refits: the first window of each
+new regime, where RAPT trains a fresh policy", which is what the ticks mark.
+
+## Figures dropped in the audit pass
+
+`primary_performance.png` and `cost_tradeoff.png` are still generated and still have the
+provenance recorded above, but they are no longer included in `paper/main.tex`.
+`primary_performance` duplicated the macro-F1 column of Table II and `cost_tradeoff`
+duplicated the ablation ladder, so removing them kept the technical content within the
+six-page limit without dropping any number. Re-add either figure only by re-checking the
+page budget.

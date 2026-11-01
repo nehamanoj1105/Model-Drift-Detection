@@ -1,0 +1,13 @@
+dataset,method_1,method_2,margin,mean_diff,tost_p,equivalent_0.05,source_file
+5g_campus,RAPT-Cheap,Full Retraining,0.005,-0.0007007504059675,0.0001812820498467,True,Ensemble Learning for Model Drift Detection/results/revalidation/A7_tost.csv [margin;tost_p;equivalent_0.05]
+5g_campus,RAPT-Cheap,Full Retraining,0.01,-0.0007007504059675,8.629179563568457e-06,True,Ensemble Learning for Model Drift Detection/results/revalidation/A7_tost.csv [margin;tost_p;equivalent_0.05]
+5g_campus,RAPT-Cheap,Full Retraining,0.02,-0.0007007504059675,4.692194309763309e-07,True,Ensemble Learning for Model Drift Detection/results/revalidation/A7_tost.csv [margin;tost_p;equivalent_0.05]
+ugr16,RAPT-Cheap,Full Retraining,0.005,0.0404671484056773,0.9503059696188134,False,Ensemble Learning for Model Drift Detection/results/revalidation/A7_tost.csv [margin;tost_p;equivalent_0.05]
+ugr16,RAPT-Cheap,Full Retraining,0.01,0.0404671484056773,0.9298761075724604,False,Ensemble Learning for Model Drift Detection/results/revalidation/A7_tost.csv [margin;tost_p;equivalent_0.05]
+ugr16,RAPT-Cheap,Full Retraining,0.02,0.0404671484056773,0.8575220972291,False,Ensemble Learning for Model Drift Detection/results/revalidation/A7_tost.csv [margin;tost_p;equivalent_0.05]
+nordicdat,RAPT-Cheap,Full Retraining,0.005,-0.0522953641511072,0.996462330288468,False,Ensemble Learning for Model Drift Detection/results/revalidation/A7_tost.csv [margin;tost_p;equivalent_0.05]
+nordicdat,RAPT-Cheap,Full Retraining,0.01,-0.0522953641511072,0.994767085724812,False,Ensemble Learning for Model Drift Detection/results/revalidation/A7_tost.csv [margin;tost_p;equivalent_0.05]
+nordicdat,RAPT-Cheap,Full Retraining,0.02,-0.0522953641511072,0.987203442534011,False,Ensemble Learning for Model Drift Detection/results/revalidation/A7_tost.csv [margin;tost_p;equivalent_0.05]
+5g_nr,RAPT-Cheap,Full Retraining,0.005,-0.0403186276312461,0.9952283987152404,False,Ensemble Learning for Model Drift Detection/results/revalidation/A7_tost.csv [margin;tost_p;equivalent_0.05]
+5g_nr,RAPT-Cheap,Full Retraining,0.01,-0.0403186276312461,0.99197420660381,False,Ensemble Learning for Model Drift Detection/results/revalidation/A7_tost.csv [margin;tost_p;equivalent_0.05]
+5g_nr,RAPT-Cheap,Full Retraining,0.02,-0.0403186276312461,0.9725176933902162,False,Ensemble Learning for Model Drift Detection/results/revalidation/A7_tost.csv [margin;tost_p;equivalent_0.05]

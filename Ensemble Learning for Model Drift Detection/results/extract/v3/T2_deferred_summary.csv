@@ -1,0 +1,7 @@
+metric,value,source
+total differing eval windows (5 seeds),0,T2_deferred_vs_rapt_windows.csv
+total eval windows (5 seeds),715,T2_deferred_vs_rapt_windows.csv
+reuse events (5 seeds),60,T2_campus_provenance.csv [event=reuse]
+distinct deferred-created checkpoints reused (per seed),2,T2_campus_provenance.csv [created_window>0 among reuse rows]
+deferred-created windows reused,36;44,T2_deferred_checkpoint_reuse.csv
+deferred checkpoint reused at all?,YES,T2_campus_provenance.csv [created_window>0]
