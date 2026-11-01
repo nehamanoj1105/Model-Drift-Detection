@@ -1,0 +1,2 @@
+mean_error_first20_windows,mean_accuracy_first20_windows,signal_passed_to_detector
+0.0,1.0,1 - window accuracy (error)

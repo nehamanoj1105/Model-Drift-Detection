@@ -1,0 +1,2 @@
+stream,window_size_reading,Full_Retraining_cpu,RAPT_Cheap_cpu,cpu_change_pct_vs_FR,RAPT_Cheap_refresh_events,RAPT_Cheap_trees_trained,Full_Retraining_trees_trained,RAPT_refresh_events,confirmed
+5G NR,1 aggregate window per step (499 steps),0.7205172466,3.2563832115999984,-351.9507655044101,79.0,3560.0,900.0,0.0,"CONFIRMED: refresh every 5 windows at window_size=1 fires 79 times (every 5 samples), training 3560 trees vs 900 for Full Retraining"

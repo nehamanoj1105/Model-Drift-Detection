@@ -1,0 +1,76 @@
+scenario,method,drift_level,recovered_rate,recovery_windows_mean,n
+covariate,Event-Driven,0.1,0.2,36.0,10
+covariate,Event-Driven,0.2,0.4,29.2,10
+covariate,Event-Driven,0.3,0.5,25.0,10
+covariate,Event-Driven,0.5,0.5,22.8,10
+covariate,Event-Driven,1.0,0.5,20.5,10
+covariate,Frozen,0.1,0.5,29.5,10
+covariate,Frozen,0.2,0.5,27.5,10
+covariate,Frozen,0.3,0.0,40.0,10
+covariate,Frozen,0.5,0.0,40.0,10
+covariate,Frozen,1.0,0.0,40.0,10
+covariate,Full Retraining,0.1,0.5,20.5,10
+covariate,Full Retraining,0.2,0.5,20.5,10
+covariate,Full Retraining,0.3,0.5,20.5,10
+covariate,Full Retraining,0.5,0.5,20.5,10
+covariate,Full Retraining,1.0,1.0,13.5,10
+covariate,RAPT,0.1,0.5,20.5,10
+covariate,RAPT,0.2,0.5,20.5,10
+covariate,RAPT,0.3,0.5,20.5,10
+covariate,RAPT,0.5,0.5,20.5,10
+covariate,RAPT,1.0,1.0,13.5,10
+covariate,RAPT-Enhanced,0.1,0.5,20.5,10
+covariate,RAPT-Enhanced,0.2,0.5,20.5,10
+covariate,RAPT-Enhanced,0.3,0.5,20.5,10
+covariate,RAPT-Enhanced,0.5,0.5,20.5,10
+covariate,RAPT-Enhanced,1.0,1.0,13.5,10
+concept,Event-Driven,0.1,0.0,40.0,5
+concept,Event-Driven,0.2,0.0,40.0,5
+concept,Event-Driven,0.3,0.0,40.0,5
+concept,Event-Driven,0.5,0.0,40.0,5
+concept,Event-Driven,1.0,0.0,40.0,5
+concept,Frozen,0.1,0.0,40.0,5
+concept,Frozen,0.2,0.0,40.0,5
+concept,Frozen,0.3,0.0,40.0,5
+concept,Frozen,0.5,0.0,40.0,5
+concept,Frozen,1.0,0.0,40.0,5
+concept,Full Retraining,0.1,0.0,40.0,5
+concept,Full Retraining,0.2,0.0,40.0,5
+concept,Full Retraining,0.3,0.0,40.0,5
+concept,Full Retraining,0.5,0.0,40.0,5
+concept,Full Retraining,1.0,0.0,40.0,5
+concept,RAPT,0.1,0.0,40.0,5
+concept,RAPT,0.2,0.0,40.0,5
+concept,RAPT,0.3,0.0,40.0,5
+concept,RAPT,0.5,0.0,40.0,5
+concept,RAPT,1.0,0.0,40.0,5
+concept,RAPT-Enhanced,0.1,0.0,40.0,5
+concept,RAPT-Enhanced,0.2,0.0,40.0,5
+concept,RAPT-Enhanced,0.3,0.0,40.0,5
+concept,RAPT-Enhanced,0.5,0.0,40.0,5
+concept,RAPT-Enhanced,1.0,0.0,40.0,5
+recurring,Event-Driven,0.1,1.0,10.6,5
+recurring,Event-Driven,0.2,1.0,13.8,5
+recurring,Event-Driven,0.3,1.0,13.8,5
+recurring,Event-Driven,0.5,0.6,27.4,5
+recurring,Event-Driven,1.0,0.0,40.0,5
+recurring,Frozen,0.1,1.0,10.6,5
+recurring,Frozen,0.2,1.0,14.6,5
+recurring,Frozen,0.3,1.0,14.6,5
+recurring,Frozen,0.5,0.8,23.2,5
+recurring,Frozen,1.0,0.0,40.0,5
+recurring,Full Retraining,0.1,1.0,10.6,5
+recurring,Full Retraining,0.2,1.0,17.0,5
+recurring,Full Retraining,0.3,1.0,17.0,5
+recurring,Full Retraining,0.5,0.8,23.2,5
+recurring,Full Retraining,1.0,0.0,40.0,5
+recurring,RAPT,0.1,1.0,10.6,5
+recurring,RAPT,0.2,1.0,14.6,5
+recurring,RAPT,0.3,1.0,14.6,5
+recurring,RAPT,0.5,0.8,23.2,5
+recurring,RAPT,1.0,0.0,40.0,5
+recurring,RAPT-Enhanced,0.1,1.0,10.6,5
+recurring,RAPT-Enhanced,0.2,1.0,14.6,5
+recurring,RAPT-Enhanced,0.3,1.0,14.6,5
+recurring,RAPT-Enhanced,0.5,1.0,19.0,5
+recurring,RAPT-Enhanced,1.0,0.0,40.0,5

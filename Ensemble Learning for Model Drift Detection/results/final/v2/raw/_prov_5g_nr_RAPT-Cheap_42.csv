@@ -1,0 +1,9 @@
+regime_key,created_window,train_window_ids,train_regimes,train_regime_matches_key,n_train_rows,reused_at_window,age_windows,event
+regime_C,100,99,regime_B,0,145,,,
+regime_D,150,99;100;101;102;103...,regime_B;regime_C,0,195,,,
+regime_A,200,99;100;101;102;103...,regime_B;regime_C;regime_D,0,245,,,
+regime_C,149,,,1,0,250.0,101.0,reuse
+regime_B,0,,,1,0,300.0,300.0,reuse
+regime_D,199,,,1,0,350.0,151.0,reuse
+regime_A,249,,,1,0,400.0,151.0,reuse
+regime_B,349,,,1,0,450.0,101.0,reuse

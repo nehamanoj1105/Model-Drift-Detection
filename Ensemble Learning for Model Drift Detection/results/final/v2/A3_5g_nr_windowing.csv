@@ -1,0 +1,6 @@
+item,value,source
+processed_exp9b_stream.csv rows (windows),499,experiments/exp9b/data/processed_exp9b_stream.csv
+packets per window (packet_count column),500-500,processed_exp9b_stream.csv:packet_count
+stream_definition.json total_windows,499,experiments/exp9b/results/stream_definition.json
+loader WINDOW_SIZE (packets per aggregate),500,experiments/exp9b/load_and_prepare_stream_9b.py:15
+revalidation streams.load_5g_nr window_size,1,"results/revalidation/streams.py (streaming STEP, not packets)"

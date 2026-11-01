@@ -1,0 +1,32 @@
+\begin{table*}[t]
+\caption{Primary comparison, mean $\pm$ std over seeds 42--46. Bold marks best macro-F1 per stream.}
+\label{tab:primary}
+\centering
+\scriptsize
+\begin{tabular}{@{}llccccccc@{}}
+\toprule
+\textbf{Dataset} & \textbf{Model} & \textbf{F1} & \textbf{Acc.} & \textbf{Prec.} & \textbf{Rec.} & \textbf{CPU (s)} & \textbf{Retr.} & \textbf{Reuse} \\
+\midrule
+5G Campus & Frozen & $0.9370 \pm 0.0010$ & $0.9822 \pm 0.0006$ & $0.9386 \pm 0.0010$ & $0.9383 \pm 0.0003$ & 0.0000 & 0 & 0 \\
+5G Campus & Event-Driven & $0.9610 \pm 0.0030$ & $0.9898 \pm 0.0018$ & $0.9609 \pm 0.0033$ & $0.9627 \pm 0.0019$ & 0.1134 & 1 & 0 \\
+5G Campus & Full Retraining & \mathbf{$0.9739 \pm 0.0049$} & $0.9929 \pm 0.0013$ & $0.9741 \pm 0.0044$ & $0.9751 \pm 0.0049$ & 1.2400 & 13 & 0 \\
+5G Campus & RAPT & $0.9402 \pm 0.0028$ & $0.9831 \pm 0.0017$ & $0.9421 \pm 0.0012$ & $0.9414 \pm 0.0032$ & 0.2500 & 2 & 11 \\
+5G Campus & RAPT-Enhanced & $0.9402 \pm 0.0028$ & $0.9831 \pm 0.0017$ & $0.9421 \pm 0.0012$ & $0.9414 \pm 0.0032$ & 0.2506 & 2 & 11 \\
+UGR'16 & Frozen & \mathbf{$0.9688 \pm 0.0038$} & $0.9905 \pm 0.0006$ & $0.9784 \pm 0.0034$ & $0.9661 \pm 0.0037$ & 0.0000 & 0 & 0 \\
+UGR'16 & Event-Driven & $0.9104 \pm 0.0211$ & $0.9899 \pm 0.0019$ & $0.9177 \pm 0.0205$ & $0.9081 \pm 0.0217$ & 0.6522 & 3 & 0 \\
+UGR'16 & Full Retraining & $0.9591 \pm 0.0031$ & $0.9877 \pm 0.0010$ & $0.9722 \pm 0.0022$ & $0.9576 \pm 0.0027$ & 23.2478 & 143 & 0 \\
+UGR'16 & RAPT & $0.8503 \pm 0.0346$ & $0.9565 \pm 0.0208$ & $0.8688 \pm 0.0321$ & $0.8491 \pm 0.0354$ & 2.6577 & 11 & 132 \\
+UGR'16 & RAPT-Enhanced & $0.8988 \pm 0.0412$ & $0.9781 \pm 0.0205$ & $0.9131 \pm 0.0375$ & $0.8972 \pm 0.0402$ & 3.1944 & 11 & 132 \\
+NordicDat & Frozen & $0.3037 \pm 0.0182$ & $0.4843 \pm 0.0074$ & $0.4479 \pm 0.0183$ & $0.2767 \pm 0.0191$ & 0.0000 & 0 & 0 \\
+NordicDat & Event-Driven & $0.2735 \pm 0.0309$ & $0.4620 \pm 0.0449$ & $0.4059 \pm 0.0186$ & $0.2476 \pm 0.0273$ & 0.2237 & 2 & 0 \\
+NordicDat & Full Retraining & \mathbf{$0.4765 \pm 0.0171$} & $0.5920 \pm 0.0077$ & $0.5498 \pm 0.0159$ & $0.4629 \pm 0.0180$ & 2.1419 & 18 & 0 \\
+NordicDat & RAPT & $0.3978 \pm 0.0361$ & $0.6037 \pm 0.0099$ & $0.4863 \pm 0.0328$ & $0.3767 \pm 0.0372$ & 0.3116 & 2 & 16 \\
+NordicDat & RAPT-Enhanced & $0.4644 \pm 0.0332$ & $0.5996 \pm 0.0120$ & $0.5411 \pm 0.0272$ & $0.4494 \pm 0.0343$ & 1.3859 & 2 & 10 \\
+5G NR Lat. & Frozen & \mathbf{$0.9048 \pm 0.0056$} & $0.9048 \pm 0.0056$ & $0.9048 \pm 0.0056$ & $0.9048 \pm 0.0056$ & 0.0000 & 0 & 0 \\
+5G NR Lat. & Event-Driven & $0.8576 \pm 0.0045$ & $0.8576 \pm 0.0045$ & $0.8576 \pm 0.0045$ & $0.8576 \pm 0.0045$ & 1.1004 & 12 & 0 \\
+5G NR Lat. & Full Retraining & $0.8586 \pm 0.0074$ & $0.8586 \pm 0.0074$ & $0.8586 \pm 0.0074$ & $0.8586 \pm 0.0074$ & 0.6001 & 7 & 0 \\
+5G NR Lat. & RAPT & $0.7945 \pm 0.0163$ & $0.7945 \pm 0.0163$ & $0.7945 \pm 0.0163$ & $0.7945 \pm 0.0163$ & 0.2838 & 3 & 4 \\
+5G NR Lat. & RAPT-Enhanced & $0.8446 \pm 0.0106$ & $0.8446 \pm 0.0106$ & $0.8446 \pm 0.0106$ & $0.8446 \pm 0.0106$ & 0.5908 & 3 & 3 \\
+\bottomrule
+\end{tabular}
+\end{table*}

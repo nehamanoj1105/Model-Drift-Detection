@@ -1,0 +1,15 @@
+regime_key,created_window,train_window_ids,train_regimes,train_regime_matches_key,n_train_rows,reused_at_window,age_windows,event
+A,36,,,0,405,,,
+B,44,36;37;38;39;40...,A,0,485,,,
+C,0,,,1,0,52.0,52.0,reuse
+B,48,,,1,0,60.0,12.0,reuse
+A,40,,,1,0,68.0,28.0,reuse
+C,56,,,1,0,76.0,20.0,reuse
+B,64,,,1,0,84.0,20.0,reuse
+C,80,,,1,0,92.0,12.0,reuse
+A,72,,,1,0,100.0,28.0,reuse
+B,88,,,1,0,116.0,28.0,reuse
+A,114,,,1,0,128.0,14.0,reuse
+C,96,,,1,0,144.0,48.0,reuse
+B,125,,,1,0,152.0,27.0,reuse
+A,142,,,1,0,168.0,26.0,reuse

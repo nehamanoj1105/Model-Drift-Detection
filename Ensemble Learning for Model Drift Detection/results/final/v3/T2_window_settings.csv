@@ -1,0 +1,11 @@
+setting,rows,packets
+1 window(s) on 5G NR,1,500
+5 window(s) on 5G NR,5,2500
+10 window(s) on 5G NR,10,5000
+50 window(s) on 5G NR,50,25000
+80 window(s) on 5G NR,80,40000
+100 window(s) on 5G NR,100,50000
+400 window(s) on 5G NR,400,200000
+499 window(s) on 5G NR,499,249500
+full stream,499,249500
+prefix (initial train),99,49500

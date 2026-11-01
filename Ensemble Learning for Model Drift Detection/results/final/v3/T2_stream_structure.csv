@@ -1,0 +1,5 @@
+dataset,row_kind,n_rows,packets_per_row,n_packets,window_size_rows,total_windows,prefix_rows,prefix_packets,eval_windows,eval_rows,eval_packets
+5g_campus,sample (1 packet/row),1790,1,1790,10,179,360,360,143,1430,1430
+ugr16,sample (1 packet/row),43200,1,43200,240,180,8640,8640,144,34560,34560
+nordicdat,sample (1 packet/row),91000,1,91000,500,182,18000,18000,146,73000,73000
+5g_nr,window (500 packets/row),499,500,249500,1,499,99,49500,400,400,200000

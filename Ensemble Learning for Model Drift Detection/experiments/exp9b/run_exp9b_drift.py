@@ -308,6 +308,20 @@ def run_recurring():
 # --------------------------------------------------------------------------
 # Statistical validation (paired Wilcoxon, per drift type & severity)
 # --------------------------------------------------------------------------
+def _recovery_censoring(rec):
+    """Recovered-rate per scenario, used to flag censored recovery metrics."""
+    out = {}
+    for scenario, df in rec.items():
+        if df is None or len(df) == 0:
+            out[scenario] = None
+            continue
+        out[scenario] = {
+            "rate": float(df["recovered"].mean()),
+            "n": int(len(df)),
+        }
+    return out
+
+
 def run_statistics(cov_pw, con_pw, rec_pw):
     rows = []
     for scenario, pw in [("covariate", cov_pw), ("concept", con_pw), ("recurring", rec_pw)]:
@@ -354,8 +368,10 @@ def main():
 
     _log("Writing final report ...")
     from exp9b_drift_report import write_report
+    censoring = _recovery_censoring({"covariate": cov_rec, "concept": con_rec,
+                                     "recurring": rec_rec})
     write_report(natural, cov_agg, cov_agg_rec, con_agg, con_agg_rec,
-                 rec_agg, rec_agg_rec, phase_df, stats)
+                 rec_agg, rec_agg_rec, phase_df, stats, censoring)
 
     _log("=" * 78)
     _log("EXPERIMENT 9B DRIFT EVALUATION COMPLETE")

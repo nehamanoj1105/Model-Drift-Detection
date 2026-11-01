@@ -56,10 +56,10 @@ Regime transitions and recurrences in the natural stream:
 | Model | Macro-F1 | Accuracy | Adapt CPU (s) | Retrains | Reuse events |
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | Frozen | 0.8961 ± 0.0099 | 0.9075 | 0.0000 | 0.00 | 0.00 |
-| Event-Driven | 0.8903 ± 0.0107 | 0.9055 | 1.0406 | 11.00 | 0.00 |
-| Full Retraining | 0.9027 ± 0.0059 | 0.9145 | 0.7636 | 9.00 | 0.00 |
-| RAPT | 0.8894 ± 0.0110 | 0.9025 | 0.3955 | 3.00 | 6.00 |
-| RAPT-Enhanced | 0.8915 ± 0.0117 | 0.9055 | 0.8609 | 3.00 | 6.00 |
+| Event-Driven | 0.8903 ± 0.0107 | 0.9055 | 1.0478 | 11.00 | 0.00 |
+| Full Retraining | 0.9027 ± 0.0059 | 0.9145 | 0.7741 | 9.00 | 0.00 |
+| RAPT | 0.8894 ± 0.0110 | 0.9025 | 0.3835 | 3.00 | 6.00 |
+| RAPT-Enhanced | 0.8915 ± 0.0117 | 0.9055 | 0.8630 | 3.00 | 6.00 |
 
 _Observed_: The natural stream recurs over regimes A/B/C/D. RAPT stores one policy
 per regime and reuses it on every recurrence (6 reuse events, 600 reused trees,
@@ -105,31 +105,31 @@ regime than the pre-drift reference.
 
 | Model | Severity | F1 (mean ± std) | Accuracy | Precision | Recall | Adapt CPU (s) | Runtime (s) | Retrains |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Frozen | 10% | 0.5265 ± 0.0000 | 0.4900 | 0.7964 | 0.6699 | 0.0000 | 0.9240 | 0.00 |
-| Frozen | 20% | 0.5201 ± 0.0000 | 0.4750 | 0.7904 | 0.6698 | 0.0000 | 0.9364 | 0.00 |
-| Frozen | 30% | 0.5192 ± 0.0000 | 0.4700 | 0.7897 | 0.6698 | 0.0000 | 0.9412 | 0.00 |
-| Frozen | 50% | 0.5102 ± 0.0000 | 0.4400 | 0.7817 | 0.6696 | 0.0000 | 0.9440 | 0.00 |
-| Frozen | 100% | 0.4893 ± 0.0000 | 0.3700 | 0.7640 | 0.6693 | 0.0000 | 0.9375 | 0.00 |
-| Event-Driven | 10% | 0.6819 ± 0.0106 | 0.6000 | 0.6947 | 0.6953 | 0.2389 | 1.1074 | 2.00 |
-| Event-Driven | 20% | 0.6489 ± 0.0174 | 0.5650 | 0.7104 | 0.7005 | 0.1569 | 1.0185 | 1.00 |
-| Event-Driven | 30% | 0.6438 ± 0.0074 | 0.5560 | 0.7071 | 0.6980 | 0.1547 | 1.0135 | 1.00 |
-| Event-Driven | 50% | 0.6489 ± 0.0178 | 0.5510 | 0.7141 | 0.7059 | 0.1544 | 1.0145 | 1.00 |
-| Event-Driven | 100% | 0.6672 ± 0.0082 | 0.5550 | 0.7258 | 0.7278 | 0.1601 | 1.0436 | 1.00 |
-| Full Retraining | 10% | 0.6850 ± 0.0171 | 0.6120 | 0.7537 | 0.7334 | 0.2460 | 1.0956 | 3.00 |
-| Full Retraining | 20% | 0.7894 ± 0.0068 | 0.7770 | 0.8236 | 0.7843 | 0.2539 | 1.1302 | 3.00 |
-| Full Retraining | 30% | 0.7189 ± 0.0106 | 0.6440 | 0.7452 | 0.7461 | 0.2479 | 1.1000 | 3.00 |
-| Full Retraining | 50% | 0.7671 ± 0.0177 | 0.7280 | 0.7684 | 0.7677 | 0.2416 | 1.0907 | 3.00 |
-| Full Retraining | 100% | 0.8080 ± 0.0017 | 0.7940 | 0.8133 | 0.8040 | 0.2536 | 1.1135 | 3.00 |
-| RAPT | 10% | 0.6854 ± 0.0309 | 0.6140 | 0.7607 | 0.7373 | 0.3356 | 1.1932 | 3.00 |
-| RAPT | 20% | 0.7944 ± 0.0114 | 0.7880 | 0.8471 | 0.7886 | 0.3419 | 1.1941 | 3.00 |
-| RAPT | 30% | 0.7285 ± 0.0170 | 0.6570 | 0.7467 | 0.7501 | 0.3348 | 1.1957 | 3.00 |
-| RAPT | 50% | 0.7767 ± 0.0159 | 0.7430 | 0.7786 | 0.7755 | 0.3323 | 1.1923 | 3.00 |
-| RAPT | 100% | 0.8122 ± 0.0038 | 0.8000 | 0.8193 | 0.8072 | 0.3343 | 1.1951 | 3.00 |
-| RAPT-Enhanced | 10% | 0.6854 ± 0.0309 | 0.6140 | 0.7607 | 0.7373 | 0.3309 | 1.1819 | 3.00 |
-| RAPT-Enhanced | 20% | 0.7944 ± 0.0114 | 0.7880 | 0.8471 | 0.7886 | 0.3309 | 1.1890 | 3.00 |
-| RAPT-Enhanced | 30% | 0.7285 ± 0.0170 | 0.6570 | 0.7467 | 0.7501 | 0.3329 | 1.1948 | 3.00 |
-| RAPT-Enhanced | 50% | 0.7767 ± 0.0159 | 0.7430 | 0.7786 | 0.7755 | 0.3332 | 1.1895 | 3.00 |
-| RAPT-Enhanced | 100% | 0.8122 ± 0.0038 | 0.8000 | 0.8193 | 0.8072 | 0.3358 | 1.1943 | 3.00 |
+| Frozen | 10% | 0.5265 ± 0.0000 | 0.4900 | 0.7964 | 0.6699 | 0.0000 | 0.9633 | 0.00 |
+| Frozen | 20% | 0.5201 ± 0.0000 | 0.4750 | 0.7904 | 0.6698 | 0.0000 | 0.9551 | 0.00 |
+| Frozen | 30% | 0.5192 ± 0.0000 | 0.4700 | 0.7897 | 0.6698 | 0.0000 | 0.9568 | 0.00 |
+| Frozen | 50% | 0.5102 ± 0.0000 | 0.4400 | 0.7817 | 0.6696 | 0.0000 | 0.9559 | 0.00 |
+| Frozen | 100% | 0.4893 ± 0.0000 | 0.3700 | 0.7640 | 0.6693 | 0.0000 | 0.9535 | 0.00 |
+| Event-Driven | 10% | 0.6819 ± 0.0106 | 0.6000 | 0.6947 | 0.6953 | 0.2399 | 1.1342 | 2.00 |
+| Event-Driven | 20% | 0.6489 ± 0.0174 | 0.5650 | 0.7104 | 0.7005 | 0.1561 | 1.0364 | 1.00 |
+| Event-Driven | 30% | 0.6438 ± 0.0074 | 0.5560 | 0.7071 | 0.6980 | 0.1561 | 1.0283 | 1.00 |
+| Event-Driven | 50% | 0.6489 ± 0.0178 | 0.5510 | 0.7141 | 0.7059 | 0.1565 | 1.0353 | 1.00 |
+| Event-Driven | 100% | 0.6672 ± 0.0082 | 0.5550 | 0.7258 | 0.7278 | 0.1557 | 1.0410 | 1.00 |
+| Full Retraining | 10% | 0.6850 ± 0.0171 | 0.6120 | 0.7537 | 0.7334 | 0.2420 | 1.1260 | 3.00 |
+| Full Retraining | 20% | 0.7894 ± 0.0068 | 0.7770 | 0.8236 | 0.7843 | 0.2472 | 1.1328 | 3.00 |
+| Full Retraining | 30% | 0.7189 ± 0.0106 | 0.6440 | 0.7452 | 0.7461 | 0.2399 | 1.1172 | 3.00 |
+| Full Retraining | 50% | 0.7671 ± 0.0177 | 0.7280 | 0.7684 | 0.7677 | 0.2433 | 1.1207 | 3.00 |
+| Full Retraining | 100% | 0.8080 ± 0.0017 | 0.7940 | 0.8133 | 0.8040 | 0.2465 | 1.1180 | 3.00 |
+| RAPT | 10% | 0.6854 ± 0.0309 | 0.6140 | 0.7607 | 0.7373 | 0.3431 | 1.2268 | 3.00 |
+| RAPT | 20% | 0.7944 ± 0.0114 | 0.7880 | 0.8471 | 0.7886 | 0.3320 | 1.2142 | 3.00 |
+| RAPT | 30% | 0.7285 ± 0.0170 | 0.6570 | 0.7467 | 0.7501 | 0.3360 | 1.2218 | 3.00 |
+| RAPT | 50% | 0.7767 ± 0.0159 | 0.7430 | 0.7786 | 0.7755 | 0.3305 | 1.2108 | 3.00 |
+| RAPT | 100% | 0.8122 ± 0.0038 | 0.8000 | 0.8193 | 0.8072 | 0.3417 | 1.2364 | 3.00 |
+| RAPT-Enhanced | 10% | 0.6854 ± 0.0309 | 0.6140 | 0.7607 | 0.7373 | 0.3315 | 1.2190 | 3.00 |
+| RAPT-Enhanced | 20% | 0.7944 ± 0.0114 | 0.7880 | 0.8471 | 0.7886 | 0.3296 | 1.2056 | 3.00 |
+| RAPT-Enhanced | 30% | 0.7285 ± 0.0170 | 0.6570 | 0.7467 | 0.7501 | 0.3359 | 1.2124 | 3.00 |
+| RAPT-Enhanced | 50% | 0.7767 ± 0.0159 | 0.7430 | 0.7786 | 0.7755 | 0.3349 | 1.2171 | 3.00 |
+| RAPT-Enhanced | 100% | 0.8122 ± 0.0038 | 0.8000 | 0.8193 | 0.8072 | 0.3336 | 1.2216 | 3.00 |
 
 ### Recovery
 
@@ -213,31 +213,31 @@ Diagnostics are saved under `results/experiment_9b/concept_drift/`:
 
 | Model | Severity | F1 (mean ± std) | Accuracy | Precision | Recall | Adapt CPU (s) | Runtime (s) | Retrains |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Frozen | 10% | 0.8777 ± 0.0085 | 0.9725 | 0.9865 | 0.8250 | 0.0000 | 0.2954 | 0.00 |
-| Frozen | 20% | 0.8683 ± 0.0000 | 0.9608 | 0.9810 | 0.8125 | 0.0000 | 0.2977 | 0.00 |
-| Frozen | 30% | 0.8683 ± 0.0000 | 0.9608 | 0.9810 | 0.8125 | 0.0000 | 0.2971 | 0.00 |
-| Frozen | 50% | 0.8117 ± 0.0187 | 0.8902 | 0.9241 | 0.7568 | 0.0000 | 0.3003 | 0.00 |
-| Frozen | 100% | 0.7916 ± 0.0000 | 0.8627 | 0.8983 | 0.7405 | 0.0000 | 0.2944 | 0.00 |
-| Event-Driven | 10% | 0.9241 ± 0.0550 | 0.9804 | 0.9902 | 0.8917 | 0.1556 | 0.3807 | 1.00 |
-| Event-Driven | 20% | 0.9379 ± 0.0635 | 0.9725 | 0.9865 | 0.9125 | 0.1560 | 0.3759 | 1.00 |
-| Event-Driven | 30% | 0.9379 ± 0.0635 | 0.9725 | 0.9865 | 0.9125 | 0.1621 | 0.3835 | 1.00 |
-| Event-Driven | 50% | 0.8274 ± 0.0247 | 0.9098 | 0.9389 | 0.7734 | 0.2203 | 0.4394 | 1.80 |
-| Event-Driven | 100% | 0.7916 ± 0.0000 | 0.8627 | 0.8983 | 0.7405 | 0.2350 | 0.4516 | 2.00 |
-| Full Retraining | 10% | 0.8777 ± 0.0085 | 0.9725 | 0.9865 | 0.8250 | 0.0000 | 0.2221 | 0.00 |
-| Full Retraining | 20% | 0.8683 ± 0.0000 | 0.9608 | 0.9810 | 0.8125 | 0.0000 | 0.2148 | 0.00 |
-| Full Retraining | 30% | 0.8683 ± 0.0000 | 0.9608 | 0.9810 | 0.8125 | 0.0000 | 0.2214 | 0.00 |
-| Full Retraining | 50% | 0.8117 ± 0.0187 | 0.8902 | 0.9241 | 0.7568 | 0.0000 | 0.2163 | 0.00 |
-| Full Retraining | 100% | 0.7916 ± 0.0000 | 0.8627 | 0.8983 | 0.7405 | 0.0000 | 0.2221 | 0.00 |
-| RAPT | 10% | 0.8777 ± 0.0085 | 0.9725 | 0.9865 | 0.8250 | 0.0761 | 0.2912 | 0.00 |
-| RAPT | 20% | 0.8683 ± 0.0000 | 0.9608 | 0.9810 | 0.8125 | 0.0764 | 0.2934 | 0.00 |
-| RAPT | 30% | 0.8683 ± 0.0000 | 0.9608 | 0.9810 | 0.8125 | 0.0778 | 0.2973 | 0.00 |
-| RAPT | 50% | 0.8117 ± 0.0187 | 0.8902 | 0.9241 | 0.7568 | 0.0756 | 0.2957 | 0.00 |
-| RAPT | 100% | 0.7916 ± 0.0000 | 0.8627 | 0.8983 | 0.7405 | 0.0772 | 0.2982 | 0.00 |
-| RAPT-Enhanced | 10% | 0.8777 ± 0.0085 | 0.9725 | 0.9865 | 0.8250 | 0.0769 | 0.2970 | 0.00 |
-| RAPT-Enhanced | 20% | 0.8683 ± 0.0000 | 0.9608 | 0.9810 | 0.8125 | 0.0774 | 0.2978 | 0.00 |
-| RAPT-Enhanced | 30% | 0.8683 ± 0.0000 | 0.9608 | 0.9810 | 0.8125 | 0.0773 | 0.2948 | 0.00 |
-| RAPT-Enhanced | 50% | 0.8117 ± 0.0187 | 0.8902 | 0.9241 | 0.7568 | 0.0768 | 0.2974 | 0.00 |
-| RAPT-Enhanced | 100% | 0.7916 ± 0.0000 | 0.8627 | 0.8983 | 0.7405 | 0.0793 | 0.2980 | 0.00 |
+| Frozen | 10% | 0.8777 ± 0.0085 | 0.9725 | 0.9865 | 0.8250 | 0.0000 | 0.3058 | 0.00 |
+| Frozen | 20% | 0.8683 ± 0.0000 | 0.9608 | 0.9810 | 0.8125 | 0.0000 | 0.3002 | 0.00 |
+| Frozen | 30% | 0.8683 ± 0.0000 | 0.9608 | 0.9810 | 0.8125 | 0.0000 | 0.2997 | 0.00 |
+| Frozen | 50% | 0.8117 ± 0.0187 | 0.8902 | 0.9241 | 0.7568 | 0.0000 | 0.3187 | 0.00 |
+| Frozen | 100% | 0.7916 ± 0.0000 | 0.8627 | 0.8983 | 0.7405 | 0.0000 | 0.3006 | 0.00 |
+| Event-Driven | 10% | 0.9241 ± 0.0550 | 0.9804 | 0.9902 | 0.8917 | 0.1566 | 0.3871 | 1.00 |
+| Event-Driven | 20% | 0.9379 ± 0.0635 | 0.9725 | 0.9865 | 0.9125 | 0.1575 | 0.3791 | 1.00 |
+| Event-Driven | 30% | 0.9379 ± 0.0635 | 0.9725 | 0.9865 | 0.9125 | 0.1565 | 0.3819 | 1.00 |
+| Event-Driven | 50% | 0.8274 ± 0.0247 | 0.9098 | 0.9389 | 0.7734 | 0.2215 | 0.4462 | 1.80 |
+| Event-Driven | 100% | 0.7916 ± 0.0000 | 0.8627 | 0.8983 | 0.7405 | 0.2366 | 0.4606 | 2.00 |
+| Full Retraining | 10% | 0.8777 ± 0.0085 | 0.9725 | 0.9865 | 0.8250 | 0.0000 | 0.2237 | 0.00 |
+| Full Retraining | 20% | 0.8683 ± 0.0000 | 0.9608 | 0.9810 | 0.8125 | 0.0000 | 0.2227 | 0.00 |
+| Full Retraining | 30% | 0.8683 ± 0.0000 | 0.9608 | 0.9810 | 0.8125 | 0.0000 | 0.2332 | 0.00 |
+| Full Retraining | 50% | 0.8117 ± 0.0187 | 0.8902 | 0.9241 | 0.7568 | 0.0000 | 0.2255 | 0.00 |
+| Full Retraining | 100% | 0.7916 ± 0.0000 | 0.8627 | 0.8983 | 0.7405 | 0.0000 | 0.2235 | 0.00 |
+| RAPT | 10% | 0.8777 ± 0.0085 | 0.9725 | 0.9865 | 0.8250 | 0.0787 | 0.3020 | 0.00 |
+| RAPT | 20% | 0.8683 ± 0.0000 | 0.9608 | 0.9810 | 0.8125 | 0.0773 | 0.3058 | 0.00 |
+| RAPT | 30% | 0.8683 ± 0.0000 | 0.9608 | 0.9810 | 0.8125 | 0.0768 | 0.3036 | 0.00 |
+| RAPT | 50% | 0.8117 ± 0.0187 | 0.8902 | 0.9241 | 0.7568 | 0.0772 | 0.3025 | 0.00 |
+| RAPT | 100% | 0.7916 ± 0.0000 | 0.8627 | 0.8983 | 0.7405 | 0.0789 | 0.3142 | 0.00 |
+| RAPT-Enhanced | 10% | 0.8777 ± 0.0085 | 0.9725 | 0.9865 | 0.8250 | 0.0764 | 0.3015 | 0.00 |
+| RAPT-Enhanced | 20% | 0.8683 ± 0.0000 | 0.9608 | 0.9810 | 0.8125 | 0.0810 | 0.3061 | 0.00 |
+| RAPT-Enhanced | 30% | 0.8683 ± 0.0000 | 0.9608 | 0.9810 | 0.8125 | 0.0770 | 0.3014 | 0.00 |
+| RAPT-Enhanced | 50% | 0.8117 ± 0.0187 | 0.8902 | 0.9241 | 0.7568 | 0.0781 | 0.3046 | 0.00 |
+| RAPT-Enhanced | 100% | 0.7916 ± 0.0000 | 0.8627 | 0.8983 | 0.7405 | 0.0778 | 0.3022 | 0.00 |
 
 ### Recovery
 
@@ -356,13 +356,20 @@ Per-phase F1 (severity 100%):
 | RAPT-Enhanced | 100% | 1.0000 | 0.3036 | 0.5249 | 40.00 | -0.4751 |
 
 ## 7. Exact Drift-Severity Definitions
-| Severity | Covariate drift | Concept drift |
-| :---: | :--- | :--- |
-| 10% | 4/40 post-drift windows drawn from the target regime | top 1 predictive features rank-reversed |
-| 20% | 8/40 post-drift windows drawn from the target regime | top 2 predictive features rank-reversed |
-| 30% | 12/40 post-drift windows drawn from the target regime | top 2 predictive features rank-reversed |
-| 50% | 20/40 post-drift windows drawn from the target regime | top 3 predictive features rank-reversed |
-| 100% | 40/40 post-drift windows drawn from the target regime | top 5 predictive features rank-reversed |
+| Severity | Covariate drift | Concept drift | Affected features |
+| :---: | :--- | :--- | :--- |
+| 10% | 4/40 post-drift windows drawn from the target regime | top 1 predictive features rank-reversed | 1 |
+| 20% | 8/40 post-drift windows drawn from the target regime | top 2 predictive features rank-reversed | 2 |
+| 30% | 12/40 post-drift windows drawn from the target regime | top 2 predictive features rank-reversed | 2 |
+| 50% | 20/40 post-drift windows drawn from the target regime | top 3 predictive features rank-reversed | 3 |
+| 100% | 40/40 post-drift windows drawn from the target regime | top 5 predictive features rank-reversed | 5 |
+
+The concept-drift severity is the fraction of the six ranked predictive features
+that receive the rank-reversal (`ceil(level * 6)`), capped at five because only five
+of the ranked features vary within the source regime. Severities therefore saturate
+at the feature granularity: 20% and 30% both map to two affected features. This is
+reported rather than hidden, and is why the concept-drift response curves are
+identical at 20% and 30% in every table.
 
 ## 8. Experimental Protocol
 * Chronological streaming; each window is predicted **before** it is appended to
@@ -388,6 +395,12 @@ constructions; and the RAPT algorithm contains no variant symbols. All checks pa
 * **Full Retraining** — retrains on the historical buffer at each regime boundary.
 * **RAPT** — stores a policy checkpoint per regime id; on a regime-boundary hit it
   reuses the stored policy (with light weight calibration), otherwise trains a new one.
+  In this 9B implementation the controller acts **only at regime boundaries**: unlike
+  the manuscript's RAPT (Section III-C), it has no in-regime monitoring or refresh
+  path. Consequently a stream whose regime id never changes is never adapted by RAPT,
+  and RAPT reduces to Frozen there. This is a property of the 9B harness, not of the
+  manuscript's algorithm, and it is the direct cause of the concept-drift result in
+  Section 14.
 * **RAPT-Enhanced** — base RAPT plus the two protocol-agnostic mechanisms of the
   existing Enhanced-Hybrid-RAPT architecture: (a) buffer-blended novelty refitting
   on a larger recent buffer (1500 vs 500 samples); (b) selective parity refitting,
@@ -400,6 +413,17 @@ Predictive: Macro-F1, Accuracy, Precision, Recall. Adaptation: adaptation CPU,
 total runtime, retrain events, RAPT reuse events, newly trained trees, reused trees.
 Robustness: performance drop (ΔF1 = F1_after − F1_before), minimum F1, recovery F1,
 recovery time (windows to regain 95% of pre-drift F1), relative degradation.
+
+**Censoring of recovery time.** Recovery time is defined only when a stream returns
+to its pre-drift conditional distribution. Under 9B-C concept drift the post-drift
+block has a permanently reversed P(Y|X), so the 95% target is unreachable for every
+model and every (model, severity) recovery value is censored at the 40-window
+horizon. The measured recovered-rate is 0.00 across all 125 concept-drift
+(model, severity, seed) records, against 0.48 for covariate and 0.76 for recurring
+drift (`concept_drift/recovery_censoring.csv`). The concept-drift recovery figures
+and table rows are therefore reported for completeness and carry no discriminative
+signal; they are not evidence about adaptation speed. Covariate and recurring
+recovery times are not affected.
 
 ## 11. Statistical Methodology
 Window-level paired Wilcoxon signed-rank tests between models, paired on
@@ -548,21 +572,36 @@ _Observed results_ (directly measured):
 * Under **covariate drift**, Frozen degrades monotonically with severity
   (F1 0.527→0.489). Full Retraining and RAPT are the strongest adapters and track
   each other closely at every severity; RAPT is marginally higher (0.685→0.812).
-  RAPT's advantage over Frozen and Event-Driven is statistically significant at
-  every severity (paired Wilcoxon, p<0.01), but its advantage over Full Retraining
-  is **not** significant (p≈0.06–0.82, small Cohen's d).
-* RAPT's adaptation CPU under covariate drift (~0.33 s) is flat across severity and
+  RAPT's advantage over Frozen is statistically significant at every severity
+  (paired Wilcoxon, p<0.001). Its advantage over Event-Driven is significant at
+  20--100% (p<0.001) but **not** at 10% (p=0.36, Cohen's d=0.03). Its advantage
+  over Full Retraining is **not** significant at any severity
+  (p≈0.06–0.83, small Cohen's d).
+* RAPT's adaptation CPU under covariate drift (~0.34 s) is flat across severity and
   is in fact **slightly higher** than Full Retraining (~0.24 s); because the
   post-drift block is a single new regime id there is no policy reuse, so RAPT
   retrains three times, like Full Retraining. No cost advantage is observed here.
 * Under **concept drift**, all models degrade and the drop is monotone in severity
   for Frozen/Full Retraining/RAPT; Event-Driven is modestly better at low severity.
-  Because the regime id is unchanged, no adapter receives a boundary signal and
-  RAPT equals Frozen exactly (F1 0.878→0.792); recovery is never sustained within
-  the 40-window horizon for any model.
+  Because the regime id is unchanged, no adapter receives a boundary signal. RAPT
+  equals Frozen exactly at every severity (F1 0.878→0.792), which follows from the
+  harness scope noted in Section 9: the 9B controller has no in-regime trigger, so a
+  single-regime stream is never adapted by RAPT. The equivalence is a structural
+  property of the harness rather than an empirical tie, and the reported equality
+  (identical to four decimals) is consistent with that explanation.
+* **Recovery under concept drift is censored for every model** (0.00 recovered
+  rate, all severities). This is expected, not a null result: the reversal is
+  permanent, so 95% of pre-drift correctness is unreachable. The concept-drift
+  recovery rows are reported for completeness only.
 * Under **recurring concept drift** (A→B→A'), RAPT records one reuse event on the
-  A' visit (100 reused trees) but its A' performance equals the Frozen policy and
-  does not recover; Event-Driven attains the best F1.
+  A' visit (100 reused trees) but its A' performance equals the Frozen policy at
+  every severity and does not recover; Event-Driven attains the best F1. This is the
+  experiment's central finding: the regime id recurs, so RAPT reuses, but the label
+  relationship has changed, so the reused policy is stale. At 100% severity the A'
+  phase records Frozen 0.5180, RAPT 0.5180, Event-Driven 0.5536 and Full Retraining
+  0.5582 — RAPT's reuse earns nothing over doing nothing, while the two models that
+  retrain on the changed relationship are ahead. The reuse event count (1) is
+  identical across severities, confirming the reuse decision is blind to severity.
 * **RAPT-Enhanced** is essentially indistinguishable from RAPT under covariate and
   concept drift (identical F1; the parity-refit trigger rarely fires because reuse
   is absent there). Under recurring concept drift its parity refit gives only a
@@ -573,26 +612,41 @@ _Interpretation_: RAPT's cost advantage in the natural stream comes from
 regime-keyed reuse. The same mechanism is a liability when a recurring regime's
 label semantics have changed, because the regime key cannot distinguish A from A'.
 When drift arrives without a regime-id change (concept drift), the regime-keyed
-trigger never fires and RAPT is inert.
+trigger never fires and RAPT is inert. Both statements are measured here on a
+boundary-only 9B controller; the manuscript's RAPT adds the in-regime monitoring
+and refresh path that this harness omits, so the concept-drift inertness bounds the
+boundary-only variant rather than the full algorithm. The recurring-drift result is
+the stronger one, because it holds even though RAPT does fire — the failure is in
+what reuse retrieves, not in whether reuse happens.
 
 ## 15. Limitations
 (i) The second dataset is small (499 windows) and regimes B/C/D are largely
 single-class, so covariate mixtures are modest and concept drift is constructed
 within regime A; (ii) concept drift is injected synthetically via a deterministic
-transform rather than observed; (iii) Full Retraining and RAPT use the regime id as
-the boundary signal, so concept drift without a regime change is not detectable by
-either; (iv) five seeds give limited statistical power, and several covariate
+transform rather than observed; (iii) the 9B RAPT controller acts only at regime
+boundaries, so concept drift without a regime change is undetectable by it and by
+Full Retraining, which also keys on the regime id — the concept-drift result bounds
+this boundary-only controller, not the manuscript's algorithm, which adds in-regime
+monitoring; (iv) five seeds give limited statistical power, and several covariate
 comparisons against Full Retraining are non-significant; (v) RAPT reuse is degenerate
 (empty pre-drift repository) in the single-regime covariate and concept streams, so
-no reuse occurs there; (vi) recovery is measured over a 40-window horizon and is
-censored when not sustained within it.
+no reuse occurs there, while the recurring stream does exercise reuse (one event per
+seed) and is the only concept-drift setting that tests the reuse decision; (vi)
+recovery is measured over a 40-window horizon, and under concept drift it is
+censored for every model because the reversal is permanent — the concept-drift
+recovery numbers are not informative and should not be read as null results.
 
 ## 16. Reproducibility Information
-Run from the `Ensemble Learning for Model Drift Detection` directory:
+Run from the `Ensemble Learning for Model Drift Detection` directory. The 9B
+drift-severity suite is part of the single paper entry point, so one execution of
+`run_all.py` regenerates every 9B number, table, figure and this report:
 
 ```bash
-python experiments/exp9b/run_exp9b.py          # 9B-A natural (existing)
-python experiments/exp9b/run_exp9b_drift.py    # 9B-B/C/D + figures + tables + report
+python final/run_all.py --config final/final.yaml   # primary + ablation + detectors
+                                                    # + 9B-A/B/C/D + all artefacts
+# 9B only, without the rest of the paper pipeline:
+python experiments/exp9b/run_exp9b_drift.py         # 9B-A/B/C/D + figures + tables + report
+python experiments/exp9b/run_exp9b.py               # 9B-A natural (original baseline)
 ```
 
 Configuration (`experiments/exp9b/exp9b_drift_config.py`):

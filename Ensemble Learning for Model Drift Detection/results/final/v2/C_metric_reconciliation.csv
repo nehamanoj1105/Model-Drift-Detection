@@ -1,0 +1,21 @@
+dataset,method,paper_macro_f1,paper_used,per_window_macro_f1,pooled_macro_f1,matches_per_window,matches_pooled
+5g_campus,Event-Driven,0.9636,per-window,0.9636071933940477,0.9907726555567067,True,False
+5g_campus,Frozen,0.9364,per-window,0.9364172780462372,0.9822359739981035,True,False
+5g_campus,Full Retraining,0.9836,per-window,0.983634954788801,0.9951038928909124,True,False
+5g_campus,RAPT,0.9381,per-window,0.938148390071467,0.9837777913564834,True,False
+5g_campus,RAPT-Enhanced,0.9381,per-window,0.938148390071467,0.9837777913564834,True,False
+5g_nr,Event-Driven,0.8903,pooled,0.906,0.8923243191960635,False,False
+5g_nr,Frozen,0.8961,pooled,0.9075,0.8961242960403277,False,True
+5g_nr,Full Retraining,0.9027,pooled,0.9109999999999999,0.9017624105088922,False,False
+5g_nr,RAPT,0.8894,pooled,0.9039999999999999,0.8930033536079863,False,False
+5g_nr,RAPT-Enhanced,0.8915,pooled,0.9085000000000001,0.8965159634119324,False,False
+nordicdat,Event-Driven,0.2547,per-window,0.2546972369750753,0.43987305702611923,True,False
+nordicdat,Frozen,0.2779,per-window,0.27785957094181296,0.32503327214661293,True,False
+nordicdat,Full Retraining,0.4227,per-window,0.42271067863604495,0.48061816708636523,True,False
+nordicdat,RAPT,0.3818,per-window,0.38178652824000014,0.46179381189378627,True,False
+nordicdat,RAPT-Enhanced,0.3783,per-window,0.37831904505701935,0.46621901288111706,True,False
+ugr16,Event-Driven,0.8972,per-window,0.8971626539702452,0.8412533545585263,True,False
+ugr16,Frozen,0.969,per-window,0.9689941841995422,0.8216380625793702,True,False
+ugr16,Full Retraining,0.9595,per-window,0.9595231074364186,0.7603270611528472,True,False
+ugr16,RAPT,0.836,per-window,0.8359682669147264,0.6628661327328998,True,False
+ugr16,RAPT-Enhanced,0.9276,per-window,0.927646277408325,0.8007942095585247,True,False

@@ -1,0 +1,47 @@
+{
+  "experiment": "9B-v3 final results",
+  "branch": "final-results-20260930",
+  "created": "2026-09-30",
+  "note": "Frozen BEFORE any v3 evaluation run. All thresholds and decision rules are a priori or chosen on the 20% training prefix; no evaluation-window tuning. Sweeps on evaluation windows are labelled sensitivity, never selection.",
+  "primary_metric": {
+    "name": "pooled_macro_f1",
+    "definition": "concatenate y_true and y_pred over all evaluation windows of one (dataset, method, seed) run, then macro-F1",
+    "secondary": "per_window_macro_f1 (mean of per-window macro-F1); always labelled secondary; never mixed with pooled in one table"
+  },
+  "protocol": {
+    "order": "chronological, prequential test-then-train, no shuffling",
+    "prefix_fraction": 0.2,
+    "prefix_role": "initial training only; never scored",
+    "seeds": [42, 43, 44, 45, 46],
+    "seeds_cheap": [42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61],
+    "n_jobs": 1,
+    "thread_env": {"OMP_NUM_THREADS": "1", "MKL_NUM_THREADS": "1"}
+  },
+  "streams": {
+    "5g_campus": {"kind": "sample", "window_size_samples": 10, "n_rows": null},
+    "ugr16": {"kind": "sample", "window_size_samples": 240, "n_rows": null},
+    "nordicdat": {"kind": "sample", "window_size_samples": 500, "n_rows": null},
+    "5g_nr": {"kind": "window", "packets_per_row": 500, "window_size_rows": 1, "n_rows": 499,
+              "prefix_rows": 99, "prefix_packets": 49500}
+  },
+  "detector_defaults": {
+    "ADWIN": {"delta": 0.002},
+    "Page-Hinkley": {"min_instances": 30, "delta": 0.005, "threshold": 50, "alpha": 0.9999},
+    "EDD": {"min_instances": 30, "warning_level": 2.0, "drift_level": 3.0},
+    "EDMA": {"min_instances": 30, "alpha": 0.2, "k": 2.0}
+  },
+  "cheap_config": {"trees": 20, "buffer_rows": 300},
+  "full_config": {"trees": 50, "buffer_rows": 1000},
+  "tost_margins": [0.005, 0.01, 0.02],
+  "tost_primary_margin": 0.01,
+  "block_bootstrap_blocks": 24,
+  "hypothesis_decision_rule": {
+    "rule": "SUPPORTED only if the block-bootstrap 95% CI (24 day-blocks for UGR'16, regime-visit blocks otherwise) of the paired difference excludes zero in the predicted direction; NOT SUPPORTED otherwise; INCONCLUSIVE when blocks are too few",
+    "seed_floor": "seed-level exact Wilcoxon over 5 seeds has minimum two-sided p = 0.0625; when a verdict rests on this floor it is stated"
+  },
+  "label_delay": {"campus_nordic_5gnr": [0, 1], "ugr16": "not applicable (labels are not next-window targets)"},
+  "environment": {
+    "python": "3.13.15", "numpy": "2.5.3", "pandas": "3.0.6",
+    "sklearn": "1.9.1", "scipy": "1.18.1", "river": "0.26.1"
+  }
+}

@@ -1,0 +1,2 @@
+comparison,macro_f1_500,macro_f1_1000,delta
+refit_buffer 500 -> 1000 (parity off),0.8359682669147264,0.927646277408325,0.09167801049359858

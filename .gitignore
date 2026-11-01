@@ -7,3 +7,21 @@ data/ton_iot/Train_Test_datasets.zip
 # Experiment 9A third-party datasets (see experiments/exp9a/data/DATASETS.md)
 **/exp9a/data/ugr16/*.mat
 **/exp9a/data/nordicdat/*.csv
+
+# LaTeX build artefacts (PDFs are tracked; these are rebuilt on compile)
+**/main.aux
+**/main.blg
+**/manuscript.aux
+**/manuscript.blg
+*.synctex.gz
+
+# Submission packaging: rebuilt by final/make_submission_zip.py from tracked
+# sources (deliverable/ + 9B figures/tables). Staging dir and zips are derived.
+**/RAPT_COMSNETS_submission/
+**/RAPT_COMSNETS_submission.zip
+**/RAPT_COMSNETS_paper_and_figures.zip
+/RAPT_COMSNETS_audited.zip
+/RAPT_Reuse-Not-Rebuild_COMSNETS.zip
+**/main.log
+**/manuscript.log
+**/run_all.log

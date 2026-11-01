@@ -1,0 +1,5 @@
+detector,n_configs,n_degenerate_configs,any_non_degenerate,max_events,best_macro_f1,best_non_degenerate_macro_f1
+ADWIN,40,40,False,0.0,0.9825154361542684,
+EDD,8,0,True,344.0,0.9958055005756538,0.9958055005756538
+EDMA,72,33,True,66.0,0.9951044747463124,0.9951044747463124
+Page-Hinkley,144,144,False,0.0,0.9825154361542684,

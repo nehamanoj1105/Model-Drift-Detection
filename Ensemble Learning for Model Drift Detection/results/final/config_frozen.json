@@ -1,0 +1,69 @@
+{
+  "experiment": "final_results",
+  "branch": "final-results-20261001",
+  "parent_branch": "revalidation-20261001",
+  "created": "2026-10-01",
+  "note": "Decisions fixed BEFORE any evaluation run that uses them. Sweeps are labelled sensitivity (not selection). The revalidation config at results/revalidation/config_frozen.json is inherited; this file adds the decisions specific to the final report.",
+
+  "primary_metric": {
+    "name": "per_window_macro_f1",
+    "definition": "mean over evaluation windows of each window's macro-F1, then mean over seeds",
+    "secondary": "pooled_macro_f1 = macro-F1 of y_true/y_pred concatenated over all evaluation windows of a run",
+    "reason": "the paper's primary table (Table II / 9A table9a_main.csv) reports the per-window mean; the revalidation reproduces it to <1e-9 (T1_crosscheck.csv). Pooled is reported as a sensitivity column because the two aggregations diverge sharply on UGR'16 (up to 0.199 for Full Retraining); all headline claims use the per-window mean so they match the paper."
+  },
+
+  "protocol": {
+    "order": "chronological, prequential test-then-train, no shuffling",
+    "prefix_fraction": 0.2,
+    "prefix_role": "initial training only; never scored",
+    "window_sizes": {"5g_campus": 10, "ugr16": 240, "nordicdat": 500, "5g_nr": 1},
+    "seeds": [42, 43, 44, 45, 46],
+    "seeds_cheap": [42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61],
+    "n_jobs": 1,
+    "thread_env": {"OMP_NUM_THREADS": "1", "MKL_NUM_THREADS": "1"}
+  },
+
+  "statistics": {
+    "seed_test": "paired exact Wilcoxon signed-rank, n=5 seeds; min attainable two-sided p = 0.0625",
+    "bootstrap": "block bootstrap, 2000 resamples, seed 0; day blocks for UGR'16 (24), regime visits otherwise",
+    "effect_size": "paired Cohen's d_z",
+    "tost_primary_margin_macro_f1": 0.01,
+    "tost_margins_reported": [0.005, 0.01, 0.02],
+    "holm_family": "RAPT-Cheap vs Full Retraining on Campus across the ladder configurations evaluated",
+    "campus_ladder_label": "exploratory unless Step 4 confirms"
+  },
+
+  "hypothesis_decision_rule": {
+    "rule": "A hypothesis is SUPPORTED only if the block-bootstrap 95% CI of the relevant paired difference excludes zero in the predicted direction; otherwise NOT SUPPORTED if the point estimate is in the opposite direction, or INCONCLUSIVE if the CI spans zero with the point estimate in the predicted direction.",
+    "H1": "label semantics drift per regime across visits; predicted direction: same-regime-visit transfer worse than contiguous-block transfer",
+    "H2": "checkpoints trained on the wrong regime's data (provenance bug) and never refreshed; predicted direction: provenance-fixed RAPT better than base RAPT",
+    "H3": "attack non-stationarity in time hurts any old model; predicted direction: Frozen and RAPT degrade as the stream moves away from the prefix"
+  },
+
+  "recovery_threshold_fraction_of_pre_drift_f1": 0.95,
+
+  "cheap_refit": {"n_trees": 20, "buffer": 300},
+  "full_refit": {"n_trees": 50, "buffer": 1000},
+  "periodic_refresh_windows": [5, 10],
+  "parity_threshold_sweep": [0.5, 0.7, 0.8, 0.9, 0.95],
+  "rel_drop_sweep": [0.02, 0.03, 0.05, 0.10],
+  "adwin_delta_sweep": [0.002, 0.01, 0.05, 0.1, 0.3],
+  "ph_threshold_sweep": [0.05, 0.1, 0.5, 1, 5, 50],
+  "ph_min_instances_sweep": [5, 10, 30],
+  "ewma_k_sweep": [1, 2, 3],
+  "ewma_alpha_sweep": [0.05, 0.2, 0.4],
+
+  "cost_measurement": {
+    "repeats": 5,
+    "report": ["median", "min", "max"],
+    "source": "Step 8 only; earlier cost numbers are superseded"
+  },
+
+  "environment": {
+    "cpu": "AMD EPYC 9B14",
+    "cores": 4,
+    "platform": "Linux-6.8.0-1055-gke-x86_64-with-glibc2.41",
+    "libs": {"python": "3.13.15", "numpy": "2.5.3", "pandas": "3.0.6",
+             "sklearn": "1.9.1", "scipy": "1.18.1", "river": "0.26.1"}
+  }
+}

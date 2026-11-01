@@ -1,0 +1,3 @@
+source,full_retraining_ugr16_adapt_cpu_mean,full_retraining_ugr16_adapt_cpu_sd,n_seeds
+revalidation A3 (pooled protocol),25.29811933879983,0.44826126964425644,5
+"Results_Final/tables/final_results_tables.tex (9A pipeline, Table II)",23.6318,,5

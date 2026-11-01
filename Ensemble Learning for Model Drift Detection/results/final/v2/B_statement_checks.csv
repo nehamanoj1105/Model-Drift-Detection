@@ -1,0 +1,11 @@
+statement,metric,verdict,evidence
+Frozen is best on UGR'16,pooled_macro_f1,NOT SUPPORTED,best=Event-Driven (0.8413); Frozen=0.8216
+RAPT is worst on UGR'16,pooled_macro_f1,SUPPORTED,worst=RAPT (0.6629); RAPT=0.6629
+Full Retraining is best on three of four streams,pooled_macro_f1,SUPPORTED,best on 3 of 4 streams
+RAPT is below Full Retraining on all four streams,pooled_macro_f1,SUPPORTED,RAPT below FR on 4 of 4 streams
+RAPT has the highest accuracy on NordicDat,pooled_macro_f1,SUPPORTED,best accuracy=RAPT (0.6172); RAPT=0.6172
+Frozen is best on UGR'16,per_window_macro_f1 (secondary),SUPPORTED,best=Frozen (0.9690); Frozen=0.9690
+RAPT is worst on UGR'16,per_window_macro_f1 (secondary),SUPPORTED,worst=RAPT (0.8360); RAPT=0.8360
+Full Retraining is best on three of four streams,per_window_macro_f1 (secondary),SUPPORTED,best on 3 of 4 streams
+RAPT is below Full Retraining on all four streams,per_window_macro_f1 (secondary),SUPPORTED,RAPT below FR on 4 of 4 streams
+RAPT has the highest accuracy on NordicDat,per_window_macro_f1 (secondary),SUPPORTED,best accuracy=RAPT (0.6172); RAPT=0.6172

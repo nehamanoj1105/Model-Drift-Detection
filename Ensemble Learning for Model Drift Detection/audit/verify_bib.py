@@ -13,7 +13,26 @@ import urllib.request
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 BIB = os.path.join(ROOT, "paper", "references.bib")
 
+UA = "RAPT-bibcheck/1.0 (mailto:openhands@all-hands.dev)"
 entries = re.findall(r"@\w+\{([^,]+),(.*?)\n\}", open(BIB).read(), re.S)
+
+
+def crossref(title, attempts=5):
+    """Query Crossref by title with backoff (429 rate-limits under burst)."""
+    q = urllib.parse.urlencode({"query.bibliographic": title, "rows": 1})
+    req = urllib.request.Request(
+        f"https://api.crossref.org/works?{q}", headers={"User-Agent": UA})
+    last = None
+    for a in range(attempts):
+        try:
+            with urllib.request.urlopen(req, timeout=25) as r:
+                return json.load(r)["message"]["items"]
+        except Exception as e:  # HTTP 429 / transient
+            last = e
+            time.sleep(2 * (a + 1))
+    raise last
+
+
 print(f"{'key':26s} {'Crossref title match':44s} {'DOI':30s} year")
 for key, body in entries:
     t = re.search(r"title\s*=\s*[{\"](.+?)[}\"],\n", body, re.S)
@@ -21,11 +40,8 @@ for key, body in entries:
         continue
     title = re.sub(r"\s+", " ", t.group(1)).replace("{", "").replace("}", "")
     title = title.replace("\\&", "&").replace("--", "-")
-    q = urllib.parse.urlencode({"query.bibliographic": title, "rows": 1})
     try:
-        with urllib.request.urlopen(
-                f"https://api.crossref.org/works?{q}", timeout=20) as r:
-            items = json.load(r)["message"]["items"]
+        items = crossref(title)
     except Exception as e:
         print(f"{key:26s} ERROR {e}")
         continue

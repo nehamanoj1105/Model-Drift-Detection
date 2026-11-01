@@ -1,0 +1,5 @@
+pipeline,per_window_macro_f1,pooled_macro_f1,refresh_trees,refresh_buffer,refresh_counter,metric,method
+Final_Experiments LadderRAPT,0.9852761947903649,0.9944005007650712,10,300,per-regime (reset on transition),per-window mean,
+v2 RAPTV2,0.9786476967190989,0.9937016052345132,20,300,per-regime (reset on transition),per-window mean,RAPT-Cheap
+v2 RAPTV2,0.9690971983482106,0.9902057046424194,20,300,global,per-window mean,RAPT-Cheap-WinEq
+v2 RAPTV2,0.983052541250922,0.9951044747463124,20,300,per-regime (reset on transition),per-window mean,Full Retraining

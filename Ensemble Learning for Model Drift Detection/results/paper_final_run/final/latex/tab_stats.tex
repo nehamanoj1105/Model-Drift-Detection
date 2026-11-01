@@ -1,0 +1,32 @@
+\begin{table*}[t]
+\caption{Paired comparisons. Test A: seed-level Wilcoxon ($n=5$, min $p=0.0625$) with paired $d_z$ and 95\% $t$-interval. Test B: moving-block bootstrap over windows (block=10).}
+\label{tab:stats}
+\centering
+\scriptsize
+\begin{tabular}{@{}llrrrrr@{}}
+\toprule
+\textbf{Comparison} & \textbf{Dataset} & \textbf{$\Delta$ (seed)} & \textbf{$p_A$} & \textbf{$d_z$} & \textbf{$\Delta$ (win)} & \textbf{$p_B$} \\
+\midrule
+RAPT vs Full Retraining & 5G Campus & -0.0338 & 0.0625 & -13.05 & -0.0338 & 0.0000 \\
+RAPT-Enhanced vs RAPT & 5G Campus & +0.0000 & 1.0000 & +0.00 & +0.0000 & 1.0000 \\
+RAPT-Enhanced vs Full Retraining & 5G Campus & -0.0338 & 0.0625 & -13.05 & -0.0338 & 0.0000 \\
+RAPT-Cheap vs Full Retraining & 5G Campus & -0.0022 & 0.4375 & -0.34 & -0.0022 & 0.5190 \\
+RAPT-Cheap vs RAPT-Periodic-FullRefit & 5G Campus & -0.0027 & 0.4375 & -0.39 & -0.0027 & 0.3680 \\
+RAPT vs Full Retraining & UGR'16 & -0.1088 & 0.0625 & -3.16 & -0.1088 & 0.0000 \\
+RAPT-Enhanced vs RAPT & UGR'16 & +0.0485 & 0.0625 & +1.05 & +0.0485 & 0.0000 \\
+RAPT-Enhanced vs Full Retraining & UGR'16 & -0.0603 & 0.0625 & -1.52 & -0.0603 & 0.0000 \\
+RAPT-Cheap vs Full Retraining & UGR'16 & -0.1088 & 0.0625 & -3.16 & -0.1088 & 0.0000 \\
+RAPT-Cheap vs RAPT-Periodic-FullRefit & UGR'16 & +0.0000 & 1.0000 & +0.00 & +0.0000 & 1.0000 \\
+RAPT vs Full Retraining & NordicDat & -0.0786 & 0.0625 & -4.04 & -0.0786 & 0.0000 \\
+RAPT-Enhanced vs RAPT & NordicDat & +0.0666 & 0.0625 & +4.00 & +0.0666 & 0.0000 \\
+RAPT-Enhanced vs Full Retraining & NordicDat & -0.0121 & 0.3125 & -0.68 & -0.0121 & 0.3580 \\
+RAPT-Cheap vs Full Retraining & NordicDat & -0.0722 & 0.0625 & -5.43 & -0.0722 & 0.0080 \\
+RAPT-Cheap vs RAPT-Periodic-FullRefit & NordicDat & +0.0116 & 0.1875 & +0.92 & +0.0116 & 0.1810 \\
+RAPT vs Full Retraining & 5G NR Lat. & -0.0642 & 0.0625 & -4.58 & -0.0642 & 0.0000 \\
+RAPT-Enhanced vs RAPT & 5G NR Lat. & +0.0501 & 0.0625 & +5.44 & +0.0501 & 0.0000 \\
+RAPT-Enhanced vs Full Retraining & 5G NR Lat. & -0.0140 & 0.0625 & -1.12 & -0.0140 & 0.0070 \\
+RAPT-Cheap vs Full Retraining & 5G NR Lat. & -0.0005 & 1.0000 & -0.04 & -0.0005 & 0.9330 \\
+RAPT-Cheap vs RAPT-Periodic-FullRefit & 5G NR Lat. & +0.0095 & 0.1250 & +1.07 & +0.0095 & 0.0180 \\
+\bottomrule
+\end{tabular}
+\end{table*}

@@ -1,0 +1,2 @@
+PASS: 0 evaluations used a window with index >= the scored window.
+rows checked: 62400; max(buffer_window - scored_window) = -1 (must be <= -1).

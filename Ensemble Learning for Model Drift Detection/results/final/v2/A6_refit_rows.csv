@@ -1,0 +1,5 @@
+method,seed,refit_n,n_refits,refit_buffer_rows_max,refit_anchor_rows,refit_total_rows_max,refresh_events,retrain_events,cap,rows_above_cap_explained_by_anchor
+RAPT,42,500,11,500,30,530,0,11,1000,30
+RAPT-Enhanced,42,1500,11,1000,30,1030,0,11,1000,30
+RAPT-Deferred,42,1000,11,1000,30,1030,11,11,1000,30
+RAPT-Cheap,42,1000,11,1000,30,1030,0,11,1000,30

@@ -122,3 +122,136 @@ Outputs: `results/experiment_9a_three/raw/` (per-window + per-seed CSV);
 reports `EXPERIMENT_9A_THREE_TELECOM_DATASETS_REPORT.md` and
 `EXPERIMENT_9A_9B_FINAL_REPORT.md`. `tabulate` must be installed for the report
 generator.
+
+## Revalidation (results/final) — corrections to earlier claims
+
+The v2 revalidation (`results/final/v2/`, `results/final/FINAL_RESULTS.md`,
+`results/final/SUBMISSION_AUDIT.md`) re-ran all four streams under one frozen
+protocol. Corrections that supersede the 9A headline above:
+
+- **Metric.** Paper Table II mixes scales: 5G Campus / UGR'16 / NordicDat use the
+  per-window mean macro-F1, 5G NR uses the pooled value. Corrected tables:
+  `results/final/latex_tables/C_primary_perwindow.tex` (recommended) and
+  `..._pooled.tex`. `C_metric_reconciliation.csv` maps every cell.
+- **UGR'16 mechanism.** The RAPT-Enhanced recovery (0.8360 -> 0.9276) is the
+  novelty-refit buffer size (500 -> 1000 rows, +0.0917), NOT the parity refit.
+  The parity branch never fires on UGR'16 (0 refits at thresholds 0.5-0.95).
+  A second real contributor is checkpoint provenance (stored checkpoints were
+  mis-keyed; correcting the keying is +0.0798).
+- **Detectors.** ADWIN and Page-Hinkley never fire because river 0.26.1
+  `update()` returns `None` and the harness does `bool(...)`; EDMA is NOT
+  degenerate once its comparison-order bug is fixed (fires 2.8-16.2 events);
+  EDD's old counts (114/115/117/344) were inflated by a first-window spurious
+  fire. See `results/final/v2/A10_detector_corrected.csv`.
+- **Cost.** The cheap-refresh advantage is 5G Campus-specific. On 5G NR
+  RAPT-Cheap is slower (3.26 s vs 0.72 s, +351%) and lower-F1 (0.8830 vs 0.9110)
+  because window size 1 makes "every 5 windows" fire every 5 samples.
+- Still supported: RAPT below Full Retraining on all four streams (both metrics);
+  RAPT worst on UGR'16; the UGR'16 RAPT-Enhanced recovery as a number.
+
+Re-run commands (from `Ensemble Learning for Model Drift Detection/`):
+`python results/final/v2/b_pooled.py` then `c_reconcile.py`, `d_figures.py`,
+`a10_detector_recheck.py`.
+
+## Experiment 9B drift-severity study
+
+`experiments/exp9b/run_exp9b_drift.py` runs 9B-B/C/D and regenerates
+`EXPERIMENT_9B_FINAL_REPORT.md`, the figures, and the tables. Do not hand-edit the
+report: `exp9b_drift_report.py` overwrites it, so change the generator and re-run.
+
+Harness scope that must not be misread as an algorithm result:
+
+- The 9B RAPT controller acts **only at regime boundaries**. It has no in-regime
+  monitoring or refresh path, so a single-regime stream is never adapted and
+  `RAPT == Frozen` exactly. The manuscript's RAPT adds in-regime monitoring, so
+  9B-C concept-drift inertness bounds the boundary-only controller, not the
+  manuscript algorithm. The recurring A->B->A' result is the stronger finding
+  because RAPT does fire there (1 reuse event, 100 reused trees) yet the reused
+  policy is stale.
+- Concept-drift recovery is **censored** for every model: the reversed P(Y|X) is
+  permanent, so the 95%-of-pre-drift target is unreachable and every recovery
+  value equals the 40-window horizon. Recovered-rate 0.00 (n=125) vs 0.48
+  covariate (n=250) and 0.76 recurring (n=125). Concept recovery rows carry no
+  discriminative signal.
+- Concept-drift severity is feature-granular (`ceil(level*6)`, capped at 5), so
+  20% and 30% both affect 2 features and their curves are identical.
+
+Predictive metrics are deterministic across runs; only CPU/runtime columns drift.
+Report numbers are derived from the saved CSVs, so do not hardcode timings.
+
+### 9B regeneration pitfall (fixed)
+
+`regenerate_9b_outputs.py` (the presentation-only re-run path) previously called
+`write_report(...)` without the `censoring` argument, so it silently rewrote the
+concept-drift recovered-rate as `0.00 / n=0` instead of the true `0.00 / n=125`
+(all three scenarios read 0.00). It now rebuilds `censoring` from
+`raw/{covariate,concept,recurring}_recovery.csv` exactly as `run_exp9b_drift.py`
+does. If you regenerate, prefer `run_exp9b_drift.py`, and diff the report's
+censoring paragraph before committing.
+
+`regenerate_9b_outputs.py` also rewrites timing columns from a fresh run, which
+makes `audit/validate_9b.py` CPU checks flap. The validator compares timing
+columns with a 15% relative tolerance (`check_timing`); everything else stays
+exact at 5e-5.
+
+## Single-entry-point compliance (paper finalization)
+
+- One execution of `python final/run_all.py --config final/final.yaml` now produces
+  *every* paper artefact: primary/ablation/detector raw parquet, tables, figures,
+  headline numbers, claims audit, number audit, report text, **and** the full
+  Experiment 9B drift-severity suite (9B-A/B/C/D + figures + tables +
+  `EXPERIMENT_9B_FINAL_REPORT.md`). The 9B stage is a `subprocess.run` on
+  `experiments/exp9b/run_exp9b_drift.py`; set `RAPT_SKIP_9B=1` to skip it.
+- Do not re-run `experiments/exp9b/regenerate_9b_outputs.py` to "refresh" numbers:
+  it re-writes timing columns from a fresh run and (historically) dropped the
+  censoring argument. Prefer the full `run_all.py` path so 9B and the paper
+  numbers come from the same execution.
+- `final/make_paper_number_audit.py` traces every numeric token in both
+  manuscripts to a value in `results/paper_final_run/final/*.csv` (or a LaTeX
+  table). It must report **0 unmatched** for both `deliverable/main.tex` and
+  `Paper_Final/manuscript.tex`. If it reports unmatched tokens, fix the matcher
+  (LaTeX `\kern`, `.0625` leading-zero, sign flips) or the manuscript — never
+  silence it. Current state: 0 unmatched for both.
+- Both manuscripts compile clean (0 Overfull hbox), 7 pages, body ends page 6,
+  references page 7.
+
+## Submission packaging + validator tolerances
+
+- `final/make_submission_zip.py` (last stage of `run_all.py`) assembles
+  `RAPT_COMSNETS_submission.zip` from `deliverable/` (main.tex, main.bbl,
+  references.bib, main.pdf, figures/) plus the 9B figures, tables and report.
+  Flat layout compiles with `pdflatex main && bibtex main && pdflatex main
+  && pdflatex main`. Never hand-edit the zip; rebuild via `run_all.py`.
+- Timing columns (`adapt_cpu_s`, `runtime_s`, cost-reduction %, refit ms) are
+  not deterministic across runs. `audit/validate_final_run.py`,
+  `audit/validate_phase1_full.py` and `audit/validate_9b.py` therefore compare
+  them with a 15% relative tolerance via the `rel=` argument of `check(...)`;
+  predictive metrics stay exact at 5e-5. Do not tighten timing checks to an
+  absolute tolerance — they will flap.
+- The two remaining `Underfull \hbox` / `Underfull \vbox` warnings in
+  `Paper_Final` are benign IEEEtran two-column artefacts (inline math token
+  runs around lines 374-384; sparse bibliography page 759-761). They are not
+  overfull boxes and `emergencystretch` does not remove them; leave them.
+- Detector nomenclature is the corrected one: paper "EDD" = River `EDDM`,
+  paper "EDMA" = ECDD-EWMA control chart. Validators must use `EDDM` /
+  `ECDD-EWMA` when indexing `table_detectors.csv`.
+
+## Bibliography verification
+
+- `audit/verify_bib.py` checks each `paper/references.bib` entry against
+  Crossref by title. Crossref rate-limits (HTTP 429) under burst; the harness
+  now retries with backoff and a descriptive User-Agent. All entries verify.
+- `helmbold1994tracking` -> 10.1007/BF00993161 and `brzezinski2013reacting` ->
+  10.1109/TNNLS.2013.2251352 were the last two to verify; their DOIs are now
+  recorded in both `paper/references.bib` and `deliverable/references.bib`.
+- Adding a `doi` field is metadata-only: the `plain`/manual-bibliography styles
+  used by both manuscripts do not print DOIs, so no PDF recompile is needed.
+- `deliverable/references.bib` and `paper/references.bib` must stay identical.
+
+## Finalization status (branch final-results-20260930)
+
+- Deliverable PR: https://github.com/nehamanoj1105/Model-Drift-Detection/pull/8 (to main).
+- One execution of `final/run_all.py --config final/final.yaml` regenerates all
+  raw/tables/figures/numbers/report/audit + 9B-A/B/C/D and the COMSNETS zip.
+- Validators: validate_final_run 0/359, validate_9b 0, validate_phase1_full 0.
+- Second 9B dataset must not be replaced; keep WINDOW_SIZE=500, seeds 42..46.

@@ -1,0 +1,8 @@
+claim,deciding_metric,value,verdict,note
+RAPT macro-F1 is below Full Retraining on all four streams,per-window macro-F1 difference (FR - RAPT),"{""5g_campus"": 0.04548656471733403, ""ugr16"": 0.12355484052169219, ""nordicdat"": 0.0409241503960448, ""5g_nr"": 0.007000000000000006}",SUPPORTED,per-window mean protocol; sign consistent on all four
+On UGR'16 RAPT has the lowest macro-F1 of the five models,min over models,0.8359682669147264,SUPPORTED,"ranking={""Frozen"": 0.9689941841995422, ""Event-Driven"": 0.8971626539702452, ""Full Retraining"": 0.9595231074364186, ""RAPT"": 0.8359682669147264, ""RAPT-Enhanced"": 0.927646277408325}"
+UGR'16 RAPT-Enhanced recovers macro-F1 over RAPT,per-window macro-F1 gain,0.09167801049359858,SUPPORTED,numeric recovery; seeds 42-46 paired test is in Step 5
+UGR'16 recovery is caused by the parity refit,parity_refits on UGR'16 at thresholds 0.5-0.95 (Step 0.4),0,NOT SUPPORTED,parity branch never fires; refit buffer 500->1000 reproduces the gain (T2_mechanism_isolation.csv)
+NordicDat RAPT deficit vs Full Retraining is small,per-window macro-F1 difference,0.0409241503960448,INCONCLUSIVE,significance decided in Step 5
+On 5G NR the five models are within a small spread,max-min per-window macro-F1,0.007000000000000006,SUPPORTED,"values={""Frozen"": 0.9075, ""Event-Driven"": 0.906, ""Full Retraining"": 0.9110000000000001, ""RAPT"": 0.9040000000000001, ""RAPT-Enhanced"": 0.9085000000000001}"
+On Campus RAPT and RAPT-Enhanced coincide,absolute per-window macro-F1 gap,0.0,SUPPORTED,parity refit never fires on Campus

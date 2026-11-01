@@ -1,0 +1,35 @@
+\begin{table*}[t]
+\caption{Corrected primary table, pooled macro-F1 over seeds 42--46, all four streams on one metric.}
+\label{tab:primary_pool}
+\centering
+\scriptsize
+\begin{tabular}{@{}llccccc@{}}
+\toprule
+\textbf{Dataset} & \textbf{Model} & \textbf{Macro-F1} & \textbf{Acc.} & \textbf{Prec.} & \textbf{Rec.} & \textbf{Adapt. CPU (s)} \\
+\midrule
+5G Campus & Frozen & $0.9822 \pm 0.0006$ & $0.9822$ & $0.9825$ & $0.9822$ & $0.0000$ \\
+ & Event-Driven & $0.9908 \pm 0.0003$ & $0.9908$ & $0.9909$ & $0.9908$ & $0.1074$ \\
+ & Full Retraining & $0.9951 \pm 0.0000$ & $0.9951$ & $0.9951$ & $0.9951$ & $1.4387$ \\
+ & RAPT & $0.9838 \pm 0.0003$ & $0.9838$ & $0.9841$ & $0.9837$ & $0.2390$ \\
+ & RAPT-Enhanced & $0.9838 \pm 0.0003$ & $0.9838$ & $0.9841$ & $0.9837$ & $0.2460$ \\
+\midrule
+UGR'16 & Frozen & $0.8216 \pm 0.0177$ & $0.9899$ & $0.9897$ & $0.7414$ & $0.0000$ \\
+ & Event-Driven & $0.8413 \pm 0.0170$ & $0.9898$ & $0.9172$ & $0.7902$ & $0.5807$ \\
+ & Full Retraining & $0.7603 \pm 0.0194$ & $0.9873$ & $0.9585$ & $0.6840$ & $24.1753$ \\
+ & RAPT & $0.6629 \pm 0.0750$ & $0.9635$ & $0.6510$ & $0.7017$ & $2.0703$ \\
+ & RAPT-Enhanced & $0.8008 \pm 0.0305$ & $0.9880$ & $0.9070$ & $0.7399$ & $2.7872$ \\
+\midrule
+NordicDat & Frozen & $0.3250 \pm 0.0079$ & $0.4770$ & $0.3468$ & $0.3527$ & $0.0000$ \\
+ & Event-Driven & $0.4399 \pm 0.0288$ & $0.4583$ & $0.4782$ & $0.4831$ & $0.2770$ \\
+ & Full Retraining & $0.4806 \pm 0.0099$ & $0.5694$ & $0.4838$ & $0.4800$ & $2.2672$ \\
+ & RAPT & $0.4618 \pm 0.0112$ & $0.6172$ & $0.4801$ & $0.4779$ & $0.2738$ \\
+ & RAPT-Enhanced & $0.4662 \pm 0.0172$ & $0.5677$ & $0.4681$ & $0.4681$ & $2.7234$ \\
+\midrule
+5G NR Lat. & Frozen & $0.8961 \pm 0.0099$ & $0.9075$ & $0.9314$ & $0.8798$ & $0.0000$ \\
+ & Event-Driven & $0.8923 \pm 0.0065$ & $0.9060$ & $0.9489$ & $0.8699$ & $0.9281$ \\
+ & Full Retraining & $0.9018 \pm 0.0054$ & $0.9110$ & $0.9406$ & $0.8830$ & $0.7078$ \\
+ & RAPT & $0.8930 \pm 0.0067$ & $0.9040$ & $0.9268$ & $0.8770$ & $0.2720$ \\
+ & RAPT-Enhanced & $0.8965 \pm 0.0082$ & $0.9085$ & $0.9379$ & $0.8783$ & $0.7895$ \\
+\bottomrule
+\end{tabular}
+\end{table*}
